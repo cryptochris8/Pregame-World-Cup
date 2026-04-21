@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../config/app_theme.dart';
+import '../../../../core/animations/page_transitions.dart';
 import '../../../../l10n/app_localizations.dart';
 import '../../domain/entities/entities.dart';
+import '../bloc/bloc.dart';
 import '../widgets/widgets.dart';
+import 'match_detail_page.dart';
 
 /// Detailed view of a national team
 class TeamDetailPage extends StatelessWidget {
@@ -458,7 +462,7 @@ class TeamDetailPage extends StatelessWidget {
       decoration: BoxDecoration(
         color: AppTheme.backgroundCard,
         borderRadius: BorderRadius.circular(12),
-        border: Border.all(color: Colors.white.withValues(alpha:0.1)),
+        border: Border.all(color: Colors.white.withValues(alpha: 0.1)),
       ),
       child: Padding(
         padding: const EdgeInsets.all(16),
@@ -477,21 +481,50 @@ class TeamDetailPage extends StatelessWidget {
                     color: Colors.white,
                   ),
                 ),
-                const Spacer(),
-                TextButton(
-                  onPressed: () {
-                    // Navigate to filtered match list
-                  },
-                  child: Text(l10n.viewAll, style: const TextStyle(color: AppTheme.accentGold)),
-                ),
               ],
             ),
             const SizedBox(height: 12),
-            Center(
-              child: Text(
-                l10n.teamMatchesWillAppear,
-                style: const TextStyle(color: Colors.white38),
-              ),
+            BlocBuilder<MatchListCubit, MatchListState>(
+              builder: (context, state) {
+                if (state.isLoading && state.matches.isEmpty) {
+                  return const Padding(
+                    padding: EdgeInsets.symmetric(vertical: 16),
+                    child: Center(
+                      child: CircularProgressIndicator(color: Colors.white),
+                    ),
+                  );
+                }
+
+                final teamMatches = filterMatchesForTeam(state.matches, team.teamCode);
+
+                if (teamMatches.isEmpty) {
+                  return Center(
+                    child: Text(
+                      l10n.teamMatchesWillAppear,
+                      style: const TextStyle(color: Colors.white38),
+                    ),
+                  );
+                }
+
+                return Column(
+                  children: [
+                    for (final match in teamMatches)
+                      MatchCard(
+                        match: match,
+                        compact: true,
+                        showFavoriteButton: false,
+                        showReminderButton: false,
+                        showPredictionButton: false,
+                        showAIInsight: false,
+                        onTap: () => Navigator.of(context).push(
+                          AppPageTransitions.slideFromRight(
+                            MatchDetailPage(match: match),
+                          ),
+                        ),
+                      ),
+                  ],
+                );
+              },
             ),
           ],
         ),
@@ -515,6 +548,35 @@ class TeamDetailPage extends StatelessWidget {
         return Colors.teal.shade700;
     }
   }
+}
+
+/// Filter a list of matches down to those involving the given team code,
+/// sorted chronologically (earliest first). Returns an unmodifiable list.
+///
+/// Case-insensitive team code match. Matches with a null/missing date sort
+/// to the end so scheduled games surface first. Exposed at the library level
+/// so it can be unit-tested without pumping a widget tree.
+List<WorldCupMatch> filterMatchesForTeam(
+  List<WorldCupMatch> matches,
+  String teamCode,
+) {
+  final upper = teamCode.toUpperCase();
+  final filtered = matches.where((m) {
+    final home = m.homeTeamCode?.toUpperCase();
+    final away = m.awayTeamCode?.toUpperCase();
+    return home == upper || away == upper;
+  }).toList();
+
+  filtered.sort((a, b) {
+    final ad = a.dateTimeUtc ?? a.dateTime;
+    final bd = b.dateTimeUtc ?? b.dateTime;
+    if (ad == null && bd == null) return 0;
+    if (ad == null) return 1;
+    if (bd == null) return -1;
+    return ad.compareTo(bd);
+  });
+
+  return List.unmodifiable(filtered);
 }
 
 /// Mini team card for inline display
