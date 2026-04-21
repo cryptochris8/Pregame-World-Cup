@@ -1,10 +1,12 @@
 {
-  "playerName": "Vinicius Jr",
+  "playerName": "Vinicius Junior",
   "teamCode": "BRA",
   "worldCupAppearances": 4,
   "worldCupGoals": 1,
   "worldCupAssists": 2,
-  "previousWorldCups": [2022],
+  "previousWorldCups": [
+    2022
+  ],
   "tournamentStats": [
     {
       "year": 2022,
@@ -21,6 +23,6 @@
     "Dazzling runs throughout tournament"
   ],
   "worldCupLegacyRating": 5,
-  "comparisonToLegend": "Speed and skill reminiscent of young Ronaldo Naz\u00e1rio",
+  "comparisonToLegend": "Speed and skill reminiscent of young Ronaldo Nazário",
   "worldCup2026Prediction": "Expected to be Brazil's main star and potential Golden Ball contender"
 }

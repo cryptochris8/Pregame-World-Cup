@@ -30,13 +30,21 @@ async function main() {
   let notFound = 0;
   let errors = 0;
 
+  // Strip diacritics and lowercase so "Mbappé" / "Mbappe" / "Álvarez" /
+  // "Alvarez" / "Júnior" / "Junior" all match regardless of accent.
+  const normalize = (s: string): string =>
+    s.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+
   for (const p of records) {
     try {
       const snap = await db.collection("players").where("teamCode", "==", p.teamCode).get();
-      const lastName = p.playerName.split(" ").pop()?.toLowerCase() || "";
+      const lastName = normalize(p.playerName.split(" ").pop() ?? "");
       const match = snap.docs.find((d) => {
         const data = d.data();
-        const full = (data.fullName || `${data.firstName} ${data.lastName}`).toLowerCase();
+        const full = normalize(
+          (data.fullName as string | undefined) ??
+            `${data.firstName as string} ${data.lastName as string}`
+        );
         return full.includes(lastName);
       });
 
