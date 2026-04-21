@@ -37,15 +37,22 @@ class PlayerDetailScreen extends StatelessWidget {
                   _StatRow(label: l10n.internationalCaps, value: '${player.caps}'),
                   _StatRow(label: l10n.internationalGoals, value: '${player.goals}'),
                   _StatRow(label: l10n.internationalAssists, value: '${player.assists}'),
-                  _StatRow(label: l10n.worldCupAppearances, value: '${player.worldCupAppearances}'),
-                  _StatRow(label: l10n.worldCupGoals, value: '${player.worldCupGoals}'),
-                  if (player.worldCupAssists > 0)
-                    _StatRow(label: 'Tournament Assists', value: '${player.worldCupAssists}'),
-                  if (player.previousWorldCups.isNotEmpty)
-                    _StatRow(
-                      label: l10n.previousWorldCups,
-                      value: player.previousWorldCups.join(', '),
-                    ),
+                  // Tournament-career rows only render when we have real data
+                  // for this player. Showing "0" for every player who has not
+                  // played in a prior tournament misleads users (many players
+                  // have simply not been capped in a World Cup squad before,
+                  // which is different from "appeared 0 times").
+                  if (playerHasTournamentHistory(player)) ...[
+                    _StatRow(label: l10n.worldCupAppearances, value: '${player.worldCupAppearances}'),
+                    _StatRow(label: l10n.worldCupGoals, value: '${player.worldCupGoals}'),
+                    if (player.worldCupAssists > 0)
+                      _StatRow(label: 'Tournament Assists', value: '${player.worldCupAssists}'),
+                    if (player.previousWorldCups.isNotEmpty)
+                      _StatRow(
+                        label: l10n.previousWorldCups,
+                        value: player.previousWorldCups.join(', '),
+                      ),
+                  ],
                 ],
               ),
             ),
@@ -625,4 +632,18 @@ class _InfoChip extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
     );
   }
+}
+
+/// True when we have actual prior-tournament data for this player. Used to
+/// hide the Tournament Appearances / Goals / Previous rows entirely for
+/// players with no stats available, rather than showing a misleading "0".
+///
+/// Exposed at library level so widget tests can exercise the branching
+/// without pumping the whole PlayerDetailScreen.
+bool playerHasTournamentHistory(Player player) {
+  return player.worldCupAppearances > 0 ||
+      player.worldCupGoals > 0 ||
+      player.worldCupAssists > 0 ||
+      player.previousWorldCups.isNotEmpty ||
+      player.worldCupTournamentStats.isNotEmpty;
 }
