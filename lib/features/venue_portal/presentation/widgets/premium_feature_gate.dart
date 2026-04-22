@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../../core/config/feature_flags.dart';
 import '../../../../l10n/app_localizations.dart';
 import '../../domain/entities/subscription_tier.dart';
 
@@ -71,7 +72,7 @@ class PremiumFeatureGate extends StatelessWidget {
             ),
             textAlign: TextAlign.center,
           ),
-          if (onUpgradePressed != null) ...[
+          if (onUpgradePressed != null && FeatureFlags.venueUpgradeEnabled) ...[
             const SizedBox(height: 12),
             FilledButton.icon(
               onPressed: onUpgradePressed,
@@ -112,10 +113,18 @@ class PremiumFeatureCard extends StatelessWidget {
     final colorScheme = theme.colorScheme;
     final l10n = AppLocalizations.of(context);
 
+    // When the in-app upgrade flow is stripped (Apple compliance), a
+    // locked feature card must not trigger the upgrade dialog on tap.
+    // We still render the locked card so venue owners can see what
+    // premium offers — they just can't purchase from inside the app.
+    final VoidCallback? effectiveTap = isPremium
+        ? onTap
+        : (FeatureFlags.venueUpgradeEnabled ? onUpgradePressed : null);
+
     return Card(
       clipBehavior: Clip.antiAlias,
       child: InkWell(
-        onTap: isPremium ? onTap : onUpgradePressed,
+        onTap: effectiveTap,
         child: Stack(
           children: [
             Padding(
@@ -213,6 +222,10 @@ class PremiumUpgradeBanner extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // The banner exists solely to drive in-app upgrades. Hide it entirely
+    // when the venue upgrade flow is stripped for App Store compliance.
+    if (!FeatureFlags.venueUpgradeEnabled) return const SizedBox.shrink();
+
     final theme = Theme.of(context);
     final colorScheme = theme.colorScheme;
     final l10n = AppLocalizations.of(context);

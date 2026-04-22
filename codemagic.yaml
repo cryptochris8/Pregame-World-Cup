@@ -220,6 +220,7 @@ workflows:
             --dart-define=FEATURE_BETTING_ODDS=false \
             --dart-define=FEATURE_AI_PROBABILITY=false \
             --dart-define=FEATURE_FAN_PASS=false \
+            --dart-define=FEATURE_VENUE_UPGRADE=false \
             --export-options-plist=$HOME/export_options.plist
             
     artifacts:

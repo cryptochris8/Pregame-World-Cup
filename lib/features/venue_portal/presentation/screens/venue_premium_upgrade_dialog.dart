@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import '../../../../config/app_theme.dart';
+import '../../../../core/config/feature_flags.dart';
 import '../../../../l10n/app_localizations.dart';
 
 import '../../../worldcup/domain/services/world_cup_payment_service.dart';
@@ -60,6 +61,11 @@ class _VenuePremiumUpgradeDialogState
   }
 
   Future<void> _startPurchase() async {
+    // Belt-and-suspenders: even if this dialog were shown despite the
+    // build() gate, refuse to launch the external Stripe checkout while
+    // the venue upgrade flow is stripped for Apple compliance.
+    if (!FeatureFlags.venueUpgradeEnabled) return;
+
     setState(() => _isPurchasing = true);
 
     try {
@@ -157,6 +163,14 @@ class _VenuePremiumUpgradeDialogState
 
   @override
   Widget build(BuildContext context) {
+    // Apple anti-steering / IAP compliance: when the in-app venue upgrade
+    // flow is gated off, the dialog must never render pricing, feature
+    // lists, or a purchase CTA. We still provide an empty build so any
+    // stale call sites don't crash.
+    if (!FeatureFlags.venueUpgradeEnabled) {
+      return const SizedBox.shrink();
+    }
+
     final theme = Theme.of(context);
     final l10n = AppLocalizations.of(context);
     final price = _pricing?.venuePremium.displayPrice ?? '\$499.00';

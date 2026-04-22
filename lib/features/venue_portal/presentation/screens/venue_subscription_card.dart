@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../../core/config/feature_flags.dart';
 import '../../../../l10n/app_localizations.dart';
 import '../bloc/venue_enhancement_state.dart';
 
@@ -64,7 +65,7 @@ class VenueSubscriptionCard extends StatelessWidget {
                 ],
               ),
             ),
-            if (!isPremium)
+            if (!isPremium && FeatureFlags.venueUpgradeEnabled)
               FilledButton.tonal(
                 onPressed: onUpgrade,
                 child: Text(l10n.upgradeButton),

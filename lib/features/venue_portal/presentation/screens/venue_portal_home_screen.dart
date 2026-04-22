@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../config/app_theme.dart';
+import '../../../../core/config/feature_flags.dart';
 
 import '../bloc/venue_enhancement_cubit.dart';
 import '../bloc/venue_enhancement_state.dart';
@@ -205,6 +206,11 @@ class VenuePortalHomeScreen extends StatelessWidget {
   }
 
   void _showUpgradeDialog(BuildContext context) {
+    // Upgrade pathway is stripped from App Store builds. Locked features
+    // should be non-interactive rather than pop a dialog that would
+    // otherwise have priced the purchase and launched Stripe.
+    if (!FeatureFlags.venueUpgradeEnabled) return;
+
     showDialog(
       context: context,
       builder: (dialogContext) => VenuePremiumUpgradeDialog(

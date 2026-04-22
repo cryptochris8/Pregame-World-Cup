@@ -83,6 +83,21 @@ class FeatureFlags {
     defaultValue: true,
   );
 
+  /// Gate: in-app venue-portal upgrade surfaces — the $499 upgrade dialog,
+  /// price display, "Upgrade Now" CTA, and Stripe-checkout handoff. When
+  /// disabled, the venue portal still runs (claim, manage, use activated
+  /// premium features) but no in-app purchase pathway is rendered. Venue
+  /// owners who want to upgrade do so from the web portal directly.
+  ///
+  /// This flag is distinct from [fanPassEnabled] because the venue portal
+  /// is a separate B2B upgrade path (one-time Stripe payment, not an IAP
+  /// subscription) and its removal is driven by Apple's anti-steering rule
+  /// rather than the simulated-gambling policy.
+  static const bool venueUpgradeEnabled = bool.fromEnvironment(
+    'FEATURE_VENUE_UPGRADE',
+    defaultValue: true,
+  );
+
   /// Returns [widget] if [enabled] is true, otherwise a zero-sized
   /// [SizedBox.shrink]. Useful for inline conditional rendering in
   /// widget trees without restructuring `children:` lists.
@@ -129,6 +144,7 @@ class FeatureFlags {
       'bettingOddsEnabled': bettingOddsEnabled,
       'aiProbabilityEnabled': aiProbabilityEnabled,
       'fanPassEnabled': fanPassEnabled,
+      'venueUpgradeEnabled': venueUpgradeEnabled,
     };
   }
 }

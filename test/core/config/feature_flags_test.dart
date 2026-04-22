@@ -31,11 +31,20 @@ void main() {
       expect(FeatureFlags.fanPassEnabled, isTrue);
     });
 
+    test('venueUpgradeEnabled defaults to true', () {
+      expect(FeatureFlags.venueUpgradeEnabled, isTrue);
+    });
+
     test('snapshot() exposes every flag and all default to true', () {
       final snap = FeatureFlags.snapshot();
-      expect(snap, hasLength(5));
+      expect(snap, hasLength(6));
       expect(snap.values.every((v) => v == true), isTrue,
           reason: 'All flags should default to true in standard builds');
+    });
+
+    test('snapshot() includes venueUpgradeEnabled key', () {
+      expect(FeatureFlags.snapshot().containsKey('venueUpgradeEnabled'),
+          isTrue);
     });
   });
 
