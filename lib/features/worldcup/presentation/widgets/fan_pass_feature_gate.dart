@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../../../config/app_theme.dart';
+import '../../../../core/config/feature_flags.dart';
 import '../../../../injection_container.dart';
 import '../../domain/services/world_cup_payment_service.dart';
 import '../screens/fan_pass_screen.dart';
@@ -73,6 +74,14 @@ class _FanPassFeatureGateState extends State<FanPassFeatureGate> {
 
   @override
   Widget build(BuildContext context) {
+    // When Fan Pass / paid tiers are disabled at the app level (non-gambling
+    // individual-account build), the gate becomes transparent: every user
+    // sees the underlying premium content for free. This also removes all
+    // references to paid tiers from the UI.
+    if (!FeatureFlags.fanPassEnabled) {
+      return widget.child;
+    }
+
     if (_isLoading) {
       return const Center(
         child: Padding(

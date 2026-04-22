@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../config/app_theme.dart';
+import '../../../../core/config/feature_flags.dart';
 import '../../../../l10n/app_localizations.dart';
 import '../../domain/entities/entities.dart';
 import '../bloc/bloc.dart';
@@ -28,6 +29,26 @@ class _PredictionsPageState extends State<PredictionsPage> {
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context);
+
+    // Defense-in-depth: screen shouldn't be reachable in non-gambling build
+    // because entry points are hidden, but if someone deep-links here, show
+    // a minimal fallback instead of the full prediction UI.
+    if (!FeatureFlags.predictionsEnabled) {
+      return Scaffold(
+        backgroundColor: AppTheme.backgroundDark,
+        appBar: AppBar(
+          backgroundColor: Colors.transparent,
+          iconTheme: const IconThemeData(color: Colors.white),
+        ),
+        body: const Center(
+          child: Text(
+            'This feature is not available.',
+            style: TextStyle(color: Colors.white70),
+          ),
+        ),
+      );
+    }
+
     return Scaffold(
       extendBodyBehindAppBar: true,
       appBar: AppBar(

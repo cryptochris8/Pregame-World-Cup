@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import '../../../../../config/app_theme.dart';
+import '../../../../../core/config/feature_flags.dart';
 
 /// Tab bar for switching between match summary tabs.
 /// When a narrative exists, adds a "Pregame" tab as the first tab.
+/// The "Prediction" tab is hidden when predictions are disabled at the
+/// app level (non-gambling build).
 class MatchSummaryTabBar extends StatelessWidget {
   final int selectedTab;
   final ValueChanged<int> onTabSelected;
@@ -15,9 +18,17 @@ class MatchSummaryTabBar extends StatelessWidget {
     this.hasNarrative = false,
   });
 
-  List<String> get _tabs => hasNarrative
-      ? const ['Pregame', 'Analysis', 'Players', 'Prediction']
-      : const ['Analysis', 'Players', 'Prediction'];
+  List<String> get _tabs {
+    final includePrediction = FeatureFlags.predictionsEnabled;
+    if (hasNarrative) {
+      return includePrediction
+          ? const ['Pregame', 'Analysis', 'Players', 'Prediction']
+          : const ['Pregame', 'Analysis', 'Players'];
+    }
+    return includePrediction
+        ? const ['Analysis', 'Players', 'Prediction']
+        : const ['Analysis', 'Players'];
+  }
 
   @override
   Widget build(BuildContext context) {

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../config/app_theme.dart';
+import '../../../../core/config/feature_flags.dart';
 import '../../../../l10n/app_localizations.dart';
 import '../../../../core/widgets/banner_ad_widget.dart';
 import '../../domain/entities/entities.dart';
@@ -142,15 +143,16 @@ class _WorldCupHomeScreenState extends State<WorldCupHomeScreen>
               return const SizedBox.shrink();
             },
           ),
-          // Fan Pass button (important - always visible)
-          IconButton(
-            icon: const Icon(Icons.star, color: Colors.amber, size: 22),
-            tooltip: l10n.fanPass,
-            onPressed: () => Navigator.push(
-              context,
-              MaterialPageRoute(builder: (context) => const FanPassScreen()),
+          // Fan Pass button — hidden when paid tiers are disabled
+          if (FeatureFlags.fanPassEnabled)
+            IconButton(
+              icon: const Icon(Icons.star, color: Colors.amber, size: 22),
+              tooltip: l10n.fanPass,
+              onPressed: () => Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const FanPassScreen()),
+              ),
             ),
-          ),
           // More options menu
           PopupMenuButton<String>(
             icon: const Icon(Icons.more_vert, color: Colors.white),
@@ -175,16 +177,17 @@ class _WorldCupHomeScreenState extends State<WorldCupHomeScreen>
               }
             },
             itemBuilder: (context) => [
-              PopupMenuItem(
-                value: 'leaderboards',
-                child: Row(
-                  children: [
-                    const Icon(Icons.emoji_events, color: AppTheme.accentGold, size: 20),
-                    const SizedBox(width: 12),
-                    Text(l10n.leaderboards, style: const TextStyle(color: Colors.white)),
-                  ],
+              if (FeatureFlags.predictionLeaderboardEnabled)
+                PopupMenuItem(
+                  value: 'leaderboards',
+                  child: Row(
+                    children: [
+                      const Icon(Icons.emoji_events, color: AppTheme.accentGold, size: 20),
+                      const SizedBox(width: 12),
+                      Text(l10n.leaderboards, style: const TextStyle(color: Colors.white)),
+                    ],
+                  ),
                 ),
-              ),
               PopupMenuItem(
                 value: 'compare',
                 child: Row(

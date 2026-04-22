@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../config/app_theme.dart';
+import '../../../../core/config/feature_flags.dart';
 import '../../../../l10n/app_localizations.dart';
 import '../../domain/entities/entities.dart';
 import '../bloc/bloc.dart';
@@ -63,8 +64,8 @@ class _FavoritesTabState extends State<FavoritesTab>
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    // Prediction Stats Section
-                    if (hasPredictions) ...[
+                    // Prediction Stats Section — gated off in non-gambling build
+                    if (hasPredictions && FeatureFlags.predictionsEnabled) ...[
                       InkWell(
                         onTap: () => _navigateToPredictions(context),
                         borderRadius: BorderRadius.circular(12),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../../../config/app_theme.dart';
+import '../../../../core/config/feature_flags.dart';
 import '../../domain/entities/entities.dart';
 import 'team_flag.dart';
 
@@ -35,6 +36,11 @@ class PredictionCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // Compile out entirely in non-gambling build.
+    if (!FeatureFlags.predictionsEnabled) {
+      return const SizedBox.shrink();
+    }
+
     Color backgroundColor = AppTheme.backgroundCard;
     Color? borderColor;
 
@@ -281,6 +287,11 @@ class PredictionStatsCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // Compile out entirely in non-gambling build.
+    if (!FeatureFlags.predictionsEnabled) {
+      return const SizedBox.shrink();
+    }
+
     return Container(
       decoration: BoxDecoration(
         color: AppTheme.backgroundCard,

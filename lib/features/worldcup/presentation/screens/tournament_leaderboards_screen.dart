@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 
 import '../../../../config/app_theme.dart';
+import '../../../../core/config/feature_flags.dart';
 import '../../../../data/services/player_service.dart';
 import '../../../../injection_container.dart';
 import '../../../../domain/models/player.dart';
@@ -84,6 +85,10 @@ class _TournamentLeaderboardsScreenState
 
   @override
   Widget build(BuildContext context) {
+    if (!FeatureFlags.predictionLeaderboardEnabled) {
+      return FeatureFlags.unavailableScaffold();
+    }
+
     return Scaffold(
       body: Container(
         decoration: AppTheme.mainGradientDecoration,

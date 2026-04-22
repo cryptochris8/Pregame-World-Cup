@@ -3,6 +3,7 @@ import '../../../../l10n/app_localizations.dart';
 import 'package:intl/intl.dart';
 
 import '../../../../config/app_theme.dart';
+import '../../../../core/config/feature_flags.dart';
 import '../../../../injection_container.dart';
 import '../../domain/services/world_cup_payment_service.dart';
 
@@ -53,6 +54,10 @@ class _TransactionHistoryScreenState extends State<TransactionHistoryScreen> {
 
   @override
   Widget build(BuildContext context) {
+    if (!FeatureFlags.fanPassEnabled) {
+      return FeatureFlags.unavailableScaffold();
+    }
+
     return Scaffold(
       body: Container(
         decoration: AppTheme.mainGradientDecoration,

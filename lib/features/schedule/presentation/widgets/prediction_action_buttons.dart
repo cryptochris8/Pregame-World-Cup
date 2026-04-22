@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../../../config/theme_helper.dart';
+import '../../../../core/config/feature_flags.dart';
 import '../../domain/entities/game_prediction.dart';
 
 /// Action buttons for submitting or showing locked state for game predictions
@@ -25,6 +26,11 @@ class PredictionActionButtons extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // Compile out entirely in non-gambling build.
+    if (!FeatureFlags.predictionsEnabled) {
+      return const SizedBox.shrink();
+    }
+
     return Column(
       children: [
         if (!showScorePrediction && canPredict) ...[

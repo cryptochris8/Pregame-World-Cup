@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../config/app_theme.dart';
+import '../../../../core/config/feature_flags.dart';
 import '../../domain/entities/entities.dart';
 import '../../../../l10n/app_localizations.dart';
 import '../bloc/bloc.dart';
@@ -32,7 +33,11 @@ class PredictionDialog extends StatefulWidget {
     this.onSave,
   });
 
-  /// Show the prediction dialog
+  /// Show the prediction dialog.
+  ///
+  /// Returns null immediately when predictions are disabled at the build
+  /// level (stripped non-gambling build). Callers do not need to guard
+  /// with a flag check — this is defense-in-depth.
   static Future<Map<String, int>?> show(
     BuildContext context, {
     required WorldCupMatch match,
@@ -40,6 +45,7 @@ class PredictionDialog extends StatefulWidget {
     NationalTeam? homeTeam,
     NationalTeam? awayTeam,
   }) async {
+    if (!FeatureFlags.predictionsEnabled) return null;
     return showDialog<Map<String, int>>(
       context: context,
       builder: (context) => PredictionDialog(

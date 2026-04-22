@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import '../../../../config/app_theme.dart';
+import '../../../../core/config/feature_flags.dart';
 import '../../domain/entities/entities.dart';
 import '../../utils/timezone_utils.dart';
 import 'live_indicator.dart';
@@ -295,8 +296,8 @@ class MatchCard extends StatelessWidget {
                 const SizedBox(width: 8),
               ],
 
-              // Prediction button
-              if (showPredictionButton)
+              // Prediction button — gated off entirely in non-gambling build
+              if (showPredictionButton && FeatureFlags.predictionsEnabled)
                 Flexible(
                   child: QuickPredictionButton(
                     match: match,

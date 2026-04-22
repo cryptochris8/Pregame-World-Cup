@@ -5,6 +5,7 @@ import '../../../../services/prediction_service.dart';
 import '../../../auth/domain/services/auth_service.dart';
 import '../../../../injection_container.dart';
 import '../../../../config/theme_helper.dart';
+import '../../../../core/config/feature_flags.dart';
 import '../../../worldcup/presentation/widgets/fan_pass_feature_gate.dart';
 
 /// Screen showing prediction leaderboard and stats
@@ -74,6 +75,10 @@ class _PredictionLeaderboardScreenState extends State<PredictionLeaderboardScree
 
   @override
   Widget build(BuildContext context) {
+    if (!FeatureFlags.predictionLeaderboardEnabled) {
+      return FeatureFlags.unavailableScaffold();
+    }
+
     return Scaffold(
       backgroundColor: const Color(0xFF0F172A),
       appBar: AppBar(

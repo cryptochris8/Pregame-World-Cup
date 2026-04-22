@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
 import '../../../../config/app_theme.dart';
+import '../../../../core/config/feature_flags.dart';
 import '../../../../core/services/logging_service.dart';
 import '../../../../l10n/app_localizations.dart';
 import '../../../../injection_container.dart';
@@ -313,6 +314,10 @@ class _FanPassScreenState extends State<FanPassScreen>
 
   @override
   Widget build(BuildContext context) {
+    if (!FeatureFlags.fanPassEnabled) {
+      return FeatureFlags.unavailableScaffold();
+    }
+
     return Scaffold(
       backgroundColor: AppTheme.backgroundDark,
       appBar: AppBar(

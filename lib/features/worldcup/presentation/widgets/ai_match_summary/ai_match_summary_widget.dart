@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../../../../config/app_theme.dart';
+import '../../../../../core/config/feature_flags.dart';
 import '../../../domain/entities/ai_match_prediction.dart';
 import '../../../domain/entities/match_narrative.dart';
 import '../../../domain/entities/match_summary.dart';
@@ -130,6 +131,11 @@ class _AIMatchSummaryWidgetState extends State<AIMatchSummaryWidget> {
   }
 
   Widget _buildPredictionTab() {
+    // Defense-in-depth: the tab bar hides this entry when predictions are
+    // disabled, but if somehow selected, render nothing.
+    if (!FeatureFlags.predictionsEnabled) {
+      return const SizedBox.shrink();
+    }
     final lp = widget.localPrediction;
     if (lp != null) {
       return PredictionTab(

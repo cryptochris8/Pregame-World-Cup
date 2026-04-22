@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../../../../config/app_theme.dart';
+import '../../../../../core/config/feature_flags.dart';
 import '../../../domain/entities/ai_match_prediction.dart';
 import '../team_flag.dart';
 
@@ -72,6 +73,11 @@ class ConfidenceMeter extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // Hide AI confidence % display in non-gambling build.
+    if (!FeatureFlags.aiProbabilityEnabled) {
+      return const SizedBox.shrink();
+    }
+
     final color = _getColor();
     return Column(
       children: [
@@ -126,6 +132,11 @@ class ProbabilityBars extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // Hide win-probability % bars in non-gambling build.
+    if (!FeatureFlags.aiProbabilityEnabled) {
+      return const SizedBox.shrink();
+    }
+
     return Column(
       children: [
         _ProbabilityRow(

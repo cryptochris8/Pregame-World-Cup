@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../../../config/app_theme.dart';
+import '../../../../core/config/feature_flags.dart';
 import '../../domain/entities/ai_match_prediction.dart';
 
 /// A horizontal three-segment probability bar showing win/draw/loss percentages.
@@ -39,6 +40,12 @@ class ProbabilityBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // Compile out: win-probability % looks like handicapping even though
+    // it's our own model output. Hide in non-gambling build.
+    if (!FeatureFlags.aiProbabilityEnabled) {
+      return const SizedBox.shrink();
+    }
+
     final homePercent = prediction.homeWinProbability;
     final drawPercent = prediction.drawProbability;
     final awayPercent = prediction.awayWinProbability;

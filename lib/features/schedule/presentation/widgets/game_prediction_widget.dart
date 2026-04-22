@@ -7,6 +7,7 @@ import '../../../../services/prediction_service.dart';
 import '../../../auth/domain/services/auth_service.dart';
 import '../../../../injection_container.dart';
 import '../../../../config/theme_helper.dart';
+import '../../../../core/config/feature_flags.dart';
 import 'prediction_team_selector.dart';
 import 'prediction_confidence_selector.dart';
 import 'prediction_score_input.dart';
@@ -178,6 +179,11 @@ class _GamePredictionWidgetState extends State<GamePredictionWidget>
 
   @override
   Widget build(BuildContext context) {
+    // Compile out entirely in non-gambling build.
+    if (!FeatureFlags.predictionsEnabled) {
+      return const SizedBox.shrink();
+    }
+
     if (_existingPrediction == null && !_isExpanded) {
       // Collapsed state - show simple "Make Prediction" button
       return _buildCollapsedState();

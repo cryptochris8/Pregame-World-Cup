@@ -196,6 +196,13 @@ workflows:
 
       - name: Flutter build ipa
         script: |
+          # FEATURE FLAGS — gambling-adjacent features compiled OUT for
+          # Pregame World Cup (individual developer account). Apple's 2026
+          # simulated-gambling policy restricts predictions/odds/contests
+          # to Organization-account apps. All underlying feature code is
+          # preserved in the template; future Organization-account apps
+          # (CFB, NFL, etc.) rebuild with these flags set to true.
+          # See lib/core/config/feature_flags.dart.
           flutter build ipa --release \
             --build-name=1.0.$BUILD_NUMBER \
             --build-number=$BUILD_NUMBER \
@@ -208,6 +215,11 @@ workflows:
             --dart-define=REVENUECAT_IOS_API_KEY=$REVENUECAT_IOS_API_KEY \
             --dart-define=REVENUECAT_ANDROID_API_KEY=$REVENUECAT_ANDROID_API_KEY \
             --dart-define=FIREBASE_FUNCTIONS_URL=https://us-central1-pregame-b089e.cloudfunctions.net \
+            --dart-define=FEATURE_PREDICTIONS=false \
+            --dart-define=FEATURE_PREDICTION_LEADERBOARD=false \
+            --dart-define=FEATURE_BETTING_ODDS=false \
+            --dart-define=FEATURE_AI_PROBABILITY=false \
+            --dart-define=FEATURE_FAN_PASS=false \
             --export-options-plist=$HOME/export_options.plist
             
     artifacts:

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../../../../config/app_theme.dart';
+import '../../../../../core/config/feature_flags.dart';
 import '../../../domain/entities/match_narrative.dart';
 import 'prediction_components.dart';
 
@@ -366,11 +367,17 @@ class _DataInsightsSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // In non-gambling build, filter out the 'Market View' entry (the
+    // bettingPerspective field) from the data-insights section.
+    final visibleEntries = FeatureFlags.bettingOddsEnabled
+        ? insights.entries
+        : insights.entries.where((e) => e.key != 'Market View').toList();
+
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         _GradientSectionHeader(title: insights.title, icon: Icons.analytics_outlined),
-        ...insights.entries.map((entry) {
+        ...visibleEntries.map((entry) {
           return Padding(
             padding: const EdgeInsets.only(bottom: 12),
             child: Semantics(
@@ -585,44 +592,51 @@ class _VerdictSection extends StatelessWidget {
       children: [
         _GradientSectionHeader(title: verdict.title, icon: Icons.gavel_outlined),
 
-        // Prediction score + confidence — bold gradient card
-        Container(
-          width: double.infinity,
-          padding: const EdgeInsets.all(20),
-          decoration: BoxDecoration(
-            gradient: const LinearGradient(
-              colors: [AppTheme.primaryPurple, AppTheme.primaryBlue],
-              begin: Alignment.topLeft,
-              end: Alignment.bottomRight,
+        // Prediction score + confidence — bold gradient card.
+        // Hidden in non-gambling build: the score-prediction + confidence %
+        // together read as handicapping.
+        if (FeatureFlags.predictionsEnabled &&
+            FeatureFlags.aiProbabilityEnabled) ...[
+          Container(
+            width: double.infinity,
+            padding: const EdgeInsets.all(20),
+            decoration: BoxDecoration(
+              gradient: const LinearGradient(
+                colors: [AppTheme.primaryPurple, AppTheme.primaryBlue],
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+              ),
+              borderRadius: BorderRadius.circular(14),
             ),
-            borderRadius: BorderRadius.circular(14),
-          ),
-          child: Column(
-            children: [
-              Text(
-                verdict.prediction,
-                style: const TextStyle(
-                  color: Colors.white,
-                  fontSize: 26,
-                  fontWeight: FontWeight.bold,
-                  letterSpacing: -0.5,
+            child: Column(
+              children: [
+                Text(
+                  verdict.prediction,
+                  style: const TextStyle(
+                    color: Colors.white,
+                    fontSize: 26,
+                    fontWeight: FontWeight.bold,
+                    letterSpacing: -0.5,
+                  ),
                 ),
-              ),
-              const SizedBox(height: 10),
-              Semantics(
-                label: 'Confidence: ${verdict.confidence}%',
-                child: ConfidenceMeter(confidence: verdict.confidence),
-              ),
-            ],
+                const SizedBox(height: 10),
+                Semantics(
+                  label: 'Confidence: ${verdict.confidence}%',
+                  child: ConfidenceMeter(confidence: verdict.confidence),
+                ),
+              ],
+            ),
           ),
-        ),
-        const SizedBox(height: 16),
+          const SizedBox(height: 16),
+        ],
 
-        // Verdict narrative
+        // Verdict narrative (editorial prose — kept in both build variants)
         _NarrativeTextSection(text: verdict.narrative),
 
-        // Alternative scenarios
-        if (verdict.alternativeScenarios.isNotEmpty) ...[
+        // Alternative scenarios — hidden in non-gambling build (they're
+        // alternative outcome forecasts, i.e., more predictions).
+        if (FeatureFlags.predictionsEnabled &&
+            verdict.alternativeScenarios.isNotEmpty) ...[
           const SizedBox(height: 16),
           const Text(
             'ALTERNATIVE SCENARIOS',
