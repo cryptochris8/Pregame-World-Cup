@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../config/app_theme.dart';
+import '../../../../core/config/feature_flags.dart';
 import '../../domain/entities/entities.dart';
 import '../bloc/bloc.dart';
 
@@ -26,6 +27,12 @@ class AIInsightChip extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // "AI Predict" chip opens a prediction flow when tapped — gated off
+    // in non-gambling build (same flag as manual predictions).
+    if (!FeatureFlags.predictionsEnabled) {
+      return const SizedBox.shrink();
+    }
+
     final theme = Theme.of(context);
     final colorScheme = theme.colorScheme;
 
