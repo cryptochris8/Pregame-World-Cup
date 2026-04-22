@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../config/app_theme.dart';
+import '../../../../core/config/feature_flags.dart';
 import '../../../../injection_container.dart' as di;
 import '../../../../l10n/app_localizations.dart';
 import '../../data/services/local_match_summary_service.dart';
@@ -237,8 +238,11 @@ class _MatchDetailPageState extends State<MatchDetailPage> {
                   const SizedBox(height: 16),
                   _buildHeadToHeadSection(),
 
-                  // Probability bar (visual win/draw/loss gauge)
-                  if (_localPrediction != null &&
+                  // Probability bar (visual win/draw/loss gauge) — the whole
+                  // "WIN PROBABILITY" card is hidden in non-gambling builds,
+                  // not just the bar itself.
+                  if (FeatureFlags.aiProbabilityEnabled &&
+                      _localPrediction != null &&
                       match.homeTeamCode != null &&
                       match.awayTeamCode != null) ...[
                     const SizedBox(height: 16),
