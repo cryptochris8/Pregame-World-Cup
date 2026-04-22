@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../config/app_theme.dart';
 import '../../../../core/config/feature_flags.dart';
+import '../../../../core/services/ad_service.dart';
 import '../../../../injection_container.dart' as di;
 import '../../../../l10n/app_localizations.dart';
 import '../../data/services/local_match_summary_service.dart';
@@ -42,6 +43,15 @@ class _MatchDetailPageState extends State<MatchDetailPage> {
     _loadMatchSummary();
     _loadMatchNarrative();
     _loadLocalPrediction();
+  }
+
+  @override
+  void dispose() {
+    // Fire-and-forget interstitial on match-detail dismiss. The
+    // AdService cooldown gate means consecutive match visits won't
+    // spam the user with ads.
+    AdService().maybeShowInterstitialAd();
+    super.dispose();
   }
 
   /// Load match summary from locally-bundled JSON assets.

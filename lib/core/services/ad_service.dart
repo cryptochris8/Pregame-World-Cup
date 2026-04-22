@@ -116,6 +116,15 @@ class AdService {
   int _interstitialLoadAttempts = 0;
   static const int _maxInterstitialLoadAttempts = 3;
 
+  /// Timestamp of the last interstitial shown. Used by
+  /// [maybeShowInterstitialAd] to enforce a cooldown so the user doesn't
+  /// get hit with back-to-back fullscreen ads.
+  DateTime? _lastInterstitialShown;
+
+  /// Minimum seconds between interstitial displays. Set via constructor
+  /// argument to [maybeShowInterstitialAd].
+  static const int defaultInterstitialCooldownSeconds = 180;
+
   /// Load an interstitial ad
   Future<void> loadInterstitialAd() async {
     if (!_isInitialized) {
@@ -173,12 +182,46 @@ class AdService {
 
     if (_interstitialAd != null) {
       await _interstitialAd!.show();
+      _lastInterstitialShown = DateTime.now();
       return true;
     } else {
       LoggingService.info('Interstitial ad not ready', tag: _logTag);
       loadInterstitialAd(); // Try to load for next time
       return false;
     }
+  }
+
+  /// Show an interstitial only if the cooldown window has elapsed since
+  /// the last display. Use this at natural break points (e.g. when the
+  /// user navigates away from a match detail page) so the ad does not
+  /// fire too often.
+  ///
+  /// Returns true if an ad was shown, false if suppressed (cooldown not
+  /// elapsed, ad not loaded, or user has ad-free access).
+  Future<bool> maybeShowInterstitialAd({
+    int cooldownSeconds = defaultInterstitialCooldownSeconds,
+  }) async {
+    if (isInCooldown(
+      lastShown: _lastInterstitialShown,
+      now: DateTime.now(),
+      cooldownSeconds: cooldownSeconds,
+    )) {
+      return false;
+    }
+    return showInterstitialAd();
+  }
+
+  /// Pure cooldown-gate evaluation, extracted so it can be unit-tested
+  /// without instantiating the AdService singleton (which requires
+  /// Firebase). Returns true if a prior display is still within the
+  /// cooldown window and another interstitial should be suppressed.
+  static bool isInCooldown({
+    required DateTime? lastShown,
+    required DateTime now,
+    required int cooldownSeconds,
+  }) {
+    if (lastShown == null) return false;
+    return now.difference(lastShown).inSeconds < cooldownSeconds;
   }
 
   /// Dispose of all ads

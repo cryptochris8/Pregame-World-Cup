@@ -1,4 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
+import 'package:pregame_world_cup/core/services/ad_service.dart';
 
 // AdService cannot be instantiated in tests because its singleton constructor
 // eagerly creates a WorldCupPaymentService which accesses FirebaseFunctions.instance.
@@ -107,6 +108,85 @@ void main() {
         const maxAttempts = 3;
         expect(maxAttempts, greaterThan(0));
         expect(maxAttempts, lessThanOrEqualTo(10));
+      });
+    });
+
+    group('interstitial cooldown gate', () {
+      test('default cooldown is 3 minutes (180s)', () {
+        expect(AdService.defaultInterstitialCooldownSeconds, equals(180));
+      });
+
+      test('no cooldown when no prior display', () {
+        final result = AdService.isInCooldown(
+          lastShown: null,
+          now: DateTime.now(),
+          cooldownSeconds: 180,
+        );
+        expect(result, isFalse);
+      });
+
+      test('in cooldown immediately after display', () {
+        final now = DateTime(2026, 4, 22, 12, 0, 0);
+        final result = AdService.isInCooldown(
+          lastShown: now,
+          now: now,
+          cooldownSeconds: 180,
+        );
+        expect(result, isTrue);
+      });
+
+      test('in cooldown when elapsed is less than window', () {
+        final shown = DateTime(2026, 4, 22, 12, 0, 0);
+        final now = shown.add(const Duration(seconds: 120));
+        final result = AdService.isInCooldown(
+          lastShown: shown,
+          now: now,
+          cooldownSeconds: 180,
+        );
+        expect(result, isTrue);
+      });
+
+      test('cooldown expired when elapsed equals window', () {
+        final shown = DateTime(2026, 4, 22, 12, 0, 0);
+        final now = shown.add(const Duration(seconds: 180));
+        final result = AdService.isInCooldown(
+          lastShown: shown,
+          now: now,
+          cooldownSeconds: 180,
+        );
+        expect(result, isFalse);
+      });
+
+      test('cooldown expired when elapsed exceeds window', () {
+        final shown = DateTime(2026, 4, 22, 12, 0, 0);
+        final now = shown.add(const Duration(seconds: 300));
+        final result = AdService.isInCooldown(
+          lastShown: shown,
+          now: now,
+          cooldownSeconds: 180,
+        );
+        expect(result, isFalse);
+      });
+
+      test('custom cooldown window is honored', () {
+        final shown = DateTime(2026, 4, 22, 12, 0, 0);
+        final now = shown.add(const Duration(seconds: 45));
+        expect(
+          AdService.isInCooldown(
+            lastShown: shown,
+            now: now,
+            cooldownSeconds: 60,
+          ),
+          isTrue,
+        );
+        expect(
+          AdService.isInCooldown(
+            lastShown: shown,
+            now: now,
+            cooldownSeconds: 30,
+          ),
+          isFalse,
+        );
       });
     });
   });
