@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'deep_link_service.dart';
 import 'logging_service.dart';
+import '../config/feature_flags.dart';
 import '../../features/worldcup/domain/services/world_cup_payment_service.dart';
 import '../../features/navigation/main_navigation_screen.dart';
 import '../../features/social/presentation/screens/user_profile_screen.dart';
@@ -119,6 +120,10 @@ class DeepLinkNavigator {
 
   /// Navigate to a prediction detail screen
   Future<void> _navigateToPrediction(String predictionId, Map<String, String>? params) async {
+    if (!FeatureFlags.predictionsEnabled) {
+      _navigateToHome(tabIndex: 0);
+      return;
+    }
     // TODO: To deep link directly to PredictionsPage, we'd need the
     // PredictionsCubit and other World Cup BLoC providers in the widget tree.
     // For now, navigate to the home screen on the matches tab (index 0).
@@ -149,6 +154,11 @@ class DeepLinkNavigator {
 
   /// Navigate to the leaderboard screen
   Future<void> _navigateToLeaderboard(Map<String, String>? params) async {
+    if (!FeatureFlags.predictionLeaderboardEnabled) {
+      _navigateToHome();
+      return;
+    }
+
     _navigateToHome();
 
     // Small delay to let the home screen load
@@ -168,6 +178,11 @@ class DeepLinkNavigator {
   /// Handle a purchase success deep link from Stripe checkout redirect.
   /// Clears the fan pass cache, refreshes status, and navigates to the fan pass screen.
   Future<void> _handlePurchaseSuccess(Map<String, String>? params) async {
+    if (!FeatureFlags.fanPassEnabled && !FeatureFlags.venueUpgradeEnabled) {
+      _navigateToHome();
+      return;
+    }
+
     LoggingService.info(
       'Purchase success deep link received, session_id: ${params?['session_id']}',
       tag: 'DeepLinkNavigator',
@@ -199,6 +214,11 @@ class DeepLinkNavigator {
   /// Handle a purchase cancel deep link from Stripe checkout redirect.
   /// Shows a cancellation message and returns to the app.
   Future<void> _handlePurchaseCancel(Map<String, String>? params) async {
+    if (!FeatureFlags.fanPassEnabled && !FeatureFlags.venueUpgradeEnabled) {
+      _navigateToHome();
+      return;
+    }
+
     LoggingService.info(
       'Purchase cancel deep link received',
       tag: 'DeepLinkNavigator',
