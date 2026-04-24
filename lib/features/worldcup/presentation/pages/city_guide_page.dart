@@ -12,36 +12,43 @@ class CityGuidePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppTheme.backgroundDark,
+      backgroundColor: Colors.transparent,
+      extendBodyBehindAppBar: true,
       appBar: AppBar(
         backgroundColor: Colors.transparent,
+        elevation: 0,
         title: Text(guide.cityName),
         foregroundColor: Colors.white,
       ),
-      body: SingleChildScrollView(
-        padding: const EdgeInsets.all(16),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            _CityHeader(guide: guide),
-            const SizedBox(height: 20),
-            _StadiumSection(stadium: guide.venueStadium),
-            const SizedBox(height: 20),
-            if (guide.fanZones.isNotEmpty) ...[
-              _FanZonesSection(fanZones: guide.fanZones),
-              const SizedBox(height: 20),
-            ],
-            _TransitSection(transit: guide.transit),
-            const SizedBox(height: 20),
-            _WeatherSection(weather: guide.weather),
-            const SizedBox(height: 20),
-            _VisaSection(visa: guide.visaRequirements),
-            const SizedBox(height: 20),
-            _LocalTipsSection(tips: guide.localTips),
-            const SizedBox(height: 20),
-            _QuickInfoSection(guide: guide),
-            const SizedBox(height: 32),
-          ],
+      body: Container(
+        decoration: AppTheme.mainGradientDecoration,
+        child: SafeArea(
+          child: SingleChildScrollView(
+            padding: const EdgeInsets.all(16),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                _CityHeader(guide: guide),
+                const SizedBox(height: 20),
+                _StadiumSection(stadium: guide.venueStadium),
+                const SizedBox(height: 20),
+                if (guide.fanZones.isNotEmpty) ...[
+                  _FanZonesSection(fanZones: guide.fanZones),
+                  const SizedBox(height: 20),
+                ],
+                _TransitSection(transit: guide.transit),
+                const SizedBox(height: 20),
+                _WeatherSection(weather: guide.weather),
+                const SizedBox(height: 20),
+                _VisaSection(visa: guide.visaRequirements),
+                const SizedBox(height: 20),
+                _LocalTipsSection(tips: guide.localTips),
+                const SizedBox(height: 20),
+                _QuickInfoSection(guide: guide),
+                const SizedBox(height: 32),
+              ],
+            ),
+          ),
         ),
       ),
     );
