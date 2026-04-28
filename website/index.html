@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Your Ultimate Summer Companion. Track all 48 teams, 260+ players, match predictions, and find the best watch parties.">
-    <meta name="keywords" content="soccer, football, tournament, 2026, predictions, watch parties, venues, bracket, schedule, live scores">
+    <meta name="description" content="Your Ultimate Summer Companion. Track all 48 teams, 260+ players, AI-written match previews, host city guides, and the best watch parties.">
+    <meta name="keywords" content="soccer, football, tournament, 2026, schedule, live scores, match previews, watch parties, venues, host cities">
     <title>Pregame - Your Ultimate Companion</title>
 
     <!-- Favicon -->
@@ -12,12 +12,12 @@
 
     <!-- Open Graph / Social Sharing -->
     <meta property="og:title" content="Pregame - Your Ultimate Companion">
-    <meta property="og:description" content="Track all 48 teams, 104 matches, AI-powered predictions, and find watch parties across USA, Mexico & Canada. Free on iOS.">
+    <meta property="og:description" content="Track all 48 teams, 104 matches, AI-written editorial match previews, and find watch parties across USA, Mexico & Canada. Free on iOS.">
     <meta property="og:image" content="https://pregameworldcup.com/images/pregame_logo.png">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Pregame - Your Ultimate Companion">
-    <meta name="twitter:description" content="Track all 48 teams, 104 matches, AI-powered predictions, and find watch parties. Free on iOS.">
+    <meta name="twitter:description" content="Track all 48 teams, 104 matches, AI-written editorial match previews, and find watch parties. Free on iOS.">
     <meta name="twitter:image" content="https://pregameworldcup.com/images/pregame_logo.png">
 
     <!-- Tailwind CSS -->
@@ -96,7 +96,7 @@
                     Your Ultimate<br>Summer Companion
                 </h1>
                 <p class="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto">
-                    Track all 48 teams, 260+ players, AI-powered predictions, and discover the best watch parties across USA, Mexico & Canada
+                    Track all 48 teams, 260+ players, AI-written match previews, and discover the best watch parties across USA, Mexico &amp; Canada
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
                     <a href="https://testflight.apple.com/join/fUcZMb3y" class="bg-white text-wc-purple px-8 py-4 rounded-full font-bold text-lg hover:shadow-2xl transition transform hover:scale-105">
@@ -142,30 +142,47 @@
         </div>
     </section>
 
-    <!-- App Screenshots Showcase -->
+    <!-- App Demo: Video + Screenshots -->
     <section class="py-20 bg-wc-dark overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
+            <div class="text-center mb-12">
                 <h2 class="text-4xl font-bold text-white mb-4">See It in Action</h2>
                 <p class="text-xl text-gray-400 max-w-2xl mx-auto">
-                    A preview of what's waiting for you inside the app
+                    Watch the walkthrough &mdash; then scroll through what&#39;s waiting inside the app
                 </p>
             </div>
+
+            <!-- Launch trailer video -->
+            <div class="flex justify-center mb-16">
+                <div class="w-full max-w-sm rounded-3xl overflow-hidden shadow-2xl ring-1 ring-slate-800">
+                    <video
+                        src="videos/pregame_launch.mp4"
+                        poster="images/launch-video-poster.jpg"
+                        controls
+                        playsinline
+                        preload="metadata"
+                        class="w-full h-auto block"
+                    >
+                        Your browser does not support video playback.
+                    </video>
+                </div>
+            </div>
+
             <div class="flex gap-6 justify-center items-center flex-wrap lg:flex-nowrap">
                 <div class="w-48 sm:w-56 flex-shrink-0 rounded-3xl overflow-hidden shadow-2xl transform hover:scale-105 transition duration-300">
-                    <img src="images/screenshots/match-schedule.png" alt="Match schedule view" class="w-full" loading="lazy">
+                    <img src="images/screenshots/ss-matches.jpg" alt="Match schedule with date picker" class="w-full" loading="lazy">
                 </div>
                 <div class="w-48 sm:w-56 flex-shrink-0 rounded-3xl overflow-hidden shadow-2xl transform hover:scale-105 transition duration-300 hidden sm:block">
-                    <img src="images/screenshots/ai-prediction.png" alt="AI match prediction" class="w-full" loading="lazy">
+                    <img src="images/screenshots/ss-ai-preview.jpg" alt="AI-written match preview article" class="w-full" loading="lazy">
                 </div>
                 <div class="w-48 sm:w-56 flex-shrink-0 rounded-3xl overflow-hidden shadow-2xl transform hover:scale-105 transition duration-300">
-                    <img src="images/screenshots/match-detail.png" alt="Match detail with venues" class="w-full" loading="lazy">
+                    <img src="images/screenshots/ss-match-detail.jpg" alt="Match detail with stadium and nearby venues" class="w-full" loading="lazy">
                 </div>
                 <div class="w-48 sm:w-56 flex-shrink-0 rounded-3xl overflow-hidden shadow-2xl transform hover:scale-105 transition duration-300 hidden md:block">
-                    <img src="images/screenshots/venue-detail.png" alt="Venue discovery" class="w-full" loading="lazy">
+                    <img src="images/screenshots/ss-city-guide.jpg" alt="Host city guide" class="w-full" loading="lazy">
                 </div>
                 <div class="w-48 sm:w-56 flex-shrink-0 rounded-3xl overflow-hidden shadow-2xl transform hover:scale-105 transition duration-300 hidden lg:block">
-                    <img src="images/screenshots/player-profile.png" alt="Player profile" class="w-full" loading="lazy">
+                    <img src="images/screenshots/ss-player.jpg" alt="Player profile" class="w-full" loading="lazy">
                 </div>
             </div>
         </div>
@@ -177,14 +194,14 @@
             <div class="text-center mb-16">
                 <h2 class="text-4xl font-bold text-white mb-4">Everything You Need for soccer&#39;s biggest summer</h2>
                 <p class="text-xl text-gray-400 max-w-2xl mx-auto">
-                    From AI predictions to watch party discovery, we've got you covered
+                    From AI-written previews to watch party discovery, we&#39;ve got you covered
                 </p>
             </div>
 
-            <!-- Feature 1: Match Schedule + AI Predictions -->
+            <!-- Feature 1: Match Schedule -->
             <div class="flex flex-col md:flex-row items-center gap-12 mb-20">
                 <div class="w-56 sm:w-64 flex-shrink-0 rounded-3xl overflow-hidden shadow-2xl">
-                    <img src="images/screenshots/match-schedule.png" alt="Match schedule" class="w-full" loading="lazy">
+                    <img src="images/screenshots/ss-matches.jpg" alt="Match schedule" class="w-full" loading="lazy">
                 </div>
                 <div>
                     <div class="w-14 h-14 bg-gradient-to-br from-wc-purple to-wc-blue rounded-xl flex items-center justify-center mb-6">
@@ -192,41 +209,31 @@
                     </div>
                     <h3 class="text-3xl font-bold text-white mb-4">Complete Match Schedule</h3>
                     <p class="text-gray-400 leading-relaxed text-lg">
-                        Browse all 104 matches with an intuitive date picker. Filter by favorites, live games, or today's matches. Every group stage and knockout round at your fingertips.
+                        Browse all 104 matches with an intuitive date picker. Filter by favorites, live games, or today&#39;s matches. Every group stage and knockout round at your fingertips.
                     </p>
                 </div>
             </div>
 
-            <!-- Feature 2: AI Predictions -->
+            <!-- Feature 2: AI Match Previews -->
             <div class="flex flex-col md:flex-row-reverse items-center gap-12 mb-20">
-                <div class="flex gap-4 flex-shrink-0">
-                    <div class="w-48 sm:w-56 rounded-3xl overflow-hidden shadow-2xl">
-                        <img src="images/screenshots/ai-analysis.png" alt="AI match analysis" class="w-full" loading="lazy">
-                    </div>
-                    <div class="w-48 sm:w-56 rounded-3xl overflow-hidden shadow-2xl hidden sm:block">
-                        <img src="images/screenshots/ai-prediction.png" alt="AI prediction with score" class="w-full" loading="lazy">
-                    </div>
+                <div class="w-56 sm:w-64 flex-shrink-0 rounded-3xl overflow-hidden shadow-2xl">
+                    <img src="images/screenshots/ss-ai-preview.jpg" alt="AI-written match preview article" class="w-full" loading="lazy">
                 </div>
                 <div>
                     <div class="w-14 h-14 bg-gradient-to-br from-wc-purple to-wc-blue rounded-xl flex items-center justify-center mb-6">
-                        <span class="text-3xl">🎯</span>
+                        <span class="text-3xl">📰</span>
                     </div>
-                    <h3 class="text-3xl font-bold text-white mb-4">AI Match Predictions</h3>
+                    <h3 class="text-3xl font-bold text-white mb-4">AI Match Previews</h3>
                     <p class="text-gray-400 leading-relaxed text-lg">
-                        Get AI-powered historical analysis, key storylines, and score predictions with confidence ratings for every match. Dive into head-to-head records and alternative scenarios.
+                        Original AI-written editorial pregame articles for every fixture. Tactics, player stories, historical context, head-to-head records, and team form &mdash; deeply researched journalism, ready before the whistle.
                     </p>
                 </div>
             </div>
 
             <!-- Feature 3: Venue Finder -->
             <div class="flex flex-col md:flex-row items-center gap-12 mb-20">
-                <div class="flex gap-4 flex-shrink-0">
-                    <div class="w-48 sm:w-56 rounded-3xl overflow-hidden shadow-2xl">
-                        <img src="images/screenshots/match-detail.png" alt="Match detail with nearby venues" class="w-full" loading="lazy">
-                    </div>
-                    <div class="w-48 sm:w-56 rounded-3xl overflow-hidden shadow-2xl hidden sm:block">
-                        <img src="images/screenshots/venue-detail.png" alt="Venue detail page" class="w-full" loading="lazy">
-                    </div>
+                <div class="w-56 sm:w-64 flex-shrink-0 rounded-3xl overflow-hidden shadow-2xl">
+                    <img src="images/screenshots/ss-match-detail.jpg" alt="Match detail with nearby venues" class="w-full" loading="lazy">
                 </div>
                 <div>
                     <div class="w-14 h-14 bg-gradient-to-br from-wc-orange to-wc-gold rounded-xl flex items-center justify-center mb-6">
@@ -242,7 +249,7 @@
             <!-- Feature 4: Player Profiles -->
             <div class="flex flex-col md:flex-row-reverse items-center gap-12 mb-20">
                 <div class="w-56 sm:w-64 flex-shrink-0 rounded-3xl overflow-hidden shadow-2xl">
-                    <img src="images/screenshots/player-profile.png" alt="Player profile" class="w-full" loading="lazy">
+                    <img src="images/screenshots/ss-player.jpg" alt="Player profile" class="w-full" loading="lazy">
                 </div>
                 <div>
                     <div class="w-14 h-14 bg-gradient-to-br from-wc-blue to-wc-orange rounded-xl flex items-center justify-center mb-6">
@@ -264,18 +271,18 @@
                     </div>
                     <h3 class="text-2xl font-bold text-white mb-4">Watch Parties</h3>
                     <p class="text-gray-400 leading-relaxed">
-                        Create or join watch parties with friends. Chat, share predictions, and celebrate together.
+                        Create or join watch parties with friends. Chat, share match moments, and celebrate together.
                     </p>
                 </div>
 
-                <!-- Fan Pass -->
+                <!-- City Guides -->
                 <div class="bg-slate-800/50 border border-slate-700 rounded-2xl p-8 hover:border-wc-orange/50 transition">
                     <div class="w-14 h-14 bg-gradient-to-br from-wc-orange to-wc-purple rounded-xl flex items-center justify-center mb-6">
-                        <span class="text-3xl">🎟️</span>
+                        <span class="text-3xl">🗺️</span>
                     </div>
-                    <h3 class="text-2xl font-bold text-white mb-4">Fan Pass Premium</h3>
+                    <h3 class="text-2xl font-bold text-white mb-4">Host City Guides</h3>
                     <p class="text-gray-400 leading-relaxed">
-                        Unlock advanced AI predictions, exclusive content, and ad-free experience with Fan Pass.
+                        Inside-track guides for all 16 host cities &mdash; neighborhoods, transit, dining, and the spots locals know about.
                     </p>
                 </div>
             </div>
@@ -338,10 +345,10 @@
                 <div>
                     <h4 class="font-semibold mb-4">Features</h4>
                     <ul class="space-y-2 text-gray-400">
-                        <li><a href="#" class="hover:text-wc-orange transition">AI Predictions</a></li>
+                        <li><a href="#" class="hover:text-wc-orange transition">AI Match Previews</a></li>
                         <li><a href="#" class="hover:text-wc-orange transition">Player Profiles</a></li>
                         <li><a href="#" class="hover:text-wc-orange transition">Watch Parties</a></li>
-                        <li><a href="#" class="hover:text-wc-orange transition">Live Bracket</a></li>
+                        <li><a href="#" class="hover:text-wc-orange transition">Host City Guides</a></li>
                     </ul>
                 </div>
                 <div>
