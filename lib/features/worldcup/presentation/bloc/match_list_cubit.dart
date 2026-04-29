@@ -66,6 +66,14 @@ class MatchListCubit extends Cubit<MatchListState> {
     try {
       final matches = await _matchRepository.refreshMatches();
 
+      // Refresh must never make the visible state worse. If the refresh
+      // came back empty but we already have data on screen, just clear
+      // the spinner and keep the existing list.
+      if (matches.isEmpty && state.matches.isNotEmpty) {
+        emit(state.copyWith(isRefreshing: false));
+        return;
+      }
+
       matches.sort((a, b) {
         if (a.dateTime == null && b.dateTime == null) return 0;
         if (a.dateTime == null) return 1;

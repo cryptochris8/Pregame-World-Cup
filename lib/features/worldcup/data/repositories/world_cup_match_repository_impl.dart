@@ -288,24 +288,38 @@ class WorldCupMatchRepositoryImpl implements WorldCupMatchRepository {
 
   @override
   Future<List<WorldCupMatch>> refreshMatches() async {
+    // Try the live API first
     try {
-      // Debug output removed
       final apiMatches = await _apiDataSource.fetchAllMatches();
-
       if (apiMatches.isNotEmpty) {
-        // Save to Firestore
         await _firestoreDataSource.saveMatches(apiMatches);
-        // Cache locally
         await _cacheDataSource.cacheMatches(apiMatches);
-        // Debug output removed
         return apiMatches;
       }
-
-      return [];
     } catch (e) {
-      LoggingService.error('Failed to refresh matches from API: $e', tag: 'WorldCupMatchRepository');
-      throw Exception('Failed to refresh matches: $e');
+      LoggingService.error(
+        'refreshMatches API failed, falling back to Firestore: $e',
+        tag: 'WorldCupMatchRepository',
+      );
     }
+
+    // API returned empty or threw — fall back to Firestore (the canonical
+    // store for the seeded static schedule). Refresh should never wipe a
+    // working list just because the live API has no data yet.
+    try {
+      final firestoreMatches = await _firestoreDataSource.getAllMatches();
+      if (firestoreMatches.isNotEmpty) {
+        await _cacheDataSource.cacheMatches(firestoreMatches);
+        return firestoreMatches;
+      }
+    } catch (e) {
+      LoggingService.error(
+        'refreshMatches Firestore fallback also failed: $e',
+        tag: 'WorldCupMatchRepository',
+      );
+    }
+
+    return [];
   }
 
   @override
