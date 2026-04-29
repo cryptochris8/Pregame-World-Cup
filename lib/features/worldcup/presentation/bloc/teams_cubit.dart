@@ -48,6 +48,14 @@ class TeamsCubit extends Cubit<TeamsState> {
     try {
       final teams = await _teamRepository.refreshTeams();
 
+      // Refresh must never make the visible state worse. If the refresh
+      // came back empty but we already have data on screen, just clear
+      // the spinner and keep the existing list.
+      if (teams.isEmpty && state.teams.isNotEmpty) {
+        emit(state.copyWith(isRefreshing: false));
+        return;
+      }
+
       emit(state.copyWith(
         teams: teams,
         isRefreshing: false,

@@ -260,24 +260,32 @@ class GroupRepositoryImpl implements GroupRepository {
 
   @override
   Future<List<WorldCupGroup>> refreshGroups() async {
+    // Try the live API first
     try {
-      // Debug output removed
       final apiGroups = await _apiDataSource.fetchGroupStandings();
-
       if (apiGroups.isNotEmpty) {
         for (final group in apiGroups) {
           await _firestoreDataSource.saveGroup(group);
         }
         await _cacheDataSource.cacheGroups(apiGroups);
-        // Debug output removed
         return apiGroups;
       }
-
-      return [];
     } catch (e) {
-      // Debug output removed
-      throw Exception('Failed to refresh groups: $e');
+      // API failed — fall through to Firestore.
     }
+
+    // API returned empty or threw — fall back to Firestore (the canonical
+    // store for the seeded static standings). Refresh should never wipe a
+    // working list just because the live API has no data yet.
+    try {
+      final firestoreGroups = await _firestoreDataSource.getAllGroups();
+      if (firestoreGroups.isNotEmpty) {
+        await _cacheDataSource.cacheGroups(firestoreGroups);
+        return firestoreGroups;
+      }
+    } catch (_) {}
+
+    return [];
   }
 
   @override

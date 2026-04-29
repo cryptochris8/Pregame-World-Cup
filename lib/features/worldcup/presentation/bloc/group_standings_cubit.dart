@@ -48,6 +48,14 @@ class GroupStandingsCubit extends Cubit<GroupStandingsState> {
     try {
       final groups = await _groupRepository.refreshGroups();
 
+      // Refresh must never make the visible state worse. If the refresh
+      // came back empty but we already have data on screen, just clear
+      // the spinner and keep the existing list.
+      if (groups.isEmpty && state.groups.isNotEmpty) {
+        emit(state.copyWith(isRefreshing: false));
+        return;
+      }
+
       groups.sort((a, b) => a.groupLetter.compareTo(b.groupLetter));
 
       emit(state.copyWith(

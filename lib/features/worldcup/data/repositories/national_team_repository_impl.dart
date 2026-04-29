@@ -171,22 +171,30 @@ class NationalTeamRepositoryImpl implements NationalTeamRepository {
 
   @override
   Future<List<NationalTeam>> refreshTeams() async {
+    // Try the live API first
     try {
-      // Debug output removed
       final apiTeams = await _apiDataSource.fetchAllTeams();
-
       if (apiTeams.isNotEmpty) {
         await _firestoreDataSource.saveTeams(apiTeams);
         await _cacheDataSource.cacheTeams(apiTeams);
-        // Debug output removed
         return apiTeams;
       }
-
-      return [];
     } catch (e) {
-      // Debug output removed
-      throw Exception('Failed to refresh teams: $e');
+      // API failed — fall through to Firestore.
     }
+
+    // API returned empty or threw — fall back to Firestore (the canonical
+    // store for the seeded static rosters). Refresh should never wipe a
+    // working list just because the live API has no data yet.
+    try {
+      final firestoreTeams = await _firestoreDataSource.getAllTeams();
+      if (firestoreTeams.isNotEmpty) {
+        await _cacheDataSource.cacheTeams(firestoreTeams);
+        return firestoreTeams;
+      }
+    } catch (_) {}
+
+    return [];
   }
 
   @override
