@@ -84,7 +84,13 @@ void registerWorldCupServices(GetIt sl) {
   );
 
   // BLoC/Cubit
-  sl.registerFactory(() => MatchListCubit(
+  // MatchListCubit holds the global tournament schedule — same data for
+  // every consumer. Registered as a lazy singleton so that secondary
+  // screens (team detail, etc.) pulling it from DI get the populated
+  // instance the main navigation already initialized, instead of a
+  // fresh cubit stuck in MatchListState.initial() (isLoading: true)
+  // with nothing to load it.
+  sl.registerLazySingleton(() => MatchListCubit(
     matchRepository: sl(),
   ));
 
