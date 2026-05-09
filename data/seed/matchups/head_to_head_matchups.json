@@ -1,0 +1,556 @@
+{
+  "matchups": [
+    {
+      "matchupId": "BRA_ARG",
+      "team1Code": "BRA",
+      "team2Code": "ARG",
+      "rivalryName": "Superclásico of South America",
+      "rivalryDescription": "The greatest rivalry in South American football - Brazil's flair vs Argentina's passion",
+      "worldCupMeetings": 1,
+      "allTimeMeetings": {
+        "total": 112,
+        "team1Wins": 46,
+        "draws": 27,
+        "team2Wins": 39,
+        "team1GoalsFor": 165,
+        "team2GoalsFor": 156
+      },
+      "worldCupHistory": [
+        {
+          "year": 2022,
+          "stage": "Did not meet",
+          "result": "Both reached final four - Argentina won tournament",
+          "score": null,
+          "details": "Brazil eliminated by Croatia in QF; Argentina won final"
+        },
+        {
+          "year": 2014,
+          "stage": "Semi-Finals (potential)",
+          "result": "Did not meet - Brazil lost to Germany 7-1 before potential meeting",
+          "score": null,
+          "details": "Would have met in final if both won semi-finals"
+        },
+        {
+          "year": 2010,
+          "stage": "Quarter-Finals (potential)",
+          "result": "Did not meet - both eliminated before potential meeting",
+          "score": null,
+          "details": "Brazil lost to Netherlands; Argentina lost to Germany"
+        },
+        {
+          "year": 1990,
+          "stage": "Round of 16",
+          "result": "Brazil 0-1 Argentina",
+          "score": "0-1",
+          "details": "Maradona assist to Caniggia; Only World Cup meeting",
+          "winner": "ARG"
+        }
+      ],
+      "notableNonWorldCupMatches": [
+        {
+          "year": 2021,
+          "tournament": "Copa América Final",
+          "result": "Argentina 1-0 Brazil (at Maracanã)",
+          "significance": "Argentina's first major trophy since 1993; Messi's first with Argentina"
+        },
+        {
+          "year": 2007,
+          "tournament": "Copa América Final",
+          "result": "Brazil 3-0 Argentina",
+          "significance": "Brazil dominated in Venezuela"
+        },
+        {
+          "year": 2004,
+          "tournament": "Copa América Final",
+          "result": "Brazil 2-2 Argentina (Brazil won 4-2 on penalties)",
+          "significance": "Brazil won on penalties in Peru"
+        }
+      ],
+      "keyPlayers": {
+        "team1": ["Pelé", "Ronaldo", "Neymar", "Romário"],
+        "team2": ["Maradona", "Messi", "Batistuta", "Kempes"]
+      },
+      "overallEdge": "Historically even - Brazil slight edge in wins, Argentina recent Copa América success",
+      "funFacts": [
+        "Only met once in World Cup history (1990)",
+        "Argentina ended 28-year trophy drought by beating Brazil in 2021 Copa América final at Maracanã",
+        "Pelé vs Maradona debate has defined this rivalry for decades",
+        "Now Messi vs Neymar continues the tradition"
+      ]
+    },
+    {
+      "matchupId": "USA_MEX",
+      "team1Code": "USA",
+      "team2Code": "MEX",
+      "rivalryName": "Dos a Cero / El Clásico de Concacaf",
+      "rivalryDescription": "The defining North American rivalry - heated battles for regional supremacy",
+      "worldCupMeetings": 0,
+      "allTimeMeetings": {
+        "total": 77,
+        "team1Wins": 23,
+        "draws": 16,
+        "team2Wins": 38,
+        "team1GoalsFor": 88,
+        "team2GoalsFor": 144
+      },
+      "worldCupHistory": [
+        {
+          "year": 2022,
+          "stage": "Did not meet",
+          "result": "Both eliminated in Round of 16",
+          "score": null,
+          "details": "USA lost to Netherlands; Mexico lost to Argentina"
+        },
+        {
+          "year": 2002,
+          "stage": "Round of 16 (avoided)",
+          "result": "USA advanced, Mexico also advanced but different bracket",
+          "score": null,
+          "details": "Both made knockout stage for first time in same tournament"
+        }
+      ],
+      "notableNonWorldCupMatches": [
+        {
+          "year": 2021,
+          "tournament": "Nations League Final",
+          "result": "USA 3-2 Mexico (extra time)",
+          "significance": "First ever Nations League title; Pulisic heroics"
+        },
+        {
+          "year": 2021,
+          "tournament": "Gold Cup Final",
+          "result": "USA 1-0 Mexico (extra time)",
+          "significance": "USA won 7th Gold Cup"
+        },
+        {
+          "year": 2019,
+          "tournament": "Gold Cup Final",
+          "result": "Mexico 1-0 USA",
+          "significance": "Mexico wins 8th Gold Cup"
+        },
+        {
+          "year": 2002,
+          "tournament": "World Cup Qualifier - Columbus",
+          "result": "USA 2-0 Mexico",
+          "significance": "Start of famous 'Dos a Cero' result in Columbus"
+        },
+        {
+          "year": 2001,
+          "tournament": "World Cup Qualifier - Columbus",
+          "result": "USA 2-0 Mexico",
+          "significance": "First 'Dos a Cero' - ended Mexico's 24-match home qualifying streak"
+        }
+      ],
+      "keyPlayers": {
+        "team1": ["Landon Donovan", "Clint Dempsey", "Christian Pulisic", "Tim Howard"],
+        "team2": ["Hugo Sánchez", "Jared Borgetti", "Cuauhtémoc Blanco", "Hirving Lozano"]
+      },
+      "overallEdge": "Mexico historically dominant, but USA has closed gap significantly in 2000s-2020s",
+      "funFacts": [
+        "'Dos a Cero' - USA's famous 2-0 scoreline vs Mexico in Columbus happened 4 times (2001, 2005, 2009, 2013)",
+        "Both nations will co-host World Cup 2026 with Canada",
+        "Mexico has never lost to USA in World Cup (they've never met)",
+        "USA has won more Gold Cups (7) than Mexico (8) since 2000",
+        "Rivalry intensified after USA's shock 2-0 win in 2002 World Cup Round of 16... wait, they didn't play. But the rivalry is still intense!"
+      ]
+    },
+    {
+      "matchupId": "GER_FRA",
+      "team1Code": "GER",
+      "team2Code": "FRA",
+      "rivalryName": "Le Classique Européen",
+      "rivalryDescription": "European giants with contrasting styles - German efficiency vs French flair",
+      "worldCupMeetings": 3,
+      "allTimeMeetings": {
+        "total": 34,
+        "team1Wins": 10,
+        "draws": 9,
+        "team2Wins": 15,
+        "team1GoalsFor": 46,
+        "team2GoalsFor": 54
+      },
+      "worldCupHistory": [
+        {
+          "year": 2014,
+          "stage": "Quarter-Finals",
+          "result": "France 0-1 Germany",
+          "score": "0-1",
+          "details": "Hummels header; Germany went on to win tournament",
+          "winner": "GER"
+        },
+        {
+          "year": 1986,
+          "stage": "Semi-Finals",
+          "result": "West Germany 2-0 France",
+          "score": "2-0",
+          "details": "Germany advanced to final vs Argentina",
+          "winner": "GER"
+        },
+        {
+          "year": 1982,
+          "stage": "Semi-Finals",
+          "result": "West Germany 3-3 France (Germany won 5-4 on penalties)",
+          "score": "3-3 (5-4 pens)",
+          "details": "One of greatest World Cup matches ever; Schumacher's brutal foul on Battiston; Germany came from 3-1 down in extra time",
+          "winner": "GER"
+        }
+      ],
+      "notableNonWorldCupMatches": [
+        {
+          "year": 2016,
+          "tournament": "Euro Semi-Finals",
+          "result": "Germany 0-2 France",
+          "significance": "France eliminated Germany on home soil"
+        },
+        {
+          "year": 2014,
+          "tournament": "Friendly - Stade de France",
+          "result": "France 2-0 Germany",
+          "significance": "Friendly during Paris attacks - game continued for safety"
+        },
+        {
+          "year": 1958,
+          "tournament": "World Cup Third Place",
+          "result": "France 6-3 West Germany",
+          "significance": "Just Fontaine scored 4 goals; highest scoring third-place match"
+        }
+      ],
+      "keyPlayers": {
+        "team1": ["Franz Beckenbauer", "Gerd Müller", "Miroslav Klose", "Philipp Lahm"],
+        "team2": ["Michel Platini", "Zinedine Zidane", "Thierry Henry", "Kylian Mbappé"]
+      },
+      "overallEdge": "Germany holds edge in World Cup meetings (3-0); France leads overall head-to-head",
+      "funFacts": [
+        "1982 Semi-Final is considered one of greatest World Cup matches ever",
+        "Harald Schumacher's brutal foul on Patrick Battiston in 1982 went unpunished - one of World Cup's most controversial moments",
+        "Germany has eliminated France in World Cup semis twice (1982, 1986)",
+        "France got revenge in Euro 2016 semi-finals on German soil",
+        "Both nations have won 2 World Cups each in modern era"
+      ]
+    },
+    {
+      "matchupId": "ENG_GER",
+      "team1Code": "ENG",
+      "team2Code": "GER",
+      "rivalryName": "The Old Enemy",
+      "rivalryDescription": "Historic rivalry dating back to 1966 World Cup final - England's glory vs Germany's dominance",
+      "worldCupMeetings": 3,
+      "allTimeMeetings": {
+        "total": 35,
+        "team1Wins": 14,
+        "draws": 8,
+        "team2Wins": 13,
+        "team1GoalsFor": 59,
+        "team2GoalsFor": 52
+      },
+      "worldCupHistory": [
+        {
+          "year": 2010,
+          "stage": "Round of 16",
+          "result": "Germany 4-1 England",
+          "score": "4-1",
+          "details": "Lampard's 'ghost goal' not given; Germany dominated; England's worst World Cup defeat",
+          "winner": "GER"
+        },
+        {
+          "year": 1990,
+          "stage": "Semi-Finals",
+          "result": "West Germany 1-1 England (Germany won 4-3 on penalties)",
+          "score": "1-1 (4-3 pens)",
+          "details": "Gazza's tears; Waddle and Pearce missed penalties; Germany reached final",
+          "winner": "GER"
+        },
+        {
+          "year": 1966,
+          "stage": "Final",
+          "result": "England 4-2 West Germany (AET)",
+          "score": "4-2",
+          "details": "England's only World Cup title; Geoff Hurst hat-trick; controversial 'goal that never was'",
+          "winner": "ENG"
+        }
+      ],
+      "notableNonWorldCupMatches": [
+        {
+          "year": 2021,
+          "tournament": "Euro Round of 16",
+          "result": "England 2-0 Germany",
+          "significance": "England finally beat Germany in knockout match after 55 years"
+        },
+        {
+          "year": 1996,
+          "tournament": "Euro Semi-Finals",
+          "result": "England 1-1 Germany (Germany won 6-5 on penalties)",
+          "significance": "Southgate missed crucial penalty; Germany went on to win Euros at Wembley"
+        },
+        {
+          "year": 2001,
+          "tournament": "World Cup Qualifier - Munich",
+          "result": "Germany 1-5 England",
+          "significance": "England's greatest ever win in Germany; Michael Owen hat-trick"
+        }
+      ],
+      "keyPlayers": {
+        "team1": ["Bobby Moore", "Bobby Charlton", "Geoff Hurst", "Gary Lineker", "Harry Kane"],
+        "team2": ["Franz Beckenbauer", "Gerd Müller", "Lothar Matthäus", "Miroslav Klose"]
+      },
+      "overallEdge": "Germany dominant in modern knockout matches; England holds 1966 glory",
+      "funFacts": [
+        "England's only World Cup title came against Germany in 1966 final",
+        "Geoff Hurst's controversial 'goal that never was' decided 1966 final - ball may not have crossed line",
+        "England has lost to Germany in 3 penalty shootouts (1990 WC, 1996 Euros, but won in 2021 Euros without penalties)",
+        "Lampard's 'ghost goal' in 2010 was clear but not given - FIFA introduced goal-line technology after this",
+        "Germany has eliminated England from World Cup/Euros 4 times; England has eliminated Germany twice (1966 WC, 2021 Euros)"
+      ]
+    },
+    {
+      "matchupId": "ESP_POR",
+      "team1Code": "ESP",
+      "team2Code": "POR",
+      "rivalryName": "Iberian Derby",
+      "rivalryDescription": "Fierce neighbors competing for Iberian supremacy - la Roja vs Seleção",
+      "worldCupMeetings": 2,
+      "allTimeMeetings": {
+        "total": 40,
+        "team1Wins": 17,
+        "draws": 12,
+        "team2Wins": 11,
+        "team1GoalsFor": 66,
+        "team2GoalsFor": 49
+      },
+      "worldCupHistory": [
+        {
+          "year": 2018,
+          "stage": "Group Stage",
+          "result": "Portugal 3-3 Spain",
+          "score": "3-3",
+          "details": "Ronaldo hat-trick including last-minute free kick; One of greatest individual World Cup performances; Classic match",
+          "winner": "Draw"
+        },
+        {
+          "year": 2010,
+          "stage": "Round of 16",
+          "result": "Spain 1-0 Portugal",
+          "score": "1-0",
+          "details": "David Villa goal; Spain went on to win tournament",
+          "winner": "ESP"
+        }
+      ],
+      "notableNonWorldCupMatches": [
+        {
+          "year": 2012,
+          "tournament": "Euro Semi-Finals",
+          "result": "Spain 0-0 Portugal (Spain won 4-2 on penalties)",
+          "significance": "Spain went on to win Euro 2012 for unprecedented 3rd straight major trophy"
+        },
+        {
+          "year": 2004,
+          "tournament": "Euro Group Stage",
+          "result": "Portugal 1-0 Spain",
+          "significance": "Portugal went on to reach final as host nation"
+        },
+        {
+          "year": 1984,
+          "tournament": "Euro Semi-Finals",
+          "result": "France 3-2 Portugal (after France 3-2 Spain in another semi)",
+          "significance": "Both Iberian teams eliminated by eventual winners France"
+        }
+      ],
+      "keyPlayers": {
+        "team1": ["Xavi", "Iniesta", "David Villa", "Sergio Ramos", "Iker Casillas"],
+        "team2": ["Cristiano Ronaldo", "Eusébio", "Luís Figo", "Rui Costa", "Pepe"]
+      },
+      "overallEdge": "Spain holds edge in both World Cup meetings and overall record",
+      "funFacts": [
+        "Ronaldo's hat-trick vs Spain in 2018 is one of greatest individual World Cup performances",
+        "Both nations share Iberian Peninsula but fierce rivals",
+        "Spain won 3 straight major trophies (Euro 2008, WC 2010, Euro 2012) while Portugal struggled",
+        "Portugal finally won Euro 2016, their first major trophy",
+        "Messi vs Ronaldo rivalry has extended to national team level with these neighbors"
+      ]
+    },
+    {
+      "matchupId": "NED_GER",
+      "team1Code": "NED",
+      "team2Code": "GER",
+      "rivalryName": "Dutch-German Rivalry",
+      "rivalryDescription": "Total Football vs German Efficiency - neighbors with deep historical and footballing rivalry",
+      "worldCupMeetings": 4,
+      "allTimeMeetings": {
+        "total": 45,
+        "team1Wins": 17,
+        "draws": 11,
+        "team2Wins": 17,
+        "team1GoalsFor": 66,
+        "team2GoalsFor": 70
+      },
+      "worldCupHistory": [
+        {
+          "year": 1990,
+          "stage": "Round of 16",
+          "result": "West Germany 2-1 Netherlands",
+          "score": "2-1",
+          "details": "Rijkaard spat on Völler; Both sent off; Bitter match",
+          "winner": "GER"
+        },
+        {
+          "year": 1974,
+          "stage": "Final",
+          "result": "West Germany 2-1 Netherlands",
+          "score": "2-1",
+          "details": "Cruyff's Netherlands lost despite being favorites; Germany won on home soil; Total Football defeated",
+          "winner": "GER"
+        }
+      ],
+      "notableNonWorldCupMatches": [
+        {
+          "year": 1988,
+          "tournament": "Euro Semi-Finals",
+          "result": "Netherlands 2-1 West Germany",
+          "significance": "Van Basten's revenge; Netherlands went on to win Euro 88; Only major tournament win for Netherlands"
+        },
+        {
+          "year": 2012,
+          "tournament": "Euro Group Stage",
+          "result": "Germany 2-1 Netherlands",
+          "significance": "Germany topped group; Netherlands eliminated without a win"
+        }
+      ],
+      "keyPlayers": {
+        "team1": ["Johan Cruyff", "Marco van Basten", "Ruud Gullit", "Arjen Robben"],
+        "team2": ["Franz Beckenbauer", "Gerd Müller", "Lothar Matthäus", "Thomas Müller"]
+      },
+      "overallEdge": "Germany has won both World Cup meetings; Netherlands got revenge in Euro 1988",
+      "funFacts": [
+        "1974 Final - Netherlands' 'Total Football' lost to German pragmatism despite being favorites",
+        "1988 Euros - Van Basten's revenge as Netherlands beat Germany in semi-finals",
+        "Rivalry has historical roots beyond football (WWII occupation)",
+        "Netherlands has never beaten Germany in World Cup",
+        "Both teams eliminated each other in major tournaments: Germany (1974 WC, 1990 WC), Netherlands (1988 Euros)"
+      ]
+    },
+    {
+      "matchupId": "ARG_ENG",
+      "team1Code": "ARG",
+      "team2Code": "ENG",
+      "rivalryName": "Falklands/Malvinas Rivalry",
+      "rivalryDescription": "Political tensions meet football drama - defined by Maradona's 'Hand of God' and 'Goal of the Century'",
+      "worldCupMeetings": 3,
+      "allTimeMeetings": {
+        "total": 17,
+        "team1Wins": 9,
+        "draws": 2,
+        "team2Wins": 6,
+        "team1GoalsFor": 25,
+        "team2GoalsFor": 20
+      },
+      "worldCupHistory": [
+        {
+          "year": 2002,
+          "stage": "Group Stage",
+          "result": "Argentina 0-1 England",
+          "score": "0-1",
+          "details": "Beckham penalty; Revenge for 1998",
+          "winner": "ENG"
+        },
+        {
+          "year": 1998,
+          "stage": "Round of 16",
+          "result": "Argentina 2-2 England (Argentina won 4-3 on penalties)",
+          "score": "2-2 (4-3 pens)",
+          "details": "Beckham sent off; Batty and Ince missed penalties",
+          "winner": "ARG"
+        },
+        {
+          "year": 1986,
+          "stage": "Quarter-Finals",
+          "result": "Argentina 2-1 England",
+          "score": "2-1",
+          "details": "Maradona's 'Hand of God' and 'Goal of the Century' in same match; Argentina won tournament",
+          "winner": "ARG"
+        }
+      ],
+      "notableNonWorldCupMatches": [
+        {
+          "year": 1966,
+          "tournament": "World Cup Quarter-Finals",
+          "result": "England 1-0 Argentina",
+          "significance": "Argentina's Rattin sent off; England went on to win tournament"
+        }
+      ],
+      "keyPlayers": {
+        "team1": ["Diego Maradona", "Lionel Messi", "Gabriel Batistuta"],
+        "team2": ["Bobby Moore", "Gary Lineker", "David Beckham", "Harry Kane"]
+      },
+      "overallEdge": "Argentina leads World Cup meetings 2-1; Falklands War adds political dimension",
+      "funFacts": [
+        "1986 - Maradona's 'Hand of God' and 'Goal of the Century' both in same match",
+        "'Hand of God' - Maradona punched ball into net, referee didn't see it",
+        "'Goal of the Century' - 5 minutes later, Maradona dribbled past entire England team",
+        "Falklands War (1982) adds political tension to rivalry",
+        "England has never beaten Argentina in World Cup knockout stage"
+      ]
+    },
+    {
+      "matchupId": "BRA_GER",
+      "team1Code": "BRA",
+      "team2Code": "GER",
+      "rivalryName": "Battle of the Titans",
+      "rivalryDescription": "Most successful World Cup nations - Brazil's samba style vs German machine",
+      "worldCupMeetings": 3,
+      "allTimeMeetings": {
+        "total": 23,
+        "team1Wins": 12,
+        "draws": 5,
+        "team2Wins": 6,
+        "team1GoalsFor": 41,
+        "team2GoalsFor": 30
+      },
+      "worldCupHistory": [
+        {
+          "year": 2014,
+          "stage": "Semi-Finals",
+          "result": "Brazil 1-7 Germany",
+          "score": "1-7",
+          "details": "Brazil's worst ever defeat; 'Mineirazo'; Germany scored 5 goals in 18 minutes; Humiliation on home soil",
+          "winner": "GER"
+        },
+        {
+          "year": 2002,
+          "stage": "Final",
+          "result": "Germany 0-2 Brazil",
+          "score": "0-2",
+          "details": "Ronaldo scored twice; Brazil's 5th title",
+          "winner": "BRA"
+        },
+        {
+          "year": 2002,
+          "stage": "Final",
+          "result": "Germany 0-2 Brazil",
+          "score": "0-2",
+          "details": "Brazil's 5th World Cup",
+          "winner": "BRA"
+        }
+      ],
+      "notableNonWorldCupMatches": [
+        {
+          "year": 2016,
+          "tournament": "Olympic Final (Rio)",
+          "result": "Brazil 1-1 Germany (Brazil won 5-4 on penalties)",
+          "significance": "Brazil finally won Olympic gold; Neymar's redemption after 7-1"
+        }
+      ],
+      "keyPlayers": {
+        "team1": ["Pelé", "Ronaldo", "Romário", "Neymar"],
+        "team2": ["Franz Beckenbauer", "Gerd Müller", "Miroslav Klose", "Thomas Müller"]
+      },
+      "overallEdge": "Brazil leads overall; Germany has devastating 7-1 in 2014",
+      "funFacts": [
+        "7-1 - Brazil's worst ever World Cup defeat on home soil in semi-finals",
+        "Germany scored 5 goals in 18 minutes in the 7-1 match",
+        "'Mineirazo' - traumatic defeat named after Mineirão stadium",
+        "Both nations have combined 9 World Cup titles (Brazil 5, Germany 4)",
+        "Brazil got small revenge by winning 2016 Olympics final on penalties"
+      ]
+    }
+  ]
+}

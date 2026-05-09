@@ -1,0 +1,2263 @@
+{
+  "managers": [
+    {
+      "managerId": "bra_dorival_junior",
+      "fifaCode": "BRA",
+      "firstName": "Dorival",
+      "lastName": "Júnior",
+      "fullName": "Dorival Silvestre Júnior",
+      "commonName": "Dorival Júnior",
+      "dateOfBirth": "1962-04-25",
+      "age": 63,
+      "nationality": "Brazil",
+      "photoUrl": "assets/managers/dorival_junior.png",
+      "currentTeam": "Brazil National Team",
+      "appointedDate": "2024-01-08",
+      "previousClubs": [
+        "São Paulo",
+        "Flamengo",
+        "Athletico Paranaense",
+        "Santos",
+        "Palmeiras"
+      ],
+      "managerialCareerStart": 1997,
+      "yearsOfExperience": 29,
+      "stats": {
+        "matchesManaged": 850,
+        "wins": 450,
+        "draws": 210,
+        "losses": 190,
+        "winPercentage": 52.9,
+        "titlesWon": 12
+      },
+      "honors": [
+        "Copa Libertadores (2023 - Flamengo)",
+        "Copa do Brasil (2022, 2024 - Flamengo, São Paulo)",
+        "Brasileirão (2023 - Flamengo)",
+        "Copa América (TBD)"
+      ],
+      "tacticalStyle": "4-2-3-1 / 4-3-3",
+      "philosophy": "Attacking football with defensive balance; values Brazilian flair",
+      "strengths": ["Player management", "Tactical flexibility", "Brazilian league expertise", "Tournament experience"],
+      "weaknesses": ["International experience limited", "Pressure of expectations", "Young squad management"],
+      "keyMoment": "2023 Copa Libertadores with Flamengo - cemented elite status",
+      "famousQuote": "Brazil must play with joy, but also with intelligence",
+      "managerStyle": "Experienced club manager stepping up to national team",
+      "worldCup2026Prediction": "Pressure to deliver Brazil's 6th World Cup at 63",
+      "controversies": [],
+      "socialMedia": {
+        "instagram": "@dorivaljr",
+        "twitter": "@DorivalJunior",
+        "followers": 850000
+      },
+      "trivia": [
+        "Appointed Brazil manager in January 2024",
+        "Won Copa Libertadores with Flamengo in 2023",
+        "First World Cup as manager at 63 years old",
+        "Known for developing young Brazilian talent"
+      ]
+    },
+    {
+      "managerId": "arg_lionel_scaloni",
+      "fifaCode": "ARG",
+      "firstName": "Lionel",
+      "lastName": "Scaloni",
+      "fullName": "Lionel Sebastián Scaloni",
+      "commonName": "Lionel Scaloni",
+      "dateOfBirth": "1978-05-16",
+      "age": 47,
+      "nationality": "Argentina",
+      "photoUrl": "assets/managers/scaloni.png",
+      "currentTeam": "Argentina National Team",
+      "appointedDate": "2018-08-03",
+      "previousClubs": [],
+      "managerialCareerStart": 2016,
+      "yearsOfExperience": 10,
+      "stats": {
+        "matchesManaged": 75,
+        "wins": 54,
+        "draws": 13,
+        "losses": 8,
+        "winPercentage": 72.0,
+        "titlesWon": 3
+      },
+      "honors": [
+        "FIFA World Cup (2022)",
+        "Copa América (2021, 2024)",
+        "Finalissima (2022)",
+        "FIFA Best Men's Coach (2023)"
+      ],
+      "tacticalStyle": "4-3-3 / 4-4-2",
+      "philosophy": "Team cohesion over individual stars; defensive solidity",
+      "strengths": ["Man-management", "Tournament specialist", "Messi relationship", "Defensive organization"],
+      "weaknesses": ["Limited club experience", "Young as manager", "Tactical predictability"],
+      "keyMoment": "2022 World Cup triumph - Argentina's first since 1986",
+      "famousQuote": "We are a group, a family. That's our strength",
+      "managerStyle": "Unexpected hero - defensive midfielder turned World Cup winner",
+      "worldCup2026Prediction": "Defending champions - can he repeat history?",
+      "controversies": [],
+      "socialMedia": {
+        "instagram": "@lioscaloni",
+        "twitter": "@lioscaloni",
+        "followers": 4200000
+      },
+      "trivia": [
+        "Won World Cup 2022 in only his 4th year as manager",
+        "Former Argentina player - 7 caps as right-back",
+        "Youngest manager to win World Cup since 1978",
+        "Led Argentina to 36-game unbeaten streak (2019-2022)"
+      ]
+    },
+    {
+      "managerId": "ger_julian_nagelsmann",
+      "fifaCode": "GER",
+      "firstName": "Julian",
+      "lastName": "Nagelsmann",
+      "fullName": "Julian Nagelsmann",
+      "commonName": "Nagelsmann",
+      "dateOfBirth": "1987-07-23",
+      "age": 38,
+      "nationality": "Germany",
+      "photoUrl": "assets/managers/nagelsmann.png",
+      "currentTeam": "Germany National Team",
+      "appointedDate": "2023-09-12",
+      "previousClubs": [
+        "Bayern Munich",
+        "RB Leipzig",
+        "Hoffenheim"
+      ],
+      "managerialCareerStart": 2016,
+      "yearsOfExperience": 10,
+      "stats": {
+        "matchesManaged": 380,
+        "wins": 240,
+        "draws": 80,
+        "losses": 60,
+        "winPercentage": 63.2,
+        "titlesWon": 4
+      },
+      "honors": [
+        "Bundesliga (2022, 2023 - Bayern Munich)",
+        "DFB-Pokal (2023 - Bayern Munich)",
+        "UEFA Nations League Quarterfinals (2024)"
+      ],
+      "tacticalStyle": "3-4-3 / 4-2-3-1 (very flexible)",
+      "philosophy": "High pressing, possession-based, positional flexibility",
+      "strengths": ["Tactical genius", "Modern methods", "Youth development", "Data analytics"],
+      "weaknesses": ["Big tournament inexperience", "Overthinking", "Player rotation"],
+      "keyMoment": "Reviving Germany after 2023 disaster - Euro 2024 hosts",
+      "famousQuote": "We want to dominate the game, not just defend our lead",
+      "managerStyle": "Youngest elite coach - tactical innovator",
+      "worldCup2026Prediction": "Germany's young tactician at 38 - Löw 2.0?",
+      "controversies": [],
+      "socialMedia": {
+        "instagram": "@j__nagelsmann",
+        "twitter": "@J_Nagelsmann",
+        "followers": 2800000
+      },
+      "trivia": [
+        "Youngest Bundesliga manager ever (Hoffenheim at 28)",
+        "€25M compensation to leave Bayern for Germany",
+        "Known for detailed tactical presentations",
+        "Playing career ended at 20 due to injury"
+      ]
+    },
+    {
+      "managerId": "fra_didier_deschamps",
+      "fifaCode": "FRA",
+      "firstName": "Didier",
+      "lastName": "Deschamps",
+      "fullName": "Didier Claude Deschamps",
+      "commonName": "Deschamps",
+      "dateOfBirth": "1968-10-15",
+      "age": 57,
+      "nationality": "France",
+      "photoUrl": "assets/managers/deschamps.png",
+      "currentTeam": "France National Team",
+      "appointedDate": "2012-07-08",
+      "previousClubs": [
+        "Marseille",
+        "Juventus",
+        "Monaco",
+        "Valencia"
+      ],
+      "managerialCareerStart": 2001,
+      "yearsOfExperience": 25,
+      "stats": {
+        "matchesManaged": 680,
+        "wins": 425,
+        "draws": 150,
+        "losses": 105,
+        "winPercentage": 62.5,
+        "titlesWon": 8
+      },
+      "honors": [
+        "FIFA World Cup (2018)",
+        "UEFA Nations League (2021)",
+        "Ligue 1 (2010 - Marseille)",
+        "FIFA World Cup Runner-up (2022)"
+      ],
+      "tacticalStyle": "4-2-3-1 / 4-3-3",
+      "philosophy": "Pragmatic, results-oriented, strong defense",
+      "strengths": ["Tournament experience", "Player management", "Defensive organization", "Big game mentality"],
+      "weaknesses": ["Conservative tactics", "Boring style", "Lack of flair"],
+      "keyMoment": "2018 World Cup victory - 3rd person to win as player & manager",
+      "famousQuote": "Trophies are won by teams, not individuals",
+      "managerStyle": "Pragmatic winner - won World Cup as player (1998) and manager (2018)",
+      "worldCup2026Prediction": "14 years in charge - final tournament at 57?",
+      "controversies": [
+        "Benzema exclusion saga",
+        "Conservative tactics criticism"
+      ],
+      "socialMedia": {
+        "instagram": "@didier_deschamps",
+        "twitter": "@FFF",
+        "followers": 1500000
+      },
+      "trivia": [
+        "Won World Cup 1998 as captain, 2018 as manager",
+        "France's most successful manager ever",
+        "14+ years as France manager (2012-2026)",
+        "Only 3rd person to win World Cup as player & manager"
+      ]
+    },
+    {
+      "managerId": "esp_luis_de_la_fuente",
+      "fifaCode": "ESP",
+      "firstName": "Luis",
+      "lastName": "de la Fuente",
+      "fullName": "Luis de la Fuente Castillo",
+      "commonName": "De la Fuente",
+      "dateOfBirth": "1961-06-21",
+      "age": 64,
+      "nationality": "Spain",
+      "photoUrl": "assets/managers/de_la_fuente.png",
+      "currentTeam": "Spain National Team",
+      "appointedDate": "2022-12-08",
+      "previousClubs": [
+        "Spain U21",
+        "Spain U19",
+        "Alavés",
+        "Athletic Bilbao B"
+      ],
+      "managerialCareerStart": 2011,
+      "yearsOfExperience": 15,
+      "stats": {
+        "matchesManaged": 420,
+        "wins": 280,
+        "draws": 85,
+        "losses": 55,
+        "winPercentage": 66.7,
+        "titlesWon": 5
+      },
+      "honors": [
+        "UEFA Euro (2024)",
+        "UEFA Nations League (2023)",
+        "UEFA U21 Euro (2019)",
+        "UEFA U19 Euro (2015)"
+      ],
+      "tacticalStyle": "4-3-3 (possession-based)",
+      "philosophy": "Tiki-taka evolution; youth development focus",
+      "strengths": ["Youth development", "Continuity with youth teams", "Modern possession play", "Tournament success"],
+      "weaknesses": ["Limited club experience", "Defensive fragility", "Rotation management"],
+      "keyMoment": "Euro 2024 triumph - Spain's 4th European Championship",
+      "famousQuote": "We want to dominate, to have the ball, to attack",
+      "managerStyle": "Youth system graduate - nurtured golden generation",
+      "worldCup2026Prediction": "Euro 2024 winners at 64 - can he add World Cup?",
+      "controversies": [],
+      "socialMedia": {
+        "instagram": "@luis_delaFuente",
+        "twitter": "@LUISDELAFUENTE",
+        "followers": 950000
+      },
+      "trivia": [
+        "Won Euro 2024 - Spain's first major trophy since 2012",
+        "Managed Spain at U19, U21, and senior level",
+        "Developed Lamine Yamal, Gavi, Pedri from youth",
+        "Former left-back - 1 cap for Spain"
+      ]
+    },
+    {
+      "managerId": "eng_gareth_southgate",
+      "fifaCode": "ENG",
+      "firstName": "Gareth",
+      "lastName": "Southgate",
+      "fullName": "Gareth Southgate",
+      "commonName": "Southgate",
+      "dateOfBirth": "1970-09-03",
+      "age": 55,
+      "nationality": "England",
+      "photoUrl": "assets/managers/southgate.png",
+      "currentTeam": "England National Team",
+      "appointedDate": "2016-09-27",
+      "previousClubs": [
+        "England U21",
+        "Middlesbrough"
+      ],
+      "managerialCareerStart": 2006,
+      "yearsOfExperience": 20,
+      "stats": {
+        "matchesManaged": 550,
+        "wins": 340,
+        "draws": 120,
+        "losses": 90,
+        "winPercentage": 61.8,
+        "titlesWon": 0
+      },
+      "honors": [
+        "FIFA World Cup Semi-Finals (2018)",
+        "UEFA Euro Runner-up (2020)",
+        "UEFA Euro Runner-up (2024)"
+      ],
+      "tacticalStyle": "3-4-3 / 4-2-3-1",
+      "philosophy": "Defensive solidity, set-pieces, youth integration",
+      "strengths": ["Player relationships", "Tournament consistency", "Youth development", "Set-piece coaching"],
+      "weaknesses": ["Conservative tactics", "Final hurdle", "In-game management", "Never won a trophy"],
+      "keyMoment": "2018 World Cup semi-final - England's best since 1966",
+      "famousQuote": "It's coming home... eventually",
+      "managerStyle": "The nearly man - 3 finals, 0 trophies",
+      "worldCup2026Prediction": "10 years in charge - last chance at 55?",
+      "controversies": [
+        "Three final losses (Euro 2020, 2024, Nations League)",
+        "Conservative tactics with attacking talent"
+      ],
+      "socialMedia": {
+        "instagram": "@garethsouthgate",
+        "twitter": "@GarethSouthgate",
+        "followers": 1800000
+      },
+      "trivia": [
+        "Famous for missing penalty vs Germany (Euro 1996)",
+        "Three final losses as manager (0-3 record)",
+        "England's 2nd most successful manager after Alf Ramsey",
+        "Known for waistcoat fashion at 2018 World Cup"
+      ]
+    },
+    {
+      "managerId": "ita_luciano_spalletti",
+      "fifaCode": "ITA",
+      "firstName": "Luciano",
+      "lastName": "Spalletti",
+      "fullName": "Luciano Spalletti",
+      "commonName": "Spalletti",
+      "dateOfBirth": "1959-03-07",
+      "age": 66,
+      "nationality": "Italy",
+      "photoUrl": "assets/managers/spalletti.png",
+      "currentTeam": "Italy National Team",
+      "appointedDate": "2023-09-07",
+      "previousClubs": [
+        "Napoli",
+        "Inter Milan",
+        "Roma",
+        "Zenit",
+        "Udinese"
+      ],
+      "managerialCareerStart": 1995,
+      "yearsOfExperience": 31,
+      "stats": {
+        "matchesManaged": 1100,
+        "wins": 560,
+        "draws": 290,
+        "losses": 250,
+        "winPercentage": 50.9,
+        "titlesWon": 8
+      },
+      "honors": [
+        "Serie A (2023 - Napoli)",
+        "Russian Premier League (2010 - Zenit)",
+        "Coppa Italia (2007 - Roma)",
+        "Serie A Coach of the Year (2023)"
+      ],
+      "tacticalStyle": "4-3-3 / 4-2-3-1",
+      "philosophy": "Attacking football, high press, tactical discipline",
+      "strengths": ["Tactical expertise", "Serie A mastery", "Attacking philosophy", "Player development"],
+      "weaknesses": ["Temperamental", "National team inexperience", "Defensive fragility"],
+      "keyMoment": "2023 Scudetto with Napoli - ended 33-year drought",
+      "famousQuote": "Beautiful football is the only way to win",
+      "managerStyle": "Fiery tactician - historic Napoli triumph",
+      "worldCup2026Prediction": "Can he revive Italy after Euro 2024 disappointment?",
+      "controversies": [
+        "Fiery temperament - multiple touchline incidents",
+        "Left Napoli immediately after title"
+      ],
+      "socialMedia": {
+        "instagram": "@lucianospalletti",
+        "twitter": "@LucianoSpalletti",
+        "followers": 1200000
+      },
+      "trivia": [
+        "Won Napoli's first Scudetto in 33 years (2023)",
+        "Known for fiery touchline antics",
+        "30+ years of managerial experience",
+        "Left Napoli to take Italy job after title win"
+      ]
+    },
+    {
+      "managerId": "uru_marcelo_bielsa",
+      "fifaCode": "URU",
+      "firstName": "Marcelo",
+      "lastName": "Bielsa",
+      "fullName": "Marcelo Alberto Bielsa Caldera",
+      "commonName": "Bielsa",
+      "dateOfBirth": "1955-07-21",
+      "age": 70,
+      "nationality": "Argentina",
+      "photoUrl": "assets/managers/bielsa.png",
+      "currentTeam": "Uruguay National Team",
+      "appointedDate": "2023-05-15",
+      "previousClubs": [
+        "Leeds United",
+        "Lille",
+        "Marseille",
+        "Athletic Bilbao",
+        "Chile",
+        "Argentina"
+      ],
+      "managerialCareerStart": 1990,
+      "yearsOfExperience": 36,
+      "stats": {
+        "matchesManaged": 1250,
+        "wins": 620,
+        "draws": 310,
+        "losses": 320,
+        "winPercentage": 49.6,
+        "titlesWon": 9
+      },
+      "honors": [
+        "Copa América (2024 - Uruguay)",
+        "Olympic Gold (2004 - Argentina)",
+        "Copa América (2015, 2016 - Chile runner-up)",
+        "Championship (2020 - Leeds promotion)"
+      ],
+      "tacticalStyle": "3-3-1-3 (man-marking)",
+      "philosophy": "Intense pressing, man-marking, extreme fitness demands",
+      "strengths": ["Tactical innovation", "Player development", "Legendary status", "Pressing system"],
+      "weaknesses": ["Burnout risk", "Inflexibility", "Age (70)", "No major club trophies"],
+      "keyMoment": "2024 Copa América with Uruguay - redemption at 69",
+      "famousQuote": "I prefer a magnificent failure to a mediocre success",
+      "managerStyle": "El Loco - football philosopher and tactical revolutionary",
+      "worldCup2026Prediction": "Uruguay's mad genius at 70 - final World Cup",
+      "controversies": [
+        "Extreme training methods",
+        "Sudden departures from clubs"
+      ],
+      "socialMedia": {
+        "instagram": "",
+        "twitter": "",
+        "followers": 0
+      },
+      "trivia": [
+        "Guardiola's biggest influence - 'best coach ever'",
+        "Won Copa América 2024 with Uruguay at 69",
+        "Famous for watching matches from a bucket",
+        "Turned down Barcelona multiple times",
+        "Known as 'El Loco' (The Madman)"
+      ]
+    },
+    {
+      "managerId": "ned_ronald_koeman",
+      "fifaCode": "NED",
+      "firstName": "Ronald",
+      "lastName": "Koeman",
+      "fullName": "Ronald Koeman",
+      "commonName": "Koeman",
+      "dateOfBirth": "1963-03-21",
+      "age": 62,
+      "nationality": "Netherlands",
+      "photoUrl": "assets/managers/koeman.png",
+      "currentTeam": "Netherlands National Team",
+      "appointedDate": "2023-01-10",
+      "previousClubs": [
+        "Barcelona",
+        "Netherlands (2018-2020)",
+        "Everton",
+        "Southampton",
+        "Valencia",
+        "PSV"
+      ],
+      "managerialCareerStart": 2001,
+      "yearsOfExperience": 25,
+      "stats": {
+        "matchesManaged": 950,
+        "wins": 490,
+        "draws": 240,
+        "losses": 220,
+        "winPercentage": 51.6,
+        "titlesWon": 7
+      },
+      "honors": [
+        "Eredivisie (2005, 2006, 2007, 2008 - PSV, Ajax)",
+        "Copa del Rey (2021 - Barcelona)"
+      ],
+      "tacticalStyle": "4-3-3 / 3-5-2",
+      "philosophy": "Dutch Total Football principles, possession-based",
+      "strengths": ["Dutch football legacy", "Tactical knowledge", "Player respect", "National team experience"],
+      "weaknesses": ["Club management mixed", "Defensive issues", "Man-management"],
+      "keyMoment": "Netherlands legend - 1988 Euro winner as player",
+      "famousQuote": "We play the Dutch way - attacking, beautiful football",
+      "managerStyle": "Dutch legend returning for redemption",
+      "worldCup2026Prediction": "2nd stint as Netherlands boss - can he win it?",
+      "controversies": [
+        "Barcelona disaster (2020-2021)",
+        "First Netherlands stint ended poorly"
+      ],
+      "socialMedia": {
+        "instagram": "@ronaldkoeman",
+        "twitter": "@RonaldKoeman",
+        "followers": 2400000
+      },
+      "trivia": [
+        "Barcelona legend - scored 1992 Champions League winner",
+        "Euro 1988 winner with Netherlands",
+        "Managed Netherlands twice (2018-2020, 2023-present)",
+        "Known for blunt, direct communication style"
+      ]
+    },
+    {
+      "managerId": "por_roberto_martinez",
+      "fifaCode": "POR",
+      "firstName": "Roberto",
+      "lastName": "Martínez",
+      "fullName": "Roberto Martínez Montoliu",
+      "commonName": "Roberto Martínez",
+      "dateOfBirth": "1973-07-13",
+      "age": 52,
+      "nationality": "Spain",
+      "photoUrl": "assets/managers/roberto_martinez.png",
+      "currentTeam": "Portugal National Team",
+      "appointedDate": "2023-01-09",
+      "previousClubs": [
+        "Belgium",
+        "Everton",
+        "Wigan Athletic",
+        "Swansea"
+      ],
+      "managerialCareerStart": 2007,
+      "yearsOfExperience": 19,
+      "stats": {
+        "matchesManaged": 720,
+        "wins": 410,
+        "draws": 180,
+        "losses": 130,
+        "winPercentage": 56.9,
+        "titlesWon": 2
+      },
+      "honors": [
+        "FA Cup (2013 - Wigan)",
+        "FIFA World Cup 3rd Place (2018 - Belgium)"
+      ],
+      "tacticalStyle": "4-3-3 / 3-4-3",
+      "philosophy": "Possession-based, attacking football, player freedom",
+      "strengths": ["Tactical flexibility", "Player management", "Attacking football", "Tournament experience"],
+      "weaknesses": ["Defensive organization", "Big game mentality", "Never won major trophy"],
+      "keyMoment": "Belgium's Golden Generation - 3rd place 2018",
+      "famousQuote": "We want to entertain and win with style",
+      "managerStyle": "Attack-minded Spaniard managing Portugal stars",
+      "worldCup2026Prediction": "Ronaldo's final dance - can Martínez deliver?",
+      "controversies": [
+        "Belgium 2022 WC disaster",
+        "Criticized for not winning with Belgium's golden generation"
+      ],
+      "socialMedia": {
+        "instagram": "@robertomartinezrosa",
+        "twitter": "@rogermartinez",
+        "followers": 1600000
+      },
+      "trivia": [
+        "Spanish manager of Portugal (unusual!)",
+        "Led Wigan to FA Cup upset vs Man City (2013)",
+        "Belgium manager for 6 years (2016-2022)",
+        "Failed to win trophy with Belgium's golden generation"
+      ]
+    },
+    {
+      "managerId": "mex_javier_aguirre",
+      "fifaCode": "MEX",
+      "firstName": "Javier",
+      "lastName": "Aguirre",
+      "fullName": "Javier Aguirre Onaindía",
+      "commonName": "Aguirre",
+      "dateOfBirth": "1958-12-01",
+      "age": 67,
+      "nationality": "Mexico",
+      "photoUrl": "assets/managers/aguirre.png",
+      "currentTeam": "Mexico National Team",
+      "appointedDate": "2024-08-01",
+      "previousClubs": [
+        "Mexico (2001-2002, 2009-2010)",
+        "Mallorca",
+        "Atlético Madrid",
+        "Zaragoza",
+        "Espanyol",
+        "Japan"
+      ],
+      "managerialCareerStart": 1996,
+      "yearsOfExperience": 30,
+      "stats": {
+        "matchesManaged": 980,
+        "wins": 450,
+        "draws": 280,
+        "losses": 250,
+        "winPercentage": 45.9,
+        "titlesWon": 4
+      },
+      "honors": [
+        "Copa del Rey (2003 - Mallorca)",
+        "CONCACAF Gold Cup (2009 - Mexico)"
+      ],
+      "tacticalStyle": "4-4-2 / 5-3-2",
+      "philosophy": "Pragmatic, defensive discipline, counterattacking",
+      "strengths": ["Experience", "CONCACAF knowledge", "Tournament veteran", "Discipline"],
+      "weaknesses": ["Age", "Outdated tactics", "Defensive football"],
+      "keyMoment": "Mexico 2002 & 2010 World Cups - Round of 16",
+      "famousQuote": "Results matter more than style",
+      "managerStyle": "El Vasco - third stint as Mexico manager",
+      "worldCup2026Prediction": "Home World Cup co-host - redemption at 67?",
+      "controversies": [],
+      "socialMedia": {
+        "instagram": "@javieraguirre",
+        "twitter": "@JavierAguirre",
+        "followers": 680000
+      },
+      "trivia": [
+        "Third stint as Mexico manager (2001, 2009, 2024)",
+        "Managed at 3 World Cups (2002, 2010, 2026)",
+        "Known as 'El Vasco' (The Basque)",
+        "Former Mexico defender - 59 caps"
+      ]
+    },
+    {
+      "managerId": "usa_gregg_berhalter",
+      "fifaCode": "USA",
+      "firstName": "Gregg",
+      "lastName": "Berhalter",
+      "fullName": "Gregg Matthew Berhalter",
+      "commonName": "Berhalter",
+      "dateOfBirth": "1973-08-01",
+      "age": 52,
+      "nationality": "United States",
+      "photoUrl": "assets/managers/berhalter.png",
+      "currentTeam": "USA National Team",
+      "appointedDate": "2024-07-19",
+      "previousClubs": [
+        "USA (2018-2024)",
+        "Columbus Crew",
+        "Hammarby"
+      ],
+      "managerialCareerStart": 2011,
+      "yearsOfExperience": 15,
+      "stats": {
+        "matchesManaged": 420,
+        "wins": 240,
+        "draws": 100,
+        "losses": 80,
+        "winPercentage": 57.1,
+        "titlesWon": 3
+      },
+      "honors": [
+        "MLS Cup (2020 - Columbus Crew)",
+        "CONCACAF Nations League (2023 - USA)"
+      ],
+      "tacticalStyle": "4-3-3 / 4-2-3-1",
+      "philosophy": "Possession-based, high press, youth development",
+      "strengths": ["Youth development", "Tactical flexibility", "Player relationships", "MLS knowledge"],
+      "weaknesses": ["International inexperience", "Big tournament failures", "Tactical naivety"],
+      "keyMoment": "2022 World Cup Round of 16 - youngest USA squad ever",
+      "famousQuote": "We're building something special for 2026",
+      "managerStyle": "American Pep - home World Cup pressure",
+      "worldCup2026Prediction": "Home tournament - massive pressure at 52",
+      "controversies": [
+        "2024 Copa América disaster - fired then rehired",
+        "Gio Reyna family scandal"
+      ],
+      "socialMedia": {
+        "instagram": "@greggberhalter",
+        "twitter": "@GreggBerhalter",
+        "followers": 420000
+      },
+      "trivia": [
+        "Former USA defender - 44 caps, 2002 & 2006 World Cups",
+        "Fired after Copa 2024, rehired for 2026",
+        "Brother Jay played for Germany",
+        "Home World Cup - win or bust mentality"
+      ]
+    },
+    {
+      "managerId": "can_jesse_marsch",
+      "fifaCode": "CAN",
+      "firstName": "Jesse",
+      "lastName": "Marsch",
+      "fullName": "Jesse Alan Marsch",
+      "commonName": "Marsch",
+      "dateOfBirth": "1973-11-08",
+      "age": 52,
+      "nationality": "United States",
+      "photoUrl": "assets/managers/marsch.png",
+      "currentTeam": "Canada National Team",
+      "appointedDate": "2024-05-13",
+      "previousClubs": [
+        "Canada",
+        "Leeds United",
+        "RB Leipzig",
+        "RB Salzburg",
+        "New York Red Bulls",
+        "Montreal Impact"
+      ],
+      "managerialCareerStart": 2015,
+      "yearsOfExperience": 11,
+      "stats": {
+        "matchesManaged": 380,
+        "wins": 200,
+        "draws": 95,
+        "losses": 85,
+        "winPercentage": 52.6,
+        "titlesWon": 4
+      },
+      "honors": [
+        "Austrian Bundesliga (2020, 2021 - RB Salzburg)",
+        "Austrian Cup (2021 - RB Salzburg)",
+        "Supporters' Shield (2015 - New York Red Bulls)"
+      ],
+      "tacticalStyle": "4-2-2-2 / 4-3-3 (Red Bull system)",
+      "philosophy": "Extreme pressing, high intensity, vertical football",
+      "strengths": ["Pressing system", "Intensity", "Modern methods", "North American knowledge"],
+      "weaknesses": ["Burnout", "Defensive issues", "Limited trophy success"],
+      "keyMoment": "Saving Leeds from relegation (2022-2023)",
+      "famousQuote": "We press, we attack, we never stop",
+      "managerStyle": "American high-press evangelist managing Canada",
+      "worldCup2026Prediction": "Canada co-hosts - can he shock the world?",
+      "controversies": [],
+      "socialMedia": {
+        "instagram": "@jessemarsch",
+        "twitter": "@JesseMarsch",
+        "followers": 580000
+      },
+      "trivia": [
+        "Red Bull disciple - managed RBNY, Salzburg, Leipzig",
+        "Former MLS player - 14 caps for USA",
+        "Saved Leeds from relegation before being fired",
+        "American managing Canada at home World Cup"
+      ]
+    },
+    {
+      "managerId": "col_nestor_lorenzo",
+      "fifaCode": "COL",
+      "firstName": "Néstor",
+      "lastName": "Lorenzo",
+      "fullName": "Néstor Gabriel Lorenzo",
+      "commonName": "Lorenzo",
+      "dateOfBirth": "1966-02-28",
+      "age": 59,
+      "nationality": "Argentina",
+      "photoUrl": "assets/managers/lorenzo.png",
+      "currentTeam": "Colombia National Team",
+      "appointedDate": "2022-06-19",
+      "previousClubs": [
+        "Melgar",
+        "Peñarol",
+        "Libertad",
+        "Argentina (assistant)"
+      ],
+      "managerialCareerStart": 2014,
+      "yearsOfExperience": 12,
+      "stats": {
+        "matchesManaged": 320,
+        "wins": 185,
+        "draws": 80,
+        "losses": 55,
+        "winPercentage": 57.8,
+        "titlesWon": 3
+      },
+      "honors": [
+        "Copa América Runner-up (2024 - Colombia)",
+        "Peruvian Primera División (2015 - Melgar)"
+      ],
+      "tacticalStyle": "4-2-3-1 / 4-3-3",
+      "philosophy": "Balanced attack-defense, pressing, tactical discipline",
+      "strengths": ["Organization", "Player development", "Tactical balance", "Tournament success"],
+      "weaknesses": ["Limited top-level experience", "Big game inexperience"],
+      "keyMoment": "Copa América 2024 final - Colombia's resurgence",
+      "famousQuote": "We play with heart and intelligence",
+      "managerStyle": "Pekerman's successor - reviving Colombia",
+      "worldCup2026Prediction": "Colombia's Argentine maestro at 59",
+      "controversies": [],
+      "socialMedia": {
+        "instagram": "@nestorlorenzo",
+        "twitter": "@NestorLorenzo",
+        "followers": 620000
+      },
+      "trivia": [
+        "Pekerman's longtime assistant for Argentina",
+        "Led Colombia to Copa 2024 final",
+        "Former Argentina defender",
+        "Unbeaten in 28 games with Colombia (2022-2024 streak)"
+      ]
+    },
+    {
+      "managerId": "jpn_hajime_moriyasu",
+      "fifaCode": "JPN",
+      "firstName": "Hajime",
+      "lastName": "Moriyasu",
+      "fullName": "Moriyasu Hajime",
+      "commonName": "Moriyasu",
+      "dateOfBirth": "1968-08-23",
+      "age": 57,
+      "nationality": "Japan",
+      "photoUrl": "assets/managers/moriyasu.png",
+      "currentTeam": "Japan National Team",
+      "appointedDate": "2018-07-26",
+      "previousClubs": [
+        "Japan U23",
+        "Sanfrecce Hiroshima",
+        "Albirex Niigata"
+      ],
+      "managerialCareerStart": 2012,
+      "yearsOfExperience": 14,
+      "stats": {
+        "matchesManaged": 450,
+        "wins": 280,
+        "draws": 95,
+        "losses": 75,
+        "winPercentage": 62.2,
+        "titlesWon": 5
+      },
+      "honors": [
+        "AFC Asian Cup (2019, 2023 - Japan)",
+        "J-League (2013, 2015 - Sanfrecce Hiroshima)"
+      ],
+      "tacticalStyle": "4-2-3-1 / 3-4-2-1",
+      "philosophy": "High pressing, technical football, discipline",
+      "strengths": ["Tournament success", "Player development", "Tactical discipline", "Asian Cup dominance"],
+      "weaknesses": ["World Cup knockout struggles", "Conservative approach"],
+      "keyMoment": "2022 World Cup - beat Germany & Spain, lost to Croatia",
+      "famousQuote": "We will challenge the world with Japanese football",
+      "managerStyle": "Japan's stable leader - 8+ years in charge",
+      "worldCup2026Prediction": "Can Japan finally reach quarterfinals?",
+      "controversies": [],
+      "socialMedia": {
+        "instagram": "@moriyasu_official",
+        "twitter": "@jfa_moriyasu",
+        "followers": 340000
+      },
+      "trivia": [
+        "2 Asian Cup titles (2019, 2023)",
+        "Beat Germany AND Spain at 2022 World Cup",
+        "Former Japan captain - 1996 Olympics silver",
+        "8+ years as Japan manager"
+      ]
+    },
+    {
+      "managerId": "kor_jurgen_klinsmann",
+      "fifaCode": "KOR",
+      "firstName": "Jürgen",
+      "lastName": "Klinsmann",
+      "fullName": "Jürgen Klinsmann",
+      "commonName": "Klinsmann",
+      "dateOfBirth": "1964-07-30",
+      "age": 61,
+      "nationality": "Germany",
+      "photoUrl": "assets/managers/klinsmann.png",
+      "currentTeam": "South Korea National Team",
+      "appointedDate": "2023-02-27",
+      "previousClubs": [
+        "USA",
+        "Germany",
+        "Bayern Munich",
+        "Hertha Berlin"
+      ],
+      "managerialCareerStart": 2004,
+      "yearsOfExperience": 22,
+      "stats": {
+        "matchesManaged": 520,
+        "wins": 285,
+        "draws": 125,
+        "losses": 110,
+        "winPercentage": 54.8,
+        "titlesWon": 1
+      },
+      "honors": [
+        "FIFA World Cup 3rd Place (2006 - Germany)",
+        "CONCACAF Gold Cup (2013 - USA)"
+      ],
+      "tacticalStyle": "4-2-3-1 / 4-3-3",
+      "philosophy": "Attacking football, fitness focus, modern methods",
+      "strengths": ["Attacking philosophy", "World Cup experience", "Star power"],
+      "weaknesses": ["Defensive organization", "Tactical naivety", "Mixed club record"],
+      "keyMoment": "Germany 2006 World Cup - home tournament inspiration",
+      "famousQuote": "We must attack, attack, attack",
+      "managerStyle": "German legend managing South Korea",
+      "worldCup2026Prediction": "Can Klinsmann inspire Korea at 61?",
+      "controversies": [
+        "Lives in California while managing Korea",
+        "Criticized for absentee management style"
+      ],
+      "socialMedia": {
+        "instagram": "@j.klinsmann",
+        "twitter": "@J_Klinsmann",
+        "followers": 1800000
+      },
+      "trivia": [
+        "World Cup winner as player (1990 - Germany)",
+        "Managed Germany at home 2006 World Cup",
+        "USA manager 2011-2016",
+        "Lives in California, flies to Korea for matches"
+      ]
+    },
+    {
+      "managerId": "aus_graham_arnold",
+      "fifaCode": "AUS",
+      "firstName": "Graham",
+      "lastName": "Arnold",
+      "fullName": "Graham James Arnold",
+      "commonName": "Arnold",
+      "dateOfBirth": "1963-08-03",
+      "age": 62,
+      "nationality": "Australia",
+      "photoUrl": "assets/managers/arnold.png",
+      "currentTeam": "Australia National Team",
+      "appointedDate": "2018-08-05",
+      "previousClubs": [
+        "Australia (2007)",
+        "Australia U23",
+        "Sydney FC",
+        "Central Coast Mariners",
+        "Vegalta Sendai"
+      ],
+      "managerialCareerStart": 2005,
+      "yearsOfExperience": 21,
+      "stats": {
+        "matchesManaged": 580,
+        "wins": 310,
+        "draws": 140,
+        "losses": 130,
+        "winPercentage": 53.4,
+        "titlesWon": 6
+      },
+      "honors": [
+        "AFC Asian Cup (2015 - Australia)",
+        "A-League Championship (2017, 2019 - Sydney FC)"
+      ],
+      "tacticalStyle": "4-2-3-1 / 3-4-3",
+      "philosophy": "Defensive organization, counterattacking, team unity",
+      "strengths": ["AFC knowledge", "Defensive organization", "Tournament experience", "Player loyalty"],
+      "weaknesses": ["Attacking limitations", "Limited star power", "Conservative tactics"],
+      "keyMoment": "2022 World Cup Round of 16 - beat Denmark",
+      "famousQuote": "We're the underdogs, and we love it",
+      "managerStyle": "Aussie battler - 6+ years in charge",
+      "worldCup2026Prediction": "Socceroos' long-term leader at 62",
+      "controversies": [],
+      "socialMedia": {
+        "instagram": "@grahamarnold",
+        "twitter": "@GrahamArnold",
+        "followers": 280000
+      },
+      "trivia": [
+        "Former Socceroos striker - 54 caps",
+        "2022 WC Round of 16 - beat Denmark",
+        "6+ years as Australia manager",
+        "Won Asian Cup 2015 as Australia manager"
+      ]
+    },
+    {
+      "managerId": "mar_walid_regragui",
+      "fifaCode": "MAR",
+      "firstName": "Walid",
+      "lastName": "Regragui",
+      "fullName": "Walid Regragui",
+      "commonName": "Regragui",
+      "dateOfBirth": "1975-09-23",
+      "age": 50,
+      "nationality": "Morocco",
+      "photoUrl": "assets/managers/regragui.png",
+      "currentTeam": "Morocco National Team",
+      "appointedDate": "2022-08-31",
+      "previousClubs": [
+        "Wydad Casablanca",
+        "Qatar SC",
+        "Al Duhail"
+      ],
+      "managerialCareerStart": 2016,
+      "yearsOfExperience": 10,
+      "stats": {
+        "matchesManaged": 280,
+        "wins": 165,
+        "draws": 65,
+        "losses": 50,
+        "winPercentage": 58.9,
+        "titlesWon": 4
+      },
+      "honors": [
+        "FIFA World Cup 4th Place (2022 - Morocco)",
+        "CAF Champions League (2022 - Wydad)",
+        "Africa Cup of Nations Runner-up (2023)"
+      ],
+      "tacticalStyle": "3-4-3 / 4-1-4-1",
+      "philosophy": "Defensive solidity, counterattacking, African pride",
+      "strengths": ["Defensive organization", "Tournament success", "Player motivation", "Underdog mentality"],
+      "weaknesses": ["Limited experience", "Offensive creativity", "Player management"],
+      "keyMoment": "2022 World Cup semi-final - first African team ever",
+      "famousQuote": "We are making history for Africa",
+      "managerStyle": "Morocco's miracle worker - 4th place 2022",
+      "worldCup2026Prediction": "Can Morocco repeat historic 2022 run?",
+      "controversies": [],
+      "socialMedia": {
+        "instagram": "@walidregragui",
+        "twitter": "@WalidRegragui",
+        "followers": 1900000
+      },
+      "trivia": [
+        "Morocco 2022 WC 4th place - best African finish ever",
+        "Beat Belgium, Spain, Portugal at 2022 WC",
+        "Former Morocco defender - 45 caps",
+        "Born in France, chose Morocco"
+      ]
+    },
+    {
+      "managerId": "sen_aliou_cisse",
+      "fifaCode": "SEN",
+      "firstName": "Aliou",
+      "lastName": "Cissé",
+      "fullName": "Aliou Cissé",
+      "commonName": "Cissé",
+      "dateOfBirth": "1976-03-24",
+      "age": 49,
+      "nationality": "Senegal",
+      "photoUrl": "assets/managers/cisse.png",
+      "currentTeam": "Senegal National Team",
+      "appointedDate": "2015-03-04",
+      "previousClubs": [],
+      "managerialCareerStart": 2012,
+      "yearsOfExperience": 14,
+      "stats": {
+        "matchesManaged": 420,
+        "wins": 235,
+        "draws": 110,
+        "losses": 75,
+        "winPercentage": 56.0,
+        "titlesWon": 1
+      },
+      "honors": [
+        "Africa Cup of Nations (2022 - Senegal)",
+        "AFCON Runner-up (2019 - Senegal)"
+      ],
+      "tacticalStyle": "4-3-3 / 4-2-3-1",
+      "philosophy": "Physicality, discipline, African pride",
+      "strengths": ["Player loyalty", "Tournament experience", "Defensive organization", "Long tenure"],
+      "weaknesses": ["Tactical limitations", "Offensive creativity", "No club experience"],
+      "keyMoment": "2022 AFCON triumph - Senegal's first ever",
+      "famousQuote": "We are writing Senegal's football history",
+      "managerStyle": "Senegal legend - 11+ years as manager",
+      "worldCup2026Prediction": "Africa's steady hand at 49",
+      "controversies": [],
+      "socialMedia": {
+        "instagram": "@alioucisse",
+        "twitter": "@AliouCisse",
+        "followers": 780000
+      },
+      "trivia": [
+        "Senegal captain at 2002 World Cup quarterfinals",
+        "Won AFCON 2022 - Senegal's first ever trophy",
+        "11+ years as Senegal manager",
+        "Never managed a club team"
+      ]
+    },
+    {
+      "managerId": "crc_gustavo_alfaro",
+      "fifaCode": "CRC",
+      "firstName": "Gustavo",
+      "lastName": "Alfaro",
+      "fullName": "Gustavo Alfaro",
+      "commonName": "Alfaro",
+      "dateOfBirth": "1962-08-14",
+      "age": 63,
+      "nationality": "Argentina",
+      "photoUrl": "assets/managers/alfaro.png",
+      "currentTeam": "Costa Rica National Team",
+      "appointedDate": "2024-01-08",
+      "previousClubs": [
+        "Ecuador",
+        "Boca Juniors",
+        "Internacional",
+        "Huracán",
+        "Tigre"
+      ],
+      "managerialCareerStart": 2009,
+      "yearsOfExperience": 17,
+      "stats": {
+        "matchesManaged": 620,
+        "wins": 310,
+        "draws": 175,
+        "losses": 135,
+        "winPercentage": 50.0,
+        "titlesWon": 3
+      },
+      "honors": [
+        "Copa Sudamericana (2019 - Huracán)",
+        "Argentine Primera División (2020 - Boca Juniors)"
+      ],
+      "tacticalStyle": "4-4-2 / 5-3-2",
+      "philosophy": "Defensive solidity, physicality, set-pieces",
+      "strengths": ["Defensive organization", "Team unity", "Underdog mentality", "Adaptability"],
+      "weaknesses": ["Defensive football", "Limited attacking", "CONCACAF inexperience"],
+      "keyMoment": "Ecuador 2022 World Cup qualification success",
+      "famousQuote": "Defense wins championships",
+      "managerStyle": "Argentine defensive mastermind in Costa Rica",
+      "worldCup2026Prediction": "Can he organize Costa Rica at 63?",
+      "controversies": [],
+      "socialMedia": {
+        "instagram": "@gustavoalfaro",
+        "twitter": "@GustavoAlfaro",
+        "followers": 520000
+      },
+      "trivia": [
+        "Managed Ecuador to 2022 World Cup",
+        "Known for ultra-defensive tactics",
+        "Former Boca Juniors manager",
+        "Never won a major international trophy"
+      ]
+    },
+    {
+      "managerId": "ecu_felix_sanchez",
+      "fifaCode": "ECU",
+      "firstName": "Félix",
+      "lastName": "Sánchez",
+      "fullName": "Félix Sánchez Bas",
+      "commonName": "Sánchez",
+      "dateOfBirth": "1975-12-13",
+      "age": 50,
+      "nationality": "Spain",
+      "photoUrl": "assets/managers/felix_sanchez.png",
+      "currentTeam": "Ecuador National Team",
+      "appointedDate": "2023-05-01",
+      "previousClubs": [
+        "Qatar",
+        "Qatar U23",
+        "Qatar U19",
+        "Barcelona B (assistant)"
+      ],
+      "managerialCareerStart": 2006,
+      "yearsOfExperience": 20,
+      "stats": {
+        "matchesManaged": 520,
+        "wins": 310,
+        "draws": 120,
+        "losses": 90,
+        "winPercentage": 59.6,
+        "titlesWon": 3
+      },
+      "honors": [
+        "AFC Asian Cup (2019, 2023 - Qatar)"
+      ],
+      "tacticalStyle": "4-3-3 / 4-2-3-1",
+      "philosophy": "Possession-based, Barcelona-influenced, youth development",
+      "strengths": ["Youth development", "Tactical knowledge", "Long-term planning", "Player development"],
+      "weaknesses": ["2022 WC disaster", "Limited South American experience", "Big game management"],
+      "keyMoment": "2 Asian Cups with Qatar (2019, 2023)",
+      "famousQuote": "We build from the base, patiently",
+      "managerStyle": "Spanish tactician building Ecuador project",
+      "worldCup2026Prediction": "Redemption after Qatar 2022 disaster?",
+      "controversies": [
+        "Qatar 2022 World Cup group stage exit as hosts"
+      ],
+      "socialMedia": {
+        "instagram": "@felixsanchez",
+        "twitter": "@FelixSanchez",
+        "followers": 380000
+      },
+      "trivia": [
+        "Built Qatar from youth system up (15+ years)",
+        "2 Asian Cup titles with Qatar",
+        "Barcelona La Masia background",
+        "Qatar 2022 WC disaster - only host ever to exit in groups"
+      ]
+    },
+    {
+      "managerId": "cmr_rigobert_song",
+      "fifaCode": "CMR",
+      "firstName": "Rigobert",
+      "lastName": "Song",
+      "fullName": "Rigobert Song Bahanag",
+      "commonName": "Song",
+      "dateOfBirth": "1976-07-01",
+      "age": 49,
+      "nationality": "Cameroon",
+      "photoUrl": "assets/managers/song.png",
+      "currentTeam": "Cameroon National Team",
+      "appointedDate": "2022-02-28",
+      "previousClubs": [
+        "Cameroon U23",
+        "Cameroon U20"
+      ],
+      "managerialCareerStart": 2016,
+      "yearsOfExperience": 10,
+      "stats": {
+        "matchesManaged": 280,
+        "wins": 145,
+        "draws": 75,
+        "losses": 60,
+        "winPercentage": 51.8,
+        "titlesWon": 1
+      },
+      "honors": [
+        "AFCON 3rd Place (2022 - Cameroon)"
+      ],
+      "tacticalStyle": "4-3-3 / 4-2-3-1",
+      "philosophy": "Physicality, African spirit, youth integration",
+      "strengths": ["Player relationships", "Legendary status", "Youth development", "Passion"],
+      "weaknesses": ["Limited tactical experience", "No club management", "Inexperience"],
+      "keyMoment": "Cameroon legend with 137 caps and 4 World Cups",
+      "famousQuote": "The Indomitable Lions will roar again",
+      "managerStyle": "Cameroon legend building new generation",
+      "worldCup2026Prediction": "Can Song inspire Cameroon at 49?",
+      "controversies": [],
+      "socialMedia": {
+        "instagram": "@rigobertsong",
+        "twitter": "@Song_Rigobert",
+        "followers": 620000
+      },
+      "trivia": [
+        "Most capped African player ever (137 caps)",
+        "Played at 4 World Cups (1994, 1998, 2002, 2010)",
+        "Liverpool & West Ham legend",
+        "Only managed national teams, never clubs"
+      ]
+    },
+    {
+      "managerId": "gha_chris_hughton",
+      "fifaCode": "GHA",
+      "firstName": "Chris",
+      "lastName": "Hughton",
+      "fullName": "Christopher William Gerard Hughton",
+      "commonName": "Hughton",
+      "dateOfBirth": "1958-12-11",
+      "age": 67,
+      "nationality": "Ireland/Ghana",
+      "photoUrl": "assets/managers/hughton.png",
+      "currentTeam": "Ghana National Team",
+      "appointedDate": "2023-02-21",
+      "previousClubs": [
+        "Nottingham Forest",
+        "Brighton",
+        "Norwich",
+        "Newcastle",
+        "Birmingham"
+      ],
+      "managerialCareerStart": 2007,
+      "yearsOfExperience": 19,
+      "stats": {
+        "matchesManaged": 780,
+        "wins": 320,
+        "draws": 230,
+        "losses": 230,
+        "winPercentage": 41.0,
+        "titlesWon": 2
+      },
+      "honors": [
+        "Championship (2010 - Newcastle, 2017 - Brighton)",
+        "Championship Manager of the Year (2017)"
+      ],
+      "tacticalStyle": "4-4-2 / 4-2-3-1",
+      "philosophy": "Defensive organization, discipline, physicality",
+      "strengths": ["Experience", "Defensive setup", "Championship expertise", "Player respect"],
+      "weaknesses": ["Outdated tactics", "Offensive limitations", "No international experience"],
+      "keyMoment": "Brighton promotion to Premier League (2017)",
+      "famousQuote": "Hard work and organization beat talent",
+      "managerStyle": "Irish-born managing Ghana's Black Stars",
+      "worldCup2026Prediction": "Veteran organizer at 67 - Ghana's hope?",
+      "controversies": [],
+      "socialMedia": {
+        "instagram": "@chrishughton",
+        "twitter": "@chrishughton",
+        "followers": 240000
+      },
+      "trivia": [
+        "Born in England, Irish father, Ghanaian mother",
+        "Never played for Ghana, managing them at 67",
+        "2 Championship promotions (Newcastle, Brighton)",
+        "First job managing Ghana at international level"
+      ]
+    },
+    {
+      "managerId": "sui_murat_yakin",
+      "fifaCode": "SUI",
+      "firstName": "Murat",
+      "lastName": "Yakin",
+      "fullName": "Murat Yakin",
+      "commonName": "Yakin",
+      "dateOfBirth": "1974-09-15",
+      "age": 51,
+      "nationality": "Switzerland",
+      "photoUrl": "assets/managers/yakin.png",
+      "currentTeam": "Switzerland National Team",
+      "appointedDate": "2021-08-09",
+      "previousClubs": [
+        "Basel",
+        "Grasshoppers",
+        "Spartak Moscow",
+        "Schaffhausen"
+      ],
+      "managerialCareerStart": 2012,
+      "yearsOfExperience": 14,
+      "stats": {
+        "matchesManaged": 420,
+        "wins": 225,
+        "draws": 110,
+        "losses": 85,
+        "winPercentage": 53.6,
+        "titlesWon": 2
+      },
+      "honors": [
+        "Swiss Super League (2013, 2014 - Basel)"
+      ],
+      "tacticalStyle": "3-4-3 / 4-2-3-1",
+      "philosophy": "Defensive solidity, counterattacking, Swiss precision",
+      "strengths": ["Defensive organization", "Tournament experience", "Tactical discipline", "Player management"],
+      "weaknesses": ["Offensive limitations", "Limited trophy success", "Big game mentality"],
+      "keyMoment": "Euro 2024 quarterfinals - consistency continues",
+      "famousQuote": "Swiss football is about precision and efficiency",
+      "managerStyle": "Swiss legend managing national team",
+      "worldCup2026Prediction": "Switzerland's steady hand at 51",
+      "controversies": [],
+      "socialMedia": {
+        "instagram": "@muratyakin",
+        "twitter": "@MuratYakin",
+        "followers": 420000
+      },
+      "trivia": [
+        "Former Switzerland captain - 49 caps",
+        "Brother Hakan also played for Switzerland",
+        "Led Switzerland to 3 consecutive tournament knockouts",
+        "Turkish descent, born in Switzerland"
+      ]
+    },
+    {
+      "managerId": "bel_domenico_tedesco",
+      "fifaCode": "BEL",
+      "firstName": "Domenico",
+      "lastName": "Tedesco",
+      "fullName": "Domenico Tedesco",
+      "commonName": "Tedesco",
+      "dateOfBirth": "1985-09-12",
+      "age": 40,
+      "nationality": "Germany/Italy",
+      "photoUrl": "assets/managers/tedesco.png",
+      "currentTeam": "Belgium National Team",
+      "appointedDate": "2023-02-07",
+      "previousClubs": [
+        "RB Leipzig",
+        "Spartak Moscow",
+        "Schalke"
+      ],
+      "managerialCareerStart": 2017,
+      "yearsOfExperience": 9,
+      "stats": {
+        "matchesManaged": 320,
+        "wins": 170,
+        "draws": 85,
+        "losses": 65,
+        "winPercentage": 53.1,
+        "titlesWon": 2
+      },
+      "honors": [
+        "DFB-Pokal (2022 - RB Leipzig)"
+      ],
+      "tacticalStyle": "4-2-3-1 / 4-3-3",
+      "philosophy": "High pressing, possession-based, modern tactics",
+      "strengths": ["Tactical flexibility", "Modern methods", "Young mind", "Player development"],
+      "weaknesses": ["Limited experience", "No major trophies", "Golden generation pressure"],
+      "keyMoment": "DFB-Pokal triumph with RB Leipzig (2022)",
+      "famousQuote": "We must evolve Belgium's style for modern football",
+      "managerStyle": "Young German managing Belgium's aging stars",
+      "worldCup2026Prediction": "Last chance for Belgium's golden generation?",
+      "controversies": [],
+      "socialMedia": {
+        "instagram": "@domenicotedesco",
+        "twitter": "@DomenicoTedesco",
+        "followers": 480000
+      },
+      "trivia": [
+        "Italian-German manager of Belgium",
+        "Youngest Bundesliga manager at Schalke (32)",
+        "Won DFB-Pokal with RB Leipzig",
+        "Managing Belgium's last golden generation push"
+      ]
+    },
+    {
+      "managerId": "cro_zlatko_dalic",
+      "fifaCode": "CRO",
+      "firstName": "Zlatko",
+      "lastName": "Dalić",
+      "fullName": "Zlatko Dalić",
+      "commonName": "Dalić",
+      "dateOfBirth": "1966-10-26",
+      "age": 59,
+      "nationality": "Croatia",
+      "photoUrl": "assets/managers/dalic.png",
+      "currentTeam": "Croatia National Team",
+      "appointedDate": "2017-10-07",
+      "previousClubs": [
+        "Al-Ain",
+        "Al-Hilal",
+        "Dinamo Tirana",
+        "Slaven Belupo"
+      ],
+      "managerialCareerStart": 2005,
+      "yearsOfExperience": 21,
+      "stats": {
+        "matchesManaged": 680,
+        "wins": 380,
+        "draws": 170,
+        "losses": 130,
+        "winPercentage": 55.9,
+        "titlesWon": 6
+      },
+      "honors": [
+        "FIFA World Cup Runner-up (2018 - Croatia)",
+        "FIFA World Cup 3rd Place (2022 - Croatia)",
+        "UEFA Nations League Runner-up (2023)",
+        "FIFA Best Men's Coach (2018)"
+      ],
+      "tacticalStyle": "4-3-3 / 4-2-3-1",
+      "philosophy": "Possession-based, technical football, mental toughness",
+      "strengths": ["Tournament specialist", "Player management", "Tactical flexibility", "Consistency"],
+      "weaknesses": ["Aging squad", "Limited club success", "Defensive issues"],
+      "keyMoment": "2018 World Cup final - Croatia's greatest achievement",
+      "famousQuote": "Small country, big heart",
+      "managerStyle": "Croatia's hero - 2 World Cup medals in 5 years",
+      "worldCup2026Prediction": "Aging golden generation's last dance at 59?",
+      "controversies": [],
+      "socialMedia": {
+        "instagram": "@zlatkodalic",
+        "twitter": "@ZlatkoDalic",
+        "followers": 920000
+      },
+      "trivia": [
+        "World Cup 2018 runner-up, 2022 3rd place",
+        "8+ years as Croatia manager",
+        "2018 FIFA Best Men's Coach award",
+        "Mostly managed in Middle East before Croatia"
+      ]
+    },
+    {
+      "managerId": "den_kasper_hjulmand",
+      "fifaCode": "DEN",
+      "firstName": "Kasper",
+      "lastName": "Hjulmand",
+      "fullName": "Kasper Hjulmand",
+      "commonName": "Hjulmand",
+      "dateOfBirth": "1972-04-09",
+      "age": 53,
+      "nationality": "Denmark",
+      "photoUrl": "assets/managers/hjulmand.png",
+      "currentTeam": "Denmark National Team",
+      "appointedDate": "2020-08-01",
+      "previousClubs": [
+        "Lyngby",
+        "Nordsjælland",
+        "Mainz"
+      ],
+      "managerialCareerStart": 2006,
+      "yearsOfExperience": 20,
+      "stats": {
+        "matchesManaged": 520,
+        "wins": 285,
+        "draws": 135,
+        "losses": 100,
+        "winPercentage": 54.8,
+        "titlesWon": 3
+      },
+      "honors": [
+        "Danish Superliga (2012 - Nordsjælland)",
+        "UEFA Euro Semi-Finals (2021 - Denmark)"
+      ],
+      "tacticalStyle": "4-3-3 / 3-4-3",
+      "philosophy": "High pressing, possession-based, youth development",
+      "strengths": ["Tactical innovation", "Player development", "Modern methods", "Team unity"],
+      "weaknesses": ["Limited top-level experience", "Tournament inconsistency"],
+      "keyMoment": "Euro 2020 semi-finals after Eriksen cardiac arrest",
+      "famousQuote": "We play for each other, for Denmark",
+      "managerStyle": "Modern tactician leading Denmark's resurgence",
+      "worldCup2026Prediction": "Denmark's progressive coach at 53",
+      "controversies": [],
+      "socialMedia": {
+        "instagram": "@kasperhjulmand",
+        "twitter": "@KasperHjulmand",
+        "followers": 380000
+      },
+      "trivia": [
+        "Led Denmark to Euro 2020 semis after Eriksen tragedy",
+        "Known for emotional, passionate style",
+        "Former teacher before football coaching",
+        "Built Nordsjælland into title winners"
+      ]
+    },
+    {
+      "managerId": "pol_michal_probierz",
+      "fifaCode": "POL",
+      "firstName": "Michał",
+      "lastName": "Probierz",
+      "fullName": "Michał Probierz",
+      "commonName": "Probierz",
+      "dateOfBirth": "1973-03-04",
+      "age": 52,
+      "nationality": "Poland",
+      "photoUrl": "assets/managers/probierz.png",
+      "currentTeam": "Poland National Team",
+      "appointedDate": "2023-09-25",
+      "previousClubs": [
+        "Poland U21",
+        "Cracovia",
+        "Jagiellonia"
+      ],
+      "managerialCareerStart": 2010,
+      "yearsOfExperience": 16,
+      "stats": {
+        "matchesManaged": 380,
+        "wins": 185,
+        "draws": 105,
+        "losses": 90,
+        "winPercentage": 48.7,
+        "titlesWon": 2
+      },
+      "honors": [
+        "Polish Cup (2020 - Cracovia)"
+      ],
+      "tacticalStyle": "4-2-3-1 / 3-5-2",
+      "philosophy": "Balanced approach, tactical discipline, youth integration",
+      "strengths": ["Youth development", "Polish league knowledge", "Tactical flexibility"],
+      "weaknesses": ["Limited international experience", "No major trophies", "Lewandowski reliance"],
+      "keyMoment": "Appointed after 2023 qualification disaster",
+      "famousQuote": "We will restore Polish pride",
+      "managerStyle": "Polish domestic coach stepping up",
+      "worldCup2026Prediction": "Lewandowski's final World Cup at 37 - can Probierz deliver?",
+      "controversies": [],
+      "socialMedia": {
+        "instagram": "@michalprobierz",
+        "twitter": "@MProbierz",
+        "followers": 220000
+      },
+      "trivia": [
+        "Appointed after Poland's poor Euro 2024 qualifying",
+        "Former Poland U21 manager",
+        "Mostly managed Polish clubs",
+        "Tasked with maximizing Lewandowski's final years"
+      ]
+    },
+    {
+      "managerId": "ser_dragan_stojkovic",
+      "fifaCode": "SER",
+      "firstName": "Dragan",
+      "lastName": "Stojković",
+      "fullName": "Dragan Stojković",
+      "commonName": "Piksi",
+      "dateOfBirth": "1965-03-03",
+      "age": 60,
+      "nationality": "Serbia",
+      "photoUrl": "assets/managers/stojkovic.png",
+      "currentTeam": "Serbia National Team",
+      "appointedDate": "2021-03-15",
+      "previousClubs": [
+        "Guangzhou City",
+        "Nagoya Grampus",
+        "Serbia U21"
+      ],
+      "managerialCareerStart": 2008,
+      "yearsOfExperience": 18,
+      "stats": {
+        "matchesManaged": 520,
+        "wins": 280,
+        "draws": 135,
+        "losses": 105,
+        "winPercentage": 53.8,
+        "titlesWon": 4
+      },
+      "honors": [
+        "J-League (2010 - Nagoya Grampus)",
+        "Chinese Super League Runner-up"
+      ],
+      "tacticalStyle": "4-2-3-1 / 4-3-3",
+      "philosophy": "Technical football, creativity, attacking intent",
+      "strengths": ["Legendary status", "Attacking philosophy", "Player development", "Technical focus"],
+      "weaknesses": ["Defensive fragility", "Tournament struggles", "Limited European experience"],
+      "keyMoment": "Serbia legend - Red Star & Japan icon",
+      "famousQuote": "We must play beautiful, attacking football",
+      "managerStyle": "Piksi - beloved legend managing Serbia",
+      "worldCup2026Prediction": "Serbia's creative force at 60",
+      "controversies": [],
+      "socialMedia": {
+        "instagram": "@draganstojkovic",
+        "twitter": "@Piksi_Stojkovic",
+        "followers": 620000
+      },
+      "trivia": [
+        "Yugoslavia legend - 84 caps, 1990 WC star",
+        "Known as 'Piksi' (pixie) for magical play",
+        "Mostly managed in Japan and China",
+        "Red Star Belgrade and Nagoya Grampus icon"
+      ]
+    },
+    {
+      "managerId": "ukr_serhiy_rebrov",
+      "fifaCode": "UKR",
+      "firstName": "Serhiy",
+      "lastName": "Rebrov",
+      "fullName": "Serhiy Stanislavovych Rebrov",
+      "commonName": "Rebrov",
+      "dateOfBirth": "1974-06-03",
+      "age": 51,
+      "nationality": "Ukraine",
+      "photoUrl": "assets/managers/rebrov.png",
+      "currentTeam": "Ukraine National Team",
+      "appointedDate": "2023-06-19",
+      "previousClubs": [
+        "Al-Ain",
+        "Ferencváros",
+        "Dynamo Kyiv",
+        "Al-Ahli"
+      ],
+      "managerialCareerStart": 2012,
+      "yearsOfExperience": 14,
+      "stats": {
+        "matchesManaged": 480,
+        "wins": 295,
+        "draws": 105,
+        "losses": 80,
+        "winPercentage": 61.5,
+        "titlesWon": 9
+      },
+      "honors": [
+        "Ukrainian Premier League (2015, 2016 - Dynamo Kyiv)",
+        "Hungarian Championship (2019, 2020, 2021, 2022 - Ferencváros)",
+        "UAE Pro League (2023 - Al-Ain)"
+      ],
+      "tacticalStyle": "4-3-3 / 4-2-3-1",
+      "philosophy": "Possession-based, high press, attacking football",
+      "strengths": ["Tactical acumen", "Trophy success", "Legendary status", "Modern methods"],
+      "weaknesses": ["National team inexperience", "War context pressure"],
+      "keyMoment": "Ferencváros dominance - 4 consecutive titles",
+      "famousQuote": "We play for Ukraine, for our people",
+      "managerStyle": "Ukraine legend managing through war",
+      "worldCup2026Prediction": "Can Rebrov inspire Ukraine amid adversity?",
+      "controversies": [],
+      "socialMedia": {
+        "instagram": "@serhiyrebrov",
+        "twitter": "@SerhiyRebrov",
+        "followers": 540000
+      },
+      "trivia": [
+        "Ukraine legend - 75 caps, 15 goals",
+        "Spurs flop as player, success as manager",
+        "4 consecutive Hungarian titles with Ferencváros",
+        "Managing Ukraine during war with Russia"
+      ]
+    },
+    {
+      "managerId": "sau_roberto_mancini",
+      "fifaCode": "SAU",
+      "firstName": "Roberto",
+      "lastName": "Mancini",
+      "fullName": "Roberto Mancini",
+      "commonName": "Mancini",
+      "dateOfBirth": "1964-11-27",
+      "age": 61,
+      "nationality": "Italy",
+      "photoUrl": "assets/managers/mancini.png",
+      "currentTeam": "Saudi Arabia National Team",
+      "appointedDate": "2023-08-27",
+      "previousClubs": [
+        "Italy",
+        "Zenit",
+        "Inter Milan",
+        "Manchester City",
+        "Galatasaray",
+        "Lazio",
+        "Fiorentina"
+      ],
+      "managerialCareerStart": 2001,
+      "yearsOfExperience": 25,
+      "stats": {
+        "matchesManaged": 1100,
+        "wins": 620,
+        "draws": 280,
+        "losses": 200,
+        "winPercentage": 56.4,
+        "titlesWon": 18
+      },
+      "honors": [
+        "UEFA Euro (2020 - Italy)",
+        "Premier League (2012, 2014 - Man City)",
+        "Serie A (2006, 2007, 2008 - Inter)",
+        "FA Cup (2011 - Man City)"
+      ],
+      "tacticalStyle": "4-3-3 / 3-5-2",
+      "philosophy": "Defensive solidity, possession, tactical discipline",
+      "strengths": ["Trophy winner", "Tactical expertise", "Big club experience", "Defensive organization"],
+      "weaknesses": ["Saudi money move", "Defensive football", "Player conflicts"],
+      "keyMoment": "Euro 2020 triumph with Italy - unbeaten run",
+      "famousQuote": "Why always me? Because I'm a winner",
+      "managerStyle": "Euro 2020 winner taking Saudi money",
+      "worldCup2026Prediction": "Can Saudi millions buy World Cup success?",
+      "controversies": [
+        "Left Italy for Saudi money after Euro triumph",
+        "Player conflicts throughout career"
+      ],
+      "socialMedia": {
+        "instagram": "@mancini",
+        "twitter": "@robymancio",
+        "followers": 3200000
+      },
+      "trivia": [
+        "Won Euro 2020 with Italy, left for Saudi Arabia €25M/year",
+        "18 major trophies as manager",
+        "Man City's Aguero moment (2012 title)",
+        "Famous for touchline fashion and style"
+      ]
+    },
+    {
+      "managerId": "ira_carlos_queiroz",
+      "fifaCode": "IRA",
+      "firstName": "Carlos",
+      "lastName": "Queiroz",
+      "fullName": "Carlos Manuel Brito Leal Queiroz",
+      "commonName": "Queiroz",
+      "dateOfBirth": "1953-03-01",
+      "age": 72,
+      "nationality": "Portugal",
+      "photoUrl": "assets/managers/queiroz.png",
+      "currentTeam": "Iran National Team",
+      "appointedDate": "2024-04-11",
+      "previousClubs": [
+        "Iran (2011-2019)",
+        "Egypt",
+        "Colombia",
+        "Portugal",
+        "Real Madrid",
+        "Manchester United (assistant)",
+        "South Africa"
+      ],
+      "managerialCareerStart": 1989,
+      "yearsOfExperience": 37,
+      "stats": {
+        "matchesManaged": 1350,
+        "wins": 680,
+        "draws": 385,
+        "losses": 285,
+        "winPercentage": 50.4,
+        "titlesWon": 7
+      },
+      "honors": [
+        "AFC Asian Cup Runner-up (2019 - Iran)",
+        "Portuguese Championship (1991 - Sporting)"
+      ],
+      "tacticalStyle": "4-2-3-1 / 5-4-1 (defensive)",
+      "philosophy": "Defensive organization, discipline, counterattacking",
+      "strengths": ["Defensive mastermind", "Experience", "National team specialist", "Tactical discipline"],
+      "weaknesses": ["Ultra-defensive", "Age (72)", "Boring football"],
+      "keyMoment": "Iran 2018 World Cup - unlucky vs Spain & Portugal",
+      "famousQuote": "Organization beats talent",
+      "managerStyle": "Defensive genius on 3rd Iran stint at 72",
+      "worldCup2026Prediction": "Iran's defensive mastermind returns at 72",
+      "controversies": [
+        "Extremely defensive tactics",
+        "Multiple national team stints"
+      ],
+      "socialMedia": {
+        "instagram": "@carlosqueiroz",
+        "twitter": "@Carlos_Queiroz",
+        "followers": 820000
+      },
+      "trivia": [
+        "Iran manager 3 times (2011-2019, 2024-present)",
+        "Man United assistant under Ferguson",
+        "72 years old - one of oldest active managers",
+        "Managed 7 different national teams"
+      ]
+    },
+    {
+      "managerId": "par_daniel_garnero",
+      "fifaCode": "PAR",
+      "firstName": "Daniel",
+      "lastName": "Garnero",
+      "fullName": "Daniel Ángel Garnero",
+      "commonName": "Garnero",
+      "dateOfBirth": "1963-11-18",
+      "age": 62,
+      "nationality": "Argentina",
+      "photoUrl": "assets/managers/garnero.png",
+      "currentTeam": "Paraguay National Team",
+      "appointedDate": "2022-02-07",
+      "previousClubs": [
+        "Olimpia",
+        "Cerro Porteño",
+        "Libertad",
+        "Nacional"
+      ],
+      "managerialCareerStart": 2008,
+      "yearsOfExperience": 18,
+      "stats": {
+        "matchesManaged": 480,
+        "wins": 235,
+        "draws": 135,
+        "losses": 110,
+        "winPercentage": 49.0,
+        "titlesWon": 6
+      },
+      "honors": [
+        "Paraguayan Primera División (2018, 2019 - Olimpia)"
+      ],
+      "tacticalStyle": "4-4-2 / 4-2-3-1",
+      "philosophy": "Defensive discipline, physicality, Paraguayan grit",
+      "strengths": ["Paraguayan league knowledge", "Defensive organization", "Player relationships"],
+      "weaknesses": ["Limited international experience", "Offensive creativity", "No major trophies"],
+      "keyMoment": "Olimpia back-to-back titles (2018-2019)",
+      "famousQuote": "Paraguay fights, Paraguay competes",
+      "managerStyle": "Argentine managing Paraguay - domestic expert",
+      "worldCup2026Prediction": "Can Garnero revive Paraguay at 62?",
+      "controversies": [],
+      "socialMedia": {
+        "instagram": "@danielgarnero",
+        "twitter": "@DanielGarnero",
+        "followers": 180000
+      },
+      "trivia": [
+        "Mostly managed Paraguayan clubs",
+        "First national team job with Paraguay",
+        "Known for defensive, physical style",
+        "Argentine managing Paraguay (common pattern)"
+      ]
+    },
+    {
+      "managerId": "per_juan_reynoso",
+      "fifaCode": "PER",
+      "firstName": "Juan",
+      "lastName": "Reynoso",
+      "fullName": "Juan Máximo Reynoso Guzmán",
+      "commonName": "Reynoso",
+      "dateOfBirth": "1969-12-28",
+      "age": 56,
+      "nationality": "Peru",
+      "photoUrl": "assets/managers/reynoso.png",
+      "currentTeam": "Peru National Team",
+      "appointedDate": "2024-07-01",
+      "previousClubs": [
+        "Peru (2022-2023)",
+        "Cruz Azul",
+        "Puebla",
+        "FBC Melgar"
+      ],
+      "managerialCareerStart": 2010,
+      "yearsOfExperience": 16,
+      "stats": {
+        "matchesManaged": 520,
+        "wins": 265,
+        "draws": 145,
+        "losses": 110,
+        "winPercentage": 51.0,
+        "titlesWon": 5
+      },
+      "honors": [
+        "Liga MX (2021 - Cruz Azul)",
+        "Peruvian Primera División (2017 - Melgar)"
+      ],
+      "tacticalStyle": "4-3-3 / 4-2-3-1",
+      "philosophy": "Possession-based, high press, attacking intent",
+      "strengths": ["Tactical knowledge", "Liga MX success", "Player development"],
+      "weaknesses": ["First Peru stint failed", "Inconsistency", "Pressure"],
+      "keyMoment": "Ended Cruz Azul 24-year title drought (2021)",
+      "famousQuote": "Peru will play with pride and passion",
+      "managerStyle": "2nd stint after 2023 failure - redemption?",
+      "worldCup2026Prediction": "Reynoso returns - can he qualify Peru?",
+      "controversies": [
+        "Fired after failed Peru stint (2022-2023)",
+        "Rehired for 2026 cycle"
+      ],
+      "socialMedia": {
+        "instagram": "@juanreynoso",
+        "twitter": "@JuanReynoso",
+        "followers": 380000
+      },
+      "trivia": [
+        "Former Peru captain - 84 caps",
+        "Ended Cruz Azul's 24-year title drought",
+        "Fired as Peru manager in 2023, rehired 2024",
+        "Known for tactical flexibility"
+      ]
+    },
+    {
+      "managerId": "chi_ricardo_gareca",
+      "fifaCode": "CHI",
+      "firstName": "Ricardo",
+      "lastName": "Gareca",
+      "fullName": "Ricardo Alberto Gareca Nardi",
+      "commonName": "El Tigre",
+      "dateOfBirth": "1958-02-10",
+      "age": 67,
+      "nationality": "Argentina",
+      "photoUrl": "assets/managers/gareca.png",
+      "currentTeam": "Chile National Team",
+      "appointedDate": "2024-01-26",
+      "previousClubs": [
+        "Peru",
+        "Vélez Sársfield",
+        "Palmeiras",
+        "Universitario"
+      ],
+      "managerialCareerStart": 1996,
+      "yearsOfExperience": 30,
+      "stats": {
+        "matchesManaged": 980,
+        "wins": 485,
+        "draws": 265,
+        "losses": 230,
+        "winPercentage": 49.5,
+        "titlesWon": 8
+      },
+      "honors": [
+        "Copa América 3rd Place (2015 - Peru)",
+        "FIFA World Cup Qualification (2018 - Peru)",
+        "Argentine Primera División (1998, 2005 - Vélez, Talleres)"
+      ],
+      "tacticalStyle": "4-2-3-1 / 4-3-3",
+      "philosophy": "Organized defense, disciplined structure, counterattacking",
+      "strengths": ["Tournament experience", "Defensive organization", "Player motivation", "South American expert"],
+      "weaknesses": ["Conservative tactics", "Limited offensive creativity"],
+      "keyMoment": "Led Peru to 2018 World Cup - first in 36 years",
+      "famousQuote": "Organization and discipline win matches",
+      "managerStyle": "El Tigre - Peruvian hero now managing Chile",
+      "worldCup2026Prediction": "Can Gareca revive Chile's generation at 67?",
+      "controversies": [
+        "Left Peru for Chile - controversial move"
+      ],
+      "socialMedia": {
+        "instagram": "@ricardogareca",
+        "twitter": "@RicardoGareca",
+        "followers": 920000
+      },
+      "trivia": [
+        "Peru hero - led them to 2018 WC after 36 years",
+        "Known as 'El Tigre' (The Tiger)",
+        "Left Peru for Chile in controversial move",
+        "Argentine managing Chilean rivals"
+      ]
+    },
+    {
+      "managerId": "bol_antonio_carlos_zago",
+      "fifaCode": "BOL",
+      "firstName": "Antônio Carlos",
+      "lastName": "Zago",
+      "fullName": "Antônio Carlos Zago",
+      "commonName": "Zago",
+      "dateOfBirth": "1970-04-07",
+      "age": 55,
+      "nationality": "Brazil",
+      "photoUrl": "assets/managers/zago.png",
+      "currentTeam": "Bolivia National Team",
+      "appointedDate": "2024-02-12",
+      "previousClubs": [
+        "Santos",
+        "Coritiba",
+        "Atlético Mineiro",
+        "Fluminense"
+      ],
+      "managerialCareerStart": 2006,
+      "yearsOfExperience": 20,
+      "stats": {
+        "matchesManaged": 650,
+        "wins": 295,
+        "draws": 195,
+        "losses": 160,
+        "winPercentage": 45.4,
+        "titlesWon": 4
+      },
+      "honors": [
+        "Campeonato Paulista (2015, 2016 - Santos)",
+        "Copa do Brasil (2011 - Vasco)"
+      ],
+      "tacticalStyle": "4-4-2 / 4-2-3-1",
+      "philosophy": "Defensive organization, counterattacking, pragmatism",
+      "strengths": ["Brazilian tactical knowledge", "Defensive setup", "Experience"],
+      "weaknesses": ["Limited international experience", "Offensive limitations", "No major trophies"],
+      "keyMoment": "Santos back-to-back state titles (2015-2016)",
+      "famousQuote": "We must be solid and organized",
+      "managerStyle": "Brazilian journeyman managing Bolivia",
+      "worldCup2026Prediction": "Can Zago surprise with Bolivia at 55?",
+      "controversies": [],
+      "socialMedia": {
+        "instagram": "@antoniocarloszago",
+        "twitter": "@ACZago",
+        "followers": 220000
+      },
+      "trivia": [
+        "Former Brazil defender - 1994 World Cup winner",
+        "Managed 15+ Brazilian clubs",
+        "First international job with Bolivia",
+        "Known for defensive, organized football"
+      ]
+    },
+    {
+      "managerId": "ven_fernando_batista",
+      "fifaCode": "VEN",
+      "firstName": "Fernando",
+      "lastName": "Batista",
+      "fullName": "Fernando Gabriel Batista",
+      "commonName": "Bocha",
+      "dateOfBirth": "1969-11-10",
+      "age": 56,
+      "nationality": "Argentina",
+      "photoUrl": "assets/managers/batista.png",
+      "currentTeam": "Venezuela National Team",
+      "appointedDate": "2023-09-04",
+      "previousClubs": [
+        "Argentina U20",
+        "Argentina U23",
+        "Quilmes",
+        "All Boys"
+      ],
+      "managerialCareerStart": 2014,
+      "yearsOfExperience": 12,
+      "stats": {
+        "matchesManaged": 320,
+        "wins": 165,
+        "draws": 85,
+        "losses": 70,
+        "winPercentage": 51.6,
+        "titlesWon": 2
+      },
+      "honors": [
+        "South American U20 Championship (2017, 2019 - Argentina)",
+        "Pan American Games Gold (2019 - Argentina U23)"
+      ],
+      "tacticalStyle": "4-3-3 / 4-2-3-1",
+      "philosophy": "Youth development, attacking football, possession-based",
+      "strengths": ["Youth development", "Modern tactics", "Player development", "Fresh approach"],
+      "weaknesses": ["Limited senior experience", "No club management", "Venezuela struggles"],
+      "keyMoment": "2 South American U20 titles with Argentina",
+      "famousQuote": "We will build Venezuela's future",
+      "managerStyle": "Argentine youth specialist building Venezuela",
+      "worldCup2026Prediction": "Youth developer tasked with Venezuela's rise",
+      "controversies": [],
+      "socialMedia": {
+        "instagram": "@fernandobatista",
+        "twitter": "@FerBatista",
+        "followers": 180000
+      },
+      "trivia": [
+        "Developed Lautaro Martínez, Julián Álvarez at U20",
+        "2 South American U20 titles with Argentina",
+        "Never managed senior club team",
+        "First senior national team job with Venezuela"
+      ]
+    },
+    {
+      "managerId": "nzl_darren_bazeley",
+      "fifaCode": "NZL",
+      "firstName": "Darren",
+      "lastName": "Bazeley",
+      "fullName": "Darren Shaun Bazeley",
+      "commonName": "Bazeley",
+      "dateOfBirth": "1972-10-05",
+      "age": 53,
+      "nationality": "England/New Zealand",
+      "photoUrl": "assets/managers/bazeley.png",
+      "currentTeam": "New Zealand National Team",
+      "appointedDate": "2023-12-01",
+      "previousClubs": [
+        "New Zealand U23",
+        "Watford (academy)"
+      ],
+      "managerialCareerStart": 2015,
+      "yearsOfExperience": 11,
+      "stats": {
+        "matchesManaged": 220,
+        "wins": 105,
+        "draws": 60,
+        "losses": 55,
+        "winPercentage": 47.7,
+        "titlesWon": 0
+      },
+      "honors": [],
+      "tacticalStyle": "4-4-2 / 4-3-3",
+      "philosophy": "Direct football, physicality, organization",
+      "strengths": ["Youth development", "OFC knowledge", "Player relationships"],
+      "weaknesses": ["Limited experience", "No major achievements", "First senior role"],
+      "keyMoment": "New Zealand youth system development",
+      "famousQuote": "New Zealand football is rising",
+      "managerStyle": "English-Kiwi building All Whites",
+      "worldCup2026Prediction": "Inexperienced manager, massive underdog",
+      "controversies": [],
+      "socialMedia": {
+        "instagram": "@darrenbazeley",
+        "twitter": "@DBazeley",
+        "followers": 85000
+      },
+      "trivia": [
+        "Former Watford player - 170+ appearances",
+        "Represented New Zealand through heritage",
+        "First senior management job with All Whites",
+        "Youth development specialist"
+      ]
+    },
+    {
+      "managerId": "irq_jesus_casas",
+      "fifaCode": "IRQ",
+      "firstName": "Jesús",
+      "lastName": "Casas",
+      "fullName": "Jesús Casas Cuevas",
+      "commonName": "Casas",
+      "dateOfBirth": "1972-09-04",
+      "age": 53,
+      "nationality": "Spain",
+      "photoUrl": "assets/managers/casas.png",
+      "currentTeam": "Iraq National Team",
+      "appointedDate": "2023-07-12",
+      "previousClubs": [
+        "Iraq U23",
+        "Spain youth teams",
+        "Barcelona academy"
+      ],
+      "managerialCareerStart": 2010,
+      "yearsOfExperience": 16,
+      "stats": {
+        "matchesManaged": 380,
+        "wins": 210,
+        "draws": 95,
+        "losses": 75,
+        "winPercentage": 55.3,
+        "titlesWon": 3
+      },
+      "honors": [
+        "Arabian Gulf Cup (2023 - Iraq)"
+      ],
+      "tacticalStyle": "4-3-3 / 4-2-3-1",
+      "philosophy": "Possession-based, Barcelona-influenced, technical football",
+      "strengths": ["Youth development", "Technical coaching", "Barcelona philosophy", "Player development"],
+      "weaknesses": ["Senior experience limited", "Iraq challenges", "War-torn nation"],
+      "keyMoment": "2023 Gulf Cup triumph with Iraq",
+      "famousQuote": "We will play beautiful football",
+      "managerStyle": "Spanish tactician developing Iraq",
+      "worldCup2026Prediction": "Long-term project for Iraq at 53",
+      "controversies": [],
+      "socialMedia": {
+        "instagram": "@jesuscasas",
+        "twitter": "@JesusCasas",
+        "followers": 240000
+      },
+      "trivia": [
+        "Barcelona La Masia background",
+        "Spain youth team coach experience",
+        "Won 2023 Gulf Cup with Iraq",
+        "Implementing possession football in Iraq"
+      ]
+    },
+    {
+      "managerId": "uga_paul_put",
+      "fifaCode": "UGA",
+      "firstName": "Paul",
+      "lastName": "Put",
+      "fullName": "Paul Joseph Put",
+      "commonName": "Put",
+      "dateOfBirth": "1956-09-13",
+      "age": 69,
+      "nationality": "Belgium",
+      "photoUrl": "assets/managers/put.png",
+      "currentTeam": "Uganda National Team",
+      "appointedDate": "2024-01-15",
+      "previousClubs": [
+        "Burkina Faso",
+        "Kenya",
+        "Gambia",
+        "Jordan",
+        "Guinea"
+      ],
+      "managerialCareerStart": 1999,
+      "yearsOfExperience": 27,
+      "stats": {
+        "matchesManaged": 850,
+        "wins": 390,
+        "draws": 245,
+        "losses": 215,
+        "winPercentage": 45.9,
+        "titlesWon": 2
+      },
+      "honors": [
+        "AFCON Qualification (2012 - Burkina Faso, 2019 - Kenya)"
+      ],
+      "tacticalStyle": "4-4-2 / 5-3-2",
+      "philosophy": "Defensive discipline, organization, pragmatism",
+      "strengths": ["African football expert", "Experience", "Defensive organization", "Adaptability"],
+      "weaknesses": ["Age (69)", "Journeyman status", "Limited trophy success"],
+      "keyMoment": "Burkina Faso AFCON 2013 runner-up",
+      "famousQuote": "African football requires patience and discipline",
+      "managerStyle": "African football journeyman at 69",
+      "worldCup2026Prediction": "Veteran organizer with Uganda",
+      "controversies": [],
+      "socialMedia": {
+        "instagram": "",
+        "twitter": "",
+        "followers": 0
+      },
+      "trivia": [
+        "Managed 6+ African national teams",
+        "Burkina Faso AFCON 2013 runners-up",
+        "69 years old - one of oldest managers",
+        "African football specialist"
+      ]
+    },
+    {
+      "managerId": "pan_thomas_christiansen",
+      "fifaCode": "PAN",
+      "firstName": "Thomas",
+      "lastName": "Christiansen",
+      "fullName": "Thomas Christiansen Tarín",
+      "commonName": "Christiansen",
+      "dateOfBirth": "1973-03-11",
+      "age": 52,
+      "nationality": "Denmark/Spain/Panama",
+      "photoUrl": "assets/managers/christiansen.png",
+      "currentTeam": "Panama National Team",
+      "appointedDate": "2024-02-20",
+      "previousClubs": [
+        "Panama (2022-2023)",
+        "Cyprus",
+        "APOEL",
+        "Leeds United",
+        "AEK Larnaca"
+      ],
+      "managerialCareerStart": 2013,
+      "yearsOfExperience": 13,
+      "stats": {
+        "matchesManaged": 420,
+        "wins": 215,
+        "draws": 110,
+        "losses": 95,
+        "winPercentage": 51.2,
+        "titlesWon": 5
+      },
+      "honors": [
+        "Cypriot Championship (2016, 2017 - APOEL)",
+        "Gold Cup Runner-up (2023 - Panama)"
+      ],
+      "tacticalStyle": "4-2-3-1 / 4-3-3",
+      "philosophy": "Possession-based, organized, modern tactics",
+      "strengths": ["CONCACAF knowledge", "Tactical flexibility", "Multi-cultural", "Tournament experience"],
+      "weaknesses": ["Limited top-level success", "Championship struggles"],
+      "keyMoment": "2023 Gold Cup final with Panama",
+      "famousQuote": "Panama can compete with anyone",
+      "managerStyle": "Danish-Spanish managing Panama - 2nd stint",
+      "worldCup2026Prediction": "Panama's multi-national coach at 52",
+      "controversies": [],
+      "socialMedia": {
+        "instagram": "@thomaschristiansen",
+        "twitter": "@T_Christiansen",
+        "followers": 180000
+      },
+      "trivia": [
+        "Born in Denmark, played for Spain, manages Panama",
+        "Former Barcelona player",
+        "Led Panama to 2023 Gold Cup final",
+        "Rehired after brief departure"
+      ]
+    }
+  ]
+}

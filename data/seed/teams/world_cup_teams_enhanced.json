@@ -1,0 +1,1771 @@
+{
+  "teams": [
+    {
+      "fifaCode": "BRA",
+      "countryName": "Brazil",
+      "shortName": "Brazil",
+      "flagUrl": "assets/worldcup/flags/bra.png",
+      "confederation": "CONMEBOL",
+      "fifaRanking": 4,
+      "group": "A",
+      "worldCupTitles": 5,
+      "worldCupAppearances": 22,
+      "bestFinish": "Winner (1958, 1962, 1970, 1994, 2002)",
+      "isHostNation": false,
+      "nickname": "Seleção",
+      "coachName": "Fernando Diniz",
+      "captainName": "Casemiro",
+      "starPlayers": ["Vinicius Jr", "Neymar", "Rodrygo", "Casemiro"],
+      "qualificationMethod": "CONMEBOL Qualifier",
+      "isQualified": true,
+      "primaryColor": "#009B3A",
+      "secondaryColor": "#FEDF00",
+      "worldCupHistory": [
+        {
+          "year": 2022,
+          "host": "Qatar",
+          "finish": "Quarter-Finals",
+          "matchesPlayed": 5,
+          "wins": 4,
+          "draws": 0,
+          "losses": 1,
+          "goalsFor": 8,
+          "goalsAgainst": 3,
+          "notableMatches": [
+            "Defeated South Korea 4-1 in Round of 16",
+            "Lost to Croatia 4-2 on penalties (1-1 AET) in Quarter-Finals"
+          ]
+        },
+        {
+          "year": 2018,
+          "host": "Russia",
+          "finish": "Quarter-Finals",
+          "matchesPlayed": 5,
+          "wins": 3,
+          "draws": 1,
+          "losses": 1,
+          "goalsFor": 8,
+          "goalsAgainst": 3,
+          "notableMatches": [
+            "Defeated Mexico 2-0 in Round of 16",
+            "Lost to Belgium 2-1 in Quarter-Finals"
+          ]
+        },
+        {
+          "year": 2014,
+          "host": "Brazil",
+          "finish": "Fourth Place",
+          "matchesPlayed": 7,
+          "wins": 3,
+          "draws": 2,
+          "losses": 2,
+          "goalsFor": 11,
+          "goalsAgainst": 14,
+          "notableMatches": [
+            "Lost to Germany 7-1 in Semi-Finals (historic defeat)",
+            "Lost to Netherlands 3-0 in Third Place match"
+          ]
+        },
+        {
+          "year": 2010,
+          "host": "South Africa",
+          "finish": "Quarter-Finals",
+          "matchesPlayed": 5,
+          "wins": 3,
+          "draws": 1,
+          "losses": 1,
+          "goalsFor": 9,
+          "goalsAgainst": 4,
+          "notableMatches": [
+            "Lost to Netherlands 2-1 in Quarter-Finals"
+          ]
+        },
+        {
+          "year": 2006,
+          "host": "Germany",
+          "finish": "Quarter-Finals",
+          "matchesPlayed": 5,
+          "wins": 4,
+          "draws": 0,
+          "losses": 1,
+          "goalsFor": 10,
+          "goalsAgainst": 2,
+          "notableMatches": [
+            "Lost to France 1-0 in Quarter-Finals"
+          ]
+        },
+        {
+          "year": 2002,
+          "host": "South Korea/Japan",
+          "finish": "Winner",
+          "matchesPlayed": 7,
+          "wins": 7,
+          "draws": 0,
+          "losses": 0,
+          "goalsFor": 18,
+          "goalsAgainst": 4,
+          "notableMatches": [
+            "Defeated Germany 2-0 in Final",
+            "Perfect record - only team to win all 7 matches in 2002"
+          ]
+        }
+      ],
+      "allTimeStats": {
+        "totalMatches": 114,
+        "wins": 76,
+        "draws": 19,
+        "losses": 19,
+        "goalsFor": 237,
+        "goalsAgainst": 108,
+        "winPercentage": 66.7,
+        "cleanSheets": 42
+      },
+      "legendaryPlayers": [
+        {
+          "name": "Pelé",
+          "position": "Forward",
+          "worldCupGoals": 12,
+          "worldCupAppearances": 4,
+          "worldCupTitles": 3,
+          "yearsActive": "1958-1970",
+          "legacy": "Only player to win 3 World Cups; youngest scorer in final at age 17"
+        },
+        {
+          "name": "Ronaldo Nazário",
+          "position": "Forward",
+          "worldCupGoals": 15,
+          "worldCupAppearances": 4,
+          "worldCupTitles": 2,
+          "yearsActive": "1994-2006",
+          "legacy": "All-time World Cup leading scorer for Brazil; Golden Ball 1998"
+        },
+        {
+          "name": "Romário",
+          "position": "Forward",
+          "worldCupGoals": 5,
+          "worldCupAppearances": 1,
+          "worldCupTitles": 1,
+          "yearsActive": "1994",
+          "legacy": "Golden Ball winner 1994; led Brazil to 4th title"
+        },
+        {
+          "name": "Cafu",
+          "position": "Defender",
+          "worldCupGoals": 0,
+          "worldCupAppearances": 4,
+          "worldCupTitles": 2,
+          "yearsActive": "1994-2006",
+          "legacy": "Only player to appear in 3 consecutive World Cup finals"
+        },
+        {
+          "name": "Garrincha",
+          "position": "Winger",
+          "worldCupGoals": 5,
+          "worldCupAppearances": 2,
+          "worldCupTitles": 2,
+          "yearsActive": "1958-1966",
+          "legacy": "Golden Ball winner 1962; considered one of greatest dribblers ever"
+        }
+      ],
+      "notableAchievements": [
+        "Only nation to qualify for every World Cup (22 consecutive tournaments)",
+        "Most World Cup titles (5)",
+        "Most World Cup matches played (114)",
+        "Most World Cup goals scored (237)",
+        "Hosted 2014 World Cup",
+        "The 1970 team is considered one of the greatest teams in football history"
+      ]
+    },
+    {
+      "fifaCode": "ARG",
+      "countryName": "Argentina",
+      "shortName": "Argentina",
+      "flagUrl": "assets/worldcup/flags/arg.png",
+      "confederation": "CONMEBOL",
+      "fifaRanking": 1,
+      "group": "B",
+      "worldCupTitles": 3,
+      "worldCupAppearances": 18,
+      "bestFinish": "Winner (1978, 1986, 2022)",
+      "isHostNation": false,
+      "nickname": "La Albiceleste",
+      "coachName": "Lionel Scaloni",
+      "captainName": "Lionel Messi",
+      "starPlayers": ["Lionel Messi", "Julián Álvarez", "Lautaro Martínez", "Enzo Fernández"],
+      "qualificationMethod": "CONMEBOL Qualifier",
+      "isQualified": true,
+      "primaryColor": "#74ACDF",
+      "secondaryColor": "#FFFFFF",
+      "worldCupHistory": [
+        {
+          "year": 2022,
+          "host": "Qatar",
+          "finish": "Winner",
+          "matchesPlayed": 7,
+          "wins": 6,
+          "draws": 1,
+          "losses": 0,
+          "goalsFor": 15,
+          "goalsAgainst": 8,
+          "notableMatches": [
+            "Lost opening match to Saudi Arabia 2-1 (shocking upset)",
+            "Defeated France 4-2 on penalties (3-3 AET) in Final - one of greatest finals ever",
+            "Messi finally wins World Cup in likely final tournament"
+          ]
+        },
+        {
+          "year": 2018,
+          "host": "Russia",
+          "finish": "Round of 16",
+          "matchesPlayed": 4,
+          "wins": 1,
+          "draws": 2,
+          "losses": 1,
+          "goalsFor": 6,
+          "goalsAgainst": 9,
+          "notableMatches": [
+            "Lost to France 4-3 in Round of 16"
+          ]
+        },
+        {
+          "year": 2014,
+          "host": "Brazil",
+          "finish": "Runner-up",
+          "matchesPlayed": 7,
+          "wins": 4,
+          "draws": 2,
+          "losses": 1,
+          "goalsFor": 8,
+          "goalsAgainst": 4,
+          "notableMatches": [
+            "Lost to Germany 1-0 AET in Final",
+            "Messi wins Golden Ball despite losing final"
+          ]
+        },
+        {
+          "year": 2010,
+          "host": "South Africa",
+          "finish": "Quarter-Finals",
+          "matchesPlayed": 5,
+          "wins": 4,
+          "draws": 0,
+          "losses": 1,
+          "goalsFor": 10,
+          "goalsAgainst": 6,
+          "notableMatches": [
+            "Lost to Germany 4-0 in Quarter-Finals"
+          ]
+        },
+        {
+          "year": 2006,
+          "host": "Germany",
+          "finish": "Quarter-Finals",
+          "matchesPlayed": 5,
+          "wins": 3,
+          "draws": 1,
+          "losses": 1,
+          "goalsFor": 11,
+          "goalsAgainst": 3,
+          "notableMatches": [
+            "Lost to Germany 4-2 on penalties (1-1 AET) in Quarter-Finals"
+          ]
+        },
+        {
+          "year": 2002,
+          "host": "South Korea/Japan",
+          "finish": "Group Stage",
+          "matchesPlayed": 3,
+          "wins": 1,
+          "draws": 1,
+          "losses": 1,
+          "goalsFor": 2,
+          "goalsAgainst": 2,
+          "notableMatches": [
+            "Eliminated in Group F, disappointing campaign"
+          ]
+        }
+      ],
+      "allTimeStats": {
+        "totalMatches": 88,
+        "wins": 47,
+        "draws": 16,
+        "losses": 25,
+        "goalsFor": 147,
+        "goalsAgainst": 99,
+        "winPercentage": 53.4,
+        "cleanSheets": 28
+      },
+      "legendaryPlayers": [
+        {
+          "name": "Diego Maradona",
+          "position": "Midfielder",
+          "worldCupGoals": 8,
+          "worldCupAppearances": 4,
+          "worldCupTitles": 1,
+          "yearsActive": "1982-1994",
+          "legacy": "Golden Ball 1986; 'Hand of God' and 'Goal of the Century' vs England; led Argentina to 1986 title"
+        },
+        {
+          "name": "Lionel Messi",
+          "position": "Forward",
+          "worldCupGoals": 13,
+          "worldCupAppearances": 5,
+          "worldCupTitles": 1,
+          "yearsActive": "2006-2022",
+          "legacy": "Golden Ball 2014, 2022; finally won World Cup in 2022; most World Cup goals for Argentina"
+        },
+        {
+          "name": "Gabriel Batistuta",
+          "position": "Forward",
+          "worldCupGoals": 10,
+          "worldCupAppearances": 3,
+          "worldCupTitles": 0,
+          "yearsActive": "1994-2002",
+          "legacy": "Argentina's 2nd all-time World Cup scorer; scored in 3 World Cups"
+        },
+        {
+          "name": "Mario Kempes",
+          "position": "Forward",
+          "worldCupGoals": 6,
+          "worldCupAppearances": 3,
+          "worldCupTitles": 1,
+          "yearsActive": "1974-1982",
+          "legacy": "Golden Ball 1978; led Argentina to first World Cup title as host nation"
+        },
+        {
+          "name": "Javier Zanetti",
+          "position": "Defender",
+          "worldCupGoals": 0,
+          "worldCupAppearances": 3,
+          "worldCupTitles": 0,
+          "yearsActive": "1998-2010",
+          "legacy": "Captain of Argentina; most capped player in national team history"
+        }
+      ],
+      "notableAchievements": [
+        "3 World Cup titles (1978, 1986, 2022)",
+        "6 World Cup finals (1930, 1978, 1986, 1990, 2014, 2022)",
+        "Hosted and won first World Cup for Argentina in 1978",
+        "2022 Qatar final vs France rated as one of greatest World Cup finals ever",
+        "Home of two of the greatest players ever: Maradona and Messi"
+      ]
+    },
+    {
+      "fifaCode": "GER",
+      "countryName": "Germany",
+      "shortName": "Germany",
+      "flagUrl": "assets/worldcup/flags/ger.png",
+      "confederation": "UEFA",
+      "fifaRanking": 11,
+      "group": "D",
+      "worldCupTitles": 4,
+      "worldCupAppearances": 20,
+      "bestFinish": "Winner (1954, 1974, 1990, 2014)",
+      "isHostNation": false,
+      "nickname": "Die Mannschaft",
+      "coachName": "Julian Nagelsmann",
+      "captainName": "Ilkay Gündogan",
+      "starPlayers": ["Joshua Kimmich", "Jamal Musiala", "Kai Havertz", "Florian Wirtz"],
+      "qualificationMethod": "UEFA Qualifier",
+      "isQualified": true,
+      "primaryColor": "#000000",
+      "secondaryColor": "#DD0000",
+      "worldCupHistory": [
+        {
+          "year": 2022,
+          "host": "Qatar",
+          "finish": "Group Stage",
+          "matchesPlayed": 3,
+          "wins": 1,
+          "draws": 1,
+          "losses": 1,
+          "goalsFor": 6,
+          "goalsAgainst": 5,
+          "notableMatches": [
+            "Lost to Japan 2-1 in shocking upset",
+            "Eliminated in Group E - first group stage exit since 1938"
+          ]
+        },
+        {
+          "year": 2018,
+          "host": "Russia",
+          "finish": "Group Stage",
+          "matchesPlayed": 3,
+          "wins": 1,
+          "draws": 0,
+          "losses": 2,
+          "goalsFor": 2,
+          "goalsAgainst": 4,
+          "notableMatches": [
+            "Lost to South Korea 2-0 in final group match",
+            "Defending champions eliminated in group stage"
+          ]
+        },
+        {
+          "year": 2014,
+          "host": "Brazil",
+          "finish": "Winner",
+          "matchesPlayed": 7,
+          "wins": 6,
+          "draws": 1,
+          "losses": 0,
+          "goalsFor": 18,
+          "goalsAgainst": 4,
+          "notableMatches": [
+            "Defeated Brazil 7-1 in Semi-Finals (historic victory)",
+            "Defeated Argentina 1-0 AET in Final",
+            "Highest scoring World Cup winning campaign"
+          ]
+        },
+        {
+          "year": 2010,
+          "host": "South Africa",
+          "finish": "Third Place",
+          "matchesPlayed": 7,
+          "wins": 5,
+          "draws": 0,
+          "losses": 2,
+          "goalsFor": 16,
+          "goalsAgainst": 5,
+          "notableMatches": [
+            "Defeated Argentina 4-0 in Quarter-Finals",
+            "Lost to Spain 1-0 in Semi-Finals",
+            "Defeated Uruguay 3-2 in Third Place match"
+          ]
+        },
+        {
+          "year": 2006,
+          "host": "Germany",
+          "finish": "Third Place",
+          "matchesPlayed": 7,
+          "wins": 5,
+          "draws": 1,
+          "losses": 1,
+          "goalsFor": 14,
+          "goalsAgainst": 6,
+          "notableMatches": [
+            "Lost to Italy 2-0 AET in Semi-Finals",
+            "Defeated Portugal 3-1 in Third Place match"
+          ]
+        },
+        {
+          "year": 2002,
+          "host": "South Korea/Japan",
+          "finish": "Runner-up",
+          "matchesPlayed": 7,
+          "wins": 5,
+          "draws": 1,
+          "losses": 1,
+          "goalsFor": 14,
+          "goalsAgainst": 3,
+          "notableMatches": [
+            "Lost to Brazil 2-0 in Final",
+            "Miroslav Klose emerged as new star striker"
+          ]
+        }
+      ],
+      "allTimeStats": {
+        "totalMatches": 112,
+        "wins": 69,
+        "draws": 21,
+        "losses": 22,
+        "goalsFor": 232,
+        "goalsAgainst": 130,
+        "winPercentage": 61.6,
+        "cleanSheets": 38
+      },
+      "legendaryPlayers": [
+        {
+          "name": "Miroslav Klose",
+          "position": "Forward",
+          "worldCupGoals": 16,
+          "worldCupAppearances": 4,
+          "worldCupTitles": 1,
+          "yearsActive": "2002-2014",
+          "legacy": "All-time World Cup leading scorer; scored in 4 consecutive tournaments"
+        },
+        {
+          "name": "Franz Beckenbauer",
+          "position": "Defender",
+          "worldCupGoals": 5,
+          "worldCupAppearances": 3,
+          "worldCupTitles": 1,
+          "yearsActive": "1966-1974",
+          "legacy": "Won World Cup as player (1974) and coach (1990); revolutionized sweeper position"
+        },
+        {
+          "name": "Gerd Müller",
+          "position": "Forward",
+          "worldCupGoals": 14,
+          "worldCupAppearances": 2,
+          "worldCupTitles": 1,
+          "yearsActive": "1970-1974",
+          "legacy": "Golden Boot 1970; scored winning goal in 1974 Final; 2nd all-time World Cup scorer"
+        },
+        {
+          "name": "Lothar Matthäus",
+          "position": "Midfielder",
+          "worldCupGoals": 6,
+          "worldCupAppearances": 5,
+          "worldCupTitles": 1,
+          "yearsActive": "1982-1998",
+          "legacy": "Most World Cup matches played (25); captain of 1990 winning team"
+        },
+        {
+          "name": "Philipp Lahm",
+          "position": "Defender",
+          "worldCupGoals": 0,
+          "worldCupAppearances": 3,
+          "worldCupTitles": 1,
+          "yearsActive": "2006-2014",
+          "legacy": "Captain of 2014 winning team; versatile defender who played both fullback positions"
+        }
+      ],
+      "notableAchievements": [
+        "4 World Cup titles (1954, 1974, 1990, 2014)",
+        "8 World Cup finals appearances",
+        "Home to all-time World Cup top scorer (Miroslav Klose - 16 goals)",
+        "7-1 victory over Brazil in 2014 Semi-Final - largest margin in a World Cup semi-final",
+        "Only European team to win World Cup in the Americas (2014 in Brazil)",
+        "Most consistent performer - reached at least semi-finals in 4 consecutive tournaments (2002-2014)"
+      ]
+    },
+    {
+      "fifaCode": "FRA",
+      "countryName": "France",
+      "shortName": "France",
+      "flagUrl": "assets/worldcup/flags/fra.png",
+      "confederation": "UEFA",
+      "fifaRanking": 2,
+      "group": "E",
+      "worldCupTitles": 2,
+      "worldCupAppearances": 16,
+      "bestFinish": "Winner (1998, 2018)",
+      "isHostNation": false,
+      "nickname": "Les Bleus",
+      "coachName": "Didier Deschamps",
+      "captainName": "Kylian Mbappé",
+      "starPlayers": ["Kylian Mbappé", "Antoine Griezmann", "Aurélien Tchouaméni", "Ousmane Dembélé"],
+      "qualificationMethod": "UEFA Qualifier",
+      "isQualified": true,
+      "primaryColor": "#0055A4",
+      "secondaryColor": "#FFFFFF",
+      "worldCupHistory": [
+        {
+          "year": 2022,
+          "host": "Qatar",
+          "finish": "Runner-up",
+          "matchesPlayed": 7,
+          "wins": 5,
+          "draws": 1,
+          "losses": 1,
+          "goalsFor": 16,
+          "goalsAgainst": 8,
+          "notableMatches": [
+            "Lost to Argentina 4-2 on penalties (3-3 AET) in Final",
+            "Mbappé scored hat-trick in final - first since 1966",
+            "Attempting to become first team to defend title since Brazil 1962"
+          ]
+        },
+        {
+          "year": 2018,
+          "host": "Russia",
+          "finish": "Winner",
+          "matchesPlayed": 7,
+          "wins": 6,
+          "draws": 1,
+          "losses": 0,
+          "goalsFor": 14,
+          "goalsAgainst": 6,
+          "notableMatches": [
+            "Defeated Croatia 4-2 in Final",
+            "Defeated Argentina 4-3 in Round of 16",
+            "Mbappé becomes second teenager to score in World Cup final (after Pelé)"
+          ]
+        },
+        {
+          "year": 2014,
+          "host": "Brazil",
+          "finish": "Quarter-Finals",
+          "matchesPlayed": 5,
+          "wins": 3,
+          "draws": 2,
+          "losses": 0,
+          "goalsFor": 10,
+          "goalsAgainst": 3,
+          "notableMatches": [
+            "Lost to Germany 1-0 in Quarter-Finals"
+          ]
+        },
+        {
+          "year": 2010,
+          "host": "South Africa",
+          "finish": "Group Stage",
+          "matchesPlayed": 3,
+          "wins": 0,
+          "draws": 1,
+          "losses": 2,
+          "goalsFor": 1,
+          "goalsAgainst": 4,
+          "notableMatches": [
+            "Eliminated in Group A with team mutiny and chaos",
+            "One of worst French World Cup campaigns ever"
+          ]
+        },
+        {
+          "year": 2006,
+          "host": "Germany",
+          "finish": "Runner-up",
+          "matchesPlayed": 7,
+          "wins": 4,
+          "draws": 2,
+          "losses": 1,
+          "goalsFor": 9,
+          "goalsAgainst": 3,
+          "notableMatches": [
+            "Lost to Italy 5-3 on penalties (1-1 AET) in Final",
+            "Zidane sent off in final for headbutt in his last match"
+          ]
+        },
+        {
+          "year": 2002,
+          "host": "South Korea/Japan",
+          "finish": "Group Stage",
+          "matchesPlayed": 3,
+          "wins": 0,
+          "draws": 1,
+          "losses": 2,
+          "goalsFor": 0,
+          "goalsAgainst": 3,
+          "notableMatches": [
+            "Defending champions eliminated in Group A without scoring",
+            "Lost opening match to Senegal 1-0"
+          ]
+        }
+      ],
+      "allTimeStats": {
+        "totalMatches": 69,
+        "wins": 36,
+        "draws": 13,
+        "losses": 20,
+        "goalsFor": 130,
+        "goalsAgainst": 81,
+        "winPercentage": 52.2,
+        "cleanSheets": 24
+      },
+      "legendaryPlayers": [
+        {
+          "name": "Zinedine Zidane",
+          "position": "Midfielder",
+          "worldCupGoals": 5,
+          "worldCupAppearances": 3,
+          "worldCupTitles": 1,
+          "yearsActive": "1998-2006",
+          "legacy": "Golden Ball 2006; scored 2 goals in 1998 Final; one of greatest midfielders ever"
+        },
+        {
+          "name": "Thierry Henry",
+          "position": "Forward",
+          "worldCupGoals": 6,
+          "worldCupAppearances": 4,
+          "worldCupTitles": 1,
+          "yearsActive": "1998-2010",
+          "legacy": "Key player in 1998 triumph; France's all-time leading scorer"
+        },
+        {
+          "name": "Kylian Mbappé",
+          "position": "Forward",
+          "worldCupGoals": 12,
+          "worldCupAppearances": 2,
+          "worldCupTitles": 1,
+          "yearsActive": "2018-present",
+          "legacy": "Second teenager to score in World Cup final; hat-trick in 2022 Final; already 3rd all-time French World Cup scorer"
+        },
+        {
+          "name": "Michel Platini",
+          "position": "Midfielder",
+          "worldCupGoals": 5,
+          "worldCupAppearances": 3,
+          "worldCupTitles": 0,
+          "yearsActive": "1978-1986",
+          "legacy": "Led France to first World Cup semi-final in 1982; 3-time Ballon d'Or winner"
+        },
+        {
+          "name": "Just Fontaine",
+          "position": "Forward",
+          "worldCupGoals": 13,
+          "worldCupAppearances": 1,
+          "worldCupTitles": 0,
+          "yearsActive": "1958",
+          "legacy": "Holds record for most goals in single World Cup (13 in 1958); 3rd all-time French scorer"
+        }
+      ],
+      "notableAchievements": [
+        "2 World Cup titles (1998, 2018)",
+        "4 World Cup finals (1998, 2006, 2018, 2022)",
+        "Won first title as host nation in 1998",
+        "Back-to-back finals in 2018 and 2022",
+        "Just Fontaine holds record for most goals in single tournament (13 in 1958)"
+      ]
+    },
+    {
+      "fifaCode": "ESP",
+      "countryName": "Spain",
+      "shortName": "Spain",
+      "flagUrl": "assets/worldcup/flags/esp.png",
+      "confederation": "UEFA",
+      "fifaRanking": 8,
+      "group": "F",
+      "worldCupTitles": 1,
+      "worldCupAppearances": 16,
+      "bestFinish": "Winner (2010)",
+      "isHostNation": false,
+      "nickname": "La Roja",
+      "coachName": "Luis de la Fuente",
+      "captainName": "Álvaro Morata",
+      "starPlayers": ["Pedri", "Gavi", "Rodri", "Álvaro Morata"],
+      "qualificationMethod": "UEFA Qualifier",
+      "isQualified": true,
+      "primaryColor": "#AA151B",
+      "secondaryColor": "#F1BF00",
+      "worldCupHistory": [
+        {
+          "year": 2022,
+          "host": "Qatar",
+          "finish": "Round of 16",
+          "matchesPlayed": 4,
+          "wins": 2,
+          "draws": 1,
+          "losses": 1,
+          "goalsFor": 9,
+          "goalsAgainst": 3,
+          "notableMatches": [
+            "Defeated Costa Rica 7-0 in opening match",
+            "Lost to Morocco 3-0 on penalties (0-0 AET) in Round of 16"
+          ]
+        },
+        {
+          "year": 2018,
+          "host": "Russia",
+          "finish": "Round of 16",
+          "matchesPlayed": 4,
+          "wins": 1,
+          "draws": 3,
+          "losses": 0,
+          "goalsFor": 7,
+          "goalsAgainst": 6,
+          "notableMatches": [
+            "Lost to Russia 4-3 on penalties (1-1 AET) in Round of 16"
+          ]
+        },
+        {
+          "year": 2014,
+          "host": "Brazil",
+          "finish": "Group Stage",
+          "matchesPlayed": 3,
+          "wins": 0,
+          "draws": 0,
+          "losses": 3,
+          "goalsFor": 4,
+          "goalsAgainst": 7,
+          "notableMatches": [
+            "Lost to Netherlands 5-1 in opening match",
+            "Defending champions eliminated in group stage"
+          ]
+        },
+        {
+          "year": 2010,
+          "host": "South Africa",
+          "finish": "Winner",
+          "matchesPlayed": 7,
+          "wins": 6,
+          "draws": 0,
+          "losses": 1,
+          "goalsFor": 8,
+          "goalsAgainst": 2,
+          "notableMatches": [
+            "Lost to Switzerland 1-0 in opening match",
+            "Defeated Netherlands 1-0 AET in Final (Iniesta 116')",
+            "Won all knockout matches 1-0",
+            "Peak of tiki-taka era"
+          ]
+        },
+        {
+          "year": 2006,
+          "host": "Germany",
+          "finish": "Round of 16",
+          "matchesPlayed": 4,
+          "wins": 3,
+          "draws": 0,
+          "losses": 1,
+          "goalsFor": 9,
+          "goalsAgainst": 4,
+          "notableMatches": [
+            "Lost to France 3-1 in Round of 16"
+          ]
+        },
+        {
+          "year": 2002,
+          "host": "South Korea/Japan",
+          "finish": "Quarter-Finals",
+          "matchesPlayed": 5,
+          "wins": 3,
+          "draws": 2,
+          "losses": 0,
+          "goalsFor": 10,
+          "goalsAgainst": 5,
+          "notableMatches": [
+            "Lost to South Korea 5-3 on penalties (0-0 AET) in Quarter-Finals"
+          ]
+        }
+      ],
+      "allTimeStats": {
+        "totalMatches": 67,
+        "wins": 31,
+        "draws": 16,
+        "losses": 20,
+        "goalsFor": 109,
+        "goalsAgainst": 79,
+        "winPercentage": 46.3,
+        "cleanSheets": 22
+      },
+      "legendaryPlayers": [
+        {
+          "name": "Andrés Iniesta",
+          "position": "Midfielder",
+          "worldCupGoals": 1,
+          "worldCupAppearances": 3,
+          "worldCupTitles": 1,
+          "yearsActive": "2006-2018",
+          "legacy": "Scored winning goal in 2010 Final; Golden Ball nominee; maestro of tiki-taka"
+        },
+        {
+          "name": "Xavi Hernández",
+          "position": "Midfielder",
+          "worldCupGoals": 0,
+          "worldCupAppearances": 3,
+          "worldCupTitles": 1,
+          "yearsActive": "2002-2014",
+          "legacy": "Orchestrator of Spain's golden generation; best passer of his era"
+        },
+        {
+          "name": "Iker Casillas",
+          "position": "Goalkeeper",
+          "worldCupGoals": 0,
+          "worldCupAppearances": 4,
+          "worldCupTitles": 1,
+          "yearsActive": "2002-2014",
+          "legacy": "Captain of 2010 winning team; most capped Spanish player"
+        },
+        {
+          "name": "David Villa",
+          "position": "Forward",
+          "worldCupGoals": 9,
+          "worldCupAppearances": 3,
+          "worldCupTitles": 1,
+          "yearsActive": "2006-2014",
+          "legacy": "Top scorer in 2010 (tied); Spain's all-time leading scorer"
+        },
+        {
+          "name": "Sergio Ramos",
+          "position": "Defender",
+          "worldCupGoals": 0,
+          "worldCupAppearances": 4,
+          "worldCupTitles": 1,
+          "yearsActive": "2006-2018",
+          "legacy": "Defensive rock of golden generation; 2nd most capped Spanish player"
+        }
+      ],
+      "notableAchievements": [
+        "1 World Cup title (2010)",
+        "First World Cup title after years of underachievement",
+        "Won Euro 2008, World Cup 2010, Euro 2012 - unprecedented 3 consecutive major titles",
+        "Perfected 'tiki-taka' possession football",
+        "All knockout matches in 2010 won 1-0",
+        "7-0 victory over Costa Rica in 2022 - joint largest World Cup win for Spain"
+      ]
+    },
+    {
+      "fifaCode": "ENG",
+      "countryName": "England",
+      "shortName": "England",
+      "flagUrl": "assets/worldcup/flags/eng.png",
+      "confederation": "UEFA",
+      "fifaRanking": 5,
+      "group": "G",
+      "worldCupTitles": 1,
+      "worldCupAppearances": 16,
+      "bestFinish": "Winner (1966)",
+      "isHostNation": false,
+      "nickname": "The Three Lions",
+      "coachName": "Gareth Southgate",
+      "captainName": "Harry Kane",
+      "starPlayers": ["Harry Kane", "Jude Bellingham", "Bukayo Saka", "Phil Foden"],
+      "qualificationMethod": "UEFA Qualifier",
+      "isQualified": true,
+      "primaryColor": "#FFFFFF",
+      "secondaryColor": "#CE1124",
+      "worldCupHistory": [
+        {
+          "year": 2022,
+          "host": "Qatar",
+          "finish": "Quarter-Finals",
+          "matchesPlayed": 5,
+          "wins": 3,
+          "draws": 1,
+          "losses": 1,
+          "goalsFor": 13,
+          "goalsAgainst": 4,
+          "notableMatches": [
+            "Defeated Senegal 3-0 in Round of 16",
+            "Lost to France 2-1 in Quarter-Finals",
+            "Harry Kane missed crucial penalty"
+          ]
+        },
+        {
+          "year": 2018,
+          "host": "Russia",
+          "finish": "Fourth Place",
+          "matchesPlayed": 7,
+          "wins": 3,
+          "draws": 1,
+          "losses": 3,
+          "goalsFor": 12,
+          "goalsAgainst": 8,
+          "notableMatches": [
+            "Lost to Croatia 2-1 AET in Semi-Finals",
+            "Lost to Belgium 2-0 in Third Place match",
+            "Best finish since 1966"
+          ]
+        },
+        {
+          "year": 2014,
+          "host": "Brazil",
+          "finish": "Group Stage",
+          "matchesPlayed": 3,
+          "wins": 0,
+          "draws": 1,
+          "losses": 2,
+          "goalsFor": 2,
+          "goalsAgainst": 4,
+          "notableMatches": [
+            "Eliminated in Group D without a win"
+          ]
+        },
+        {
+          "year": 2010,
+          "host": "South Africa",
+          "finish": "Round of 16",
+          "matchesPlayed": 4,
+          "wins": 1,
+          "draws": 2,
+          "losses": 1,
+          "goalsFor": 3,
+          "goalsAgainst": 5,
+          "notableMatches": [
+            "Lost to Germany 4-1 in Round of 16"
+          ]
+        },
+        {
+          "year": 2006,
+          "host": "Germany",
+          "finish": "Quarter-Finals",
+          "matchesPlayed": 5,
+          "wins": 3,
+          "draws": 2,
+          "losses": 0,
+          "goalsFor": 6,
+          "goalsAgainst": 2,
+          "notableMatches": [
+            "Lost to Portugal 3-1 on penalties (0-0 AET) in Quarter-Finals"
+          ]
+        },
+        {
+          "year": 2002,
+          "host": "South Korea/Japan",
+          "finish": "Quarter-Finals",
+          "matchesPlayed": 5,
+          "wins": 2,
+          "draws": 2,
+          "losses": 1,
+          "goalsFor": 6,
+          "goalsAgainst": 3,
+          "notableMatches": [
+            "Lost to Brazil 2-1 in Quarter-Finals"
+          ]
+        }
+      ],
+      "allTimeStats": {
+        "totalMatches": 73,
+        "wins": 32,
+        "draws": 22,
+        "losses": 19,
+        "goalsFor": 95,
+        "goalsAgainst": 64,
+        "winPercentage": 43.8,
+        "cleanSheets": 26
+      },
+      "legendaryPlayers": [
+        {
+          "name": "Bobby Charlton",
+          "position": "Midfielder",
+          "worldCupGoals": 4,
+          "worldCupAppearances": 3,
+          "worldCupTitles": 1,
+          "yearsActive": "1958-1970",
+          "legacy": "Captain of 1966 winning team; Ballon d'Or winner; survived Munich air disaster"
+        },
+        {
+          "name": "Gary Lineker",
+          "position": "Forward",
+          "worldCupGoals": 10,
+          "worldCupAppearances": 2,
+          "worldCupTitles": 0,
+          "yearsActive": "1986-1990",
+          "legacy": "Golden Boot winner 1986; England's 2nd all-time World Cup scorer"
+        },
+        {
+          "name": "Harry Kane",
+          "position": "Forward",
+          "worldCupGoals": 8,
+          "worldCupAppearances": 2,
+          "worldCupTitles": 0,
+          "yearsActive": "2018-present",
+          "legacy": "Golden Boot winner 2018; current captain; England's all-time leading scorer"
+        },
+        {
+          "name": "Bobby Moore",
+          "position": "Defender",
+          "worldCupGoals": 0,
+          "worldCupAppearances": 3,
+          "worldCupTitles": 1,
+          "yearsActive": "1962-1970",
+          "legacy": "Captain who lifted 1966 trophy; considered England's greatest defender"
+        },
+        {
+          "name": "Geoff Hurst",
+          "position": "Forward",
+          "worldCupGoals": 5,
+          "worldCupAppearances": 2,
+          "worldCupTitles": 1,
+          "yearsActive": "1966-1970",
+          "legacy": "Only player to score hat-trick in World Cup final (1966 vs West Germany)"
+        }
+      ],
+      "notableAchievements": [
+        "1 World Cup title (1966 as host nation)",
+        "Only World Cup final in 1966",
+        "Geoff Hurst's hat-trick in 1966 final - only player to achieve this",
+        "Inventors of modern football but only one World Cup title",
+        "Golden Boot winner 2018 (Harry Kane - 6 goals)",
+        "Best recent run: 4th place in 2018, runners-up Euro 2020, quarter-finals 2022"
+      ]
+    },
+    {
+      "fifaCode": "ITA",
+      "countryName": "Italy",
+      "shortName": "Italy",
+      "flagUrl": "assets/worldcup/flags/ita.png",
+      "confederation": "UEFA",
+      "fifaRanking": 9,
+      "group": "K",
+      "worldCupTitles": 4,
+      "worldCupAppearances": 18,
+      "bestFinish": "Winner (1934, 1938, 1982, 2006)",
+      "isHostNation": false,
+      "nickname": "Gli Azzurri",
+      "coachName": "Luciano Spalletti",
+      "captainName": "Gianluigi Donnarumma",
+      "starPlayers": ["Gianluigi Donnarumma", "Nicolò Barella", "Federico Chiesa", "Giovanni Di Lorenzo"],
+      "qualificationMethod": "UEFA Qualifier",
+      "isQualified": true,
+      "primaryColor": "#0066CC",
+      "secondaryColor": "#FFFFFF",
+      "worldCupHistory": [
+        {
+          "year": 2022,
+          "host": "Qatar",
+          "finish": "Did Not Qualify",
+          "matchesPlayed": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "notableMatches": [
+            "Failed to qualify - lost playoff to North Macedonia",
+            "Second consecutive World Cup missed (also 2018)"
+          ]
+        },
+        {
+          "year": 2018,
+          "host": "Russia",
+          "finish": "Did Not Qualify",
+          "matchesPlayed": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "notableMatches": [
+            "Failed to qualify - lost playoff to Sweden",
+            "First World Cup missed since 1958"
+          ]
+        },
+        {
+          "year": 2014,
+          "host": "Brazil",
+          "finish": "Group Stage",
+          "matchesPlayed": 3,
+          "wins": 1,
+          "draws": 0,
+          "losses": 2,
+          "goalsFor": 2,
+          "goalsAgainst": 3,
+          "notableMatches": [
+            "Eliminated in Group D",
+            "Lost to Uruguay 1-0 and Costa Rica 1-0"
+          ]
+        },
+        {
+          "year": 2010,
+          "host": "South Africa",
+          "finish": "Group Stage",
+          "matchesPlayed": 3,
+          "wins": 0,
+          "draws": 2,
+          "losses": 1,
+          "goalsFor": 4,
+          "goalsAgainst": 5,
+          "notableMatches": [
+            "Defending champions eliminated in Group F"
+          ]
+        },
+        {
+          "year": 2006,
+          "host": "Germany",
+          "finish": "Winner",
+          "matchesPlayed": 7,
+          "wins": 6,
+          "draws": 1,
+          "losses": 0,
+          "goalsFor": 12,
+          "goalsAgainst": 2,
+          "notableMatches": [
+            "Defeated France 5-3 on penalties (1-1 AET) in Final",
+            "Won 4th World Cup title",
+            "Fabio Grosso scored winning penalty"
+          ]
+        },
+        {
+          "year": 2002,
+          "host": "South Korea/Japan",
+          "finish": "Round of 16",
+          "matchesPlayed": 4,
+          "wins": 1,
+          "draws": 1,
+          "losses": 2,
+          "goalsFor": 5,
+          "goalsAgainst": 5,
+          "notableMatches": [
+            "Lost to South Korea 2-1 AET in Round of 16 (controversial officiating)"
+          ]
+        }
+      ],
+      "allTimeStats": {
+        "totalMatches": 83,
+        "wins": 45,
+        "draws": 21,
+        "losses": 17,
+        "goalsFor": 128,
+        "goalsAgainst": 77,
+        "winPercentage": 54.2,
+        "cleanSheets": 31
+      },
+      "legendaryPlayers": [
+        {
+          "name": "Paolo Maldini",
+          "position": "Defender",
+          "worldCupGoals": 0,
+          "worldCupAppearances": 4,
+          "worldCupTitles": 0,
+          "yearsActive": "1990-2002",
+          "legacy": "One of greatest defenders ever; played in 4 World Cups but never won"
+        },
+        {
+          "name": "Paolo Rossi",
+          "position": "Forward",
+          "worldCupGoals": 9,
+          "worldCupAppearances": 3,
+          "worldCupTitles": 1,
+          "yearsActive": "1978-1986",
+          "legacy": "Golden Ball and Golden Boot 1982; scored hat-trick vs Brazil; led Italy to 3rd title"
+        },
+        {
+          "name": "Roberto Baggio",
+          "position": "Forward",
+          "worldCupGoals": 9,
+          "worldCupAppearances": 3,
+          "worldCupTitles": 0,
+          "yearsActive": "1990-1998",
+          "legacy": "Carried Italy to 1994 final; missed crucial penalty in final shootout"
+        },
+        {
+          "name": "Fabio Cannavaro",
+          "position": "Defender",
+          "worldCupGoals": 0,
+          "worldCupAppearances": 4,
+          "worldCupTitles": 1,
+          "yearsActive": "1998-2010",
+          "legacy": "Captain of 2006 winning team; won Ballon d'Or in 2006"
+        },
+        {
+          "name": "Gianluigi Buffon",
+          "position": "Goalkeeper",
+          "worldCupGoals": 0,
+          "worldCupAppearances": 5,
+          "worldCupTitles": 1,
+          "yearsActive": "1998-2014",
+          "legacy": "Greatest Italian goalkeeper; key player in 2006 triumph; most capped Italian player"
+        }
+      ],
+      "notableAchievements": [
+        "4 World Cup titles (1934, 1938, 1982, 2006)",
+        "6 World Cup finals (1934, 1938, 1970, 1982, 1994, 2006)",
+        "Only team other than Brazil to win back-to-back titles (1934, 1938)",
+        "Famous for defensive excellence - 'Catenaccio'",
+        "Missed 2018 and 2022 World Cups despite winning Euro 2020",
+        "Paolo Rossi's hat-trick vs Brazil in 1982 - one of greatest World Cup performances"
+      ]
+    },
+    {
+      "fifaCode": "URU",
+      "countryName": "Uruguay",
+      "shortName": "Uruguay",
+      "flagUrl": "assets/worldcup/flags/uru.png",
+      "confederation": "CONMEBOL",
+      "fifaRanking": 14,
+      "group": "C",
+      "worldCupTitles": 2,
+      "worldCupAppearances": 14,
+      "bestFinish": "Winner (1930, 1950)",
+      "isHostNation": false,
+      "nickname": "La Celeste",
+      "coachName": "Marcelo Bielsa",
+      "captainName": "José María Giménez",
+      "starPlayers": ["Darwin Núñez", "Federico Valverde", "Ronald Araújo", "José María Giménez"],
+      "qualificationMethod": "CONMEBOL Qualifier",
+      "isQualified": true,
+      "primaryColor": "#0038A8",
+      "secondaryColor": "#FFFFFF",
+      "worldCupHistory": [
+        {
+          "year": 2022,
+          "host": "Qatar",
+          "finish": "Group Stage",
+          "matchesPlayed": 3,
+          "wins": 0,
+          "draws": 1,
+          "losses": 2,
+          "goalsFor": 0,
+          "goalsAgainst": 2,
+          "notableMatches": [
+            "Eliminated in Group H without scoring a goal",
+            "Failed to advance for first time since 2002"
+          ]
+        },
+        {
+          "year": 2018,
+          "host": "Russia",
+          "finish": "Quarter-Finals",
+          "matchesPlayed": 5,
+          "wins": 2,
+          "draws": 1,
+          "losses": 2,
+          "goalsFor": 7,
+          "goalsAgainst": 6,
+          "notableMatches": [
+            "Lost to France 2-0 in Quarter-Finals"
+          ]
+        },
+        {
+          "year": 2014,
+          "host": "Brazil",
+          "finish": "Round of 16",
+          "matchesPlayed": 4,
+          "wins": 2,
+          "draws": 0,
+          "losses": 2,
+          "goalsFor": 4,
+          "goalsAgainst": 6,
+          "notableMatches": [
+            "Lost to Colombia 2-0 in Round of 16",
+            "Luis Suárez bite incident vs Italy"
+          ]
+        },
+        {
+          "year": 2010,
+          "host": "South Africa",
+          "finish": "Fourth Place",
+          "matchesPlayed": 7,
+          "wins": 3,
+          "draws": 2,
+          "losses": 2,
+          "goalsFor": 11,
+          "goalsAgainst": 8,
+          "notableMatches": [
+            "Lost to Netherlands 3-2 in Semi-Finals",
+            "Lost to Germany 3-2 in Third Place match",
+            "Suárez handball vs Ghana in Quarter-Finals"
+          ]
+        },
+        {
+          "year": 2006,
+          "host": "Germany",
+          "finish": "Did Not Qualify",
+          "matchesPlayed": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "notableMatches": []
+        },
+        {
+          "year": 2002,
+          "host": "South Korea/Japan",
+          "finish": "Group Stage",
+          "matchesPlayed": 3,
+          "wins": 0,
+          "draws": 2,
+          "losses": 1,
+          "goalsFor": 4,
+          "goalsAgainst": 5,
+          "notableMatches": [
+            "Eliminated in Group A"
+          ]
+        }
+      ],
+      "allTimeStats": {
+        "totalMatches": 58,
+        "wins": 25,
+        "draws": 13,
+        "losses": 20,
+        "goalsFor": 87,
+        "goalsAgainst": 74,
+        "winPercentage": 43.1,
+        "cleanSheets": 18
+      },
+      "legendaryPlayers": [
+        {
+          "name": "Diego Forlán",
+          "position": "Forward",
+          "worldCupGoals": 5,
+          "worldCupAppearances": 3,
+          "worldCupTitles": 0,
+          "yearsActive": "2002-2014",
+          "legacy": "Golden Ball winner 2010; led Uruguay to 4th place"
+        },
+        {
+          "name": "Luis Suárez",
+          "position": "Forward",
+          "worldCupGoals": 7,
+          "worldCupAppearances": 3,
+          "worldCupTitles": 0,
+          "yearsActive": "2010-2022",
+          "legacy": "Uruguay's all-time leading scorer; controversial handball save vs Ghana 2010"
+        },
+        {
+          "name": "Edinson Cavani",
+          "position": "Forward",
+          "worldCupGoals": 3,
+          "worldCupAppearances": 3,
+          "worldCupTitles": 0,
+          "yearsActive": "2010-2022",
+          "legacy": "Uruguay's 2nd all-time leading scorer; deadly partnership with Suárez"
+        },
+        {
+          "name": "Alcides Ghiggia",
+          "position": "Winger",
+          "worldCupGoals": 4,
+          "worldCupAppearances": 1,
+          "worldCupTitles": 1,
+          "yearsActive": "1950",
+          "legacy": "Scored winning goal in 1950 Final vs Brazil in 'Maracanazo'; killed silence of 200,000 fans"
+        },
+        {
+          "name": "José Nasazzi",
+          "position": "Defender",
+          "worldCupGoals": 0,
+          "worldCupAppearances": 2,
+          "worldCupTitles": 1,
+          "yearsActive": "1930-1934",
+          "legacy": "Captain of first ever World Cup winning team in 1930"
+        }
+      ],
+      "notableAchievements": [
+        "2 World Cup titles (1930, 1950)",
+        "Won first ever World Cup in 1930 as host nation",
+        "Maracanazo 1950 - upset Brazil 2-1 in final at Maracanã in front of 200,000 fans",
+        "Only won World Cups in first 20 years, but still competitive",
+        "Fourth place finish in 2010 - best recent performance",
+        "Small nation (3.5M population) with outsized football legacy"
+      ]
+    },
+    {
+      "fifaCode": "NED",
+      "countryName": "Netherlands",
+      "shortName": "Netherlands",
+      "flagUrl": "assets/worldcup/flags/ned.png",
+      "confederation": "UEFA",
+      "fifaRanking": 7,
+      "group": "H",
+      "worldCupTitles": 0,
+      "worldCupAppearances": 11,
+      "bestFinish": "Runner-up (1974, 1978, 2010)",
+      "isHostNation": false,
+      "nickname": "Oranje",
+      "coachName": "Ronald Koeman",
+      "captainName": "Virgil van Dijk",
+      "starPlayers": ["Virgil van Dijk", "Cody Gakpo", "Memphis Depay", "Frenkie de Jong"],
+      "qualificationMethod": "UEFA Qualifier",
+      "isQualified": true,
+      "primaryColor": "#FF4F00",
+      "secondaryColor": "#FFFFFF",
+      "worldCupHistory": [
+        {
+          "year": 2022,
+          "host": "Qatar",
+          "finish": "Quarter-Finals",
+          "matchesPlayed": 5,
+          "wins": 3,
+          "draws": 2,
+          "losses": 0,
+          "goalsFor": 10,
+          "goalsAgainst": 5,
+          "notableMatches": [
+            "Lost to Argentina 4-3 on penalties (2-2 AET) in Quarter-Finals",
+            "Scored 2 late goals vs Argentina to force extra time"
+          ]
+        },
+        {
+          "year": 2018,
+          "host": "Russia",
+          "finish": "Did Not Qualify",
+          "matchesPlayed": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "notableMatches": [
+            "Failed to qualify for first time since 2002"
+          ]
+        },
+        {
+          "year": 2014,
+          "host": "Brazil",
+          "finish": "Third Place",
+          "matchesPlayed": 7,
+          "wins": 5,
+          "draws": 1,
+          "losses": 1,
+          "goalsFor": 15,
+          "goalsAgainst": 4,
+          "notableMatches": [
+            "Lost to Argentina 4-2 on penalties (0-0 AET) in Semi-Finals",
+            "Defeated Brazil 3-0 in Third Place match",
+            "Van Persie's diving header vs Spain (5-1 victory)"
+          ]
+        },
+        {
+          "year": 2010,
+          "host": "South Africa",
+          "finish": "Runner-up",
+          "matchesPlayed": 7,
+          "wins": 6,
+          "draws": 0,
+          "losses": 1,
+          "goalsFor": 12,
+          "goalsAgainst": 6,
+          "notableMatches": [
+            "Lost to Spain 1-0 AET in Final",
+            "Won all group and knockout matches until final",
+            "Robben missed late one-on-one vs Casillas"
+          ]
+        },
+        {
+          "year": 2006,
+          "host": "Germany",
+          "finish": "Round of 16",
+          "matchesPlayed": 4,
+          "wins": 2,
+          "draws": 1,
+          "losses": 1,
+          "goalsFor": 3,
+          "goalsAgainst": 2,
+          "notableMatches": [
+            "Lost to Portugal 1-0 in Round of 16",
+            "Battle of Nuremberg - 16 yellow cards, 4 red cards vs Portugal"
+          ]
+        },
+        {
+          "year": 2002,
+          "host": "South Korea/Japan",
+          "finish": "Did Not Qualify",
+          "matchesPlayed": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "notableMatches": []
+        }
+      ],
+      "allTimeStats": {
+        "totalMatches": 54,
+        "wins": 30,
+        "draws": 13,
+        "losses": 11,
+        "goalsFor": 93,
+        "goalsAgainst": 52,
+        "winPercentage": 55.6,
+        "cleanSheets": 19
+      },
+      "legendaryPlayers": [
+        {
+          "name": "Johan Cruyff",
+          "position": "Forward",
+          "worldCupGoals": 3,
+          "worldCupAppearances": 1,
+          "worldCupTitles": 0,
+          "yearsActive": "1974",
+          "legacy": "Golden Ball 1974; led 'Total Football' revolution; never won World Cup"
+        },
+        {
+          "name": "Marco van Basten",
+          "position": "Forward",
+          "worldCupGoals": 0,
+          "worldCupAppearances": 1,
+          "worldCupTitles": 0,
+          "yearsActive": "1990",
+          "legacy": "3-time Ballon d'Or winner; career cut short by injury"
+        },
+        {
+          "name": "Ruud Gullit",
+          "position": "Midfielder",
+          "worldCupGoals": 1,
+          "worldCupAppearances": 1,
+          "worldCupTitles": 0,
+          "yearsActive": "1990",
+          "legacy": "Ballon d'Or winner; captain and leader of late 80s Dutch team"
+        },
+        {
+          "name": "Arjen Robben",
+          "position": "Winger",
+          "worldCupGoals": 4,
+          "worldCupAppearances": 3,
+          "worldCupTitles": 0,
+          "yearsActive": "2006-2014",
+          "legacy": "Led Netherlands to 2010 final; famous cut-inside dribbles; missed crucial chance in 2010 final"
+        },
+        {
+          "name": "Wesley Sneijder",
+          "position": "Midfielder",
+          "worldCupGoals": 5,
+          "worldCupAppearances": 2,
+          "worldCupTitles": 0,
+          "yearsActive": "2006-2014",
+          "legacy": "Joint top scorer 2010; orchestrator of 2010 run to final"
+        }
+      ],
+      "notableAchievements": [
+        "0 World Cup titles despite 3 finals (1974, 1978, 2010) - greatest team never to win",
+        "Pioneers of 'Total Football' in 1974 with Johan Cruyff",
+        "Bronze medal in 2014 after thrashing Brazil 3-0",
+        "Most goals in a World Cup third-place match (3-0 vs Brazil 2014)",
+        "Reached 3 consecutive semi-finals or better (2010, 2014, 2022 - missed 2018)",
+        "Robin van Persie's diving header vs Spain 2014 - one of greatest World Cup goals"
+      ]
+    },
+    {
+      "fifaCode": "POR",
+      "countryName": "Portugal",
+      "shortName": "Portugal",
+      "flagUrl": "assets/worldcup/flags/por.png",
+      "confederation": "UEFA",
+      "fifaRanking": 6,
+      "group": "I",
+      "worldCupTitles": 0,
+      "worldCupAppearances": 8,
+      "bestFinish": "Third Place (1966)",
+      "isHostNation": false,
+      "nickname": "Seleção das Quinas",
+      "coachName": "Roberto Martínez",
+      "captainName": "Cristiano Ronaldo",
+      "starPlayers": ["Cristiano Ronaldo", "Bruno Fernandes", "Bernardo Silva", "Rafael Leão"],
+      "qualificationMethod": "UEFA Qualifier",
+      "isQualified": true,
+      "primaryColor": "#006600",
+      "secondaryColor": "#FF0000",
+      "worldCupHistory": [
+        {
+          "year": 2022,
+          "host": "Qatar",
+          "finish": "Quarter-Finals",
+          "matchesPlayed": 5,
+          "wins": 3,
+          "draws": 0,
+          "losses": 2,
+          "goalsFor": 12,
+          "goalsAgainst": 6,
+          "notableMatches": [
+            "Defeated Switzerland 6-1 in Round of 16 (Ronaldo benched, Gonçalo Ramos hat-trick)",
+            "Lost to Morocco 1-0 in Quarter-Finals",
+            "Ronaldo's likely last World Cup"
+          ]
+        },
+        {
+          "year": 2018,
+          "host": "Russia",
+          "finish": "Round of 16",
+          "matchesPlayed": 4,
+          "wins": 1,
+          "draws": 2,
+          "losses": 1,
+          "goalsFor": 6,
+          "goalsAgainst": 6,
+          "notableMatches": [
+            "Lost to Uruguay 2-1 in Round of 16",
+            "Ronaldo hat-trick vs Spain (3-3 draw) in group stage"
+          ]
+        },
+        {
+          "year": 2014,
+          "host": "Brazil",
+          "finish": "Group Stage",
+          "matchesPlayed": 3,
+          "wins": 1,
+          "draws": 0,
+          "losses": 2,
+          "goalsFor": 4,
+          "goalsAgainst": 7,
+          "notableMatches": [
+            "Eliminated in Group G",
+            "Lost to Germany 4-0"
+          ]
+        },
+        {
+          "year": 2010,
+          "host": "South Africa",
+          "finish": "Round of 16",
+          "matchesPlayed": 4,
+          "wins": 1,
+          "draws": 2,
+          "losses": 1,
+          "goalsFor": 7,
+          "goalsAgainst": 1,
+          "notableMatches": [
+            "Lost to Spain 1-0 in Round of 16",
+            "Defeated North Korea 7-0 in group stage"
+          ]
+        },
+        {
+          "year": 2006,
+          "host": "Germany",
+          "finish": "Fourth Place",
+          "matchesPlayed": 7,
+          "wins": 4,
+          "draws": 1,
+          "losses": 2,
+          "goalsFor": 7,
+          "goalsAgainst": 5,
+          "notableMatches": [
+            "Lost to France 1-0 in Semi-Finals",
+            "Lost to Germany 3-1 in Third Place match",
+            "Defeated England 3-1 on penalties in Quarter-Finals"
+          ]
+        },
+        {
+          "year": 2002,
+          "host": "South Korea/Japan",
+          "finish": "Group Stage",
+          "matchesPlayed": 3,
+          "wins": 1,
+          "draws": 0,
+          "losses": 2,
+          "goalsFor": 6,
+          "goalsAgainst": 4,
+          "notableMatches": [
+            "Eliminated in Group D"
+          ]
+        }
+      ],
+      "allTimeStats": {
+        "totalMatches": 30,
+        "wins": 14,
+        "draws": 5,
+        "losses": 11,
+        "goalsFor": 54,
+        "goalsAgainst": 36,
+        "winPercentage": 46.7,
+        "cleanSheets": 10
+      },
+      "legendaryPlayers": [
+        {
+          "name": "Cristiano Ronaldo",
+          "position": "Forward",
+          "worldCupGoals": 8,
+          "worldCupAppearances": 5,
+          "worldCupTitles": 0,
+          "yearsActive": "2006-2022",
+          "legacy": "Portugal's all-time leading scorer; 5-time Ballon d'Or; never won World Cup despite Euro 2016 triumph"
+        },
+        {
+          "name": "Eusébio",
+          "position": "Forward",
+          "worldCupGoals": 9,
+          "worldCupAppearances": 1,
+          "worldCupTitles": 0,
+          "yearsActive": "1966",
+          "legacy": "Golden Boot 1966; led Portugal to 3rd place; one of greatest players of his generation"
+        },
+        {
+          "name": "Luís Figo",
+          "position": "Midfielder",
+          "worldCupGoals": 3,
+          "worldCupAppearances": 3,
+          "worldCupTitles": 0,
+          "yearsActive": "2002-2006",
+          "legacy": "Ballon d'Or winner 2000; captain of 'Golden Generation'; led Portugal to Euro 2004 final and 2006 World Cup semi-final"
+        },
+        {
+          "name": "Rui Costa",
+          "position": "Midfielder",
+          "worldCupGoals": 3,
+          "worldCupAppearances": 2,
+          "worldCupTitles": 0,
+          "yearsActive": "2002-2006",
+          "legacy": "Maestro of 'Golden Generation'; elegant playmaker"
+        },
+        {
+          "name": "Pepe",
+          "position": "Defender",
+          "worldCupGoals": 2,
+          "worldCupAppearances": 4,
+          "worldCupTitles": 0,
+          "yearsActive": "2006-2022",
+          "legacy": "Defensive rock for Portugal for 16+ years; most capped outfield player"
+        }
+      ],
+      "notableAchievements": [
+        "0 World Cup titles but won Euro 2016",
+        "Best finish: 3rd place in 1966 with Eusébio (Golden Boot - 9 goals)",
+        "Eusébio is 2nd all-time top scorer in Portugal's history",
+        "Cristiano Ronaldo appeared in 5 World Cups (2006-2022)",
+        "Ronaldo's hat-trick vs Spain in 2018 - one of greatest individual World Cup performances",
+        "'Golden Generation' of 2000s reached Euro 2004 final and 2006 World Cup semi-final but never won major trophy"
+      ]
+    }
+  ]
+}

@@ -1,3 +1,4 @@
+**Steps for the reviewer to confirm:** The app has no IAP entry points. There is no "Upgrade," "Fan Pass," "Premium," or "Subscribe" button anywhere in the navigation, on the profile screen, or in the match-detail views. If a reviewer expects to reach an IAP surface and cannot, that is the expected behavior — not a bug.
 # Pregame — App Store Resubmission Report (V6)
 
 **App:** Pregame 2026
@@ -31,7 +32,6 @@ This is a direct follow-up to our V5 gambling-strip submission. The reviewer rai
 - Superfan Pass — removed from the binary and marked "Removed from Sale" in App Store Connect
 - No other IAPs exist in the app. Pregame now ships as an entirely free experience with no paid tiers, no subscription, and no prediction-gated content.
 
-**Steps for the reviewer to confirm:** The app has no IAP entry points. There is no "Upgrade," "Fan Pass," "Premium," or "Subscribe" button anywhere in the navigation, on the profile screen, or in the match-detail views. If a reviewer expects to reach an IAP surface and cannot, that is the expected behavior — not a bug.
 
 We have also updated the "In-App Purchases" section of the App Store Connect submission to reflect that no IAPs are submitted with this build.
 
