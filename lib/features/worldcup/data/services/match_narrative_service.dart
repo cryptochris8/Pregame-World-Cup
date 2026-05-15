@@ -1,31 +1,45 @@
+import 'dart:async';
 import 'dart:convert';
+
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/services.dart';
 import 'package:pregame_world_cup/core/services/logging_service.dart';
+
 import '../../domain/entities/match_narrative.dart';
 
-/// Service for loading pre-generated match narratives from locally-bundled JSON.
+/// Service for loading pre-generated match narratives.
 ///
-/// ARCHITECTURE PRINCIPLE: All narrative content is generated OFFLINE by the
-/// AI Sports Journalism Engine (generate-match-narratives.ts) and bundled
-/// with the app. There are NO live AI API calls for this content.
+/// ARCHITECTURE: Narratives are generated OFFLINE by the AI Sports Journalism
+/// Engine (functions/src/generate-match-narratives.ts) and distributed via two
+/// channels:
+///   1. Firestore `match_narratives/{KEY}` — refreshed between releases by
+///      uploading regenerated narratives via seed-match-narratives.ts.
+///   2. Bundled JSON in assets/data/worldcup/match_narratives/{KEY}.json —
+///      the build-time snapshot that ships with each app release. Used as a
+///      fallback when Firestore is unreachable or the doc has not been
+///      uploaded yet.
 ///
-/// This service loads from a SEPARATE directory (match_narratives/) that
-/// never interferes with the existing match_summaries/ directory.
-///
-/// Fallback: If no narrative exists for a match, returns null. The UI should
-/// fall back to the existing MatchSummary from LocalMatchSummaryService.
+/// There are NO live AI API calls from the client.
 class MatchNarrativeService {
   static const String _assetBasePath =
       'assets/data/worldcup/match_narratives';
+  static const String _firestoreCollection = 'match_narratives';
+  static const Duration _firestoreTimeout = Duration(seconds: 5);
   static const String _logTag = 'MatchNarrative';
 
-  /// In-memory cache to avoid repeated asset loads
+  final FirebaseFirestore _firestore;
+
+  /// In-memory cache to avoid repeated asset / network loads within a session.
   final Map<String, MatchNarrative?> _cache = {};
+
+  MatchNarrativeService({FirebaseFirestore? firestore})
+      : _firestore = firestore ?? FirebaseFirestore.instance;
 
   /// Loads the narrative article for a match between two teams.
   ///
-  /// Returns null if no narrative JSON file exists for this matchup.
-  /// Team codes are sorted alphabetically for consistent file naming.
+  /// Tries Firestore first (with a short timeout) for the freshest copy, then
+  /// falls back to the bundled JSON asset. Returns null when neither source
+  /// has a narrative for this matchup.
   Future<MatchNarrative?> getNarrative(
       String team1Code, String team2Code) async {
     final codes = [team1Code.toUpperCase(), team2Code.toUpperCase()]..sort();
@@ -35,29 +49,57 @@ class MatchNarrativeService {
       return _cache[key];
     }
 
+    final fromFirestore = await _loadFromFirestore(key);
+    if (fromFirestore != null) {
+      _cache[key] = fromFirestore;
+      return fromFirestore;
+    }
+
+    final fromBundle = await _loadFromBundle(key);
+    _cache[key] = fromBundle;
+    return fromBundle;
+  }
+
+  Future<MatchNarrative?> _loadFromFirestore(String key) async {
+    try {
+      final doc = await _firestore
+          .collection(_firestoreCollection)
+          .doc(key)
+          .get()
+          .timeout(_firestoreTimeout);
+      if (!doc.exists) return null;
+      final data = doc.data();
+      if (data == null) return null;
+      return MatchNarrative.fromJson(data);
+    } catch (e) {
+      LoggingService.debug(
+        'Firestore narrative fetch failed for $key — using bundled fallback ($e)',
+        tag: _logTag,
+      );
+      return null;
+    }
+  }
+
+  Future<MatchNarrative?> _loadFromBundle(String key) async {
     try {
       final path = '$_assetBasePath/$key.json';
       final jsonString = await rootBundle.loadString(path);
       final data = json.decode(jsonString) as Map<String, dynamic>;
-      final narrative = MatchNarrative.fromJson(data);
-      _cache[key] = narrative;
-      return narrative;
+      return MatchNarrative.fromJson(data);
     } catch (e) {
       final message = e.toString();
       if (message.contains('Unable to load asset') ||
           message.contains('does not exist in the app bundle')) {
-        // No narrative generated yet — this is expected for many matches
         LoggingService.debug(
           'No narrative for $key — falling back to match summary',
           tag: _logTag,
         );
       } else {
         LoggingService.error(
-          'Failed to load narrative for $key: $e',
+          'Failed to load bundled narrative for $key: $e',
           tag: _logTag,
         );
       }
-      _cache[key] = null;
       return null;
     }
   }
@@ -68,6 +110,7 @@ class MatchNarrativeService {
     return narrative != null;
   }
 
-  /// Clears the in-memory cache.
+  /// Clears the in-memory cache. Useful for forcing a re-fetch from Firestore
+  /// (e.g. after the user pulls to refresh on the match detail page).
   void clearCache() => _cache.clear();
 }

@@ -138,6 +138,11 @@ service cloud.firestore {
       allow write: if isAdmin();
     }
 
+    match /match_narratives/{narrativeId} {
+      allow read: if isAuth();
+      allow write: if isAdmin();
+    }
+
     match /headToHead/{docId} {
       allow read: if isAuth();
       allow write: if isAdmin();

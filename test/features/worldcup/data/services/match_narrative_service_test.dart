@@ -1,3 +1,4 @@
+import 'package:fake_cloud_firestore/fake_cloud_firestore.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:pregame_world_cup/features/worldcup/domain/entities/match_narrative.dart';
 import 'package:pregame_world_cup/features/worldcup/data/services/match_narrative_service.dart';
@@ -242,10 +243,12 @@ void main() {
   });
 
   group('MatchNarrativeService', () {
+    late FakeFirebaseFirestore firestore;
     late MatchNarrativeService service;
 
     setUp(() {
-      service = MatchNarrativeService();
+      firestore = FakeFirebaseFirestore();
+      service = MatchNarrativeService(firestore: firestore);
     });
 
     test('cache is empty initially', () async {
@@ -258,14 +261,52 @@ void main() {
       service.clearCache();
     });
 
-    test('sorts team codes alphabetically', () async {
-      // Both orderings should produce the same cache key internally
-      // Can't verify file loading without real assets, but service should not throw
+    test('sorts team codes alphabetically when reading from Firestore',
+        () async {
+      // Seed Firestore with a narrative under the canonical sorted key.
+      // Nested maps need explicit <String, dynamic> typing because
+      // fake_cloud_firestore does not auto-cast them on read the way the
+      // real SDK does, and MatchNarrative.fromJson uses `as Map<String, dynamic>`.
+      await firestore
+          .collection('match_narratives')
+          .doc('ARG_BRA')
+          .set(<String, dynamic>{
+        'matchKey': 'ARG_BRA',
+        'team1Code': 'ARG',
+        'team2Code': 'BRA',
+        'team1Name': 'Argentina',
+        'team2Name': 'Brazil',
+        'headline': 'The Eternal Rivalry',
+        'subheadline': 'Messi vs Vinícius',
+        'openingNarrative': 'Argentina versus Brazil.',
+        'tacticalBreakdown': <String, dynamic>{
+          'narrative': 'Tactical battle.',
+        },
+        'dataInsights': <String, dynamic>{},
+        'playerSpotlights': <Map<String, dynamic>>[],
+        'theVerdict': <String, dynamic>{
+          'prediction': 'Draw',
+          'confidence': 50,
+          'narrative': 'Even match.',
+        },
+        'closingLine': 'Unforgettable.',
+      });
+
+      // Both orderings should resolve to the same Firestore doc
       final result1 = await service.getNarrative('BRA', 'ARG');
+      service.clearCache();
       final result2 = await service.getNarrative('ARG', 'BRA');
-      // Both return null in test environment (no bundled assets)
-      expect(result1, isNull);
-      expect(result2, isNull);
+
+      expect(result1, isNotNull);
+      expect(result1!.matchKey, 'ARG_BRA');
+      expect(result2, isNotNull);
+      expect(result2!.matchKey, 'ARG_BRA');
+    });
+
+    test('returns null when neither Firestore nor bundle has the narrative',
+        () async {
+      final result = await service.getNarrative('ZZZ', 'YYY');
+      expect(result, isNull);
     });
 
     test('hasNarrative returns false for non-existent match', () async {
