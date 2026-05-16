@@ -24,6 +24,7 @@
  *   CLAUDE_API_KEY environment variable (or .env file in functions/)
  */
 
+import "dotenv/config";
 import * as fs from "fs";
 import * as path from "path";
 
@@ -353,8 +354,8 @@ ${team2}: ${qual2 ? `${qual2.wins}W ${qual2.draws}D ${qual2.losses}L, GD: ${qual
   const meta2 = globals.teamsMetadata.get(team2);
   if (meta1 || meta2) {
     sections.push(`=== TEAM METADATA ===
-${team1}: ${meta1 ? `Nickname: ${meta1.nickname}, Confederation: ${meta1.confederation}, World Cup Titles: ${meta1.worldCupTitles}` : "N/A"}
-${team2}: ${meta2 ? `Nickname: ${meta2.nickname}, Confederation: ${meta2.confederation}, World Cup Titles: ${meta2.worldCupTitles}` : "N/A"}`);
+${team1}: ${meta1 ? `Nickname: ${meta1.nickname}, Confederation: ${meta1.confederation}, Tournament Titles: ${meta1.worldCupTitles}` : "N/A"}
+${team2}: ${meta2 ? `Nickname: ${meta2.nickname}, Confederation: ${meta2.confederation}, Tournament Titles: ${meta2.worldCupTitles}` : "N/A"}`);
   }
 
   // 11. Historical patterns (global — summarize relevant ones)
@@ -421,9 +422,9 @@ export function pickStarPlayers(profile: any): any[] {
 function buildPrompt(matchKey: string, context: string): string {
   const [team1, team2] = matchKey.split("_");
 
-  return `You are an elite sports journalist — think Jonathan Wilson meets Sid Lowe meets Michael Cox. You write with the literary quality of The Athletic, the tactical depth of Zonal Marking, and the emotional resonance of a great World Cup documentary.
+  return `You are an elite sports journalist — think Jonathan Wilson meets Sid Lowe meets Michael Cox. You write with the literary quality of The Athletic, the tactical depth of Zonal Marking, and the emotional resonance of a great tournament documentary.
 
-You are writing a pregame article for a World Cup 2026 match: ${team1} vs ${team2}.
+You are writing a pregame article for a 2026 tournament match: ${team1} vs ${team2}.
 
 Below is ALL the statistical and historical data available. Use it to write a compelling, deeply researched pregame piece. Every claim must be grounded in the data provided — never invent statistics or fabricate quotes.
 
@@ -456,7 +457,7 @@ Write the output as a JSON object with this EXACT schema:
     "squadValueComparison": "<1-2 sentences comparing squad investment and what it means>",
     "injuryImpact": "<1-2 sentences on availability and how it affects tactics>",
     "bettingPerspective": "<1-2 sentences on what markets are saying>",
-    "historicalPattern": "<1-2 sentences connecting a relevant historical World Cup pattern>"
+    "historicalPattern": "<1-2 sentences connecting a relevant historical tournament pattern>"
   },
   "playerSpotlights": [
     {
@@ -489,7 +490,14 @@ CRITICAL RULES:
 4. The opening narrative should be at least 200 words.
 5. Use the team's actual ELO ratings, squad values, and qualifying records from the data.
 6. The prediction must be consistent with the confidence level and data analysis.
-7. Output ONLY valid JSON — no markdown, no code fences, no explanation outside the JSON.`;
+7. Output ONLY valid JSON — no markdown, no code fences, no explanation outside the JSON.
+
+NAMING CONSTRAINTS (HARD RULES — apply to EVERY prose field you write):
+8. Never use the word "FIFA" anywhere.
+9. Never use the phrase "World Cup" in prose. Use "the 2026 tournament", "the tournament", or simply "tournament" instead.
+10. When referring to past tournaments, use phrasings like "the 2022 tournament", "the 1986 tournament", "previous tournaments", "tournament history" — never "the 2022 World Cup", "World Cup history", etc.
+11. The team's "worldCupTitles" stat from the context refers to titles won — describe these as "tournament titles" or "titles" in prose, never "World Cup titles".
+12. These rules apply to the entire JSON output, including headline, subheadline, openingNarrative, every narrative field, every player spotlight, the verdict, and the closing line. They do NOT apply to outlet names or source titles you reference (but you should not be inventing those anyway).`;
 }
 
 // ============================================================================
@@ -587,6 +595,9 @@ async function main() {
   const listOnly = args.includes("--list");
   const matchArg = args.find((a) => a.startsWith("--match="))?.replace("--match=", "");
   const groupArg = args.find((a) => a.startsWith("--group="))?.replace("--group=", "");
+  const matchesFileArg = args
+    .find((a) => a.startsWith("--matchesFile="))
+    ?.replace("--matchesFile=", "");
 
   console.log("🏟️  Pregame World Cup — AI Match Narrative Generator");
   console.log("====================================================");
@@ -598,7 +609,17 @@ async function main() {
 
   // Determine which matches to generate
   let matchKeys: string[];
-  if (matchArg) {
+  if (matchesFileArg) {
+    const resolvedPath = path.isAbsolute(matchesFileArg)
+      ? matchesFileArg
+      : path.resolve(process.cwd(), matchesFileArg);
+    const parsed = JSON.parse(fs.readFileSync(resolvedPath, "utf-8"));
+    matchKeys = Array.isArray(parsed)
+      ? parsed
+      : parsed.full || parsed.matches || [];
+    matchKeys = matchKeys.map((k: string) => k.toUpperCase());
+    console.log(`📋 Loaded ${matchKeys.length} match keys from ${resolvedPath}`);
+  } else if (matchArg) {
     matchKeys = [matchArg.toUpperCase()];
   } else if (groupArg) {
     // TODO: Filter by group when match schedule data is loaded
