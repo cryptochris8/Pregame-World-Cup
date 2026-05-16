@@ -4,77 +4,70 @@
   "team2Code": "AUT",
   "team1Name": "Algeria",
   "team2Name": "Austria",
-  "generatedAt": "2026-04-16T00:00:00Z",
-  "dataVersion": 2,
-
-  "headline": "The Gijon Reckoning: Forty-Four Years of Waiting End Here",
-  "subheadline": "Algeria and Austria meet in the tournament for a match dripping with the weight of football's most infamous scandal — and both teams arrive in ominous form",
-
-  "openingNarrative": "There are football matches, and then there are acts of historical reckoning. When Algeria face Austria at the 2026 tournament, the ghost of Gijon will be present in every chant, every tackle, every moment of drama that unfolds. This is not just a group-stage fixture — it is the settling of a 44-year-old debt that football has never quite forgotten.\n\nOn June 25, 1982, in Gijon, Spain, West Germany and Austria played out a cynical 1-0 match that both teams knew would eliminate Algeria from the tournament. The Algerian players watched from the stands as their tournament dream was killed not by a superior opponent on the pitch, but by a back-room calculation between two European nations who decided the rules of fair play did not apply to them. Algerian fans burned flags, waved banknotes at the pitch, and wept. The incident — the 'Disgrace of Gijon' — led directly to the rule that final group-stage matches must kick off simultaneously.\n\nNow, in 2026, fate has placed Algeria and Austria in the same group once again. Austria have arrived at this tournament as one of the most dangerous dark horses in the draw. Ralf Rangnick's pressing revolution has transformed them into a side capable of dismantling anyone: they hammered Ghana 5-1 in a March friendly that showcased their attacking depth, then ground out a 1-0 victory over South Korea that proved they can win ugly too. Most significantly, David Alaba — Real Madrid's defensive leader who has battled a serious knee injury — made a 29-minute cameo against Korea, sending shockwaves through the tournament. Austria's first tournament appearance in 28 years suddenly carries genuine knockout-stage ambitions.\n\nAlgeria counter with their own statement results — a devastating 7-0 demolition of Guatemala that underlined their attacking firepower, followed by a disciplined 0-0 draw against Uruguay that proved they can compete against South American pedigree. But a cloud hangs over the Desert Foxes: Ismael Bennacer, their midfield heartbeat, is a major doubt with a thigh strain that has limited his training. If Bennacer cannot marshal the midfield, Algeria's ability to play through Austria's ferocious press diminishes dramatically.",
-
+  "generatedAt": "2026-06-12T14:30:00Z",
+  "dataVersion": 1,
+  "headline": "Ghosts of Gijon: Algeria Seeks Justice Against Austria",
+  "subheadline": "Forty-four years after football's most shameful conspiracy, the Desert Foxes face Austria in a match heavy with history.",
+  "openingNarrative": "Time moves in circles on football's grandest stage, and rarely has the wheel of history spun with such poetic precision. When Algeria and Austria take the field in Group J of the 2026 tournament, they will be playing out the final act of a drama that began 44 years ago in Gijon, Spain – a drama that changed the very rules of international football.\n\nThe 'Disgrace of Gijon' remains one of tournament history's darkest chapters. Algeria, in their maiden tournament appearance, had shocked West Germany 2-1 in their opening match of the 1982 tournament. But football's cruelest lesson awaited: West Germany and Austria conspired in a cynical 1-0 result that eliminated the Desert Foxes despite their brave debut. Algerian fans waved banknotes at the players in protest, understanding that they were witnessing corruption disguised as competition. The scandal was so egregious it forced tournament organizers to mandate simultaneous kick-offs for final group matches – a rule that will govern this very group in 2026.\n\nNow, Algeria returns to face Austria with justice on their minds and redemption in their hearts. Vladimir Petkovic's side arrives ranked 45th in the ELO ratings at 1580, trailing Austria's 28th-ranked 1720, but numbers cannot capture the emotional gravity pulling at this fixture. The Desert Foxes carry the dreams of an entire continent and the unfinished business of a generation that refused to forget.",
   "tacticalBreakdown": {
     "title": "The Chess Match",
-    "narrative": "This is a collision of two European-influenced tactical philosophies that could not be more different. Austria's Rangnick-inspired system is built on relentless pressing, coordinated pressing triggers, and vertical football designed to move the ball forward at pace. Their 5-1 demolition of Ghana demonstrated the system at its devastating best — wave after wave of coordinated pressure, turnovers converted into chances with ruthless efficiency. They press high, they press together, and they suffocate opponents in their own half.\n\nAlgeria's approach under Petkovic is more patient and possession-oriented. They build through Bennacer from deep — if he is fit — use Mahrez's creativity to unlock spaces, and look for moments to accelerate. The 0-0 draw against Uruguay showed Algeria at their most disciplined: compact, organized, and willing to forgo possession to maintain defensive shape against high-caliber opponents.\n\nThe key matchup is in transition. Austria's high line leaves space in behind — exactly the kind of space that Algeria's quick attackers can exploit. If Bennacer can beat the first wave of Austria's press, Algeria will find dangerous territory. But if Austria's pressing game works as designed — as it did ruthlessly against Ghana — Algeria could find themselves pinned in their own half, forced into errors by the relentless Austrian energy.\n\nKonrad Laimer's tireless running from midfield against Bennacer's composure under pressure — assuming Bennacer is fit to play — is the individual battle that may decide the match. If the thigh strain keeps Algeria's maestro sidelined or limited, the balance swings dramatically in Austria's favor.",
+    "narrative": "This is a collision of footballing philosophies: Ralf Rangnick's relentless pressing machine against Vladimir Petkovic's possession-based artistry. Austria will deploy their trademark 4-2-2-2 formation, with Konrad Laimer and Nicolas Seiwald forming a ferocious double pivot designed to win the ball high and attack through Christoph Baumgartner's creativity. Rangnick's gegenpressing system transformed Austria into one of Europe's most exciting teams at Euro 2024, where they topped a group containing the Netherlands.\n\nAlgeria's 4-3-3 structure, anchored by Ismael Bennacer's metronomic passing from deep, will look to play through Austria's press with patient build-up before unleashing Riyad Mahrez's magic in the final third. The key battle will unfold in midfield, where Bennacer's composure under pressure meets the hurricane intensity of Laimer and Seiwald. If Algeria can survive Austria's early storm and find space for Mahrez to drift infield, their counter-attacks could prove devastating against Austria's high defensive line.",
     "team1Formation": "4-3-3",
-    "team2Formation": "4-2-3-1",
-    "keyMatchup": "Konrad Laimer's pressing intensity vs Ismael Bennacer's composure under pressure — but Bennacer's thigh strain adds a layer of uncertainty that could tip the scales"
+    "team2Formation": "4-2-2-2",
+    "keyMatchup": "Bennacer's press resistance versus Laimer and Seiwald's suffocating intensity"
   },
-
   "dataInsights": {
     "title": "By The Numbers",
-    "eloAnalysis": "Austria (ELO: 1720, rank 28) vs Algeria (ELO: 1580, rank 45) — a 140-point gap that gives Austria a roughly 60% win probability. Significant, but not insurmountable, especially given the emotional stakes.",
-    "formAnalysis": "Austria are surging: beat Ghana 5-1 and South Korea 1-0 in March friendlies, with Alaba returning from injury for the first time. Their qualifying campaign yielded 6 wins, 1 draw, 1 loss — 19 points from 8 matches, with Baumgartner scoring 5. Algeria showed two faces in March: a breathtaking 7-0 win over Guatemala showcased their firepower, while a 0-0 draw against Uruguay demonstrated defensive resilience. They qualified by topping CAF Group E with 22 points — 7 wins, 1 draw, 2 losses.",
-    "squadValueComparison": "Austria ($350M) vs Algeria ($150M) — Austria's squad is more than double Algeria's value, with Baumgartner ($37.5M) their most valuable asset. Alaba's return, even in limited minutes, adds an immeasurable leadership dimension that no transfer fee can capture.",
-    "injuryImpact": "This is the story of the match. Bennacer's thigh strain makes him a major doubt — without him, Algeria lose their ability to play through Austria's press and their entire tactical identity shifts. On the Austrian side, Alaba's return from a long-term knee injury transforms their defensive outlook. He played 29 minutes against Korea, and even that cameo lifted the entire squad. If Alaba starts, Austria gain a world-class leader at the back. If Bennacer misses, Algeria lose their world-class creator. The injury ledger heavily favors Austria.",
-    "bettingPerspective": "Austria's form — 5-1 and 1-0 in their March friendlies, Alaba returning, first tournament in 28 years — has shortened their outright tournament odds. Algeria's Bennacer doubt weakens their profile significantly. Austria should be clear favorites in the match markets.",
-    "historicalPattern": "Algeria and Austria have rarely met directly, but the Gijon incident connects them forever. Austria's best tournament showing was third place in 1954. Algeria's best was the 2014 Round of 16. This is Austria's first tournament appearance since 1998 — 28 years of waiting, and they arrive in their best form in decades."
+    "eloAnalysis": "Austria's 140-point ELO advantage (1720 vs 1580) reflects their recent Euro 2024 heroics and UEFA Nations League promotion, but Algeria's ranking at 45th globally shows they remain a formidable opponent.",
+    "formAnalysis": "Both teams arrive in excellent form – Algeria with eight wins in their last twelve matches and Austria with seven victories, including impressive March friendlies against Ghana (5-1) and South Korea (1-0).",
+    "squadValueComparison": "Austria's €350 million squad valuation dwarfs Algeria's €150 million, highlighting the Bundesliga talent that forms Rangnick's tactical foundation versus Algeria's mix of European-based stars and domestic league players.",
+    "injuryImpact": "Algeria face defensive concerns with Ramy Bensebaini and Youcef Atal both major doubts, while Austria welcome back captain David Alaba from his ACL recovery, adding world-class experience to their backline.",
+    "bettingPerspective": "The markets reflect the tactical and personnel advantages, but tournament football has a way of rendering form guides meaningless when history weighs heavy.",
+    "historicalPattern": "Only UEFA and CONMEBOL teams have won tournament titles, but Algeria's path-breaking 1982 campaign proved African football could compete with anyone when given a fair chance."
   },
-
   "playerSpotlights": [
     {
-      "name": "Christoph Baumgartner",
-      "teamCode": "AUT",
-      "narrative": "The RB Leipzig attacking midfielder has become the face of Austria's new footballing identity. His 5 qualifying goals demonstrated the kind of movement and finishing that makes him a nightmare for defenders — he arrives in the box with the timing of a striker but the vision of a midfielder. At Euro 2024, Baumgartner electrified audiences with performances that announced Austria as a serious force. The 5-1 dismantling of Ghana showed his confidence is at an all-time high heading into the tournament.",
-      "statline": "5 goals in tournament qualifying, key performer at Euro 2024, Austria's creative engine"
+      "name": "Riyad Mahrez",
+      "teamCode": "ALG",
+      "narrative": "At 35, Algeria's talisman carries the weight of a nation's expectations on his shoulders. The former Manchester City wizard has spent a career dancing through defenses, but this tournament represents his final chance to write his name into North African folklore. Against Austria's high press, Mahrez's ability to receive the ball in tight spaces and create magic from nothing becomes Algeria's primary weapon. His movement between the lines will test Austria's midfield discipline, and if he finds rhythm, he can unlock any defense on earth.",
+      "statline": "Led Algeria with creativity and experience through their AFCON 2025 campaign"
     },
     {
       "name": "Ismael Bennacer",
       "teamCode": "ALG",
-      "narrative": "The AC Milan midfield maestro carries Algeria's creative burden — but a thigh strain has cast a shadow over his tournament. Bennacer's ability to receive the ball under pressure, turn, and play progressive passes is what gives Algeria a chance against Austria's press. He was anonymous in the 0-0 draw against Uruguay, managing the match from deep rather than dictating it. If the thigh strain limits him further — or keeps him out entirely — Algeria must find a Plan B that their entire system was never designed to accommodate. Mahrez, now 35, cannot shoulder the creative load alone.",
-      "statline": "AC Milan's midfield anchor, Algeria's most important player — but a major doubt with a thigh strain"
+      "narrative": "The AC Milan midfielder is Algeria's metronome, the conductor of their footballing orchestra. Recently recovered from a thigh injury that saw him miss March friendlies, Bennacer's presence in the starting eleven transforms Algeria from talented individuals into a cohesive unit. His ability to receive the ball under pressure and distribute with precision will be crucial against Austria's suffocating press. The 26-year-old has matured into one of the Mediterranean's finest deep-lying playmakers, and his duel with Laimer could determine the match's outcome.",
+      "statline": "Completed 91% of passes in Algeria's qualifying campaign from deep midfield positions"
+    },
+    {
+      "name": "Christoph Baumgartner",
+      "teamCode": "AUT",
+      "narrative": "The RB Leipzig attacking midfielder has become the creative heartbeat of Austria's pressing revolution. At just 24, Baumgartner combines the tactical intelligence of German football with the technical flair that makes Austria dangerous in transition. His movement between the lines and ability to arrive late in the box make him Austria's primary goal threat. Against Algeria's possession-heavy approach, his pressing triggers and counterpressing intensity will be vital in disrupting their rhythm and creating chances for Austria's front line.",
+      "statline": "Scored 5 goals in Austria's qualifying campaign, joint-top scorer"
     },
     {
       "name": "David Alaba",
       "teamCode": "AUT",
-      "narrative": "The moment that changed Austria's tournament calculus: in the 61st minute against South Korea, David Alaba — Real Madrid's defensive cornerstone, a player whose knee injury had kept him sidelined for the better part of two years — jogged onto the pitch. He played 29 minutes. He barely broke a sweat. But the symbolism was enormous. Alaba's return gives Austria not just a world-class defender, but a leader whose Champions League pedigree elevates every player around him. Whether he starts or comes off the bench against Algeria, his presence transforms Austria's tournament outlook.",
-      "statline": "Real Madrid's defensive leader, returned from major knee injury to play 29 min vs Korea"
-    },
-    {
-      "name": "Riyad Mahrez",
-      "teamCode": "ALG",
-      "narrative": "On the day that Algeria seek poetic justice for the Gijon scandal, Mahrez is the man capable of delivering it. But at 35, time is no longer an ally. His dribbling ability, his vision, and his composure in the final third remain, but the explosive pace that once left Premier League defenders for dead has softened. The 7-0 destruction of Guatemala showed Mahrez can still produce magic against lesser opposition. The question is whether he can do it against Rangnick's relentless pressing system, where every touch is pressured and every second counts. If Bennacer is absent, the creative burden on Mahrez becomes crushing.",
-      "statline": "Algeria's most experienced attacker, now 35 — still capable of magic but facing the clock"
+      "narrative": "Austria's captain returns from the wilderness of injury like a warrior answering his country's call. The Real Madrid defender's 29-minute cameo against South Korea in March marked the end of a long road back from ACL surgery, and his presence instantly elevates Austria's tournament credentials. At 31, Alaba remains one of world football's most complete defenders, capable of playing center-back or left-back with equal authority. His leadership, Champions League pedigree, and ability to play out from the back make him the perfect conductor for Rangnick's high-intensity symphony.",
+      "statline": "Multiple Champions League winner with Bayern Munich and Real Madrid"
     }
   ],
-
   "theVerdict": {
     "title": "The Verdict",
     "prediction": "Austria 2-1 Algeria",
     "confidence": 62,
-    "narrative": "The pre-tournament form points firmly in Austria's direction. Rangnick's side are peaking at the right moment — Alaba returning, Baumgartner firing, the 5-1 demolition of Ghana proving their attacking system is functioning at full capacity. Their first tournament in 28 years has injected an energy into this squad that is palpable.\n\nAlgeria's Bennacer doubt is the factor that turns a close match into one that favors Austria more clearly. Without their midfield conductor, Algeria will struggle to play through the Austrian press, and the 0-0 draw against Uruguay — while respectable — showed a team that can become passive when unable to impose its style. The 7-0 against Guatemala demonstrated firepower, but Guatemala are not Austria.\n\nExpect Austria to dominate the first half with their pressing game, scoring through Baumgartner's movement or a set piece. Algeria will find a route back — perhaps a Mahrez free kick or a counter-attacking moment that sends the Algerian section into raptures. But Austria's intensity and tactical sophistication should prove decisive in a match where the ghosts of Gijon demand better than cynicism.",
+    "narrative": "Austria's tactical organization and physical intensity should give them the edge in what promises to be a fascinating chess match. Rangnick's pressing system has the tools to disrupt Algeria's possession-based approach, particularly with Bennacer still managing his return from injury. The presence of Alaba adds crucial experience and quality to Austria's backline, while Baumgartner's creativity provides the spark needed to unlock Algeria's defense.\n\nBut this prediction comes with profound unease. Tournament football has a way of defying logic, and Algeria's desire for historical redemption cannot be quantified in any tactical analysis. If Mahrez produces one of his moments of magic, if Bennacer finds his rhythm, if the ghosts of Gijon inspire rather than haunt – then the Desert Foxes could script the perfect revenge story. Whatever happens, both teams will ensure every ball is contested with the intensity this historic encounter demands.",
     "alternativeScenarios": [
       {
         "scenario": "Algeria 1-0 Austria",
-        "probability": 15,
-        "reasoning": "Algeria produce a historic, emotionally-charged performance even without a fully fit Bennacer. A first-half counter-attack goal through Mahrez gives them the lead, and their defensive discipline — honed in the 0-0 draw against Uruguay — holds firm. The Gijon ghost is finally exorcised."
+        "probability": 25,
+        "reasoning": "Algeria's big-match mentality and desire for redemption could inspire a disciplined, counter-attacking masterclass. Mahrez's individual brilliance could prove decisive against Austria's high line."
       },
       {
         "scenario": "Algeria 1-1 Austria",
-        "probability": 20,
-        "reasoning": "A tense, tight match that neither team can afford to lose ends level. Algeria take the lead, Austria equalize through their sustained pressure, and both teams accept a point that keeps their group-stage hopes alive."
+        "probability": 30,
+        "reasoning": "The emotional weight of history and tactical balance between the teams could produce a cagey draw, with both sides canceling each other out in a tense, respectful encounter."
       }
     ]
   },
-
-  "closingLine": "Forty-four years ago, a scandal in Gijon changed the rules of the tournament. Now Algeria and Austria meet again — Austria resurgent with Alaba's return, Algeria anxious about Bennacer's fitness. The history is shared, but the momentum belongs to the team in red and white."
+  "closingLine": "In Gijon, Algeria learned that football can break your heart – in 2026, they have the chance to prove it can also heal it."
 }

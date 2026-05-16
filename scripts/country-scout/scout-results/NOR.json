@@ -1,0 +1,91 @@
+{
+  "teamCode": "NOR",
+  "teamName": "Norway",
+  "scoutedAt": "2026-05-16T00:00:00Z",
+  "injuryUpdates": [
+    {
+      "playerName": "Martin Odegaard",
+      "teamCode": "NOR",
+      "country": "Norway",
+      "club": "Arsenal",
+      "position": "Midfielder",
+      "injuryType": "Recurring knee discomfort (recovered from main February-April absence; minor early-May setback)",
+      "injuryDate": "2026-03-01",
+      "expectedReturn": "Available — back starting for Arsenal by mid-May; expected fit for the tournament",
+      "availabilityStatus": "minor_concern",
+      "lastMatchPlayed": {
+        "date": "2026-05-11",
+        "opponent": "Manchester City (Premier League)",
+        "notes": "Returned to Arsenal starting XI for the title-decider against Manchester City after coming off the bench versus Atletico Madrid and West Ham earlier in the month"
+      },
+      "source": "Arsenal.com, Sports Mole, Daily Cannon, Tribuna - May 2026",
+      "notes": "Initial April 19 comeback was followed by an early-May setback that limited him to substitute appearances against Atletico Madrid (Champions League semifinal second leg, May 5) and West Ham (where he assisted the winner). He has since told Viaplay he 'feels fantastic' and was restored to the Arsenal starting XI for the title-decider. Status upgraded from 'doubt' to 'minor concern' — barring a fresh setback he is on track for Solbakken's tournament squad.",
+      "action": "update"
+    },
+    {
+      "playerName": "Erling Haaland",
+      "teamCode": "NOR",
+      "country": "Norway",
+      "club": "Manchester City",
+      "position": "Forward",
+      "injuryType": "Minor undiagnosed knock (Guardiola: 'not 100%, not a big issue')",
+      "injuryDate": "2026-05-01",
+      "expectedReturn": "Available — Guardiola downplayed severity; expected to be fit for the tournament",
+      "availabilityStatus": "minor_concern",
+      "lastMatchPlayed": {
+        "date": "2026-05-10",
+        "opponent": "Leeds (Premier League)",
+        "notes": "Left out of Manchester City squad for the trip to Leeds with what was described as a 'little injury'"
+      },
+      "source": "ESPN, Sky Sports, Goal.com - May 2026",
+      "notes": "Haaland was omitted from City's squad for the Leeds trip with what Guardiola called a 'little injury' the club doctor was struggling to fully diagnose. Form remains a separate concern with a slower goal-rate since January, but no structural injury has been reported. Maintain minor-concern status — same downgrade label as before, different underlying reason (was 'rested + form dip', now genuine knock).",
+      "action": "update"
+    }
+  ],
+  "recentFormUpdates": [],
+  "tacticalUpdates": [],
+  "squadChanges": [],
+  "bettingOddsUpdate": {
+    "tournamentWinner": "+2500",
+    "groupStageExit": null,
+    "toQualifyFromGroup": "1/5",
+    "source": "BetMGM / Oddschecker aggregate - May 2026 (also: 11/4 to top Group I, 9/4 to reach quarter-finals, 5/1 to reach semi-finals)",
+    "notes": "Norway sit around +2500 (25/1) with BetMGM to win the tournament, and are heavy 1/5 favorites to advance from Group I (group with France, Senegal, Iraq). Kalshi and Polymarket price the chance of Norway topping Group I at around 20-21%."
+  },
+  "coachUpdate": {
+    "changed": false,
+    "currentCoach": "Ståle Solbakken",
+    "newCoach": null,
+    "source": null,
+    "notes": "Solbakken remains in charge and will name Norway's final tournament squad on 21 May 2026, ahead of the Sweden friendly (1 June, Oslo) and Morocco friendly (7 June, Harrison NJ)."
+  },
+  "summary": "Norway have played no international matches since 2026-04-16 — their next two are warm-up friendlies against Sweden (1 June, Ullevaal) and Morocco (7 June, Harrison, NJ). The two material updates concern the talismans: Odegaard returned to Arsenal training after his March knee absence, suffered a minor early-May setback that limited him to bench cameos, but was restored to the Arsenal starting XI for the Manchester City title-decider on 11 May and now self-reports as 'feeling fantastic' — upgraded from doubt to minor concern. Haaland was meanwhile pulled from Manchester City's squad versus Leeds with an undiagnosed minor knock that Pep Guardiola downplayed.",
+  "sourceUrls": [
+    "https://www.fourfourtwo.com/team/norway-world-cup-2026-squad",
+    "https://www.goal.com/en/team/norway/news/e1vf7kzswllumuykwezkrbo70",
+    "https://www.goal.com/en/lists/erling-haaland-inspired-norway-serious-dark-horses-2026-world-cup/blt02290b2e9f88a90c",
+    "https://dailycannon.com/2026/05/odegaard-knee-injury-update/",
+    "https://dailycannon.com/2026/04/norway-boss-odegaard-injury-update/",
+    "https://www.nowarsenal.com/latest-news/martin-odegaard-return-date-officially-confirmed/",
+    "https://arseblog.news/2026/03/norway-boss-provides-update-on-odegaard-injury/",
+    "https://tribuna.com/en/news/2026-05-12-odegaard-delivers-positive-injury-update-as-arsenal-push-toward-title/",
+    "https://www.arsenal.com/news/team-news-odegaard-back-starting-line",
+    "https://www.sportsmole.co.uk/football/man-city/title-race/news/man-city-vs-arsenal-confirmed-xis-huge-madueke-odegaard-oreilly-news-ahead-of-title-showdown_596010.html",
+    "https://worldsoccertalk.com/amp/news/why-isnt-martin-odegaard-playing-from-the-start-for-arsenal-vs-atletico-madrid-in-the-champions-league-semifinal-second-leg/",
+    "https://www.espn.com/soccer/story/_/id/48062103/erling-haaland-left-man-city-squad-trip-leeds",
+    "https://www.skysports.com/football/news/11679/13513633/erling-haaland-injury-pep-guardiola-unsure-on-when-man-city-striker-will-return-and-complains-about-fixture-schedule",
+    "https://www.goal.com/en/lists/pep-guardiola-delivers-update-erling-haaland-injury--man-city-nottingham-forest/bltbadd9dd5d67ad0d8",
+    "https://www.flashscore.com/news/soccer-world-cup-norway-to-face-sweden-in-classic-scandinavian-clash-to-warm-up-for-the-fifa-world-cup/zVUi3Z9U/",
+    "https://www.espn.com/soccer/match/_/gameId/401864055/sweden-norway",
+    "https://en.yabiladi.com/articles/details/192394/morocco-face-norway-world-warm-up.html",
+    "https://www.moroccoworldnews.com/2026/04/287063/morocco-to-face-norway-in-final-world-cup-warm-up-friendly/",
+    "https://africanfootball.com/news/837749/Solbakken-happy-to-face-Morocco",
+    "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+    "https://sports.betmgm.com/en/blog/norway-world-cup-odds-chances-to-win-world-cup-bm25/",
+    "https://www.oddschecker.com/football/world-cup/norway",
+    "https://defirate.com/prediction-markets/world-cup-odds/norway/",
+    "https://www.espn.com/soccer/team/results/_/id/464/norway"
+  ],
+  "confidence": "high",
+  "dataFreshness": "2026-05-12"
+}

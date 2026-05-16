@@ -1,0 +1,87 @@
+{
+  "teamCode": "KOR",
+  "teamName": "Korea Republic",
+  "scoutedAt": "2026-05-16T00:00:00Z",
+  "injuryUpdates": [
+    {
+      "playerName": "Kim Min-jae",
+      "teamCode": "KOR",
+      "country": "South Korea",
+      "club": "Bayern Munich",
+      "position": "Defender",
+      "injuryType": "Knee — precautionary; MRI showed no abnormalities",
+      "injuryDate": "2026-05-10",
+      "expectedReturn": "Available; expected to play remaining Bayern fixtures (FC Cologne 16 May, DFB-Pokal final vs Stuttgart 24 May)",
+      "availabilityStatus": "minor_concern",
+      "lastMatchPlayed": {
+        "date": "2026-05-10",
+        "opponent": "Wolfsburg (Bundesliga)",
+        "notes": "Substituted at halftime as a precaution after knee discomfort; had delivered strong first half (96% pass success, 65 touches)"
+      },
+      "source": "STARNEWS, Bavarian Football Works, Bundesliga reports — May 11-12 2026",
+      "notes": "Brief mid-match scare during Bayern's 1-0 win at Wolfsburg on 10 May. Manager Vincent Kompany pulled him at halftime as a precaution; subsequent MRI cleared him with no structural damage. Cleared to feature for both Bayern's final league fixtures and the tournament. Coach Hong Myung-bo publicly vented frustration at Bayern over the in-match management.",
+      "action": "update"
+    },
+    {
+      "playerName": "Lee Kang-in",
+      "teamCode": "KOR",
+      "country": "South Korea",
+      "club": "Paris Saint-Germain",
+      "position": "Midfielder",
+      "injuryType": "Left ankle sprain",
+      "injuryDate": "2026-05-10",
+      "expectedReturn": "Training indoors for the coming days; expected fit for the tournament but match sharpness in doubt",
+      "availabilityStatus": "doubt",
+      "lastMatchPlayed": {
+        "date": "2026-05-10",
+        "opponent": "Brest (Ligue 1)",
+        "notes": "Tripped by a defender in first-half stoppage time after cutting into the box; subbed off in the 53rd minute. Ruled out of PSG's 14 May Ligue 1 title-clinching trip to Lens."
+      },
+      "source": "Seoul Economic Daily, PSG.fr medical update, Korea Herald, STARNEWS — May 12-13 2026",
+      "notes": "Materially worse status than the prior 'reduced playing time' note. PSG confirmed he will train indoors and miss Lens. Korean outlets framed this as a real concern given his importance — paired with the Kim Min-jae scare, two starters were dinged in the same window. Squad still expects him to make the 26 and the opener, but pre-tournament friendlies on 31 May / 4 June may come too soon.",
+      "action": "update"
+    }
+  ],
+  "recentFormUpdates": [],
+  "tacticalUpdates": [],
+  "squadChanges": [],
+  "bettingOddsUpdate": {
+    "tournamentWinner": "+25000",
+    "groupStageExit": null,
+    "toQualifyFromGroup": null,
+    "source": "FOX Sports / Lineups.com aggregate — May 2026",
+    "notes": "Outright price of +25000 (250/1) widely cited as of early-to-mid May 2026, tied for the fourth-longest odds in the field and the second-shortest among AFC entrants behind Japan. Specific group-advance and group-exit prices were not confirmed from a primary bookmaker source during this run."
+  },
+  "coachUpdate": {
+    "changed": false,
+    "currentCoach": "Hong Myung-bo",
+    "newCoach": null,
+    "source": null,
+    "notes": "Hong Myung-bo unchanged. He scheduled the final 26-man roster reveal for 4 p.m. KST on 16 May at KT Gwanghwamun in Seoul (the briefing is concurrent with this scout run, so the names are not yet public). Squad departs for the Salt Lake City pre-camp on 18 May."
+  },
+  "summary": "Two scares in the same week: Kim Min-jae was pulled at halftime against Wolfsburg on 10 May with a knee issue but an MRI cleared him, and Lee Kang-in sprained his left ankle against Brest the same day and will train indoors, with PSG ruling him out of the title-clincher. Both are still expected to make the 26-man roster Hong Myung-bo announces today and the opener against Mexico, but Lee's match sharpness is now a real concern on top of his already-thin PSG minutes. No international matches have been played since the 0-1 loss to Austria on 31 March; the next friendlies are Trinidad and Tobago on 30 May and El Salvador on 3 June in Provo, Utah.",
+  "sourceUrls": [
+    "https://www.starnewskorea.com/en/sports/2026/05/15/2026051516113650025",
+    "https://www.starnewskorea.com/en/sports/2026/05/12/2026051212120971442",
+    "https://www.starnewskorea.com/en/sports/2026/05/11/2026051112323216065",
+    "https://www.bavarianfootballworks.com/bayern-munich-injuries/201343/bayern-munich-defender-kim-min-jae-survives-injury-scare",
+    "https://en.sedaily.com/sports/2026/05/13/injured-lee-kang-in-to-miss-psgs-ligue-1-title-clinching",
+    "https://www.psg.fr/en/content/medical-update-before-lens-paris-psg-ligue-1-2025-2026",
+    "https://www.koreaherald.com/article/10737236",
+    "https://www.koreaherald.com/article/10735905",
+    "https://www.starnewskorea.com/en/sports/2026/05/13/2026051308593930304",
+    "https://www.starnewskorea.com/en/sports/2026/05/12/2026051208510496747",
+    "https://www.starnewskorea.com/en/sports/2026/05/03/2026050310144196189",
+    "https://www.starnewskorea.com/en/sports/2026/05/13/2026051215274119767",
+    "https://en.sedaily.com/sports/2026/05/05/hong-myung-bos-korea-to-play-el-salvador-in-final-world-cup",
+    "https://en.sedaily.com/sports/2026/05/13/lee-seung-woos-k-league-heroics-fuel-world-cup-roster-hopes",
+    "https://www.fourfourtwo.com/team/south-korea-world-cup-2026-squad",
+    "https://www.lineups.com/betting/south-korea-2026-world-cup-team-preview-betting-odds-predictions-best-bets/",
+    "https://www.foxsports.com/stories/soccer/world-cup-2026-champion-odds",
+    "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_A",
+    "https://en.wikipedia.org/wiki/Son_Heung-min",
+    "https://www.koreatimes.co.kr/sports/20260512/korea-to-play-trinidad-and-tobago-el-salvador-in-world-cup-tuneups"
+  ],
+  "confidence": "high",
+  "dataFreshness": "2026-05-15"
+}

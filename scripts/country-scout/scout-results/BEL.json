@@ -1,0 +1,186 @@
+{
+  "teamCode": "BEL",
+  "teamName": "Belgium",
+  "scoutedAt": "2026-05-16T00:50:00Z",
+  "injuryUpdates": [
+    {
+      "playerName": "Kevin De Bruyne",
+      "teamCode": "BEL",
+      "country": "Belgium",
+      "club": "Napoli",
+      "position": "Midfielder",
+      "injuryType": "Split cheekbone / facial injury from training collision",
+      "injuryDate": "2026-05-11",
+      "expectedReturn": "Expected to be fit for the tournament opener vs Egypt on 2026-06-16",
+      "availabilityStatus": "minor_concern",
+      "lastMatchPlayed": {
+        "date": "2026-05-10",
+        "opponent": "Inter (Serie A)",
+        "notes": "Last Napoli appearance before training-ground collision; ruled out of May 12 Bologna fixture"
+      },
+      "source": "Fox Sports, Goal.com, beIN Sports - May 12-15, 2026",
+      "notes": "Suffered a split cheekbone in a head-to-head collision at Napoli training; required four stitches. Antonio Conte confirmed no head trauma. Named in Belgium's 26-man squad on May 15 despite the setback. Captain and creative fulcrum — health is the single biggest variable for Belgium's tournament ceiling.",
+      "action": "update"
+    },
+    {
+      "playerName": "Romelu Lukaku",
+      "teamCode": "BEL",
+      "country": "Belgium",
+      "club": "Napoli",
+      "position": "Forward",
+      "injuryType": "Hip / hamstring / ankle complaints — chronic fitness issues",
+      "injuryDate": "2026-02-15",
+      "expectedReturn": "Garcia says five weeks to reach full fitness — targeting June 16 opener",
+      "availabilityStatus": "major_doubt",
+      "lastMatchPlayed": {
+        "date": "2026-02-15",
+        "opponent": "Verona (Serie A)",
+        "notes": "Scored only goal of 2026 season as substitute; just 69 minutes of competitive football in 2026"
+      },
+      "source": "ESPN, Al Jazeera, Washington Post, France24, Football-Italia - May 14-15, 2026",
+      "notes": "Situation has deteriorated since April. Played only ~69 competitive minutes all of 2026 (seven Napoli substitute appearances). Hip problem on top of earlier hamstring; spent five weeks rehabbing in Belgium and reportedly tweaked ankle in training at Bosuil (Antwerp). Garcia conceded he 'has recovered but is out of shape' — coach is openly gambling on fitness. Still named in squad as all-time top scorer but starting role for Egypt opener is in serious doubt.",
+      "action": "update"
+    },
+    {
+      "playerName": "Leandro Trossard",
+      "teamCode": "BEL",
+      "country": "Belgium",
+      "club": "Arsenal",
+      "position": "Forward",
+      "injuryType": "Recovered from hip injury",
+      "injuryDate": null,
+      "expectedReturn": "N/A - returned to action",
+      "availabilityStatus": "fit",
+      "lastMatchPlayed": {
+        "date": "2026-05-10",
+        "opponent": "Arsenal (Premier League, late season)",
+        "notes": "Returned to Arsenal lineup ahead of season's end; included in Belgium's final 26-man squad"
+      },
+      "source": "beIN Sports, FotMob, ESPN squad announcement - May 15, 2026",
+      "notes": "Recovered from the March hip injury and named in Belgium's 26-man squad on May 15. Provides crucial frontline depth given Lukaku's fitness questions.",
+      "action": "update"
+    }
+  ],
+  "recentFormUpdates": [],
+  "tacticalUpdates": [],
+  "squadChanges": [
+    {
+      "playerName": "Lois Openda",
+      "changeType": "dropped",
+      "details": "Dropped from Belgium's final 26-man squad after a poor club season (1 goal in 24 Serie A games at Juventus, spent extended stretches on the bench).",
+      "source": "Athlon Sports, FotMob, beIN Sports - May 15, 2026",
+      "effectiveDate": "2026-05-15"
+    },
+    {
+      "playerName": "Romeo Lavia",
+      "changeType": "dropped",
+      "details": "Dropped from Belgium's final 26-man squad due to ongoing injury struggles at Chelsea.",
+      "source": "FotMob, beIN Sports - May 15, 2026",
+      "effectiveDate": "2026-05-15"
+    },
+    {
+      "playerName": "Mika Godts",
+      "changeType": "dropped",
+      "details": "Surprise omission despite a standout Eredivisie season at Ajax (17 goals, 12 assists in 31 matches).",
+      "source": "FotMob, beIN Sports - May 15, 2026",
+      "effectiveDate": "2026-05-15"
+    },
+    {
+      "playerName": "Arthur Vermeeren",
+      "changeType": "dropped",
+      "details": "Cut from the final 26-man squad.",
+      "source": "FotMob - May 15, 2026",
+      "effectiveDate": "2026-05-15"
+    },
+    {
+      "playerName": "Nathan De Cat",
+      "changeType": "dropped",
+      "details": "17-year-old midfielder who debuted in the March 5-2 win over the United States was not retained for the final 26.",
+      "source": "Athlon Sports / Yahoo Sports - May 15, 2026",
+      "effectiveDate": "2026-05-15"
+    },
+    {
+      "playerName": "Michy Batshuayi",
+      "changeType": "dropped",
+      "details": "Veteran forward not included in the final squad.",
+      "source": "beIN Sports - May 15, 2026",
+      "effectiveDate": "2026-05-15"
+    },
+    {
+      "playerName": "Malick Fofana",
+      "changeType": "dropped",
+      "details": "Young winger left out of the final 26-man squad.",
+      "source": "beIN Sports - May 15, 2026",
+      "effectiveDate": "2026-05-15"
+    },
+    {
+      "playerName": "Jorthy Mokio",
+      "changeType": "dropped",
+      "details": "Young prospect not retained for the final squad.",
+      "source": "beIN Sports - May 15, 2026",
+      "effectiveDate": "2026-05-15"
+    },
+    {
+      "playerName": "Senne Lammens",
+      "changeType": "new_call_up",
+      "details": "Manchester United goalkeeper named as one of three keepers in the final 26-man squad alongside Courtois and Penders.",
+      "source": "ESPN, beIN Sports squad announcement - May 15, 2026",
+      "effectiveDate": "2026-05-15"
+    },
+    {
+      "playerName": "Matias Fernandez-Pardo",
+      "changeType": "new_call_up",
+      "details": "Lille forward included in the final 26-man squad as part of the next-generation attacking pool.",
+      "source": "ESPN squad announcement - May 15, 2026",
+      "effectiveDate": "2026-05-15"
+    },
+    {
+      "playerName": "Diego Moreira",
+      "changeType": "new_call_up",
+      "details": "Strasbourg forward included in the final 26-man squad.",
+      "source": "ESPN squad announcement - May 15, 2026",
+      "effectiveDate": "2026-05-15"
+    }
+  ],
+  "bettingOddsUpdate": {
+    "tournamentWinner": "33/1",
+    "groupStageExit": "14/1",
+    "toQualifyFromGroup": "1/33",
+    "source": "TheLines.com aggregator - May 2026",
+    "notes": "Belgium priced at roughly 4/11 to win Group G outright; -250 at BetMGM. Heavy favorites to advance from Group G alongside Egypt, Iran and New Zealand, but mid-tier in the outright market behind Spain, France, England, Brazil and Argentina."
+  },
+  "coachUpdate": {
+    "changed": false,
+    "currentCoach": "Rudi Garcia",
+    "newCoach": null,
+    "source": null,
+    "notes": "Garcia named the final 26-man squad on May 15 and remains firmly in charge."
+  },
+  "summary": "Belgium announced the final 26-man squad on May 15, 2026, and the headline story is fitness: De Bruyne picked up a split cheekbone from a training collision in early May (no head trauma but missed Napoli's last league outing), while Lukaku has played only ~69 competitive minutes all year and Garcia openly admitted he is 'gambling' on the striker's fitness for the tournament opener. Trossard is back and included; Openda (poor Juventus form), Lavia (injury), and surprise omission Mika Godts (despite huge Ajax season) headline a wave of cuts that marks the symbolic end of the Golden Generation. Belgium is the strong group favorite (~4/11) but no warm-up matches have been played since the April 16 data cutoff — the Croatia friendly in Rijeka on June 2 is the next test.",
+  "sourceUrls": [
+    "https://www.beinsports.com/en-us/soccer/fifa-world-cup-2026/articles/rudi-garcia-s-official-belgium-squad-for-the-2026-fifa-world-cup-2026-05-15",
+    "https://www.beinsports.com/en-us/soccer/fifa-world-cup-2026/articles/de-bruyne-and-lukaku-named-in-belgium-world-cup-squad-despite-injuries-2026-05-15",
+    "https://www.espn.com/soccer/story/_/id/48777814/romelu-lukaku-named-belgium-world-cup-squad-injury-troubles",
+    "https://www.fotmob.com/news/18d3fh2himo601nk0xh84p4fky-de-bruyne-lukaku-named-belgium-world-cup-squad-despite-injuries",
+    "https://www.aljazeera.com/sports/2026/5/15/lukaku-included-in-belgiums-world-cup-squad-despite-injury-plagued-season",
+    "https://www.foxsports.com/stories/soccer/kevin-de-bruyne-needed-stitches-after-splitting-cheekbone-open-in-nasty-collision-as-antonio-conte-confirms-new-injury-for-napoli-star",
+    "https://www.goal.com/en/lists/kevin-de-bruyne-head-injury-stitches-antonio-conte-napoli-star-injury-update/blte6ca7d4a46a488c5",
+    "https://www.france24.com/en/live-news/20260515-out-of-shape-lukaku-named-in-belgium-world-cup-squad",
+    "https://football-italia.net/new-lukaku-injury-for-napoli-2026-world-cup/",
+    "https://www.flashscore.com/news/soccer-world-cup-lukaku-back-with-napoli-and-nearing-return-in-world-cup-boost-for-belgium/8KM4tJo4/",
+    "https://athlonsports.com/soccer/belgium-2026-fifa-world-cup-squad-final-announcement-8-notable-players-out",
+    "https://sports.yahoo.com/articles/belgium-2026-fifa-world-cup-125102065.html",
+    "https://www.washingtonpost.com/sports/soccer/2026/05/15/belgium-squad-roster-world-cup-courtois-lukaku/771355a6-5054-11f1-97e7-22c6c29ff0d8_story.html",
+    "https://www.sportbible.com/football/football-news/fifa-world-cup/belgium-final-squad-list-announced-golden-generation-over-rudi-garcia-882880-20260515",
+    "https://www.fourfourtwo.com/team/belgium-world-cup-2026-squad",
+    "https://www.thelines.com/uk/odds/world-cup/belgium/",
+    "https://www.oddsshark.com/soccer/world-cup/group-g-odds-pick-2026",
+    "https://sports.betmgm.com/en/blog/world-cup/group-g-world-cup-2026-odds-predictions-bm16/",
+    "https://www.thedubrovniktimes.com/news/croatia/item/19307-croatia-line-up-belgium-showdown-as-world-cup-preparations-gather-pace",
+    "https://www.espn.com/soccer/match/_/gameId/401856361/belgium-croatia",
+    "https://www.sofascore.com/news/the-2026-world-cup-warm-up-belgium/",
+    "https://dailycannon.com/2026/03/injury-update-leandro-trossard/"
+  ],
+  "confidence": "high",
+  "dataFreshness": "2026-05-15"
+}

@@ -1,0 +1,201 @@
+{
+  "teamCode": "BRA",
+  "teamName": "Brazil",
+  "scoutedAt": "2026-05-16T00:00:00Z",
+  "injuryUpdates": [
+    {
+      "playerName": "Estevao",
+      "teamCode": "BRA",
+      "country": "Brazil",
+      "club": "Chelsea",
+      "position": "Forward",
+      "injuryType": "Grade 4 right thigh/hamstring muscle tear",
+      "injuryDate": "2026-04-18",
+      "expectedReturn": "Post-tournament — ruled out of the 2026 tournament",
+      "availabilityStatus": "long_term_injured",
+      "lastMatchPlayed": {
+        "date": "2026-04-18",
+        "opponent": "Manchester United (Premier League)",
+        "notes": "Suffered grade 4 thigh muscle tear during Chelsea's 1-0 defeat. Did not play again for Chelsea this season."
+      },
+      "source": "ESPN, Al Jazeera, Chelsea News - April 25 to May 11, 2026",
+      "notes": "Chelsea preferred surgery but the 19-year-old chose conservative treatment in Brazil. Medical staff from both Chelsea and Brazil could not guarantee 100% recovery in time. Ancelotti left him off the 55-man preliminary squad submitted May 11, effectively ruling him out of the tournament. Was considered a starting-XI lock before the injury.",
+      "action": "add"
+    },
+    {
+      "playerName": "Eder Militao",
+      "teamCode": "BRA",
+      "country": "Brazil",
+      "club": "Real Madrid",
+      "position": "Defender",
+      "injuryType": "Severe left thigh tendon injury — required surgery",
+      "injuryDate": "2026-04-21",
+      "expectedReturn": "October 2026 at the earliest — ruled out of the 2026 tournament",
+      "availabilityStatus": "long_term_injured",
+      "lastMatchPlayed": {
+        "date": "2026-04-19",
+        "opponent": "Real Madrid LaLiga fixture (pre-injury)",
+        "notes": "Diagnosis confirmed in Finland; surgery performed late April 2026"
+      },
+      "source": "Goal, FOX Sports, OneFootball, Morocco World News - late April 2026",
+      "notes": "Specialist consultation in Finland revealed high risk of complete tendon rupture. Surgery performed; recovery extends past the tournament. A first-choice centre-back alongside Marquinhos — his absence forces Ancelotti to rely on Gabriel Magalhães and possibly Beraldo for the Group C opener vs Morocco.",
+      "action": "add"
+    },
+    {
+      "playerName": "Rodrygo",
+      "teamCode": "BRA",
+      "country": "Brazil",
+      "club": "Real Madrid",
+      "position": "Forward",
+      "injuryType": "Torn ACL (right knee) — surgery",
+      "injuryDate": "2026-03-02",
+      "expectedReturn": "9-12 months — ruled out of the 2026 tournament",
+      "availabilityStatus": "long_term_injured",
+      "lastMatchPlayed": {
+        "date": "2026-03-02",
+        "opponent": "Getafe (LaLiga)",
+        "notes": "Suffered torn ACL during 1-0 home defeat; underwent surgery"
+      },
+      "source": "Goal, FOX Sports, Sofascore - April-May 2026 reporting; injury date March 2, 2026",
+      "notes": "Bundled tracker still listed Rodrygo as fit (Feb 2026 snapshot) — this update reflects the long-term ACL absence still actively cited in May 2026 squad discussions. Was Brazil's second-top scorer in CONMEBOL qualifying with 3 goals. Savinho is the frontrunner to take his role on the left flank.",
+      "action": "add"
+    },
+    {
+      "playerName": "Neymar",
+      "teamCode": "BRA",
+      "country": "Brazil",
+      "club": "Santos FC",
+      "position": "Forward",
+      "injuryType": "Recovering from chronic knee issues; PRP procedure during April international break",
+      "injuryDate": "2025-12-01",
+      "expectedReturn": "Fit and playing — in the preliminary 55-man squad",
+      "availabilityStatus": "doubt",
+      "lastMatchPlayed": {
+        "date": "2026-05-10",
+        "opponent": "Santos league fixture",
+        "notes": "Featured in 3 of Santos' 4 games between April 28 and May 10, scoring twice across 262 minutes"
+      },
+      "source": "Goal, beIN Sports, Sports Illustrated, World Soccer Talk - May 9-12, 2026",
+      "notes": "Major upgrade from 'major_doubt'. Ancelotti included Neymar in the 55-man preliminary list submitted May 11. Reports from Globo Esporte suggest Ancelotti has privately decided to take him in the final 26-man squad (announced May 18) due to improving form (6 goals, 3 assists in 13 matches in 2026) and the Rodrygo/Estevao injuries opening attacking slots. Still not guaranteed a place; condition is the sole criterion. First call-up since the October 2023 ACL injury.",
+      "action": "update"
+    },
+    {
+      "playerName": "Alisson",
+      "teamCode": "BRA",
+      "country": "Brazil",
+      "club": "Liverpool",
+      "position": "Goalkeeper",
+      "injuryType": "Recovered from spring hamstring spell — back in training",
+      "injuryDate": "2025-11-01",
+      "expectedReturn": "Fit; back in Liverpool training mid-May",
+      "availabilityStatus": "fit",
+      "lastMatchPlayed": {
+        "date": "2026-05-14",
+        "opponent": "Liverpool training (full session)",
+        "notes": "Slot confirmed Alisson back in training May 14; included in Brazil's preliminary 55-man squad"
+      },
+      "source": "beIN Sports, Goal, Liverpool.com - April 24 to May 14, 2026",
+      "notes": "Status upgraded from minor_concern. Hamstring issue resolved; Liverpool manager Slot publicly confirmed return to training. Named in Brazil's preliminary squad with confidence the hamstring problem will not recur before the tournament.",
+      "action": "update"
+    }
+  ],
+  "recentFormUpdates": [],
+  "tacticalUpdates": [
+    {
+      "field": "defensiveApproach.strengths",
+      "oldValue": "Marquinhos' leadership and positioning; Casemiro's defensive midfield screening; Bruno Guimaraes' press resistance",
+      "newValue": "Marquinhos' leadership and positioning; Casemiro's defensive midfield screening; Bruno Guimaraes' press resistance — but Militao's absence forces Gabriel Magalhaes (Arsenal) into the first-choice centre-back partnership",
+      "source": "Squawka, futbolupdate.com, Bleacher Report - May 2026 predicted XIs",
+      "confidence": "high"
+    },
+    {
+      "field": "attackingApproach.style",
+      "oldValue": "Width from Vinicius Jr and Estevao stretching defenses, interior creative zones exploited by the number 10",
+      "newValue": "Width from Vinicius Jr on the left and Raphinha on the right, with Savinho the leading candidate to fill the right-wing rotation slot vacated by the injured Rodrygo and Estevao. Matheus Cunha emerging as the No. 10",
+      "source": "Squawka, futbolupdate.com, ESPN predicted XI - May 2026",
+      "confidence": "high"
+    },
+    {
+      "field": "attackingApproach.primaryThreat",
+      "oldValue": "Vinicius Jr cutting inside from the left wing and Rodrygo's intelligent movement",
+      "newValue": "Vinicius Jr cutting inside from the left wing; Raphinha's directness from the right; with Joao Pedro or Endrick competing to lead the line",
+      "source": "Squawka, Bleacher Report, FourFourTwo - May 2026",
+      "confidence": "high"
+    },
+    {
+      "field": "keyTacticalFeatures",
+      "oldValue": "Vinicius Jr and Estevao offer dual wide threats that can drift inside or stay wide",
+      "newValue": "With Estevao and Rodrygo both ruled out, Vinicius Jr is the sole established wide-forward threat — Savinho, Raphinha and Matheus Cunha now rotate the other attacking slots",
+      "source": "Squawka, Goal, Sports Illustrated - May 2026",
+      "confidence": "high"
+    }
+  ],
+  "squadChanges": [
+    {
+      "playerName": "Neymar",
+      "changeType": "new_call_up",
+      "details": "Included in Ancelotti's 55-man preliminary squad submitted May 11, 2026 — first national-team call since the October 2023 ACL injury. Final 26-man cut announced May 18 in Rio; reports indicate he is now expected to make it.",
+      "source": "ESPN, beIN Sports, Tribuna - May 9-12, 2026",
+      "effectiveDate": "2026-05-11"
+    },
+    {
+      "playerName": "Estevao",
+      "changeType": "dropped",
+      "details": "Left off the 55-man preliminary squad due to grade 4 thigh injury sustained April 18 — effectively ruled out of the tournament.",
+      "source": "ESPN, Al Jazeera, Foot Africa - April 25 to May 11, 2026",
+      "effectiveDate": "2026-05-11"
+    },
+    {
+      "playerName": "Eder Militao",
+      "changeType": "dropped",
+      "details": "Left off the 55-man preliminary squad after thigh surgery in late April. Recovery timeline (return October) ends his tournament hopes.",
+      "source": "Goal, FOX Sports, OneFootball - late April to May 2026",
+      "effectiveDate": "2026-05-11"
+    }
+  ],
+  "bettingOddsUpdate": {
+    "tournamentWinner": "+800",
+    "groupStageExit": null,
+    "toQualifyFromGroup": null,
+    "source": "DraftKings Sportsbook (via FOX Sports) - May 4, 2026",
+    "notes": "Implied ~11.1% chance to lift the trophy; Brazil sits fourth favourite behind France (+500), Spain (+500), and England (+650). Group-stage and group-exit prop markets not published by the surveyed aggregators."
+  },
+  "coachUpdate": {
+    "changed": false,
+    "currentCoach": "Carlo Ancelotti",
+    "newCoach": null,
+    "source": "ESPN - May 14, 2026",
+    "notes": "Coach unchanged but materially recommitted: CBF extended Ancelotti's contract by four additional years through 2030, signed two days before the May 18 squad announcement. Record under Ancelotti since taking over in May 2025: 5W-2D-3L across 10 matches."
+  },
+  "summary": "Brazil has been hit hard since mid-April: starting centre-back Eder Militao (thigh surgery, late April) and Chelsea winger Estevao (grade 4 thigh tear, April 18) are both ruled out of the tournament, and they were left off the 55-man preliminary squad submitted May 11. Neymar, by contrast, is back in the picture for the first time since October 2023 after PRP knee work and a strong April-May run at Santos, and is now expected to make the final 26-man cut announced May 18. Ancelotti's contract was extended through 2030 on May 14, locking in tactical continuity around a forced 4-2-3-1 reshuffle that promotes Gabriel Magalhaes alongside Marquinhos and pushes Savinho/Raphinha into the void left by Rodrygo (long-term ACL, still listed as fit in bundled data) and Estevao.",
+  "sourceUrls": [
+    "https://www.espn.com/soccer/story/_/id/48745620/chelsea-estevao-miss-world-cup-neymar-makes-brazil-preliminary-cut",
+    "https://chelsea.news/2026/05/esteva-brazil-world-cup-injury/",
+    "https://www.aljazeera.com/sports/2026/4/25/brazil-and-chelsea-star-estevaos-world-cup-hopes-in-doubt-after-injury",
+    "https://www.espn.com/soccer/story/_/id/48561070/chelsea-brazil-forward-estevao-world-cup-doubt-serious-hamstring-injury-sources",
+    "https://foot-africa.com/en/news/brazil-estevao-ruled-out-of-the-world-cup-1201406/",
+    "https://www.goal.com/en/lists/huge-blow-for-brazil-eder-militao-ruled-out-of-2026-world-cup-as-real-madrid-star-forced-to-undergo-surgery-on-thigh-injury/blt429f8a38cb00a0bf",
+    "https://www.foxsports.com/stories/soccer/brazil-real-madrid-star-eder-militao-miss-world-cup-due-thigh-surgery",
+    "https://onefootball.com/en/news/eder-militao-will-undergo-surgery-and-miss-the-2026-world-cup-with-brazil-42778508",
+    "https://www.moroccoworldnews.com/2026/04/288157/militao-injury-raises-concerns-for-brazil-ahead-of-2026-world-cup-opener-vs-morocco/",
+    "https://www.goal.com/en/lists/neymar-brazil-world-cup-squad-carlo-ancelotti-santos-estevao-injury-provisional-list/bltc02c595f858fd6f2",
+    "https://worldsoccertalk.com/world-cup/neymar-jr-and-thiago-silva-reportedly-make-carlo-ancelottis-preliminary-brazil-2026-world-cup-squad/",
+    "https://worldsoccertalk.com/world-cup/neymar-now-expected-to-make-brazils-final-26-man-squad-for-2026-world-cup-after-carlo-ancelotti-reportedly-changes-stance-due-to-one-key-reason/",
+    "https://www.beinsports.com/en-us/soccer/fifa-world-cup-2026/articles/neymar-included-in-brazil-s-preliminary-squad-for-the-fifa-world-cup-2026-05-09",
+    "https://www.goal.com/en/lists/neymar-underwent-knee-procedure-during-international-break-santos-boss-reveals-plan-for-brazil-icon-leading-into-world-cup/blte04c5a757b1cbe86",
+    "https://www.aljazeera.com/sports/2026/4/12/neymar-has-to-prove-his-fitness-for-brazils-world-cup-squad-ancelotti",
+    "https://www.espn.com/soccer/story/_/id/48770451/brazil-coach-carlo-ancelotti-contract-extension-2030-world-cup",
+    "https://www.beinsports.com/en-us/soccer/premier-league/articles/good-news-for-brazil-alisson-is-ready-2026-04-24",
+    "https://www.goal.com/en-us/lists/injury-liverpool-goalkeeper-alisson-speaks-out-miss-world-cup-brazil/bltc25cecb51f65967d",
+    "https://www.foxsports.com/stories/soccer/world-cup-2026-champion-odds",
+    "https://www.squawka.com/en/outright-markets/brazil-world-cup-2026-odds/",
+    "https://www.fourfourtwo.com/team/brazil-world-cup-2026-squad",
+    "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/brazil-carlo-ancelotti-squad-endrick-igor-thiago",
+    "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/brazil-squad-carlo-ancelotti-neymar-france-croatia",
+    "https://www.goal.com/en/lists/biggest-stars-miss-2026-world-cup-injury-suspension-selection/bltd6ff2d56ebf99a62",
+    "https://www.foxsports.com/stories/soccer/life-has-been-cruel-rodrygo-opens-up-on-heartbreak-as-real-madrid-star-accepts-world-cup-dream-is-over-with-massive-injury-blow",
+    "https://www.cleveland.com/news/brazil-and-egypt-to-meet-in-road-to-26-series-at-cleveland-s-huntington-bank-field-on-june-6"
+  ],
+  "confidence": "high",
+  "dataFreshness": "2026-05-14"
+}

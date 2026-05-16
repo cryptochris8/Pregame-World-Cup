@@ -1,0 +1,100 @@
+{
+  "teamCode": "URU",
+  "teamName": "Uruguay",
+  "scoutedAt": "2026-05-16T00:00:00Z",
+  "injuryUpdates": [
+    {
+      "playerName": "Jose Maria Gimenez",
+      "teamCode": "URU",
+      "country": "Uruguay",
+      "club": "Atletico Madrid",
+      "position": "Defender",
+      "injuryType": "High-grade sprain of the right ankle (Atletico medical report); originally feared as fissure to tibia",
+      "injuryDate": "2026-05-09",
+      "expectedReturn": "Approx. 4 weeks — race against the clock for tournament opener on 2026-06-15",
+      "availabilityStatus": "major_doubt",
+      "lastMatchPlayed": {
+        "date": "2026-05-09",
+        "opponent": "Celta Vigo (La Liga)",
+        "notes": "Left the pitch in the 19th minute after blocking a shot from Borja Iglesias; ruled out of remaining La Liga fixtures"
+      },
+      "source": "Atletico Madrid official medical report, El Observador, Tribuna, OneFootball — May 11, 2026",
+      "notes": "Captain and first-choice centre-back. High-grade ankle sprain confirmed by Atletico's official statement. Atletico medical staff in direct contact with Uruguay team doctors to evaluate availability for the opener vs. Saudi Arabia. Loss would be massive given his leadership role and partnership with Araujo.",
+      "action": "add"
+    },
+    {
+      "playerName": "Federico Valverde",
+      "teamCode": "URU",
+      "country": "Uruguay",
+      "club": "Real Madrid",
+      "position": "Midfielder",
+      "injuryType": "Traumatic brain injury / head laceration requiring stitches after training-ground altercation with teammate Tchouameni",
+      "injuryDate": "2026-05-07",
+      "expectedReturn": "10-14 days of mandatory rest under brain-injury protocol; expected back well before the tournament",
+      "availabilityStatus": "minor_concern",
+      "lastMatchPlayed": {
+        "date": "2026-05-04",
+        "opponent": "Real Madrid (La Liga)",
+        "notes": "Last appearance before training-ground incident on May 7"
+      },
+      "source": "Irish Times, Al Jazeera, CBS Sports, Managing Madrid — May 7-8, 2026",
+      "notes": "Uruguay's most important player. Suffered a head gash and was diagnosed with a traumatic brain injury after a dressing-room/training-ground fight with Aurelien Tchouameni. Real Madrid fined both players 500,000 euros. He missed El Clasico and was prescribed 10-14 days of rest. Recovery window fits comfortably ahead of the June 15 opener, but the bizarre cause and head-trauma diagnosis warrant monitoring.",
+      "action": "add"
+    }
+  ],
+  "recentFormUpdates": [],
+  "tacticalUpdates": [],
+  "squadChanges": [
+    {
+      "playerName": "Luis Suarez",
+      "changeType": "dropped",
+      "details": "Bielsa left Suarez off the preliminary 55-man tournament squad submitted around the May 11 deadline, ending his hopes of a fifth tournament. The Bielsa-Suarez feud dating to the 2024 Copa America never fully thawed despite Suarez publicly apologising and signalling willingness to return. Bielsa is committing to younger forwards (Darwin Nunez, Rodrigo Aguirre, Federico Vines, Luciano Rodriguez).",
+      "source": "World Soccer Talk, Foot Africa, OneFootball (Diario Ole / Rodri Vazquez of Sport 890 reporting) — May 12-13, 2026",
+      "effectiveDate": "2026-05-11"
+    }
+  ],
+  "bettingOddsUpdate": {
+    "tournamentWinner": "+6500",
+    "groupStageExit": null,
+    "toQualifyFromGroup": "+370 to win Group H (Spain favoured at -450)",
+    "source": "ESPN BET / Lineups.com odds aggregation — May 2026",
+    "notes": "Tournament-winner price has Uruguay as a long-shot among CONMEBOL contenders. Uruguay's Group H winner price shortened slightly from +400 to +370 over the past few weeks; outright qualify-from-group price was not surfaced in a single clean figure."
+  },
+  "coachUpdate": {
+    "changed": false,
+    "currentCoach": "Marcelo Bielsa",
+    "newCoach": null,
+    "source": "Foot Africa, FourFourTwo — May 2026",
+    "notes": "Bielsa remains in charge despite mounting pressure after a four-match winless run and friendly disappointments (1-1 vs England, 0-0 vs Algeria in March). He has publicly reiterated his intent to lead the team into the tournament: 'I have had the same determination since the first day to continue until the World Cup.' Speculation about a pre-tournament sack has been reported but is unconfirmed."
+  },
+  "summary": "Two big fitness blows since mid-April: captain Jose Maria Gimenez suffered a high-grade right ankle sprain at Atletico Madrid on May 9 (around 4 weeks out — a genuine race for the opener), and Federico Valverde sustained a head laceration and traumatic brain injury after a training-ground fight with teammate Tchouameni on May 7 (10-14 days rest, expected to recover in time). On the squad front, Bielsa formally cut Luis Suarez from the preliminary 55-man list around the May 11 deadline, closing the door on a fifth tournament appearance and committing fully to a younger forward pool led by Darwin Nunez. No new internationals have been played since 2026-04-16.",
+  "sourceUrls": [
+    "https://www.fourfourtwo.com/team/uruguay-world-cup-2026-squad",
+    "https://www.fourfourtwo.com/person/coaches-managers/marcelo-bielsa-could-be-on-verge-of-sack-after-england-friendly-and-before-uruguay-head-to-world-cup",
+    "https://sports.yahoo.com/articles/uruguay-world-cup-2026-squad-152005670.html",
+    "https://www.si.com/soccer/uruguay-2026-world-cup-preview",
+    "https://www.rotowire.com/soccer/article/2026-world-cup-group-h-preview-spain-uruguay-saudi-arabia-cape-verde-tactics-lineups-set-pieces-odds-109699",
+    "https://foot-africa.com/en/news/2026-world-cup-marcelo-bielsa-exudes-unwavering-confidence-with-uruguay-970763/",
+    "https://foot-africa.com/en/news/world-cup-2026-luis-suarez-left-out-of-uruguays-preliminary-squad-1203380/",
+    "https://worldsoccertalk.com/world-cup/lamine-yamal-and-spain-on-notice-as-luis-suarez-reportedly-learns-2026-world-cup-fate-in-marcelo-bielsas-decision-on-preliminary-uruguay-squad/",
+    "https://onefootball.com/en/news/luis-suarez-no-fue-incluido-en-la-prelista-de-la-seleccion-uruguaya-para-el-mundial-2026-42856205",
+    "https://www.irishtimes.com/sport/soccer/2026/05/07/real-madrids-valverde-has-traumatic-brain-injury-after-fight-with-team-mate-tchouameni/",
+    "https://www.aljazeera.com/sports/2026/5/7/real-madrids-valverde-hospitalised-with-head-injury-after-tchouameni-clash",
+    "https://www.aljazeera.com/sports/2026/5/8/real-madrid-fine-valverde-and-tchouameni-for-dressing-room-fight",
+    "https://www.managingmadrid.com/107409/valverde-tchouameni-2026-confrontation-fight-2026",
+    "https://www.cbssports.com/soccer/news/whats-going-on-at-real-madrid-chaos-squad-fights-petition-kylian-mbappe-jose-mourinho/",
+    "https://frenchfootballweekly.com/2026/05/07/real-madrid-valverde-received-several-stitches-after-his-fight-with-tchouameni/",
+    "https://www.elobservador.com.uy/futbol-internacional/se-confirmo-la-lesion-alto-grado-jose-maria-gimenez-y-es-duda-el-inicio-del-mundial-2026-la-seleccion-uruguaya-mira-el-parte-medico-atletico-n6043585",
+    "https://onefootball.com/en/news/more-injury-woes-for-atleti-gimenez-and-molina-ko-42848973",
+    "https://tribuna.com/en/news/2026-05-11-injury-crisis-at-atletico-gimenez-and-molina-sidelined-in-final-stretch/",
+    "https://www.eldesmarque.com/futbol/liga-1a-division/20260511/jose-maria-gimenez-lesion-parte-medico-atletico-madrid-duda-mundial_18_019127001.html",
+    "https://www.teleamazonas.com/mundial/pierde-mundial-lesion-jose-maria-gimenez-preocupa-uruguay/",
+    "https://onefootball.com/en/news/darwin-nunez-determined-to-leave-al-hilal-and-pursue-european-return-42837754",
+    "https://www.goal.com/en-us/lists/a-dry-spell-and-a-call-to-liverpool-has-al-hilal-dashed-nunez-s-world-cup-dream/blt199fa2747d0c13d4",
+    "https://www.espn.com/espn/betting/story/_/id/48386952/espn-soccer-futbol-world-cup-betting-odds-championship-groups",
+    "https://www.lineups.com/betting/uruguay-2026-world-cup-team-preview-betting-odds-predictions-best-bets/",
+    "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads"
+  ],
+  "confidence": "high",
+  "dataFreshness": "2026-05-13"
+}

@@ -1,0 +1,140 @@
+{
+  "teamCode": "GER",
+  "teamName": "Germany",
+  "scoutedAt": "2026-05-16T00:00:00Z",
+  "injuryUpdates": [
+    {
+      "playerName": "Serge Gnabry",
+      "teamCode": "GER",
+      "country": "Germany",
+      "club": "Bayern Munich",
+      "position": "Forward",
+      "injuryType": "Partial adductor muscle tear (right thigh)",
+      "injuryDate": "2026-04-18",
+      "expectedReturn": "Ruled out of the 2026 tournament",
+      "availabilityStatus": "long_term_injured",
+      "lastMatchPlayed": {
+        "date": "2026-04-15",
+        "opponent": "Real Madrid (UEFA Champions League SF)",
+        "notes": "Substituted in the 61st minute in Bayern's semi-final win; injury sustained in subsequent training session before the Stuttgart league fixture"
+      },
+      "source": "ESPN, Bundesliga.com, RTE, Bavarian Football Works - Apr 22, 2026",
+      "notes": "Suffered a torn adductor in his right thigh in training on 18 Apr 2026 before Bayern's Bundesliga clash with Stuttgart. Confirmed via Instagram on 22 Apr 2026 that he will miss the tournament. Major blow - Gnabry had reinvented himself in a central role this season with 20+ goals and assists and was projected as a key wide forward in Nagelsmann's plans, especially given Musiala's lingering fitness concerns.",
+      "action": "add"
+    },
+    {
+      "playerName": "Jamal Musiala",
+      "teamCode": "GER",
+      "country": "Germany",
+      "club": "Bayern Munich",
+      "position": "Midfielder",
+      "injuryType": "Recovered from fractured fibula and dislocated ankle (Club World Cup 2025); recent ankle flare-up resolved",
+      "injuryDate": "2025-07-05",
+      "expectedReturn": "Available for the tournament; building match sharpness",
+      "availabilityStatus": "minor_concern",
+      "lastMatchPlayed": {
+        "date": "2026-05-09",
+        "opponent": "VfL Wolfsburg (Bundesliga)",
+        "notes": "Featured for Bayern; five goal involvements in his last four appearances and an assist for Kane in the DFB Cup semi-final against Leverkusen"
+      },
+      "source": "Bundesliga.com, Yahoo Sports, Goal.com - May 2026",
+      "notes": "Status materially improved since the April data freeze. Manager Vincent Kompany says Musiala is physically very close to his best - able to run, press and tackle. Musiala himself says he is ahead of his recovery schedule. Five goal involvements in four matches points to a strong arc into the tournament, though he still needs minutes to be at peak match sharpness.",
+      "action": "update"
+    },
+    {
+      "playerName": "Kai Havertz",
+      "teamCode": "GER",
+      "country": "Germany",
+      "club": "Arsenal",
+      "position": "Forward",
+      "injuryType": "Suspected groin / hamstring strain",
+      "injuryDate": "2026-04-25",
+      "expectedReturn": "Returned to matchday squad in early May; expected fit for the tournament",
+      "availabilityStatus": "minor_concern",
+      "lastMatchPlayed": {
+        "date": "2026-04-25",
+        "opponent": "Newcastle (Premier League)",
+        "notes": "Limped off in the 32nd minute, visibly upset, after assisting Eze's opener in Arsenal's 1-0 win"
+      },
+      "source": "OneFootball, Get German Football News, Arsenal Insider - Apr-May 2026",
+      "notes": "Limped off vs Newcastle on 25 Apr 2026 with what was reported as a groin/hamstring issue. Missed Arsenal's Champions League semi-final first leg but was back in the matchday squad for the second leg (mid-May). Arsenal staff expressed cautious optimism and reports said his place in the tournament squad is not in danger, but he is short of full match rhythm with under four weeks until kickoff.",
+      "action": "update"
+    }
+  ],
+  "recentFormUpdates": [],
+  "tacticalUpdates": [
+    {
+      "field": "keyTacticalFeatures",
+      "oldValue": "Kimmich has transitioned from right-back to a deep midfield role, dictating play",
+      "newValue": "Nagelsmann has publicly confirmed Kimmich will start at right-back for the tournament (despite playing midfield for Bayern), reverting his international role to fullback to maximise dead-ball delivery into the box",
+      "source": "Bavarian Football Works, Bundesliga.com - May 2026",
+      "confidence": "high"
+    },
+    {
+      "field": "weaknessesOverall",
+      "oldValue": "Lack of a proven world-class striker",
+      "newValue": "Wide-forward depth thinned by Gnabry ruled out for the tournament; goalkeeper hierarchy unsettled with ter Stegen sidelined and Neuer added to the preliminary squad as a possible un-retirement",
+      "source": "ESPN, OneFootball - Apr-May 2026",
+      "confidence": "high"
+    }
+  ],
+  "squadChanges": [
+    {
+      "playerName": "Manuel Neuer",
+      "changeType": "new_call_up",
+      "details": "Added to Germany's 55-player preliminary squad submitted to the governing body on 13 May 2026 despite having retired from international duty after Euro 2024. Held direct talks with Nagelsmann about a possible un-retirement and starting role for the tournament. Final 23-26 player squad is announced 21 May 2026; decision pending.",
+      "source": "OneFootball / Sky Sports Germany - May 14, 2026",
+      "effectiveDate": "2026-05-13"
+    },
+    {
+      "playerName": "Serge Gnabry",
+      "changeType": "dropped",
+      "details": "Forced withdrawal from the tournament squad due to torn adductor in his right thigh sustained in Bayern training on 18 Apr 2026. Confirmed unavailable via Instagram on 22 Apr 2026.",
+      "source": "ESPN, RTE, Bavarian Football Works - Apr 22, 2026",
+      "effectiveDate": "2026-04-22"
+    }
+  ],
+  "bettingOddsUpdate": {
+    "tournamentWinner": "+1400",
+    "groupStageExit": null,
+    "toQualifyFromGroup": "approx 72% implied (around -260)",
+    "source": "DraftKings, BetMGM, Kalshi prediction market - May 4-14, 2026",
+    "notes": "Germany sits in the second tier of contenders at +1400 to win the tournament alongside Portugal and the Netherlands, well behind Spain, France and England. Prediction-market Group E winner probability is roughly 68-72% with Ecuador the next-most-likely at around 21% and Ivory Coast at 10%. Explicit group-stage-exit price was not surfaced from a single reputable aggregator."
+  },
+  "coachUpdate": {
+    "changed": false,
+    "currentCoach": "Julian Nagelsmann",
+    "newCoach": null,
+    "source": null,
+    "notes": null
+  },
+  "summary": "Germany lost key wide forward Serge Gnabry to a tournament-ending adductor tear in late April, the most material development of the month. The goalkeeper picture has been shaken up by the inclusion of the previously retired Manuel Neuer in the 55-player preliminary list submitted on 13 May, with Nagelsmann to name his final squad on 21 May. Musiala continues to trend upward (five goal involvements in four Bayern matches) and Havertz returned from a late-April groin scare in time for Arsenal's Champions League semi-final second leg.",
+  "sourceUrls": [
+    "https://www.bundesliga.com/en/bundesliga/news/serge-gnabry-bayern-munich-injury-stuttgart-champions-league-germany-36960",
+    "https://www.bavarianfootballworks.com/germany-international-soccer/192851/serge-gnabry-will-miss-2026-world-cup-through-injury-bayern-munich-germany-nagelsmann-kompany",
+    "https://www.espn.com/soccer/story/_/id/48526321/serge-gnabry-injury-bayern-munich-germany-world-cup-2026",
+    "https://www.espn.com/soccer/story/_/id/48561527/bayern-munich-germany-serge-gnabry-injury-world-cup",
+    "https://www.rte.ie/sport/soccer/2026/0422/1569628-germanys-gnabry-to-miss-world-cup-with-injury/",
+    "https://worldsoccertalk.com/news/2026-fifa-world-cup-heartbreak-for-germany-as-serge-gnabry-confirms-injury-blow-who-could-julian-nagelsmann-take-as-his-replacement/",
+    "https://onefootball.com/en/news/serge-gnabry-confirms-2026-world-cup-dream-over-after-injury-42757028",
+    "https://www.beinsports.com/en-us/soccer/fifa-world-cup-2026/articles/nagelsmann-in-the-dilemma-over-who-will-be-the-goalkeeper-for-the-german-national-team-neuer-baumann-or-ter-stegen-2026-05-15",
+    "https://onefootball.com/en/news/neuer-in-talks-with-nagelsmann-over-possible-germany-return-as-bayern-veteran-added-to-provisional-world-cup-squad-42866991",
+    "https://tribuna.com/en/news/2026-05-14-julian-nagelsmann-include-manuel-neuer-in-germanys-preliminary-world-cup-squad/",
+    "https://www.goal.com/en-us/lists/marc-andre-ter-stegen-struggles-barcelona-manuel-neuer-bayern-munich-goalkeeper-germany-return-2026-world-cup/bltd15342439ad351cd",
+    "https://www.goal.com/en/lists/jamal-musiala-julian-nagelsmann-bayern-munich-star-world-cup-hopes-amid-injury-struggles/blt27f762e484d44ad7",
+    "https://sports.yahoo.com/articles/weekend-warm-bayern-munich-jamal-130000059.html",
+    "https://www.bundesliga.com/en/bundesliga/news/bayern-munich-jamal-musiala-magic-gnabry-psg-uefa-champions-league-37016",
+    "https://onefootball.com/en/news/germany-sweating-on-havertz-after-arsenal-injury-as-world-cup-nears-42775049",
+    "https://www.getfootballnewsgermany.com/2026/arsenals-kai-havertz-suffers-fresh-injury-world-cup-selection-not-in-jeopardy/",
+    "https://onefootball.com/en/news/germany-forward-kai-havertz-fit-for-arsenals-decisive-champions-league-semi-final-clash-with-atletico-madrid-42816885",
+    "https://www.bavarianfootballworks.com/bayern-munich-coaches/173335/julian-nagelsmann-names-joshua-kimmich-as-his-starting-right-back-for-the-world-cup",
+    "https://www.bundesliga.com/en/bundesliga/news/how-will-germany-line-up-havertz-musiala-wirtz-nagelsmann-world-cup-2026-28807",
+    "https://www.getfootballnewsgermany.com/2026/nagelsmann-goretzka-world-cup/",
+    "https://www.sportsmole.co.uk/football/germany/world-cup-2026/feature/germany-world-cup-squad-full-list-numbers-predicted-lineup-depth-chart-latest-news_597315.html",
+    "https://sports.betmgm.com/en/blog/world-cup/germany-world-cup-odds-chances-win-world-cup-bm25/",
+    "https://defirate.com/prediction-markets/world-cup-odds/germany/",
+    "https://www.lineups.com/betting/germany-2026-world-cup-team-preview-betting-odds-predictions-best-bets/"
+  ],
+  "confidence": "high",
+  "dataFreshness": "2026-05-15"
+}

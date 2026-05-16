@@ -1,0 +1,134 @@
+{
+  "teamCode": "NZL",
+  "teamName": "New Zealand",
+  "scoutedAt": "2026-05-16T00:00:00Z",
+  "injuryUpdates": [
+    {
+      "playerName": "Chris Wood",
+      "teamCode": "NZL",
+      "country": "New Zealand",
+      "club": "Nottingham Forest",
+      "position": "Forward",
+      "injuryType": "Recovered from December 2025 knee surgery and April 15 right-knee blow vs Porto",
+      "injuryDate": null,
+      "expectedReturn": "Fit and selected — named captain of the 26-man tournament squad",
+      "availabilityStatus": "fit",
+      "lastMatchPlayed": {
+        "date": "2026-04-15",
+        "opponent": "Porto (Europa League QF)",
+        "notes": "Started for Nottingham Forest; Porto's Jan Bednarek sent off in the 5th minute for a tackle that caught Wood's right knee. Wood has since recovered and been declared fit."
+      },
+      "source": "ESPN, NZ Herald, Friends of Football — May 13-14, 2026",
+      "notes": "Bazeley confirmed Wood fit by including him in the 26-man squad announced May 13. Wood was named captain — becomes one of two All Whites (with Tommy Smith) to play at two tournaments. Returned from December knee surgery, then took a knock vs Porto on April 15 but has recovered. Cleared status from 'doubt' to 'fit'.",
+      "action": "update"
+    },
+    {
+      "playerName": "Liberato Cacace",
+      "teamCode": "NZL",
+      "country": "New Zealand",
+      "club": "Empoli",
+      "position": "Defender",
+      "injuryType": "No current injury",
+      "injuryDate": null,
+      "expectedReturn": "N/A - currently fit",
+      "availabilityStatus": "fit",
+      "lastMatchPlayed": {
+        "date": "2026-02-22",
+        "opponent": "Empoli (Serie A)",
+        "notes": "Full match played"
+      },
+      "source": "NZ Herald squad announcement - May 14, 2026",
+      "notes": "Included in the 26-man tournament squad. No injury concerns reported.",
+      "action": "no_change"
+    },
+    {
+      "playerName": "Joe Bell",
+      "teamCode": "NZL",
+      "country": "New Zealand",
+      "club": "Viking FK",
+      "position": "Midfielder",
+      "injuryType": "No current injury",
+      "injuryDate": null,
+      "expectedReturn": "N/A - currently fit",
+      "availabilityStatus": "fit",
+      "lastMatchPlayed": {
+        "date": "2026-02-22",
+        "opponent": "Viking FK (Norwegian league)",
+        "notes": "Preseason"
+      },
+      "source": "NZ Herald squad announcement - May 14, 2026",
+      "notes": "Included in the 26-man tournament squad. No injury concerns reported.",
+      "action": "no_change"
+    }
+  ],
+  "recentFormUpdates": [],
+  "tacticalUpdates": [],
+  "squadChanges": [
+    {
+      "playerName": "Tommy Smith",
+      "changeType": "new_call_up",
+      "details": "Veteran defender (age 36, Braintree Town in English non-league) recalled to the All Whites for the first time since late 2024. Will become one of two New Zealand men (with Chris Wood) to play at two tournaments.",
+      "source": "NZ Herald, ESPN — May 13-14, 2026",
+      "effectiveDate": "2026-05-13"
+    },
+    {
+      "playerName": "Lachlan Bayliss",
+      "changeType": "new_call_up",
+      "details": "Surprise selection: 23-year-old Newcastle Jets midfielder named in the 26-man squad just two months after making his international debut. Australian-born, qualifies through his father.",
+      "source": "ESPN — May 13, 2026",
+      "effectiveDate": "2026-05-13"
+    },
+    {
+      "playerName": "Bill Tuiloma",
+      "changeType": "dropped",
+      "details": "Wellington Phoenix defender omitted from the final 26-man squad despite being a regular through the qualifying cycle.",
+      "source": "NZ Herald — May 14, 2026",
+      "effectiveDate": "2026-05-13"
+    },
+    {
+      "playerName": "Andre de Jong",
+      "changeType": "dropped",
+      "details": "Orlando Pirates striker left out of the final 26-man squad.",
+      "source": "NZ Herald — May 14, 2026",
+      "effectiveDate": "2026-05-13"
+    },
+    {
+      "playerName": "Nik Tzanev",
+      "changeType": "dropped",
+      "details": "Huddersfield Town goalkeeper omitted from the final 26-man squad; Michael Woud (Auckland FC) edged him and Max Crocombe for a keeper spot, with Crocombe and Alex Paulsen also included.",
+      "source": "ESPN — May 13, 2026",
+      "effectiveDate": "2026-05-13"
+    }
+  ],
+  "bettingOddsUpdate": {
+    "tournamentWinner": "+100000",
+    "groupStageExit": "8/15",
+    "toQualifyFromGroup": "+150 (11/8)",
+    "source": "BetMGM and bet365, aggregated via Squawka/TheLines — May 12, 2026",
+    "notes": "Among the longest outright prices in the field (~1000/1 to 1500/1 to win). Group-stage advancement price is competitive given the 32-team knockout format that lets four best third-placed sides through; advancement essentially hinges on the Iran fixture."
+  },
+  "coachUpdate": {
+    "changed": false,
+    "currentCoach": "Darren Bazeley",
+    "newCoach": null,
+    "source": null,
+    "notes": null
+  },
+  "summary": "New Zealand named their final 26-man squad on May 13-14 with Chris Wood confirmed fit and installed as captain after recovering from December knee surgery and an April 15 right-knee knock vs Porto — a clear positive shift from his pre-tournament 'doubt' status. Veteran defender Tommy Smith (Braintree Town, 36) was recalled for the first time since late 2024 and joins Wood as a two-time tournament player, while 23-year-old Newcastle Jets midfielder Lachlan Bayliss is a notable surprise call-up; Bill Tuiloma, Andre de Jong and Nik Tzanev were the highest-profile omissions. No competitive matches have been played since April 16; the All Whites face Haiti (June 3, Fort Lauderdale) and England (June 7, Tampa) as warm-ups before opening Group G play vs Iran on June 16.",
+  "sourceUrls": [
+    "https://www.espn.com/soccer/story/_/id/48764554/chris-wood-headlines-new-zealand-2026-world-cup-squad",
+    "https://www.nzherald.co.nz/sport/football/football-world-cup/fifa-world-cup-live-updates-all-whites-name-squad-for-2026-tournament/VO65EA66YRHJTDPOMT4V2RYVZ4/",
+    "https://www.friendsoffootballnz.com/2026/05/06/coach-darren-bazeley-why-haiti-are-ideal-opponents-for-world-cup-warm-up/",
+    "https://www.friendsoffootballnz.com/2026/05/05/all-whites-to-play-haiti-in-warm-up-game-for-fifa-mens-world-cup-report-says/",
+    "https://www.friendsoffootballnz.com/2026/02/12/locked-in-all-whites-to-face-england-on-eve-of-fifa-mens-world-cup/",
+    "https://lethbridgeherald.com/sports/national-sports/2026/05/13/chris-wood-to-lead-new-zealand-at-the-world-cup-after-an-injury-troubled-premier-league-campaign/",
+    "https://lastwordonsports.com/football/2026/05/04/new-zealand-world-cup-2026/",
+    "https://www.thelines.com/odds/world-cup/group-g/",
+    "https://www.squawka.com/us/outright-markets/new-zealand-world-cup-2026-odds/",
+    "https://sports.betmgm.com/en/blog/world-cup/new-zealand-world-cup-odds-chances-to-win-world-cup-bm25/",
+    "https://www.stuff.co.nz/sport/360969774/all-whites-fifa-world-cup-warm-fixtures-confirmed",
+    "https://www.1news.co.nz/2026/05/14/watch-live-all-whites-squad-for-fifa-world-cup-announced/"
+  ],
+  "confidence": "high",
+  "dataFreshness": "2026-05-14"
+}

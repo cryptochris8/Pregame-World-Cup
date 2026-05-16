@@ -1,0 +1,90 @@
+{
+  "teamCode": "IRQ",
+  "teamName": "Iraq",
+  "scoutedAt": "2026-05-16T00:00:00Z",
+  "injuryUpdates": [
+    {
+      "playerName": "Youssef Amyn",
+      "teamCode": "IRQ",
+      "country": "Iraq",
+      "club": "AEK Larnaca",
+      "position": "Forward",
+      "injuryType": "Hamstring strain (sustained vs Bolivia playoff)",
+      "injuryDate": "2026-03-31",
+      "expectedReturn": "Expected available for the tournament; minor flare-up reported with club but no extended absence projected",
+      "availabilityStatus": "minor_concern",
+      "lastMatchPlayed": {
+        "date": "2026-03-31",
+        "opponent": "Bolivia (inter-confederation play-off final)",
+        "notes": "Stretchered off in the first half with hamstring injury"
+      },
+      "source": "Iraq Xtra (verified reports) and Transfermarkt - April/May 2026",
+      "notes": "Forced off early in the playoff vs Bolivia. Initial estimate ~1 month, but a follow-up update described a milder recurrence at club level. Returned to club training in early May; likely fit for the tournament but worth monitoring.",
+      "action": "add"
+    }
+  ],
+  "recentFormUpdates": [],
+  "tacticalUpdates": [],
+  "squadChanges": [
+    {
+      "playerName": "Ahmed Qasem",
+      "changeType": "new_call_up",
+      "details": "Nashville SC midfielder, 22, born in Sweden, switched eligibility to Iraq under family-lineage rules. Approved by the global governing body on 12 May 2026 and added to the player pool for the tournament.",
+      "source": "ESPN, Washington Post, Arab News - 12 May 2026",
+      "effectiveDate": "2026-05-12"
+    },
+    {
+      "playerName": "Dario Naamo",
+      "changeType": "new_call_up",
+      "details": "Dundee United defender, 20, born in Finland, eligibility switch approved on 12 May 2026 under family-lineage rules. Adds defensive depth to Arnold's squad.",
+      "source": "ESPN, Washington Post, Arab News - 12 May 2026",
+      "effectiveDate": "2026-05-12"
+    }
+  ],
+  "bettingOddsUpdate": {
+    "tournamentWinner": "+150000",
+    "groupStageExit": null,
+    "toQualifyFromGroup": "+4000",
+    "source": "TheLines.com / DraftKings (Group I outright market) - May 2026",
+    "notes": "Iraq are heavy underdogs in Group I (France -235 favourite; Norway +280; Senegal +800; Iraq +4000 to win the group). Tournament-winner price quoted around 1500/1, equivalent to roughly +150000. Specific group-stage-exit market not located on consulted aggregators."
+  },
+  "coachUpdate": {
+    "changed": false,
+    "currentCoach": "Graham Arnold",
+    "newCoach": null,
+    "source": "Iraqi News Agency, Al Jazeera - April/May 2026",
+    "notes": "Arnold firmly in place; press conference scheduled at the IFA headquarters in Baghdad around 19-20 May to outline the final preparation programme before the Spain training camp departure on 22 May."
+  },
+  "summary": "Iraq's most material developments since 16 April are off-pitch: the global governing body approved two eligibility switches on 12 May, adding Nashville SC midfielder Ahmed Qasem and Dundee United defender Dario Naamo to Arnold's player pool. A short-lived US-visa scare for five players (including striker Ali Al-Hamadi) was publicly resolved by both the State Department and the IFA on 13 May, with the federation confirming all players hold valid visas. No new matches have been played; Iraq begin a Spain training camp on 18 May with confirmed warm-ups vs Andorra (29 May, Spain), Spain (4 June, Riazor) and Ivory Coast (8 June, Chicago).",
+  "sourceUrls": [
+    "https://www.iraqinews.com/sports/iraq-national-team-set-for-spain-training-camp-ahead-of-world-cup-2026/",
+    "https://www.iraqinews.com/iraq/iraq-to-face-andorra-in-spain-friendly-ahead-of-world-cup/",
+    "https://www.iraqinews.com/iraq/iraq-national-team-friendlies-schedule-2026/",
+    "https://www.aljazeera.com/sports/2026/4/6/world-cup-qualification-earns-iraq-coach-arnold-a-heros-welcome-in-sydney",
+    "https://www.aljazeera.com/sports/2026/4/1/iraq-defeat-bolivia-2-1-to-qualify-for-fifa-world-cup-2026",
+    "https://www.espn.com/soccer/story/_/id/48749858/iraq-register-two-new-players-us-scottish-clubs-ahead-world-cup",
+    "https://www.washingtonpost.com/sports/soccer/2026/05/12/world-cup-iraq-new-players/76fe43ac-4dfa-11f1-97e7-22c6c29ff0d8_story.html",
+    "https://www.washingtontimes.com/news/2026/may/12/world-cup-bound-iraq-gets-fifa-approval-2-new-players-clubs-us/",
+    "https://www.arabnews.com/node/2643294/sport",
+    "https://www.foxsports.com/articles/soccer/world-cupbound-iraq-gets-fifa-approval-for-2-new-players-from-clubs-in-us-and-scotland",
+    "https://dailybeirut.com/en/football/us-visa-denial-shakes-iraqs-world-cup-squad/",
+    "https://frontofficesports.com/world-cup-iraq-visas-trump-administration/",
+    "https://www.newsweek.com/iran-world-cup-us-visas-11945823",
+    "https://www.givemesport.com/iraq-denies-us-visa-refusal-claims-football-players-world-cup/",
+    "https://www.voiceofemirates.com/en/sport/2026/05/13/iraq-denies-visa-crisis-ahead-of-world-cup/",
+    "https://rfef.es/en/noticias/Spain-will-face-Iraq-at-the-Riazor-Stadium-on-4-June",
+    "https://www.ysscores.com/en/news/13956358/Announcement-of-a-Friendly-Match-Between-Iraq-and-Spain",
+    "https://www.ysscores.com/en/news/13958563/Iraq-Begins-World-Cup-Preparations-with-a-Friendly-Against-Andorra",
+    "https://www.panafricafootball.com/post/ivory-coast-iraq-in-warm-up-game/",
+    "https://www.beinsports.com/en-mena/football/friendlies/andorra-vs-iraq-2026-05-29",
+    "https://www.fourfourtwo.com/team/iraq-world-cup-2026-squad",
+    "https://www.si.com/soccer/iraq-2026-world-cup-preview",
+    "https://www.thelines.com/odds/world-cup/group-i/",
+    "https://www.squawka.com/us/outright-markets/iraq-world-cup-2026-odds/",
+    "https://en.wikipedia.org/wiki/Ali_Al-Hamadi",
+    "https://www.lutontoday.co.uk/sport/football/luton-town/hatters-boss-remains-hopeful-iraq-striker-al-hamadis-injury-isnt-too-bad-5404305",
+    "https://www.transfermarkt.us/youssef-amyn/profil/spieler/684307"
+  ],
+  "confidence": "medium",
+  "dataFreshness": "2026-05-13"
+}

@@ -1,0 +1,162 @@
+{
+  "teamCode": "ALG",
+  "teamName": "Algeria",
+  "scoutedAt": "2026-05-16T00:00:00Z",
+  "injuryUpdates": [
+    {
+      "playerName": "Ramy Bensebaini",
+      "teamCode": "ALG",
+      "country": "Algeria",
+      "club": "Borussia Dortmund",
+      "position": "Defender",
+      "injuryType": "Foot injury (swelling, likely season-ending)",
+      "injuryDate": "2026-04-26",
+      "expectedReturn": "Doubtful for the 2026 tournament; under assessment ahead of May 25 training camp",
+      "availabilityStatus": "major_doubt",
+      "lastMatchPlayed": {
+        "date": "2026-04-26",
+        "opponent": "Freiburg (Bundesliga)",
+        "notes": "Picked up foot injury during Dortmund's 4-0 win; ruled out of final two Bundesliga matches"
+      },
+      "source": "BVB Buzz, Yahoo Sports, AfricaSoccer, RotoWire - April 27 to May 6 2026",
+      "notes": "31-year-old left-back with 81 caps; Dortmund manager Niko Kovac said Bundesliga season is over but he could potentially return for the tournament. Omitted from Algeria's expanded provisional squad announced ahead of the May 13 deadline. Recovery still being monitored ahead of the June 1 final squad cutoff.",
+      "action": "add"
+    },
+    {
+      "playerName": "Youcef Atal",
+      "teamCode": "ALG",
+      "country": "Algeria",
+      "club": "Al Sadd",
+      "position": "Defender",
+      "injuryType": "Achilles injury (season-ending)",
+      "injuryDate": null,
+      "expectedReturn": "Ruled out of the 2026 tournament",
+      "availabilityStatus": "long_term_injured",
+      "lastMatchPlayed": {
+        "date": "2026-04-01",
+        "opponent": "Club fixture",
+        "notes": "Season ended prematurely by Achilles injury"
+      },
+      "source": "Goal.com, FourFourTwo - May 2026",
+      "notes": "Right-back's club season ended early by Achilles problem; reported as missing the tournament. Adds to thin full-back depth alongside the Bensebaini situation.",
+      "action": "add"
+    },
+    {
+      "playerName": "Jaouen Hadjam",
+      "teamCode": "ALG",
+      "country": "Algeria",
+      "club": "Young Boys",
+      "position": "Defender",
+      "injuryType": "Ankle injury (recovery phase)",
+      "injuryDate": null,
+      "expectedReturn": "Working back to fitness; included in expanded provisional squad",
+      "availabilityStatus": "doubt",
+      "lastMatchPlayed": {
+        "date": "2026-01-15",
+        "opponent": "Burkina Faso (AFCON 2025)",
+        "notes": "Sustained complicated ankle injury that ruled him out of the rest of AFCON"
+      },
+      "source": "Goal.com, FourFourTwo - May 2026",
+      "notes": "Left-back on the comeback trail from ankle injury picked up at AFCON; named in the expanded preliminary squad but fitness for the June kickoff is not yet guaranteed. With Bensebaini and Atal in major doubt, Hadjam's recovery becomes critical for the left-back slot.",
+      "action": "add"
+    },
+    {
+      "playerName": "Ismael Bennacer",
+      "teamCode": "ALG",
+      "country": "Algeria",
+      "club": "Dinamo Zagreb (on loan from AC Milan)",
+      "position": "Midfielder",
+      "injuryType": "Thigh/hamstring muscle injury (recovering)",
+      "injuryDate": "2026-03-10",
+      "expectedReturn": "Expected to be available for the tournament; named in expanded provisional squad",
+      "availabilityStatus": "doubt",
+      "lastMatchPlayed": {
+        "date": "2026-03-08",
+        "opponent": "Dinamo Zagreb (league match)",
+        "notes": "Last match before muscle injury sidelined him through the March window"
+      },
+      "source": "Goal.com, AfricaSoccer, OneFootball, Foot Africa - April-May 2026",
+      "notes": "Missed March friendlies; rehabbed at Aspetar in Qatar before resuming individual training. Petkovic has included him in the expanded preliminary squad and he is expected to feature in the final 26, though workload is being managed and he has not yet returned to competitive action.",
+      "action": "update"
+    }
+  ],
+  "recentFormUpdates": [],
+  "tacticalUpdates": [],
+  "squadChanges": [
+    {
+      "playerName": "Ramy Bensebaini",
+      "changeType": "dropped",
+      "details": "Omitted from Algeria's expanded provisional squad submitted by the May 13 deadline after suffering a season-ending foot injury for Dortmund on April 26. He could still be added to the final 26 by the June 1 cutoff if he recovers in time.",
+      "source": "BVB Buzz / Vodacom Soccer - May 2026",
+      "effectiveDate": "2026-05-13"
+    },
+    {
+      "playerName": "Houssem Aouar",
+      "changeType": "new_call_up",
+      "details": "Returned to the Algeria setup and included in the expanded preliminary squad, eyeing a place in the final cut as an attacking midfield option.",
+      "source": "Goal.com - May 2026",
+      "effectiveDate": "2026-05-13"
+    },
+    {
+      "playerName": "Yacine Titraoui",
+      "changeType": "new_call_up",
+      "details": "Recalled and included in the expanded preliminary squad as part of the midfield competition alongside Bennacer and Bentaleb.",
+      "source": "Goal.com - May 2026",
+      "effectiveDate": "2026-05-13"
+    },
+    {
+      "playerName": "Domestic-league call-ups (Abdelatif Ramdane, Reda Halaimia, Oussama Benbot and three other home-based players)",
+      "changeType": "new_call_up",
+      "details": "Petkovic included six players from the domestic Ligue 1 in the expanded preliminary squad - a notable break from the heavily European-based selection norm. Two MC Alger players (Ramdane, Halaimia) and USM Alger's Benbot are among the call-ups.",
+      "source": "El Khabar via Foot Africa - May 2026",
+      "effectiveDate": "2026-05-13"
+    }
+  ],
+  "bettingOddsUpdate": {
+    "tournamentWinner": "+40000",
+    "groupStageExit": null,
+    "toQualifyFromGroup": "+650 (to win Group J)",
+    "source": "FanDuel / BetMGM / DraftKings via RotoWire and Squawka - May 6 2026",
+    "notes": "Algeria priced around 400/1 to lift the trophy. To win Group J, +650 across major US books (third favourite behind Argentina and Austria). Direct 'to qualify from group' price not consistently published; markets imply a credible but not favoured chance of advancing, helped by the expanded format allowing third-place qualifiers."
+  },
+  "coachUpdate": {
+    "changed": false,
+    "currentCoach": "Vladimir Petkovic",
+    "newCoach": null,
+    "source": "AfricaSoccer / DzairTube - April-May 2026",
+    "notes": "Petkovic remains in charge. Reported contract extension to 2028 is being negotiated with the FAF, with delays over salary terms but no replacement under consideration. He is described as under pressure after the AFCON quarterfinal exit but is leading the team into camp on May 25."
+  },
+  "summary": "The headline development is the season-ending foot injury to first-choice left-back Ramy Bensebaini, who was dropped from Algeria's expanded preliminary squad on May 13 and is a major doubt for the tournament. With Youcef Atal also out (Achilles) and Jaouen Hadjam still working back from an ankle problem, the left-back position is a real concern. Bennacer is on the recovery path, named in the preliminary squad, and is expected to feature; Petkovic remains in charge with a contract extension being negotiated, and Algeria's preparation camp opens May 25 ahead of friendlies against the Netherlands (June 3) and a likely Venezuela match before the opener vs Argentina on June 17.",
+  "sourceUrls": [
+    "https://www.fotmob.com/teams/6317/squad/algeria",
+    "https://foot-africa.com/en/news/algeria-national-team-vladimir-petkovic-forced-to-recall-a-sidelined-player-1091099/",
+    "https://africasoccer.com/fifa-2026-world-cup-deadlines-algeria-petkovic-squad-decisions/",
+    "https://al24news.dz/en/2026-world-cup-qualifiers-algeria-petkovic-unveils-26-player-roster/",
+    "https://www.dawan.africa/dp/algeria-national-football-team-world-cup-2026-profile-squad-history-and-more",
+    "https://www.goal.com/en-sg/lists/algeria-squad-world-cup-2026/blt6a27c0f5dfc52898",
+    "https://www.fourfourtwo.com/team/algeria-world-cup-2026-squad",
+    "https://www.panafricafootball.com/post/algeria-set-world-cup-preparations/",
+    "https://frenchfootballweekly.com/2026/05/10/algeria-big-decision-announced-before-the-world-cup/",
+    "https://www.si.com/soccer/algeria-2026-world-cup-preview",
+    "https://www.rotowire.com/soccer/article/2026-world-cup-group-j-preview-argentina-algeria-austria-jordan-tactics-lineups-set-pieces-odds-109964",
+    "https://www.squawka.com/us/outright-markets/algeria-world-cup-2026-odds/",
+    "https://bookies.com/uk/news/group-j-world-cup-odds-2026",
+    "https://www.vegasinsider.com/soccer/2026-world-cup-group-j-odds-to-win-or-qualify/",
+    "https://foot-africa.com/en/news/expanded-algeria-squad-six-home-based-players-called-up-by-petkovic-1201991/",
+    "https://foot-africa.com/en/news/2026-world-cup-here-is-algerias-probable-preliminary-squad-1202072/",
+    "https://bvbbuzz.com/dortmund-star-left-out-of-algeria-s-preliminary-world-cup-squad-01kre95yp99n",
+    "https://sports.yahoo.com/articles/dortmunds-bensebaini-season-adeyemi-close-130822647.html",
+    "https://africasoccer.com/ramy-bensebaini-injury-update-dortmund-algeria-world-cup-prep/",
+    "https://www.rotowire.com/soccer/headlines/ramy-bensebaini-injury-season-could-be-done-514534",
+    "https://www.transfermarkt.us/ramy-bensebaini/verletzungen/spieler/284732",
+    "https://africasoccer.com/algeria-petkovic-contract-extension-world-cup-2026/",
+    "https://africanfootball.com/news/836954/Petkovi-reportedly-accepts-Algerian-extension",
+    "https://www.dzair-tube.dz/en/faf-confirms-petkovic-continuity-as-algeria-sets-sights-on-2026-world-cup-ambitions/",
+    "https://onefootball.com/en/news/bennacer-back-to-milan-ahead-of-schedule-after-algeria-injury-40007738",
+    "https://africasoccer.com/ismael-bennacer-closer-to-return-algeria-dinamo-zagreb/",
+    "https://vodacomsoccer.com/news/dortmund-star-bensebaini-left-out-of-algeria-preliminary-world-cup-squad-1",
+    "https://foot-africa.com/en/news/2026-world-cup-algeria-schedules-a-second-friendly-ahead-of-argentina-clash-1194686/"
+  ],
+  "confidence": "high",
+  "dataFreshness": "2026-05-14"
+}

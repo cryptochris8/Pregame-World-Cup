@@ -1,0 +1,212 @@
+{
+  "teamCode": "GHA",
+  "teamName": "Ghana",
+  "scoutedAt": "2026-05-16T00:00:00Z",
+  "injuryUpdates": [
+    {
+      "playerName": "Mohammed Kudus",
+      "teamCode": "GHA",
+      "country": "Ghana",
+      "club": "Tottenham Hotspur",
+      "position": "Midfielder",
+      "injuryType": "Recurrent hamstring (post-surgery)",
+      "injuryDate": "2026-04-10",
+      "expectedReturn": "Doubtful for tournament; ~3-month layoff from surgery",
+      "availabilityStatus": "major_doubt",
+      "lastMatchPlayed": {
+        "date": "2026-03-27",
+        "opponent": "Austria (International Friendly)",
+        "notes": "Struggled in 1-5 loss; subsequent setback in April requires surgery"
+      },
+      "source": "Flashscore, Fox Sports, Africanews - Apr 2026",
+      "notes": "Suffered fresh hamstring setback in early April after returning from January quad/hamstring issue. Surgery confirmed; Tottenham braced for ~3-month absence. Ghana's most important player; widely reported he will miss the tournament, though GFA has not officially ruled him out. Now plays at Tottenham (moved from West Ham in July 2025).",
+      "action": "update"
+    },
+    {
+      "playerName": "Inaki Williams",
+      "teamCode": "GHA",
+      "country": "Ghana",
+      "club": "Athletic Bilbao",
+      "position": "Forward",
+      "injuryType": "No current injury",
+      "injuryDate": null,
+      "expectedReturn": "N/A - currently fit",
+      "availabilityStatus": "fit",
+      "lastMatchPlayed": {
+        "date": "2026-05-10",
+        "opponent": "Athletic Bilbao (La Liga)",
+        "notes": "Athletic Bilbao captain finishing La Liga season as a regular starter"
+      },
+      "source": "Athletic Bilbao official, Ghana FA - May 2026",
+      "notes": "Recovered from the undisclosed issue that kept him out of the March friendlies. Now Athletic Bilbao's captain and La Liga African Player of the Year. Available for the Mexico friendly and expected to be a key starter at the tournament.",
+      "action": "remove"
+    },
+    {
+      "playerName": "Thomas Partey",
+      "teamCode": "GHA",
+      "country": "Ghana",
+      "club": "Villarreal",
+      "position": "Midfielder",
+      "injuryType": "Mobility/fitness decline (no acute injury)",
+      "injuryDate": null,
+      "expectedReturn": "N/A - currently available",
+      "availabilityStatus": "minor_concern",
+      "lastMatchPlayed": {
+        "date": "2026-03-30",
+        "opponent": "Germany (International Friendly)",
+        "notes": "Played in 1-2 loss; mobility concerns persist"
+      },
+      "source": "Villarreal, Ghana FA - May 2026",
+      "notes": "Now at Villarreal (joined on free transfer in August 2025 after Arsenal exit). Age 32, recurring fitness concerns continue, but available. Remains captain and midfield anchor. Off-field legal proceedings ongoing in the UK but he is cleared to play.",
+      "action": "update"
+    },
+    {
+      "playerName": "Mohammed Salisu",
+      "teamCode": "GHA",
+      "country": "Ghana",
+      "club": "Monaco",
+      "position": "Defender",
+      "injuryType": "ACL rupture",
+      "injuryDate": "2026-01-15",
+      "expectedReturn": "Ruled out of tournament (9-month recovery)",
+      "availabilityStatus": "long_term_injured",
+      "lastMatchPlayed": {
+        "date": "2026-01-15",
+        "opponent": "Olympique Lyonnais (Ligue 1)",
+        "notes": "Ruptured ACL during match against Lyon"
+      },
+      "source": "Black Stars team doctor Dr Prince Pambo, MyJoyOnline - Apr 2026",
+      "notes": "Officially ruled out of the tournament after ACL rupture in January. Team doctor confirmed 9-month recovery timeline. Significant blow to Ghana's defensive options.",
+      "action": "add"
+    },
+    {
+      "playerName": "Ernest Nuamah",
+      "teamCode": "GHA",
+      "country": "Ghana",
+      "club": "Olympique Lyonnais",
+      "position": "Forward",
+      "injuryType": "Return from ACL (391-day layoff)",
+      "injuryDate": null,
+      "expectedReturn": "Returned to action 2026-05-04",
+      "availabilityStatus": "minor_concern",
+      "lastMatchPlayed": {
+        "date": "2026-05-04",
+        "opponent": "Rennes (Ligue 1)",
+        "notes": "Cameo substitute appearance in Lyon's 4-2 win after 391 days out"
+      },
+      "source": "Pulse Ghana, Ghanasoccernet, TribalFootball - May 2026",
+      "notes": "Returned from a 391-day ACL absence on May 4 against Rennes. Significant boost for Ghana's wide attacking options, especially given Kudus doubts. Has weeks to prove match fitness before the June 1 final squad deadline.",
+      "action": "add"
+    },
+    {
+      "playerName": "Francis Abu",
+      "teamCode": "GHA",
+      "country": "Ghana",
+      "club": "Columbus Crew",
+      "position": "Midfielder",
+      "injuryType": "Ankle (post-surgery, double leg fracture in some reports)",
+      "injuryDate": "2025-11-15",
+      "expectedReturn": "Ruled out of tournament",
+      "availabilityStatus": "long_term_injured",
+      "lastMatchPlayed": {
+        "date": "2025-11-15",
+        "opponent": "Japan (Kirin Cup)",
+        "notes": "Suffered serious lower-leg injury during Kirin Cup match"
+      },
+      "source": "Ghana team doctor Dr Pambo, Adomonline - Apr 2026",
+      "notes": "Long-term layoff from Kirin Cup injury in November. Responding well to treatment but the 5-6 month recovery window plus reconditioning rules him out of the tournament squad.",
+      "action": "add"
+    }
+  ],
+  "recentFormUpdates": [],
+  "tacticalUpdates": [
+    {
+      "field": "coach",
+      "oldValue": "Otto Addo",
+      "newValue": "Carlos Queiroz",
+      "source": "Ghana FA official, Al Jazeera - Apr 14, 2026",
+      "confidence": "high"
+    },
+    {
+      "field": "playingStyle",
+      "oldValue": "Athletic and direct with explosive pace across the front line; European tactical structure from Addo combined with traditional Ghanaian flair",
+      "newValue": "Rigid, discipline-first, result-oriented approach under Queiroz; cultural shift away from flair-heavy identity toward pragmatic, organized play with emphasis on defensive structure and sacrifice",
+      "source": "Yen.com.gh, SportsWorldGhana, Graphic Online - Apr-May 2026",
+      "confidence": "medium"
+    },
+    {
+      "field": "keyTacticalFeatures",
+      "oldValue": "Addo's German-Ghanaian background provides a unique blend of European structure and African flair",
+      "newValue": "Queiroz brings veteran tournament pedigree (5th consecutive coaching appearance at the global event) with data-driven preparation: 200 video reports, 170 matches monitored, 75 players under continuous scouting between Apr 11 and May 11",
+      "source": "Modern Ghana, Muzicgh - May 2026",
+      "confidence": "high"
+    }
+  ],
+  "squadChanges": [
+    {
+      "playerName": "Mohammed Salisu",
+      "changeType": "dropped",
+      "details": "Ruled out of tournament squad due to ACL rupture sustained in January (Monaco vs Lyon). Team doctor Dr Prince Pambo officially confirmed a 9-month recovery window.",
+      "source": "MyJoyOnline, Modern Ghana - Apr 2026",
+      "effectiveDate": "2026-04-20"
+    },
+    {
+      "playerName": "Francis Abu",
+      "changeType": "dropped",
+      "details": "Ruled out of tournament squad due to long-term ankle/leg injury sustained at Kirin Cup vs Japan in November 2025.",
+      "source": "Adomonline, Ghana team doctor - Apr 2026",
+      "effectiveDate": "2026-04-20"
+    },
+    {
+      "playerName": "Ernest Nuamah",
+      "changeType": "new_call_up",
+      "details": "Recovered from ACL after 391 days and returned for Lyon vs Rennes on May 4. Now in serious contention for Queiroz's 26-man squad as a wide forward option.",
+      "source": "Pulse Ghana, Ghanaweb - May 2026",
+      "effectiveDate": "2026-05-04"
+    }
+  ],
+  "bettingOddsUpdate": {
+    "tournamentWinner": "500/1",
+    "groupStageExit": null,
+    "toQualifyFromGroup": null,
+    "source": "Oddschecker / Squawka aggregate - May 2026",
+    "notes": "Ghana priced at around 500/1 outright. Third-favorite in Group L behind England and Croatia, but bookmakers make them odds-on to advance (top-two finish or one of the better third-placed teams). Specific group-stage exit price not published by aggregators consulted."
+  },
+  "coachUpdate": {
+    "changed": true,
+    "currentCoach": "Otto Addo",
+    "newCoach": "Carlos Queiroz",
+    "source": "Ghana FA, Al Jazeera, ESPN - Apr 14, 2026",
+    "notes": "Addo dismissed on Mar 31 after four consecutive friendly losses (capped by 1-2 vs Germany and 1-5 vs Austria). Queiroz, 73, signed a short-term four-month deal and was unveiled Apr 23 at the Alisa Hotel in Accra. This is his fifth consecutive tournament as a head coach. Addo has since joined the technical study group for the tournament."
+  },
+  "summary": "Ghana has undergone a dramatic shake-up since 2026-04-16: Carlos Queiroz officially replaced Otto Addo on Apr 14 and is leading a discipline-first, data-driven rebuild ahead of a Group L opener vs Panama. Star man Mohammed Kudus suffered a fresh hamstring setback in early April requiring surgery and is widely expected to miss the tournament, while defender Mohammed Salisu (ACL) and midfielder Francis Abu (lower leg) are confirmed out; the lone positive is Ernest Nuamah's return from a 391-day ACL layoff on May 4. Squad finalization is imminent (June 1 deadline) with a key warm-up vs Mexico on May 22.",
+  "sourceUrls": [
+    "https://www.aljazeera.com/sports/2026/4/14/carlos-queiroz-named-ghana-head-coach-before-world-cup",
+    "https://www.cafonline.com/fifa-world-cup/news/ghana-appoint-carlos-queiroz-as-coach-ahead-of-2026-world-cup/",
+    "https://www.ghanafa.org/carlos-queiroz-appointed-black-stars-head-coach-for-2026-fifa-world-cup",
+    "https://www.espn.com/soccer/story/_/id/48477241/ghana-hires-carlos-queiroz-world-cup-campaign",
+    "https://www.modernghana.com/sports/1485357/official-carlos-queiroz-replaces-otto-addo-as.html",
+    "https://www.flashscore.com/news/tottenham-and-ghana-star-mohammed-kudus-set-to-miss-world-cup/vaZ8txDl/",
+    "https://www.foxsports.com/articles/soccer/mohammed-kudus-injury-setback-a-blow-to-tottenham-and-ghana-ahead-of-world-cup",
+    "https://www.africanews.com/2026/04/10/kudus-world-cup-return-in-doubt-after-injury-setback/",
+    "https://www.gbcghanaonline.com/news/mohammed-kudus-faces-world-cup-2026-doubt-after-fresh-injury-blow/2026/",
+    "https://www.modernghana.com/sports/1470890/confirmed-defender-mohammed-salisu-to-miss-2026.html",
+    "https://www.myjoyonline.com/2026-world-cup-mohammed-salisu-ruled-out-with-acl-injury-dr-pambo-confirms/",
+    "https://www.modernghana.com/sports/1490389/2026-world-cup-injuries-to-key-black-stars-player.html",
+    "https://www.pulse.com.gh/story/ernest-nuamah-returns-after-391-day-injury-layoff-in-lyon-victory-2026050408035320274",
+    "https://www.ghanaweb.com/GhanaHomePage/SportsArchive/World-Cup-2026-Major-boost-for-Ghana-as-Ernest-Nuamah-makes-injury-return-2032718",
+    "https://www.ghanafa.org/ghana-to-face-mexico-in-may-friendly-as-world-cup-preparations-intensify",
+    "https://www.espn.com/soccer/match/_/gameId/401861774/ghana-mexico",
+    "https://yen.com.gh/sports/football/304384-2026-world-cup-carlos-queiroz-set-55-man-black-stars-provisional-squad/",
+    "https://sportsworldghana.com/carlos-queiroz-leads-data-driven-build-up-as-ghana-step-up-world-cup-preparations/",
+    "https://www.modernghana.com/sports/1492351/2026-world-cup-black-stars-technical-team-steps.html",
+    "https://www.graphic.com.gh/sports/sports-news/no-excuses-no-distractions-queiroz-cracks-whip-as-ghana-begins-world-cup-countdown.html",
+    "https://www.squawka.com/us/outright-markets/ghana-world-cup-2026-odds/",
+    "https://www.freebets.com/football/world-cup/odds/ghana/",
+    "https://en.wikipedia.org/wiki/I%C3%B1aki_Williams",
+    "https://www.tottenhamhotspur.com/news/2025/july/kudus-arrives-from-west-ham/",
+    "https://en.wikipedia.org/wiki/Thomas_Partey"
+  ],
+  "confidence": "high",
+  "dataFreshness": "2026-05-14"
+}

@@ -1,0 +1,88 @@
+{
+  "teamCode": "PAR",
+  "teamName": "Paraguay",
+  "scoutedAt": "2026-05-16T00:00:00Z",
+  "injuryUpdates": [
+    {
+      "playerName": "Miguel Almiron",
+      "teamCode": "PAR",
+      "country": "Paraguay",
+      "club": "Atlanta United",
+      "position": "Midfielder",
+      "injuryType": "Knee irritation",
+      "injuryDate": "2026-04-15",
+      "expectedReturn": "Day-to-day; targeting return before tournament",
+      "availabilityStatus": "doubt",
+      "lastMatchPlayed": {
+        "date": "2026-04-15",
+        "opponent": "U.S. Open Cup match (Atlanta United)",
+        "notes": "Came off injured; has missed multiple MLS matches since"
+      },
+      "source": "Atlanta United availability reports (May 1 and May 15, 2026), RotoWire",
+      "notes": "Has missed four MLS league matches plus subsequent fixtures since coming off in the April 15 U.S. Open Cup match. Listed as questionable for matches on May 2 and May 16 against Orlando City. Resumed individual and group training but remains a day-to-day decision. Atlanta United and Almiron are being precautious given his expected role for Paraguay this summer. Now listed in Paraguay's preliminary squad (May 14). Note: club has been updated from Newcastle to Atlanta United (transfer completed Jan 2025).",
+      "action": "update"
+    },
+    {
+      "playerName": "Diego Gomez",
+      "teamCode": "PAR",
+      "country": "Paraguay",
+      "club": "Brighton",
+      "position": "Midfielder",
+      "injuryType": "Left knee injury",
+      "injuryDate": "2026-04-19",
+      "expectedReturn": "Available May 17 vs Leeds United",
+      "availabilityStatus": "minor_concern",
+      "lastMatchPlayed": {
+        "date": "2026-04-19",
+        "opponent": "Tottenham (Premier League)",
+        "notes": "Withdrawn in 21st minute after awkward landing from aerial duel; left knee buckled"
+      },
+      "source": "Brighton manager Fabian Hurzeler via RotoWire and OneFootball, May 14, 2026",
+      "notes": "Suffered left knee injury in 18th minute vs Tottenham on April 19 and was withdrawn three minutes later. Initially feared serious but recovered faster than expected — originally targeting May 24 finale vs Manchester United but Hurzeler confirmed on May 14 he 'will definitely be an option' for the May 17 match vs Leeds. Included in Paraguay's preliminary squad. New entry not previously tracked.",
+      "action": "add"
+    }
+  ],
+  "recentFormUpdates": [],
+  "tacticalUpdates": [],
+  "squadChanges": [
+    {
+      "playerName": "Paraguay preliminary squad (60 players)",
+      "changeType": "new_call_up",
+      "details": "Gustavo Alfaro named an extended preliminary squad on May 14, 2026. Includes Manchester United teenager Diego Leon (left-back), Brighton's Diego Gomez, Atlanta United's Miguel Almiron, and Strasbourg's Julio Enciso. Captain Gustavo Gomez (Palmeiras) also confirmed. Squad must be trimmed to 23-26 by the June 1 deadline. No prominent retirements or surprise omissions reported.",
+      "source": "Khel Now, May 14, 2026",
+      "effectiveDate": "2026-05-14"
+    }
+  ],
+  "bettingOddsUpdate": {
+    "tournamentWinner": "+15000",
+    "groupStageExit": null,
+    "toQualifyFromGroup": "-230",
+    "source": "DraftKings via ESPN and lineups.com, May 2026",
+    "notes": "Paraguay priced at 150-1 to win the tournament and +425 to win Group D (third-favorite behind USA at +140 and Turkey at +200). Strong -230 odds to advance from the group, helped by the format where eight of twelve third-placed teams progress."
+  },
+  "coachUpdate": {
+    "changed": false,
+    "currentCoach": "Gustavo Alfaro",
+    "newCoach": null,
+    "source": null,
+    "notes": null
+  },
+  "summary": "Two material injury developments since April 16: Miguel Almiron (Atlanta United) has been sidelined with knee irritation since an April 15 U.S. Open Cup match and remains day-to-day a month later, while Diego Gomez (Brighton) suffered a knee scare vs Tottenham on April 19 but recovered ahead of schedule and is fit again. Gustavo Alfaro named a large preliminary squad on May 14 — captain Gustavo Gomez, Almiron, Enciso, Diego Gomez and 18-year-old Manchester United wing-back Diego Leon all included; final 26 due by June 1. No new matches played since April 16 and no tactical or coach changes.",
+  "sourceUrls": [
+    "https://www.espn.com/soccer/team/results/_/id/210/paraguay",
+    "https://www.goal.com/en/team/paraguay/fixtures-results/3cwjdmekfdouwg990mqdq9fh0",
+    "https://khelnow.com/football/world-football-paraguay-preliminary-squad-fifa-world-cup-202605",
+    "https://onefootball.com/en/news/diego-gomez-suffers-injury-55-days-before-paraguays-world-cup-opener-against-the-usmnt-42736932",
+    "https://www.rotowire.com/soccer/headlines/diego-gomez-injury-will-return-vs-leeds-515929",
+    "https://www.rotowire.com/soccer/headlines/miguel-almiron-injury-considered-day-to-day-514790",
+    "https://www.atlutd.com/news/availability-report-match-preview-win-streak-cf-montreal-may-2026",
+    "https://www.atlutd.com/news/availability-report-double-header-orlando-city-sc-almiron-may-2026",
+    "https://sjsuspartans.com/news/2026/05/13/sjsu-selected-as-official-team-base-camp-for-paraguay-for-fifa-world-cup-26",
+    "https://www.espn.com/espn/betting/story/_/id/48386952/espn-soccer-futbol-world-cup-betting-odds-championship-groups",
+    "https://www.cbssports.com/betting/news/world-cup-odds/",
+    "https://www.transfermarkt.us/paraguay/kader/verein/3581",
+    "https://www.manutd.com/en/news/detail/diego-leon-earns-senior-international-call-up-for-paraguay"
+  ],
+  "confidence": "high",
+  "dataFreshness": "2026-05-15"
+}

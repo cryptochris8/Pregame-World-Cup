@@ -1,0 +1,237 @@
+{
+  "teamCode": "NED",
+  "teamName": "Netherlands",
+  "scoutedAt": "2026-05-16T00:00:00Z",
+  "injuryUpdates": [
+    {
+      "playerName": "Xavi Simons",
+      "teamCode": "NED",
+      "country": "Netherlands",
+      "club": "Tottenham Hotspur",
+      "position": "Midfielder",
+      "injuryType": "Ruptured anterior cruciate ligament (right knee), surgery scheduled",
+      "injuryDate": "2026-04-26",
+      "expectedReturn": "Ruled out of the 2026 tournament; expected to miss the start of 2026/27 club season",
+      "availabilityStatus": "long_term_injured",
+      "lastMatchPlayed": {
+        "date": "2026-04-26",
+        "opponent": "Wolverhampton Wanderers (Premier League)",
+        "notes": "Stretchered off in 58th minute after colliding with Hugo Bueno; collapsed clutching his right knee"
+      },
+      "source": "Sky Sports, Al Jazeera, Tottenham Hotspur official site - April 27, 2026",
+      "notes": "Catastrophic blow for Oranje. The 23-year-old was the primary attacking creator and key tactical reference point in Koeman's setup, expected to drive the midfield-to-attack link. Has issued an emotional statement saying he is heartbroken. Koeman has publicly called the absence dramatic.",
+      "action": "update"
+    },
+    {
+      "playerName": "Matthijs de Ligt",
+      "teamCode": "NED",
+      "country": "Netherlands",
+      "club": "Manchester United",
+      "position": "Defender",
+      "injuryType": "Back surgery (corrective procedure) after six months of failed conservative treatment",
+      "injuryDate": "2026-05-15",
+      "expectedReturn": "Ruled out of the 2026 tournament; targeting start of 2026/27 Manchester United season",
+      "availabilityStatus": "long_term_injured",
+      "lastMatchPlayed": {
+        "date": "2025-11-30",
+        "opponent": "Crystal Palace (Premier League)",
+        "notes": "Last appearance before back issue forced him out; has not played since"
+      },
+      "source": "ESPN, France24, Sports Mole, TSN - May 15, 2026",
+      "notes": "Confirmed via personal social media statement after surgery on or around May 15. Was the most likely partner for Van Dijk at center-back and a Koeman regular. Forces a defensive rebuild around Stefan de Vrij, Nathan Ake, or Lutsharel Geertruida alongside the captain.",
+      "action": "update"
+    },
+    {
+      "playerName": "Jerdy Schouten",
+      "teamCode": "NED",
+      "country": "Netherlands",
+      "club": "PSV Eindhoven",
+      "position": "Midfielder",
+      "injuryType": "Ruptured anterior cruciate ligament, surgery required",
+      "injuryDate": "2026-04-04",
+      "expectedReturn": "Ruled out of the 2026 tournament and the remainder of 2025/26 club season",
+      "availabilityStatus": "long_term_injured",
+      "lastMatchPlayed": {
+        "date": "2026-04-04",
+        "opponent": "FC Utrecht (Eredivisie)",
+        "notes": "Twisted knee in second half of PSV's 4-3 win, immediately went down clutching the joint"
+      },
+      "source": "PSV official, Flashscore, Tribal Football, RotoWire - April 5-6, 2026",
+      "notes": "Injury and confirmation pre-dated the April 16 data refresh by approximately ten days but was not previously in the tracker. PSV captain, 29, started every Euro 2024 match for Oranje and was first-choice in the defensive midfield role. Loss compounds the Simons absence by stripping experience from the central midfield rotation.",
+      "action": "add"
+    },
+    {
+      "playerName": "Memphis Depay",
+      "teamCode": "NED",
+      "country": "Netherlands",
+      "club": "Corinthians",
+      "position": "Forward",
+      "injuryType": "Strain of right anterior thigh muscle",
+      "injuryDate": "2026-04-15",
+      "expectedReturn": "At least four weeks out; race against time to play any matches before squad cutoff",
+      "availabilityStatus": "major_doubt",
+      "lastMatchPlayed": {
+        "date": "2026-04-15",
+        "opponent": "Flamengo (Brasileirao)",
+        "notes": "Picked up thigh strain during the match, ruled out at least a month by Corinthians"
+      },
+      "source": "NL Times, OneFootball, beIN Sports - April 16-30, 2026",
+      "notes": "All-time Netherlands top scorer but selection is not guaranteed. Koeman has publicly stated Depay must be in match-fit form to be picked, citing Euro 2024 as precedent. Squad announcement was delayed to May 27 partly to give him more time to prove fitness.",
+      "action": "add"
+    },
+    {
+      "playerName": "Jurrien Timber",
+      "teamCode": "NED",
+      "country": "Netherlands",
+      "club": "Arsenal",
+      "position": "Defender",
+      "injuryType": "Groin problem (originally suspected hamstring); complications have extended absence",
+      "injuryDate": "2026-03-14",
+      "expectedReturn": "Targeting Champions League final on May 30; tournament availability still in doubt",
+      "availabilityStatus": "major_doubt",
+      "lastMatchPlayed": {
+        "date": "2026-03-14",
+        "opponent": "Everton (Premier League)",
+        "notes": "Forced off injured; has missed Arsenal's last 11-12 matches in all competitions"
+      },
+      "source": "Football Transfers, Yahoo Sports, Goal.com - May 1-14, 2026",
+      "notes": "Now an Arsenal player (the prior entry had him at Manchester United, which is incorrect). Mikel Arteta confirmed the issue has been more complicated than expected and may keep him out the rest of the Premier League season. Arsenal prioritizing the Champions League final ahead of his fitness. Status downgraded from minor_concern to major_doubt given the prolonged absence.",
+      "action": "update"
+    },
+    {
+      "playerName": "Justin Kluivert",
+      "teamCode": "NED",
+      "country": "Netherlands",
+      "club": "Bournemouth",
+      "position": "Forward",
+      "injuryType": "Returning from knee surgery (suffered vs Arsenal in January)",
+      "injuryDate": "2026-01-25",
+      "expectedReturn": "Returned to Bournemouth matchday squad versus Fulham on May 8, 2026",
+      "availabilityStatus": "doubt",
+      "lastMatchPlayed": {
+        "date": "2026-05-08",
+        "opponent": "Fulham (Premier League)",
+        "notes": "First squad inclusion since knee surgery in January; building back match minutes"
+      },
+      "source": "AFC Bournemouth official, Washington Post, Sports Mole - May 8-10, 2026",
+      "notes": "Koeman name-checked Kluivert as a potential replacement creator following the Xavi Simons injury. Player himself has acknowledged he cannot guarantee playing four full group-stage matches but is pushing to be ready. Likely to be in the May 27 provisional squad.",
+      "action": "add"
+    },
+    {
+      "playerName": "Frenkie de Jong",
+      "teamCode": "NED",
+      "country": "Netherlands",
+      "club": "Barcelona",
+      "position": "Midfielder",
+      "injuryType": "Recovered from hamstring (muscle tear)",
+      "injuryDate": null,
+      "expectedReturn": "N/A - back to full match action",
+      "availabilityStatus": "fit",
+      "lastMatchPlayed": {
+        "date": "2026-05-11",
+        "opponent": "Levante (La Liga)",
+        "notes": "Scored, completed 113 passes, three tackles and an interception in 3-0 win"
+      },
+      "source": "Football-Espana, Barca Blaugranes, FC Barcelona official - April 10 to May 11, 2026",
+      "notes": "Earlier doubt status now resolved. De Jong returned in mid-April after a six-week absence and has built back to full match sharpness. With Schouten out and Simons out, de Jong is now indispensable as the deep-lying creative pivot in midfield.",
+      "action": "update"
+    }
+  ],
+  "recentFormUpdates": [],
+  "tacticalUpdates": [
+    {
+      "field": "primaryThreat",
+      "oldValue": "Xavi Simons driving from midfield and Gakpo cutting inside from the left wing",
+      "newValue": "Gakpo cutting inside from the left wing and Reijnders pushing into advanced positions as the new creative reference point",
+      "source": "Sports Illustrated, Sports Mole, Flashscore - April 28 to May 14, 2026",
+      "confidence": "medium"
+    },
+    {
+      "field": "keyTacticalFeatures",
+      "oldValue": "Koeman builds the spine around Van Dijk, de Jong, Simons, and Gakpo",
+      "newValue": "Spine rebuilt around Van Dijk, de Jong, Gravenberch and Gakpo, with Reijnders promoted to a free number-10 role to compensate for Xavi Simons' absence",
+      "source": "Sports Illustrated, Flashscore - May 2026",
+      "confidence": "medium"
+    },
+    {
+      "field": "strengthsOverall",
+      "oldValue": "Strong defensive leadership in Van Dijk",
+      "newValue": "Defensive leadership rests almost entirely on Van Dijk after de Ligt ruled out; center-back partner now an open question between de Vrij, Ake and Geertruida",
+      "source": "ESPN, World Soccer Talk - May 15, 2026",
+      "confidence": "high"
+    }
+  ],
+  "squadChanges": [
+    {
+      "playerName": "Xavi Simons",
+      "changeType": "dropped",
+      "details": "Will not be selected for the 2026 tournament due to ACL surgery. Effectively a forced removal from any provisional squad; Koeman has begun publicly canvassing replacements (Kluivert, Til).",
+      "source": "Sky Sports, Al Jazeera - April 27, 2026",
+      "effectiveDate": "2026-04-27"
+    },
+    {
+      "playerName": "Matthijs de Ligt",
+      "changeType": "dropped",
+      "details": "Ruled out by back surgery, will not be in the Netherlands squad. Confirmed via the player's own statement following the procedure.",
+      "source": "ESPN, France24 - May 15, 2026",
+      "effectiveDate": "2026-05-15"
+    },
+    {
+      "playerName": "Jerdy Schouten",
+      "changeType": "dropped",
+      "details": "Out with ACL rupture; will not be available for selection. Previously a guaranteed midfield starter for Oranje.",
+      "source": "PSV official, Flashscore - April 5, 2026",
+      "effectiveDate": "2026-04-05"
+    }
+  ],
+  "bettingOddsUpdate": {
+    "tournamentWinner": "+2000",
+    "groupStageExit": "+600",
+    "toQualifyFromGroup": "-140",
+    "source": "bet365 and Squawka aggregator - May 2026",
+    "notes": "Tournament winner price around 20/1 (+2000) per Squawka; bet365 prices Netherlands at 8/11 to win Group F outright and 6/1 NOT to advance, implying roughly 80%+ probability of qualification. Group exit price (+600) is derived from the 6/1 not-to-qualify line. Prices were sampled before the de Ligt confirmation on May 15 and may drift slightly weaker once books reprice."
+  },
+  "coachUpdate": {
+    "changed": false,
+    "currentCoach": "Ronald Koeman",
+    "newCoach": null,
+    "source": null,
+    "notes": "Koeman remains in charge. He has delayed his final squad announcement by two days to Wednesday May 27 to give injured players (Depay, Kluivert, Timber) extra time to prove fitness."
+  },
+  "summary": "Netherlands have been hammered by injuries since the April 16 data refresh: Xavi Simons (ACL, April 26) and Matthijs de Ligt (back surgery, May 15) are both ruled out of the 2026 tournament, with PSV captain Jerdy Schouten also long-term out following an early-April ACL. Koeman has publicly called the Simons absence dramatic and has delayed the final squad announcement to May 27 to assess Memphis Depay (thigh strain), Justin Kluivert (returning from January knee surgery) and Jurrien Timber (extended groin issue). Frenkie de Jong is the lone bright spot, fully recovered and back to full minutes at Barcelona; the spine now leans on Van Dijk, de Jong, Reijnders and Gakpo, with Reijnders likely promoted to a free 10 role to absorb Simons' creative load.",
+  "sourceUrls": [
+    "https://www.skysports.com/football/news/11675/13537026/xavi-simons-injury-tottenham-playmaker-to-miss-rest-of-season-and-world-cup-with-netherlands-after-being-stretchered-off-at-wolves",
+    "https://www.aljazeera.com/sports/2026/4/27/acl-injury-ends-xavi-simons-world-cup-2026-dream-with-netherlands",
+    "https://www.tottenhamhotspur.com/news/1061881/injury-update-xavi-simons",
+    "https://worldsoccertalk.com/news/2026-world-cup-netherlands-deal-major-blow-as-xavi-simons-suffers-acl-injury-at-tottenham-hotspur/",
+    "https://www.espn.com/soccer/story/_/id/48783229/netherlands-defender-matthijs-de-ligt-ruled-world-cup-back-surgery",
+    "https://www.france24.com/en/live-news/20260515-de-ligt-to-miss-world-cup-after-back-surgery",
+    "https://www.tsn.ca/soccer/article/netherlands-centre-back-de-ligt-back-out-of-fifa-world-cup/",
+    "https://www.sportsmole.co.uk/football/man-utd/injury-news/news/man-united-outline-de-ligt-recovery-timeline-as-back-operation-is-confirmed_597634.html",
+    "https://www.psv.nl/en/media/artikel/nieuws-medische-update-jerdy-schouten-1",
+    "https://www.flashscore.com/news/soccer-world-cup-nightmare-for-jerdy-schouten-psv-star-out-for-world-cup-with-acl-injury/YqVwpRLH/",
+    "https://www.rotowire.com/soccer/headlines/jerdy-schouten-injury-acl-surgery-rules-him-out-of-wc-515622",
+    "https://www.tribalfootball.com/article/soccer-world-cup-nightmare-for-jerdy-schouten-as-psv-star-ruled-out-of-world-cup-with-acl-tear-daca5c5b-2fba-4881-a6de-e73ed104188e",
+    "https://nltimes.nl/2026/04/16/memphis-depay-faces-race-time-world-cup-fresh-injury",
+    "https://www.beinsports.com/en-us/soccer/friendlies/articles/koeman-urges-netherlands-difference-maker-depay-to-regain-fitness-for-world-cup-2026-03-30",
+    "https://onefootball.com/en/news/memphis-depay-withdrawn-from-netherlands-squad-after-thigh-strain-confirmed-by-corinthians-42609681",
+    "https://www.afcb.co.uk/news/2026/may/08/injury-news--kluivert-set-to-return-to-squad-for-fulham-trip/",
+    "https://www.washingtonpost.com/sports/soccer/2026/05/08/kluivert-netherlands-world-cup-bournemouth-knee/4a3ab2d0-4ac4-11f1-a119-857cd2bf4fd4_story.html",
+    "https://www.washingtonpost.com/sports/soccer/2026/04/10/kluivert-netherlands-world-cup-bournemouth-knee/b9af0f1a-34e1-11f1-b85b-2cd751275c1d_story.html",
+    "https://www.footballtransfers.com/en/transfer-news/uk-premier-league/2026/05/exclusive-arsenal-jurrien-timber-injury-return-plan-champions-league-final-psg",
+    "https://www.goal.com/en/lists/arsenal-injury-blow-jurrien-timber-out-for-season/blt82309151196fae25",
+    "https://www.football-espana.net/2026/04/10/flick-lewandowski-de-jong-fitness",
+    "https://www.flashscore.com/news/soccer-world-cup-dutch-boss-koeman-to-take-extra-time-before-finalising-world-cup-squad/Iuu5CuDl/",
+    "https://www.devdiscourse.com/article/sports-games/3907490-koemans-strategic-squad-delay",
+    "https://www.flashscore.com/news/soccer-world-cup-netherlands-boss-ronald-koeman-eyeing-replacements-after-xavi-simons-injury/2ZkrS05c/",
+    "https://www.si.com/soccer/netherlands-2026-world-cup-preview",
+    "https://www.fanatik.com.tr/en/ronald-koeman-navigates-dramatic-xavi-simons-absence-ahead-of-world-cup-2622017",
+    "https://www.ibtimes.sg/simons-injury-hits-netherlands-world-cup-plans-koeman-seeks-replacement-85977",
+    "https://www.squawka.com/us/outright-markets/netherlands-world-cup-2026-odds/",
+    "https://www.vegasinsider.com/soccer/2026-world-cup-group-f-odds-to-win-or-qualify/",
+    "https://www.rotowire.com/soccer/article/2026-world-cup-group-f-preview-netherlands-japan-sweden-and-tunisia-lineups-odds-predictions-and-tactics-112643",
+    "https://bonusdevil.com/sports-betting/football/wc26-netherlands/"
+  ],
+  "confidence": "high",
+  "dataFreshness": "2026-05-15"
+}

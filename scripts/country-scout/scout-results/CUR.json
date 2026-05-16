@@ -1,0 +1,63 @@
+{
+  "teamCode": "CUR",
+  "teamName": "Curacao",
+  "scoutedAt": "2026-05-16T00:00:00Z",
+  "injuryUpdates": [],
+  "recentFormUpdates": [],
+  "tacticalUpdates": [
+    {
+      "field": "coach",
+      "oldValue": "Fred Rutten",
+      "newValue": "Dick Advocaat",
+      "source": "CBS Sports, Fox Sports, Al Jazeera - May 12-13, 2026",
+      "confidence": "high"
+    },
+    {
+      "field": "playingStyle",
+      "oldValue": "Defensively organized with Dutch tactical influence under Rutten; relies on counter-attacking and set pieces. Rutten replaced Advocaat who resigned in Feb 2026 for family reasons",
+      "newValue": "Defensively organized under returning Dutch coach Dick Advocaat (the man who qualified them); relies on counter-attacking and set pieces. Advocaat returned May 13, 2026 after Rutten resigned May 12 following two heavy March friendly losses and reported friction with players and the team's main sponsor",
+      "source": "CBS Sports, Goal.com, Curacao Chronicle - May 12-13, 2026",
+      "confidence": "high"
+    },
+    {
+      "field": "keyTacticalFeatures",
+      "oldValue": "Fred Rutten took over in Feb 2026 after Dick Advocaat resigned for family reasons, maintaining Dutch coaching continuity",
+      "newValue": "Dick Advocaat returned as head coach on May 13, 2026, replacing Fred Rutten who resigned a day earlier; Advocaat (78) will become the oldest manager in tournament history. He is the coach who delivered qualification and is widely backed by the playing squad",
+      "source": "Fox Sports, Goal.com, Jamaica Observer - May 13, 2026",
+      "confidence": "high"
+    }
+  ],
+  "squadChanges": [],
+  "bettingOddsUpdate": {
+    "tournamentWinner": "+250000",
+    "groupStageExit": null,
+    "toQualifyFromGroup": "+13000",
+    "source": "DraftKings / FanDuel / BetMGM aggregated via RotoWire and Squawka - May 2026",
+    "notes": "Group E winner odds range from +4500 (FanDuel) to +13000 (DraftKings). Outright tournament price quoted around 2500/1 (approx +250000). No dedicated group-stage-exit market line was published in sources reviewed."
+  },
+  "coachUpdate": {
+    "changed": true,
+    "currentCoach": "Dick Advocaat",
+    "newCoach": "Dick Advocaat",
+    "source": "CBS Sports, Fox Sports, Al Jazeera, Goal.com - May 12-13, 2026",
+    "notes": "Fred Rutten resigned on May 12, 2026 after two friendly losses in March (5-1 to Australia, 2-0 to China) and reported friction with players and main sponsor Corendon. Dick Advocaat, who originally qualified Curacao before stepping down in February for his daughter's health, was officially reappointed on May 13, 2026 with her condition improved. At 78 he will become the oldest manager in tournament history. Preliminary squad announcement was postponed from May 13 to May 16 because of the coaching change."
+  },
+  "summary": "The headline change since 2026-04-16 is at the dugout: Fred Rutten resigned on May 12 and Dick Advocaat — the coach who delivered Curacao's historic qualification — was reinstated on May 13, making him on track to be the oldest manager in tournament history. No new injuries to Bacuna, Gorre or Room have been reported, no friendlies have been played in the window (the Australia and China losses pre-date the cutoff; Scotland is May 30), and the preliminary squad was only being unveiled on May 16, so squad-level deltas are not yet observable.",
+  "sourceUrls": [
+    "https://www.aljazeera.com/sports/2026/5/12/what-to-know-about-curacao-at-the-fifa-world-cup-2026",
+    "https://www.cbssports.com/soccer/news/world-cup-2026-curacao-manager-fred-rutten-steps-down/",
+    "https://www.foxsports.com/stories/soccer/curacao-rehires-dick-advocaat-as-coach-for-the-world-cup-three-months-after-he-resigned",
+    "https://www.goal.com/en/lists/dick-advocaat-surprise-return-curacao-boss-ex-netherlands-world-cup-record/bltd46d39ec30daf3fc",
+    "https://www.jamaicaobserver.com/2026/05/12/dick-advocaat-returns-curacao-coach-world-cup/",
+    "https://www.curacaochronicle.com/post/local/curacao-expected-to-announce-preliminary-world-cup-squad-on-friday",
+    "https://www.businessday.co.za/sport/soccer/2026-05-12-2026-world-cup-group-e-germany-lead-as-curacao-chase-historic-world-cup-upset/",
+    "https://www.outlookindia.com/sports/football/fifa-world-cup-2026-curacao-part-ways-with-fred-rutten-dick-advocaat-return-rumours",
+    "https://www.rotowire.com/soccer/article/2026-world-cup-group-e-preview-germany-curacao-ivory-coast-ecuador-tactics-lineups-set-pieces-odds-109286",
+    "https://www.squawka.com/us/outright-markets/curacao-world-cup-2026-odds/",
+    "https://www.sofascore.com/football/match/curacao-scotland/VTbsCqx",
+    "https://en.wikipedia.org/wiki/Juninho_Bacuna",
+    "https://www.fourfourtwo.com/team/curacao-world-cup-2026-squad"
+  ],
+  "confidence": "high",
+  "dataFreshness": "2026-05-13"
+}

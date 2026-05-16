@@ -1,0 +1,163 @@
+{
+  "teamCode": "PAN",
+  "teamName": "Panama",
+  "scoutedAt": "2026-05-16T00:00:00Z",
+  "injuryUpdates": [
+    {
+      "playerName": "Luis Mejia",
+      "teamCode": "PAN",
+      "country": "Panama",
+      "club": "Nacional (Uruguay)",
+      "position": "Goalkeeper",
+      "injuryType": "Grade 1 right hamstring strain",
+      "injuryDate": "2026-03-27",
+      "expectedReturn": "Mid-to-late April 2026 (3-week timeline); racing the clock for the tournament",
+      "availabilityStatus": "doubt",
+      "lastMatchPlayed": {
+        "date": "2026-03-27",
+        "opponent": "South Africa (friendly)",
+        "notes": "Hurt his right hamstring in the 42nd minute and was withdrawn"
+      },
+      "source": "Futbol Centro America - April 6, 2026; FEPAFUT reporting",
+      "notes": "Pulled up with a hamstring strain in the first Bafana Bafana friendly. Missed Nacional's Copa Libertadores opener vs Coquimbo Unido. One of Panama's first-choice goalkeeping options; if he is not match-fit by the 26-player announcement on May 26, Christiansen will lean on Orlando Mosquera and Cesar Samudio.",
+      "action": "add"
+    },
+    {
+      "playerName": "Roderick Miller",
+      "teamCode": "PAN",
+      "country": "Panama",
+      "club": "Turan Tovuz (Azerbaijan)",
+      "position": "Defender",
+      "injuryType": "Unresolved muscular injury (set to miss next four club matches)",
+      "injuryDate": "2026-04-01",
+      "expectedReturn": "Will not be fit for the tournament per El 12 Panameño reporting",
+      "availabilityStatus": "long_term_injured",
+      "lastMatchPlayed": {
+        "date": "2026-03-28",
+        "opponent": "Turan Tovuz league fixture (Azerbaijan Premier League)",
+        "notes": "Last appearance before the injury ruled him out of the tournament"
+      },
+      "source": "Futbol Centro America / El 12 Panameño - April 25, 2026",
+      "notes": "Panamanian outlet El 12 reported Miller's injury has not healed and he is being ruled out of the tournament. The 33-year-old centre-back was a likely squad pick; his absence has materially improved Fidel Escobar's chances of selection.",
+      "action": "add"
+    },
+    {
+      "playerName": "Fidel Escobar",
+      "teamCode": "PAN",
+      "country": "Panama",
+      "club": "Deportivo Saprissa (Costa Rica)",
+      "position": "Defender",
+      "injuryType": "Lumbar hernia (recovered, building match fitness)",
+      "injuryDate": null,
+      "expectedReturn": "Already returned to action with Saprissa; chasing match sharpness",
+      "availabilityStatus": "minor_concern",
+      "lastMatchPlayed": {
+        "date": "2026-05-09",
+        "opponent": "Saprissa club fixture (Costa Rica Primera)",
+        "notes": "Back playing for Saprissa after a lumbar hernia sidelined him for roughly half the season"
+      },
+      "source": "Futbol Centro America - April 25 & May 9, 2026; SI.com preview - May 14, 2026",
+      "notes": "Returning veteran defender. Christiansen has said publicly he may wait until the last minute before deciding whether to start him. With Roderick Miller ruled out, Escobar is now expected to make the 26-player list when it is revealed on May 26.",
+      "action": "add"
+    },
+    {
+      "playerName": "Jose Fajardo",
+      "teamCode": "PAN",
+      "country": "Panama",
+      "club": "Universidad Catolica (Ecuador)",
+      "position": "Forward",
+      "injuryType": "No current injury",
+      "injuryDate": null,
+      "expectedReturn": "N/A - currently fit",
+      "availabilityStatus": "fit",
+      "lastMatchPlayed": {
+        "date": "2026-04-23",
+        "opponent": "Macara (LigaPro Ecuador)",
+        "notes": "Scored from the spot in a 4-0 win; in form ahead of the tournament"
+      },
+      "source": "La Prensa Panama, Primicias.ec - April 2026",
+      "notes": "Recovered fully from the February 12 Copa Libertadores celebration injury. Has been playing and scoring for Universidad Catolica through April, including goals vs Tecnico Universitario (Apr 12) and Macara (Apr 23). No current injury concerns ahead of selection.",
+      "action": "update"
+    }
+  ],
+  "recentFormUpdates": [],
+  "tacticalUpdates": [
+    {
+      "field": "preferredFormation",
+      "oldValue": "4-3-3",
+      "newValue": "4-2-3-1",
+      "source": "RotoWire Group L preview - May 2026; SI.com preview - May 14, 2026",
+      "confidence": "medium"
+    },
+    {
+      "field": "alternateFormations",
+      "oldValue": "[\"4-2-3-1\", \"5-3-2\"]",
+      "newValue": "[\"3-4-2-1\", \"3-5-2\", \"5-4-1\"]",
+      "source": "SI.com Panama preview - May 14, 2026; RotoWire Group L preview",
+      "confidence": "medium"
+    },
+    {
+      "field": "playingStyle",
+      "oldValue": "Touch soccer with Barcelona-influenced possession play combined with CONCACAF physicality and tactical discipline",
+      "newValue": "Compact defensive block with rapid vertical transitions; Christiansen has moved towards a back four for the tournament after the back-three experiment was exposed by quick wide runners in the first South Africa friendly",
+      "source": "RotoWire Group L preview - May 2026",
+      "confidence": "medium"
+    }
+  ],
+  "squadChanges": [
+    {
+      "playerName": "Roderick Miller",
+      "changeType": "dropped",
+      "details": "Ruled out of the tournament squad due to an unresolved injury at club Turan Tovuz, per El 12 Panameño. Was a likely centre-back pick for the 26-player list.",
+      "source": "Futbol Centro America / El 12 Panameño - April 25, 2026",
+      "effectiveDate": "2026-04-25"
+    },
+    {
+      "playerName": "Fidel Escobar",
+      "changeType": "new_call_up",
+      "details": "Veteran defender now expected to be included in the 26-player list after recovering from a lumbar hernia and benefitting from Roderick Miller's withdrawal. Would be his second tournament appearance.",
+      "source": "Futbol Centro America - April 25 & May 9, 2026",
+      "effectiveDate": "2026-05-09"
+    }
+  ],
+  "bettingOddsUpdate": {
+    "tournamentWinner": "+75000",
+    "groupStageExit": null,
+    "toQualifyFromGroup": "+2500 (to win Group L)",
+    "source": "BetMGM, FanDuel, DraftKings via Bookies.com and RotoWire - May 2026",
+    "notes": "Panama is the clear Group L outsider. BetMGM has them at +75000 to win the tournament outright; FOX Sports lists them around +100000 (tied 39th of 48). To win Group L: +2500. Group exit prop not publicly aggregated. Group winner odds: England -335, Croatia +400, Ghana +1000, Panama +2500."
+  },
+  "coachUpdate": {
+    "changed": false,
+    "currentCoach": "Thomas Christiansen",
+    "newCoach": null,
+    "source": null,
+    "notes": null
+  },
+  "summary": "Panama's biggest pre-tournament story is on the back line: centre-back Roderick Miller has been ruled out by an unresolved injury and is being replaced in plans by the returning Fidel Escobar, while first-choice goalkeeper Luis Mejia pulled a hamstring in the March 27 South Africa friendly and remains a doubt with the 26-player list due May 26. Tactically, Christiansen has shifted away from the bundled 4-3-3 toward a 4-2-3-1 / 5-4-1 hybrid after his back-three experiment in Durban was exposed by South Africa's wide runners. Star striker Jose Fajardo has fully recovered from his February Libertadores celebration injury and is scoring regularly for Universidad Catolica.",
+  "sourceUrls": [
+    "https://www.fourfourtwo.com/team/panama-world-cup-2026-squad",
+    "https://uk.sports.yahoo.com/news/panama-world-cup-2026-squad-154724327.html",
+    "https://en.wikipedia.org/wiki/Panama_national_football_team",
+    "https://www.si.com/soccer/panama-2026-world-cup-preview",
+    "https://www.espn.com/soccer/team/results/_/id/2659/league/FIFA.FRIENDLY/season/2026",
+    "https://www.espn.com/soccer/team/_/id/2659/panama",
+    "https://www.rotowire.com/soccer/article/2026-world-cup-group-l-preview-england-croatia-ghana-and-panama-lineups-odds-predictions-and-tactics-113532",
+    "https://bookies.com/uk/news/group-l-world-cup-odds-2026",
+    "https://www.thelines.com/odds/world-cup/group-l/",
+    "https://futbolcentroamerica.com/mundial/baja-sensible-nacional-le-confirma-a-panama-la-lesion-de-luis-mejia-a-66-dias-del-mundial-2026",
+    "https://futbolcentroamerica.com/mundial/no-estara-a-47-del-mundial-2026-en-panama-dan-la-noticia-que-involucra-a-fidel-escobar-e-impacta-en-saprissa",
+    "https://futbolcentroamerica.com/mundial/al-mundial-2026-fidel-escobar-celebra-un-guino-de-la-fepafut-mientras-thomas-christiansen-define-su-convocatoria",
+    "https://futbolcentroamerica.com/mundial/lastimara-a-algunos-thomas-christiansen-adelanta-que-dejara-a-una-pieza-clave-de-panama-del-mundial-2026",
+    "https://futbolcentroamerica.com/panama/la-escalofriante-lesion-de-jose-fajardo-que-tiene-en-alarma-a-thomas-christiansen-y-a-panama",
+    "https://www.prensa.com/deportes/jose-fajardo-marco-en-l-a-goleada-de-universidad-catolica-sobre-macara/",
+    "https://www.primicias.ec/deportes/ligapro/universidad-catolica/envivo-macara-resultado-ver-partido-tv-121054/",
+    "https://www.tvn-2.com/tvmax/copa-mundial-fifa-2026/mundial-2026-seleccion-de-panama-thomas-christiansen-convocados-listado-fifa_1_2240717.html",
+    "https://www.rpctv.com/marea-roja/seleccion-panama-fepafut-revela-fecha-y-hora-conocer-la-lista-el-mundial-2026-n6079340",
+    "https://www.panamaamerica.com.pa/deportes/christiansen-presentara-el-26-de-mayo-los-convocados-para-el-mundial-2026-en-el-edificio",
+    "https://www.laestrella.com.pa/deportes/conoce-la-fecha-oficial-en-la-que-panama-conocera-a-sus-26-convocados-al-mundial-2026-CG22420736",
+    "https://sports.betmgm.com/en/blog/world-cup/panama-world-cup-odds-chances-to-win-world-cup-bm25/"
+  ],
+  "confidence": "medium",
+  "dataFreshness": "2026-05-14"
+}

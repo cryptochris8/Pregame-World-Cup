@@ -1,0 +1,174 @@
+{
+  "teamCode": "SWE",
+  "teamName": "Sweden",
+  "scoutedAt": "2026-05-16T05:15:47Z",
+  "injuryUpdates": [
+    {
+      "playerName": "Alexander Isak",
+      "teamCode": "SWE",
+      "country": "Sweden",
+      "club": "Liverpool",
+      "position": "Forward",
+      "injuryType": "Fitness management after broken leg and adductor issues (full season disrupted)",
+      "injuryDate": "2025-12-15",
+      "expectedReturn": "In squad for the tournament; match-sharpness limited (only ~8 Premier League starts since summer transfer)",
+      "availabilityStatus": "minor_concern",
+      "lastMatchPlayed": {
+        "date": "2026-05-10",
+        "opponent": "Liverpool (Premier League, late-season appearances)",
+        "notes": "Returned to Liverpool action in late April/May after broken leg and subsequent adductor scare; managed minutes."
+      },
+      "source": "Sky Sports, Liverpool.com, ESPN, Sports Illustrated - May 2026",
+      "notes": "Named in Sweden's 26-man squad on May 12. Potter publicly acknowledged the challenge of getting Isak to top form: 'When you've had a long-term injury, it is never a straight road back.' Upgraded from major_doubt to minor_concern after squad confirmation. Club affiliation corrected from Newcastle United to Liverpool (record summer 2025 transfer).",
+      "action": "update"
+    },
+    {
+      "playerName": "Viktor Gyokeres",
+      "teamCode": "SWE",
+      "country": "Sweden",
+      "club": "Arsenal",
+      "position": "Forward",
+      "injuryType": "No current injury",
+      "injuryDate": null,
+      "expectedReturn": "N/A - currently fit and in form",
+      "availabilityStatus": "fit",
+      "lastMatchPlayed": {
+        "date": "2026-05-10",
+        "opponent": "Arsenal (Premier League, late-season run-in)",
+        "notes": "Nine goals in last 13 Premier League appearances ahead of squad announcement."
+      },
+      "source": "beIN Sports, FourFourTwo, Goal.com - May 2026",
+      "notes": "Confirmed fit and in strong form when Potter named the squad on May 12. Club affiliation corrected from Sporting CP to Arsenal (joined for ~EUR80m in summer 2025). Status upgraded from minor_concern to fit.",
+      "action": "update"
+    },
+    {
+      "playerName": "Dejan Kulusevski",
+      "teamCode": "SWE",
+      "country": "Sweden",
+      "club": "Tottenham Hotspur",
+      "position": "Midfielder",
+      "injuryType": "Knee surgery (two procedures since May 2025); has not resumed full training",
+      "injuryDate": "2025-05-12",
+      "expectedReturn": "Will miss the 2026 tournament; close to recovery but lacks any competitive minutes for over a year",
+      "availabilityStatus": "long_term_injured",
+      "lastMatchPlayed": {
+        "date": "2025-05-12",
+        "opponent": "Crystal Palace (Premier League)",
+        "notes": "Suffered knee injury in Tottenham's 2-0 loss; has not played a competitive match since."
+      },
+      "source": "Goal.com, FourFourTwo, BBC Sport - May 2026",
+      "notes": "Officially OMITTED from Sweden's 26-man World Cup squad on May 12. Tottenham boss Roberto De Zerbi publicly questioned his readiness: 'For me, it is difficult to understand how he can play at the tournament if he didn't play any games this season.' Major blow to Sweden's creative options. Status changed from fit (per bundled data) to long_term_injured.",
+      "action": "update"
+    }
+  ],
+  "recentFormUpdates": [],
+  "tacticalUpdates": [
+    {
+      "field": "captain",
+      "oldValue": "Viktor Gyokeres",
+      "newValue": "Victor Lindelof",
+      "source": "Heavy.com, beIN Sports squad announcement coverage - May 13, 2026",
+      "confidence": "high"
+    },
+    {
+      "field": "preferredFormation",
+      "oldValue": "4-4-2",
+      "newValue": "3-4-1-2",
+      "source": "Goal.com, Fox Sports tactical analysis - May 2026",
+      "confidence": "medium"
+    },
+    {
+      "field": "keyTacticalFeatures",
+      "oldValue": "Built around Gyokeres' Sporting CP form; Isak partnership at Newcastle; Kulusevski's Tottenham creativity",
+      "newValue": "Built around Gyokeres (Arsenal) and Isak (Liverpool) Premier League frontline scoring nine combined goals in late-season form; without Kulusevski, creative burden falls on Lucas Bergvall and Anthony Elanga; captain Victor Lindelof anchors a back three with 75 caps of leadership; Potter still seeking ideal balance with both star strikers fit for the first time in months",
+      "source": "Goal.com, Fox Sports, FourFourTwo - May 2026",
+      "confidence": "medium"
+    },
+    {
+      "field": "weaknessesOverall",
+      "oldValue": "Midfield creativity can be lacking; reliance on Gyokeres for goals",
+      "newValue": "Severe creativity drop without Kulusevski; midfield now leans on inexperienced Lucas Bergvall and Yasin Ayari; Isak match-fitness uncertain after disrupted Liverpool season; failed to win a single qualifying group match",
+      "source": "Goal.com, FourFourTwo tournament previews - May 2026",
+      "confidence": "high"
+    }
+  ],
+  "squadChanges": [
+    {
+      "playerName": "Dejan Kulusevski",
+      "changeType": "dropped",
+      "details": "Omitted from Sweden's final 26-man squad on May 12. Ended a 12-month knee-injury recovery without competitive minutes; manager Graham Potter and Tottenham boss Roberto De Zerbi both publicly conceded he was not match-fit. Significant blow to Sweden's creative midfield.",
+      "source": "Goal.com, FourFourTwo, beIN Sports - May 12-13, 2026",
+      "effectiveDate": "2026-05-12"
+    },
+    {
+      "playerName": "Roony Bardghji",
+      "changeType": "dropped",
+      "details": "Surprise omission from Sweden's 26-man squad despite being widely tipped as a wildcard; one of the higher-profile names left out of the final selection.",
+      "source": "Khelnow squad analysis - May 2026",
+      "effectiveDate": "2026-05-12"
+    },
+    {
+      "playerName": "Taha Ali",
+      "changeType": "new_call_up",
+      "details": "Malmo forward called up for first major tournament; part of Potter's blend of domestic Allsvenskan and Premier League experience.",
+      "source": "FourFourTwo squad list, beIN Sports - May 13, 2026",
+      "effectiveDate": "2026-05-12"
+    },
+    {
+      "playerName": "Elliot Stroud",
+      "changeType": "new_call_up",
+      "details": "Mjallby defender named in the final 26 as a depth selection in defense.",
+      "source": "FourFourTwo squad list - May 13, 2026",
+      "effectiveDate": "2026-05-12"
+    },
+    {
+      "playerName": "Besfort Zeneli",
+      "changeType": "new_call_up",
+      "details": "Union Saint-Gilloise midfielder selected as part of the squad's creative depth in place of more established options.",
+      "source": "FourFourTwo squad list - May 13, 2026",
+      "effectiveDate": "2026-05-12"
+    }
+  ],
+  "bettingOddsUpdate": {
+    "tournamentWinner": "+10000",
+    "groupStageExit": null,
+    "toQualifyFromGroup": "+250 (to reach Round of 16)",
+    "source": "Aggregated UK bookmaker quotes via Squawka and The Lines - May 2026",
+    "notes": "Sweden are rated as rank outsiders to win the tournament at around +10000. They are roughly +250 to advance from a tough Group F (Netherlands, Japan, Tunisia). Direct group-stage-exit price was not surfaced in available aggregators; implied probability of exit is materially above 50%."
+  },
+  "coachUpdate": {
+    "changed": false,
+    "currentCoach": "Graham Potter",
+    "newCoach": null,
+    "source": null,
+    "notes": "Potter remains in charge; contract was extended through 2030 in March 2026 after qualification, and no change since 2026-04-16."
+  },
+  "summary": "The defining development since April 16 is the May 12 squad announcement: Dejan Kulusevski has been officially dropped after failing to play a single competitive minute since his May 2025 knee injury, removing Sweden's primary creative outlet. Alexander Isak is named in the squad despite a heavily disrupted Liverpool season (only ~8 league starts), with Potter publicly managing expectations on his sharpness, while Viktor Gyokeres arrives in strong form having scored nine in his last 13 Arsenal appearances. Captain Victor Lindelof leads a squad blending Premier League experience with surprise inclusions (Taha Ali, Elliot Stroud, Besfort Zeneli); no friendlies have been played in the window (Norway June 1, Greece June 4 are still upcoming).",
+  "sourceUrls": [
+    "https://tribuna.com/en/news/2026-05-12-alexander-isak-viktor-gyokeres-named-in-sweden-squad-for-world-cup-dejan-kulusevski-out/",
+    "https://www.yardbarker.com/soccer/articles/alexander_isak_viktor_gyokeres_make_swedens_world_cup_roster/s1_17184_43838850",
+    "https://www.freemalaysiatoday.com/category/sports/2026/05/14/isak-and-gyokeres-make-swedens-world-cup-roster",
+    "https://www.goal.com/en-us/lists/world-cup-dejan-kulusevski-injury-tottenham-sweden-viktor-gyokeres-alexander-isak/bltd56651aa57664624",
+    "https://www.geosuper.tv/latest/55977-sweden-coach-graham-potter-announces-squad-for-fifa-world-cup-2026",
+    "https://khelnow.com/football/world-football-players-left-out-sweden-fifa-world-cup-squad-202605",
+    "https://sports.yahoo.com/articles/isak-gyokeres-named-sweden-world-161218765.html",
+    "https://www.mykhel.com/football/sweden-world-cup-squad-2026-isak-included-bardghji-absent-011-432177.html",
+    "https://www.fourfourtwo.com/team/sweden-world-cup-2026-squad",
+    "https://www.beinsports.com/en-us/soccer/fifa-world-cup-2026/articles/graham-potter-s-official-sweden-squad-for-the-2026-fifa-world-cup-2026-05-13",
+    "https://www.flashscore.com/news/soccer-world-cup-graham-potter-names-26-man-sweden-squad-for-the-world-cup/OjiHKnrg/",
+    "https://www.empireofthekop.com/2026/05/04/isak-return-timeline-revealed-after-another-injury-setback/",
+    "https://www.liverpool.com/liverpool-fc-news/features/alexander-isak-injury-arne-slot-33634686",
+    "https://www.si.com/soccer/alexander-isak-injury-progress-potential-return-date-liverpool-record-signing-2026",
+    "https://www.espn.com/soccer/story/_/id/48370055/alexander-isak-injury-liverpool-training-return-sweden",
+    "https://www.squawka.com/en/outright-markets/sweden-world-cup-2026-odds/",
+    "https://www.lineups.com/betting/sweden-2026-world-cup-team-preview-betting-odds-predictions-best-bets/",
+    "https://www.foxsports.com/articles/soccer/can-graham-potter-revive-alexander-isak-viktor-gyokeres-and-swedens-235m-forward-line-in-time-to-earn-world-cup-2026-qualification",
+    "https://heavy.com/sports/soccer/world-cup/sweden-announces-squad-fifa-world-cup/",
+    "https://www.olympics.com/en/news/fifa-world-cup-2026-sweden-great-escape-graham-potter-all-players-full-squad-list-key-stats-schedule",
+    "https://www.espn.com/soccer/match/_/gameId/401864055/sweden-norway",
+    "https://www.espn.com/soccer/match/_/gameId/401870034",
+    "https://swedenherald.com/article/sweden-to-play-greece-in-world-cup-warmup-friendly-in-solna-on-june-4"
+  ],
+  "confidence": "high",
+  "dataFreshness": "2026-05-14"
+}

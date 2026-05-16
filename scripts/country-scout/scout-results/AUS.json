@@ -1,0 +1,157 @@
+{
+  "teamCode": "AUS",
+  "teamName": "Australia",
+  "scoutedAt": "2026-05-16T04:43:20Z",
+  "injuryUpdates": [
+    {
+      "playerName": "Aiden O'Neill",
+      "teamCode": "AUS",
+      "country": "Australia",
+      "club": "New York City FC",
+      "position": "Midfielder",
+      "injuryType": "Ankle sprain (lingering, aggravated)",
+      "injuryDate": "2026-05-03",
+      "expectedReturn": "Doubtful for tournament opener; assessment ongoing in Sarasota camp",
+      "availabilityStatus": "major_doubt",
+      "lastMatchPlayed": {
+        "date": "2026-05-03",
+        "opponent": "D.C. United (MLS)",
+        "notes": "Withdrawn in the 36th minute after his ankle locked; had been carrying the issue for some time"
+      },
+      "source": "football360.com.au, ESPN Injury Tracker - May 2026",
+      "notes": "First-choice midfield starter in Popovic's last seven matches. Popovic publicly admitted uncertainty over severity. Tracked as a major doubt given how central he is to the midfield plan.",
+      "action": "add"
+    },
+    {
+      "playerName": "Patrick Yazbek",
+      "teamCode": "AUS",
+      "country": "Australia",
+      "club": "Nashville SC",
+      "position": "Midfielder",
+      "injuryType": "Quadriceps injury",
+      "injuryDate": "2026-04-29",
+      "expectedReturn": "Will not return before MLS pause on 2026-05-23; tournament squad place in serious doubt",
+      "availabilityStatus": "major_doubt",
+      "lastMatchPlayed": {
+        "date": "2026-04-29",
+        "opponent": "Tigres UANL (CONCACAF Champions Cup semi-final, withdrew in warm-up)",
+        "notes": "Suffered the quad injury during warm-ups and was seen returning on crutches"
+      },
+      "source": "football360.com.au, sixonefivesoccer.com, ESPN Injury Tracker - May 2026",
+      "notes": "Was pushing for a place in the 26-man squad with nine caps. Nashville coach BJ Callaghan confirmed the injury keeps him out through the league's tournament break.",
+      "action": "add"
+    },
+    {
+      "playerName": "Harry Souttar",
+      "teamCode": "AUS",
+      "country": "Australia",
+      "club": "Leicester City",
+      "position": "Defender",
+      "injuryType": "Returning from ruptured Achilles (Dec 2024)",
+      "injuryDate": null,
+      "expectedReturn": "Available; building up minutes in Sarasota pre-camp",
+      "availabilityStatus": "minor_concern",
+      "lastMatchPlayed": {
+        "date": "2026-05-02",
+        "opponent": "Blackburn Rovers (Championship)",
+        "notes": "Played 88 minutes in a 1-0 win for Leicester, clean sheet, FotMob rating 8.0"
+      },
+      "source": "beIN Sports, AAP, football360.com.au - April/May 2026",
+      "notes": "First competitive appearance in 483 days came on 2026-04-24 vs Millwall (scored, man of the match). Called into Sarasota pre-camp on initial eight-player list; Popovic publicly flagged him as a fitness assessment case. Material upgrade on bundled profile, which had him as a long-term concern.",
+      "action": "add"
+    },
+    {
+      "playerName": "Mathew Leckie",
+      "teamCode": "AUS",
+      "country": "Australia",
+      "club": "Melbourne City",
+      "position": "Forward",
+      "injuryType": "Returning from hip surgery (Nov 2025)",
+      "injuryDate": null,
+      "expectedReturn": "Available; fitness being assessed in Sarasota pre-camp",
+      "availabilityStatus": "minor_concern",
+      "lastMatchPlayed": {
+        "date": "2026-04",
+        "opponent": "A-League appearances for Melbourne City",
+        "notes": "Only four appearances and one start since November injury before being called into pre-camp"
+      },
+      "source": "football360.com.au, Socceroos.com.au - April/May 2026",
+      "notes": "Surprise inclusion in the initial Sarasota train-on group. Popovic explicitly grouped him with Souttar as a fitness-watch case. First Socceroos involvement since June 2024.",
+      "action": "add"
+    }
+  ],
+  "recentFormUpdates": [],
+  "tacticalUpdates": [],
+  "squadChanges": [
+    {
+      "playerName": "Daniel Bennie",
+      "changeType": "new_call_up",
+      "details": "Uncapped QPR midfielder added to the Sarasota pre-camp train-on squad as part of the second wave of ten arrivals, given a late chance to push for the 26-man squad.",
+      "source": "Socceroos.com.au, Flashscore - May 2026",
+      "effectiveDate": "2026-05-05"
+    },
+    {
+      "playerName": "Raphael Borges Rodrigues",
+      "changeType": "new_call_up",
+      "details": "Uncapped Wigan/Coventry forward added to the Sarasota pre-camp train-on squad in the second wave of ten arrivals, alongside fellow uncapped player Daniel Bennie.",
+      "source": "Socceroos.com.au, Flashscore - May 2026",
+      "effectiveDate": "2026-05-05"
+    },
+    {
+      "playerName": "Harry Souttar",
+      "changeType": "new_call_up",
+      "details": "First Socceroos call-up since November 2024 after completing his Achilles rehab and returning to two Leicester matches at the end of the Championship season.",
+      "source": "Socceroos.com.au, football360.com.au - April 2026",
+      "effectiveDate": "2026-04-17"
+    },
+    {
+      "playerName": "Mathew Leckie",
+      "changeType": "new_call_up",
+      "details": "First Socceroos involvement since the June 2024 qualifier vs Palestine; recalled to the initial eight-player Sarasota pre-camp group despite limited A-League minutes post hip surgery.",
+      "source": "Socceroos.com.au, football360.com.au - April 2026",
+      "effectiveDate": "2026-04-17"
+    }
+  ],
+  "bettingOddsUpdate": {
+    "tournamentWinner": "+50000",
+    "groupStageExit": null,
+    "toQualifyFromGroup": "+900 to win Group D (USA -130 favourites; Türkiye +175, Paraguay +350)",
+    "source": "FanDuel Sportsbook / Lineups.com aggregator - May 2026",
+    "notes": "Outright tournament price ~+50000 (around 0.2% implied). Aggregators report group exit as roughly a coin-flip versus advancing; explicit head-to-head exit price was not surfaced from a primary bookmaker."
+  },
+  "coachUpdate": {
+    "changed": false,
+    "currentCoach": "Tony Popovic",
+    "newCoach": null,
+    "source": null,
+    "notes": null
+  },
+  "summary": "Australia's biggest deltas since 2026-04-16 are two fresh midfield injury scares — Aiden O'Neill (ankle, NYCFC, 3 May) and Patrick Yazbek (quad, Nashville, 29 April) — both now major doubts as the squad assembles in Sarasota. The pre-camp itself is notable: Popovic recalled Harry Souttar (first Socceroos involvement since Nov 2024, two successful Leicester returns) and veteran Mathew Leckie as fitness-assessment cases, and added uncapped duo Daniel Bennie and Raphael Borges Rodrigues to a second wave of arrivals. Coach unchanged, tactical 3-4-2-1 unchanged, no new internationals played yet (Mexico friendly is 30 May).",
+  "sourceUrls": [
+    "https://www.espn.com/soccer/story/_/id/48572979/2026-fifa-world-cup-injuries-tracker-which-stars-miss-latest-info",
+    "https://www.espn.com/soccer/story/_/id/48219602/socceroos-depth-chart-picking-australias-squad-world-cup-looms",
+    "https://socceroos.com.au/news/commbank-socceroos-add-ten-more-players-fifa-world-cup-2026tm-train-squad",
+    "https://socceroos.com.au/news/commbank-socceroos-commence-fifa-world-cup-2026tm-pre-camp-sarasota-florida",
+    "https://socceroos.com.au/news/lewis-miller-ruled-out-fifa-world-cup-ruptured-achilles",
+    "https://football360.com.au/socceroos-news-aiden-oneill-injury-latest-update-new-york-city-mls-hrustic-heracles/",
+    "https://football360.com.au/patrick-yazbek-injury-nashville-socceroos-world-cup/",
+    "https://football360.com.au/socceroos-news-patrick-yazbek-injury-latest-update-world-cup-squad/",
+    "https://football360.com.au/socceroos-world-cup-schedule-harry-souttar-interview/",
+    "https://football360.com.au/harry-souttar-returns-injury-leicester-socceroos/",
+    "https://football360.com.au/fifa-world-cup-socceroos-squad-first-players-named-extended-train-on-list-australia/",
+    "https://football360.com.au/socceroos-world-cup-train-on-squad-mathew-leckie-popovic-reaction/",
+    "https://www.beinsports.com/en-nz/football/championship/articles-video/souttar-returns-with-a-goal-against-millwall-2026-04-24",
+    "https://aapnews.aap.com.au/news/souttar-makes-impressive-return-ahead-of-world-cup",
+    "https://aapnews.aap.com.au/news/socceroos-duo-suffer-blows-ahead-of-world-cup",
+    "https://www.sixonefivesoccer.com/patrick-yazbek-out-with-injury-through-the-world-cup-break/",
+    "https://www.flashscore.com/news/soccer-world-cup-popovic-adds-two-uncapped-players-to-world-cup-training-squad/nDhe2DJl/",
+    "https://www.nbclosangeles.com/news/local/rose-bowl-braces-for-thousands-of-fans-for-mexico-sendoff-match/3890782/",
+    "https://pasadenanow.com/main/mexico-vs-australia-kickoff-at-the-rose-bowl-moved-to-7-p-m",
+    "https://www.lineups.com/betting/australia-2026-world-cup-team-preview-betting-odds-predictions-best-bets/",
+    "https://www.lineups.com/soccer/odds/world-cup/group-d/",
+    "https://sports.yahoo.com/soccer/betting/article/2026-world-cup-odds-for-all-48-teams-to-win-the-title-200221552.html",
+    "https://www.espn.com/soccer/team/results/_/id/628/league/FIFA.FRIENDLY"
+  ],
+  "confidence": "high",
+  "dataFreshness": "2026-05-05"
+}

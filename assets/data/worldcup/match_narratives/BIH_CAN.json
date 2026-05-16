@@ -4,77 +4,70 @@
   "team2Code": "CAN",
   "team1Name": "Bosnia and Herzegovina",
   "team2Name": "Canada",
-  "generatedAt": "2026-04-16T00:00:00Z",
-  "dataVersion": 2,
-
-  "headline": "Two Nations Writing New Chapters Collide — But Canada's Injury List Clouds the Co-Host Dream",
-  "subheadline": "Canada's co-hosting excitement meets Bosnia's never-say-die spirit, with Davies recovering, Buchanan back, and Bombito's fractured tibia casting a shadow",
-
-  "openingNarrative": "There is something deeply compelling about a tournament match between two nations for whom the tournament itself represents transformation. Canada, co-hosting for the first time, are a country whose footballing identity has been rewritten in the space of a single generation. A nation that once viewed the beautiful game as a distant curiosity now boasts Alphonso Davies at Real Madrid, Jonathan David scoring goals in Serie A with Juventus, and Tajon Buchanan back in the squad after his own injury ordeal. Playing a tournament on home soil is the culmination of a dream that seemed impossible just a decade ago.\n\nBut the dream carries anxieties. Davies is recovering from a hamstring concern that has limited his training. Ismael Bombito — a key defensive figure — has suffered a fractured tibia that rules him out. Canada's depth is being tested before the tournament even begins.\n\nDavid, however, has been magnificent at Juventus. The striker's move to Serie A has added a new dimension to his game — the tactical intelligence demanded by Italian football has refined his movement and finishing. He arrives at the tournament in the form of his life.\n\nBosnia and Herzegovina carry an even more profound story. A nation forged in the fires of the 1990s conflict, where football served as a lifeline of national identity. Their 2014 tournament debut was one of the most emotionally charged qualifications in history. Now, having fought through UEFA's brutal playoff path, Bosnia return with the fire that defines their national character.\n\nThese two teams have met only twice before — evenly split — and the intrigue heading into this Group B encounter is genuine.",
-
+  "generatedAt": "2026-06-11T15:30:00Z",
+  "dataVersion": 1,
+  "headline": "Legacy Meets Lightning: Bosnia's Dzeko Faces Canada's Host Dreams",
+  "subheadline": "Two nations defining themselves through football collide in a Group B clash that embodies resilience versus raw ambition.",
+  "openingNarrative": "In the corridors of football mythology, some stories transcend mere sport. When Bosnia and Herzegovina take the field against Canada in this 2026 tournament opener, two narratives of national identity through football will collide with the weight of history behind them. For Bosnia, this represents another chapter in an extraordinary journey that began in the ashes of devastating conflict in the 1990s, when football served as both escape and unifying force for a fractured nation. Their qualification came through the crucible of playoff football, with goalkeeper Nikola Vasilj emerging as an unlikely hero, saving penalties against both Wales and Italy to send his country to their second-ever tournament appearance.\n\nCanada's story carries equal emotional heft but different energy entirely. After a 36-year absence that saw them ranked as low as 122nd in the world, Les Rouges have transformed into a legitimate force, climbing to 28th in the rankings during their remarkable resurgence. As co-hosts, they carry the dreams of a nation that has waited generations to see their men's team compete on this stage. The weight of expectation has never been heavier, the opportunity never greater.\n\nYet both teams arrive at this moment bloodied by circumstance. Bosnia's 40-year-old talisman Edin Dzeko carries more than the hopes of 3.2 million people – he bears the physical toll of a shoulder injury sustained in that very playoff triumph, returning just over four weeks later with his shoulder heavily strapped but his resolve undiminished. Canada, meanwhile, faces the devastating possibility that their captain and most important player, Alphonso Davies, may miss this opener entirely, his left hamstring tear threatening to derail their tournament before it begins.",
   "tacticalBreakdown": {
     "title": "The Chess Match",
-    "narrative": "Jesse Marsch's Canada play with the high-energy pressing style that defined his coaching philosophy. The 4-3-3 is designed to suffocate opponents in their own half, win the ball high, and attack with devastating pace. But Davies' hamstring concern introduces uncertainty — if the Real Madrid star is not at full fitness, Canada's asymmetric overload on the left flank loses its primary weapon.\n\nBuchanan's return provides an alternative. His pace and directness on the wing give Marsch an option to redistribute the attacking threat, and David's Juventus-refined movement in behind stretches defenses vertically regardless of Davies' status.\n\nBosnia under Sergej Barbarez counter with pragmatic intelligence. Their 4-2-3-1 is built around Edin Dzeko's extraordinary ability to hold the ball up, bring midfielders into play, and finish with clinical precision. The key tactical question shifts from the original: with Bombito's fractured tibia removing a key defensive figure, can Canada's reorganized backline handle Dzeko's physical presence?\n\nThe loss of Bombito forces Canada into defensive reconfiguration — a concern that Bosnia's experienced attackers will look to exploit.",
+    "narrative": "Jesse Marsch's high-octane 4-4-2 pressing system will meet its antithesis in Sergej Barbarez's pragmatic 4-2-3-1 defensive block. Canada's Red Bull-influenced approach emphasizes verticality and gegenpressing, designed to win the ball high and create chaos in the final third. Their success depends entirely on Davies' fitness – his dual role as left-back turned winger in attack creates the overloads that make their system function. Without him, they lose both their primary creative outlet and their most dangerous weapon.\n\nBosnia's blueprint is built for exactly this type of opponent. Their compact two-bank system, anchored by experienced defenders and two holding midfielders, invites pressure before launching Dzeko as the target man for quick transitions. The key battleground will be the wide channels, where Canada's pace and energy will test Bosnia's aging legs. If Dzeko can hold up possession and bring Ermedin Demirovic into dangerous areas, Bosnia's counter-attacking efficiency could punish Canada's aggressive defensive line. The match will likely be decided by whether Canada's pressing intensity can break down Bosnia's defensive discipline before their own energy reserves are exhausted.",
     "team1Formation": "4-2-3-1",
-    "team2Formation": "4-3-3",
-    "keyMatchup": "Alphonso Davies' hamstring fitness vs Bosnia's right-sided defense — and whether Canada's reshuffled defense can handle Dzeko"
+    "team2Formation": "4-4-2",
+    "keyMatchup": "Davies' explosive pace versus Bosnia's organized defensive structure"
   },
-
   "dataInsights": {
     "title": "By The Numbers",
-    "eloAnalysis": "Canada (ELO: 1615) vs Bosnia (ELO: 1600) — a mere 15-point gap that makes this one of the most evenly matched fixtures in the group stage. Canada's injury concerns narrow the effective advantage further.",
-    "formAnalysis": "Canada qualified automatically as co-hosts and have relied on friendlies. Key developments: Davies recovering from hamstring, David in superb Juventus form, Buchanan back in squad, Bombito ruled out with fractured tibia. Bosnia ground through UEFA qualifying (4 wins, 3 draws, 3 losses) before emerging from Play-Off Path A. Demirovic led their scoring with 4 goals. Bosnia's competitive hardening could be an advantage.",
-    "squadValueComparison": "Canada's squad ($271M) vs Bosnia's ($150M). Davies ($87.5M) alone is worth more than half of Bosnia's squad. But David's Juventus move has elevated his value and form significantly.",
-    "injuryImpact": "Canada's injury concerns are significant. Davies' hamstring limits his explosiveness — the very quality that makes him irreplaceable. Bombito's fractured tibia removes a defensive starter and forces reorganization at the back. On the positive side, Buchanan is back and David is in career-best form at Juventus. Bosnia's dependence on the 40-year-old Dzeko is both strength and vulnerability.",
-    "bettingPerspective": "Canada's co-hosting advantage makes them slight favorites, but the Davies hamstring doubt and Bombito's absence have lengthened their odds. Bosnia represent genuine value as underdogs in a match that is closer to 50-50 than the market suggests.",
-    "historicalPattern": "In 2 previous meetings, the teams have split results evenly. Home advantage has been decisive in both encounters — which favors Canada as co-hosts."
+    "eloAnalysis": "The ELO ratings paint this as the closest of contests – Canada sits at 1615 (31st) against Bosnia's 1600 (34th), a margin so slim it essentially declares this a toss-up.",
+    "formAnalysis": "Canada arrives with momentum from six wins in their last nine matches and a tournament-high ranking of 28th achieved in July 2025, while Bosnia's qualifying campaign was built on resilience, managing just four wins in ten qualifiers before their heroic playoff run.",
+    "squadValueComparison": "The $270.75 million valuation of Canada's squad dwarfs Bosnia's $150 million, with Davies alone worth $87.5 million – more than half of Bosnia's entire team combined – highlighting the investment gap between the two programs.",
+    "injuryImpact": "Davies' hamstring tear represents a potential 32% loss of squad value and strips Canada of their most important tactical weapon, while Dzeko's shoulder concerns add emotional weight to what may be his final tournament appearance at age 40.",
+    "bettingPerspective": "The markets have struggled to separate these teams, reflecting the genuine uncertainty around key player availability and the unpredictable nature of opening tournament matches.",
+    "historicalPattern": "Host nation advantage carries genuine statistical weight – 13 of 22 previous tournaments have seen hosts reach the semi-finals, with home soil providing the kind of energy that can elevate performances beyond normal capability."
   },
-
   "playerSpotlights": [
-    {
-      "name": "Jonathan David",
-      "teamCode": "CAN",
-      "narrative": "David's move to Juventus has transformed him from an excellent Ligue 1 scorer into a complete Serie A striker. The tactical demands of Italian football have sharpened his movement, his hold-up play, and his finishing in tight spaces. He arrives at the tournament in the form of his life — and with Davies potentially limited and Bombito out, David becomes even more important as Canada's attacking focal point. If Davies cannot provide the explosive width that stretches defenses, David must create his own chances in more congested spaces.",
-      "statline": "Juventus striker in career-best form, Canada's primary goal threat"
-    },
     {
       "name": "Edin Dzeko",
       "teamCode": "BIH",
-      "narrative": "At 40, Dzeko is playing in what will almost certainly be his final tournament. Bosnia's all-time record goalscorer has scored at the highest levels with Manchester City, Roma, and Inter Milan. His intelligence compensates for diminished pace, and against a Canadian defense missing Bombito, Dzeko's physical presence and aerial ability will be tested against unfamiliar center-back pairings. Every Bosnian child who has ever kicked a ball dreams of being Dzeko. This is his farewell tour.",
-      "statline": "Bosnia's all-time top scorer with 65+ international goals; over 300 career club goals"
+      "narrative": "At 40, the Schalke striker embodies everything about Bosnia's tournament journey – resilience, determination, and the refusal to surrender to time or circumstance. His shoulder injury from the playoff final against Turkey would have ended many careers, but Dzeko returned after just four weeks, heavily strapped but mentally unbreakable. This may be his final tournament appearance, adding emotional gravitas to every touch, every header, every moment he spends on the pitch. His 73 international goals for a nation of 3.2 million represent one of football's most remarkable individual achievements.",
+      "statline": "73 international goals from 134 appearances"
     },
     {
       "name": "Alphonso Davies",
       "teamCode": "CAN",
-      "narrative": "Born in a refugee camp in Ghana, raised in Edmonton, now starring for Real Madrid — Davies' life story transcends sport. But a hamstring concern has cast uncertainty over his tournament readiness. At full fitness, his pace and dynamism make him virtually uncontainable. At 80%, he is still Canada's best player but a different tactical proposition. The biggest question of Canada's tournament: how fit is Davies, and how long can he sustain his intensity?",
-      "statline": "Canada's $87.5M talisman; recovering from hamstring, fitness being carefully managed"
+      "narrative": "From refugee camp in Ghana to Real Madrid superstar, Davies' life story reads like sporting fiction made real. His left hamstring tear has created the tournament's first major subplot – Bayern Munich's medical staff want control of his rehabilitation, while Canada desperately needs their captain for the biggest match in their footballing history. The sight of him warming up on the touchline may be the most scrutinized pre-match moment of the entire tournament. His pace has been clocked among the fastest in professional football, making him a game-changing weapon when healthy.",
+      "statline": "Valued at $87.5 million, Canada's most expensive player"
     },
     {
-      "name": "Tajon Buchanan",
+      "name": "Jonathan David",
       "teamCode": "CAN",
-      "narrative": "Buchanan's return to the Canada squad is a significant boost at a time when injuries have thinned the roster. His pace and directness on the wing provide an alternative attacking outlet if Davies is limited, and his experience in European club football means he understands the tactical demands of high-level tournament play. If Davies starts but cannot complete 90 minutes, Buchanan becomes the insurance policy that keeps Canada's attacking width alive.",
-      "statline": "Back in the squad after injury, provides critical depth and attacking width"
+      "narrative": "While Davies grabs headlines, David quietly goes about being one of Europe's most clinical strikers. His move to Juventus has elevated his profile, but his importance to Canada cannot be overstated – he is their all-time leading scorer and the player who turns half-chances into goals. Unlike many of his teammates, David arrives fully fit and in form, carrying the additional pressure of potentially leading the line without his injured captain's service from wide areas. His movement in the box and finishing ability represent Canada's most reliable path to goals.",
+      "statline": "Canada's all-time leading international goalscorer"
+    },
+    {
+      "name": "Nikola Vasilj",
+      "teamCode": "BIH",
+      "narrative": "The St. Pauli goalkeeper transformed from relative unknown to national hero through two penalty shootout performances that defined Bosnia's qualification campaign. His saves against Wales and Italy in the playoffs were the difference between tournament football and another four years of waiting. Vasilj represents the new generation of Bosnian football – players who weren't scarred by the conflicts of the 1990s but understand the weight of representing their nation. His composure under pressure has already been tested in the most crucial moments imaginable.",
+      "statline": "Hero of qualifying playoffs with crucial penalty saves against Wales and Italy"
     }
   ],
-
   "theVerdict": {
     "title": "The Verdict",
     "prediction": "Canada 2-1 Bosnia and Herzegovina",
-    "confidence": 45,
-    "narrative": "Home advantage and David's Juventus form tip the balance in what is genuinely a coin flip. The data says these teams are nearly identical in quality, and Canada's injury concerns — Davies' hamstring, Bombito's fractured tibia — make this tighter than the co-hosts would like.\n\nIf Davies is fit enough to start and play 70 minutes, Canada's attacking quality should prove decisive. His pace, even at 80%, creates the space that David's refined movement exploits. But without Bombito at the back, Canada's defense will face anxious moments against Dzeko's physical presence.\n\nExpect a tight first half, a Canadian goal around the hour mark driven by David's Juventus-sharpened finishing, a Bosnian equalizer from a set piece that sends the crowd into nervous silence, and then a late Canadian winner that turns the stadium into a cauldron of euphoria. Buchanan's introduction from the bench provides the fresh legs and width that decide the final 20 minutes.\n\nBut this prediction carries genuine uncertainty. If Davies' hamstring limits him, the balance shifts toward Bosnia.",
+    "confidence": 55,
+    "narrative": "This match will be decided by energy versus experience, and in tournament football, energy often wins early battles. Even if Davies is limited or absent entirely, Canada's home support and superior squad depth should provide enough quality to edge a tight contest. David's clinical finishing and the pace of players like Tajon Buchanan will eventually find gaps in Bosnia's aging defensive structure, while their high pressing should disrupt the rhythm that Bosnia needs to feed Dzeko effectively.\n\nYet this prediction comes with genuine trepidation. Dzeko has made a career of decisive moments, and tournament football has a way of rewarding experience over exuberance. Bosnia's qualification campaign was built on exactly these kinds of performances – absorbing pressure, staying compact, then striking with ruthless efficiency. If they can weather Canada's early storm and keep the match tight into the final third, Dzeko's predatory instincts could write one more chapter in his remarkable story.",
     "alternativeScenarios": [
       {
-        "scenario": "Bosnia and Herzegovina 2-1 Canada",
-        "probability": 28,
-        "reasoning": "Dzeko exploits Canada's reshuffled defense, Davies' hamstring limits his impact, and Bosnia's experience in tight European qualifiers proves more valuable than co-host energy."
+        "scenario": "Bosnia and Herzegovina 1-0 Canada",
+        "probability": 25,
+        "reasoning": "Dzeko rolls back the years with a masterful performance, using his experience to exploit Canada's aggressive defensive line and score the tournament's most emotionally resonant goal."
       },
       {
         "scenario": "Canada 1-1 Bosnia and Herzegovina",
-        "probability": 25,
-        "reasoning": "Davies starts but cannot complete the match. Canada score through David but cannot find a winner against Bosnia's organized defense. A draw that leaves both teams with work to do."
+        "probability": 20,
+        "reasoning": "Both teams' defensive concerns are exposed, leading to a draw that helps neither side but showcases the attacking talent on display."
       }
     ]
   },
-
-  "closingLine": "A refugee camp in Ghana produced Canada's greatest footballer. A war-torn Balkans produced Bosnia's greatest striker. When Davies — hamstring and all — and Dzeko share the same pitch, football's power to transform lives is on full display."
+  "closingLine": "In a tournament where dreams are both born and shattered, this opener promises to deliver both in equal measure."
 }

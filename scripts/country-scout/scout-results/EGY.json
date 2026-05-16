@@ -1,0 +1,74 @@
+{
+  "teamCode": "EGY",
+  "teamName": "Egypt",
+  "scoutedAt": "2026-05-16T00:00:00Z",
+  "injuryUpdates": [
+    {
+      "playerName": "Mohamed Salah",
+      "teamCode": "EGY",
+      "country": "Egypt",
+      "club": "Liverpool",
+      "position": "Forward",
+      "injuryType": "Hamstring tear (vs Crystal Palace, Apr 25)",
+      "injuryDate": "2026-04-25",
+      "expectedReturn": "Expected fit for the 2026 tournament; ~4 weeks treatment from Apr 25",
+      "availabilityStatus": "doubt",
+      "lastMatchPlayed": {
+        "date": "2026-04-25",
+        "opponent": "Crystal Palace (Premier League)",
+        "notes": "Substituted in the 60th minute after pulling up with a hamstring tear in Liverpool's 3-1 win"
+      },
+      "source": "Al Jazeera, Pan-Africa Football, World Soccer Talk - Apr 26-29 2026",
+      "notes": "Age 33. Suffered a hamstring tear vs Crystal Palace on Apr 25. Egypt FA director Ibrahim Hassan initially said Salah had 'played his last game' for Liverpool and required four weeks of treatment, targeting the tournament. Liverpool later issued a more optimistic statement suggesting he could return before the Premier League season ends on May 24. Race against the clock with the opener on Jun 15 vs Belgium — far more serious than the March muscle strain previously logged. Egypt's biggest pre-tournament concern.",
+      "action": "update"
+    }
+  ],
+  "recentFormUpdates": [],
+  "tacticalUpdates": [],
+  "squadChanges": [
+    {
+      "playerName": "Hamza Abdelkarim",
+      "changeType": "new_call_up",
+      "details": "Barcelona-affiliated attacker (on loan from Al Ahly) named in Egypt's preliminary squad ahead of the May 21 training camp and the Russia friendly on May 28. Egypt FA director Ibrahim Hassan confirmed his inclusion; final 26-man list to be submitted in early June.",
+      "source": "AfricaSoccer, DailySports - May 12 2026",
+      "effectiveDate": "2026-05-12"
+    }
+  ],
+  "bettingOddsUpdate": {
+    "tournamentWinner": "+15000",
+    "groupStageExit": null,
+    "toQualifyFromGroup": "+490 to win Group G",
+    "source": "BetMGM (tournament winner); FanDuel via Odds Shark, May 13 2026 (group winner)",
+    "notes": "Egypt are clear outsiders to lift the trophy at +15000 (BetMGM). For Group G, Belgium is the heavy favorite at -250 and Egypt is the second-favorite at +490 (FanDuel, ~17% implied). No clean to-advance or group-exit line was available from a single reputable aggregator at scout time."
+  },
+  "coachUpdate": {
+    "changed": false,
+    "currentCoach": "Hossam Hassan",
+    "newCoach": null,
+    "source": null,
+    "notes": null
+  },
+  "summary": "Mohamed Salah suffered a hamstring tear against Crystal Palace on Apr 25 — a materially more serious problem than the March muscle strain already on file — and is now a genuine doubt despite Egypt FA director Ibrahim Hassan publicly insisting he will be fit for the opener vs Belgium on Jun 15. Barcelona-affiliated teenager Hamza Abdelkarim was added to the preliminary squad on May 12 ahead of friendlies vs Russia (May 28) and Brazil (Jun 6), with the final 26 due in early June. Coach Hossam Hassan, tactical setup, and the rest of the core squad are unchanged.",
+  "sourceUrls": [
+    "https://www.aljazeera.com/sports/2026/4/26/injured-salah-has-played-his-last-game-for-liverpool-egypt-team-official",
+    "https://worldsoccertalk.com/news/mohamed-salahs-season-with-liverpool-ends-after-injury-egypt-director-says-ahead-of-world-cup/",
+    "https://worldsoccertalk.com/amp/news/mohamed-salah-injury-update-liverpool-egypt-optimistic-after-hamstring-scare/",
+    "https://www.panafricafootball.com/post/liverpool-good-news-mohamed-salah/",
+    "https://www.beinsports.com/en-us/soccer/uefa-champions-league/articles/mohamed-salah-suffers-injury-and-will-miss-liverpool-and-egypt-s-national-team-matches-2026-03-20",
+    "https://en.africatopsports.com/2026/04/28/egypt-set-for-russia-friendly-as-world-cup-preparations-gather-pace/",
+    "https://english.ahram.org.eg/News/566811.aspx",
+    "https://www.panafricafootball.com/post/egypt-to-host-russia/",
+    "https://www.clevelandbrowns.com/news/brazil-and-egypt-to-meet-in-road-to-26-series-at-cleveland-s-huntington-bank-field-on-june-6",
+    "https://www.ysscores.com/en/news/13952908/Egypt-Faces-Brazil-in-a-Friendly-Match-in-Cleveland-in-Preparation-for-the-2026-World-Cup",
+    "https://africasoccer.com/egypt-include-barcelona-talent-hamza-abdel-karim-in-preliminary-2026-world-cup-squad/",
+    "https://africasoccer.com/egypt-coach-hossam-hassan-set-to-unveil-squad-for-2026-world-cup-squad/",
+    "https://www.fourfourtwo.com/team/egypt-world-cup-2026-squad",
+    "https://www.goal.com/en/lists/egypt-squad-world-cup-2026/blt1c1cfbba8006a3ef",
+    "https://www.oddsshark.com/soccer/world-cup/group-g-odds-pick-2026",
+    "https://sports.betmgm.com/en/blog/world-cup/egypt-world-cup-odds-chances-to-win-world-cup-bm25/",
+    "https://www.rotowire.com/soccer/article/2026-world-cup-group-g-preview-belgium-egypt-iran-new-zealand-tactics-lineups-set-pieces-odds-109591",
+    "https://www.foxsports.com/articles/soccer/has-mohamed-salah-played-his-last-game-for-liverpool-injury-update-from-egypt-national-team-director-as-257-goal-forward-prepares-to-hit-free-agency"
+  ],
+  "confidence": "high",
+  "dataFreshness": "2026-05-13"
+}

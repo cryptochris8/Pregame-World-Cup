@@ -1,0 +1,132 @@
+{
+  "teamCode": "COD",
+  "teamName": "DR Congo",
+  "scoutedAt": "2026-05-16T00:00:00Z",
+  "injuryUpdates": [
+    {
+      "playerName": "Yoane Wissa",
+      "teamCode": "COD",
+      "country": "DR Congo",
+      "club": "Newcastle United",
+      "position": "Forward",
+      "injuryType": "No current injury (club role limited)",
+      "injuryDate": null,
+      "expectedReturn": "N/A - currently fit",
+      "availabilityStatus": "fit",
+      "lastMatchPlayed": {
+        "date": "2026-03-31",
+        "opponent": "Jamaica (Intercontinental Play-Off final)",
+        "notes": "Came through 1-0 a.e.t. playoff win without injury; named starter throughout March international window"
+      },
+      "source": "Sports Illustrated preview (May 14, 2026); Shields Gazette (Apr-May 2026)",
+      "notes": "Club has moved from Brentford to Newcastle United (Sept 2025 transfer, ~50m GBP). Recovered from PCL knee injury sustained on international duty in Sept 2025 in time for the March playoff window. Now reported fully fit by Desabre, though has started just one of Newcastle's last 16 league matches and saw five recent league games as unused sub. No injury concern for the tournament.",
+      "action": "update"
+    },
+    {
+      "playerName": "Chancel Mbemba",
+      "teamCode": "COD",
+      "country": "DR Congo",
+      "club": "Lille OSC",
+      "position": "Defender",
+      "injuryType": "No current injury",
+      "injuryDate": null,
+      "expectedReturn": "N/A - currently fit",
+      "availabilityStatus": "fit",
+      "lastMatchPlayed": {
+        "date": "2026-03-31",
+        "opponent": "Jamaica (Intercontinental Play-Off final)",
+        "notes": "Captain, played the full match in the 1-0 a.e.t. qualifying win"
+      },
+      "source": "Wikipedia (May 2026); Ligue 1 official (Apr 2026)",
+      "notes": "Club update: moved from Olympique de Marseille to Lille OSC on a one-year deal in Sept 2025; reached 100 caps in Nov 2025 and is now on 107. Fully fit, no concerns ahead of the tournament.",
+      "action": "update"
+    }
+  ],
+  "recentFormUpdates": [],
+  "tacticalUpdates": [
+    {
+      "field": "preferredFormation",
+      "oldValue": "4-3-3",
+      "newValue": "4-1-4-1",
+      "source": "Sports Illustrated DR Congo 2026 tournament preview (May 14, 2026); RotoWire Group K preview (May 6, 2026)",
+      "confidence": "medium"
+    },
+    {
+      "field": "playingStyle",
+      "oldValue": "Athletic and direct with explosive pace on the flanks; Desabre brings French-influenced tactical structure to a squad rich in individual talent from European leagues",
+      "newValue": "Compact defensive block prioritising organisation and disciplined transitions; Desabre is leaning into counter-attacking pace through Wissa and Mayele rather than dominating possession, conceding the ball more readily against stronger opposition",
+      "source": "Sports Illustrated preview (May 14, 2026); RotoWire Group K preview (May 6, 2026)",
+      "confidence": "medium"
+    },
+    {
+      "field": "pressingIntensity",
+      "oldValue": "Medium",
+      "newValue": "Low-Medium",
+      "source": "RotoWire Group K preview (May 6, 2026); Sports Illustrated preview (May 14, 2026)",
+      "confidence": "medium"
+    }
+  ],
+  "squadChanges": [],
+  "bettingOddsUpdate": {
+    "tournamentWinner": "1000/1",
+    "groupStageExit": "4/5",
+    "toQualifyFromGroup": "8/1 to win Group K (best price); around 7/4 to advance from group implied",
+    "source": "Freebets.com odds aggregator citing Betano, TalkSport, Bet365, Betfred and others (snapshot Apr 29, 2026); RotoWire and FOX Sports (early May 2026)",
+    "notes": "DR Congo are joint rank outsiders in Group K alongside Uzbekistan, behind Portugal and Colombia. Tournament-winner prices range from 500/1 (Betway) to 1000/1 (Betano/TalkSport). Group-stage exit prices are short (4/5 to 11/10), reflecting market view they are unlikely to advance."
+  },
+  "coachUpdate": {
+    "changed": false,
+    "currentCoach": "Sebastien Desabre",
+    "newCoach": null,
+    "source": null,
+    "notes": null
+  },
+  "summary": "No coach change, no new matches and no fresh injuries to key players since April 16 - the meaningful deltas are bookkeeping (Wissa is now at Newcastle, not Brentford; Mbemba is at Lille, not Marseille) plus a tactical re-read from May previews suggesting Desabre is set up in a compact 4-1-4-1 counter-attacking block rather than the bundled 4-3-3. The final 26-man squad is due May 18 and the team will play warm-ups vs Denmark (June 3, Liege) and Chile (June 9, Marbella) before opening against Portugal on June 17. Bookmakers have them as joint long-shots in Group K with tournament-winner prices in the 500/1 to 1000/1 range.",
+  "sourceUrls": [
+    "https://ghanasoccernet.com/dr-congo-to-unveil-final-squad-for-2026-world-cup-on-may-11",
+    "https://africasoccer.com/dr-congo-to-unveil-final-squad-for-2026-world-cup-on-may-11/",
+    "https://dailysports.net/news/sebastien-desabre-will-soon-announce-the-squad-for-the-world-cup/",
+    "https://www.si.com/soccer/dr-congo-2026-world-cup-preview",
+    "https://www.fourfourtwo.com/team/dr-congo-world-cup-2026-squad",
+    "https://www.myjoyonline.com/world-cup-2026-the-return-of-the-leopards/",
+    "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/congo-dr-team-profile-history",
+    "https://www.sofascore.com/news/the-2026-world-cup-warm-up-dr-congo",
+    "https://sportnewsafrica.com/en/posts/fifa-wc-2026-dr-congo-to-camp-in-europe",
+    "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/congo-dr-jamaica-match-report-quotes",
+    "https://www.foxsports.com/stories/soccer/congo-dr-world-cup-2026-schedule-locations-dates-times",
+    "https://www.shieldsgazette.com/sport/football/newcastle-united/yoane-wissa-newcastle-united-dr-congo-world-cup-5629243",
+    "https://www.nufcblog.co.uk/2026/04/08/yoane-wissa-returns-from-international-duty-six-days-late/",
+    "https://www.shieldsgazette.com/sport/football/newcastle-united/yoane-wissa-newcastle-united-dr-congo-fifa-world-cup-6351207",
+    "https://africasoccer.com/boost-for-dr-congo-as-striker-yoane-wissa-returns-to-training-ahead-of-crucial-2026-world-cup-playoff/",
+    "https://sportsworldghana.com/2026-world-cup-play-off-wissa-returns-as-desabre-names-26-man-squad-for-d-r-congo/",
+    "https://en.wikipedia.org/wiki/Yoane_Wissa",
+    "https://en.wikipedia.org/wiki/Chancel_Mbemba",
+    "https://en.wikipedia.org/wiki/C%C3%A9dric_Bakambu",
+    "https://tribuna.com/en/news/2026-04-03-chancel-mbemba-blocked-in-congo-by-president-lille-appeals-to-fifa/",
+    "https://ligue1.com/en/articles/l1_article_3665-chancel-mbemba-leads-dr-congo-to-the-brink-of-a-historic-world-cup-return",
+    "https://africasoccer.com/dr-congo-to-face-denmark-and-chile-in-pre-world-cup-friendlies/",
+    "https://foot-africa.com/en/news/world-cup-2026-dr-congo-to-test-themselves-against-denmark-and-chile-1186556/",
+    "https://dailysports.net/news/the-dr-congo-will-play-two-friendly-matches-ahead-of-the-2026-world-cup/",
+    "https://www.foxsports.com/soccer/friendlies-men-denmark-vs-congo-dr-jun-03-2026-game-boxscore-820801",
+    "https://www.flashscore.com/news/soccer-friendly-international-denmark-to-face-world-cup-participant-on-belgian-soil-in-summer-friendly/fu1dikjo/",
+    "https://www.espn.com/soccer/match/_/gameId/401866396/bermuda-congo-dr",
+    "https://foot-africa.com/en/news/friendly-dr-congo-controls-bermuda-2-0-1139963/",
+    "https://www.espn.com/soccer/match/_/gameId/761389/jamaica-congo-dr",
+    "https://www.aljazeera.com/sports/2026/3/31/dr-congo-beat-jamaica-in-world-cup-intercontinental-qualifying-finals",
+    "https://www.freebets.com/football/world-cup/odds/dr-congo/",
+    "https://www.squawka.com/en/outright-markets/dr-congo-world-cup-2026-odds/",
+    "https://bookies.com/uk/news/group-k-world-cup-odds-2026",
+    "https://www.rotowire.com/soccer/article/2026-world-cup-group-k-preview-portugal-dr-congo-uzbekistan-and-colombia-lineups-odds-predictions-and-tactics-113000",
+    "https://www.thelines.com/uk/odds/world-cup/group-k/",
+    "https://www.foxsports.com/stories/soccer/2026-world-cup-group-stage-odds",
+    "https://www.houstonpublicmedia.org/articles/news/sports/world-cup/2026/04/15/549144/world-cup-houston-congo-base-camp/",
+    "https://cw39.com/sports/world-cup-2026/houston-dr-congo-world-cup/",
+    "https://ghanasoccernet.com/dr-congo-star-aaron-wan-bissaka-vows-2026-world-cup-impact",
+    "https://www.sportstravelmagazine.com/congo-dr-announces-houston-texas-world-cup-base-camp-selection/",
+    "https://www.espn.com/soccer/story/_/id/47327771/nigeria-world-cup-qualifying-complaint-fifa-dr-congo",
+    "https://businessday.ng/sports/article/2026-world-cup-nff-appeals-fifa-verdict-on-dr-congo-eligibility/",
+    "https://thenff.com/fifa-world-cup-playoffs-nff-appeals-fifas-decision-on-petition-against-dr-congo/"
+  ],
+  "confidence": "medium",
+  "dataFreshness": "2026-05-14"
+}

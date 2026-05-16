@@ -1,0 +1,210 @@
+{
+  "teamCode": "ENG",
+  "teamName": "England",
+  "scoutedAt": "2026-05-16T00:00:00Z",
+  "injuryUpdates": [
+    {
+      "playerName": "Ben White",
+      "teamCode": "ENG",
+      "country": "England",
+      "club": "Arsenal",
+      "position": "Defender",
+      "injuryType": "Medial collateral ligament (MCL) knee injury, no surgery required",
+      "injuryDate": "2026-05-11",
+      "expectedReturn": "Targeting start of Arsenal pre-season; unlikely fit for the tournament",
+      "availabilityStatus": "major_doubt",
+      "lastMatchPlayed": {
+        "date": "2026-05-11",
+        "opponent": "West Ham (Premier League)",
+        "notes": "Forced off in first half after challenge by Crysencio Summerville"
+      },
+      "source": "Sky Sports, ESPN, Fox Sports - May 13, 2026",
+      "notes": "Significant MCL damage rules him out for the rest of Arsenal's season including the Champions League final. Recovery timeline of at least four to eight weeks puts him out of contention for selection on May 22. Tuchel reportedly unlikely to risk him.",
+      "action": "add"
+    },
+    {
+      "playerName": "Tino Livramento",
+      "teamCode": "ENG",
+      "country": "England",
+      "club": "Newcastle United",
+      "position": "Defender",
+      "injuryType": "Thigh complaint (fourth injury of the season)",
+      "injuryDate": "2026-04-19",
+      "expectedReturn": "Will not feature again for Newcastle this season; expected available for tournament selection",
+      "availabilityStatus": "doubt",
+      "lastMatchPlayed": {
+        "date": "2026-04-19",
+        "opponent": "Bournemouth (Premier League)",
+        "notes": "Picked up thigh issue in 2-1 home defeat"
+      },
+      "source": "ESPN, GB News, Washington Post, theScore - Apr 24-29, 2026",
+      "notes": "Versatile defender able to cover both flanks. Not considered serious but Newcastle will not risk him. Race against time to prove fitness before May 22 squad announcement; selection in jeopardy given recurring fitness concerns.",
+      "action": "add"
+    },
+    {
+      "playerName": "Jude Bellingham",
+      "teamCode": "ENG",
+      "country": "England",
+      "club": "Real Madrid",
+      "position": "Midfielder",
+      "injuryType": "Recovered from left hamstring (semitendinosus) injury",
+      "injuryDate": null,
+      "expectedReturn": "N/A - back to full match action",
+      "availabilityStatus": "fit",
+      "lastMatchPlayed": {
+        "date": "2026-05-14",
+        "opponent": "Real Oviedo (La Liga)",
+        "notes": "Scored - first goal since January 20, ending four-month drought"
+      },
+      "source": "Sports Illustrated, Fox Sports, ESPN - May 14-15, 2026",
+      "notes": "Recovery from February hamstring tear now complete. Made return cameo in early April and has built up to full minutes by mid-May, capped by goal against Real Oviedo. Expected to be a guaranteed starter in Tuchel's 26-man squad announced May 22.",
+      "action": "update"
+    },
+    {
+      "playerName": "Phil Foden",
+      "teamCode": "ENG",
+      "country": "England",
+      "club": "Manchester City",
+      "position": "Midfielder/Forward",
+      "injuryType": "Recovered from ankle/muscle strain (March friendly vs Uruguay)",
+      "injuryDate": null,
+      "expectedReturn": "N/A - fit and available",
+      "availabilityStatus": "fit",
+      "lastMatchPlayed": {
+        "date": "2026-04-04",
+        "opponent": "Liverpool (FA Cup quarter-final)",
+        "notes": "Returned to Man City action in April after recovering from England friendly knock"
+      },
+      "source": "Sky Sports, ESPN, Sports Mole, Fox Sports - Apr-May 2026",
+      "notes": "Injury proved less serious than first feared. Returned for Manchester City in April and is back in Tuchel's plans, recalled to recent England squad. Expected to feature in the May 22 26-man selection.",
+      "action": "update"
+    },
+    {
+      "playerName": "Reece James",
+      "teamCode": "ENG",
+      "country": "England",
+      "club": "Chelsea",
+      "position": "Defender",
+      "injuryType": "Recovering from hamstring injury (10th of career)",
+      "injuryDate": "2026-03-20",
+      "expectedReturn": "Targeted return before Chelsea's season ends May 24",
+      "availabilityStatus": "doubt",
+      "lastMatchPlayed": {
+        "date": "2026-03-15",
+        "opponent": "Chelsea (Premier League)",
+        "notes": "Last match before 10th career hamstring injury"
+      },
+      "source": "Fox Sports, Sports Mole, GiveMeSport - Apr-May 2026",
+      "notes": "Recovery reportedly on track and not in danger of missing the tournament per latest reports. Tuchel has confirmed James is his first-choice right-back when fit. Needs to prove fitness in remaining Chelsea fixtures before May 22 squad announcement.",
+      "action": "update"
+    },
+    {
+      "playerName": "Noni Madueke",
+      "teamCode": "ENG",
+      "country": "England",
+      "club": "Chelsea",
+      "position": "Forward",
+      "injuryType": "Knee injury - status unclear",
+      "injuryDate": "2026-03-22",
+      "expectedReturn": "Under assessment ahead of May 22 selection",
+      "availabilityStatus": "doubt",
+      "lastMatchPlayed": {
+        "date": "2026-03-18",
+        "opponent": "Chelsea (Premier League)",
+        "notes": "Last match before knee issue emerged"
+      },
+      "source": "Chelsea FC, Sky Sports - Mar 2026 (no fresh update found in last 30 days)",
+      "notes": "No material new reporting on his status since the original injury entry. Carrying forward existing assessment; competition for attacking spots intensifying with Welbeck recall and others.",
+      "action": "no_change"
+    }
+  ],
+  "recentFormUpdates": [],
+  "tacticalUpdates": [],
+  "squadChanges": [
+    {
+      "playerName": "Danny Welbeck",
+      "changeType": "new_call_up",
+      "details": "Brighton forward, 35, recalled to the provisional 55-man list after last appearing for England in 2018. Earned recall on the back of 13 Premier League goals this season.",
+      "source": "Yahoo Sports, Goal.com, Football365 - May 12, 2026",
+      "effectiveDate": "2026-05-11"
+    },
+    {
+      "playerName": "Trent Alexander-Arnold",
+      "changeType": "new_call_up",
+      "details": "Real Madrid defender recalled to the provisional list after being omitted from the March squad. Right-back options thinned by Ben White and Tino Livramento injuries reopened the door.",
+      "source": "Goal.com, Yahoo Sports - May 12, 2026",
+      "effectiveDate": "2026-05-11"
+    },
+    {
+      "playerName": "Luke Shaw",
+      "changeType": "new_call_up",
+      "details": "Manchester United left-back included in provisional 55 despite ongoing fitness concerns; Tuchel values his tactical understanding at left-back.",
+      "source": "Yahoo Sports, TNT Sports - May 12, 2026",
+      "effectiveDate": "2026-05-11"
+    },
+    {
+      "playerName": "Jarrad Branthwaite",
+      "changeType": "new_call_up",
+      "details": "Everton centre-back included in provisional 55 to add defensive depth; needs to prove fitness after a disrupted club season.",
+      "source": "Yahoo Sports - May 12, 2026",
+      "effectiveDate": "2026-05-11"
+    },
+    {
+      "playerName": "Alex Scott",
+      "changeType": "new_call_up",
+      "details": "Bournemouth midfielder named in the provisional 55 ahead of the May 22 final squad announcement.",
+      "source": "Goal.com - May 12, 2026",
+      "effectiveDate": "2026-05-11"
+    }
+  ],
+  "bettingOddsUpdate": {
+    "tournamentWinner": "+600",
+    "groupStageExit": null,
+    "toQualifyFromGroup": "1/4",
+    "source": "Aggregated from Oddschecker, FanDuel, Fox Sports, Lineups, RotoWire - May 2026",
+    "notes": "England consistently priced third-favourite at +550 to +650 behind Spain (around +450) and France (around +500). To win Group L priced around 1/4 (-400) by major UK books; no consensus group-stage exit price found from a reputable aggregator."
+  },
+  "coachUpdate": {
+    "changed": false,
+    "currentCoach": "Thomas Tuchel",
+    "newCoach": null,
+    "source": null,
+    "notes": null
+  },
+  "summary": "Major defensive blow as Arsenal's Ben White suffered a serious MCL knee injury on May 11 that almost certainly rules him out of the tournament, and Newcastle's Tino Livramento has also picked up a season-ending thigh problem. Counter-balanced by good news: Jude Bellingham has fully recovered from his hamstring tear and scored for Real Madrid on May 14, while Phil Foden is back in Tuchel's plans. Tuchel submitted his provisional 55-man squad on May 11 with eye-catching recalls for Danny Welbeck, Trent Alexander-Arnold, Luke Shaw, Jarrad Branthwaite and Alex Scott ahead of the final 26-man selection on May 22.",
+  "sourceUrls": [
+    "https://www.skysports.com/football/news/11095/13543152/ben-white-injury-arsenal-and-england-defender-to-miss-rest-of-gunners-season-with-knee-issue",
+    "https://www.espn.com/soccer/story/_/id/48750405/arsenal-ben-white-rest-season-knee-injury-set-miss-world-cup",
+    "https://www.foxsports.com/stories/soccer/arsenal-defender-ben-white-ruled-out-of-the-world-cup-with-medial-ligament-damage",
+    "https://www.goal.com/en/lists/huge-injury-concern-arsenal-england-ben-white-limps-out-of-west-ham-clash-in-first-half-world-cup-just-month-away/blt691003fa50393af2",
+    "https://www.espn.com/soccer/story/_/id/48581453/england-2026-world-cup-injuries-tino-livramento-newcastle-united",
+    "https://www.washingtonpost.com/sports/soccer/2026/04/24/livramento-injury-england-world-cup/bf39044a-3fbd-11f1-bb46-ed564688d953_story.html",
+    "https://www.gbnews.com/sport/football/tino-livramento-newcastle-injury-england-world-cup",
+    "https://www.thescore.com/epl/news/3529350/amp",
+    "https://www.espn.com/soccer/story/_/id/46868806/england-squad-jude-bellingham-phil-foden-recalled-thomas-tuchel",
+    "https://www.skysports.com/football/news/12098/13465615/england-squad-phil-foden-and-jude-bellingham-return-to-thomas-tuchels-squad-as-danny-welbeck-misses-out",
+    "https://www.si.com/soccer/real-madrid-player-ratings-vs-real-oviedo-bellingham-ends-four-month-drought-in-style-5-14-26",
+    "https://sports.yahoo.com/articles/video-jude-bellingham-gives-real-212000630.html",
+    "https://www.foxsports.com/stories/soccer/reece-james-return-date-for-chelsea-set-as-england-handed-world-cup-lift",
+    "https://www.sportsmole.co.uk/football/chelsea/injury-news/news/in-or-out-jamess-world-cup-status-revealed_595306.html",
+    "https://www.givemesport.com/reece-james-injury-update-chelsea-england-world-cup/",
+    "https://sports.yahoo.com/articles/tuchel-names-55-man-provisional-162431525.html",
+    "https://azat.tv/en/thomas-tuchel-england-world-cup-provisional-squad/",
+    "https://www.football365.com/news/england-world-cup-2026-squad-named-questions-answers",
+    "https://www.goal.com/en-us/lists/trent-alexander-arnold-real-madrid-world-cup-danny-welbeck-alex-scott-england/blt3c723b5cf93301e9",
+    "https://www.themag.co.uk/2026/05/provisional-england-squad-for-world-cup-has-now-been-submitted-by-thomas-tuchel/",
+    "https://www.englandfootball.com/articles/2026/May/08/england-mens-world-cup-squad-announcement-date-revealed-20260805",
+    "https://www.tntsports.co.uk/football/world-cup/2026/england-preview-squad-announcement-thomas-tuchel-trent-alexander-arnold-cole-palmer-phil-foden-goalkeepers_sto23298831/story.shtml",
+    "https://sports.yahoo.com/articles/phil-foden-substituted-injury-horror-070000594.html",
+    "https://www.sportsmole.co.uk/football/man-city/injury-news/news/ready-for-liverpool-man-city-receive-positive-foden-injury-update-after-hard-challenge_594698.html",
+    "https://www.oddschecker.com/football/world-cup",
+    "https://www.foxsports.com/stories/soccer/world-cup-2026-champion-odds",
+    "https://www.thelines.com/uk/odds/world-cup/england/",
+    "https://www.rotowire.com/soccer/article/2026-world-cup-winner-odds-favorites-to-win-fifa-world-cup-109815",
+    "https://www.lineups.com/betting/england-2026-world-cup-team-preview-betting-odds-predictions-best-bets/",
+    "https://news.bet365.com/en-gb/article/england-squad-announcement-all-you-need-to-know-as-thomas-tuchel-finalises-world-cup-plans/2026051312004813850",
+    "https://www.skysports.com/football/news/11095/13543070/world-cup-2026-squad-lists-england-scotland-brazil-usa-spain-france-germany-netherlands-argentina-portugal-and-more"
+  ],
+  "confidence": "high",
+  "dataFreshness": "2026-05-15"
+}

@@ -1,0 +1,138 @@
+{
+  "teamCode": "CZE",
+  "teamName": "Czechia",
+  "scoutedAt": "2026-05-16T00:00:00Z",
+  "injuryUpdates": [
+    {
+      "playerName": "Patrik Schick",
+      "teamCode": "CZE",
+      "country": "Czechia",
+      "club": "Bayer Leverkusen",
+      "position": "Forward",
+      "injuryType": "No current injury (recovered from earlier thigh/calf issues)",
+      "injuryDate": null,
+      "expectedReturn": "N/A - currently fit",
+      "availabilityStatus": "fit",
+      "lastMatchPlayed": {
+        "date": "2026-05-10",
+        "opponent": "Bayer Leverkusen (Bundesliga)",
+        "notes": "Playing regularly; 27 appearances, 16 goals on the 2025/26 season"
+      },
+      "source": "Bundesliga.com interview, May 2026; Transfermarkt - May 2026",
+      "notes": "Schick told Bundesliga.com in mid-May he feels very good physically with no injuries; recovered from October thigh problem and earlier calf concerns. Czechia's most prolific attacker heading into the tournament.",
+      "action": "update"
+    },
+    {
+      "playerName": "Adam Hlozek",
+      "teamCode": "CZE",
+      "country": "Czechia",
+      "club": "Hoffenheim",
+      "position": "Forward",
+      "injuryType": "Returning from long lower-leg injury",
+      "injuryDate": "2026-01-10",
+      "expectedReturn": "Returned to club action early May 2026",
+      "availabilityStatus": "minor_concern",
+      "lastMatchPlayed": {
+        "date": "2026-05-02",
+        "opponent": "Stuttgart (Bundesliga)",
+        "notes": "Returned from lengthy lower-leg absence; first competitive minutes since December 20, 2025"
+      },
+      "source": "RotoWire, Hoffenheim manager Christian Ilzer pre-Stuttgart presser - May 1, 2026",
+      "notes": "Long lower-leg injury sustained in January 2026 training cost Hlozek almost the entire second half of the Bundesliga season. Cleared without limitations in late April and returned vs Stuttgart on May 2. Match sharpness is the question, not fitness, heading into the tournament.",
+      "action": "update"
+    },
+    {
+      "playerName": "Ladislav Krejci",
+      "teamCode": "CZE",
+      "country": "Czechia",
+      "club": "Wolverhampton Wanderers (on loan from Girona)",
+      "position": "Defender",
+      "injuryType": "Neck injury (recovered)",
+      "injuryDate": "2026-04-20",
+      "expectedReturn": "Returned to bench duty on 2026-05-09 vs Brighton",
+      "availabilityStatus": "fit",
+      "lastMatchPlayed": {
+        "date": "2026-05-09",
+        "opponent": "Brighton (Premier League)",
+        "notes": "Returned from neck injury as a substitute"
+      },
+      "source": "Express & Star; RotoWire injury updates - May 2026",
+      "notes": "Czechia captain missed Wolves' Tottenham fixture in late April with a neck issue that limited him to individual work and straight-line running. Manager Rob Edwards confirmed his return to training in early May and he came off the bench at Brighton on May 9. Expected fully fit for the tournament.",
+      "action": "add"
+    }
+  ],
+  "recentFormUpdates": [],
+  "tacticalUpdates": [
+    {
+      "field": "alternateFormations",
+      "oldValue": "4-2-3-1, 4-4-2, 3-4-3",
+      "newValue": "4-2-3-1, 3-4-2-1, 4-4-2",
+      "source": "RotoWire Group A tactical preview - May 2026",
+      "confidence": "medium"
+    }
+  ],
+  "squadChanges": [
+    {
+      "playerName": "Tomas Chory",
+      "changeType": "suspension",
+      "details": "Slavia Prague striker received a red card in the Prague derby vs Sparta and was removed from Slavia's first-team squad. Still included in Koubek's 54-man preliminary squad despite nationwide debate over his selection.",
+      "source": "Prague Daily News - May 12, 2026",
+      "effectiveDate": "2026-05-12"
+    },
+    {
+      "playerName": "David Doudera",
+      "changeType": "suspension",
+      "details": "Slavia Prague defender also red-carded in the Sparta derby and dropped from the Slavia first team. Like Chory, retained in the 54-man preliminary squad, an unusually lenient call from Koubek given the disciplinary situation.",
+      "source": "Prague Daily News - May 12, 2026",
+      "effectiveDate": "2026-05-12"
+    },
+    {
+      "playerName": "Pavel Sulc",
+      "changeType": "new_call_up",
+      "details": "Olympique Lyon attacker Pavel Sulc named in the 54-man preliminary squad announced May 12, presented as a high-profile inclusion alongside Schick and Soucek.",
+      "source": "Prague Daily News - May 12, 2026",
+      "effectiveDate": "2026-05-12"
+    },
+    {
+      "playerName": "Adam Karabec",
+      "changeType": "new_call_up",
+      "details": "Lyon midfielder Karabec included in the preliminary 54-man squad published May 12 ahead of the final 26-man cut.",
+      "source": "Prague Daily News - May 12, 2026",
+      "effectiveDate": "2026-05-12"
+    }
+  ],
+  "bettingOddsUpdate": {
+    "tournamentWinner": "+15000",
+    "groupStageExit": null,
+    "toQualifyFromGroup": "+240 to win Group A (implied second-favorite behind Mexico)",
+    "source": "FOX Sports / DraftKings group winner odds, May 4 2026; outright via Squawka / leading US sportsbooks, May 2026",
+    "notes": "Czechia priced as second favorites in Group A behind Mexico (-120). DraftKings +240, BetMGM +250, FanDuel +400 for group winner. Outright tournament price around +15000 (~1% implied) reflects outsider tier; aggregator did not surface explicit group-stage exit price."
+  },
+  "coachUpdate": {
+    "changed": false,
+    "currentCoach": "Miroslav Koubek",
+    "newCoach": null,
+    "source": null,
+    "notes": "Koubek confirmed in charge through the tournament; oversaw the 54-man preliminary squad release on May 12 and the New Jersey training camp plan."
+  },
+  "summary": "The main development in the last month is squad-related: Koubek published a 54-man preliminary list on May 12 with Lyon pair Sulc and Karabec headlining the new faces, while controversially retaining derby red-card pair Chory and Doudera. On the injury side, Schick has fully recovered and is sharp at Leverkusen, Hlozek returned to Hoffenheim action on May 2 after his long lower-leg layoff, and captain Krejci shook off a neck issue and was back on the Wolves bench by May 9 - leaving the spine of the team available barring late setbacks before the May 31 Kosovo friendly and June 4 Guatemala warm-up.",
+  "sourceUrls": [
+    "https://www.praguedaily.news/2026/05/12/czech-national-team-announces-preliminary-squad-for-the-2026-world-cup/",
+    "https://khelnow.com/football/world-football-czechia-fifa-world-cup-preliminary-squad-202605",
+    "https://www.bundesliga.com/en/bundesliga/news/patrik-schick-bayer-leverkusen-interview-czechia-world-cup-37393",
+    "https://www.rotowire.com/soccer/headlines/adam-hlozek-injury-available-to-play-saturday-513550",
+    "https://www.rotowire.com/soccer/headlines/ladislav-krejci-injury-dealing-with-neck-issues-511323",
+    "https://www.rotowire.com/soccer/headlines/ladislav-krejci-injury-option-for-saturday-514765",
+    "https://www.expressandstar.com/sport/football/wolverhampton-wanderers/wolves-receive-injury-boost-ahead-of-brighton-clash-8514081",
+    "https://www.rotowire.com/soccer/article/2026-world-cup-group-previews-lineups-odds-predictions-and-tactics-for-all-12-groups-111248",
+    "https://www.rotowire.com/soccer/article/2026-world-cup-group-a-preview-mexico-south-africa-south-korea-czechia-tactics-lineups-set-pieces-odds-111369",
+    "https://www.foxsports.com/stories/soccer/2026-world-cup-group-stage-odds",
+    "https://www.squawka.com/us/outright-markets/czech-republic-world-cup-2026-odds/",
+    "https://www.espn.com/soccer/team/fixtures/_/id/450/czechia",
+    "https://www.uefa.com/european-qualifiers/teams/58837--czechia/matches/",
+    "https://www.olympics.com/en/news/fifa-world-cup-2026-czechia-players-squad-list-key-stats-schedule",
+    "https://www.fourfourtwo.com/team/czech-republic-world-cup-2026-squad"
+  ],
+  "confidence": "medium",
+  "dataFreshness": "2026-05-14"
+}

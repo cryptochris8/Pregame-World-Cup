@@ -4,77 +4,70 @@
   "team2Code": "ECU",
   "team1Name": "Ivory Coast",
   "team2Name": "Ecuador",
-  "generatedAt": "2026-04-16T00:00:00Z",
-  "dataVersion": 2,
-
-  "headline": "The Group Decider: AFCON Champions in Devastating Form Collide With South America's Defensive Fortress",
-  "subheadline": "Ivory Coast's 4-0 demolition of South Korea and Amad Diallo's emergence raise the stakes in what could be Group E's decisive match",
-
-  "openingNarrative": "There are matches that decide groups, and then there is Ivory Coast versus Ecuador. Both nations have spent years building toward this moment, and both arrive at the 2026 tournament with squads that blend European league experience with fierce continental identity.\n\nIvory Coast's trajectory since the 2024 AFCON triumph has been astonishing. Emerse Fae — the emergency appointment who turned a mid-tournament coaching crisis into a continental championship — has instilled a fearlessness in this squad that their March results made unmistakable. A 4-0 demolition of South Korea was not merely a win; it was a declaration. Amad Diallo's emergence as a genuine star — his Manchester United form translating seamlessly into international football — has given Fae a new weapon alongside the established quality of Adingra, Kessie, and Fofana. The 1-0 follow-up against Scotland showed they can also win ugly.\n\nThis is Ivory Coast's first tournament since 2014. In three previous appearances — 2006, 2010, and 2014 — the Elephants never escaped the group stage. But this is a different Ivory Coast. The AFCON champions, battle-tested, fearless under Fae's guidance, and reinforced by Amad Diallo's star turn, believe this is the year the curse breaks.\n\nEcuador's rise has been quieter but no less impressive. Sebastian Beccacece inherited a squad stocked with elite talent and added defensive organization that produced just 5 goals conceded in 18 CONMEBOL qualifying matches. Moises Caicedo is the engine. Piero Hincapie is the foundation. Enner Valencia, with 6 qualifying goals, is the guarantee of goals.\n\nThe winner takes a massive step toward the knockout rounds. The loser may be heading home.",
-
+  "generatedAt": "2026-06-01T10:00:00Z",
+  "dataVersion": 1,
+  "headline": "Continental Champions Meet South American Steel in Group E Decider",
+  "subheadline": "AFCON winners Ivory Coast face Ecuador's golden generation in a clash that could determine knockout qualification.",
+  "openingNarrative": "In the unforgiving arithmetic of tournament football, some matches arrive with destiny already scripted into their margins. When Ivory Coast and Ecuador meet in what promises to be a Group E decider, two nations carrying the weight of continental expectations will collide with their tournament dreams hanging in the balance.\n\nFor Les Elephants, this represents the culmination of a remarkable journey that began in the ashes of another failed group stage campaign and reached its zenith on the euphoric night of February 11, 2024, when they lifted the Africa Cup of Nations trophy on home soil in Abidjan. That triumph, orchestrated by Emerse Faé after a mid-tournament coaching change, transformed not just a squad but an entire footballing identity. The ghosts of 2006, 2010, and 2014 — three tournaments where golden generations fell short — have been exorcised by a new wave of talent that knows how to win when it matters most.\n\nEcuador arrive as South America's most reliable tournament qualifiers of the modern era, having reached four of the last six tournaments with a consistency that belies their modest resources. La Tri's current generation, anchored by Chelsea's Moisés Caicedo and a defensive spine that conceded just five goals in qualifying, represents perhaps their most talented collection of players ever assembled. Yet for all their promise, they remain a nation still searching for that breakthrough moment that elevates them from comfortable qualifiers to genuine knockout contenders. This match, against opponents who have already tasted continental glory, offers that exact opportunity.",
   "tacticalBreakdown": {
     "title": "The Chess Match",
-    "narrative": "This is a collision of two 4-3-3 systems with fundamentally different philosophies — and Ivory Coast's March form has raised the attacking ceiling dramatically.\n\nFae's Ivory Coast are built on energy, athleticism, and devastating transitions. The 4-0 against South Korea showed the system at its peak: Amad Diallo terrorizing from the right, Adingra electrifying from the left, Fofana's powerful driving runs from midfield creating overloads. The dual-wing threat of Amad Diallo and Adingra is arguably the most dangerous wide pairing at the tournament. Fae's fearless approach — pressing aggressively, attacking with width, treating every match as an opportunity to dominate — has produced results that few predicted.\n\nEcuador's 4-3-3 is the mirror image: patient, disciplined, built on a defensive foundation. Caicedo sits at the base of the midfield triangle, intercepting everything. The center-back pairing of Hincapie and Pacho is comfortable building from the back. Ecuador have conceded only 5 goals in 18 CONMEBOL qualifying matches — a record that demands respect.\n\nThe key battle is central midfield: Caicedo's composure and reading against Fofana's raw power. If Fofana can drive past Caicedo, Ivory Coast's transitions — with Amad Diallo and Adingra sprinting into space — will be devastating. If Caicedo snuffs out those runs, Ecuador's patience will suffocate Ivory Coast's creative outlets.",
+    "narrative": "The tactical battleground will be defined by contrasting philosophies of control. Sebastian Beccacece's Ecuador will deploy their trademark 4-3-3, built around Caicedo's ability to dictate tempo from deep positions while their young center-back pairing of Piero Hincapié and Willian Pacho provides the platform for patient build-up play. Their high pressing intensity will aim to disrupt Ivory Coast's rhythm in dangerous areas, forcing turnovers that can be quickly converted into counter-attacking opportunities through their athletic wide players.\n\nEmerse Faé's 4-3-3 system offers a more direct approach, with Franck Kessié operating as the midfield engine alongside Seko Fofana's driving runs from deeper positions. The key tactical battle will unfold in the central third, where Caicedo's positional discipline and interception ability must contain Fofana's powerful surges forward while Ecuador's defensive structure faces the pace and unpredictability of Simon Adingra cutting in from wide areas. Whichever team can establish control of this central corridor will likely determine the match's outcome.",
     "team1Formation": "4-3-3",
     "team2Formation": "4-3-3",
-    "keyMatchup": "Moises Caicedo vs Seko Fofana — the midfield duel that will determine Group E's fate, with Amad Diallo and Adingra waiting to exploit any breakthrough"
+    "keyMatchup": "Caicedo's defensive screening versus Fofana's box-to-box power"
   },
-
   "dataInsights": {
     "title": "By The Numbers",
-    "eloAnalysis": "Ecuador (ELO: 1660, rank 23) vs Ivory Coast (ELO: 1620, rank 42) — a modest 40-point gap that gives Ecuador a marginal advantage on paper. But Ivory Coast's March form — 4-0 against South Korea, 1-0 against Scotland — suggests the true balance may have shifted.",
-    "formAnalysis": "Ivory Coast are surging: beat South Korea 4-0 and Scotland 1-0 in March, with Amad Diallo emerging as a star. AFCON champions. Qualified from CAF with 6 wins, 3 draws, 1 loss, Haller's 5 goals leading. Ecuador qualified through CONMEBOL with just 5 goals conceded in 18 matches. Valencia's 6 qualifying goals provide the attacking edge.",
-    "squadValueComparison": "Ecuador ($433M) nearly doubles Ivory Coast's ($250M), largely due to Caicedo's extraordinary valuation. But Ivory Coast's squad features Amad Diallo, Adingra, Kessie, and Fofana — players who perform well above their market values, as the 4-0 demolition of South Korea proved.",
-    "injuryImpact": "Both teams have strong first XIs but limited depth. Ivory Coast's fearless approach under Fae demands physical fitness across the squad. Ecuador's reliance on Caicedo is their primary vulnerability.",
-    "bettingPerspective": "Ivory Coast's March form has dramatically shifted the betting landscape. What was a match favoring Ecuador's defensive discipline now feels more balanced, with the Elephants' attacking firepower providing genuine upset potential at attractive odds.",
-    "historicalPattern": "Only one previous meeting — a 2-2 friendly in 2009. Ivory Coast have never advanced past the tournament group stage in three attempts. Ecuador reached the Round of 16 in 2006 but have not progressed since. Both teams are desperate."
+    "eloAnalysis": "Ecuador enter as statistical favorites with an ELO rating of 1660 (23rd globally) compared to Ivory Coast's 1620 (42nd), reflecting their consistent South American qualifying campaign.",
+    "formAnalysis": "Recent form tells contrasting stories — Ecuador managed just three wins in their last 12 matches but showed resilience with draws against Brazil and a victory over Argentina at altitude, while Ivory Coast rebounded from their AFCON 2025 quarterfinal exit with impressive 4-0 and 1-0 victories over South Korea and Scotland respectively.",
+    "squadValueComparison": "The €433 million valuation of Ecuador's squad, led by Caicedo's €150 million price tag, dwarfs Ivory Coast's €250 million roster, highlighting the premium placed on La Tri's European-based core.",
+    "injuryImpact": "Key absences could reshape both sides — Ecuador face fitness concerns over Willian Pacho's thigh issue and Pervis Estupiñán's recurring muscle problems, while Ivory Coast must cope without the dropped Sébastien Haller and monitor Franck Kessié's recent muscle scare.",
+    "bettingPerspective": "While specific tournament winner odds aren't available, the market reflects Ecuador's higher ceiling but Ivory Coast's proven tournament mentality from their AFCON triumph.",
+    "historicalPattern": "The pattern of only UEFA and CONMEBOL nations winning previous tournaments adds pressure on both sides, as neither confederation has lifted the trophy, making this a clash between two nations seeking to break historical barriers."
   },
-
   "playerSpotlights": [
     {
-      "name": "Amad Diallo",
-      "teamCode": "CIV",
-      "narrative": "The player who has transformed Ivory Coast's tournament prospects. Amad Diallo's Manchester United form — the pace, the dribbling, the end product — has translated seamlessly into international football. The 4-0 demolition of South Korea featured his fingerprints on multiple goals, and his willingness to take on defenders with fearless directness creates the kind of chaos that organized defenses struggle to contain. Against Ecuador's disciplined backline, Amad Diallo's one-on-one ability could be the key that unlocks a defense conceding only 5 goals in 18 qualifying matches.",
-      "statline": "Manchester United star, Ivory Coast's breakout talent, devastating in March friendlies"
+      "name": "Moisés Caicedo",
+      "teamCode": "ECU",
+      "narrative": "The €150 million Chelsea midfielder represents everything Ecuador aspire to be — technically gifted, physically imposing, and mentally sharp enough to thrive at the highest level. His journey from Independiente del Valle to Stamford Bridge embodies La Tri's evolution from regional hopefuls to genuine tournament threats. Against Ivory Coast's aggressive midfield, Caicedo's ability to shield his defense while launching attacks with his precise passing range will be crucial. His performance in Ecuador's shock 1-0 victory over Argentina in qualifying showed he can rise to the biggest occasions.",
+      "statline": "Most expensive British transfer in history at €150+ million"
     },
     {
-      "name": "Moises Caicedo",
-      "teamCode": "ECU",
-      "narrative": "The most expensive signing in British football history is Ecuador's irreplaceable player. Caicedo does not just play in midfield — he owns it. His ability to read the game, intercept passes, and launch counter-attacks makes him the kind of player who controls tournament matches. Against Ivory Coast's powerful midfield — particularly Fofana's driving runs — Caicedo faces a physical test that even the Premier League rarely provides.",
-      "statline": "Chelsea's record signing at over 115 million pounds, Ecuador's midfield anchor"
+      "name": "Franck Kessié",
+      "teamCode": "CIV",
+      "narrative": "The Al Ahli midfielder wears the captain's armband not just for his experience but for his embodiment of Ivory Coast's never-say-die spirit. Despite recent fitness concerns that saw him withdrawn against Al-Fateh with a muscle issue, Kessié's inclusion as captain signals his importance to Faé's system. His box-to-box dynamism was instrumental in the AFCON triumph, and his ability to arrive late in the penalty area while also screening defensively makes him the perfect foil for Ecuador's possession-based approach. At 30, this may be his last chance to lead his nation to tournament glory.",
+      "statline": "Captain who led Ivory Coast to AFCON 2024 glory as tournament hosts"
     },
     {
       "name": "Simon Adingra",
       "teamCode": "CIV",
-      "narrative": "Brighton's winger and 2024 AFCON Best Young Player now operates alongside Amad Diallo, creating a twin-wing threat that is arguably the most dangerous at the tournament. With Amad Diallo drawing defensive attention on the right, Adingra finds more space and fewer shadows on the left. His pace against Ecuador's fullbacks could create the overloads that Fae's system is designed to exploit.",
-      "statline": "2024 AFCON Best Young Player, explosive pace, benefits from Amad Diallo's emergence"
+      "narrative": "Brighton's electric winger represents the new generation of Ivorian talent that has emerged from the shadow of the Drogba era. Named Best Young Player at AFCON 2024, Adingra's pace and direct running style perfectly complement Faé's attacking philosophy. His ability to drift inside from the right flank creates overloads in dangerous areas, and Ecuador's high defensive line could provide the space he needs to exploit. Against organized defenses like Ecuador's, individual brilliance often determines outcomes, and Adingra possesses that game-changing quality.",
+      "statline": "AFCON 2024 Best Young Player award winner"
     },
     {
-      "name": "Enner Valencia",
+      "name": "Piero Hincapié",
       "teamCode": "ECU",
-      "narrative": "Ecuador's tournament king. Valencia has scored in multiple tournaments and his 6 qualifying goals prove his predatory instincts are undimmed. In a tight match against Ivory Coast's defense, his experience and clinical finishing could be decisive. The man for the big moment.",
-      "statline": "6 goals in qualifying, Ecuador's all-time tournament leading scorer"
+      "narrative": "Currently on loan at Arsenal from Bayer Leverkusen, the 24-year-old left-footed center-back represents the future of Ecuadorian football. His composure on the ball and ability to step into midfield with progressive passes make him integral to Ecuador's build-up play. Having been part of Leverkusen's historic unbeaten Bundesliga campaign, he brings tournament-winning experience despite his young age. Against Ivory Coast's pace-driven attack, his reading of the game and defensive positioning will be tested to the limit, but he has the tools to neutralize their threat.",
+      "statline": "Part of Bayer Leverkusen's historic unbeaten Bundesliga title-winning season"
     }
   ],
-
   "theVerdict": {
     "title": "The Verdict",
-    "prediction": "Ivory Coast 2-1 Ecuador",
-    "confidence": 48,
-    "narrative": "The original prediction of a draw has shifted toward Ivory Coast, reflecting their extraordinary March form. The 4-0 demolition of South Korea was not a fluke against weak opposition — it was a destruction of a team ranked above Ecuador. Fae's fearless approach, Amad Diallo's emergence, and the AFCON champions' growing belief that they can beat anyone creates a different dynamic than the cautious, mutually respectful encounter the original narrative anticipated.\n\nEcuador's defensive excellence — 5 goals conceded in 18 CONMEBOL matches — remains their trump card. But Ivory Coast's dual-wing threat of Amad Diallo and Adingra creates attacking angles that even Ecuador's disciplined structure may struggle to contain simultaneously.\n\nExpect a tense first half where Ecuador's defensive organization limits Ivory Coast to half-chances. But in the second half, Fae's fearless substitutions and Ivory Coast's superior athletic capacity will tell. A Fofana driving run creates the first goal, Amad Diallo's directness produces the second, and Ecuador's late Valencia strike sets up a nerve-wracking finale that the AFCON champions survive.\n\nThis is the match where Ivory Coast announce that their first group-stage advance since... well, ever, is no longer a dream. It is a plan.",
+    "prediction": "Ivory Coast 1-1 Ecuador",
+    "confidence": 65,
+    "narrative": "This encounter has all the hallmarks of a match where neither side can afford to lose, creating the perfect conditions for a cagey, tactical battle that rewards patience over ambition. Ecuador's superior ELO rating and squad value suggest they should control proceedings, but tournament football has a way of humbling favorites, particularly when facing opponents who arrive with the confidence of continental champions.\n\nThe decisive factor may be mentality rather than talent. Ivory Coast have already proven they can win when it matters most, having overcome adversity throughout their AFCON triumph with comeback victories in the knockout rounds. Ecuador, despite their individual quality, still carry the psychological burden of never truly breaking through at tournament level. In a match this tight, that difference in championship experience could be the margin between advancement and elimination. A draw keeps both dreams alive, but only just.",
     "alternativeScenarios": [
       {
-        "scenario": "Ecuador 2-0 Ivory Coast",
-        "probability": 15,
-        "reasoning": "Ecuador's defensive masterclass stifles Ivory Coast completely. Caicedo controls the midfield, and Ivory Coast's March form proves to be friendly-inflated rather than tournament-ready."
+        "scenario": "Ecuador 2-1 Ivory Coast",
+        "probability": 25,
+        "reasoning": "If Ecuador's superior technical quality tells over 90 minutes, Caicedo's influence could prove decisive. Their patient build-up play might eventually break down Ivory Coast's aggressive pressing, with late goals from set pieces or counter-attacks."
       },
       {
-        "scenario": "Ivory Coast 1-1 Ecuador",
-        "probability": 22,
-        "reasoning": "The cautious encounter that the ELO ratings predict. Both teams respect each other, both midfields cancel out, and a draw leaves both needing results against Germany."
+        "scenario": "Ivory Coast 2-0 Ecuador",
+        "probability": 10,
+        "reasoning": "Should Ivory Coast's AFCON-winning mentality inspire an early breakthrough, their pace on the counter-attack could overwhelm Ecuador's high line. Adingra and the attacking players have the tools to exploit spaces if La Tri are forced to chase the game."
       }
     ]
   },
-
-  "closingLine": "When Africa's AFCON champions — reinforced by Amad Diallo's star turn and a 4-0 demolition of South Korea — meet South America's defensive fortress, the result is football at its most compelling. Ivory Coast arrive fearless under Fae's guidance. Ecuador arrive organized under Beccacece's discipline. Something will break."
+  "closingLine": "In a tournament where dreams and decades of preparation converge into 90 minutes of destiny, this Group E showdown will reveal which nation possesses not just the talent, but the character to seize their moment."
 }

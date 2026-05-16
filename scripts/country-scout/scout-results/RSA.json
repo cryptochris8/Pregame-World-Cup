@@ -1,0 +1,104 @@
+{
+  "teamCode": "RSA",
+  "teamName": "South Africa",
+  "scoutedAt": "2026-05-16T00:00:00Z",
+  "injuryUpdates": [
+    {
+      "playerName": "Tshepang Moremi",
+      "teamCode": "RSA",
+      "country": "South Africa",
+      "club": "Orlando Pirates",
+      "position": "Forward",
+      "injuryType": "Undisclosed injury sustained vs Kaizer Chiefs in PSL",
+      "injuryDate": "2026-04-15",
+      "expectedReturn": "Race against time before squad cutoff; club still has two fixtures left",
+      "availabilityStatus": "major_doubt",
+      "lastMatchPlayed": {
+        "date": "2026-04-15",
+        "opponent": "Kaizer Chiefs (PSL)",
+        "notes": "Picked up the injury that has kept him sidelined since mid-April"
+      },
+      "source": "Briefly.co.za, The South African, 2026-05-13",
+      "notes": "Regular Bafana winger now in a race against time to make the final 26-man squad for the tournament; club has not disclosed injury type or expected return, but Pirates still have two domestic fixtures left where he could potentially return.",
+      "action": "add"
+    },
+    {
+      "playerName": "Masindi Nemtajela",
+      "teamCode": "RSA",
+      "country": "South Africa",
+      "club": "Orlando Pirates",
+      "position": "Midfielder",
+      "injuryType": "Undisclosed injury sustained vs Magesi FC in PSL",
+      "injuryDate": "2026-05-01",
+      "expectedReturn": "Unknown; doubtful for the tournament",
+      "availabilityStatus": "major_doubt",
+      "lastMatchPlayed": {
+        "date": "2026-05-01",
+        "opponent": "Magesi FC (PSL, Pirates won 3-0)",
+        "notes": "Picked up an injury during Pirates' 3-0 league win"
+      },
+      "source": "Briefly.co.za, The South African, 2026-05-13",
+      "notes": "Twenty-two-year-old Orlando Pirates midfielder with limited senior caps; reports indicate he is the less likely of the two injured Pirates players to make the final squad. Injury type and recovery timeline have not been disclosed.",
+      "action": "add"
+    },
+    {
+      "playerName": "Ronwen Williams",
+      "teamCode": "RSA",
+      "country": "South Africa",
+      "club": "Mamelodi Sundowns",
+      "position": "Goalkeeper",
+      "injuryType": "No current injury (recovered from mid-season groin issue)",
+      "injuryDate": null,
+      "expectedReturn": "N/A - available",
+      "availabilityStatus": "fit",
+      "lastMatchPlayed": {
+        "date": "2026-05-10",
+        "opponent": "Mamelodi Sundowns (PSL late-season fixture)",
+        "notes": "Captain and undisputed number one; played through the close of the league season"
+      },
+      "source": "Daily Maverick, 2026-05-14; ESPN squad predictor, May 2026",
+      "notes": "Captain remains fit and starts ahead of the tournament. Form has wobbled (conceded seven goals in his final three league outings) but his squad place is uncontested. Earlier season groin issue is resolved.",
+      "action": "no_change"
+    }
+  ],
+  "recentFormUpdates": [],
+  "tacticalUpdates": [],
+  "squadChanges": [],
+  "bettingOddsUpdate": {
+    "tournamentWinner": "+100000",
+    "groupStageExit": null,
+    "toQualifyFromGroup": "approximately +700 (5.5% implied at Kalshi)",
+    "source": "RotoWire / DraftKings / Kalshi aggregators, updated 2026-05-06 to 2026-05-11",
+    "notes": "South Africa is the clear outsider in Group A. DraftKings has them at +1200 to win the group (FanDuel +850, BetMGM +1400), with around 5.5% implied probability of advancing per Kalshi prediction markets. Tournament outright is roughly 1000/1. No bookmaker line found specifically for a 'group stage exit' market."
+  },
+  "coachUpdate": {
+    "changed": false,
+    "currentCoach": "Hugo Broos",
+    "newCoach": null,
+    "source": null,
+    "notes": "Broos remains in charge and is finalising his 26-man squad ahead of the May 27 public announcement."
+  },
+  "summary": "Two Orlando Pirates players, winger Tshepang Moremi and midfielder Masindi Nemtajela, are in serious doubt for the tournament after picking up undisclosed injuries in April and early May respectively, with both racing to prove fitness before Broos names his final 26-man squad on May 27. No international matches have been played since 2026-04-16; the Nicaragua warm-up friendly is set for May 29 in Johannesburg followed by a possible Puerto Rico fixture in Mexico. Hugo Broos is unchanged as head coach, Williams' captaincy is secure, and Bafana are clear outsiders in Group A at roughly +1200 to top the group and around 5.5% to advance.",
+  "sourceUrls": [
+    "https://briefly.co.za/sports/football/241793-bafana-bafana-2-orlando-pirates-stars-doubtful-2026-world-cup-due-injury/",
+    "https://www.thesouthafrican.com/sport/soccer/soccer-world-cup/injury-blow-puts-orlando-pirates-stars-world-cup-dreams-in-doubt/",
+    "https://www.dailymaverick.co.za/article/2026-05-14-broos-faces-tough-call-on-bafanas-final-world-cup-goalkeeping-trio/",
+    "https://www.afrik-foot.com/en-za/bafana-bafana-world-cup-preliminary-squad",
+    "https://www.citizen.co.za/sport/soccer/bafana-world-cup-squad-announcement-looms/",
+    "https://www.citizen.co.za/sport/soccer/date-set-bafana-world-cup-squad-announcement/",
+    "https://www.thesouthafrican.com/sport/soccer/soccer-world-cup/deadline-day-for-hugo-broos-to-submit-bafana-world-cup-preliminary-squad/",
+    "https://www.thesouthafrican.com/sport/soccer/soccer-world-cup/hugo-broos-has-48-hours-to-name-bafana-bafana-fifa-world-cup-2026-squad-date/",
+    "https://www.flashscore.co.za/news/soccer-world-cup-fifa-sets-dates-for-bafana-bafana-to-name-preliminary-and-final-2026-world-cup-squads/Qs6gLtxp/",
+    "https://www.espn.com/espn/story/_/id/48739322/south-africa-squad-predictor-which-bafana-players-the-plane-fifa-world-cup",
+    "https://africa.espn.com/football/team/fixtures/_/id/467/rsa",
+    "https://www.kickoff.com/psl/sa-national-teams/bafana-bafana-pre-world-cup-friendly-matches",
+    "https://www.kickoff.com/news/worldnews/nicaragua-announces-location-of-bafana-bafana-2026-fifa-world-cup-warm-up",
+    "https://www.rotowire.com/soccer/article/2026-world-cup-group-a-preview-mexico-south-africa-south-korea-czechia-tactics-lineups-set-pieces-odds-111369",
+    "https://www.oddsshark.com/soccer/world-cup/group-a-odds-picks-2026",
+    "https://sccgmanagement.com/sccg-news/2026/05/11/world-cup-group-a-guide-predictions-odds/",
+    "https://www.soccerladuma.co.za/psl/bafana/5-injured-footballers-hoping-to-make-the-bafana-world-cup-squad",
+    "https://iol.co.za/sport/soccer/bafana/2026-05-12-five-players-hugo-broos-could-likely-to-include-in-bafana-bafanas-world-cup-squad/"
+  ],
+  "confidence": "medium",
+  "dataFreshness": "2026-05-14"
+}

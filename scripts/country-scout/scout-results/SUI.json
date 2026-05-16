@@ -1,0 +1,65 @@
+{
+  "teamCode": "SUI",
+  "teamName": "Switzerland",
+  "scoutedAt": "2026-05-16T00:00:00Z",
+  "injuryUpdates": [
+    {
+      "playerName": "Dan Ndoye",
+      "teamCode": "SUI",
+      "country": "Switzerland",
+      "club": "Nottingham Forest",
+      "position": "Forward",
+      "injuryType": "Minor calf/fitness issue (club-level)",
+      "injuryDate": "2026-04-20",
+      "expectedReturn": "Returned to availability in mid-May 2026; expected fully fit for the tournament",
+      "availabilityStatus": "minor_concern",
+      "lastMatchPlayed": {
+        "date": "2026-05-15",
+        "opponent": "Nottingham Forest (Premier League)",
+        "notes": "Returned to availability for Forest after missing four games with a minor issue"
+      },
+      "source": "Transfermarkt injury list, RotoWire, 3 Added Minutes - May 2026",
+      "notes": "Forest manager Vitor Pereira said the issue was 'not serious, it was just a small problem' and Ndoye returned to availability in mid-May after missing four club games. Predicted starting wide forward for Switzerland, so worth monitoring through the May 31 Jordan friendly.",
+      "action": "add"
+    }
+  ],
+  "recentFormUpdates": [],
+  "tacticalUpdates": [],
+  "squadChanges": [],
+  "bettingOddsUpdate": {
+    "tournamentWinner": "+6000",
+    "groupStageExit": null,
+    "toQualifyFromGroup": "+100 (to win Group B)",
+    "source": "FanDuel / OddsShark aggregator, updated 2026-05-14",
+    "notes": "Switzerland are the +100 favorites to top Group B ahead of Canada (+210), Bosnia and Herzegovina (+350) and Qatar (+2200). Tournament outright shortened slightly from 100/1 to roughly +6000 (~80/1) across major US sportsbooks. Dedicated group-stage-exit price not publicly listed by the aggregators consulted."
+  },
+  "coachUpdate": {
+    "changed": false,
+    "currentCoach": "Murat Yakin",
+    "newCoach": null,
+    "source": null,
+    "notes": null
+  },
+  "summary": "Quiet four-week window for Switzerland: no international fixtures since the late-March Germany and Norway friendlies, no coach change, and the final 26-man squad will not be revealed by Murat Yakin until May 20 (after this scout date). Only meaningful delta is a minor club-level fitness issue for predicted starting forward Dan Ndoye, who missed four Forest games but was passed fit again in mid-May. Bookmakers continue to price the Nati as clear Group B favorites at +100, with tournament outright around +6000.",
+  "sourceUrls": [
+    "https://www.goal.com/en/lists/switzerland-squad-world-cup-2026/bltf2af984bafb74a30",
+    "https://www.si.com/soccer/switzerland-2026-world-cup-preview",
+    "https://dailybeirut.com/en/world-cup-2026/switzerlands-2026-world-cup-squad-key-players-predicted-xi/",
+    "https://www.fourfourtwo.com/team/switzerland-world-cup-2026-squad",
+    "https://www.transfermarkt.us/schweiz/sperrenundverletzungen/verein/3384",
+    "https://www.espn.com/soccer/team/fixtures/_/id/475/switzerland",
+    "https://www.rotowire.com/soccer/headlines/dan-ndoye-injury-could-return-sunday-514760",
+    "https://www.3addedminutes.com/competitions/premier-league/ndoye-hudson-odoi-wood-nottingham-forest-injury-news-return-dates-west-ham-premier-league-5465229",
+    "https://www.footballfancast.com/vitor-pereira-nottingham-forest-sunderland-dan-ndoye-update/",
+    "https://www.oddsshark.com/soccer/world-cup/group-b-odds-picks-2026",
+    "https://www.thelines.com/odds/world-cup/group-b/",
+    "https://www.lineups.com/betting/switzerland-2026-world-cup-team-preview-betting-odds-predictions-best-bets/",
+    "https://www.squawka.com/us/outright-markets/switzerland-world-cup-2026-odds/",
+    "https://www.espn.com/soccer/match/_/gameId/762552/switzerland-norway",
+    "https://www.bluewin.ch/en/sport/football/ugrinic-missing-through-injury-okafor-moves-up-after-all-3156538.html",
+    "https://en.wikipedia.org/wiki/Yann_Sommer",
+    "https://www.rotowire.com/soccer/headlines/fabian-schar-injury-season-over-focusing-on-wc-516152"
+  ],
+  "confidence": "medium",
+  "dataFreshness": "2026-05-15"
+}

@@ -4,77 +4,70 @@
   "team2Code": "JOR",
   "team1Name": "Algeria",
   "team2Name": "Jordan",
-  "generatedAt": "2026-04-16T00:00:00Z",
-  "dataVersion": 2,
-
-  "headline": "Africa's Desert Foxes vs Asia's Brave Ones in a Group J Six-Pointer",
-  "subheadline": "With Argentina looming above them, Algeria and Jordan know this match could decide who stays alive — and Algeria's injury concerns add intrigue",
-
-  "openingNarrative": "In the shadow of giants, the real battles are fought. While the world's cameras will follow Messi and Ronaldo through this tournament, the match between Algeria and Jordan in Group J may quietly prove to be the fixture that determines the group's final standings. This is the match neither team can afford to lose — the six-pointer that keeps dreams alive or ends them forever.\n\nAlgeria bring the weight of African football history to this encounter, but they also bring concern. The Desert Foxes showed their two faces in March: a devastating 7-0 demolition of Guatemala that showcased devastating attacking depth, followed by a disciplined 0-0 draw against Uruguay that proved they can compete with South American pedigree. The problem is Ismael Bennacer. Algeria's AC Milan midfield maestro is a major doubt with a thigh strain that has limited his training, and without his ability to control tempo and play through pressure, Algeria become a fundamentally different team. Riyad Mahrez, now 35, can still conjure moments of magic — but the years have taken their toll on the former Premier League champion's ability to carry a match alone.\n\nJordan's story is different, and in many ways more extraordinary. The Nashama — 'The Brave Ones' — are at a tournament for the first time in their history. Their run to the 2024 Asian Cup final, where they defeated South Korea and Iraq before falling to Qatar, was the spark that ignited a nation's belief. They qualified through AFC Group A as runners-up behind Japan, accumulating 18 points with 5 wins and 3 draws. Yazan Al-Naimat's 4 qualifying goals and the electric creativity of Mousa Al-Tamari gave them the attacking edge they needed.\n\nFor Algeria, this is a match to stamp their authority as Group J's second strongest team — but fitness concerns could level the playing field. For Jordan, it is a chance to prove that their Asian Cup heroics were no fluke.",
-
+  "generatedAt": "2026-06-12T10:00:00Z",
+  "dataVersion": 1,
+  "headline": "Desert Dreams: Algeria Face Jordan's Historic Tournament Debut",
+  "subheadline": "Two proud nations clash in Group J as experience meets inspiration in a potential group-defining encounter.",
+  "openingNarrative": "In the unforgiving mathematics of tournament football, some matches carry the weight of entire campaigns. When Algeria and Jordan meet in what promises to be a pivotal Group J encounter, two vastly different journeys converge at sport's grandest stage. For the Desert Foxes, this represents another chapter in a story already rich with tournament pedigree—their fifth appearance building on a legacy that includes the euphoria of their 2019 Africa Cup of Nations triumph. For Jordan's Al-Nashama, simply being here represents the culmination of a fairy tale that began with their stunning march to the 2024 Asian Cup final.\n\nThe contrasts are stark yet compelling. Algeria arrive as seasoned campaigners ranked 45th in the global ELO rankings with a squad valued at $150 million, their roster populated by players who have graced Europe's elite competitions. Jordan, ranked 75th with a squad worth $25 million, embody the romantic notion that collective spirit can transcend individual limitations. Yet recent history suggests this gap may not be as decisive as the numbers suggest—Jordan's qualification campaign included draws against South Korea and Iraq, performances that announced their arrival as genuine competitors rather than mere participants.\n\nWith Argentina looming as group favorites, this fixture carries enormous significance for both nations' knockout stage aspirations. A victory here could prove the difference between advancing and an early return home, making every tactical decision, every moment of individual brilliance, and every cruel twist of fortune magnified under the tournament's unrelenting spotlight.",
   "tacticalBreakdown": {
     "title": "The Chess Match",
-    "narrative": "Algeria's 4-3-3 under Petkovic is built on possession and creative midfield play. Bennacer controls the tempo from deep — when fit — while Mahrez provides the creative spark from wide positions, and Bounedjah offers a proven focal point in attack. The 7-0 win over Guatemala showed Algeria at their most fluid, with chances created from every angle. But the 0-0 against Uruguay revealed a more cautious side, one that can become passive when the midfield supply line is disrupted.\n\nIf Bennacer's thigh strain keeps him out, Algeria's entire build-up must be reconfigured. Without their metronome, they may resort to more direct football — bypassing midfield with long balls toward Bounedjah and relying on Mahrez's individual brilliance in transition.\n\nJordan's 4-2-3-1 is a counter-punching system perfected during their Asian Cup run. They sit deep, absorb pressure with discipline, and spring devastating counter-attacks through Al-Tamari's pace on the wing. The double pivot in midfield provides the defensive shield that allows Jordan to frustrate more talented opponents.\n\nThe tactical key is Algeria's patience. If they rush their attacks — particularly without Bennacer's calming influence — they will play into Jordan's hands, allowing the Nashama to win possession and break quickly. Set pieces could be decisive in a tight match.",
+    "narrative": "Vladimir Petković's Algeria will deploy their preferred 4-3-3 formation, seeking to control proceedings through the metronomic passing of Ismael Bennacer and the creative wizardry of Riyad Mahrez. The Desert Foxes' approach marries French tactical sophistication—a legacy of their extensive diaspora—with North African technical flair, creating a patient build-up style designed to unpick organized defenses. Bennacer's role as the tempo setter from the base of midfield will be crucial, as Algeria look to dominate possession and create openings through sustained pressure.\n\nJamal Sellami's Jordan will counter with a disciplined 4-2-3-1 structure, the same tactical foundation that carried them to Asian Cup glory. The Nashama's strength lies not in individual brilliance but in collective organization, absorbing pressure before striking through the pace and creativity of captain Mousa Al-Tamari. With Yazan Al-Naimat's tournament-ending ACL injury robbing them of their primary goalscoring threat, Jordan must rely even more heavily on set pieces and counter-attacking efficiency. The central midfield battle between Algeria's European-based technicians and Jordan's industrious domestic core will likely determine the match's rhythm and outcome.",
     "team1Formation": "4-3-3",
     "team2Formation": "4-2-3-1",
-    "keyMatchup": "Ismael Bennacer's tempo control (if fit) vs Jordan's double pivot — can Algeria play through Jordan's organized midfield, or will the thigh strain force a Plan B?"
+    "keyMatchup": "Bennacer's distribution vs Jordan's defensive pressing triggers"
   },
-
   "dataInsights": {
     "title": "By The Numbers",
-    "eloAnalysis": "Algeria (ELO: 1580, rank 45) vs Jordan (ELO: 1400, rank 75) — a 180-point gap that gives Algeria a comfortable advantage on paper. But Jordan's Asian Cup form suggests their true level is higher than their ELO reflects.",
-    "formAnalysis": "Algeria's March friendlies showed extremes: 7-0 vs Guatemala (devastating attack) and 0-0 vs Uruguay (resolute defense). They qualified from CAF Group E with 22 points — 7 wins, 1 draw, 2 losses, scoring 19 and conceding 8. Jordan qualified from AFC Third Round Group A as runners-up with 18 points — 5 wins, 3 draws, 2 losses, +5 goal difference, Al-Naimat scoring 4.",
-    "squadValueComparison": "Algeria's squad ($150M) vs Jordan's ($25M) — a 6:1 ratio that reflects the different development trajectories of these programs. Algeria's Mahrez ($20M) alone is nearly worth Jordan's entire squad. But Jordan's Asian Cup run proved value is measured in more than money.",
-    "injuryImpact": "Bennacer's thigh strain is the headline. Algeria's reliance on their AC Milan midfielder is total — without him, their ability to control possession and play through Jordan's disciplined block diminishes dramatically. If he starts at less than full fitness, Jordan's double pivot may be able to neutralize him. Mahrez at 35 can still deliver moments of brilliance but lacks the legs to drive Algeria's creative efforts for 90 minutes. Jordan's squad is more collectively dependent — the loss of Al-Tamari would remove their primary counter-attacking threat.",
-    "bettingPerspective": "Algeria should be favorites based on their tournament experience and squad quality, but Bennacer's fitness doubt has narrowed the gap in the markets. Jordan's long odds (+25000 to win the tournament) reflect their debutant status, but the Nashama are no pushovers.",
-    "historicalPattern": "Algeria and Jordan have had minimal competitive interaction. This match will be among their most significant meetings ever. Jordan's Asian Cup final run showed they can beat nations rated well above them."
+    "eloAnalysis": "Algeria's ELO rating of 1580 places them 180 points ahead of Jordan (1400), a gap that typically translates to clear favoritism but not insurmountable odds.",
+    "formAnalysis": "Algeria's impressive recent form (8 wins, 3 draws, 1 loss in their last 12) includes a stunning 7-0 friendly victory over Guatemala, while Jordan's qualifying campaign (5 wins, 3 draws, 2 losses) built on their Asian Cup momentum.",
+    "squadValueComparison": "The six-fold difference in squad valuation ($150m vs $25m) reflects Algeria's European-based talent pool compared to Jordan's primarily domestic and Gulf-league foundation.",
+    "injuryImpact": "Jordan face a striker crisis with Al-Naimat's ACL injury removing their top scorer, while Algeria sweat over Bennacer's fitness and defensive depth concerns with Bensebaini and Atal ruled out.",
+    "bettingPerspective": "While specific odds weren't available, Algeria's tournament experience and individual quality make them clear favorites despite Jordan's proven ability to upset higher-ranked opponents.",
+    "historicalPattern": "No team outside UEFA or CONMEBOL has ever won the tournament, but Jordan's presence continues the trend of Asian football's growing competitiveness on the global stage."
   },
-
   "playerSpotlights": [
     {
-      "name": "Ismael Bennacer",
+      "name": "Riyad Mahrez",
       "teamCode": "ALG",
-      "narrative": "AC Milan's midfield general is the player Algeria's entire system revolves around — and his availability is the question that defines this match. Bennacer's thigh strain has cast uncertainty over Algeria's tournament preparation, and even if he is declared fit, questions about his match sharpness will linger. At full health, his composure on the ball, his range of passing, and his ability to dictate tempo make him the most important player on the pitch. But a compromised Bennacer might be worse than no Bennacer at all — half-measures in midfield invite Jordan's counter-attacks.",
-      "statline": "AC Milan's midfield anchor — major doubt with thigh strain, Algeria's tournament hangs on his fitness"
+      "narrative": "At 35, the former Manchester City wizard remains Algeria's creative heartbeat, his left foot still capable of conjuring moments that can decide matches. Now plying his trade with Al-Ahli, Mahrez carries the burden of being Algeria's primary difference-maker in tight games. His experience in pressure situations—from Premier League title races to Champions League knockouts—gives the Desert Foxes a player who thrives when stakes are highest. Watch for his trademark cut inside from the right flank, seeking the space to deliver that perfectly weighted through ball or curling shot.",
+      "statline": "Algeria's most capped player and leading scorer in their 2019 AFCON triumph"
     },
     {
       "name": "Mousa Al-Tamari",
       "teamCode": "JOR",
-      "narrative": "Jordan's most dangerous weapon is a winger with the pace to terrify defenders and the end product to make his runs count. Al-Tamari's performances at the 2024 Asian Cup announced him to the wider football world, and his ability to take on defenders in one-on-one situations gives Jordan a genuine attacking threat. If Bennacer is absent and Algeria's build-up becomes disjointed, the spaces that open up in transition are precisely where Al-Tamari thrives.",
-      "statline": "Jordan's key creative attacker, Asian Cup breakout star"
+      "narrative": "The Rennes midfielder embodies Jordan's remarkable journey from tournament outsiders to genuine contenders. His 10 goals and 6 assists in Ligue 1 this season underline his development into a truly elite player, while his captaincy reflects his importance to the national team. Al-Tamari's ability to find space between the lines and create chances from seemingly impossible positions was crucial to Jordan's Asian Cup run. With Al-Naimat's absence, even greater creative responsibility falls on his shoulders to unlock Algeria's organized defense.",
+      "statline": "6 goals, 6 assists in 2025-26 Ligue 1 season with average rating of 7.06"
     },
     {
-      "name": "Riyad Mahrez",
+      "name": "Ismael Bennacer",
       "teamCode": "ALG",
-      "narrative": "At 35, Mahrez enters what is almost certainly his final tournament with the burden of being Algeria's creative fallback if Bennacer cannot play. The former Manchester City man looked sharp in the 7-0 win over Guatemala, but that performance came against opposition that offered little resistance. Against Jordan's organized defensive block, Mahrez will need to find the same invention that won him Premier League titles. His experience remains his greatest asset — he has played in Champions League finals and AFCON triumphs. But the legs that once carried him past defenders in bursts of acceleration now move a beat slower.",
-      "statline": "Algeria's most experienced attacker, 35 years old — still dangerous but racing against time"
+      "narrative": "The AC Milan midfielder represents the perfect synthesis of Algeria's tactical evolution—a player schooled in European methodology but playing with distinctly North African flair. His recent thigh injury concerns have dominated Algeria's pre-tournament preparations, underscoring just how vital his tempo-setting abilities are to Petković's system. When fit, Bennacer's range of passing and defensive intelligence make him one of Africa's most complete midfielders. His fitness will be closely monitored, as Algeria's possession-based approach relies heavily on his distribution from deep positions.",
+      "statline": "Named in Algeria's provisional squad despite missing March friendlies through injury"
     },
     {
-      "name": "Yazan Al-Naimat",
+      "name": "Yazeed Abulaila",
       "teamCode": "JOR",
-      "narrative": "The striker who fired Jordan to the tournament with 4 qualifying goals is a player who lives for moments of pressure. Al-Naimat's finishing is clinical, his movement intelligent, and his hunger insatiable. In a match where Jordan's chances will be limited, his ability to convert one of the few opportunities that come his way could define his nation's entire tournament experience.",
-      "statline": "4 goals in tournament qualifying, Jordan's leading striker"
+      "narrative": "The Al-Faisaly goalkeeper carries the dreams of an entire nation between his posts, having been instrumental in Jordan's historic qualification campaign. His shot-stopping heroics during the Asian Cup final run showcased a keeper unafraid of the big stage, producing crucial saves when his country needed them most. Against Algeria's array of attacking talent, Abulaila's positioning and command of his area will be tested by players accustomed to scoring against Europe's finest. His calm presence and organizational skills provide Jordan's defensive foundation with the leadership needed for tournament football.",
+      "statline": "Key saves in Jordan's 2024 Asian Cup knockout stage run"
     }
   ],
-
   "theVerdict": {
     "title": "The Verdict",
     "prediction": "Algeria 2-1 Jordan",
-    "confidence": 55,
-    "narrative": "Algeria's greater tournament experience and deeper attacking talent should prove decisive, but Bennacer's fitness concern drops this from a comfortable prediction to a nervous one. The 7-0 demolition of Guatemala proved Algeria can be devastating in attack, but Jordan's disciplined defensive structure — forged in their Asian Cup run — is a world apart from Guatemalan defending.\n\nIf Bennacer starts fit, Algeria should have enough creativity to find the openings. Mahrez and Bounedjah provide the kind of individual quality that can unlock even the most organized defense. But if the thigh strain limits Algeria's midfield maestro, this match becomes far more competitive than the ELO gap suggests.\n\nJordan will not make this easy. Al-Tamari's pace on the break will give Algeria's defense anxious moments, and the Nashama's collective spirit means they will fight until the final whistle. Expect a tense match decided by a moment of quality — but one where Algeria's margin for error is thinner than they would like.",
+    "confidence": 68,
+    "narrative": "Algeria's superior individual quality and tournament experience should prove decisive in a match that promises to be far closer than the gulf in resources suggests. Mahrez's creativity and Bennacer's tempo control—assuming his fitness holds—give the Desert Foxes the technical edge needed to break down Jordan's disciplined defensive structure. However, Al-Tamari's ability to create moments of magic and Jordan's proven resilience against higher-ranked opponents ensure this will be no comfortable afternoon for Petković's side.\n\nThe absence of Al-Naimat removes Jordan's primary goalscoring threat but may actually make them more defensively compact and harder to break down. Expect a cagey first half before Algeria's quality eventually tells, though Jordan's set-piece prowess and counter-attacking threat means they'll have their moments. This feels like the type of fixture where experience and individual class make the crucial difference in tournament football's unforgiving arena.",
     "alternativeScenarios": [
       {
         "scenario": "Algeria 1-1 Jordan",
         "probability": 25,
-        "reasoning": "Bennacer starts but is clearly limited. Algeria struggle to impose their style, Jordan take a shock lead through Al-Tamari or a set piece, and Algeria can only equalize through a moment of Mahrez brilliance. A draw that feels like a victory for the Nashama."
+        "reasoning": "Jordan's defensive organization frustrates Algeria while Al-Tamari provides the creative spark for a precious equalizer, mirroring their Asian Cup heroics."
       },
       {
-        "scenario": "Jordan 1-0 Algeria",
+        "scenario": "Algeria 3-0 Jordan",
         "probability": 15,
-        "reasoning": "The greatest upset of Group J. Bennacer is ruled out, Algeria's midfield lacks cohesion, and Jordan channel their Asian Cup heroics with a counter-attack goal they defend with the kind of collective passion that only debutants can produce."
+        "reasoning": "If Mahrez finds his rhythm early and Bennacer controls the midfield, Algeria's quality could overwhelm Jordan's brave but limited defensive resources."
       }
     ]
   },
-
-  "closingLine": "In a tournament group defined by historical narratives, the match between Algeria and Jordan may prove to be the contest that decides who survives. The Desert Foxes have experience but carry injury doubts. The Brave Ones have belief and nothing to lose. In Group J, both will be tested to their limits."
+  "closingLine": "In tournament football, dreams and reality collide with brutal efficiency—but sometimes, just sometimes, the dreamers find a way to dance."
 }

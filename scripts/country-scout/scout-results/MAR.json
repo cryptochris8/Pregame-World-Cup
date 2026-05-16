@@ -1,0 +1,115 @@
+{
+  "teamCode": "MAR",
+  "teamName": "Morocco",
+  "scoutedAt": "2026-05-16T00:00:00Z",
+  "injuryUpdates": [
+    {
+      "playerName": "Achraf Hakimi",
+      "teamCode": "MAR",
+      "country": "Morocco",
+      "club": "Paris Saint-Germain",
+      "position": "Defender",
+      "injuryType": "Right thigh/hamstring muscle injury",
+      "injuryDate": "2026-04-29",
+      "expectedReturn": "Returned to training in mid-May; expected fit for the 2026 tournament opener vs Brazil on June 13",
+      "availabilityStatus": "minor_concern",
+      "lastMatchPlayed": {
+        "date": "2026-04-29",
+        "opponent": "Bayern Munich (UEFA Champions League SF 1st leg)",
+        "notes": "Sustained right-thigh injury in a collision with Konrad Laimer late in PSG's 5-4 win; substituted off and ruled out for several weeks"
+      },
+      "source": "ESPN (Apr 29), beIN Sports (Apr 29), PSG medical update (May 9), Tribuna (May 9), Yahoo Sports (May 2026)",
+      "notes": "PSG's May 9 medical bulletin confirmed Hakimi had returned to training ahead of the Champions League final against Arsenal. The star right-back travelled with the PSG squad and is on track to be fit for Morocco's tournament opener, though sharpness after weeks out is a genuine concern. Downgraded from fit to minor_concern.",
+      "action": "update"
+    },
+    {
+      "playerName": "Nayef Aguerd",
+      "teamCode": "MAR",
+      "country": "Morocco",
+      "club": "Olympique de Marseille",
+      "position": "Defender",
+      "injuryType": "Pubalgia complications — pubic bone fracture, surgery March 12",
+      "injuryDate": "2026-03-12",
+      "expectedReturn": "Ruled out for remainder of 2025-26 club season; tournament participation seriously compromised",
+      "availabilityStatus": "major_doubt",
+      "lastMatchPlayed": {
+        "date": "2026-03-01",
+        "opponent": "Marseille Ligue 1 fixture (pre-surgery)",
+        "notes": "Has not played since early March; underwent pubic-region surgery on March 12 and returned to Morocco in early May to continue rehab with national-team medical staff"
+      },
+      "source": "Hespress (May 2026), Yabiladi, Barlamantoday (May 7), AfricaSoccer, Elbotola",
+      "notes": "First-choice centre-back has not featured for Marseille since surgery and is racing the clock. Morocco has demanded full fitness as a precondition for selection. With Aguerd a major doubt, Ouahbi may lean on Romain Saïss and Jawad El Yamiq at centre-back vs Brazil. This is a new tracker entry — Aguerd was not previously in the file but his injury predates the cutoff; included because press updates since 2026-05-07 (return to Morocco for rehab) make it materially fresh.",
+      "action": "add"
+    }
+  ],
+  "recentFormUpdates": [],
+  "tacticalUpdates": [
+    {
+      "field": "coach",
+      "oldValue": "Walid Regragui",
+      "newValue": "Mohamed Ouahbi",
+      "source": "FIFA.com, CAF Online, Morocco World News, Tribuna, Goal — March 5-6, 2026",
+      "confidence": "high"
+    }
+  ],
+  "squadChanges": [
+    {
+      "playerName": "Hakim Ziyech",
+      "changeType": "dropped",
+      "details": "Omitted from Mohamed Ouahbi's squads for the March qualifiers (vs Niger and Tanzania) due to injury and lack of match sharpness at Galatasaray. With Ouahbi favouring younger creators, Ziyech's place in the final 26 for the 2026 tournament is now in serious doubt.",
+      "source": "CAF Online (Mar 14), FourFourTwo, Hespress",
+      "effectiveDate": "2026-03-14"
+    },
+    {
+      "playerName": "Ayoub El Kaabi",
+      "changeType": "dropped",
+      "details": "Ruled out of Morocco's March qualifier squad due to injury. Veteran goal-scorer's tournament status is uncertain heading into the final 26-man cut.",
+      "source": "CAF Online (Mar 14)",
+      "effectiveDate": "2026-03-14"
+    }
+  ],
+  "bettingOddsUpdate": {
+    "tournamentWinner": "+5000",
+    "groupStageExit": null,
+    "toQualifyFromGroup": "+450 to win Group C (Brazil -280 favourite, Scotland +1000, Haiti +10000)",
+    "source": "OddsShark, FOX Sports, RotoWire, ESPN BET — May 2026",
+    "notes": "Morocco priced as clear second favourite in Group C behind Brazil and as +5000 tournament outsiders across most US books. Implied probability suggests bookmakers expect Morocco to advance from the group despite the Hakimi and Aguerd injury clouds."
+  },
+  "coachUpdate": {
+    "changed": true,
+    "currentCoach": "Mohamed Ouahbi",
+    "newCoach": "Mohamed Ouahbi",
+    "source": "FIFA.com, CAF Online, Morocco World News, Goal — March 5-6, 2026",
+    "notes": "Walid Regragui resigned on March 5, 2026 following AFCON 2025 final defeat criticism; former U23 boss Mohamed Ouahbi was appointed the next day. Ouahbi has since taken charge of March friendlies/qualifiers (1-1 vs Ecuador, 2-1 vs Paraguay) and will lead Morocco's June 7 warm-up vs Norway at Sports Illustrated Stadium and the Group C campaign. Note: this change predates the 2026-04-16 cutoff but is flagged because the bundled tactical profile and brief still list Regragui as head coach."
+  },
+  "summary": "Morocco enters the final pre-tournament window with two major injury concerns to its defence: Achraf Hakimi suffered a right-thigh injury vs Bayern on April 29 but returned to PSG training around May 9 and is expected fit for June 13, while Nayef Aguerd remains a major doubt after March pubic surgery and has returned home for rehab. The bundled tactical profile is also out of date — Walid Regragui resigned on March 5 and former U23 coach Mohamed Ouahbi has been in charge through Morocco's March friendlies and the upcoming May-June preparation camp (Burundi May 26, Madagascar June 2, Norway June 7).",
+  "sourceUrls": [
+    "https://www.moroccoworldnews.com/2026/05/298728/morocco-to-face-burundi-madagascar-and-norway-in-less-than-a-month/",
+    "https://www.moroccoworldnews.com/2026/05/290991/2026-world-cup-full-schedule-of-preparation-plan-for-moroccos-atlas-lions/",
+    "https://www.moroccoworldnews.com/2026/05/290106/injured-hakimi-joins-psg-delegation-to-support-ucl-final-push/",
+    "https://www.moroccoworldnews.com/2026/05/292884/fifa-plans-to-announce-the-final-list-of-the-extended-48-teams-on-tuesday-2-june/",
+    "https://www.espn.com/soccer/story/_/id/48628992/psg-achraf-hakimi-injury-bayern-munich-morocco",
+    "https://www.beinsports.com/en-us/soccer/uefa-champions-league/articles/hakimi-ruled-out-for-champions-league-semi-final-second-leg-with-injury-2026-04-29",
+    "https://tribuna.com/en/news/2026-05-09-psg-shares-important-medical-update-achraf-hakimi-pacho-mendes-and-3-more-players/",
+    "https://sports.yahoo.com/articles/psg-reveal-achraf-hakimi-injury-102542412.html",
+    "https://en.hespress.com/135934-aguerd-out-for-season-raising-concerns-ahead-of-world-cup.html",
+    "https://en.yabiladi.com/articles/details/192585/nayef-aguerd-sidelined-season-uncertainty.html",
+    "https://barlamantoday.com/2026/05/07/player-nayef-aguerd-returns-to-morocco-for-treatment-after-injury/",
+    "https://africasoccer.com/nayef-aguerd-morocco-world-cup-injury-fitness-condition/",
+    "https://africasoccer.com/morocco-risk-losing-stalwart-defender-nayef-aguerd-for-2026-world-cup/",
+    "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/mohamed-ouahbi-replaces-walid-regragui-morocco",
+    "https://www.cafonline.com/news/morocco-turn-to-ouahbi-for-leadership-after-coach-walid-regraguis-departure/",
+    "https://www.cafonline.com/news/morocco-names-four-new-players-for-world-cup-qualifiers-ziyech-and-el-kaabi-out/",
+    "https://www.moroccoworldnews.com/2026/03/281697/official-mohamed-ouahbi-takes-over-as-new-coach-for-morocco/",
+    "https://tribuna.com/en/news/2026-03-06-mohammed-ouahbi-appointed-as-moroccos-new-national-team-coach/",
+    "https://www.fourfourtwo.com/team/morocco-world-cup-2026-squad",
+    "https://en.hespress.com/134026-morocco-unveils-squad-for-friendlies-against-ecuador-and-paraguay.html",
+    "https://www.oddsshark.com/soccer/world-cup/group-c-odds-picks-2026",
+    "https://www.foxsports.com/stories/soccer/2026-world-cup-odds-from-which-group-will-winner-emerge",
+    "https://www.rotowire.com/soccer/article/2026-world-cup-group-c-preview-brazil-morocco-scotland-haiti-tactics-lineups-set-pieces-odds-109040",
+    "https://www.lineups.com/betting/morocco-2026-world-cup-team-preview-betting-odds-predictions-best-bets/",
+    "https://www.espn.com/espn/betting/story/_/id/48386952/espn-soccer-futbol-world-cup-betting-odds-championship-groups"
+  ],
+  "confidence": "high",
+  "dataFreshness": "2026-05-15"
+}

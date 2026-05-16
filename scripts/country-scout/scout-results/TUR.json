@@ -1,0 +1,96 @@
+{
+  "teamCode": "TUR",
+  "teamName": "Turkey",
+  "scoutedAt": "2026-05-16T00:00:00Z",
+  "injuryUpdates": [
+    {
+      "playerName": "Hakan Calhanoglu",
+      "teamCode": "TUR",
+      "country": "Turkey",
+      "club": "Inter Milan",
+      "position": "Midfielder",
+      "injuryType": "Muscular strain in the soleus of the left leg (fresh setback after the March calf problem)",
+      "injuryDate": "2026-04-27",
+      "expectedReturn": "Targeting recovery for the tournament — likely back by early June for Turkey camp",
+      "availabilityStatus": "doubt",
+      "lastMatchPlayed": {
+        "date": "2026-03-31",
+        "opponent": "Kosovo (UEFA Playoff Path C Final)",
+        "notes": "Played through earlier calf issue to help Turkey qualify 1-0. Has not played since due to the new soleus strain."
+      },
+      "source": "Inter Milan official statement (Humanitas Clinical Institute), Football-Italia, SempreInter, Daily Sabah, Tancredi Palmeri - Apr 27 to May 13, 2026",
+      "notes": "Inter confirmed the new muscle strain on April 27 after the captain missed the Torino draw. He was an unused substitute in the May 13 Coppa Italia final (Inter beat Lazio 2-0) and Inter's medical staff are being cautious, fearing a premature return could rule him out of the tournament entirely. Italian media report he is targeting recovery for Turkey's summer programme. Captain and creative engine — by far the most material fitness story for Turkey.",
+      "action": "update"
+    },
+    {
+      "playerName": "Arda Guler",
+      "teamCode": "TUR",
+      "country": "Turkey",
+      "club": "Real Madrid",
+      "position": "Midfielder/Forward",
+      "injuryType": "Muscle injury in the biceps femoris (hamstring) of the right leg — season-ending for Real Madrid",
+      "injuryDate": "2026-04-21",
+      "expectedReturn": "Early June 2026 — expected fully fit for Turkey's pre-tournament camp and the June 13 opener vs Australia",
+      "availabilityStatus": "doubt",
+      "lastMatchPlayed": {
+        "date": "2026-04-21",
+        "opponent": "Deportivo Alaves (LaLiga)",
+        "notes": "Limped off in the second half with a right thigh problem; Real Madrid confirmed the season-ending diagnosis on April 23."
+      },
+      "source": "Real Madrid official medical report, Marca, Fabrizio Romano, World Soccer Talk, Turkish Football, Football Espana - Apr 23 to May 2026",
+      "notes": "Approximately a four-week absence projected. Real Madrid have ruled him out for the rest of their season and Guler has shifted focus entirely to the tournament. Turkish-Football reports he has been given the green light to join the national team camp. Joining Calhanoglu on the muscle-injury watch list compounds the creative-midfield concern.",
+      "action": "update"
+    }
+  ],
+  "recentFormUpdates": [],
+  "tacticalUpdates": [],
+  "squadChanges": [],
+  "bettingOddsUpdate": {
+    "tournamentWinner": "80/1",
+    "groupStageExit": "11/4 to 5/2",
+    "toQualifyFromGroup": "4/9 (to escape Group D under 48-team format)",
+    "source": "Bet365, Betway, Ladbrokes, Betano, Virgin Bet aggregated via Freebets.com and Squawka - late April / early May 2026",
+    "notes": "Outright winner price 80/1 with most major books (longest 100/1 at Virgin Bet). Group D winner odds 7/4 (joint-favourites with the USA); Bet365 quotes 4/9 to advance from the group under the new 16-team-eliminated format. Group exit at first hurdle priced 11/4 to 5/2."
+  },
+  "coachUpdate": {
+    "changed": false,
+    "currentCoach": "Vincenzo Montella",
+    "newCoach": null,
+    "source": null,
+    "notes": null
+  },
+  "summary": "Turkey's pre-tournament story is a muscle-injury scare to both of their creative talismen: captain Hakan Calhanoglu suffered a fresh soleus strain on April 27 (missed the Coppa Italia final as an unused sub) and Arda Guler tore his biceps femoris on April 21, ending his Real Madrid season. Both are expected to recover for the June 13 opener vs Australia in Vancouver but neither has played since the diagnoses, so sharpness is a real concern. No international matches have been played since the March qualification playoffs; the first warm-up is North Macedonia at home on June 1, followed by Venezuela in Fort Lauderdale on June 6. Montella's contract and tactical setup are unchanged and the squad's training base is confirmed as Mesa, Arizona.",
+  "sourceUrls": [
+    "https://sempreinter.com/2026/04/27/official-inter-milan-star-calhanoglu-suffers-muscle-injury/comment-page-1/",
+    "https://sports.yahoo.com/articles/official-inter-milan-turkey-superstar-122000202.html",
+    "https://www.dailysabah.com/sports/football/turkiye-fret-over-calhanoglu-guler-fitness-ahead-of-crucial-summer",
+    "https://turkish-football.com/national-anxiety-turkey-fret-over-hakan-calhanoglu-and-real-madrid-star-arda-guler-fitness-ahead-of-crucial-summer/",
+    "https://www.sportingpedia.com/2026/04/27/calhanoglu-faces-race-against-time-for-coppa-italia-final-following-fresh-muscle-setback/",
+    "https://football-italia.net/calhanoglu-doubt-coppa-final-new-inter-injury/",
+    "https://tribuna.com/en/news/2026-04-27-calhanoglu-a-doubt-for-coppa-italia-final-as-inter-confirm-new-injury/",
+    "https://sports.yahoo.com/articles/calhanoglu-not-ready-coppa-italia-142500981.html",
+    "https://football-italia.net/coppa-italia-final-line-ups-lazio-vs-inter/",
+    "https://www.outlookindia.com/sports/football/lazio-vs-inter-milan-live-score-coppa-italia-2025-26-final-updates-highlights-roma",
+    "https://www.realmadrid.com/en-US/news/football/first-team/medical-reports/parte-medico-de-guler-23-04-2026",
+    "https://worldsoccertalk.com/amp/news/arda-guler-and-eder-militao-suffer-season-ending-injuries-with-real-madrid-focusing-on-2026-world-cup/",
+    "https://turkish-football.com/arda-guler-set-for-heroic-return-real-madrid-star-expected-fit-for-turkeys-2026-world-cup-campaign/",
+    "https://onefootball.com/en/news/real-madrid-confirm-eder-militao-and-arda-gueler-injuries-42755142",
+    "https://www.managingmadrid.com/106783/arda-real-madrid-injury-report-2026",
+    "https://x.com/FabrizioRomano/status/2047268966217736194",
+    "https://www.football-espana.net/2026/04/23/arda-guler-becomes-late-doubt-for-real-betis-real-madrid-clash",
+    "https://www.turkiyetoday.com/sports/turkiye-to-play-north-macedonia-and-venezuela-in-pre-world-cup-3219234",
+    "https://www.beinsports.com/en-mena/football/friendlies/trkiye-vs-north-macedonia-2026-06-01",
+    "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_D",
+    "https://www.goal.com/en/team/turkiye/fixtures-results/9s2kpeunkes0g17l95r3t91j6",
+    "https://turkish-football.com/turkish-national-team-confirms-2026-world-cup-camp-in-arizona-logistics-and-ticket-fever-take-center-stage/",
+    "https://turkish-football.com/montella-extends-stay-as-turkey-national-team-coach-until-2028/",
+    "https://www.freebets.com/football/world-cup/odds/turkey/",
+    "https://www.compare.bet/betting/football/world-cup/turkey",
+    "https://www.si.com/soccer/turkiye-2026-world-cup-preview",
+    "https://www.squawka.com/en/news/turkey-world-cup-2026-fixtures-players-analysis/",
+    "https://www.blackwhitereadallover.com/serie-a-campionato-2025-26-juventus/37755/juventus-kenan-yildiz-injury-luciano-spalletti-2026-serie-a-matchday-32-team-news",
+    "https://tribuna.com/en/news/2026-04-22-kenan-yildiz-trains-individually-amid-knee-concern-for-juventus-fc/"
+  ],
+  "confidence": "high",
+  "dataFreshness": "2026-05-13"
+}

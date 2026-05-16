@@ -4,77 +4,70 @@
   "team2Code": "JOR",
   "team1Name": "Austria",
   "team2Name": "Jordan",
-  "generatedAt": "2026-04-16T00:00:00Z",
-  "dataVersion": 2,
-
-  "headline": "Rangnick's Revolution — With Alaba Back — Meets the Nashama's tournament Fairy Tale",
-  "subheadline": "Austria's pressing machine, now reinforced by David Alaba's return from injury, faces Jordan's fearless debutants in a potential Group J decider",
-
-  "openingNarrative": "If Argentina are expected to top Group J, then this match between Austria and Jordan may well decide who joins them in the knockout rounds. It is the fixture that does not make the front pages of the world's sports sections but could prove to be the most consequential 90 minutes in the tournament dreams of both nations. For Austria, advancing past the group stage would end a drought stretching back to 1982. For Jordan, it would be the most extraordinary achievement in their football history.\n\nAustria arrive in a state of genuine euphoria. Ralf Rangnick's tactical revolution has turned a competent European side into one of the continent's most feared, and their March results underlined the progress: a devastating 5-1 demolition of Ghana that showcased their attacking depth, followed by a gritty 1-0 win over South Korea that proved they can grind results when needed. But the headline that sent shockwaves through the tournament was David Alaba's return. Real Madrid's defensive leader, who has battled a serious knee injury for the better part of two years, came on as a substitute against Korea and played 29 minutes. Twenty-nine minutes that told the football world: Austria's defense now has a Champions League-winning leader at its heart. This is Austria's first tournament in 28 years, and they arrive with their strongest squad in decades.\n\nJordan's story is different in every way, yet no less compelling. The Nashama's run to the 2024 Asian Cup final was the moment that Jordanian football believed the impossible was possible. Their tournament qualifying campaign confirmed it: 18 points, runners-up behind Japan. With a squad valued at just $25M, Jordan prove that spirit, organization, and collective belief can compete with financial might.",
-
+  "generatedAt": "2024-12-19T10:30:00Z",
+  "dataVersion": 1,
+  "headline": "When Rangnick Meets Resilience: Austria Face Jordan's Historic Dream",
+  "subheadline": "European pressing machine collides with Asian Cup finalists in a Group J decider that could define both nations' tournament fate.",
+  "openingNarrative": "In the grand theater of the 2026 tournament, some matches are written in destiny, others in desperation. Austria against Jordan carries the weight of both. This is where Ralf Rangnick's relentless pressing machine meets the organized defiance of Al-Nashama, where European tactical sophistication collides with the raw determination of a nation experiencing its first taste of tournament football's ultimate stage.\n\nThe stakes could not be clearer. With Argentina expected to claim Group J's summit, this encounter likely determines who joins them in the knockout rounds. Austria arrive carrying the burden of a 44-year wait to escape the group stage, their last advancement dating back to the infamous 1982 tournament in Spain. Jordan bring something more precious than pedigree: the fearless belief of Asian Cup finalists who toppled South Korea and frustrated the continent's elite with tactical discipline that bordered on the sublime.\n\nRangnick has transformed Austria from perennial underachievers into one of Europe's most watchable teams. Their Euro 2024 campaign was a revelation—topping a group containing France, the Netherlands, and Poland with a brand of gegenpressing that left opponents gasping for breath and space. Jordan, meanwhile, represent the beautiful chaos of tournament football, where organization and heart can eclipse individual brilliance. Their journey to the 2024 Asian Cup final captured imaginations precisely because it felt impossible until it wasn't.",
   "tacticalBreakdown": {
     "title": "The Chess Match",
-    "narrative": "Austria's Rangnick-influenced system will look to overwhelm Jordan from the first whistle. High pressing, coordinated pressing triggers, and vertical football designed to pin opponents in their own half — this is the Austrian way. The 5-1 demolition of Ghana showed the system at full power: relentless pressure, turnovers converted into chances with ruthless efficiency. Baumgartner's runs between the lines, Sabitzer's ball-carrying from midfield, and Laimer's relentless energy create a multi-layered attacking threat.\n\nAlaba's return transforms the defensive picture. Even in limited minutes against Korea, his organizational presence — the communication, the positioning, the reading of danger — elevated every defender around him. If Alaba starts or plays significant minutes against Jordan, Austria's defense gains a composure and intelligence that it lacked in qualifying.\n\nJordan will absorb. Their 4-2-3-1 or 5-4-1 defensive block, refined through the Asian Cup and qualifying, is designed to frustrate exactly this kind of opponent. The double midfield pivot provides a defensive shield, the back line sits deep and compact, and the entire team defends as one unit.\n\nThe key tactical battle is Austria's press versus Jordan's resilience. Al-Tamari's pace on the counter is Jordan's safety valve — one ball over Austria's high line could create a gilt-edged opportunity. But with Alaba marshaling the backline, those opportunities become harder to exploit.",
-    "team1Formation": "4-2-3-1",
-    "team2Formation": "5-4-1",
-    "keyMatchup": "Austria's sustained pressing intensity vs Jordan's defensive concentration — can the Nashama hold firm against a side that just demolished Ghana 5-1?"
+    "narrative": "This is a tactical clash that pits philosophy against pragmatism. Rangnick's Austria will deploy their signature 4-2-2-2 formation, with Laimer and Seiwald forming the midfield engine that powers their relentless pressing machine. The key is how they manipulate Jordan's compact 4-2-3-1 shape, looking to force turnovers in the final third where Baumgartner can exploit the chaos. Austria's high defensive line is designed to compress the game, but it leaves them vulnerable to the pace and directness that Al-Tamari can provide in transition.\n\nJordan's success will hinge on their ability to absorb Austria's initial waves of pressure without breaking. Their midfield two must remain disciplined in positioning while Al-Tamari drops deeper to collect possession and initiate counters. The battle will be won or lost in the middle third, where Austria's counterpressing meets Jordan's compact defensive block. If Jordan can weather the early storm and find moments to release Al-Tamari into space behind Austria's advanced fullbacks, they possess the tools to cause an upset. The key question is whether their defensive discipline can last 90 minutes against Austria's industrial-strength pressing intensity.",
+    "team1Formation": "4-2-2-2",
+    "team2Formation": "4-2-3-1",
+    "keyMatchup": "Austria's relentless pressing triggers versus Jordan's compact defensive shape and counter-attacking patience"
   },
-
   "dataInsights": {
     "title": "By The Numbers",
-    "eloAnalysis": "Austria (ELO: 1720, rank 28) vs Jordan (ELO: 1400, rank 75) — a 320-point gap that is among the largest in the group stage. Austria's March form and Alaba's return make this gap feel even larger in practice.",
-    "formAnalysis": "Austria are surging: beat Ghana 5-1 and South Korea 1-0 in March friendlies, with Alaba returning from injury. Qualified with 6 wins, 1 draw, 1 loss in UEFA — 19 points, Baumgartner scored 5. This is their first tournament in 28 years. Jordan qualified with 5 wins, 3 draws, 2 losses in AFC — 18 points, Al-Naimat scored 4. Jordan were unbeaten at home (3W, 2D).",
-    "squadValueComparison": "Austria ($350M) vs Jordan ($25M) — a 14:1 ratio. Austria's Baumgartner ($37.5M) alone exceeds Jordan's entire squad value. Alaba's return adds an immeasurable dimension beyond financial valuation.",
-    "injuryImpact": "Alaba's return is the transformative development. Even in limited minutes, he gives Austria a defensive leader who has won multiple Champions League titles. His fitness level will be monitored carefully — 29 minutes against Korea suggests he is not yet ready for a full 90 — but even a 60-minute cameo changes the defensive picture entirely. Jordan's thin squad means every player must be at maximum effort.",
-    "bettingPerspective": "Austria are heavy favorites, and their March form has shortened the odds further. The 5-1 win over Ghana and Alaba's return make them one of the more confident selections in the group stage. Jordan's odds reflect the scale of the challenge.",
-    "historicalPattern": "No competitive history between these nations. Austria's last tournament group-stage advance was 1982 — but this is the strongest Austrian squad since then. Jordan have never played at a tournament before 2026."
+    "eloAnalysis": "The ELO ratings tell a stark story of expectation—Austria's 1720 rating ranks them 28th globally, while Jordan's 1400 places them 75th, a gap that reflects Austria's established European pedigree versus Jordan's emerging Asian program.",
+    "formAnalysis": "Austria enter with momentum from seven wins in their last 12 matches, including impressive March victories over Ghana (5-1) and South Korea (1-0), while Jordan's qualifying campaign featured five wins and three draws in their final 10 matches, built on defensive solidity.",
+    "squadValueComparison": "The financial gulf is enormous—Austria's €350 million squad value dwarfs Jordan's €25 million, with Baumgartner alone worth €37.5 million compared to Jordan's most valuable player Al-Tamari at €5 million.",
+    "injuryImpact": "Jordan face a crisis with striker Yazan Al-Naimat ruled out through ACL injury—their 8-goal qualifying top scorer whose absence fundamentally alters their attacking threat, while Austria welcome back captain David Alaba from his own ACL recovery.",
+    "bettingPerspective": "While specific odds weren't available, Austria's higher ranking and recent form suggest they enter as clear favorites, though Jordan's tournament newcomer status could provide the unpredictability that upsets are built upon.",
+    "historicalPattern": "History suggests Jordan face an uphill battle—only UEFA and CONMEBOL nations have ever won the tournament, and no Asian team has reached a final, though Morocco's 2022 semifinal run proves barriers can be broken."
   },
-
   "playerSpotlights": [
     {
-      "name": "David Alaba",
+      "name": "Christoph Baumgartner",
       "teamCode": "AUT",
-      "narrative": "The story of Austria's tournament is the story of Alaba's return. When Real Madrid's defensive leader jogged onto the pitch against South Korea in March and played 29 minutes, Austria's tournament prospects transformed overnight. Alaba's knee injury had kept him sidelined for nearly two years — a period that coincided with Austria's rise under Rangnick but also their persistent defensive questions. His return answers those questions with the authority of a player who has won the Champions League, the Bundesliga, and virtually every honor the game offers. Whether he starts or plays from the bench against Jordan, his presence alone changes the equation.",
-      "statline": "Real Madrid's defensive leader, returned from major knee injury, played 29 min vs Korea in March"
+      "narrative": "The RB Leipzig attacking midfielder embodies Austria's evolution under Rangnick, combining German tactical discipline with Austrian flair. His movement between the lines and ability to arrive late in the box made him Euro 2024's standout performer, and his five goals in qualifying demonstrated his knack for decisive moments. Against Jordan's compact defense, Baumgartner's creativity and spatial intelligence will be crucial in unlocking spaces that others cannot see. He represents the new Austria—technically gifted, tactically aware, and utterly fearless.",
+      "statline": "Five goals in qualifying, Austria's leading tournament scorer"
     },
     {
       "name": "Mousa Al-Tamari",
       "teamCode": "JOR",
-      "narrative": "Jordan's most dangerous player carries the burden of an entire nation's attacking hopes. Al-Tamari's pace, his willingness to run at defenders, and his eye for a pass make him the player who can create something from nothing. Against Austria's high pressing line, one ball over the top to Al-Tamari's run could create the kind of counter-attacking opportunity that tournament upsets are built on. But with Alaba potentially marshaling Austria's defense, those opportunities become rarer and more precious.",
-      "statline": "Jordan's most valuable player ($5M), electric winger with pace and creativity"
+      "narrative": "Jordan's captain carries the dreams of a nation on his shoulders, the creative fulcrum who must transform defensive resilience into attacking threat. His move to Rennes in Ligue 1 has elevated his game, providing the European experience that tournament football demands. With Al-Naimat's absence, Al-Tamari becomes not just Jordan's primary creator but their most dangerous finisher. His pace and directness offer Jordan's best hope of exploiting Austria's high defensive line, and his leadership will be tested in the cauldron of tournament pressure. Every Jordanian attack will flow through his vision and courage.",
+      "statline": "Six goals and six assists in 2025-26 Ligue 1 season"
     },
     {
-      "name": "Christoph Baumgartner",
+      "name": "David Alaba",
       "teamCode": "AUT",
-      "narrative": "Austria's attacking heartbeat will be tasked with breaking down Jordan's organized defense. Baumgartner's 5 qualifying goals and his electric performances against Ghana demonstrate the movement and finishing that can trouble any back line. Against Jordan's deep block, his timing and intelligence in finding space between the defensive and midfield lines will be crucial.",
-      "statline": "5 goals in qualifying, RB Leipzig's dynamic attacking midfielder, sharp in March friendlies"
+      "narrative": "The Real Madrid defender's return from ACL injury reads like a Hollywood script—Austria's most decorated player, a multiple Champions League winner, racing back to lead his country in their most important tournament moment in decades. His 29-minute cameo against South Korea in March was more than a fitness test; it was a statement of intent. Alaba's versatility allows Rangnick tactical flexibility, while his experience at football's highest level provides the leadership that tournament moments demand. At 32, this might be his last chance to write his name in Austrian tournament folklore.",
+      "statline": "Multiple Champions League winner with Bayern Munich and Real Madrid"
     },
     {
-      "name": "Yazan Al-Naimat",
+      "name": "Yazeed Abulaila",
       "teamCode": "JOR",
-      "narrative": "The striker whose 4 qualifying goals helped Jordan reach the tournament. Al-Naimat's finishing is clinical and his positioning intelligent. If Jordan create even one clear chance from a set piece or counter-attack, Al-Naimat has the composure to convert it. A goal against this Austrian side would write his name into Jordanian football immortality.",
-      "statline": "4 goals in tournament qualifying, Jordan's leading striker"
+      "narrative": "The Al-Faisaly goalkeeper stands as Jordan's last line of defense against history. His shot-stopping heroics during the 2024 Asian Cup run, particularly in the knockout stages, established him as one of Asia's most reliable keepers. Against Austria's relentless attacking waves, Abulaila must channel that same composure and agility. He knows that Jordan's tournament dream likely rests on his ability to frustrate Austria's forwards and keep his team within striking distance. Every save could be the difference between tournament glory and heartbreak.",
+      "statline": "Instrumental in Jordan's historic 2024 Asian Cup final run"
     }
   ],
-
   "theVerdict": {
     "title": "The Verdict",
     "prediction": "Austria 2-0 Jordan",
-    "confidence": 72,
-    "narrative": "Austria's tactical sophistication, March momentum, and Alaba's return make them formidable favorites. The 5-1 demolition of Ghana showed their pressing system at full power — relentless, organized, and ruthlessly efficient in converting turnovers into chances. Jordan's defense, for all its Asian Cup resilience, has not faced pressure at this level.\n\nBut Jordan will make Austria work for every inch. The Nashama's Asian Cup pedigree means they will not freeze, they will not panic, and they will defend with the collective discipline that frustrated South Korea, Iraq, and other Asian heavyweights. This will not be a comfortable evening for Austria.\n\nExpect a tense first half where Jordan's defensive organization limits Austria to half-chances. But the second half — particularly if Alaba enters or is already on the pitch — will see Austria's quality tell. Baumgartner's movement finds the gap, Sabitzer's driving run creates the second, and Austria take a professional step toward ending their 44-year tournament group-stage drought.",
+    "confidence": 70,
+    "narrative": "Austria's tactical sophistication and tournament experience should prove decisive in a match that Jordan will make far more difficult than the scoreline suggests. Rangnick's pressing system, powered by Bundesliga-hardened legs and executed with German precision, will eventually break down Jordan's resistance. Baumgartner's creativity and Austria's superior depth should create enough chances to secure victory, likely through sustained pressure in the second half when Jordan's defensive discipline begins to waver.\n\nYet football's beauty lies in its capacity for surprise, and Jordan possess the exact qualities that can frustrate more talented opponents. Their defensive organization and Al-Tamari's counter-attacking threat mean Austria cannot afford complacency. This won't be a rout—it will be a battle of attrition that Austria wins through superior fitness and tactical flexibility. The victory keeps alive their dreams of ending that 44-year group-stage drought, while Jordan's tournament education continues with pride intact and lessons learned.",
     "alternativeScenarios": [
       {
         "scenario": "Jordan 1-0 Austria",
-        "probability": 8,
-        "reasoning": "The tournament's greatest upset. Jordan channel every ounce of their Asian Cup belief, score through a counter-attack, and defend with heroism that enters tournament folklore. Even Alaba cannot break through."
+        "probability": 20,
+        "reasoning": "Jordan's defensive discipline and Al-Tamari's pace could catch Austria's high line cold, creating one of the tournament's great upsets through counter-attacking precision and defensive heroics."
       },
       {
-        "scenario": "Austria 3-0 Jordan",
-        "probability": 20,
-        "reasoning": "Austria's pressing game overwhelms Jordan from the start, echoing the 5-1 demolition of Ghana. Baumgartner scores twice, and the weight of Austria's quality proves too much for the tournament debutants."
+        "scenario": "Austria 1-1 Jordan",
+        "probability": 10,
+        "reasoning": "A cagey affair where Jordan's organization frustrates Austria's pressing game, with both teams settling for a point that could complicate Group J qualification scenarios."
       }
     ]
   },
-
-  "closingLine": "Austria have not advanced past the tournament group stage since 1982. But with Alaba back, Rangnick's system humming, and the confidence of a 5-1 demolition still fresh, this feels like a different era. Jordan have never played at a tournament before — and they will discover just how fierce Austria's ambitions burn."
+  "closingLine": "When the final whistle sounds, one nation will step closer to tournament immortality while the other learns that dreams, even when they fall short, can still illuminate the beautiful game's infinite possibilities."
 }

@@ -1,0 +1,158 @@
+{
+  "teamCode": "COL",
+  "teamName": "Colombia",
+  "scoutedAt": "2026-05-16T00:00:00Z",
+  "injuryUpdates": [
+    {
+      "playerName": "Jhon Duran",
+      "teamCode": "COL",
+      "country": "Colombia",
+      "club": "Al-Nassr (on loan return from Zenit Saint Petersburg)",
+      "position": "Forward",
+      "injuryType": "No current injury",
+      "injuryDate": null,
+      "expectedReturn": "N/A - included in preliminary squad",
+      "availabilityStatus": "fit",
+      "lastMatchPlayed": {
+        "date": "2026-05-03",
+        "opponent": "Zenit Saint Petersburg (Russian Premier League)",
+        "notes": "Last appearance for Zenit before agreeing early contract termination for personal reasons"
+      },
+      "source": "Infobae, Semana, El Espectador, beIN Sports, ColombiaOne - May 14, 2026",
+      "notes": "Major reversal of his April status. Duran agreed an early Zenit exit citing personal/family circumstances, will return to parent club Al-Nassr after the tournament, and is back in coach Lorenzo's project. Named in the 55-man preliminary squad on May 14, 2026, ending the federation rift. Scored only 2 goals in 9 Zenit matches but is now available and reporting to camp.",
+      "action": "update"
+    },
+    {
+      "playerName": "Kevin Mier",
+      "teamCode": "COL",
+      "country": "Colombia",
+      "club": "Cruz Azul",
+      "position": "Goalkeeper",
+      "injuryType": "Returning from tibia fracture (Nov 2025) plus a recent ankle knock",
+      "injuryDate": "2025-11-15",
+      "expectedReturn": "In contention; included in preliminary squad",
+      "availabilityStatus": "minor_concern",
+      "lastMatchPlayed": {
+        "date": "2026-04-12",
+        "opponent": "Pumas UNAM (Liga MX)",
+        "notes": "Subbed off in 51st minute with an ankle injury in a 3-2 loss; rotation question mark"
+      },
+      "source": "Tribuna, Transfermarkt, beIN Sports - May 14, 2026",
+      "notes": "Goalkeeper situation flagged in the May 14 squad announcement. Mier returned from a November tibia fracture in late March but suffered a fresh ankle issue and made recent errors with Cruz Azul. Selected in the 55-man list despite the form/fitness concerns; goalkeeper rotation between Mier, Ospina and Vargas is live.",
+      "action": "add"
+    },
+    {
+      "playerName": "James Rodriguez",
+      "teamCode": "COL",
+      "country": "Colombia",
+      "club": "Minnesota United",
+      "position": "Midfielder",
+      "injuryType": "Workload management and recovery from late-March dehydration hospitalization",
+      "injuryDate": null,
+      "expectedReturn": "Available; individualized fitness program in place",
+      "availabilityStatus": "minor_concern",
+      "lastMatchPlayed": {
+        "date": "2026-05-10",
+        "opponent": "Minnesota United MLS fixture",
+        "notes": "Limited MLS minutes - under 200 minutes across six matches this season"
+      },
+      "source": "beIN Sports, World Soccer Talk, Minnesota United - May 13-14, 2026",
+      "notes": "Captain confirmed in preliminary squad. Minnesota United released him on May 13 to join national-team prep. Lorenzo said James is on a 'specific plan with the fitness staff' working separately from the group because he needs rhythm through minutes. Recovered fully from the early-April dehydration hospitalization but match-fitness remains a flag.",
+      "action": "update"
+    },
+    {
+      "playerName": "Luis Diaz",
+      "teamCode": "COL",
+      "country": "Colombia",
+      "club": "Bayern Munich",
+      "position": "Forward",
+      "injuryType": "No current injury",
+      "injuryDate": null,
+      "expectedReturn": "N/A - currently fit",
+      "availabilityStatus": "fit",
+      "lastMatchPlayed": {
+        "date": "2026-05-06",
+        "opponent": "Paris Saint-Germain (UEFA Champions League semifinal)",
+        "notes": "Played in the semifinal exit; finishing Bundesliga season with rest management approved by Bayern staff"
+      },
+      "source": "Infobae, Bavarian Football Works, Bundesliga - May 11, 2026",
+      "notes": "Verified fit. Bayern coach Kompany and SD Christoph Freund confirmed rest days before the DFB Pokal final, then he joins Colombia camp in the United States. Season totals: 26 goals, 17 assists in 49 matches. No injury concerns despite a brief knee scare in earlier Bayern action.",
+      "action": "no_change"
+    }
+  ],
+  "recentFormUpdates": [],
+  "tacticalUpdates": [],
+  "squadChanges": [
+    {
+      "playerName": "Jhon Duran",
+      "changeType": "new_call_up",
+      "details": "Restored to the squad after April's federation-relationship doubt. Named in the 55-man preliminary list on May 14 after agreeing an early Zenit exit, reuniting with Lorenzo's project for the tournament.",
+      "source": "beIN Sports, ColombiaOne, El Espectador - May 14, 2026",
+      "effectiveDate": "2026-05-14"
+    },
+    {
+      "playerName": "Sebastian Villa",
+      "changeType": "new_call_up",
+      "details": "Surprise inclusion in the 55-man preliminary squad despite not having featured recently for the senior side; pick sparked the loudest social-media debate of the announcement.",
+      "source": "ColombiaOne, World Soccer Talk - May 14, 2026",
+      "effectiveDate": "2026-05-14"
+    },
+    {
+      "playerName": "Yaser Asprilla",
+      "changeType": "new_call_up",
+      "details": "Young attacker developed abroad earned a spot in the preliminary 55-man list as part of Lorenzo's mix of core veterans plus emerging talent.",
+      "source": "ColombiaOne - May 14, 2026",
+      "effectiveDate": "2026-05-14"
+    },
+    {
+      "playerName": "Roger Martinez",
+      "changeType": "dropped",
+      "details": "Most-discussed omission from the 55-man preliminary squad. The Al-Taawoun striker (23 goals in 30 matches in Saudi Arabia this season) publicly blasted Lorenzo on social media, saying the coach doesn't know football. He will not be at the tournament.",
+      "source": "Mixvale, RPP, TUDN, BioBioChile - May 14, 2026",
+      "effectiveDate": "2026-05-14"
+    }
+  ],
+  "bettingOddsUpdate": {
+    "tournamentWinner": "+4000",
+    "groupStageExit": null,
+    "toQualifyFromGroup": "+250 to win Group K",
+    "source": "BetMGM (Group K winner, dated April 30, 2026); Squawka aggregator and DefiRate (tournament winner, dated May 13, 2026)",
+    "notes": "Colombia priced as clear second favorite in Group K behind Portugal (-250 to -200 across books). Outright tournament price has shortened from an opening +5000 to +4000, placing them in the co-11th tier of contenders. No widely posted explicit group-stage-exit market was found from the consulted aggregators."
+  },
+  "coachUpdate": {
+    "changed": false,
+    "currentCoach": "Néstor Lorenzo",
+    "newCoach": null,
+    "source": null,
+    "notes": null
+  },
+  "summary": "The headline since April 16 is the rehabilitation of Jhon Duran's status: he agreed an early Zenit exit citing personal reasons and was named in the 55-man preliminary squad on May 14, reversing the federation rift that had him as a major doubt last month. James Rodriguez was also confirmed with an individualized fitness plan from Lorenzo after his late-March dehydration hospitalization, while goalkeeper Kevin Mier (returning from a November tibia fracture plus a fresh ankle knock) and the surprise call-up of Sebastian Villa add depth-chart noise; striker Roger Martinez was the loudest omission and publicly attacked Lorenzo. No senior fixtures were played in the window - the next test is Costa Rica on May 29 - and Colombia sit around +4000 to win the tournament and +250 to win Group K.",
+  "sourceUrls": [
+    "https://colombiaone.com/2026/05/14/colombia-initial-man-squad-2026-world-cup/",
+    "https://www.beinsports.com/en-us/soccer/fifa-world-cup-2026/articles/colombia-s-preliminary-squad-for-the-2026-fifa-world-cup-lorenzo-reveals-special-plan-for-james-rodr%C3%ADguez-2026-05-14",
+    "https://worldsoccertalk.com/world-cup/james-rodriguez-and-luis-diaz-headline-colombias-55-men-preliminary-squad-for-the-2026-world-cup/",
+    "https://khelnow.com/football/world-football-colombia-preliminary-squad-fifa-world-cup-202605",
+    "https://www.infobae.com/colombia/deportes/2026/05/14/jhon-duran-acordo-licencia-con-el-zenit-por-circunstancias-personales-y-se-perdera-la-definicion-de-la-liga-de-rusia/",
+    "https://www.semana.com/deportes/articulo/jhon-duran-rompe-con-zenit-cambio-de-club-se-viene-tras-salir-en-la-prelista-de-colombia/202625/",
+    "https://www.elespectador.com/deportes/futbol-mundial/jhon-jader-duran-dejara-al-zenit-por-un-tema-de-familia-que-paso-seleccion-colombia/",
+    "https://www.noticiascaracol.com/golcaracol/seleccion-colombia/jhon-duran-quiere-mundial-2026-con-seleccion-colombia-esta-a-disposicion-tras-salir-del-zenit-rg10",
+    "https://www.mixvale.com.br/2026/05/14/roger-martinez-attacks-nestor-lorenzo-after-being-left-out-of-colombias-pre-list-for-the-world-cup-en/",
+    "https://rpp.pe/futbol/futbol-mundial/colombia-lista-al-mundial-2026-roger-martinez-exploto-contra-tecnico-nestor-lorenzo-por-no-ser-convocado-noticia-1688486",
+    "https://www.tudn.com/mundial-2026/equipos/seleccion-colombia/roger-martinez-explota-tras-quedar-fuera-del-mundial-2026-colombia",
+    "https://worldsoccertalk.com/amp/news/minnesota-united-issue-positive-james-rodriguez-health-update-after-colombia-friendlies-ahead-of-world-cup/",
+    "https://www.infobae.com/colombia/deportes/2026/05/11/luis-diaz-tendra-varios-dias-de-descanso-en-bayern-munich-antes-de-la-final-de-copa-de-alemania-y-la-convocatoria-de-la-seleccion-colombia/",
+    "https://www.infobae.com/colombia/deportes/2026/05/06/que-sigue-para-luis-diaz-con-el-bayern-munich-asi-sera-el-cierre-de-temporada-para-el-colombiano/",
+    "https://tribuna.com/en/persons/kevin-mier/",
+    "https://www.transfermarkt.us/kevin-mier/profil/spieler/491542",
+    "https://www.espn.com/soccer/team/results/_/id/208/colombia",
+    "https://www.espn.com/soccer/match/_/gameId/401866134/costa-rica-colombia",
+    "https://sports.betmgm.com/en/blog/world-cup/group-k-world-cup-2026-odds-predictions-bm16/",
+    "https://www.squawka.com/us/outright-markets/colombia-world-cup-2026-odds/",
+    "https://www.thelines.com/uk/odds/world-cup/group-k/",
+    "https://bookies.com/uk/news/group-k-world-cup-odds-2026",
+    "https://defirate.com/prediction-markets/world-cup-odds/",
+    "https://www.rotowire.com/soccer/article/2026-world-cup-group-k-preview-portugal-dr-congo-uzbekistan-and-colombia-lineups-odds-predictions-and-tactics-113000"
+  ],
+  "confidence": "high",
+  "dataFreshness": "2026-05-14"
+}

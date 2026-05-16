@@ -2,7 +2,7 @@
   "metadata": {
     "title": "World Cup 2026 Team Tactical Profiles",
     "description": "Tactical analysis profiles for all 48 qualified teams",
-    "last_updated": "2026-04-16",
+    "last_updated": "2026-05-16",
     "sources": [
       "ESPN",
       "The Athletic",
@@ -308,23 +308,19 @@
       "possessionStyle": "Patient build-up from the back with composure under pressure, high defensive line, Ancelotti's pragmatic approach blended with Brazilian attacking flair",
       "pressingIntensity": "High",
       "attackingApproach": {
-        "style": "Width from Vinicius Jr and Estevao stretching defenses, interior creative zones exploited by the number 10",
+        "style": "Width from Vinicius Jr on the left and Raphinha on the right, with Savinho the leading candidate to fill the right-wing rotation slot vacated by the injured Rodrygo and Estevao. Matheus Cunha emerging as the No. 10",
         "strengths": [
           "Individual brilliance on the wings",
           "Pace in transition",
           "Technical quality across the front line",
           "Depth of attacking talent"
         ],
-        "primaryThreat": "Vinicius Jr cutting inside from the left wing and Rodrygo's intelligent movement",
+        "primaryThreat": "Vinicius Jr cutting inside from the left wing; Raphinha's directness from the right; with Joao Pedro or Endrick competing to lead the line",
         "setPieceRating": "Above Average"
       },
       "defensiveApproach": {
         "style": "High defensive line with aggressive recovery; Ancelotti demands composure from center-backs under pressure",
-        "strengths": [
-          "Marquinhos' leadership and positioning",
-          "Casemiro's defensive midfield screening",
-          "Bruno Guimaraes' press resistance"
-        ],
+        "strengths": "Marquinhos' leadership and positioning; Casemiro's defensive midfield screening; Bruno Guimaraes' press resistance — but Militao's absence forces Gabriel Magalhaes (Arsenal) into the first-choice centre-back partnership",
         "weakness": "Can be exposed on transition if the high line is bypassed; fullback areas vulnerable when attacking"
       },
       "keyTacticalFeatures": [
@@ -353,7 +349,7 @@
       "teamCode": "CAN",
       "teamName": "Canada",
       "coach": "Jesse Marsch",
-      "preferredFormation": "4-3-3",
+      "preferredFormation": "4-4-2",
       "alternateFormations": [
         "3-4-3",
         "4-2-3-1"
@@ -420,13 +416,8 @@
       "pressingIntensity": "Medium-High",
       "attackingApproach": {
         "style": "Pace-driven attack through Pépé and wide forwards cutting inside; Haller as the focal striker with Kessié arriving from deep",
-        "strengths": [
-          "Sébastien Haller's aerial presence and finishing",
-          "Nicolas Pépé's direct dribbling and goal threat",
-          "Kessié's box-to-box power and late runs",
-          "AFCON-winning confidence and momentum"
-        ],
-        "primaryThreat": "Haller's hold-up play creating space for runners, with Pépé cutting inside from the right",
+        "strengths": "Amad Diallo's speed and creativity; Bonny's Serie A form and movement at Inter; Adingra's directness from the wing for Monaco; Pepe still a threat off the bench; Kessie's box-to-box power and late runs",
+        "primaryThreat": "Pace-driven attack led by Amad Diallo and Simon Adingra in wide areas, with a rotating central focal point between Bonny, Wahi, Guessand and Pepe rather than Haller's hold-up play",
         "setPieceRating": "Above Average"
       },
       "defensiveApproach": {
@@ -466,15 +457,15 @@
       "teamCode": "COD",
       "teamName": "DR Congo",
       "coach": "Sébastien Desabre",
-      "preferredFormation": "4-3-3",
+      "preferredFormation": "4-1-4-1",
       "alternateFormations": [
         "4-2-3-1",
         "3-5-2"
       ],
-      "playingStyle": "Athletic and direct with explosive pace on the flanks; Desabre brings French-influenced tactical structure to a squad rich in individual talent from European leagues",
+      "playingStyle": "Compact defensive block prioritising organisation and disciplined transitions; Desabre is leaning into counter-attacking pace through Wissa and Mayele rather than dominating possession, conceding the ball more readily against stronger opposition",
       "tempoRating": "Medium-High",
       "possessionStyle": "Progressive and vertical build-up through midfield; designed to get the ball quickly to wide attackers with Bakambu and Wissa providing goal threat",
-      "pressingIntensity": "Medium",
+      "pressingIntensity": "Low-Medium",
       "attackingApproach": {
         "style": "Pace-driven wing play with Bakambu and Wissa providing goal threat; Kakuta creating from midfield",
         "strengths": [
@@ -579,12 +570,12 @@
       "teamCode": "CPV",
       "teamName": "Cabo Verde",
       "coach": "Bubista",
-      "preferredFormation": "4-4-2",
+      "preferredFormation": "4-2-3-1",
       "alternateFormations": [
         "4-5-1",
         "5-3-2"
       ],
-      "playingStyle": "Pragmatic and defensively disciplined island nation football; emphasis on collective organization, set pieces, and counter-attacking",
+      "playingStyle": "Compact 4-2-3-1 mid/low block out of possession; traps opponents in central areas, then attacks the flanks in direct transition with pace from Livramento, Ryan Mendes and Sidny Cabral",
       "tempoRating": "Medium-Low",
       "possessionStyle": "Direct and functional; limited possession focus with emphasis on quick transitions and set pieces",
       "pressingIntensity": "Low-Medium",
@@ -690,13 +681,13 @@
     "CUR": {
       "teamCode": "CUR",
       "teamName": "Curaçao",
-      "coach": "Fred Rutten",
+      "coach": "Dick Advocaat",
       "preferredFormation": "4-3-3",
       "alternateFormations": [
         "4-5-1",
         "5-3-2"
       ],
-      "playingStyle": "Defensively organized with Dutch tactical influence under Rutten; relies on counter-attacking and set pieces. Rutten replaced Advocaat who resigned in Feb 2026 for family reasons",
+      "playingStyle": "Defensively organized under returning Dutch coach Dick Advocaat (the man who qualified them); relies on counter-attacking and set pieces. Advocaat returned May 13, 2026 after Rutten resigned May 12 following two heavy March friendly losses and reported friction with players and the team's main sponsor",
       "tempoRating": "Medium-Low",
       "possessionStyle": "Patient and conservative; Rutten's Dutch coaching brings structure but limited individual quality means possession is often yielded",
       "pressingIntensity": "Low-Medium",
@@ -1138,13 +1129,13 @@
     "GHA": {
       "teamCode": "GHA",
       "teamName": "Ghana",
-      "coach": "Otto Addo",
+      "coach": "Carlos Queiroz",
       "preferredFormation": "4-2-3-1",
       "alternateFormations": [
         "4-3-3",
         "3-5-2"
       ],
-      "playingStyle": "Athletic and direct with explosive pace across the front line; European tactical structure from Addo combined with traditional Ghanaian flair",
+      "playingStyle": "Rigid, discipline-first, result-oriented approach under Queiroz; cultural shift away from flair-heavy identity toward pragmatic, organized play with emphasis on defensive structure and sacrifice",
       "tempoRating": "Medium-High",
       "possessionStyle": "Direct and progressive; quick transitions from defense to attack through Kudus in wide areas",
       "pressingIntensity": "Medium-High",
@@ -1253,7 +1244,7 @@
       "teamCode": "SWE",
       "teamName": "Sweden",
       "coach": "Graham Potter",
-      "preferredFormation": "4-4-2",
+      "preferredFormation": "3-4-1-2",
       "alternateFormations": [
         "4-2-3-1",
         "4-3-3"
@@ -1495,7 +1486,7 @@
           "Set piece organization and aerial threat",
           "Counter-attacking efficiency"
         ],
-        "primaryThreat": "Al-Tamari's creativity from the number 10 position combined with quick counter-attacks",
+        "primaryThreat": "Al-Tamari's creativity from the number 10 position; counter-attacks now lack their primary finisher with Yazan Al-Naimat ruled out for the tournament",
         "setPieceRating": "Above Average"
       },
       "defensiveApproach": {
@@ -1646,13 +1637,13 @@
     "KSA": {
       "teamCode": "KSA",
       "teamName": "Saudi Arabia",
-      "coach": "Herve Renard",
+      "coach": "Georgios Donis",
       "preferredFormation": "4-3-3",
       "alternateFormations": [
         "4-2-3-1",
         "4-4-2"
       ],
-      "playingStyle": "Pragmatic and defensively organized system under Renard (reappointed after Mancini's departure in Oct 2024); emphasis on discipline, quick transitions, and maximizing collective effort over individual quality",
+      "playingStyle": "Under new coach Georgios Donis: heavy emphasis on defensive structure and being hard to break down, comfortable surrendering possession and hitting on the break. With limited time before the tournament, focus is on cohesion and personnel selection rather than a wholesale tactical reset.",
       "tempoRating": "Medium",
       "possessionStyle": "Renard favors a more pragmatic approach than Mancini; build-up through Kanno and Al-Faraj in midfield with Saud Abdulhamid providing European-level quality at right-back",
       "pressingIntensity": "Medium",
@@ -1703,7 +1694,7 @@
     "MAR": {
       "teamCode": "MAR",
       "teamName": "Morocco",
-      "coach": "Walid Regragui",
+      "coach": "Mohamed Ouahbi",
       "preferredFormation": "4-3-3",
       "alternateFormations": [
         "4-2-3-1",
@@ -1983,12 +1974,12 @@
       "teamCode": "PAN",
       "teamName": "Panama",
       "coach": "Thomas Christiansen",
-      "preferredFormation": "4-3-3",
+      "preferredFormation": "4-2-3-1",
       "alternateFormations": [
         "4-2-3-1",
         "5-3-2"
       ],
-      "playingStyle": "Touch soccer with Barcelona-influenced possession play combined with CONCACAF physicality and tactical discipline",
+      "playingStyle": "Compact defensive block with rapid vertical transitions; Christiansen has moved towards a back four for the tournament after the back-three experiment was exposed by quick wide runners in the first South Africa friendly",
       "tempoRating": "Medium",
       "possessionStyle": "Short passing combinations through midfield; Christiansen's Barcelona background emphasizes keeping the ball on the ground",
       "pressingIntensity": "Medium",
@@ -2658,12 +2649,12 @@
       "teamCode": "UZB",
       "teamName": "Uzbekistan",
       "coach": "Fabio Cannavaro",
-      "preferredFormation": "4-2-3-1",
+      "preferredFormation": "3-4-3 / 5-3-2",
       "alternateFormations": [
         "4-3-3",
         "4-4-2"
       ],
-      "playingStyle": "Disciplined and structured with Italian tactical influence under Cannavaro; direct attacking play through Shomurodov",
+      "playingStyle": "Low-block, direct counterattacking from a 3-4-3 in possession that drops into a 5-3-2 out of possession; emphasis on winning duels and second balls, long balls to Shomurodov, and crosses into the box; heavy reliance on set pieces",
       "tempoRating": "Medium",
       "possessionStyle": "Structured and controlled; emphasis on disciplined positional play and efficient ball progression",
       "pressingIntensity": "Medium",

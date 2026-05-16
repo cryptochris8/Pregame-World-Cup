@@ -1,0 +1,103 @@
+{
+  "teamCode": "QAT",
+  "teamName": "Qatar",
+  "scoutedAt": "2026-05-16T00:00:00Z",
+  "injuryUpdates": [
+    {
+      "playerName": "Almoez Ali",
+      "teamCode": "QAT",
+      "country": "Qatar",
+      "club": "Al-Duhail",
+      "position": "Forward",
+      "injuryType": "Recently recovered (knock - unspecified)",
+      "injuryDate": null,
+      "expectedReturn": "N/A - fit-again and named in preliminary squad",
+      "availabilityStatus": "fit",
+      "lastMatchPlayed": {
+        "date": "2026-04-30",
+        "opponent": "Al-Duhail (Qatar Stars League)",
+        "notes": "Returned to club action late in the QSL season"
+      },
+      "source": "The Peninsula Qatar (2026-05-13); Foot Africa (2026-05-12)",
+      "notes": "Described as 'fit-again' on preliminary squad release. All-time top scorer for Qatar; top scorer in AFC qualifying (12 goals). Available for the tournament.",
+      "action": "update"
+    }
+  ],
+  "recentFormUpdates": [],
+  "tacticalUpdates": [],
+  "squadChanges": [
+    {
+      "playerName": "Sebastian Soria",
+      "changeType": "new_call_up",
+      "details": "Surprise inclusion in 34-man preliminary squad at age 42; veteran forward with 124 caps and 39 international goals recalled for tournament preparation.",
+      "source": "The Peninsula Qatar / Gulf Times (2026-05-13)",
+      "effectiveDate": "2026-05-12"
+    },
+    {
+      "playerName": "Niall Mason",
+      "changeType": "new_call_up",
+      "details": "Former Aston Villa defender included in the 34-man preliminary squad as Lopetegui broadens defensive options.",
+      "source": "The Peninsula Qatar (2026-05-13)",
+      "effectiveDate": "2026-05-12"
+    },
+    {
+      "playerName": "Tahsin Mohammed Jamshid",
+      "changeType": "new_call_up",
+      "details": "19-year-old youngest squad member included in preliminary 34-man list, signalling generational refresh alongside the veteran core.",
+      "source": "The Peninsula Qatar (2026-05-13)",
+      "effectiveDate": "2026-05-12"
+    },
+    {
+      "playerName": "Ayoub Al Oui",
+      "changeType": "new_call_up",
+      "details": "QFA Best Under-23 Player named in 34-man preliminary squad.",
+      "source": "The Peninsula Qatar (2026-05-13)",
+      "effectiveDate": "2026-05-12"
+    },
+    {
+      "playerName": "Jasim Al-Hail",
+      "changeType": "dropped",
+      "details": "Al Arabi goalkeeper omitted from preliminary 34-man list despite being in the March training camp.",
+      "source": "The Peninsula Qatar (2026-05-13)",
+      "effectiveDate": "2026-05-12"
+    },
+    {
+      "playerName": "Khalid Ali",
+      "changeType": "dropped",
+      "details": "Al Rayyan forward omitted from preliminary 34-man list despite being in the March training camp.",
+      "source": "The Peninsula Qatar (2026-05-13)",
+      "effectiveDate": "2026-05-12"
+    }
+  ],
+  "bettingOddsUpdate": {
+    "tournamentWinner": "1000/1",
+    "groupStageExit": "1/2",
+    "toQualifyFromGroup": "25/1 (to win Group B); approx 2/1 to reach the Last 32 in expanded format",
+    "source": "Freebets.com aggregator citing Bet365, Betway, Coral, Ladbrokes, Betfred (2026-04-29)",
+    "notes": "Qatar are rated longest-priced side in Group B. Group-stage exit is the bookmakers' most likely outcome at 1/2; Switzerland is heavy group favourite. Expanded 48-team knockout keeps qualification mathematically in play."
+  },
+  "coachUpdate": {
+    "changed": false,
+    "currentCoach": "Julen Lopetegui",
+    "newCoach": null,
+    "source": null,
+    "notes": null
+  },
+  "summary": "The big update is Qatar's 34-man preliminary squad announced 12 May 2026, which features the expected core (Afif, Al-Haydos, Almoez Ali, Pedro Miguel) plus surprise 42-year-old recall Sebastian Soria, former Aston Villa defender Niall Mason, and youth pair Tahsin Jamshid (19) and Ayoub Al Oui. Almoez Ali is flagged as 'fit-again' after a minor knock, so the star front line is intact. No matches have been played in the 16 Apr - 16 May window (March friendlies vs Serbia and Argentina were cancelled due to regional airspace disruption); friendlies vs Republic of Ireland (28 May, Dublin) and El Salvador (6 Jun, Los Angeles) are next on the calendar before the squad is trimmed to 23-26 by the 1 June deadline.",
+  "sourceUrls": [
+    "https://www.gulf-times.com/article/725367/sport/lopetegui-names-qatars-34-player-preliminary-world-cup-squad",
+    "http://thepeninsulaqatar.com/article/13/05/2026/qatar-begin-world-cup-countdown-with-34-player-preliminary-squad",
+    "http://thepeninsulaqatar.com/article/11/05/2026/lopetegui-confident-qatar-will-be-ready-for-world-cup",
+    "https://foot-africa.com/en/news/2026-world-cup-qatar-announces-its-squad-1202351/",
+    "https://foot-africa.com/en/news/qatar-julen-lopeteguis-preliminary-squad-for-the-world-cup-1202096/",
+    "https://www.fourfourtwo.com/team/qatar-world-cup-2026-squad",
+    "https://www.olympics.com/en/news/fifa-world-cup-2026-qatar-all-players-full-squad-list-key-stats-and-schedule",
+    "https://www.sofascore.com/football/team/qatar/4792",
+    "https://www.freebets.com/football/world-cup/odds/qatar/",
+    "https://www.thelines.com/odds/world-cup/group-b/",
+    "https://thepeninsulaqatar.com/article/15/03/2026/qatar-football-festival-2026-cancelled-amid-travel-disruption-airspace-closure",
+    "https://www.qfa.qa/en/news/qatar-national-team-concludes-training-camp"
+  ],
+  "confidence": "high",
+  "dataFreshness": "2026-05-13"
+}

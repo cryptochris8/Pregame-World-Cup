@@ -1,0 +1,130 @@
+{
+  "teamCode": "IRN",
+  "teamName": "Iran",
+  "scoutedAt": "2026-05-16T00:00:00Z",
+  "injuryUpdates": [
+    {
+      "playerName": "Mehdi Taremi",
+      "teamCode": "IRN",
+      "country": "Iran",
+      "club": "Olympiacos",
+      "position": "Forward",
+      "injuryType": "No current injury",
+      "injuryDate": null,
+      "expectedReturn": "N/A - currently fit",
+      "availabilityStatus": "fit",
+      "lastMatchPlayed": {
+        "date": "2026-05-10",
+        "opponent": "Olympiacos (Super League Greece)",
+        "notes": "Available for selection; finished qualifying with 10 goals in 15 games"
+      },
+      "source": "Goal.com, FourFourTwo, Yahoo Sports - May 2026",
+      "notes": "Iran's talisman now at Olympiacos (moved from Inter Milan during 2025-26 season per FFW/Goal/Yahoo reporting). No injury concerns ahead of the tournament; still the focal point of Ghalenoei's 4-2-3-1.",
+      "action": "update"
+    },
+    {
+      "playerName": "Alireza Jahanbakhsh",
+      "teamCode": "IRN",
+      "country": "Iran",
+      "club": "FCV Dender EH",
+      "position": "Forward",
+      "injuryType": "No current injury",
+      "injuryDate": null,
+      "expectedReturn": "N/A - currently fit",
+      "availabilityStatus": "fit",
+      "lastMatchPlayed": {
+        "date": "2026-05-09",
+        "opponent": "FCV Dender (Belgian Pro League)",
+        "notes": "Match minutes for club; captain expected to start on the right of the front three"
+      },
+      "source": "Yahoo Sports squad list, Goal.com - May 2026",
+      "notes": "Now listed at FCV Dender EH (Belgium), not Feyenoord. Captain and key wide option; no injury issues reported.",
+      "action": "update"
+    },
+    {
+      "playerName": "Saeid Ezatolahi",
+      "teamCode": "IRN",
+      "country": "Iran",
+      "club": "Shabab Al Ahli",
+      "position": "Midfielder",
+      "injuryType": "Foot injury (sustained in UAE Pro League vs Al Ain, early March 2026)",
+      "injuryDate": "2026-03-05",
+      "expectedReturn": "Fit for tournament - returned to club action in April",
+      "availabilityStatus": "fit",
+      "lastMatchPlayed": {
+        "date": "2026-04-04",
+        "opponent": "Al Jazira (UAE Pro League)",
+        "notes": "Red card for stamp on Fekir; resumed full match action post-injury"
+      },
+      "source": "Tehran Times, The National - April 2026",
+      "notes": "Missed March friendlies vs Nigeria and Costa Rica with a foot injury sustained against Al Ain. Returned to club action in April (red carded vs Al Jazira on April 4). Yahoo squad report (May 2026) confirms he is 'expected to be fit for the summer'. Likely partner for Ghoddos in central midfield.",
+      "action": "add"
+    }
+  ],
+  "recentFormUpdates": [],
+  "tacticalUpdates": [
+    {
+      "field": "assistantCoachingStaff",
+      "oldValue": "Antonio Gagliardi (Italian tactical assistant, appointed November 2025)",
+      "newValue": "Vacant - Gagliardi unilaterally terminated contract mid-May 2026 to pursue Serie B head-coaching role",
+      "source": "Mehr News, Team Melli, PersianFootball.com - May 13, 2026",
+      "confidence": "high"
+    }
+  ],
+  "squadChanges": [
+    {
+      "playerName": "Dennis Eckert",
+      "changeType": "new_call_up",
+      "details": "Iranian-ancestry forward at Standard Liege; first capped in March 2026 friendlies as direct replacement for the expelled Sardar Azmoun, and retained in mid-May 2026 squad reporting as a probable final-26 selection.",
+      "source": "FourFourTwo, Yahoo Sports, Goal.com - May 2026",
+      "effectiveDate": "2026-03-15"
+    },
+    {
+      "playerName": "Amir Razzaghinia",
+      "changeType": "new_call_up",
+      "details": "20-year-old defensive midfielder at Esteghlal earned second cap in March 2026 friendly vs Costa Rica; Sports Illustrated preview (May 2026) tips him for increased tournament minutes as Ghalenoei integrates youth into his oldest-ever (avg age 30.9) squad.",
+      "source": "Sports Illustrated - May 2026",
+      "effectiveDate": "2026-03-30"
+    }
+  ],
+  "bettingOddsUpdate": {
+    "tournamentWinner": "+25000",
+    "groupStageExit": null,
+    "toQualifyFromGroup": "+600",
+    "source": "BetMGM / Squawka aggregator - May 2026",
+    "notes": "Iran priced around +25000 to +50000 to win the tournament outright (BetMGM at the longer end). To advance from Group G: Egypt +450, Iran +600, New Zealand +2500 per Squawka — Iran rated second-likeliest qualifier behind Belgium."
+  },
+  "coachUpdate": {
+    "changed": false,
+    "currentCoach": "Amir Ghalenoei",
+    "newCoach": null,
+    "source": null,
+    "notes": "Head coach unchanged. However, Italian assistant Antonio Gagliardi (appointed Nov 2025 as a tactical lieutenant) unilaterally walked out mid-May 2026 to chase a Serie B head-coaching opening, leaving a hole in the staff weeks before kickoff."
+  },
+  "summary": "Iran played no new internationals between 2026-04-16 and today; the next match is a 2026-05-29 friendly vs Gambia in Antalya. The most material development since the data refresh is the abrupt mid-May departure of Italian tactical assistant Antonio Gagliardi, plus housekeeping updates to tracked players (Taremi now at Olympiacos, Jahanbakhsh at FCV Dender) and confirmation that midfielder Saeid Ezatolahi has recovered from his March foot injury and is expected to be fit for the tournament.",
+  "sourceUrls": [
+    "https://www.fourfourtwo.com/team/iran-world-cup-2026-squad",
+    "https://ca.sports.yahoo.com/news/iran-squad-world-cup-2026-080714522.html",
+    "https://www.goal.com/en/lists/iran-squad-world-cup-2026/blt67c2d5d938254c59",
+    "https://www.persianfootball.com/news/2026/05/13/iran-squad-world-cup-2026-which-players-will-make-it-to-the-2026-world-cup/",
+    "https://www.si.com/soccer/iran-2026-world-cup-preview",
+    "https://www.aljazeera.com/sports/2026/5/14/irans-us-bound-world-cup-squad-given-public-sendoff-in-tehran",
+    "https://www.aljazeera.com/sports/2026/5/13/amid-us-israel-war-on-iran-arizona-awaits-iranian-team-before-world-cup",
+    "https://wanaen.com/tehran-to-host-grand-farewell-ceremony-for-iran-national-team-ahead-of-2026-world-cup/",
+    "https://wanaen.com/irans-preliminary-world-cup-squad-list-includes-100-players/",
+    "https://www.teammelli.com/iran-to-face-gambia-in-may-2026-friendly-in-antalya/",
+    "https://www.teammelli.com/italian-coach-antonio-gagliardi-abruptly-terminates-iran-contract-returns-to-europe/",
+    "https://www.persianfootball.com/news/2026/05/07/iran-to-face-the-gambia-in-a-friendly-in-turkey/",
+    "https://www.persianfootball.com/news/2026/05/02/kanaani-scores-winner-in-team-melli-camp-friendly-video/",
+    "https://en.mehrnews.com/news/244479/Antonio-Gagliardi-parts-company-with-Iran-natl-football-team",
+    "https://www.tehrantimes.com/news/524877/Saeid-Ezatolahi-misses-Iran-s-friendlies",
+    "https://www.thenationalnews.com/sport/football/2026/04/05/iran-stars-sardar-azmoun-and-saeed-ezatolahi-suffer-mixed-fortunes-as-uae-title-race-heats-up/",
+    "https://www.turkiyetoday.com/sports/iran-national-football-team-to-train-in-turkiyes-antalya-ahead-of-world-cup-3220024",
+    "https://www.voicegambia.com/2026/05/08/gambia-to-face-iran-in-antalya-friendly-as-gff-plans-return-of-home-internationals/",
+    "https://sports.betmgm.com/en/blog/world-cup/iran-world-cup-odds-chances-to-win-world-cup-bm25/",
+    "https://www.squawka.com/us/outright-markets/iran-world-cup-2026-odds/",
+    "https://www.beinsports.com/en-us/soccer/fifa-world-cup-2026/articles/world-cup-2026-when-are-final-squad-lists-submitted-2026-04-02"
+  ],
+  "confidence": "medium",
+  "dataFreshness": "2026-05-14"
+}

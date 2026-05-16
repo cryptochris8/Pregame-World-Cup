@@ -1,0 +1,132 @@
+{
+  "teamCode": "ECU",
+  "teamName": "Ecuador",
+  "scoutedAt": "2026-05-16T00:00:00Z",
+  "injuryUpdates": [
+    {
+      "playerName": "Willian Pacho",
+      "teamCode": "ECU",
+      "country": "Ecuador",
+      "club": "Paris Saint-Germain",
+      "position": "Defender",
+      "injuryType": "Right thigh discomfort",
+      "injuryDate": "2026-05-09",
+      "expectedReturn": "Targeting Champions League final on 2026-05-30; likely to miss Ecuador's 2026-05-30 friendly vs Saudi Arabia",
+      "availabilityStatus": "doubt",
+      "lastMatchPlayed": {
+        "date": "2026-05-03",
+        "opponent": "Strasbourg (Ligue 1)",
+        "notes": "Last appearance before PSG ruled him out of matches vs Brest (May 10) and Lens (May 13) as a precaution"
+      },
+      "source": "Washington Post / AP - May 9 2026; RotoWire - May 12 2026; Primicias.ec - May 2026",
+      "notes": "Ruled out of Ligue 1 fixtures vs Brest and Lens with right thigh discomfort; PSG describe it as minor and precautionary ahead of the Champions League final vs Arsenal on 2026-05-30. Pacho is half of Ecuador's first-choice CB pair and will be unavailable for the Saudi Arabia warm-up due to UCL final clash. Fitness for 2026 tournament opener still expected.",
+      "action": "add"
+    },
+    {
+      "playerName": "Piero Hincapie",
+      "teamCode": "ECU",
+      "country": "Ecuador",
+      "club": "Arsenal (on loan from Bayer Leverkusen; permanent move agreed for summer 2026)",
+      "position": "Defender",
+      "injuryType": "No current injury",
+      "injuryDate": null,
+      "expectedReturn": "N/A - currently fit; will miss Ecuador's 2026-05-30 friendly vs Saudi Arabia due to Champions League final commitment with Arsenal",
+      "availabilityStatus": "fit",
+      "lastMatchPlayed": {
+        "date": "2026-05-11",
+        "opponent": "Liverpool (Premier League)",
+        "notes": "Continues to feature for Arsenal in run-in; UCL final on 2026-05-30"
+      },
+      "source": "Arseblog, FootballTransfers, Daily Cannon - 2025 to May 2026; Primicias.ec - May 2026",
+      "notes": "Club update: now at Arsenal (loan from Leverkusen since summer 2025; permanent transfer agreed for end of season for c. EUR 52m). Fit and a regular Arsenal starter. Will miss Ecuador's Saudi Arabia warm-up because of the Champions League final on the same day; expected available for tournament opener.",
+      "action": "update"
+    },
+    {
+      "playerName": "Pervis Estupinan",
+      "teamCode": "ECU",
+      "country": "Ecuador",
+      "club": "AC Milan",
+      "position": "Defender",
+      "injuryType": "Recurring muscle issues; rotation player at Milan",
+      "injuryDate": "2026-03-15",
+      "expectedReturn": "Currently available; minutes managed",
+      "availabilityStatus": "minor_concern",
+      "lastMatchPlayed": {
+        "date": "2026-03-31",
+        "opponent": "Netherlands (International Friendly)",
+        "notes": "Played most recent international; managed minutes at club"
+      },
+      "source": "AC Milan official, El Universo, Bolavip Ecuador - 2025-2026",
+      "notes": "Club update: moved from Brighton to AC Milan on a five-year deal in July 2025 (was previously tracked at Brighton). Has started only ~9 of 19 Serie A games and missed several with muscle/suspension issues; Ecuadorian press flagging lack of rhythm as a concern entering the tournament. No new acute injury since 2026-04-16, status unchanged.",
+      "action": "update"
+    }
+  ],
+  "recentFormUpdates": [],
+  "tacticalUpdates": [],
+  "squadChanges": [
+    {
+      "playerName": "Jackson Porozo",
+      "changeType": "new_call_up",
+      "details": "Center-back Porozo training at the federation HQ and named in Ecuador's expanded ~36-player list for the pre-tournament friendlies vs Saudi Arabia (2026-05-30) and Guatemala (2026-06-07). Adds CB depth with Pacho/Hincapie tied up by the UCL final until May 30.",
+      "source": "El Universo - 2026-05-14",
+      "effectiveDate": "2026-05-14"
+    }
+  ],
+  "bettingOddsUpdate": {
+    "tournamentWinner": "+9000",
+    "groupStageExit": null,
+    "toQualifyFromGroup": "approx -270 implied (model probability ~73% to advance from Group E)",
+    "source": "FanDuel / market aggregators via Squawka, RotoWire, Fox Sports - May 2026",
+    "notes": "Ecuador priced around +9000 (90/1) to win the tournament outright. Group E winner odds c. +310 to +400 with Germany the heavy favourite. Projection models give Ecuador roughly a 73% chance to qualify from the group; specific bookmaker price for group-stage exit not surfaced."
+  },
+  "coachUpdate": {
+    "changed": false,
+    "currentCoach": "Sebastian Beccacece",
+    "newCoach": null,
+    "source": null,
+    "notes": null
+  },
+  "summary": "Material change since 2026-04-16 is a fresh right-thigh injury to first-choice center-back Willian Pacho at PSG (out from May 10), with both he and Hincapie set to miss Ecuador's only pre-tournament friendly (Saudi Arabia, May 30) because of the Champions League final on the same date. No matches have been played since the bundled data cut-off, no coach change, and the squad is still being finalised. Worth folding in: club updates for Hincapie (Arsenal, permanent summer move agreed) and Estupinan (AC Milan since July 2025, low minutes flagged in Ecuadorian press).",
+  "sourceUrls": [
+    "https://www.espn.com/soccer/team/squad/_/id/209/ecuador",
+    "https://www.sofascore.com/football/team/ecuador/4757",
+    "https://www.fourfourtwo.com/team/ecuador-world-cup-2026-squad",
+    "https://www.si.com/soccer/2026-world-cup-rosters-full-list-all-official-squads",
+    "https://www.goal.com/en/lists/ecuador-squad-world-cup-2026/blt0d6faa95026c07f5",
+    "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+    "https://www.newyorkredbulls.com/news/ecuador-and-saudi-arabia-will-face-off-at-sports-illustrated-stadium-in-may-during-final-preparations-for-the-world-cup",
+    "https://www.frontrowsoccer.com/2026/04/16/world-cup-warm-up-ecuador-vs-saudi-arabia-at-sports-illustrated-stadium-on-may-30/",
+    "https://www.espn.com/soccer/match/_/gameId/401869431/saudi-arabia-ecuador",
+    "https://www.beinsports.com/en-us/soccer/friendlies/ecuador-vs-saudi-arabia-2026-05-30",
+    "https://www.arsenal.com/news/piero-hincapie-completes-loan-move-arsenal",
+    "https://www.footballtransfers.com/en/transfer-news/uk-premier-league/2025/12/arsenal-transfer-news-piero-hincapie-bayer-leverkusen-permanent-2026",
+    "https://www.footballtransfers.com/en/transfer-news/uk-premier-league/2026/02/arsenal-agree-eur52m-piero-hincapie-deal-as-arteta-secures-eur10m-discount",
+    "https://dailycannon.com/2026/03/arsenal-hincapie-loan-permanent/",
+    "https://arseblog.com/2025/09/piero-hincapie-signs-full-summer-transfer-window-2025-breakdown/",
+    "https://www.transfermarkt.us/piero-hincapie/profil/spieler/659813",
+    "https://en.wikipedia.org/wiki/Pervis_Estupi%C3%B1%C3%A1n",
+    "https://www.acmilan.com/en/news/articles/media/2025-07-24/official-statement-pervis-estupinan",
+    "https://www.brightonandhovealbion.com/media-article/mft-transfer-news-pervis-estupinan-ac-milan-july-2025",
+    "https://sempremilan.com/estupinan-muscle-issue-ecuador-latest",
+    "https://bolavip.com/futbol-ecuador/los-pocos-minutos-de-pervis-estupinan-en-el-milan-empiezan-a-preocupar-en-ecuador-en-ano-de-mundial",
+    "https://www.eluniverso.com/deportes/futbol/los-pocos-minutos-de-pervis-estupinan-en-el-milan-empiezan-a-preocupar-en-ano-de-mundial-nota/",
+    "https://www.rotowire.com/soccer/headlines/willian-pacho-injury-still-in-treatment-515632",
+    "https://www.washingtonpost.com/sports/soccer/2026/05/09/psg-injuries-mendes-pacho-zaireemery/53235134-4b9d-11f1-a119-857cd2bf4fd4_story.html",
+    "https://www.eltelegrafo.com.ec/noticias/deportes/212/willian-pacho-enciende-alarmas-ecuador-lesion-confirmada-psg",
+    "https://www.ecuagol.com/noticias/ecuatorianos-exterior/confirmado-willian-pacho-vuelve-a-ser-baja-por-lesion-en-el-psg/223187/",
+    "https://www.primicias.ec/deportes/futbol/champions-league-final-arsenal-psg-hincapie-pacho-fecha-hora-tv-donde-ver-122103/",
+    "https://www.teleamazonas.com/deportes/futbol/legionarios/piero-hincapie-final-champions/",
+    "https://www.eluniverso.com/deportes/futbol/jackson-porozo-ya-entrena-en-la-casa-de-la-seleccion-y-esta-entre-los-55-convocados-de-la-tri-para-los-amistosos-nota/",
+    "https://bolavip.com/futbol-ecuador/la-seleccion-de-ecuador-presento-su-prelista-para-el-mundial-2026-y-estos-serian-algunos-nombres",
+    "https://bolavip.com/futbol-ecuador/cuando-beccacece-revelara-la-lista-de-26-jugadores-de-la-seleccion-de-ecuador-para-el-mundial-2026",
+    "https://onefootball.com/en/news/ecuador-presentara-una-lista-ampliada-vs-arabia-saudita-y-guatemala-42857092",
+    "https://www.expreso.ec/deportes/ecuador-no-enviara-lista-provisional-mundial-2026-sale-nomina-281779.html",
+    "https://www.squawka.com/us/outright-markets/ecuador-world-cup-2026-odds/",
+    "https://www.rotowire.com/soccer/article/2026-world-cup-team-projections-goals-points-odds-for-all-48-teams-114402",
+    "https://www.foxsports.com/stories/soccer/2026-world-cup-group-stage-odds",
+    "https://sports.yahoo.com/soccer/betting/article/2026-world-cup-odds-betting-preview-best-bets-for-group-stage-golden-boot-and-winner-195049200.html",
+    "https://www.espn.com/soccer/story/_/id/48572979/2026-fifa-world-cup-injuries-tracker-which-stars-miss-latest-info"
+  ],
+  "confidence": "high",
+  "dataFreshness": "2026-05-15"
+}

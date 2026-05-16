@@ -1,0 +1,122 @@
+{
+  "teamCode": "SEN",
+  "teamName": "Senegal",
+  "scoutedAt": "2026-05-16T00:00:00Z",
+  "injuryUpdates": [
+    {
+      "playerName": "Kalidou Koulibaly",
+      "teamCode": "SEN",
+      "country": "Senegal",
+      "club": "Al-Hilal",
+      "position": "Defender",
+      "injuryType": "Unusual hematoma (leg)",
+      "injuryDate": "2026-04-08",
+      "expectedReturn": "Uncertain — race against time for the 2026 tournament opener on June 26",
+      "availabilityStatus": "major_doubt",
+      "lastMatchPlayed": {
+        "date": "2026-04-08",
+        "opponent": "Al-Hilal (Saudi Pro League)",
+        "notes": "Sidelined since 8 April with an unusual hematoma; no clear timeline for return"
+      },
+      "source": "Africa Soccer, Sport News Africa - May 2026",
+      "notes": "Senegal's captain has been out since 8 April with what staff described as an 'unusual hematoma'. With the squad due to be named on 21 May, his fitness is the single biggest selection question facing Pape Thiaw; alternatives in defence reportedly include Mamadou Sarr, Moustapha Mbow, Abdoulaye Seck, Abdoulaye Faye and Malang Sarr.",
+      "action": "update"
+    },
+    {
+      "playerName": "Sadio Mane",
+      "teamCode": "SEN",
+      "country": "Senegal",
+      "club": "Al-Nassr",
+      "position": "Forward",
+      "injuryType": "Flu and localised muscle pain following March ankle issue",
+      "injuryDate": "2026-04-28",
+      "expectedReturn": "Available for the 31 May friendly vs USA",
+      "availabilityStatus": "minor_concern",
+      "lastMatchPlayed": {
+        "date": "2026-04-29",
+        "opponent": "Al Ahli (Saudi Pro League)",
+        "notes": "Returned to training 28 April after a bout of flu; missed the early-May Al Qadsiah match with localised pain but back in the squad rotation"
+      },
+      "source": "World Soccer Talk, Bolavip, Dailysports - late April/early May 2026",
+      "notes": "Recovered from his March ankle injury but managed through a flu setback in late April and a localised pain issue in early May at Al-Nassr. Expected to lead Senegal in the 31 May friendly vs USA and remains the focal point of the team's attack.",
+      "action": "update"
+    },
+    {
+      "playerName": "Pape Matar Sarr",
+      "teamCode": "SEN",
+      "country": "Senegal",
+      "club": "Tottenham Hotspur",
+      "position": "Midfielder",
+      "injuryType": "Recovered from prior injury that ruled him out of AFCON",
+      "injuryDate": null,
+      "expectedReturn": "N/A - fit and expected in the 21 May squad announcement",
+      "availabilityStatus": "fit",
+      "lastMatchPlayed": {
+        "date": "2026-05-10",
+        "opponent": "Tottenham Hotspur (Premier League)",
+        "notes": "Back to full Premier League minutes after missing AFCON"
+      },
+      "source": "Goal.com, Africa Soccer - May 2026",
+      "notes": "Was absent from Senegal's AFCON 2025 winning campaign through injury but is now fully fit and expected to slot back into the midfield rotation alongside Idrissa Gueye, Pape Gueye and Habib Diarra.",
+      "action": "add"
+    },
+    {
+      "playerName": "Habib Diarra",
+      "teamCode": "SEN",
+      "country": "Senegal",
+      "club": "Sunderland",
+      "position": "Midfielder",
+      "injuryType": "Recovered from prior injury that ruled him out of AFCON",
+      "injuryDate": null,
+      "expectedReturn": "N/A - fit and expected in the 21 May squad announcement",
+      "availabilityStatus": "fit",
+      "lastMatchPlayed": {
+        "date": "2026-05-10",
+        "opponent": "Sunderland (Premier League)",
+        "notes": "Full Premier League minutes; injury that kept him out of AFCON is resolved"
+      },
+      "source": "Goal.com, Africa Soccer - May 2026",
+      "notes": "Missed AFCON 2025 through injury but is now declared fully fit for the tournament and is expected to feature prominently in Thiaw's midfield.",
+      "action": "add"
+    }
+  ],
+  "recentFormUpdates": [],
+  "tacticalUpdates": [],
+  "squadChanges": [],
+  "bettingOddsUpdate": {
+    "tournamentWinner": null,
+    "groupStageExit": null,
+    "toQualifyFromGroup": "Odds-on to advance from Group I (specific price not located)",
+    "source": "Squawka, The Lines, FOX Sports - May 2026 (aggregator coverage; precise Senegal-specific lines not located on accessible pages)",
+    "notes": "Aggregator coverage indicates Spain (+450), France (+500) and England (+600) are the market leaders for the tournament; Senegal is categorised as an outsider for the trophy but is described as odds-on to qualify from Group I alongside France, with Norway and Iraq the other group members. No accessible page returned a clean Senegal tournament-winner or group-exit price as of 16 May 2026."
+  },
+  "coachUpdate": {
+    "changed": false,
+    "currentCoach": "Pape Thiaw",
+    "newCoach": null,
+    "source": "ESPN, Al Jazeera, Goal.com - January-May 2026",
+    "notes": "Thiaw remains in charge. CAF's five-match suspension and $100,000 fine for the AFCON 2025 final walk-off applies only to CAF (Africa) competitions, not the 2026 tournament. He will name his 26-man squad at a press conference at Sonatel HQ on 21 May 2026, before the team flies to the USA on 27 May for friendlies vs USA (31 May, Charlotte) and Saudi Arabia (9 June, San Antonio)."
+  },
+  "summary": "Captain Kalidou Koulibaly is the headline concern: out since 8 April with an unusual hematoma and a major doubt for Senegal's 26 June opener against France, forcing Pape Thiaw to weigh defensive alternatives before the 21 May squad reveal. Sadio Mane has worked through a post-March flu bout and minor pain at Al-Nassr but is expected to lead the team in friendlies against USA (31 May, Charlotte) and Saudi Arabia (9 June, San Antonio); offsetting Koulibaly's absence, midfielders Pape Matar Sarr and Habib Diarra are back fit after missing the AFCON-winning run. Coach Thiaw's CAF suspension for the AFCON final walk-off applies only to African competition, so he remains on the bench for the 2026 tournament.",
+  "sourceUrls": [
+    "https://africasoccer.com/senegal-world-cup-squad-koulibaly-injury-dilemma/",
+    "https://worldsoccertalk.com/news/sadio-mane-faces-senegal-setback-ahead-of-usmnt-clash-and-2026-world-cup-as-coach-thiaw-is-suspended/",
+    "https://en.africatopsports.com/senegal-to-unveil-2026-fifa-world-cup-squad-on-may-21/",
+    "https://sportnewsafrica.com/en/posts/senegal-world-cup-2026-without-kalidou-koulibaly-what-alternatives-for-pape-thiaw",
+    "https://www.goal.com/en-us/lists/senegal-squad-world-cup-2026/blt4eb393e65d867783",
+    "https://www.espn.com/espn/story/_/id/47763365/caf-suspends-pape-thiaw-achraf-hakimi-ismael-saibari-afcon-final-fallout",
+    "https://www.aljazeera.com/sports/2026/1/22/senegal-coach-defends-afcon-final-walk-off-ahead-of-expected-sanction",
+    "https://www.charlottefootballclub.com/news/united-states-to-play-senegal-in-charlotte-friendly-at-bank-of-america-stadium",
+    "https://www.ussoccer.com/stories/2025/12/us-mens-national-team-takes-on-african-powerhouse-senegal-in-allstate-continental-clasico-on-may-31-in-charlotte-nc",
+    "https://www.sanantoniofc.com/news/2026/05/01/toyota-field-to-host-international-friendly-between-saudi-arabia-vs-senegal-on-june-9/",
+    "https://africasoccer.com/senegal-world-cup-2026-preparation-programme-unveiled/",
+    "https://africasoccer.com/sadio-mane-return-training-al-nassr/",
+    "https://worldsoccertalk.com/news/cristiano-ronaldo-on-alert-as-jorge-jesus-reveals-reason-for-sadio-manes-absence-from-al-nassr-match/",
+    "https://bolavip.com/en/soccer/sadio-manes-early-training-exit-sparks-concern-for-al-nassr-cristiano-ronaldo-before-al-ahli-clash",
+    "https://www.squawka.com/en/outright-markets/senegal-world-cup-2026-odds/",
+    "https://www.thelines.com/odds/world-cup/group-i/",
+    "https://en.wikipedia.org/wiki/Pape_Thiaw"
+  ],
+  "confidence": "high",
+  "dataFreshness": "2026-05-14"
+}

@@ -1,0 +1,102 @@
+{
+  "teamCode": "CRO",
+  "teamName": "Croatia",
+  "scoutedAt": "2026-05-16T00:00:00Z",
+  "injuryUpdates": [
+    {
+      "playerName": "Luka Modric",
+      "teamCode": "CRO",
+      "country": "Croatia",
+      "club": "AC Milan",
+      "position": "Midfielder",
+      "injuryType": "Fractured left cheekbone (post-surgical recovery)",
+      "injuryDate": "2026-04-26",
+      "expectedReturn": "Late May 2026; expected fit for tournament opener vs England on 2026-06-17",
+      "availabilityStatus": "doubt",
+      "lastMatchPlayed": {
+        "date": "2026-04-26",
+        "opponent": "Juventus (Serie A)",
+        "notes": "Sustained multi-fragment fracture of left zygomatic bone in head clash with Locatelli; surgery on 2026-04-27"
+      },
+      "source": "Al Jazeera, Goal.com, World Soccer Talk - Apr-May 2026",
+      "notes": "Captain. Age 40. AC Milan ruled him out for rest of Serie A season but surgery declared successful. Dalic publicly confident he will lead Croatia at the tournament. Likely to play in a protective carbon-fibre mask. Captain's status as starter is unchanged but match-sharpness is the concern after weeks without competitive minutes.",
+      "action": "update"
+    },
+    {
+      "playerName": "Josko Gvardiol",
+      "teamCode": "CRO",
+      "country": "Croatia",
+      "club": "Manchester City",
+      "position": "Defender",
+      "injuryType": "Recovered from tibial fracture",
+      "injuryDate": null,
+      "expectedReturn": "N/A - returned to first-team action",
+      "availabilityStatus": "fit",
+      "lastMatchPlayed": {
+        "date": "2026-05-13",
+        "opponent": "Crystal Palace (Premier League)",
+        "notes": "First match back after 25-game absence; started at left-back, played 58 minutes in 3-0 win before being replaced by Ake"
+      },
+      "source": "FOX Sports, Read Man City, Esteemed Kompany - May 2026",
+      "notes": "Returned to City training 2026-05-08 and made first match appearance 2026-05-13, ahead of original mid-May target. Guardiola said he is feeling good and should make a good tournament with Croatia. Major boost - he is Croatia's most important defender. Still needs minutes for full match fitness but availability is no longer in doubt.",
+      "action": "update"
+    },
+    {
+      "playerName": "Mateo Kovacic",
+      "teamCode": "CRO",
+      "country": "Croatia",
+      "club": "Manchester City",
+      "position": "Midfielder",
+      "injuryType": "Recovered from Achilles/ankle issues",
+      "injuryDate": null,
+      "expectedReturn": "N/A - returned to first-team action",
+      "availabilityStatus": "fit",
+      "lastMatchPlayed": {
+        "date": "2026-04-26",
+        "opponent": "Southampton (Premier League)",
+        "notes": "First Premier League start of the season since previous May; played 58 minutes"
+      },
+      "source": "Read Man City, Manchester City reports - Apr 2026",
+      "notes": "Completed long comeback from Achilles surgery and subsequent ankle injury. Lacks volume of minutes after a year mostly out, but is fit and selectable for Croatia. Generational midfield partner to Modric.",
+      "action": "update"
+    }
+  ],
+  "recentFormUpdates": [],
+  "tacticalUpdates": [],
+  "squadChanges": [],
+  "bettingOddsUpdate": {
+    "tournamentWinner": "+5000",
+    "groupStageExit": null,
+    "toQualifyFromGroup": "+350 to +400 (to win Group L; clear second favourite behind England at -335 to -350)",
+    "source": "Squawka, BetMGM, Ladbrokes aggregated - May 2026",
+    "notes": "Tournament outright around +5000 at leading US books (~2% implied). Group L is widely treated as a two-horse race between England and Croatia, with Ghana (+1000) and Panama (+2500) priced as clear outsiders."
+  },
+  "coachUpdate": {
+    "changed": false,
+    "currentCoach": "Zlatko Dalić",
+    "newCoach": null,
+    "source": null,
+    "notes": null
+  },
+  "summary": "The headline development is Luka Modrić's fractured left cheekbone suffered against Juventus on 2026-04-26, requiring surgery the next day and ruling him out of the Serie A run-in; head coach Zlatko Dalić insists the 40-year-old captain will lead Croatia at the tournament, likely wearing a protective mask. Counter-balancing that, Joško Gvardiol returned ahead of schedule from his January tibial fracture, training again on 2026-05-08 and starting at left-back for Manchester City on 2026-05-13, removing the major-doubt status that hung over Croatia's most important defender. Mateo Kovačić also completed his comeback from Achilles/ankle issues, while Croatia have played no internationals since 2026-04-16 (next friendlies vs Belgium on 2026-06-02 and Slovenia on 2026-06-07).",
+  "sourceUrls": [
+    "https://www.aljazeera.com/sports/2026/4/28/croatias-modric-undergoes-facial-surgery-but-aims-to-be-fit-for-world-cup",
+    "https://www.goal.com/en/lists/ac-milan-star-luka-modric-undergoes-surgery-fractured-cheekbone-world-cup-update-delivered-by-croatia-boss/blt408adf7bccc09ad8",
+    "https://worldsoccertalk.com/news/luka-modric-out-for-season-at-ac-milan-with-facial-fracture-but-expected-to-be-fit-for-world-cup/",
+    "https://worldsoccertalk.com/amp/news/luka-modric-injury-update-croatia-coach-zlatko-dalic-speaks-ahead-of-2026-world-cup/",
+    "https://www.foxsports.com/stories/soccer/josko-gvardiol-returns-man-city-training-world-cup-croatia",
+    "https://readmancity.com/2026/04/24/man-city-josko-gvardiol-injury",
+    "https://esteemedkompany.com/2026/05/14/a-manchester-city-defender-surprisingly-showed-plenty-in-his-return-from-injury/",
+    "https://readmancity.com/2026/04/27/mateo-kovacic-still-viewed-as-valuable-member-of-manchester-citys-squad",
+    "https://www.goal.com/en/lists/croatia-squad-world-cup-2026/blte475b4a9f48f3997",
+    "https://www.fourfourtwo.com/team/croatia-world-cup-2026-squad",
+    "https://www.fifaworldcupnews.com/fifa-world-cup-2026-preliminary-squads/",
+    "https://www.sofascore.com/news/the-2026-world-cup-warm-up-croatia/",
+    "https://www.squawka.com/us/outright-markets/croatia-world-cup-2026-odds/",
+    "https://sports.betmgm.com/en/blog/world-cup/group-l-world-cup-2026-odds-predictions-bm16/",
+    "https://www.ladbrokes.com/en/news/2026-world-cup-group-l-preview-odds-predictions/",
+    "https://www.lineups.com/soccer/odds/world-cup/group-l/"
+  ],
+  "confidence": "high",
+  "dataFreshness": "2026-05-14"
+}

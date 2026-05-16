@@ -1,0 +1,82 @@
+{
+  "teamCode": "HAI",
+  "teamName": "Haiti",
+  "scoutedAt": "2026-05-16T00:00:00Z",
+  "injuryUpdates": [
+    {
+      "playerName": "Frantzdy Pierrot",
+      "teamCode": "HAI",
+      "country": "Haiti",
+      "club": "Caykur Rizespor (loan from AEK Athens)",
+      "position": "Forward",
+      "injuryType": "No current injury",
+      "injuryDate": null,
+      "expectedReturn": "N/A - currently fit",
+      "availabilityStatus": "fit",
+      "lastMatchPlayed": {
+        "date": "2026-03-14",
+        "opponent": "Caykur Rizespor (Super Lig)",
+        "notes": "Minimal Super Lig minutes on loan (6 apps, 0 goals as of March 14); included as a forward in the official 26-man tournament squad announced 15 May 2026"
+      },
+      "source": "beIN Sports, Heavy.com, Wikipedia - 15 May 2026",
+      "notes": "Reduced club role this season (on loan at Rizespor) but selected in the final 26. Migné has named goalkeeper Johny Placide as squad captain, so Pierrot is no longer captain in the most recent reporting.",
+      "action": "update"
+    }
+  ],
+  "recentFormUpdates": [],
+  "tacticalUpdates": [],
+  "squadChanges": [
+    {
+      "playerName": "Johny Placide",
+      "changeType": "new_call_up",
+      "details": "Named in the official 26-man tournament squad announced 15 May 2026 and confirmed as captain at age 38 (Bastia goalkeeper). This is a change from the bundled data, which lists Frantzdy Pierrot as captain.",
+      "source": "beIN Sports, Heavy.com - 15 May 2026",
+      "effectiveDate": "2026-05-15"
+    },
+    {
+      "playerName": "Wilson Isidor",
+      "changeType": "new_call_up",
+      "details": "Sunderland forward (France youth international, Haitian/Malagasy heritage) included in the official 26-man tournament squad after committing to Haiti in March 2026. One of the team's marquee additions following the eligibility switch.",
+      "source": "beIN Sports, Heavy.com, SAFC.com - 15 May 2026",
+      "effectiveDate": "2026-05-15"
+    },
+    {
+      "playerName": "Jean-Ricner Bellegarde",
+      "changeType": "new_call_up",
+      "details": "Wolverhampton midfielder included in the official 26-man tournament squad announced 15 May 2026; brings Premier League experience to the Haiti midfield.",
+      "source": "beIN Sports, Heavy.com - 15 May 2026",
+      "effectiveDate": "2026-05-15"
+    }
+  ],
+  "bettingOddsUpdate": {
+    "tournamentWinner": "1000/1 to 5000/1",
+    "groupStageExit": "1/16",
+    "toQualifyFromGroup": "10/1 (to reach Last 32)",
+    "source": "Freebets.com odds aggregator (Bet365, Betfred, BoyleSports, Coral, Ladbrokes, Betway, Betano, TalkSport, BetVictor) - 29 April 2026",
+    "notes": "Haiti are the longest price in Group C: Brazil are heavy favourites (-475), Morocco second (+600), Scotland third (+1200), Haiti at +10000 to win the group. Best tournament-winner price is 5000/1 (Betano, TalkSport, BetVictor); shortest 1000/1 (Bet365, Ladbrokes). Group-stage exit is priced at 1/16, making Haiti the heaviest favourites in the group to be eliminated."
+  },
+  "coachUpdate": {
+    "changed": false,
+    "currentCoach": "Sébastien Migné",
+    "newCoach": null,
+    "source": null,
+    "notes": "Migné remains in charge and named the 26-man tournament squad on 15 May 2026."
+  },
+  "summary": "Haiti named their official 26-man tournament squad on 15 May 2026 under Sébastien Migné; the biggest internal change is that 38-year-old goalkeeper Johny Placide (Bastia) is captain, not Frantzdy Pierrot. Wilson Isidor (Sunderland) and Jean-Ricner Bellegarde (Wolves) headline the European-based selections, and Pierrot is included despite reduced minutes on loan at Çaykur Rizespor. No matches were played between 17 April and 16 May; pre-tournament friendlies vs New Zealand (2 June, Fort Lauderdale) and Peru (5 June, Miami) are on the calendar before kickoff against Scotland on 13 June.",
+  "sourceUrls": [
+    "https://www.beinsports.com/en-us/soccer/fifa-world-cup-2026/articles/haiti-s-official-squad-announced-for-the-2026-fifa-world-cup-2026-05-15",
+    "https://heavy.com/sports/soccer/world-cup/haiti-announces-squad-fifa-world-cup/",
+    "https://www.fourfourtwo.com/team/haiti-world-cup-2026-squad",
+    "https://haitiantimes.com/2026/05/06/haiti-sells-tickets-for-new-zealand-peru-games/",
+    "https://haitiantimes.com/2026/03/19/english-premier-league-star-isidor-commits-to-haiti-after-fan-push-ahead-of-world-cup/",
+    "https://www.safc.com/news/2026/march/18/wilson-isidor-to-represent-haiti-national-team/",
+    "https://en.wikipedia.org/wiki/Frantzdy_Pierrot",
+    "https://en.wikipedia.org/wiki/Wilson_Isidor",
+    "https://en.wikipedia.org/wiki/Haiti_national_football_team",
+    "https://www.espn.com/soccer/team/results/_/id/2654/haiti",
+    "https://www.freebets.com/football/world-cup/odds/haiti/",
+    "https://www.foxsports.com/stories/soccer/2026-world-cup-odds-from-which-group-will-winner-emerge"
+  ],
+  "confidence": "high",
+  "dataFreshness": "2026-05-15"
+}

@@ -1,0 +1,139 @@
+{
+  "teamCode": "MEX",
+  "teamName": "Mexico",
+  "scoutedAt": "2026-05-16T00:00:00Z",
+  "injuryUpdates": [
+    {
+      "playerName": "Edson Alvarez",
+      "teamCode": "MEX",
+      "country": "Mexico",
+      "club": "Fenerbahce (on loan from West Ham)",
+      "position": "Midfielder",
+      "injuryType": "Returning from February ankle surgery — match-sharpness concern",
+      "injuryDate": "2026-02-17",
+      "expectedReturn": "Available for the 2026 tournament; rebuilding match fitness",
+      "availabilityStatus": "minor_concern",
+      "lastMatchPlayed": {
+        "date": "2026-05-02",
+        "opponent": "Istanbul Basaksehir (Super Lig)",
+        "notes": "Brief 1-minute cameo — first action since February ankle surgery"
+      },
+      "source": "Read West Ham, Inside Futbol, Hooligan Soccer - May 2026",
+      "notes": "Captain has been included in the 55-man preliminary squad announced May 12-14, indicating Mexico expects him fit for kickoff. However, he has logged only one competitive minute since February surgery and Fenerbahce declined the buy option amid limited playing time. Match sharpness is the lingering concern, not availability.",
+      "action": "update"
+    },
+    {
+      "playerName": "Santiago Gimenez",
+      "teamCode": "MEX",
+      "country": "Mexico",
+      "club": "AC Milan",
+      "position": "Forward",
+      "injuryType": "Recovered from ankle injury; ongoing form/sharpness concern",
+      "injuryDate": null,
+      "expectedReturn": "Available — included in preliminary 55-man squad",
+      "availabilityStatus": "minor_concern",
+      "lastMatchPlayed": {
+        "date": "2026-05-03",
+        "opponent": "AC Milan (Serie A, late-season appearance)",
+        "notes": "Back in Milan's matchday squads; limited minutes off the bench since March return"
+      },
+      "source": "World Soccer Talk, SempreMilan, SI.com - April/May 2026",
+      "notes": "Back in full training and named to the 55-man preliminary squad. Has accumulated more than 200 days without a goal since September 2025 and logged only ~67 minutes in three Serie A cameos since his March 21 return. Aguirre has personally reassured Gimenez that he remains in plans for the final 26. Availability looks secure; goal drought is the real worry.",
+      "action": "update"
+    },
+    {
+      "playerName": "Hirving Lozano",
+      "teamCode": "MEX",
+      "country": "Mexico",
+      "club": "San Diego FC (MLS)",
+      "position": "Forward",
+      "injuryType": "Not an injury — excluded from preliminary 55-man squad",
+      "injuryDate": null,
+      "expectedReturn": "N/A — omitted from the 2026 tournament squad",
+      "availabilityStatus": "fit",
+      "lastMatchPlayed": {
+        "date": "2026-03-15",
+        "opponent": "San Diego FC (MLS)",
+        "notes": "Fell out of favor at club; reported altercation with head coach Mikey Varas; lacked the consistent minutes Aguirre demanded"
+      },
+      "source": "FOX Sports, ESPN, Hooligan Soccer - May 12-14, 2026",
+      "notes": "Now a SQUAD EXCLUSION rather than an injury doubt. Aguirre omitted Chucky from the 55-man preliminary list on May 12-14, citing insufficient playing time at San Diego FC. He cannot now be added to the final 26. Move from injury tracker to squad change.",
+      "action": "remove"
+    }
+  ],
+  "recentFormUpdates": [],
+  "tacticalUpdates": [],
+  "squadChanges": [
+    {
+      "playerName": "Hirving Lozano",
+      "changeType": "dropped",
+      "details": "Omitted from Mexico's 55-man preliminary roster, eliminating any path to the final 26. Aguirre cited Lozano's lack of consistent minutes at San Diego FC after falling out with head coach Mikey Varas. The decision ends Lozano's bid to feature at a home tournament and removes one of Mexico's most experienced attackers from contention.",
+      "source": "FOX Sports, ESPN - May 12-14, 2026",
+      "effectiveDate": "2026-05-13"
+    },
+    {
+      "playerName": "Alex Padilla",
+      "changeType": "new_call_up",
+      "details": "Uncapped Athletic Club goalkeeper named to the 55-man preliminary squad. With Luis Malagon ruled out by an Achilles rupture, Padilla is a credible bolt-on for the final 26 behind veteran Guillermo Ochoa.",
+      "source": "Hooligan Soccer, FMF State Of Mind - May 12, 2026",
+      "effectiveDate": "2026-05-12"
+    },
+    {
+      "playerName": "Luis Chavez",
+      "changeType": "new_call_up",
+      "details": "Dynamo Moscow midfielder returns to the picture after his 2025 ACL recovery, named to the 55-man preliminary list despite limited recent minutes. Status for the final 26 remains uncertain.",
+      "source": "Hooligan Soccer, ESPN - May 12-14, 2026",
+      "effectiveDate": "2026-05-12"
+    },
+    {
+      "playerName": "Cesar Huerta",
+      "changeType": "new_call_up",
+      "details": "Anderlecht winger named to the 55-man preliminary list as he returns from a second pubalgia surgery. Inclusion is a vote of confidence but his match fitness is borderline.",
+      "source": "Hooligan Soccer, ESPN - May 12-14, 2026",
+      "effectiveDate": "2026-05-12"
+    },
+    {
+      "playerName": "Julian Araujo",
+      "changeType": "new_call_up",
+      "details": "Celtic defender named to the 55-man preliminary roster, providing additional cover at fullback as Aguirre weighs depth options.",
+      "source": "ESPN - May 12-14, 2026",
+      "effectiveDate": "2026-05-12"
+    }
+  ],
+  "bettingOddsUpdate": {
+    "tournamentWinner": "+3500",
+    "groupStageExit": null,
+    "toQualifyFromGroup": null,
+    "source": "Squawka aggregator citing leading US sportsbooks (BetMGM +5000, FOX Sports cite +7500) - May 2026",
+    "notes": "Mexico priced as a clear outsider despite host-nation status, with the consensus tournament-winner figure around +3500 and a market range of roughly +3500 to +7500 across major US books. Group-exit and group-qualification specific lines for Mexico were not surfaced in the sources consulted."
+  },
+  "coachUpdate": {
+    "changed": false,
+    "currentCoach": "Javier Aguirre",
+    "newCoach": null,
+    "source": null,
+    "notes": null
+  },
+  "summary": "The headline development is Hirving Lozano's exclusion from the 55-man preliminary squad on May 12-14, ending his bid to feature at a home tournament after a fallout at San Diego FC. Captain Edson Alvarez and forward Santiago Gimenez are both named to the preliminary list and effectively cleared for selection, though both carry serious match-sharpness concerns after long injury layoffs. No competitive matches were played in the April 16 to May 16 window — Mexico's pre-tournament friendlies against Ghana, Australia and Serbia are still ahead.",
+  "sourceUrls": [
+    "https://www.espn.com/soccer/team/results/_/id/203/mexico",
+    "https://www.si.com/soccer/mexico-final-three-warm-up-games-before-2026-world-cup",
+    "https://www.foxsports.com/stories/soccer/javier-aguirre-excludes-chucky-lozano-from-mexicos-world-cup-roster",
+    "https://www.espn.com/soccer/story/_/id/48757812/chucky-lozano-omitted-mexico-provisional-world-cup-squad",
+    "https://hooligan-soccer.com/mexico-announces-preliminary-55-man-squad-for-the-2026-world-cup/",
+    "https://www.fmfstateofmind.com/international-news/27020/mexicos-55-player-list-for-world-cup-is-out",
+    "https://sports.yahoo.com/articles/mexico-55-player-list-world-035837027.html",
+    "https://www.si.com/soccer/mexico-national-team-injuries-every-player-missing-last-world-cup-warmup",
+    "https://www.si.com/soccer/another-injury-blow-for-el-tri-mexico-captain-at-risk-of-missing-world-cup",
+    "https://worldsoccertalk.com/amp/world-cup/report-mexico-star-santiago-gimenez-risks-missing-2026-world-cup-amid-injury-struggles-at-milan/",
+    "https://sempremilan.com/gimenez-difficult-season-injury-ordeal",
+    "https://readwestham.com/2026/05/12/west-ham-edson-alvarez-to-return-from-fenerbahce/",
+    "https://insidefutbol.com/2026/05/11/communicated-it-west-ham-loan-star-told-clubs-decision-admits-technical-director/713031/",
+    "https://www.squawka.com/us/outright-markets/mexico-world-cup-2026-odds/",
+    "https://sports.betmgm.com/en/blog/world-cup/mexico-world-cup-odds-chances-to-win-world-cup-bm25/",
+    "https://www.foxsports.com/stories/soccer/world-cup-2026-champion-odds",
+    "https://www.olympics.com/en/news/fifa-world-cup-2026-mexico-all-players-full-squad-list-key-stats-schedule"
+  ],
+  "confidence": "high",
+  "dataFreshness": "2026-05-14"
+}

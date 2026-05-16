@@ -4,77 +4,70 @@
   "team2Code": "HON",
   "team1Name": "Australia",
   "team2Name": "Honduras",
-  "generatedAt": "2026-04-16T00:00:00Z",
-  "dataVersion": 2,
-
-  "headline": "The Playoff Rematch: Socceroos and Los Catrachos Collide Once More",
-  "subheadline": "A fully fit Australia squad, energized by Tony Popovic's tactical revolution and March demolitions, face an old foe with unfinished business",
-
-  "openingNarrative": "The football gods have a sense of humor. In 2017, Australia and Honduras met in the intercontinental tournament playoff, with a trip to Russia on the line. The Socceroos won the two-legged tie on aggregate — Mile Jedinak's hat-trick in the decisive second leg in Sydney sealing qualification — in a bruising, physical encounter that left scars on both sides. Now, nine years later, they meet again on the tournament stage itself.\n\nAustralia arrive at the 2026 tournament as a transformed team under Tony Popovic. The new head coach has implemented a 3-4-2-1 system that has yielded immediate and emphatic results: a 1-0 victory over Cameroon that demonstrated defensive solidity, followed by a stunning 5-1 demolition of Curacao that showcased a devastating attacking dimension the Socceroos have rarely possessed. Every player in the squad has been declared fit — a luxury few tournament teams enjoy — and the emergence of Nestory Irankunda, the teenage sensation whose pace and directness have drawn comparisons to a young Mathew Leckie, has added an electrifying new weapon to Australia's arsenal.\n\nTheir qualifying campaign reflected growing ambition: 5 wins, 4 draws, 1 loss in AFC Third Round Group C, accumulating 19 points as runners-up. Kusini Yengi's 6 goals led the attack, and 4 clean sheets demonstrated defensive resilience. But it is the March friendlies under Popovic that have truly announced Australia's intentions.\n\nHonduras represent CONCACAF at its most physical and passionate. Their last tournament appearance was 2014, and qualifying for 2026 represents a significant achievement. Alberth Elis provides the attacking spark, but Honduras's strength lies in their physical intensity, their ability to make matches uncomfortable, and the fierce pride of Los Catrachos.",
-
+  "generatedAt": "2026-06-12T14:30:00Z",
+  "dataVersion": 1,
+  "headline": "Ghosts of 2017: Australia Face Honduras in Tournament Rematch",
+  "subheadline": "The Socceroos seek redemption against familiar foes as Tony Popovic's defensive blueprint meets Central American resilience.",
+  "openingNarrative": "Nine years have passed since that rain-soaked November night in Sydney when Australia's tournament dreams hung by the thinnest of threads. The Socceroos had just drawn 0-0 with Honduras in the first leg of their 2017 qualifying playoff, and the ghosts of missed opportunities seemed destined to haunt another generation. But Mile Jedinak's penalty in Tegucigalpa changed everything, sending Australia to Russia and consigning Honduras to another four years of watching from afar.\n\nNow, in the summer heat of North America, these two nations meet again under vastly different circumstances. Australia arrive as a team transformed under Tony Popovic's pragmatic stewardship, their recent qualifying campaign a masterclass in defensive resilience. Five wins from their final six qualifiers, including stunning victories over Japan and Saudi Arabia, have established the Socceroos as genuine tournament contenders. Honduras, meanwhile, carry the weight of expectation and the burden of being absent from the global stage since Brazil 2014.\n\nThe contrasts are stark yet familiar. Australia's evolution under Popovic mirrors their 2017 approach - defensively sound, tactically disciplined, built to frustrate technically superior opponents. Their 3-4-2-1 system has become a fortress, conceding just once in their crucial qualifying victories. Honduras, as ever, will bring the physicality and never-say-die spirit that has long defined Central American football. This is more than a group stage encounter; it's a reckoning with history, a chance for both nations to prove that 2017 was not their ceiling but merely their foundation.",
   "tacticalBreakdown": {
     "title": "The Chess Match",
-    "narrative": "The story of this match is Australia's tactical evolution under Popovic. The shift to 3-4-2-1 represents a fundamental change from previous Socceroo sides — three center-backs provide defensive security, wing-backs offer width and attacking thrust, and the two players behind the striker create overloads in the half-spaces. The 5-1 destruction of Curacao showed the system at its fluid best, with players interchanging positions and creating chances from every angle.\n\nIrankunda's emergence adds a dimension that Australia have never had at a tournament: genuine pace and directness from wide positions. The teenager's willingness to run at defenders, combined with Yengi's aerial presence and the midfield industry of Jackson Irvine, gives Popovic's Australia multiple routes to goal.\n\nHonduras will match Australia's physicality with their own brand of aggressive, direct football. A 4-4-2 with compact midfield lines and quick transitions through Elis's pace on the wing is the expected approach. Honduras have historically excelled in making matches physical and disrupting more technical opponents.\n\nThe key tactical question is whether Honduras can cope with the width and movement generated by Popovic's 3-4-2-1. Against a back four, Australia's wing-backs will create two-against-one situations that Honduras's wide midfielders may struggle to track.",
+    "narrative": "Popovic's 3-4-2-1 formation will prioritize defensive solidity over possession, with Australia content to absorb pressure and strike on the counter. The three center-backs, anchored by the returning Harry Souttar's aerial dominance, will form a compact defensive block designed to frustrate Honduras's physical approach. Jackson Irvine will drop deep from his advanced midfield role to provide the link between defense and attack, while the wing-backs offer the primary width in Australia's cautious build-up play.\n\nThe match will likely be decided in the midfield trenches, where Australia's reactive approach meets Honduras's expected physicality. Popovic's side excels when they can sit deep and counter through the flanks, utilizing set pieces as their primary attacking weapon. Honduras will need to find ways to break down Australia's structured defensive shape while maintaining defensive discipline of their own. The key battle will be whether Honduras can impose their physical game and disrupt Australia's rhythm, or if the Socceroos can weather the storm and capitalize on their limited but clinical chances.",
     "team1Formation": "3-4-2-1",
-    "team2Formation": "4-4-2",
-    "keyMatchup": "Australia's wing-backs in Popovic's 3-4-2-1 vs Honduras's wide midfielders — the tactical mismatch that could define the match"
+    "team2Formation": "Formation unknown",
+    "keyMatchup": "Jackson Irvine's midfield leadership versus Honduras's physical pressing game"
   },
-
   "dataInsights": {
     "title": "By The Numbers",
-    "eloAnalysis": "Australia (ELO: 1622, rank 30) hold a clear ELO advantage over Honduras. The gap suggests Australia should be comfortable favorites, and their March friendlies have only reinforced that status.",
-    "formAnalysis": "Australia are in excellent form: beat Cameroon 1-0 and Curacao 5-1 in March under Popovic's new system. All players fully fit. Qualified with 5 wins, 4 draws, 1 loss in AFC Third Round — 19 points, +9 goal difference. Kusini Yengi led with 6 qualifying goals, with 4 clean sheets demonstrating defensive solidity.",
-    "squadValueComparison": "Australia's squad ($79.3M) vs Honduras's more limited resources — the financial gap exists but is not extreme. Both teams rely on collective quality rather than individual market value. The difference is Popovic's tactical organization.",
-    "injuryImpact": "Australia have a clean bill of health — every player in the squad is fully fit, which is remarkable at a tournament. This allows Popovic complete freedom in selection and tactical setup. Honduras operate with limited depth, and any injury to Elis would significantly impact their attacking approach.",
-    "bettingPerspective": "Australia will be clear favorites based on their 2022 tournament experience, March form under Popovic, and full fitness. The 5-1 win over Curacao will have shortened their match odds significantly. Honduras's odds reflect their underdog status.",
-    "historicalPattern": "Australia beat Honduras in the 2017 tournament playoff on aggregate. Honduras have not appeared at a tournament since 2014. The Socceroos' 2022 Round of 16 run gives them a significant experience advantage, and Popovic's tactical transformation adds a new dimension."
+    "eloAnalysis": "Australia's ELO rating of 1622 places them 30th globally, reflecting their steady improvement under Popovic's guidance and qualifying campaign momentum.",
+    "formAnalysis": "The Socceroos' perfect qualifying finish - winning four consecutive matches against quality opposition - demonstrates their tournament readiness, though recent friendlies against South American sides revealed defensive vulnerabilities.",
+    "squadValueComparison": "Australia's squad valuation of €79.25 million, led by Harry Souttar's €12.5 million market value, reflects their investment in European-based talent and defensive stability.",
+    "injuryImpact": "Aiden O'Neill's ankle concerns could force tactical adjustments in midfield, while Harry Souttar's return from Achilles surgery provides a crucial boost to Australia's defensive backbone.",
+    "bettingPerspective": "Market confidence in Australia reflects both their superior recent form and the psychological advantage of their 2017 playoff victory over these same opponents.",
+    "historicalPattern": "Australia's task mirrors the pattern of non-European, non-South American nations who have never won the tournament - they must defy history through defensive organization and clinical finishing."
   },
-
   "playerSpotlights": [
-    {
-      "name": "Nestory Irankunda",
-      "teamCode": "AUS",
-      "narrative": "The teenager who has set Australian football alight. Irankunda's blistering pace, his willingness to take on defenders, and his composure in front of goal have earned him a place in Popovic's squad and a spot in the hearts of Socceroo fans. His cameos in the March friendlies showed a player unburdened by occasion — he runs at defenders as if every one of them owes him money. Against Honduras's physical defense, his directness could be the weapon that unlocks the match. A tournament debut at his age would be extraordinary; a tournament goal would be the stuff of legend.",
-      "statline": "Teenage sensation, emerging as Australia's most exciting attacking talent in a generation"
-    },
     {
       "name": "Jackson Irvine",
       "teamCode": "AUS",
-      "narrative": "Australia's captain embodies everything the Socceroos stand for: tireless work rate, tactical intelligence, and an unshakeable determination to compete against anyone. Under Popovic's new system, Irvine's role has evolved — he now operates as the midfield anchor in the 3-4-2-1, providing the organizational spine that allows the attacking players to express themselves. His Bundesliga experience gives him the composure to manage high-pressure situations.",
-      "statline": "Australia's captain, Bundesliga-experienced midfielder, the heart of Popovic's system"
-    },
-    {
-      "name": "Kusini Yengi",
-      "teamCode": "AUS",
-      "narrative": "The striker who led Australia's qualifying campaign with 6 goals has the chance to announce himself on the tournament stage. Yengi's combination of physical presence and finishing ability makes him a constant aerial threat, and Popovic's 3-4-2-1 is designed to deliver service to him from multiple angles. The 5-1 demolition of Curacao showcased the variety of chances the new system creates — crosses from wing-backs, through-balls from the number tens, set-piece deliveries. Yengi will feast.",
-      "statline": "6 goals in AFC qualifying, Australia's leading scorer and focal point of Popovic's attack"
+      "narrative": "The St. Pauli midfielder carries the weight of captaincy with the composure of a seasoned campaigner. Irvine has become the embodiment of Popovic's pragmatic philosophy, dropping deep to collect possession, driving forward when opportunities arise, and providing the tactical discipline that makes Australia's system function. His leadership extends beyond the armband - he is the conductor of Australia's defensive orchestra, the player who sets the tempo and maintains the structure that has served them so well in qualifying. Against Honduras, his ability to control the midfield battle while providing attacking thrust will be crucial to Australia's hopes.",
+      "statline": "Socceroos captain with full fitness and crucial Bundesliga experience"
     },
     {
       "name": "Alberth Elis",
       "teamCode": "HON",
-      "narrative": "Honduras's most dangerous attacking weapon, Elis brings pace, directness, and an unpredictability that can trouble any defense. His ability to run at defenders and create chances from wide positions gives Honduras an outlet when they win possession. Against Australia's three-man defense in Popovic's system, Elis's willingness to take on defenders one-on-one represents Los Catrachos' primary route to goal.",
-      "statline": "Honduras's primary attacking threat with pace and directness"
+      "narrative": "The Honduras forward represents his nation's primary threat in what promises to be a defensively minded encounter. Elis carries the hopes of a country that has watched the last two tournaments from afar, knowing that moments of individual brilliance often decide matches between evenly matched sides. His pace and directness could prove the key to unlocking Australia's defensive structure, particularly if he can exploit the spaces behind the wing-backs when they push forward. For Honduras, Elis is not just a player but a symbol of their attacking ambitions and their best hope of writing a new chapter in their tournament story.",
+      "statline": "Honduras's primary attacking threat and tournament hopes"
+    },
+    {
+      "name": "Harry Souttar",
+      "teamCode": "AUS",
+      "narrative": "The Leicester City defender's return from 483 days out with a ruptured Achilles reads like a tournament fairy tale in the making. Souttar's aerial dominance and defensive leadership transform Australia from organized to genuinely formidable at the back. His comeback story - scoring on his return against Millwall, earning man of the match honors, and fighting his way back into Popovic's plans - embodies the resilience that defines this Australian squad. Against Honduras's physical approach, his presence in the penalty area could prove decisive, both defensively and as a set-piece weapon.",
+      "statline": "First competitive appearance in 483 days, scored and earned MOTM on return"
+    },
+    {
+      "name": "Mat Ryan",
+      "teamCode": "AUS",
+      "narrative": "Approaching his 100th cap and third consecutive tournament appearance, Ryan represents the continuity and experience that anchors Australia's defensive philosophy. The AS Roma goalkeeper has seen it all - the heartbreak of 2014, the triumph of reaching the Round of 16 in 2022, and now the opportunity to guide a new generation to glory. His positioning and distribution will be crucial in executing Popovic's game plan, while his penalty-saving ability could prove decisive if the match reaches a crucial moment. At 34, this may be his final tournament, adding personal stakes to Australia's collective ambition.",
+      "statline": "95 caps and veteran of three consecutive tournaments"
     }
   ],
-
   "theVerdict": {
     "title": "The Verdict",
     "prediction": "Australia 2-0 Honduras",
     "confidence": 70,
-    "narrative": "Australia's transformation under Popovic, their full fitness, and the devastating attacking form shown in the 5-1 win over Curacao make them heavy favorites. The Socceroos have evolved beyond the scrappy, organized side that reached the 2022 Round of 16 — they now have a tactical system that creates chances in abundance and the personnel to finish them.\n\nIrankunda's emergence gives Australia an x-factor they have never possessed at a tournament. The teenager's pace and directness, combined with Yengi's aerial presence and Irvine's midfield control, provide multiple attacking dimensions that Honduras's 4-4-2 will struggle to contain.\n\nExpect a patient first half where Australia's wing-backs gradually stretch Honduras's shape, followed by a second half where the Socceroos' superior fitness and tactical sophistication tell. A set-piece goal — perhaps from Souttar's aerial dominance — and a second from Yengi or Irankunda will seal a professional victory.\n\nHonduras will compete with everything they have. Los Catrachos never make life easy. But Australia's evolution under Popovic has been dramatic, and the Socceroos are a significantly better team than the one that scraped past Honduras in 2017.",
+    "narrative": "Australia's defensive structure and recent form make them clear favorites in this rematch of their 2017 qualifying duel. Popovic's system is perfectly designed to frustrate a Honduras side that will need to take risks to break down the Socceroos' organized defensive block. The returning Harry Souttar provides the aerial dominance and leadership that transforms Australia from solid to genuinely difficult to beat, while Jackson Irvine's midfield control should allow them to dictate the tempo and strike when opportunities arise.\n\nThe scoreline may flatter Australia, but tournament football often rewards the patient and the organized over the ambitious and open. Honduras will bring physicality and desperation, but Australia have shown under Popovic that they can absorb pressure and strike clinically when it matters. Their set-piece threat and defensive discipline should prove decisive in a match that will be won in moments rather than sustained passages of play.",
     "alternativeScenarios": [
+      {
+        "scenario": "Australia 1-0 Honduras",
+        "probability": 25,
+        "reasoning": "A cagier affair where Australia's defensive discipline prevails but chances remain at a premium throughout."
+      },
       {
         "scenario": "Australia 1-1 Honduras",
         "probability": 15,
-        "reasoning": "Honduras's physical intensity prevents Australia from settling into Popovic's system. A second-half Elis goal cancels out an Australian opener, and neither side can find a winner in a bruising encounter."
-      },
-      {
-        "scenario": "Australia 3-0 Honduras",
-        "probability": 18,
-        "reasoning": "Popovic's system fires from the start, echoing the 5-1 demolition of Curacao. Irankunda announces himself with a tournament debut goal, and Australia cruise to a statement victory."
+        "reasoning": "Honduras's physicality disrupts Australia's rhythm, and both sides settle for the point in a tactical stalemate."
       }
     ]
   },
-
-  "closingLine": "In 2017, Australia ended Honduras's tournament dreams in a playoff. Now they meet on the same stage — and Popovic's Socceroos arrive as a transformed team, fully fit and tactically evolved. Los Catrachos face a very different Australia."
+  "closingLine": "In the theater of tournament football, sometimes the most compelling stories are written by those who refuse to be heroes - and Tony Popovic's Australia have mastered the art of beautiful pragmatism."
 }

@@ -4,70 +4,70 @@
   "team2Code": "SEN",
   "team1Name": "Morocco",
   "team2Name": "Senegal",
-  "generatedAt": "2026-06-15T14:30:00Z",
+  "generatedAt": "2026-06-11T09:00:00Z",
   "dataVersion": 1,
-  "headline": "When Dreams Collide: Africa's Titans Meet on Football's Biggest Stage",
-  "subheadline": "Morocco's Atlas Lions face Senegal's Teranga pride in a clash that transcends sport itself.",
-  "openingNarrative": "Four months ago, the floodlights of Morocco illuminated a heartbreaking scene. The Atlas Lions, having soared through their home AFCON tournament with the grace of seasoned champions, stood on the precipice of glory only to watch Senegal's Lions of Teranga snatch their dream away in extra time. That 1-0 defeat in the AFCON 2025 final was more than a loss; it was a reminder that in football, as in life, the cruelest margins often separate triumph from despair.\n\nNow, on North American soil under the unforgiving spotlight of the tournament, these two African giants meet again. This is no longer about continental supremacy—this is about validating their place among football's global elite. Morocco arrive as the 12th-ranked team in the world according to ELO ratings (1725), their semi-final heroics from Qatar 2022 still echoing in the collective memory of a sport that loves its underdogs. Senegal, ranked 15th (1700), carry the weight of being reigning AFCON champions, their recent 3-1 victory over England serving as a statement that African football has never been stronger.\n\nThe mathematics are stark but beautiful: Morocco's perfect qualifying campaign (8 wins from 8 matches, +20 goal difference) versus Senegal's unbeaten march (7 wins, 3 draws, +19 goal difference). Two squads valued at over $400 million each, representing not just nations but continents of dreams. When Walid Regragui's tactical chess meets Pape Thiaw's organized intensity, we witness more than football—we witness the evolution of African football on the world's grandest stage.",
+  "headline": "Atlas Lions Seek Revenge Against AFCON Champions",
+  "subheadline": "Morocco and Senegal renew their rivalry five months after the Lions of Teranga stunned the hosts in the AFCON final.",
+  "openingNarrative": "Five months ago in Morocco, hearts broke and dreams shattered as the final whistle echoed through the stadium. January 18, 2026 – a date etched in pain for the Atlas Lions, ecstasy for the Lions of Teranga. Senegal had done it again, claiming their second AFCON title with a 1-0 victory over Morocco in the final, silencing a home crowd that had roared their heroes all the way to the promised land. The wound still throbs, the memory still stings. Now, on football's grandest stage, these two African superpowers meet again, carrying the weight of that night and the dreams of an entire continent.\n\nThis is more than a tournament group stage match – it's a clash of philosophies, a battle of generations, a referendum on African football's present and future. Morocco, ranked 12th in the world with an ELO rating of 1725, arrive as the continent's standard-bearers, their 2022 semi-final run having rewritten the script of what African teams could achieve. Yet Senegal, just three places behind at 15th with a rating of 1700, hold the psychological edge. They are the reigning continental champions, twice over now, with a core that has tasted glory when it mattered most.\n\nThe Atlas Lions dominated their qualifying campaign with surgical precision – eight wins from eight, 20 goals scored and none conceded, with Youssef En-Nesyri leading the charge with five strikes. Senegal's path was more conventional but no less impressive: seven wins and three draws, unbeaten across ten matches, Sadio Mané matching En-Nesyri's five-goal tally. Both teams arrive battle-tested, but only one can exorcise the ghosts of their recent encounter.",
   "tacticalBreakdown": {
     "title": "The Chess Match",
-    "narrative": "This is a meeting of tactical minds who understand that tournament football rewards discipline over flair. Regragui's Morocco will deploy their trusted 4-3-3, with Achraf Hakimi operating as a right-back who thinks like a winger, providing width while Sofyan Amrabat anchors the midfield with his metronomic passing. Their strength lies in defensive organization that allows for explosive transitions, particularly through Hakimi's marauding runs and quick switches to the opposite flank. Against this, Pape Thiaw's Senegal will mirror the formation but with a more direct approach, using their 4-3-3 to get the ball wide to Sadio Mané and Ismaila Sarr, who can beat defenders in 1v1 situations.\n\nThe decisive battle will be fought in the midfield corridors, where Morocco's structured build-up through Amrabat meets Senegal's medium-high pressing intensity. Kalidou Koulibaly's ball-playing ability from deep will be crucial in bypassing Morocco's midfield press, while the Atlas Lions will look to isolate their creative forces against Senegal's physical but sometimes technically vulnerable midfield. Both teams prefer medium tempo, making this a chess match of tactical adjustments rather than a frantic end-to-end spectacle.",
+    "narrative": "This is a fascinating study in contrasts, two 4-3-3 systems that approach the game from entirely different philosophical angles. Morocco under Mohamed Ouahbi represent tactical sophistication incarnate – structured build-up from the back, Sofyan Amrabat dictating tempo from deep, and Achraf Hakimi operating as a virtual right-winger in possession while maintaining defensive discipline. Their medium-tempo approach allows them to probe and exploit, with En-Nesyri providing the aerial focal point and new talents like Saibari and Ben Seghir offering creativity behind. It's a system built on defensive stability (rating 8/10) that launches explosive transitions through wide channels.\n\nSenegal's approach under Pape Thiaw is more direct, more instinctive, more reliant on individual moments of brilliance. Their 4-3-3 prioritizes quick ball movement to wingers who can beat defenders one-on-one – Mané driving from the left, Ismaila Sarr providing pace on the right. Where Morocco builds methodically, Senegal strikes like lightning on the counter. The key battle will be Morocco's structured possession against Senegal's athletic pressing intensity. Can Hakimi find the space to maraud forward against Senegal's medium-high press? Will Mané's experience and guile unlock Morocco's disciplined defensive block? The midfield zone, where Amrabat's screening meets Senegal's physicality, will determine whether this becomes a tactical chess match or an end-to-end thriller.",
     "team1Formation": "4-3-3",
     "team2Formation": "4-3-3",
-    "keyMatchup": "Hakimi's attacking runs versus Senegal's left flank defensive discipline"
+    "keyMatchup": "Hakimi's overlapping runs vs Senegal's left-sided defensive transitions"
   },
   "dataInsights": {
     "title": "By The Numbers",
-    "eloAnalysis": "Morocco's ELO rating of 1725 edges Senegal's 1700, but the 25-point gap represents margins so fine they're almost meaningless in a single knockout match.",
-    "formAnalysis": "Both teams arrive with contrasting recent experiences—Morocco's AFCON final heartbreak versus Senegal's championship momentum, though both maintained strong form through qualifying.",
-    "squadValueComparison": "Morocco's $422.5 million squad value edges Senegal's $395 million, reflecting the Atlas Lions' deeper European-based talent pool led by Hakimi's $81.3 million valuation.",
-    "injuryImpact": "Morocco face uncertainty with Mazraoui's preparation injury and Amrabat's fitness concerns, while Senegal monitor Mané's return from ankle injury and Koulibaly's age-related fitness management.",
-    "bettingPerspective": "The absence of clear betting favorites suggests the markets view this as the most evenly matched encounter in the tournament's opening rounds.",
-    "historicalPattern": "History weighs heavily here—no African team has ever won the tournament, but Morocco's 2022 semi-final breakthrough proved that continental barriers can be shattered on football's biggest stage."
+    "eloAnalysis": "Morocco's ELO rating of 1725 edges Senegal's 1700, reflecting their sustained excellence since the 2022 tournament breakthrough, though the gap of just 25 points suggests these teams are practically inseparable in quality.",
+    "formAnalysis": "Senegal arrive with perfect momentum – nine matches unbeaten including their AFCON triumph, while Morocco's recent form shows resilience with seven wins in eight games, their only blemish that painful final defeat to these very opponents.",
+    "squadValueComparison": "Morocco's €422.5 million squad valuation edges Senegal's €395 million, with Hakimi's €81.3 million leading all players, though Senegal's Nicolas Jackson (€62.5 million) represents their youth movement.",
+    "injuryImpact": "Morocco face genuine concerns with Hakimi carrying a minor thigh issue and Nayef Aguerd a major doubt with pubalgia, while Senegal sweat over captain Kalidou Koulibaly's unusual hematoma – a potential game-changer if their defensive leader misses out.",
+    "bettingPerspective": "Markets remain tight with no clear favorite, reflecting the even nature of this rivalry and the unpredictability that has defined their recent encounters.",
+    "historicalPattern": "Morocco's 2022 semi-final run broke the pattern that only UEFA and CONMEBOL teams reach tournament's final four – now both African giants seek to prove that breakthrough was no fluke."
   },
   "playerSpotlights": [
     {
       "name": "Achraf Hakimi",
       "teamCode": "MAR",
-      "narrative": "The boy from Madrid who chose Morocco's colors over Spain's carries the dreams of North Africa on his marauding runs down the right flank. At 25, Hakimi has evolved from a promising Real Madrid academy graduate into one of the world's elite full-backs, his pace and precision making him Morocco's most potent weapon. His Panenka penalty against Spain in Qatar wasn't just audacious—it was the moment Morocco announced themselves as genuine contenders. Against Senegal, his battle with whoever patrols their left side could determine which team advances.",
-      "statline": "Scored the decisive Panenka penalty in Morocco's 2022 tournament shootout victory over Spain"
+      "narrative": "The captain returns carrying both his team's hopes and the weight of a minor thigh concern that has cast doubt over his sharpness. Hakimi's marauding runs from right-back defined Morocco's 2022 magic, none more memorably than his audacious Panenka penalty that sent Spain packing. At PSG, he's evolved into one of world football's premier wing-backs, and his duel with Senegal's left flank could determine this match's flow. If fully fit, he's Morocco's most dangerous weapon – a defender who thinks like a winger.",
+      "statline": "Scored the decisive Panenka penalty vs Spain in 2022 tournament Round of 16"
     },
     {
       "name": "Sadio Mané",
       "teamCode": "SEN",
-      "narrative": "At 32, the Liverpool legend has entered the twilight of his career but remains Senegal's beating heart. His recent ankle injury in March raised concerns, but his return to action in April suggests he'll be ready when it matters most. Mané's individual brilliance has carried Senegal through countless battles, including their AFCON 2025 triumph where his equalizer against DR Congo showcased his clutch gene. Against Morocco's organized defense, Senegal's hopes may rest on moments of magic that only Mané can conjure.",
-      "statline": "Scored 5 goals in Senegal's unbeaten tournament qualifying campaign"
+      "narrative": "The veteran maestro carries Senegal's attacking hopes on shoulders that have borne this burden for over a decade. At 34, Mané remains the Lions' creative heartbeat, his experience at Liverpool and Bayern Munich invaluable in pressure moments. He matched En-Nesyri with five goals in qualifying and scored crucial goals throughout AFCON 2025, including the equalizer against DR Congo. Against Morocco's organized defense, his ability to find space in tight areas and create something from nothing could prove decisive in breaking the deadlock.",
+      "statline": "Joint-top scorer in AFCON 2025 qualifying with 5 goals"
     },
     {
       "name": "Kalidou Koulibaly",
       "teamCode": "SEN",
-      "narrative": "The 35-year-old defensive titan represents everything noble about Senegalese football—leadership, resilience, and an unwavering commitment to collective success. His move to Saudi Arabia raised questions about his sharpness, but his performances in Senegal's AFCON victory silenced doubters. Koulibaly's ball-playing ability from deep positions will be crucial against Morocco's pressing game, while his aerial dominance could prove decisive in set-piece situations. He's not just Senegal's captain; he's their emotional anchor.",
-      "statline": "Captained Senegal to their second AFCON title in 2025, winning the final against Morocco"
+      "narrative": "The captain's availability remains the tournament's biggest question mark as he battles an unusual hematoma that has sidelined him since April 8. Koulibaly is more than just Senegal's defensive anchor – he's their emotional leader, the man who lifted their first AFCON trophy in 2022 and repeated the feat in 2025. His ball-playing ability from deep provides Senegal's primary method of launching attacks, while his mere presence calms nerves in crucial moments. If he cannot start, Senegal's entire tactical structure shifts dramatically.",
+      "statline": "Captained Senegal to two AFCON titles (2022, 2025)"
     },
     {
-      "name": "Yassine Bounou",
+      "name": "Youssef En-Nesyri",
       "teamCode": "MAR",
-      "narrative": "Bono's heroics in Qatar made him a household name across Africa and beyond, his saves against Spain becoming the stuff of legend. The Al-Hilal goalkeeper enters this tournament as one of the most confident shot-stoppers in the tournament, his positioning and reflexes having reached elite levels during Morocco's 2022 run. Against Senegal's direct attacking approach, Bounou's ability to make crucial saves in decisive moments could be the difference between dreams realized and dreams deferred.",
-      "statline": "Kept three clean sheets during Morocco's historic 2022 tournament semi-final run"
+      "narrative": "Morocco's aerial assassin arrives as their leading goalscorer from qualifying, his five strikes pacing their perfect campaign. En-Nesyri provides the focal point for Morocco's patient build-up play, using his physicality to hold up possession and his timing to attack crosses from Hakimi's raids down the right. Against Senegal's athletic defense, his battle with Koulibaly (if fit) promises to be a classic clash of strength versus guile. His movement in the box and ability to score crucial goals make him Morocco's primary threat in the final third.",
+      "statline": "Leading scorer in Morocco's perfect qualifying campaign with 5 goals"
     }
   ],
   "theVerdict": {
     "title": "The Verdict",
-    "prediction": "Morocco 1-1 Senegal (Morocco wins on penalties)",
-    "confidence": 45,
-    "narrative": "This match has all the ingredients for a classic encounter that extends beyond 90 minutes. Morocco's tactical discipline and home-continent advantage (playing in North America feels closer to home than Senegal) suggests they'll shade the tactical battle, but Senegal's championship mentality from their recent AFCON triumph cannot be underestimated. Both teams know each other intimately after their January final, and that familiarity breeds caution.\n\nExpect a cagey affair decided by fine margins—perhaps a moment of Hakimi brilliance or a Mané flash of genius. But ultimately, this feels destined for penalties, where Morocco's experience from Qatar 2022 and Bounou's proven excellence in high-pressure moments gives them the slightest of edges. Football's cruelest lottery might just favor the Atlas Lions this time.",
+    "prediction": "Morocco 1-1 Senegal",
+    "confidence": 50,
+    "narrative": "This match has stalemate written all over it – two evenly matched sides who know each other intimately, both carrying the scars and lessons of their recent AFCON final. Morocco will be desperate for revenge, but Senegal hold the psychological edge and the momentum of champions. The injury concerns surrounding both Hakimi and Koulibaly add layers of uncertainty that could define the tactical approach from both sides.\n\nExpect a cagey, tactical affair where neither team wants to be the first to blink. Morocco's structured approach will meet Senegal's counter-attacking threat, with moments of individual brilliance likely to decide the outcome. A draw serves both teams well in what promises to be a competitive group, and given their recent history and current form, a share of the spoils feels like the most likely outcome when these African giants collide once more.",
     "alternativeScenarios": [
       {
-        "scenario": "Senegal 1-0 Morocco",
+        "scenario": "Morocco 2-1 Senegal",
         "probability": 30,
-        "reasoning": "Mané produces a moment of individual brilliance, and Senegal's recent championship experience proves decisive in the crucial moments."
+        "reasoning": "If Hakimi is fully fit and Koulibaly misses out, Morocco's tactical superiority and home continent advantage could prove decisive in a tight encounter."
       },
       {
-        "scenario": "Morocco 2-1 Senegal",
-        "probability": 25,
-        "reasoning": "Hakimi's attacking threat overwhelms Senegal's left side, while Morocco's defensive organization frustrates the Lions of Teranga's direct approach."
+        "scenario": "Senegal 1-0 Morocco",
+        "probability": 20,
+        "reasoning": "The champions' mentality and Mané's big-game experience could produce another narrow victory, echoing their AFCON final triumph."
       }
     ]
   },
-  "closingLine": "When the final whistle sounds, one set of African dreams will soar while another crashes to earth—but both teams have already proven that the future of world football flows through the continent that gave birth to the beautiful game."
+  "closingLine": "Five months ago, Senegal broke Moroccan hearts – now, on the world's biggest stage, the Atlas Lions hunt for redemption while the Lions of Teranga seek to prove their continental dominance was no accident."
 }

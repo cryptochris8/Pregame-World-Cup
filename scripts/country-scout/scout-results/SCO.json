@@ -1,0 +1,155 @@
+{
+  "teamCode": "SCO",
+  "teamName": "Scotland",
+  "scoutedAt": "2026-05-16T00:00:00Z",
+  "injuryUpdates": [
+    {
+      "playerName": "Tommy Conway",
+      "teamCode": "SCO",
+      "country": "Scotland",
+      "club": "Middlesbrough",
+      "position": "Forward",
+      "injuryType": "Lower-body injury sustained in Championship play-off semi-final",
+      "injuryDate": "2026-05-12",
+      "expectedReturn": "Major doubt for tournament squad",
+      "availabilityStatus": "major_doubt",
+      "lastMatchPlayed": {
+        "date": "2026-05-12",
+        "opponent": "Southampton (Championship play-off semi-final)",
+        "notes": "Subbed off in the 73rd minute and left the pitch in tears; Clarke is waiting on fitness before naming his 26-man squad on May 19"
+      },
+      "source": "STV News, The Scotsman, Sports Mole - May 13-14 2026",
+      "notes": "Eight-capped striker who was part of the Euro 2024 squad. His injury opens up a forward spot in the Scotland squad with George Hirst, Oli McBurnie and Ross Stewart in contention as alternatives.",
+      "action": "add"
+    },
+    {
+      "playerName": "Lewis Ferguson",
+      "teamCode": "SCO",
+      "country": "Scotland",
+      "club": "Bologna",
+      "position": "Midfielder",
+      "injuryType": "Thigh strain (sustained in pre-match warm-up vs Napoli)",
+      "injuryDate": "2026-04-28",
+      "expectedReturn": "~3 weeks (Bologna timeline) — racing to be fit for the tournament",
+      "availabilityStatus": "doubt",
+      "lastMatchPlayed": {
+        "date": "2026-04-27",
+        "opponent": "Bologna club fixture",
+        "notes": "Injured in warm-up before Bologna vs Napoli; Bologna confirmed a roughly three-week absence with a thigh strain"
+      },
+      "source": "Football Scotland, The Scotsman - late April / early May 2026",
+      "notes": "Bologna captain has had a stop-start recovery from his ACL and earlier hamstring problems. The thigh strain came at the worst possible time but he is expected to be available for the final squad if he ticks fitness boxes.",
+      "action": "add"
+    },
+    {
+      "playerName": "Aaron Hickey",
+      "teamCode": "SCO",
+      "country": "Scotland",
+      "club": "Brentford",
+      "position": "Defender",
+      "injuryType": "No current injury — back to full Premier League minutes",
+      "injuryDate": null,
+      "expectedReturn": "N/A - available",
+      "availabilityStatus": "fit",
+      "lastMatchPlayed": {
+        "date": "2026-05-10",
+        "opponent": "Manchester City (Premier League)",
+        "notes": "Played 61 minutes — described as a major boost for Steve Clarke ahead of the tournament squad announcement"
+      },
+      "source": "Sports Mole, Scotsman - May 2026",
+      "notes": "Previously a minor concern after missing the March international window. His return to action for Brentford has alleviated the concern and he is in line for selection.",
+      "action": "update"
+    },
+    {
+      "playerName": "Ben Doak",
+      "teamCode": "SCO",
+      "country": "Scotland",
+      "club": "Bournemouth",
+      "position": "Forward",
+      "injuryType": "Returning from hamstring surgery — back in training",
+      "injuryDate": "2026-01-15",
+      "expectedReturn": "Back in training, due to report for pre-season; targeting the tournament",
+      "availabilityStatus": "minor_concern",
+      "lastMatchPlayed": {
+        "date": "2026-01-10",
+        "opponent": "Middlesbrough club fixture (Championship, on loan)",
+        "notes": "Has not played since January due to a hamstring problem that required surgery while on loan at Middlesbrough"
+      },
+      "source": "Edinburgh News / Scotsman, This Is Anfield - May 2026",
+      "notes": "Now at Bournemouth after an August 2025 transfer from Liverpool. Reports describe his return to training as a 'massive boost' for Scotland — status upgraded from doubt to minor concern as he builds match fitness ahead of the squad announcement.",
+      "action": "update"
+    },
+    {
+      "playerName": "Craig Gordon",
+      "teamCode": "SCO",
+      "country": "Scotland",
+      "club": "Hearts",
+      "position": "Goalkeeper",
+      "injuryType": "Shoulder injury",
+      "injuryDate": "2026-01-25",
+      "expectedReturn": "Sidelined — limited game time has hurt his squad chances",
+      "availabilityStatus": "doubt",
+      "lastMatchPlayed": {
+        "date": "2026-01-25",
+        "opponent": "Hearts club fixture",
+        "notes": "Has been sidelined since with a shoulder injury and lost ground to Alexander Schwolow at Hearts"
+      },
+      "source": "Sky Sports, Sports Mole - May 2026",
+      "notes": "Long-serving Scotland keeper now in real doubt for the tournament squad given his lack of recent minutes. Clarke has openly flagged the goalkeeping position as one of two undecided slots.",
+      "action": "add"
+    }
+  ],
+  "recentFormUpdates": [],
+  "tacticalUpdates": [],
+  "squadChanges": [
+    {
+      "playerName": "George Hirst",
+      "changeType": "new_call_up",
+      "details": "Ipswich Town striker in strong contention to make the 26-man squad as a replacement option, particularly with Tommy Conway picking up a late injury.",
+      "source": "STV News, The Scotsman - May 13 2026",
+      "effectiveDate": null
+    },
+    {
+      "playerName": "Lennon Miller",
+      "changeType": "new_call_up",
+      "details": "Young Motherwell midfielder retained in the broader squad pool ahead of the final 26-man announcement, viewed as the youthful pick Clarke may take to the tournament.",
+      "source": "Sports Mole - May 2026",
+      "effectiveDate": null
+    }
+  ],
+  "bettingOddsUpdate": {
+    "tournamentWinner": "250/1",
+    "groupStageExit": null,
+    "toQualifyFromGroup": null,
+    "source": "Squawka / Oddschecker aggregation - May 2026",
+    "notes": "Outright winner price is around 250/1. Bet365 lists the Round of 32 as the most likely Scotland exit stage, implying the market expects them to scrape out of Group C in third place. Group-specific qualify-to-advance prices were not consistently available across aggregators at the time of writing."
+  },
+  "coachUpdate": {
+    "changed": false,
+    "currentCoach": "Steve Clarke",
+    "newCoach": null,
+    "source": null,
+    "notes": "Clarke remains in charge. His contract situation has been flagged in the Scottish press as a backdrop to the tournament but there is no change of head coach."
+  },
+  "summary": "Scotland's biggest pre-tournament wobble is striker Tommy Conway picking up a likely campaign-ending injury in Middlesbrough's play-off semi-final on May 12, with the squad due to be named on May 19 ahead of friendlies against Curacao (May 30) and Bolivia (June 6). Bologna captain Lewis Ferguson is also racing fitness after a thigh strain, while there is genuinely good news on Aaron Hickey (back in Premier League action for Brentford) and Ben Doak (back in training at Bournemouth after hamstring surgery). Steve Clarke has publicly described goalkeeper as one of two unresolved squad positions, with Craig Gordon's lack of minutes weakening his case.",
+  "sourceUrls": [
+    "https://www.scotsman.com/sport/football/international/scotland-world-cup-squad-announcement-date-confirmed-as-major-injury-concern-emerges-8543052",
+    "https://news.stv.tv/sport/steve-clarke-to-announce-scotland-world-cup-squad-next-week-amid-injury-wait",
+    "https://www.skysports.com/football/news/12017/13540105/world-cup-2026-steve-clarke-more-or-less-set-on-scotlands-squad-but-undecided-over-two-positions",
+    "https://www.skysports.com/football/news/11095/13543070/world-cup-2026-squad-lists-england-scotland-brazil-usa-spain-france-germany-netherlands-argentina-portugal-and-more",
+    "https://www.sportsmole.co.uk/football/scotland/world-cup/feature/scotland-world-cup-squad-full-list-predicted-lineup-depth-chart-latest-news_597356.html",
+    "https://www.scottishfa.co.uk/news/steve-clarke-names-first-squad-of-2026-as-world-cup-preparations-ramp-up/",
+    "https://www.scottishfa.co.uk/news/fixture-details-and-ticket-information-finalised-for-momentous-year-at-barclays-hampden/",
+    "https://www.scottishfa.co.uk/news/world-cup-warm-ups-confirmed-for-barclays-hampden/",
+    "https://www.scotsman.com/sport/football/international/scotland-confirm-final-pre-world-cup-friendly-as-stadium-and-tv-details-revealed-6569198",
+    "https://www.edinburghnews.scotsman.com/sport/scotland-world-cup-boost-as-ben-doak-returns-liverpool-issue-helps-everton-transfer-hopes-5189242",
+    "https://www.footballscotland.co.uk/scots-abroad/around-the-world/lewis-ferguson-back-training-scotland-30968836",
+    "https://www.scotsman.com/sport/football/lewis-ferguson-injury-timeline-revealed-after-bologna-captain-forced-to-miss-battle-of-serie-a-scots-5074378",
+    "https://www.squawka.com/us/outright-markets/scotland-world-cup-2026-odds/",
+    "https://www.oddschecker.com/football/world-cup/scotland",
+    "https://en.wikipedia.org/wiki/Ben_Doak",
+    "https://en.wikipedia.org/wiki/Tommy_Conway"
+  ],
+  "confidence": "high",
+  "dataFreshness": "2026-05-14"
+}

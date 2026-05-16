@@ -1,0 +1,179 @@
+{
+  "teamCode": "JPN",
+  "teamName": "Japan",
+  "scoutedAt": "2026-05-16T00:00:00Z",
+  "injuryUpdates": [
+    {
+      "playerName": "Kaoru Mitoma",
+      "teamCode": "JPN",
+      "country": "Japan",
+      "club": "Brighton",
+      "position": "Forward",
+      "injuryType": "Hamstring tear (left thigh)",
+      "injuryDate": "2026-05-09",
+      "expectedReturn": "OUT - ruled out of the 2026 tournament",
+      "availabilityStatus": "long_term_injured",
+      "lastMatchPlayed": {
+        "date": "2026-05-09",
+        "opponent": "Wolverhampton (Premier League)",
+        "notes": "Pulled up clutching back of left thigh; left field injured. Brighton won 3-0."
+      },
+      "source": "Fox Sports, Al Jazeera, beIN Sports, Nippon.com - May 2026",
+      "notes": "Moriyasu confirmed at the May 15 squad announcement that the medical team judged Mitoma could not return to fitness during the tournament. Major blow - Mitoma scored the winner against England at Wembley in March and was Japan's primary creative wide threat. Officially omitted from the 26-man squad.",
+      "action": "update"
+    },
+    {
+      "playerName": "Takefusa Kubo",
+      "teamCode": "JPN",
+      "country": "Japan",
+      "club": "Real Sociedad",
+      "position": "Forward",
+      "injuryType": "No current injury",
+      "injuryDate": null,
+      "expectedReturn": "N/A - currently fit",
+      "availabilityStatus": "fit",
+      "lastMatchPlayed": {
+        "date": "2026-05-09",
+        "opponent": "Real Sociedad (La Liga)",
+        "notes": "Active at club. Named in 26-man squad on May 15."
+      },
+      "source": "beIN Sports, FourFourTwo - May 15, 2026",
+      "notes": "Earlier doubt resolved - Kubo named in the final 26-man squad announced May 15. With Mitoma out, Kubo becomes Japan's primary creative attacker.",
+      "action": "update"
+    },
+    {
+      "playerName": "Wataru Endo",
+      "teamCode": "JPN",
+      "country": "Japan",
+      "club": "Liverpool",
+      "position": "Midfielder",
+      "injuryType": "No current injury (managed through season)",
+      "injuryDate": null,
+      "expectedReturn": "N/A - available",
+      "availabilityStatus": "fit",
+      "lastMatchPlayed": {
+        "date": "2026-05-10",
+        "opponent": "Liverpool (Premier League)",
+        "notes": "In selection contention at Liverpool"
+      },
+      "source": "Fox Sports, beIN Sports - May 15, 2026",
+      "notes": "Earlier minor concern resolved. Moriyasu called him 'a central figure in this team' at the May 15 squad announcement. Confirmed in squad as the on-pitch leader and defensive midfield anchor.",
+      "action": "update"
+    },
+    {
+      "playerName": "Yuito Suzuki",
+      "teamCode": "JPN",
+      "country": "Japan",
+      "club": "SC Freiburg",
+      "position": "Midfielder",
+      "injuryType": "Fractured right collarbone (post-surgery)",
+      "injuryDate": "2026-05-03",
+      "expectedReturn": "Doubtful for opening match - racing to be fit",
+      "availabilityStatus": "major_doubt",
+      "lastMatchPlayed": {
+        "date": "2026-05-03",
+        "opponent": "VfL Wolfsburg (Bundesliga)",
+        "notes": "Forced off after heavy midfield collision; fractured right collarbone, underwent surgery."
+      },
+      "source": "SC Freiburg official, StarNews Korea, Japanese Football - May 2026",
+      "notes": "Fractured collarbone in heavy collision against Wolfsburg on May 3. Surgery completed. SC Freiburg said he would be sidelined 'for the foreseeable future,' yet Moriyasu controversially included him in the 26-man squad on May 15. Availability for the group stage is uncertain.",
+      "action": "add"
+    },
+    {
+      "playerName": "Takehiro Tomiyasu",
+      "teamCode": "JPN",
+      "country": "Japan",
+      "club": "Ajax",
+      "position": "Defender",
+      "injuryType": "No current injury - recovered from recurring knee issues",
+      "injuryDate": null,
+      "expectedReturn": "N/A - available",
+      "availabilityStatus": "fit",
+      "lastMatchPlayed": {
+        "date": "2026-05-10",
+        "opponent": "Ajax (Eredivisie)",
+        "notes": "Has not played a competitive senior match for Japan since 2024 (vs Syria)."
+      },
+      "source": "The Star, beIN Sports, Sunday Guardian - May 15, 2026",
+      "notes": "Surprise recall to the 26-man squad after almost two years away from international duty. Moriyasu said medical staff cleared him with no fitness issues. Adds elite defensive versatility to a three-at-the-back system.",
+      "action": "add"
+    }
+  ],
+  "recentFormUpdates": [],
+  "tacticalUpdates": [],
+  "squadChanges": [
+    {
+      "playerName": "Kaoru Mitoma",
+      "changeType": "dropped",
+      "details": "Omitted from the final 26-man squad due to hamstring injury suffered May 9 vs Wolves. Major loss - star left-sided attacker and match-winner vs England in March.",
+      "source": "beIN Sports, Al Jazeera, Olympics.com - May 15, 2026",
+      "effectiveDate": "2026-05-15"
+    },
+    {
+      "playerName": "Takumi Minamino",
+      "changeType": "dropped",
+      "details": "Officially omitted from the 26-man squad due to ACL tear sustained earlier in the season. Confirms long-term injury status.",
+      "source": "Al Jazeera, beIN Sports - May 15, 2026",
+      "effectiveDate": "2026-05-15"
+    },
+    {
+      "playerName": "Takehiro Tomiyasu",
+      "changeType": "new_call_up",
+      "details": "Recalled to the 26-man squad for the first time since 2024 after recovering from recurring injuries; now with Ajax. Elite defender restored to back-three options.",
+      "source": "The Star, Sunday Guardian - May 15, 2026",
+      "effectiveDate": "2026-05-15"
+    },
+    {
+      "playerName": "Yuto Nagatomo",
+      "changeType": "new_call_up",
+      "details": "Veteran 39-year-old left-back named to a fifth tournament squad, providing experience and squad leadership.",
+      "source": "The Star - May 15, 2026",
+      "effectiveDate": "2026-05-15"
+    },
+    {
+      "playerName": "Yuito Suzuki",
+      "changeType": "new_call_up",
+      "details": "Named to the 26-man squad despite undergoing surgery on a fractured collarbone on May 3. Controversial selection given Freiburg said he was out for the 'foreseeable future.'",
+      "source": "beIN Sports, SC Freiburg official - May 15, 2026",
+      "effectiveDate": "2026-05-15"
+    }
+  ],
+  "bettingOddsUpdate": {
+    "tournamentWinner": "50/1",
+    "groupStageExit": "5/2",
+    "toQualifyFromGroup": "7/2 to win Group F",
+    "source": "Bet365 and Betway via Freebets.com aggregator - May 2026",
+    "notes": "Tournament winner price 50/1 at Bet365 and Betway; Betfred longer at 66/1, Betano shorter at 40/1. Group F winner 7/2 at Bet365 (Netherlands favored at 8/11). Group stage exit priced 5/2. Odds compiled before any post-Mitoma-omission re-pricing."
+  },
+  "coachUpdate": {
+    "changed": false,
+    "currentCoach": "Hajime Moriyasu",
+    "newCoach": null,
+    "source": null,
+    "notes": null
+  },
+  "summary": "Japan suffered a major blow when star winger Kaoru Mitoma was ruled out of the 2026 tournament with a hamstring tear sustained on May 9, omitted from the 26-man squad announced May 15. Moriyasu offset the loss by recalling Ajax defender Takehiro Tomiyasu (first squad in nearly two years) and controversially keeping Freiburg midfielder Yuito Suzuki despite a fractured collarbone from May 3. No internationals were played in the April 16 to May 16 window; the next friendly is vs Iceland in Tokyo on May 31.",
+  "sourceUrls": [
+    "https://www.foxsports.com/stories/soccer/japan-2026-fifa-world-cup-karou-mitoma-injury",
+    "https://www.thestar.com.my/sport/football/2026/05/15/soccer-tomiyasu-makes-japan-return-as-moriyasu-names-world-cup-squad",
+    "https://www.aljazeera.com/sports/2026/5/15/mitoma-fails-to-make-japans-2026-world-cup-squad-due-to-hamstring-injury",
+    "https://www.beinsports.com/en-us/soccer/fifa-world-cup-2026/articles/hajime-moriyasu-s-official-japan-squad-for-the-2026-fifa-world-cup-2026-05-15",
+    "https://www.olympics.com/en/news/fifa-world-cup-2026-japan-players-squad-list-key-stats-schedule",
+    "https://m.allfootballapp.com/news/La-Liga/Japans-squad-for-World-Cup-2026-Endo-and-Doan-lead-Mitoma-Minamino-out-due-to-injury/4479909",
+    "https://khelnow.com/football/world-football-why-kaoru-mitoma-left-out-japans-world-cup-squad-202605",
+    "https://sundayguardianlive.com/sports/japan-fifa-world-cup-2026-squad-announced-kaoru-mitoma-ruled-out-takehiro-tomiyasu-returns-after-2-years-full-list-192449/",
+    "https://www.scfreiburg.com/en/latest/news/first-team/2025-26/yuito-suzuki-sidelined-for-the-foreseeable-with-fractured-collarbone/",
+    "https://www.starnewskorea.com/en/sports/2026/05/10/2026051006462431163",
+    "https://www.starnewskorea.com/en/sports/2026/05/11/2026051118193482624",
+    "https://www.starnewskorea.com/en/sports/2026/05/14/2026051416255338519",
+    "https://www.starnewskorea.com/en/sports/2026/05/13/2026051300490538611",
+    "https://www.nippon.com/en/news/yjj2026051100633/",
+    "https://www.fourfourtwo.com/team/japan-world-cup-2026-squad",
+    "https://www.freebets.com/football/world-cup/odds/japan/",
+    "https://www.espn.co.uk/football/team/results/_/id/627/league/FIFA.FRIENDLY",
+    "https://www.si.com/soccer/japan-2026-world-cup-preview",
+    "https://www.rotowire.com/soccer/article/2026-world-cup-group-f-preview-netherlands-japan-sweden-and-tunisia-lineups-odds-predictions-and-tactics-112643"
+  ],
+  "confidence": "high",
+  "dataFreshness": "2026-05-15"
+}

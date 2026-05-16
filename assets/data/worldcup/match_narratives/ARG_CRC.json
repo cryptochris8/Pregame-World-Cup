@@ -4,77 +4,70 @@
   "team2Code": "CRC",
   "team1Name": "Argentina",
   "team2Name": "Costa Rica",
-  "generatedAt": "2026-04-16T00:00:00Z",
-  "dataVersion": 2,
-
-  "headline": "The Champions Close Their Group Against Costa Rica's Ghosts of 2014",
-  "subheadline": "Argentina aim to seal their knockout round passage against a Costa Rica side dreaming of recapturing their legendary tournament magic",
-
-  "openingNarrative": "Costa Rica's 2014 tournament run remains one of the greatest underdog stories in tournament history. Topping a group containing Uruguay, Italy, and England, then defeating Greece on penalties in the Round of 16, Los Ticos proved that tactical discipline and collective spirit could overcome the most prohibitive quality gaps. Now, twelve years later, they face the defending world champions — and the question hangs in the air like humidity before a tropical storm: can they do it again?\n\nArgentina arrive at this match as the most formidable force in world football, their March form providing final confirmation of their readiness. A ruthless 5-0 demolition of Zambia — Messi contributing a goal and an assist in a display of clinical efficiency — was followed by a 2-1 victory over Mauritania. Those results extended a remarkable run to 10 wins in their last 11 matches. The CONMEBOL qualifying campaign was a masterclass in consistency: 12 wins, 38 points, 10 clean sheets across 18 matches. At 8/1 to retain their crown, the bookmakers consider Argentina genuine title contenders.\n\nBut Argentina carry a burden that even their formidable squad depth cannot fully compensate for. Cristian Romero's cruciate ligament tear on April 12 has robbed Scaloni of his most important defender — the aggressive, front-foot center-back whose intensity set the tone for Argentina's entire press. By this stage of the group, Scaloni will have had two matches to adjust, but the absence will still be felt. The question is whether Argentina's defensive reshuffling has cost them any of the solidity that defined their qualifying campaign.\n\nCosta Rica, by contrast, arrive as one of the tournament's more modest participants. Their 2022 tournament campaign was a sobering experience — a group-stage exit that lacked the magic of 2014. But young talents like Jewison Bennette represent the next generation of Tico football. The DNA of Costa Rican football — defensive discipline, collective sacrifice, and an unshakeable belief that the impossible is merely improbable — remains intact.",
-
+  "generatedAt": "2026-06-20T14:30:00Z",
+  "dataVersion": 1,
+  "headline": "Messi's Final Bow? Champions Face Tico Test in Group Finale",
+  "subheadline": "Argentina seek perfect group stage finish while Costa Rica chase miracle repeat of 2014 heroics in Dallas showdown.",
+  "openingNarrative": "Under the sprawling canopy of AT&T Stadium in Dallas, two nations carrying vastly different expectations will collide in a match that could define legacies. Argentina arrive as defending champions, their sky-blue and white stripes carrying the weight of recent glory and the promise of dynasty. They have swept through their qualifying campaign with ruthless efficiency—twelve wins from eighteen matches, twenty-one goals to the good—and their recent form reads like a championship team finding their rhythm at precisely the right moment. Eleven matches unbeaten stretching back to September, including a devastating 4-1 dismantling of Brazil that announced their tournament intentions with characteristic South American flair.\n\nYet for all their dominance, questions linger like storm clouds on a Texas horizon. Will Lionel Messi, now 38 and fully recovered from his hamstring strain, grace the tournament stage one final time? The little magician from Rosario has turned his participation into the most compelling subplot of the entire tournament, his decision carrying the emotional weight of an era's end. Argentina's recent 5-0 destruction of Zambia showcased their depth—with Messi contributing a goal and assist in what could serve as his tournament audition.\n\nCosta Rica, meanwhile, arrive as the embodiment of tournament romanticism, forever linked to that magical 2014 run when they topped a group containing Uruguay, Italy, and England before reaching the quarterfinals. Their fairy-tale summer in Brazil proved that heart, organization, and goalkeeper heroics could overcome seemingly insurmountable odds. Now, twelve years later, the Ticos face their own moment of truth. Their 2022 campaign ended in disappointment with a group-stage exit, but tournament football has a way of resurrecting the most unlikely heroes. In their five previous meetings with Argentina, they've managed just one draw—that memorable 2004 Copa America quarterfinal stalemate—but in tournament football, history is written by those brave enough to ignore the script.",
   "tacticalBreakdown": {
     "title": "The Chess Match",
-    "narrative": "Argentina's 4-3-3 system is designed to overwhelm opponents through positional superiority, relentless movement, and the individual genius of Messi. Against Costa Rica's expected 5-4-1 defensive block, the challenge will be finding spaces in a congested penalty area. Argentina's fullbacks will push high to create overloads, while Messi drifts into pockets of space that the Costa Rican system will try to deny.\n\nBy this stage of the group, Scaloni will know whether his post-Romero defensive structure is holding. Lisandro Martinez, with his ferocious tackling and left-footed ball progression, will have established himself as the anchor. The question is whether the partnership alongside him — likely Otamendi or Pezzella — has developed the understanding necessary to handle quick transitions.\n\nCosta Rica's blueprint is clear: the same defensive framework that stunned the world in 2014. Five defenders, a compact midfield four, and a lone striker tasked with holding the ball and bringing others into play. The spaces between Costa Rica's defensive and midfield lines will be compressed to a minimum, forcing Argentina to play around rather than through them.\n\nThe tactical key is patience. Argentina must resist the temptation to force passes into crowded areas. Instead, switching the point of attack, using fullback overlaps, and exploiting set pieces will be the routes to goal. Costa Rica, meanwhile, will hope that their defensive shape holds long enough to force Argentina into frustration — and then, perhaps, steal a moment on the counter through Bennette's pace.",
+    "narrative": "This tactical battle will be decided in the spaces between Argentina's fluid 4-3-3 and Costa Rica's defensive 5-4-1 fortress. Argentina's system under Lionel Scaloni is a masterpiece of positional flexibility—transforming from a patient 4-3-3 buildup into a devastating 3-2-5 attacking shape when Nahuel Molina and Nicolás Tagliafico bomb forward in synchronization. Enzo Fernandez will orchestrate from deep, his metronomic passing setting the tempo while Alexis Mac Allister provides the box-to-box energy that made him indispensable during their 2022 triumph. The key will be how quickly they can break through Costa Rica's defensive lines before the Ticos can settle into their compact shape.\n\nCosta Rica's blueprint is borrowed from their 2014 masterclass: defend with discipline, press with intelligence, and rely on Keylor Navas to produce moments of brilliance when the dam finally breaks. Their 5-4-1 will look to suffocate the half-spaces where Messi traditionally operates, forcing Argentina wide where crossing becomes their primary weapon. The danger for Los Ticos lies in the 65th-75th minute window, when legs tire and Argentina's superior fitness and squad depth typically tell. If they can keep it goalless past the hour mark, nerves and the weight of expectation could become unexpected allies.",
     "team1Formation": "4-3-3",
     "team2Formation": "5-4-1",
-    "keyMatchup": "Argentina's attacking movement vs Costa Rica's packed defense — can the champions find a way through the wall?"
+    "keyMatchup": "Messi's movement versus Costa Rica's disciplined defensive midfield block"
   },
-
   "dataInsights": {
     "title": "By The Numbers",
-    "eloAnalysis": "Argentina (ELO: 1873, rank 2) vs Costa Rica (unranked among qualified teams) — the ELO gap is massive, suggesting Argentina should win comfortably. But Costa Rica's 2014 group stage proved that ELO ratings cannot measure the power of collective belief.",
-    "formAnalysis": "Argentina's recent form is extraordinary: 10 wins in their last 11 matches. The March friendlies — 5-0 over Zambia with Messi scoring and assisting, 2-1 over Mauritania — demonstrated a squad operating at peak efficiency. Their CONMEBOL qualifying numbers remain staggering: 12 wins, 38 points, +21 goal difference, 10 clean sheets in 18 matches. Costa Rica's qualification path was more modest, reflecting the competitive challenges of CONCACAF qualifying.",
-    "squadValueComparison": "Argentina's squad ($951M) dwarfs Costa Rica's limited resources. The gap in individual quality is enormous — Alvarez alone ($113M) exceeds Costa Rica's entire squad value. This is the kind of mismatch the tournament format inevitably produces.",
-    "injuryImpact": "Romero's absence will be into its third match by this point. Argentina may rotate for this fixture depending on their group standings. Scaloni's squad depth means even a second-string XI would be heavily favored. Messi's involvement will depend on what Argentina need mathematically — if qualification is secured, the 38-year-old may be rested with an eye on the knockout rounds.",
-    "bettingPerspective": "Argentina at 8/1 to win the tournament and -340 to top Group J should be among the heaviest favorites of any group-stage match. The main question for bettors is the margin of victory rather than the outcome. Costa Rica's odds reflect their underdog status.",
-    "historicalPattern": "Argentina have dominated most encounters with CONCACAF opponents at tournaments. Costa Rica's 2014 heroics remain the exception rather than the rule for Central American teams at the tournament."
+    "eloAnalysis": "Argentina's ELO rating of 1873 places them second in the global rankings, reflecting their status as defending champions and recent form that includes victories over Brazil and Uruguay.",
+    "formAnalysis": "Argentina's qualifying campaign was a statement of intent—twelve wins from eighteen matches with Messi leading the scoring charts on eight goals, while their recent friendlies show a team peaking at the perfect moment.",
+    "squadValueComparison": "Argentina's squad valuation of €951.25 million, led by Julián Álvarez's €113 million price tag, reflects the depth and quality that makes them tournament favorites.",
+    "injuryImpact": "Messi's recovery from his hamstring strain removes the biggest question mark, though Cristian Romero's cruciate ligament tear creates defensive uncertainty with the Tottenham defender rated as doubtful.",
+    "bettingPerspective": "The markets heavily favor Argentina, reflecting not just their superior talent but also Costa Rica's disappointing 2022 campaign and limited recent tournament pedigree.",
+    "historicalPattern": "As defending champions, Argentina face the curse that has seen four of the last five titleholders eliminated at the group stage, though their dominant qualifying form suggests they may buck this troubling trend."
   },
-
   "playerSpotlights": [
     {
-      "name": "Julian Alvarez",
+      "name": "Lionel Messi",
       "teamCode": "ARG",
-      "narrative": "If Messi is rested or used as a substitute — a real possibility if Argentina have already secured qualification — Alvarez becomes the focal point of Argentina's attack. The Atletico Madrid striker's relentless pressing and intelligent movement make him the perfect weapon against a deep-sitting defense. His three goals in the 2022 knockout rounds proved he thrives when the stakes are highest, and his ability to create goals from half-chances makes him a nightmare for defenders who allow even a moment's lapse in concentration.",
-      "statline": "5 tournament goals across 2022 and qualifying, $113M market value"
+      "narrative": "At 38, this could be the final tournament chapter in the greatest story ever told in football. Fully recovered from his hamstring concerns and showing no signs of slowing down with his goal and assist against Zambia, Messi carries the hopes of a nation seeking back-to-back titles. His free role in Argentina's system allows him to drift across the frontline, dropping deep as a false nine or floating into the right half-space where he has terrorized defenders for nearly two decades. Watch for those trademark diagonal runs and the way he manipulates space even when not touching the ball.",
+      "statline": "Led Argentina's qualifying campaign with 8 goals in 18 matches"
     },
     {
       "name": "Keylor Navas",
       "teamCode": "CRC",
-      "narrative": "If the legendary goalkeeper is between the posts for this match, it adds an emotional dimension that transcends tactical analysis. Navas's three penalty saves at the 2014 tournament, his Champions League heroics with Real Madrid, and his status as the greatest goalkeeper Central America has ever produced make him a figure who can inspire an entire nation to believe the impossible is possible. At his age, this is almost certainly his last tournament too — mirroring Messi's own farewell narrative on the other side.",
-      "statline": "3 penalty saves at the 2014 tournament, Champions League winner with Real Madrid"
+      "narrative": "The hero of Costa Rica's 2014 miracle run returns to the tournament stage with his reputation for big-game heroics intact. Now 39, Navas remains his country's talisman between the posts, the man whose three penalty saves in the 2014 tournament helped create one of the greatest underdog stories in tournament history. His reflexes may have dimmed slightly with age, but his positioning and ability to rise to the occasion when Costa Rica needs him most remain undiminished. If Los Ticos are to pull off another shocking result, it will likely require vintage Navas brilliance.",
+      "statline": "Made 3 penalty saves during Costa Rica's 2014 tournament run to the quarterfinals"
     },
     {
-      "name": "Alexis Mac Allister",
+      "name": "Julián Álvarez",
       "teamCode": "ARG",
-      "narrative": "Liverpool's tournament-winning midfielder provides the engine that drives Argentina's possession game. Mac Allister's ability to receive in tight spaces, play quick one-twos, and arrive late in the box makes him a constant threat. Against Costa Rica's congested defense, his movement between the lines could be crucial in finding the spaces that conventional wide play cannot reach. With Romero gone and the defensive structure adjusted, Mac Allister's role in controlling tempo and reducing defensive transitions becomes even more important.",
-      "statline": "Liverpool's tournament-winning midfielder, key component of Argentina's midfield trio"
+      "narrative": "The Manchester City striker turned Atlético Madrid goal machine represents Argentina's future while serving as their present-day weapon. His movement and clinical finishing were crucial to their 2022 triumph, and his adaptation to Diego Simeone's tactical demands has only sharpened his tournament toolkit. At 26, Álvarez brings the perfect blend of pace, pressing, and penalty-box instinct to complement or potentially replace Messi in the attacking hierarchy. His ability to stretch defenses with vertical runs could be the key to unlocking Costa Rica's compact defensive shape.",
+      "statline": "Argentina's most valuable player at €113 million according to current market valuations"
     },
     {
       "name": "Jewison Bennette",
       "teamCode": "CRC",
-      "narrative": "The young winger represents the future of Costa Rican football. Bennette's pace and directness give Los Ticos a counter-attacking outlet that can trouble even the best defenses when given space. Against Argentina's high defensive line — now potentially less aggressive without Romero's presence — one run in behind could create the kind of moment that becomes a tournament memory. Every young player dreams of a stage like this.",
-      "statline": "Young talent representing the next generation of Costa Rican football"
+      "narrative": "The 22-year-old winger represents Costa Rica's new generation, a player tasked with carrying the creative burden for a team built on defensive solidity. His pace and directness on the flanks offer Los Ticos their best hope of troubling Argentina's high defensive line, particularly if they can win the ball in midfield and launch quick counter-attacks. While the spotlight will shine on veterans like Navas, Bennette's ability to produce moments of individual brilliance could determine whether Costa Rica can manufacture the kind of shock result that made them famous twelve years ago.",
+      "statline": "Key attacking threat in Costa Rica's youthful squad rebuild"
     }
   ],
-
   "theVerdict": {
     "title": "The Verdict",
     "prediction": "Argentina 3-0 Costa Rica",
-    "confidence": 78,
-    "narrative": "Argentina's quality, depth, and tournament-winning pedigree should prove too much for Costa Rica. Even if Scaloni rotates his squad — a likely scenario depending on Group J's standings — Argentina's second-string XI contains players who would start for most teams at this tournament. Their March form, culminating in that 5-0 demolition of Zambia, showed a squad where even the fringe players are performing at an elite level.\n\nCosta Rica will fight. They will defend with discipline, they will throw their bodies in front of shots, and they will play with the passion that has always defined Tico football. But the quality gap is simply too large. Argentina will find the spaces, convert their chances, and close their group-stage campaign with a professional victory.\n\nThe real story of this match may be Messi. If he plays, every touch could be his last at a tournament — the final group-stage appearance of football's greatest career. If he is rested, the world will wonder if it has already seen the final chapter. Either way, MetLife Stadium will remember.",
+    "confidence": 85,
+    "narrative": "Argentina's quality, depth, and tournament-winning experience should prove too much for a Costa Rica side still searching for their identity after 2022's disappointment. While the Ticos showed in 2014 that organized defending and goalkeeper heroics can overcome talent gaps, this Argentina team has demonstrated repeatedly—most notably in their 2022 final against France—that they can break down the most stubborn resistance. Messi's presence or absence will dominate the pre-match narrative, but Argentina's strength lies in their collective rather than individual brilliance.\n\nCosta Rica's best chance lies in keeping the match scoreless deep into the second half, when nerves and the weight of expectation could create opportunities. However, Argentina's superior fitness, tactical flexibility, and bench strength typically tell in the final thirty minutes of matches. Expect Scaloni to rotate his squad with knockout rounds in mind, but even a second-string Argentina possess enough quality to handle Costa Rica's defensive approach. The 3-0 scoreline reflects not disrespect for Los Ticos' tournament pedigree, but recognition of the gulf in class between defending champions and hopeful underdogs.",
     "alternativeScenarios": [
       {
         "scenario": "Argentina 1-0 Costa Rica",
-        "probability": 18,
-        "reasoning": "Costa Rica produce a 2014-style defensive masterclass, keeping Argentina's rotated XI at bay until a single goal — perhaps a set piece or a moment of individual brilliance from a substitute Messi — finally breaks through."
+        "probability": 25,
+        "reasoning": "If Navas produces vintage heroics and Costa Rica successfully frustrate Argentina for 60+ minutes, a single moment of brilliance could decide a tight encounter."
       },
       {
-        "scenario": "Argentina 2-1 Costa Rica",
+        "scenario": "Argentina 0-0 Costa Rica",
         "probability": 10,
-        "reasoning": "Costa Rica score a shock goal through a Bennette counter-attack, creating a moment of genuine drama. Argentina recover and win comfortably, but the Tico goal becomes a highlight reel moment that captures the romance of tournament football."
+        "reasoning": "Tournament football's capacity for shock results cannot be ignored—Costa Rica's 2014 blueprint proved that perfect defensive organization can neutralize superior talent."
       }
     ]
   },
-
-  "closingLine": "In 2014, Costa Rica showed the world that the impossible is merely improbable. Against the defending world champions — a side that has won 10 of its last 11 matches and carries the aura of Messi's farewell — they will need that belief more than ever."
+  "closingLine": "In Dallas, where everything is bigger, Argentina seek to make their championship reign larger still, while Costa Rica dream of proving that heart can still triumph over expectation on tournament football's grandest stage."
 }

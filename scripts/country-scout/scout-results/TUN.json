@@ -1,0 +1,118 @@
+{
+  "teamCode": "TUN",
+  "teamName": "Tunisia",
+  "scoutedAt": "2026-05-16T00:00:00Z",
+  "injuryUpdates": [
+    {
+      "playerName": "Hannibal Mejbri",
+      "teamCode": "TUN",
+      "country": "Tunisia",
+      "club": "Burnley",
+      "position": "Midfielder",
+      "injuryType": "Hamstring (precautionary, recurrence concern)",
+      "injuryDate": "2026-05-10",
+      "expectedReturn": "Expected available for the tournament; club monitoring",
+      "availabilityStatus": "minor_concern",
+      "lastMatchPlayed": {
+        "date": "2026-05-10",
+        "opponent": "Aston Villa (Premier League)",
+        "notes": "Substituted off after 69 minutes as a precaution in a 2-2 draw; walked off unaided"
+      },
+      "source": "Flashscore injury history (entry from 11.05.2026); RotoWire / Burnley Express via theScore.com (15 May 2026)",
+      "notes": "Recurrence worry after the late-March hamstring strain that already ruled him out of the Haiti and Canada friendlies. Interim Burnley coach Mike Jackson downplayed severity. Selected in the 26-man squad announced 15 May 2026, so currently expected to be fit for the opener on 14 June, but he is the highest-profile fitness watch in the squad.",
+      "action": "update"
+    }
+  ],
+  "recentFormUpdates": [],
+  "tacticalUpdates": [],
+  "squadChanges": [
+    {
+      "playerName": "Ellyes Skhiri",
+      "changeType": "new_call_up",
+      "details": "Officially named captain in Lamouchi's 26-man squad announced 15 May 2026, replacing 101-cap Ferjani Sassi, who was omitted. Eintracht Frankfurt defensive midfielder is now the on-pitch leader.",
+      "source": "Bulinews / Africa Top Sports / Heavy.com (15 May 2026)",
+      "effectiveDate": "2026-05-15"
+    },
+    {
+      "playerName": "Aissa Laidouni",
+      "changeType": "dropped",
+      "details": "Union Berlin midfielder, previously a first-choice starter and listed as a star player, was left out of the final 26-man squad announced 15 May 2026. A genuine selection surprise; he had been widely tipped to feature alongside Skhiri and Mejbri.",
+      "source": "ysscores.com official squad list; Heavy.com squad breakdown (15 May 2026)",
+      "effectiveDate": "2026-05-15"
+    },
+    {
+      "playerName": "Mohamed Ali Ben Romdhane",
+      "changeType": "dropped",
+      "details": "Top qualification goalscorer (4 goals, including the 94th-minute winner vs Equatorial Guinea that sealed qualification) omitted from the final 26-man squad. Major surprise omission.",
+      "source": "Heavy.com / GhanaSoccernet (15 May 2026)",
+      "effectiveDate": "2026-05-15"
+    },
+    {
+      "playerName": "Ferjani Sassi",
+      "changeType": "dropped",
+      "details": "Previous captain and 101-cap veteran cut from the 26-man squad. Marks a generational shift under Lamouchi.",
+      "source": "AOL / Bulinews (15 May 2026)",
+      "effectiveDate": "2026-05-15"
+    },
+    {
+      "playerName": "Yassine Meriah",
+      "changeType": "dropped",
+      "details": "95-cap veteran defender cut from the final squad.",
+      "source": "AOL (15 May 2026)",
+      "effectiveDate": "2026-05-15"
+    },
+    {
+      "playerName": "Rani Khedira",
+      "changeType": "new_call_up",
+      "details": "Union Berlin defensive midfielder (brother of 2014 winner Sami Khedira) handed first international call-up at age 32 after completing naturalisation in March. Adds Bundesliga experience to the midfield.",
+      "source": "Bulinews / Heavy.com (15 May 2026)",
+      "effectiveDate": "2026-05-15"
+    },
+    {
+      "playerName": "Louey Ben Farhat",
+      "changeType": "dropped",
+      "details": "19-year-old Karlsruhe attacker who debuted in the Haiti/Canada friendlies was omitted after his father phoned Lamouchi to say it was too early for his son to attend the tournament; Ben Farhat did not return the coach's follow-up call.",
+      "source": "Yahoo Sports / bulinews (15 May 2026)",
+      "effectiveDate": "2026-05-15"
+    }
+  ],
+  "bettingOddsUpdate": {
+    "tournamentWinner": "500/1",
+    "groupStageExit": "4/6",
+    "toQualifyFromGroup": "21/20",
+    "source": "Aggregated from UK bookmakers (Bet365, Betway, Betfred, Coral) via freebets.com and squawka.com, May 2026",
+    "notes": "Tunisia priced as the clear Group F outsider. Group elimination at 4/6 is the favoured stage of exit; advancing from the group is roughly even money at 21/20. Outright winner +50000 (500/1)."
+  },
+  "coachUpdate": {
+    "changed": false,
+    "currentCoach": "Sabri Lamouchi",
+    "newCoach": null,
+    "source": null,
+    "notes": "Lamouchi (in post since March 2026) named his 26-man squad on 15 May 2026 and has scheduled Austria (1 June, Vienna) and Belgium (6 June, Brussels) as pre-tournament friendlies."
+  },
+  "summary": "Tunisia's 26-man squad, announced 15 May 2026, is the dominant development of the window: Ellyes Skhiri is formally captain, while Aissa Laidouni, top qualifying scorer Mohamed Ali Ben Romdhane, ex-captain Ferjani Sassi and veteran Yassine Meriah were all cut, marking a deliberate generational reset by coach Sabri Lamouchi. The chief fitness watch is Hannibal Mejbri, who was substituted off as a precaution in Burnley's 10 May draw with Aston Villa and is currently flagged with a hamstring entry, though he made the squad and is expected to be available. No competitive or friendly matches have been played since 16 April; warm-ups against Austria (1 June) and Belgium (6 June) are still to come.",
+  "sourceUrls": [
+    "https://dailysports.net/news/tunisia-world-cup-2026-squad-announcement-sabri-lamouchi-set-to-reveal-26-man-list/",
+    "https://www.beinsports.com/en-us/soccer/fifa-world-cup-2026/articles/tunisia-in-the-2026-fifa-world-cup-roster-key-players-and-everything-you-need-to-know-2026-05-15",
+    "https://heavy.com/sports/soccer/world-cup/tunisia-announces-squad-fifa-world-cup/",
+    "https://ghanasoccernet.com/tunisia-coach-sabri-lamouchi-names-final-26-man-squad-for-2026-world-cup",
+    "https://ca.sports.yahoo.com/news/karlsruhe-star-omitted-tunisia-world-193500684.html",
+    "https://www.aol.com/articles/lamouchi-leaves-sassi-tunisia-world-182127000.html",
+    "https://bulinews.com/ellyes-skhiri-captain-tunisia-world-cup-rani-khedira-receives-call",
+    "https://www.ysscores.com/en/news/13965581/officially-announcement-of-tunisias-squad-for-the-world-cup",
+    "https://en.africatopsports.com/lamouchi-set-to-unveil-tunisias-world-cup-squad-amid-intense-selection-headache/",
+    "https://www.flashscore.com/player/mejbri-hannibal/8ECeKtyS/injury-history/",
+    "https://www.thescore.com/news/3538962",
+    "https://www.foxsports.com/soccer/hannibal-mejbri-player",
+    "https://www.espn.com/soccer/match/_/gameId/740947/aston-villa-burnley",
+    "https://africasoccer.com/burnley-midfielder-hannibal-mejbri-ruled-out-of-tunisia-friendlies-due-to-hamstring-injury/",
+    "https://africasoccer.com/tunisia-world-cup-2026-squad-lamouchi-training-camp/",
+    "https://onefootball.com/en/news/world-cup-2026-tunisia-lines-up-four-sparring-partners-ahead-of-the-tournament-42266964",
+    "https://www.freebets.com/football/world-cup/odds/tunisia/",
+    "https://www.rotowire.com/soccer/article/2026-world-cup-group-f-preview-netherlands-japan-sweden-and-tunisia-lineups-odds-predictions-and-tactics-112643",
+    "https://news-tunisia.tunisienumerique.com/wahbi-khazri-officially-announces-his-retirement-from-football/amp/",
+    "https://www.panafricafootball.com/post/tunisia-national-team-staff-coach/"
+  ],
+  "confidence": "high",
+  "dataFreshness": "2026-05-15"
+}

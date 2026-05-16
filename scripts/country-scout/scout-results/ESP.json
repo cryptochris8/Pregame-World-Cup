@@ -1,0 +1,233 @@
+{
+  "teamCode": "ESP",
+  "teamName": "Spain",
+  "scoutedAt": "2026-05-16T00:00:00Z",
+  "injuryUpdates": [
+    {
+      "playerName": "Lamine Yamal",
+      "teamCode": "ESP",
+      "country": "Spain",
+      "club": "Barcelona",
+      "position": "Forward",
+      "injuryType": "Torn hamstring (left biceps femoris) - season-ending for club",
+      "injuryDate": "2026-04-22",
+      "expectedReturn": "Mid-June 2026 (likely misses opener vs Cape Verde, available later in group stage)",
+      "availabilityStatus": "major_doubt",
+      "lastMatchPlayed": {
+        "date": "2026-04-22",
+        "opponent": "Celta Vigo (LaLiga)",
+        "notes": "Suffered hamstring tear while scoring a penalty in Barcelona's 1-0 win; ruled out for rest of club season"
+      },
+      "source": "ESPN, Sky Sports, Al Jazeera, Barca Blaugranes, Football Espana - Apr/May 2026",
+      "notes": "Five-to-eight week lay-off projected. Spain hopeful he is available for the tournament but expected to miss the opener on June 15. De la Fuente publicly confident he will make it: 'God willing'.",
+      "action": "update"
+    },
+    {
+      "playerName": "Nico Williams",
+      "teamCode": "ESP",
+      "country": "Spain",
+      "club": "Athletic Bilbao",
+      "position": "Forward",
+      "injuryType": "Moderate left hamstring strain (tendon not affected)",
+      "injuryDate": "2026-05-10",
+      "expectedReturn": "Approximately 21 days (early June 2026)",
+      "availabilityStatus": "doubt",
+      "lastMatchPlayed": {
+        "date": "2026-05-10",
+        "opponent": "Valencia (LaLiga)",
+        "notes": "Came off before halftime in 37th minute with left hamstring complaint; Athletic lost 1-0"
+      },
+      "source": "Al Jazeera, Goal.com, 101 Great Goals, Football Espana - May 2026",
+      "notes": "Scan ruled out serious damage. Athletic Bilbao expect a 3-week recovery, putting him in line to return just before Spain's opener vs Cape Verde. Compounds the Yamal absence on the flanks.",
+      "action": "add"
+    },
+    {
+      "playerName": "Rodri",
+      "teamCode": "ESP",
+      "country": "Spain",
+      "club": "Manchester City",
+      "position": "Midfielder",
+      "injuryType": "Groin strain (sustained vs Arsenal)",
+      "injuryDate": "2026-04-20",
+      "expectedReturn": "Late May 2026 (back in partial training; targeting end of City season)",
+      "availabilityStatus": "minor_concern",
+      "lastMatchPlayed": {
+        "date": "2026-04-20",
+        "opponent": "Arsenal (Premier League)",
+        "notes": "Suffered groin issue; has missed City's last four matches in all competitions since"
+      },
+      "source": "Caught Offside, Yahoo Sports, Daily Cannon, beIN Sports - May 2026",
+      "notes": "Initial scans were not alarming but the issue proved worse than expected. Returned to partial training in early May; Guardiola says he is 'getting better'. Expected to recover in time for the tournament but second injury setback of the season after the ACL rehab.",
+      "action": "update"
+    },
+    {
+      "playerName": "Mikel Merino",
+      "teamCode": "ESP",
+      "country": "Spain",
+      "club": "Arsenal",
+      "position": "Midfielder",
+      "injuryType": "Recovering from fractured foot surgery (Feb 9)",
+      "injuryDate": "2026-01-25",
+      "expectedReturn": "Late May 2026 - now back on grass training, ditched protective boot",
+      "availabilityStatus": "minor_concern",
+      "lastMatchPlayed": {
+        "date": "2026-01-25",
+        "opponent": "Manchester United (Premier League)",
+        "notes": "Last competitive appearance before foot surgery"
+      },
+      "source": "Arseblog, beIN Sports, Now Arsenal, Daily Cannon - Apr/May 2026",
+      "notes": "Recovery exceeding medical expectations. Back training on grass without pain in early May, targeting return before end of Arsenal's season including the Champions League final. Now on track for the tournament.",
+      "action": "update"
+    },
+    {
+      "playerName": "Dani Carvajal",
+      "teamCode": "ESP",
+      "country": "Spain",
+      "club": "Real Madrid",
+      "position": "Defender",
+      "injuryType": "Fractured toe (right foot) plus recurrent fitness setbacks",
+      "injuryDate": "2026-05-02",
+      "expectedReturn": "Will not feature at the tournament",
+      "availabilityStatus": "injured",
+      "lastMatchPlayed": {
+        "date": "2026-03-27",
+        "opponent": "Serbia (International Friendly)",
+        "notes": "Fitness was being managed; subsequent toe fracture and lack of rhythm ended his case"
+      },
+      "source": "beIN Sports, Football Espana, Athlon Sports, Tribuna.com - May 2026",
+      "notes": "Officially left out of Spain's preliminary 55-man pre-selection on May 11. Ends his realistic chance of a third consecutive tournament; expected to trigger international retirement.",
+      "action": "update"
+    },
+    {
+      "playerName": "Gavi",
+      "teamCode": "ESP",
+      "country": "Spain",
+      "club": "Barcelona",
+      "position": "Midfielder",
+      "injuryType": "Fully recovered from inner meniscus tear (Sep 2025)",
+      "injuryDate": null,
+      "expectedReturn": "Available - back in preliminary squad",
+      "availabilityStatus": "fit",
+      "lastMatchPlayed": {
+        "date": "2026-05-11",
+        "opponent": "Barcelona (LaLiga, recent competitive run)",
+        "notes": "Regained match continuity over past month; publicly stated full readiness for the tournament"
+      },
+      "source": "Barca Universal, Yahoo Sports, Football Espana - May 2026",
+      "notes": "Recovered to the level of forcing his way back into Spain's preliminary squad. Performances in the last month convinced de la Fuente; included in the 55-man pre-list on May 11.",
+      "action": "update"
+    }
+  ],
+  "recentFormUpdates": [],
+  "tacticalUpdates": [],
+  "squadChanges": [
+    {
+      "playerName": "Dani Carvajal",
+      "changeType": "dropped",
+      "details": "Real Madrid captain left out of Spain's 55-man preliminary pre-selection due to a fractured toe and a season of fitness setbacks. Effectively ends his tournament hopes and is expected to lead to his international retirement.",
+      "source": "Football Espana, Tribuna.com, Athlon Sports - May 12, 2026",
+      "effectiveDate": "2026-05-11"
+    },
+    {
+      "playerName": "Alberto Moleiro",
+      "changeType": "new_call_up",
+      "details": "Las Palmas midfielder receives a maiden inclusion in Spain's preliminary 55-player pre-list for the tournament.",
+      "source": "Russpain.com, Last Word on Sports - May 12, 2026",
+      "effectiveDate": "2026-05-11"
+    },
+    {
+      "playerName": "Jorge de Frutos",
+      "changeType": "new_call_up",
+      "details": "Rayo Vallecano forward earns a surprise place in the 55-man preliminary squad after a strong club season.",
+      "source": "Russpain.com, Last Word on Sports - May 12, 2026",
+      "effectiveDate": "2026-05-11"
+    },
+    {
+      "playerName": "Jesús Rodríguez",
+      "changeType": "new_call_up",
+      "details": "Como midfielder included among the relatively unknown names on the 55-man preliminary list.",
+      "source": "Russpain.com - May 12, 2026",
+      "effectiveDate": "2026-05-11"
+    },
+    {
+      "playerName": "Victor Gomez",
+      "changeType": "new_call_up",
+      "details": "Sporting Braga full-back included as cover for the depleted right-back position after Carvajal's exclusion.",
+      "source": "Russpain.com - May 12, 2026",
+      "effectiveDate": "2026-05-11"
+    },
+    {
+      "playerName": "Alejandro Balde",
+      "changeType": "dropped",
+      "details": "Barcelona left-back omitted from the preliminary 55-man pre-list, a notable absence given his club minutes.",
+      "source": "Yahoo Sports, Barca Universal - May 12, 2026",
+      "effectiveDate": "2026-05-11"
+    },
+    {
+      "playerName": "Gerard Martin",
+      "changeType": "dropped",
+      "details": "Barcelona defender left out of the preliminary 55-man pre-list despite a regular role at club level.",
+      "source": "Yahoo Sports, Barca Universal - May 12, 2026",
+      "effectiveDate": "2026-05-11"
+    }
+  ],
+  "bettingOddsUpdate": {
+    "tournamentWinner": "+450",
+    "groupStageExit": null,
+    "toQualifyFromGroup": null,
+    "source": "BetMGM / bet365 / BET99 / Stake aggregated via VegasInsider and Canada Sports Betting - May 16, 2026",
+    "notes": "Spain co-favorite to win the tournament at +450, level with France. Top of ticket count at BetMGM. Group H exit and group qualification markets not publicly aggregated; Spain is overwhelming favorite in Group H over Uruguay, Saudi Arabia and Cape Verde."
+  },
+  "coachUpdate": {
+    "changed": false,
+    "currentCoach": "Luis de la Fuente",
+    "newCoach": null,
+    "source": null,
+    "notes": null
+  },
+  "summary": "Spain's biggest pre-tournament story is a hamstring crisis on the wings: Lamine Yamal (torn hamstring vs Celta Vigo, April 22) is racing to be fit for the group stage and is expected to miss the opener, and Nico Williams suffered a moderate hamstring strain vs Valencia on May 10 with a 3-week recovery window. Rodri picked up a groin issue at Manchester City but is recovering and Mikel Merino is finally back training on grass, while veteran Dani Carvajal has been dropped from the 55-man preliminary list and is expected to retire from international duty. Two upcoming warm-ups (Iraq on June 4, Peru on June 8) will be the final tune-ups before the final 26-man squad is named on May 25.",
+  "sourceUrls": [
+    "https://www.beinsports.com/en-us/soccer/fifa-world-cup-2026/articles/luis-de-la-fuente-defines-spain-s-preliminary-world-cup-squad-injuries-doubts-and-an-almost-untouchable-core-2026-05-12",
+    "https://www.sportsmole.co.uk/football/spain/world-cup/feature/spain-world-cup-squad-full-list-predicted-lineup-depth-chart-latest-news_597361.html",
+    "https://news.bet365.com/en-gb/article/luis-de-la-fuente-submits-spains-preliminary-squad-for-2026-world-cup/2026051214571973024",
+    "https://www.espn.com/soccer/story/_/id/48748480/spain-coach-allays-nico-williams-world-cup-injury-fears-ok",
+    "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+    "https://sports.yahoo.com/articles/spain-world-cup-roster-announcement-184001182.html",
+    "https://www.football-espana.net/2026/05/07/spain-luis-de-la-fuente-lamine-yamal-update",
+    "https://www.aljazeera.com/sports/2026/5/11/spains-nico-williams-sustains-hamstring-injury-before-world-cup",
+    "https://www.washingtonpost.com/sports/soccer/2026/05/10/nico-williams-injury-world-cup-athletic-spain/dd9af454-4c9a-11f1-97e7-22c6c29ff0d8_story.html",
+    "https://www.goal.com/en/lists/nico-williams-serious-injury-athletic-club-star-spain-world-cup-campaign/blt4a89ba57db00df56",
+    "https://www.washingtonpost.com/sports/soccer/2026/05/11/nico-williams-sancet-spain-world-cup-athletic/57943566-4d4c-11f1-97e7-22c6c29ff0d8_story.html",
+    "https://www.101greatgoals.com/football/world-cup-news/nico-williams-suffers-moderate-hamstring-injury-lamine-yamal-pre-world-cup-worry-for-spain/",
+    "https://footballtoday.com/2026/05/11/major-blow-for-spain-as-euro-winner-suffers-injury-just-weeks-before-world-cup/",
+    "https://www.football-espana.net/2026/05/11/spain-star-nico-williams-given-world-cup-hope-after-injury-diagnosis",
+    "https://www.caughtoffside.com/2026/05/09/rodri-injury-man-city/",
+    "https://sports.yahoo.com/articles/rodri-absent-manchester-city-matchday-174500640.html",
+    "https://dailycannon.com/2026/05/rodri-injury-everton-manchester-city/",
+    "https://www.sportsmole.co.uk/football/man-city/injury-news/injuries-and-suspensions/khusanov-rodri-gvardiol-latest-man-city-injury-list-for-crystal-palace-clash_597346.html",
+    "https://www.beinsports.com/en-us/soccer/premier-league/articles/pep-guardiola-and-the-new-mystery-surrounding-the-seriousness-of-rodri-s-injury-2026-04-21",
+    "https://www.nowarsenal.com/latest-news/mikel-merino-official-return-date-revealed/",
+    "https://arseblog.news/2026/04/exclusive-merino-on-injury-frustration-dressing-room-duty-and-arsenal-belief/",
+    "https://dailycannon.com/2026/04/arsenal-merino-injury-world-cup/",
+    "https://www.beinsports.com/en-us/soccer/articles/mikel-merino-speeds-up-recovery-and-now-targets-the-world-cup-2026-04-16",
+    "https://dailycannon.com/2026/05/merino-injury-latest-west-ham/",
+    "https://athlonsports.com/soccer/world-cup-news-dani-carvajal-spain-2026-squad-status",
+    "https://www.football-espana.net/2026/05/12/real-madrid-captain-dani-carvajal-left-out-of-spain-world-cup-squad",
+    "https://tribuna.com/en/news/2026-05-12-dani-carvajal-left-out-of-spain-preliminary-world-cup-squad-3-real-madrid-players-in-repo/",
+    "https://www.beinsports.com/en-us/soccer/la-liga/articles/carvajal-injury-setback-puts-world-cup-in-doubt-2026-05-02",
+    "https://lastwordonsports.com/football/2026/05/15/spain-preliminary-world-cup-squad/",
+    "https://sports.yahoo.com/articles/nine-barcelona-stars-included-spain-111000200.html",
+    "https://russpain.com/en/news-3/spain-national-team-lists-55-candidates-for-world-cup-new-names-and-injured-players-456024/",
+    "https://www.barcablaugranes.com/barcelona-news/118434/fc-barcelona-news-24-april-2026-preparations-begin-getafe-lamine-yamal-out-season-hamstring-injury",
+    "https://www.espn.com/soccer/story/_/id/48563164/lamine-yamal-injury-penalty-barcelona-celta-vigo",
+    "https://www.aljazeera.com/sports/2026/4/23/how-bad-is-lamine-yamals-injury-will-make-spains-world-cup-2026-opener",
+    "https://www.skysports.com/football/news/11095/13535418/lamine-yamal-barcelona-star-to-miss-rest-of-season-with-hamstring-injury-but-expected-to-be-available-for-world-cup-with-spain",
+    "https://sports.yahoo.com/articles/barcelona-star-line-shock-call-104000658.html",
+    "https://rfef.es/en/noticias/Spain-to-play-final-pre%E2%80%932026-FIFA-World-Cup-warm-up-match-in-Puebla",
+    "https://www.vegasinsider.com/soccer/odds/world-cup/",
+    "https://www.canadasportsbetting.ca/betting-odds/soccer/fifa-world-cup/",
+    "https://foot-africa.com/en/news/world-cup-2026-preparations-two-friendlies-for-spain-1193180/"
+  ],
+  "confidence": "high",
+  "dataFreshness": "2026-05-16"
+}

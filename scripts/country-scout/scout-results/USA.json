@@ -1,0 +1,278 @@
+{
+  "teamCode": "USA",
+  "teamName": "United States",
+  "scoutedAt": "2026-05-16T05:16:04Z",
+  "injuryUpdates": [
+    {
+      "playerName": "Johnny Cardoso",
+      "teamCode": "USA",
+      "country": "United States",
+      "club": "Atletico Madrid",
+      "position": "Midfielder",
+      "injuryType": "High-grade right ankle sprain requiring surgery — ruled out of the tournament",
+      "injuryDate": "2026-05-07",
+      "expectedReturn": "Preseason 2026-27 (approx. 2 months) — will miss the tournament",
+      "availabilityStatus": "long_term_injured",
+      "lastMatchPlayed": {
+        "date": "2026-05-03",
+        "opponent": "Real Sociedad (La Liga)",
+        "notes": "Last appearance before training-ground ankle injury that requires surgery"
+      },
+      "source": "CBS Sports, Al Jazeera, Sports Illustrated — May 11-12, 2026",
+      "notes": "Massive blow to Pochettino's midfield. Cardoso was a first-choice defensive midfielder and the heir-apparent to Tyler Adams' screening role. Atletico Madrid confirmed surgery; recovery targets preseason, meaning he is out of the tournament entirely. Pochettino's first major squad absence ahead of the May 26 roster reveal.",
+      "action": "add"
+    },
+    {
+      "playerName": "Christian Pulisic",
+      "teamCode": "USA",
+      "country": "United States",
+      "club": "AC Milan",
+      "position": "Forward",
+      "injuryType": "Gluteal muscle strain — minor muscular issue per Gazzetta dello Sport",
+      "injuryDate": "2026-05-09",
+      "expectedReturn": "Available for Milan's final Serie A fixtures; not considered a doubt for the tournament",
+      "availabilityStatus": "minor_concern",
+      "lastMatchPlayed": {
+        "date": "2026-05-03",
+        "opponent": "AC Milan (Serie A)",
+        "notes": "Missed May 11 match vs Atalanta with gluteal strain; trained fully with squad May 13"
+      },
+      "source": "Sports Illustrated, FOX Sports, Gazzetta dello Sport, ESPN — May 11-13, 2026",
+      "notes": "Pulled up with a glute strain ahead of the Atalanta match (May 11). Italian press describe it as precautionary, and he trained with the group on May 13. Form crisis continues — still goalless for Milan since December 28, 2025. Not expected to miss the tournament but every knock now is a national-team story.",
+      "action": "update"
+    },
+    {
+      "playerName": "Tyler Adams",
+      "teamCode": "USA",
+      "country": "United States",
+      "club": "AFC Bournemouth",
+      "position": "Midfielder",
+      "injuryType": "Returned to fitness following March quad injury — featuring regularly off the bench for Bournemouth",
+      "injuryDate": null,
+      "expectedReturn": "N/A - available",
+      "availabilityStatus": "minor_concern",
+      "lastMatchPlayed": {
+        "date": "2026-05-10",
+        "opponent": "Bournemouth (Premier League)",
+        "notes": "Entered as substitute in the 43rd minute; Bournemouth now sixth and chasing European football"
+      },
+      "source": "Sports Illustrated, Bournemouth match reports — May 11, 2026",
+      "notes": "Quad injury from March is no longer the headline. Adams is regularly featuring off the bench but has not reclaimed a full 90-minute Premier League start, so minutes-load is the lingering concern. Promoted in importance now that Cardoso is out of the tournament — Adams becomes the only natural defensive midfielder of his profile in the picture.",
+      "action": "update"
+    },
+    {
+      "playerName": "Gio Reyna",
+      "teamCode": "USA",
+      "country": "United States",
+      "club": "Borussia Monchengladbach",
+      "position": "Midfielder",
+      "injuryType": "Severe lack of minutes — still without a Bundesliga start since December 19, 2025",
+      "injuryDate": null,
+      "expectedReturn": "N/A - available but lacks rhythm",
+      "availabilityStatus": "doubt",
+      "lastMatchPlayed": {
+        "date": "2026-05-09",
+        "opponent": "Borussia Monchengladbach (Bundesliga)",
+        "notes": "Entered as substitute; no starts since December 19, 2025"
+      },
+      "source": "Sports Illustrated, Yahoo Sports — May 4-11, 2026",
+      "notes": "Club correction: Reyna is at Borussia Monchengladbach (permanent transfer from Dortmund, August 2025) — the previous entry listed Dortmund. Situation has not improved at the new club: he has not started a league match since December 19. Roster inclusion remains in genuine doubt entering the May 26 reveal.",
+      "action": "update"
+    },
+    {
+      "playerName": "Sergino Dest",
+      "teamCode": "USA",
+      "country": "United States",
+      "club": "PSV Eindhoven",
+      "position": "Defender",
+      "injuryType": "Hamstring strain — returned to action after nearly two months out",
+      "injuryDate": "2026-03-07",
+      "expectedReturn": "Returned May 9; building match fitness with two Eredivisie matches remaining",
+      "availabilityStatus": "doubt",
+      "lastMatchPlayed": {
+        "date": "2026-05-09",
+        "opponent": "Ajax (Eredivisie)",
+        "notes": "First minutes since March 7 hamstring injury — played 30 minutes from the 59th in a 2-2 draw"
+      },
+      "source": "Goal.com, Yahoo Sports, Sports Illustrated, ESPN — May 4-11, 2026",
+      "notes": "Returned from a March 7 hamstring injury in PSV's draw at Ajax. Pochettino is expected to push for Dest minutes in the Senegal (May 31) and/or Germany (June 6) tuneups. First-choice right-back if fit, but minutes-load is a clear concern — listed as a doubt until he completes a 90.",
+      "action": "add"
+    },
+    {
+      "playerName": "Tim Weah",
+      "teamCode": "USA",
+      "country": "United States",
+      "club": "Olympique Marseille",
+      "position": "Forward",
+      "injuryType": "Undisclosed injury — missed Marseille's May 10 fixture vs Le Havre",
+      "injuryDate": "2026-05-08",
+      "expectedReturn": "Potentially available for Ligue 1 season finale vs Rennes",
+      "availabilityStatus": "doubt",
+      "lastMatchPlayed": {
+        "date": "2026-05-03",
+        "opponent": "Marseille (Ligue 1)",
+        "notes": "Out of training May 8; missed May 10 match vs Le Havre"
+      },
+      "source": "Sports Illustrated, Yahoo Sports — May 11, 2026",
+      "notes": "Marseille have not disclosed the injury. Weah is the starting right-winger in Pochettino's preferred front three — his availability for the Senegal and Germany friendlies (and the tournament opener) is now a watch-item.",
+      "action": "add"
+    },
+    {
+      "playerName": "Tanner Tessmann",
+      "teamCode": "USA",
+      "country": "United States",
+      "club": "Olympique Lyonnais",
+      "position": "Midfielder",
+      "injuryType": "Muscle strain — season-ending for club",
+      "injuryDate": "2026-05-08",
+      "expectedReturn": "Ruled out for remainder of Ligue 1 season; international availability unclear",
+      "availabilityStatus": "doubt",
+      "lastMatchPlayed": {
+        "date": "2026-05-03",
+        "opponent": "Lyon (Ligue 1)",
+        "notes": "Shut down for the rest of the season after muscle strain; severity not disclosed"
+      },
+      "source": "Sports Illustrated — May 11, 2026",
+      "notes": "Tessmann was on the midfield bubble even before this. With Cardoso out, every fit midfield body matters — but Lyon shutting him down for the season is a negative signal heading into the May 26 roster reveal.",
+      "action": "add"
+    },
+    {
+      "playerName": "Tim Ream",
+      "teamCode": "USA",
+      "country": "United States",
+      "club": "Charlotte FC",
+      "position": "Defender",
+      "injuryType": "Groin/adductor injury — returned May 9 after 4.5-match absence",
+      "injuryDate": "2026-04-12",
+      "expectedReturn": "Returned to MLS action May 9; building match sharpness",
+      "availabilityStatus": "minor_concern",
+      "lastMatchPlayed": {
+        "date": "2026-05-09",
+        "opponent": "FC Cincinnati (MLS)",
+        "notes": "Returned from 4.5-match groin absence and contributed an assist"
+      },
+      "source": "Sports Illustrated, Yahoo Sports — May 4-11, 2026",
+      "notes": "38-year-old central-defender mainstay under Pochettino. Back fit after a groin setback. Given the Carter-Vickers long-term injury and Miles Robinson's own groin issue, Ream's availability is load-bearing for the backline.",
+      "action": "add"
+    },
+    {
+      "playerName": "Miles Robinson",
+      "teamCode": "USA",
+      "country": "United States",
+      "club": "FC Cincinnati",
+      "position": "Defender",
+      "injuryType": "Groin injury — recurrence of issue that kept him out of March friendlies",
+      "injuryDate": "2026-04-18",
+      "expectedReturn": "Targeting return before May 26 roster reveal",
+      "availabilityStatus": "doubt",
+      "lastMatchPlayed": {
+        "date": "2026-04-15",
+        "opponent": "FC Cincinnati (MLS)",
+        "notes": "Missed three consecutive matches with groin issue; only 64 minutes logged in six weeks across ailments and a red card"
+      },
+      "source": "Sports Illustrated, Yahoo Sports — May 4-11, 2026",
+      "notes": "Recurring groin issue is a serious concern — same injury that sidelined him for the March Belgium and Portugal friendlies. Backline depth is the team's biggest worry going into the roster reveal.",
+      "action": "add"
+    },
+    {
+      "playerName": "Patrick Agyemang",
+      "teamCode": "USA",
+      "country": "United States",
+      "club": "Derby County",
+      "position": "Forward",
+      "injuryType": "Achilles tendon injury — ruled out of the tournament",
+      "injuryDate": "2026-04-22",
+      "expectedReturn": "Out for the tournament",
+      "availabilityStatus": "long_term_injured",
+      "lastMatchPlayed": {
+        "date": "2026-04-19",
+        "opponent": "Derby County (EFL Championship)",
+        "notes": "Achilles injury rules him out of the tournament"
+      },
+      "source": "Sports Illustrated — May 11, 2026",
+      "notes": "Agyemang was a depth striker option who scored in the March 2025 Nations League window. Achilles diagnosis ends his tournament hopes. Less impactful than Cardoso but removes a backup-9 option behind Balogun.",
+      "action": "add"
+    },
+    {
+      "playerName": "Jonathan Klinsmann",
+      "teamCode": "USA",
+      "country": "United States",
+      "club": "Cesena",
+      "position": "Goalkeeper",
+      "injuryType": "Broken neck — ruled out of the tournament",
+      "injuryDate": "2026-04-25",
+      "expectedReturn": "Out for the tournament",
+      "availabilityStatus": "long_term_injured",
+      "lastMatchPlayed": {
+        "date": "2026-04-22",
+        "opponent": "Cesena (Serie B)",
+        "notes": "Broken neck rules him out of the tournament"
+      },
+      "source": "Sports Illustrated — May 11, 2026",
+      "notes": "Son of former USMNT boss Jurgen Klinsmann and a depth GK option. Severe neck injury ends his tournament hopes. GK rotation now narrows further around Matt Turner and the Patrick Schulte / Diego Kochen / Ethan Horvath group.",
+      "action": "add"
+    }
+  ],
+  "recentFormUpdates": [],
+  "tacticalUpdates": [],
+  "squadChanges": [
+    {
+      "playerName": "Johnny Cardoso",
+      "changeType": "dropped",
+      "details": "Forced out of the tournament squad by a high-grade right ankle sprain requiring surgery at Atletico Madrid. Pochettino's first major squad absence and a structural hole in the defensive midfield rotation.",
+      "source": "CBS Sports, Al Jazeera — May 11-12, 2026",
+      "effectiveDate": "2026-05-11"
+    },
+    {
+      "playerName": "Patrick Agyemang",
+      "changeType": "dropped",
+      "details": "Achilles tendon injury rules him out of the tournament; depth striker option behind Balogun no longer available.",
+      "source": "Sports Illustrated — May 11, 2026",
+      "effectiveDate": "2026-05-11"
+    },
+    {
+      "playerName": "Jonathan Klinsmann",
+      "changeType": "dropped",
+      "details": "Broken neck rules him out of the tournament; removes a depth goalkeeper option.",
+      "source": "Sports Illustrated — May 11, 2026",
+      "effectiveDate": "2026-05-11"
+    }
+  ],
+  "bettingOddsUpdate": {
+    "tournamentWinner": "+4000",
+    "groupStageExit": "+500",
+    "toQualifyFromGroup": "-840",
+    "source": "Aggregated from bet365 / DraftKings / Sports Interaction via Covers.com and bookmakersreview.com — May 13-14, 2026",
+    "notes": "Co-11th choice to win the tournament alongside Colombia. +135 to +150 to win Group D (still favored ahead of Turkey at roughly +165 and Paraguay at +375). Heavy -840 favorites simply to advance from the group. Odds reflect home-field advantage but also a meaningful re-rate after Turkey replaced an easier opponent in the group."
+  },
+  "coachUpdate": {
+    "changed": false,
+    "currentCoach": "Mauricio Pochettino",
+    "newCoach": null,
+    "source": null,
+    "notes": "Pochettino remains in charge and is scheduled to reveal the final 26-player squad live on FOX from Pier 17 in New York City at 3pm ET on May 26, 2026."
+  },
+  "summary": "The single biggest development since April 16 is Johnny Cardoso's high-grade ankle sprain requiring surgery — the Atletico Madrid defensive midfielder is out of the tournament entirely, gutting Pochettino's midfield depth ten days before the May 26 squad reveal. The USMNT injury list has otherwise grown alarmingly: Pulisic (glute), Weah (undisclosed), Tessmann (season-ending muscle strain), Miles Robinson (recurring groin), plus tournament-ending injuries for depth options Patrick Agyemang (Achilles) and Jonathan Klinsmann (broken neck). On the positive side, Sergino Dest returned from a two-month hamstring layoff at PSV on May 9 and Tim Ream is back fit at Charlotte; no international matches have been played since April 16, so recent form is unchanged ahead of the Senegal (May 31) and Germany (June 6) tuneups.",
+  "sourceUrls": [
+    "https://www.ussoccer.com/stories/2026/04/usmnt/mauricio-pochettino-reveal-world-cup-roster-may-26-new-york-city-fox",
+    "https://sports.yahoo.com/soccer/article/usmnt-roster-watch-christian-pulisics-gluteal-strain-is-latest-setback-as-world-cup-camp-approaches-032632239.html",
+    "https://www.si.com/soccer/usmnt-riddled-injuries-weeks-away-world-cup-pulisic-latest-sidelined",
+    "https://www.cbssports.com/soccer/news/usmnts-johnny-cardoso-injury-mauricio-pochettinos-world-cup-may/",
+    "https://www.si.com/soccer/usmnt-champions-league-star-midfielder-johnny-cardoso-ruled-out-of-world-cup",
+    "https://www.aljazeera.com/sports/2026/5/12/usas-johnny-cardoso-expected-to-miss-world-cup-through-ankle-injury",
+    "https://www.cbssports.com/soccer/news/world-cup-2026-usmnt-christian-pulisic-johnny-cardoso-nico-williams-usa-spain/",
+    "https://www.foxsports.com/stories/soccer/us-forward-christian-pulisic-misses-milan-match-with-injury-will-undergo-tests-on-monday",
+    "https://www.espn.com/soccer/story/_/id/48761353/christian-pulisic-injury-return-ac-milan-usa-world-cup-2026",
+    "https://sports.yahoo.com/soccer/article/usmnt-world-cup-roster-watch-sergino-dest-is-back-but-the-real-concern-is-the-back-line-031839777.html",
+    "https://www.goal.com/en-us/lists/usmnt-star-sergino-dest-makes-psv-return-in-2-2-draw-with-ajax-following-injury-layoff/blt056b6ccd27493e86",
+    "https://www.espn.com/soccer/story/_/id/48137146/usmnt-sergino-dest-injury-hamstring-psv-eindhoven",
+    "https://www.nbcsports.com/soccer/news/usmnt-2026-schedule-results",
+    "https://www.covers.com/soccer/world-cup/usa-odds",
+    "https://news.bet365.com/en-us/article/united-states-2026-world-cup-odds/2026051417102638980",
+    "https://www.bookmakersreview.com/analysis/united-states-world-cup-betting-2026/624934/",
+    "https://www.bundesliga.com/en/bundesliga/news/gio-reyna-leaves-borussia-dortmund-for-gladbach-usmnt-33623",
+    "https://www.espn.com/soccer/story/_/id/45783700/usa-gio-reyna-transfer-monchengladbach-borussia-dortmund"
+  ],
+  "confidence": "high",
+  "dataFreshness": "2026-05-14"
+}

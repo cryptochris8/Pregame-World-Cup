@@ -4,77 +4,70 @@
   "team2Code": "USA",
   "team1Name": "Australia",
   "team2Name": "United States",
-  "generatedAt": "2026-04-16T00:00:00Z",
-  "dataVersion": 2,
-
-  "headline": "The Hosts Face a Transformed Socceroo Side in a Historic First tournament Meeting",
-  "subheadline": "America's home tournament dream meets Popovic's tactical revolution — this is not the Australia that anyone expected",
-
-  "openingNarrative": "The United States have waited a generation for this moment. As co-hosts of the 2026 tournament, they carry the expectation of a nation that has transformed its relationship with football from casual curiosity to genuine passion. When they face Australia in Group D, they do so in front of a home crowd that will create an atmosphere unlike anything either team has experienced.\n\nRemarkably, this is the first-ever tournament meeting between the USA and Australia. Their previous encounters have been dominated by the Americans, including a 2-1 win in a 2025 pre-tournament friendly. But the Australia that arrives in 2026 is a fundamentally different team from the one the USA scouted.\n\nTony Popovic's tactical revolution has transformed the Socceroos. His 3-4-2-1 system produced a 1-0 win over Cameroon and a stunning 5-1 demolition of Curacao in March — results that announced Australia as a team with genuine attacking ambition rather than mere organized resistance. Every player is fully fit. And the emergence of Nestory Irankunda — a teenager whose pace and directness have electrified Australian football — has given the Socceroos a weapon they have never possessed at this level.\n\nThe USA's squad value of $469M — led by Christian Pulisic ($68.8M) — represents the most talented American generation in history. But they now face an Australia that has outgrown the 'plucky underdog' label. Popovic's system, full fitness, and Irankunda's emergence have created a team that believes it can beat anyone — including the hosts.",
-
+  "generatedAt": "2026-06-11T15:30:00Z",
+  "dataVersion": 1,
+  "headline": "History Awaits as Socceroos Face The Yanks on Home Soil",
+  "subheadline": "Two football-mad nations meet for the first time at a major tournament as the USA seeks to harness home advantage.",
+  "openingNarrative": "In the sprawling tapestry of tournament history, some encounters feel inevitable long before they happen. Australia versus the United States — two nations separated by an ocean but united by their relentless pursuit of football respectability — will finally meet on the grandest stage after nine previous encounters that never quite carried this weight.\n\nThe numbers tell a story of parallel journeys: both countries claiming zero tournament titles, both emerging from football's periphery to establish themselves as consistent qualifiers, both representing the global game's expansion beyond its traditional heartlands. The USA arrives with the intoxicating advantage of playing at home, their 1690 ELO rating reflecting a squad worth $468.75 million and the expectations that come with hosting. Australia, ranked 30th globally with an ELO of 1622, embodies the scrappy underdog mentality that carried them to the round of 16 in 2022 — a reminder that on football's biggest stage, desire often trumps dollars.\n\nMauricio Pochettino's Americans have been building toward this moment since his appointment, transforming a team that struggled for identity into one capable of the high-pressing, possession-based football that defined his best work in Europe. Tony Popovic's Socceroos arrive with their own quiet confidence, having navigated a brutal AFC qualifying campaign with the kind of defensive discipline and counter-attacking threat that can humble more fancied opponents. This is more than a first meeting — it's a statement about where football's future lies.",
   "tacticalBreakdown": {
     "title": "The Chess Match",
-    "narrative": "The tactical intrigue centers on how Popovic's 3-4-2-1 matches up against the USA's system. Australia's three center-backs provide security against the USA's attacking trident, while the wing-backs create width that the Americans' fullbacks must track. The two number tens operating between the lines give Australia a creative presence that previous Socceroo sides lacked.\n\nThe USA under Pochettino will look to impose themselves with pressing intensity, individual quality, and the energy of the home crowd. Pulisic as the primary creative force cutting inside from the right, McKennie providing box-to-box dynamism, and the USA's athleticism make them dangerous in transition.\n\nThe key tactical battle is Irankunda against the USA's defensive left side. The teenager's pace creates a genuine counter-attacking threat that prevents the Americans from committing numbers forward freely. If the USA push their fullbacks high — as Pochettino's system demands — Irankunda's speed in behind becomes a constant danger.\n\nThe home crowd will be a factor, but Popovic's system is designed to control matches regardless of atmosphere. The 5-1 win over Curacao showed a team comfortable in possession and devastating in transition — exactly the profile needed to trouble hosts on their own soil.",
+    "narrative": "Pochettino's 4-3-3 system, built around Christian Pulisic's creativity from the left and the box-to-box energy of Weston McKennie, will face its sternest test against Popovic's compact 3-4-2-1 structure. The Australian coach has perfected the art of defensive attrition, using three center-backs to create numerical superiority in defensive transitions while trusting his wing-backs to provide width in attack. The USA's high pressing intensity will meet Australia's patient, reactive approach — a classic contrast between proactive possession and reactive counter-attacking.\n\nThe decisive battle will unfold in midfield, where McKennie's Champions League experience must overcome Jackson Irvine's leadership and the potential absence of Aiden O'Neill through injury. Australia's strength lies in forcing opponents into wide areas where Harry Souttar's aerial dominance can neutralize crosses, while the USA will look to exploit the channels behind Australia's wing-backs with the pace of Tim Weah and the overlapping runs of their fullbacks. Pochettino's team improves through matches, historically stronger in second halves, which could prove crucial if Australia's defensive discipline keeps things tight early.",
     "team1Formation": "3-4-2-1",
     "team2Formation": "4-3-3",
-    "keyMatchup": "Irankunda's pace vs the USA's left-back — the counter-attacking threat that could silence the home crowd"
+    "keyMatchup": "McKennie's box arrivals vs Australia's disciplined defensive block"
   },
-
   "dataInsights": {
     "title": "By The Numbers",
-    "eloAnalysis": "USA (ELO: 1690, rank 17) vs Australia (ELO: 1622, rank 30) — a 68-point gap that gives the USA a clear advantage. But home advantage and the ELO gap may be offset by Australia's tactical transformation under Popovic.",
-    "formAnalysis": "Australia are in superb March form: beat Cameroon 1-0 and Curacao 5-1 under Popovic's new system, all players fully fit. The USA qualified automatically as co-hosts. Australia's competitive qualifying experience (5 wins, 4 draws, 1 loss in AFC) gives them an edge in match readiness.",
-    "squadValueComparison": "USA ($469M) vs Australia ($79.3M) — a 6:1 ratio heavily in America's favor. But Australia's 5-1 demolition of Curacao proved that Popovic's tactical system generates results that exceed the sum of individual parts.",
-    "injuryImpact": "Australia's fully fit squad gives Popovic maximum tactical flexibility — a significant advantage over a USA squad that must manage a packed schedule. Pulisic's fitness is key for the Americans — without him, their creative output diminishes.",
-    "bettingPerspective": "The USA remain favorites based on home advantage and squad quality. But Australia's odds have shortened significantly following the March results and Popovic's tactical transformation. The upset is no longer a fantasy — it is a genuine possibility.",
-    "historicalPattern": "First-ever tournament meeting. USA lead the overall series from friendlies. But the Australia that arrives in 2026 is a fundamentally different team — Popovic's system, full fitness, and Irankunda's emergence have changed the calculus."
+    "eloAnalysis": "The 68-point ELO gap between USA (1690) and Australia (1622) reflects not just talent differential but the Americans' superior recent results against higher-level opposition.",
+    "formAnalysis": "Australia's qualifying campaign (5W-4D-1L, +9 goal difference) showcased Popovic's defensive philosophy, while the USA's home form under Pochettino shows remarkable consistency with wins in 10 of their last 13 matches.",
+    "squadValueComparison": "The $389.5 million squad value gap ($468.75M vs $79.25M) underlines the gulf in individual quality, with Pulisic alone valued at $68.8 million compared to Australia's most expensive player Harry Souttar at $12.5 million.",
+    "injuryImpact": "Johnny Cardoso's tournament-ending ankle surgery removes the USA's first-choice defensive midfielder, while Australia sweats over Aiden O'Neill's ankle concerns and Harry Souttar's fitness after his long Achilles recovery.",
+    "bettingPerspective": "Tournament winner odds remain unavailable, but the USA's home advantage and superior individual quality make them clear favorites for this group stage encounter.",
+    "historicalPattern": "Host nations have reached the semi-finals in 13 of 22 tournaments, with only South Africa (2010) and Qatar (2022) failing to escape the group stage in the modern era — a promising precedent for American hopes."
   },
-
   "playerSpotlights": [
     {
       "name": "Christian Pulisic",
       "teamCode": "USA",
-      "narrative": "The face of American soccer carries the weight of a nation's tournament dreams. Pulisic's dribbling, his eye for goal, and his big-game mentality make him the USA's most dangerous weapon. Against Popovic's three-man defense, Pulisic may find less space to exploit than against a conventional back four. But his quality is the kind that finds solutions to any tactical puzzle, and the home crowd will amplify his every touch.",
-      "statline": "USA's most valuable player ($68.8M), AC Milan's creative winger"
+      "narrative": "The face of American soccer returns home carrying both dreams and doubts. Pulisic's recent goal drought for AC Milan — goalless since December 28, 2025 — would concern any other player, but his tournament history suggests he saves his best for the biggest stages. His ability to drift inside from the left, creating space for overlapping fullbacks while threading passes through tight defensive blocks, will be crucial against Australia's compact structure. A minor gluteal strain barely registers as concern compared to the weight of expectation he carries.",
+      "statline": "68 USMNT caps, $68.8M market value"
     },
     {
-      "name": "Nestory Irankunda",
+      "name": "Harry Souttar",
       "teamCode": "AUS",
-      "narrative": "The teenager who could spoil America's party. Irankunda's emergence in Popovic's system has given Australia a genuine counter-attacking threat that the USA must respect. His pace is devastating — the kind that turns a routine clearance into a goal-scoring opportunity — and his fearlessness in taking on defenders means the USA cannot commit numbers forward without risking exposure. In a packed American stadium, one Irankunda sprint could produce the silence of shock.",
-      "statline": "Australia's teenage sensation, the counter-attacking weapon that changes the tactical equation"
-    },
-    {
-      "name": "Weston McKennie",
-      "teamCode": "USA",
-      "narrative": "Juventus's box-to-box midfielder provides the American engine room with Champions League experience and tireless energy. McKennie's ability to cover ground, win tackles, and arrive in the box for headers makes him a constant threat. Against Popovic's system, his late runs into the box could exploit the spaces between Australia's center-backs and wing-backs.",
-      "statline": "Juventus's experienced midfielder, Champions League-tested"
+      "narrative": "The Leicester City giant's journey back from a ruptured Achilles reads like a redemption story written for tournament football. At 6'6\", Souttar provides the aerial dominance that anchors Popovic's three-man defense, but his recovery from 483 days without competitive football adds an element of uncertainty. His man-of-the-match performance against Millwall on his return suggests the old quality remains, and his presence gives Australia the physical foundation to frustrate the USA's technical attackers.",
+      "statline": "First competitive appearance in 483 days before tournament selection"
     },
     {
       "name": "Jackson Irvine",
       "teamCode": "AUS",
-      "narrative": "Against the hostile environment of an American home crowd, Irvine's composure and leadership will be Australia's most valuable asset. The captain has adapted brilliantly to Popovic's new system, providing the midfield anchor that allows the attacking players to express themselves. His experience in European football and his organizational intelligence are the foundations upon which Australia's tactical revolution is built.",
-      "statline": "Australia's captain, the anchor of Popovic's 3-4-2-1 system"
+      "narrative": "The St Pauli captain embodies everything Australia represents at this tournament — grit, determination, and the refusal to be overawed by superior opposition. Irvine's role extends beyond his box-to-box contributions; he's the emotional leader who translates Popovic's defensive discipline into on-field reality. His ability to shield the back three while contributing in attacking transitions makes him indispensable to Australia's tactical structure, and his tournament experience provides calm in the storm of American pressure.",
+      "statline": "Socceroos captain with 69 international caps"
+    },
+    {
+      "name": "Weston McKennie",
+      "teamCode": "USA",
+      "narrative": "The Juventus midfielder represents everything Pochettino wants from his midfield — energy, intelligence, and the Champions League mentality required for tournament success. McKennie's late runs into the box have become a signature of the new-look USA, providing the goals from midfield that can unlock tight defensive structures. With Cardoso's absence elevating his importance, McKennie must balance his attacking instincts with additional defensive responsibility, a challenge that could define both his tournament and his team's ambitions.",
+      "statline": "Box-to-box presence with Champions League experience at Juventus"
     }
   ],
-
   "theVerdict": {
     "title": "The Verdict",
     "prediction": "USA 2-1 Australia",
-    "confidence": 55,
-    "narrative": "Home advantage and Pulisic's quality should give the USA the edge, but this will be a far more competitive match than the squad value gap suggests. Popovic's 3-4-2-1 will cause the Americans problems they did not anticipate — the three-man defense limits Pulisic's space, while Irankunda's pace on the counter creates a genuine threat that prevents the USA from dominating territorially.\n\nExpect Australia to compete for 90 minutes, not merely 70. The 5-1 demolition of Curacao was not a fluke — it was the product of a tactical system that creates chances consistently. Against the USA's defense, Australia will create opportunities.\n\nBut the home crowd, Pulisic's individual brilliance, and the USA's superior squad depth should ultimately tell. A McKennie header from a corner and a Pulisic counter-attack give the USA a 2-0 lead before Irankunda pulls one back with a devastating run that announces him to the wider world. The USA hold on, but they know they have been in a fight.\n\nFor the USA, this is the start of something special. For Australia under Popovic, it is confirmation that their transformation is real.",
+    "confidence": 72,
+    "narrative": "Home advantage in tournament football carries a weight that transcends tactics and talent, and the USA possesses both in sufficient measure to overcome Australia's defensive discipline. Pochettino's team will struggle initially against Popovic's compact structure, but their superior individual quality will eventually tell — likely through Pulisic's creativity or McKennie's late runs into the box. Australia will threaten on the counter and from set pieces, with Souttar's aerial presence ensuring they remain dangerous throughout.\n\nThe Americans' historical pattern of improving through matches should prove decisive in the second half, when their pressing intensity and home crowd support combine to break down Australian resistance. This won't be the comfortable victory some expect — Popovic's pragmatic approach has frustrated technically superior opponents throughout qualifying — but class will ultimately tell on home soil.",
     "alternativeScenarios": [
       {
         "scenario": "Australia 1-0 USA",
-        "probability": 18,
-        "reasoning": "Popovic's system neutralizes the home advantage. Irankunda scores on the counter, Australia's three-man defense holds firm against Pulisic, and the Socceroos produce the upset that announces their tournament credentials."
+        "probability": 15,
+        "reasoning": "If Souttar and the defensive unit frustrate early American attacks and Australia score from a set piece or counter-attack, their defensive discipline could preserve a famous victory."
       },
       {
         "scenario": "USA 1-1 Australia",
-        "probability": 22,
-        "reasoning": "Australia frustrate the hosts with Popovic's tactical structure. The American crowd grows anxious, and the pressure weighs on the home team. A draw that leaves the USA needing results elsewhere — and proves Australia belong."
+        "probability": 25,
+        "reasoning": "Australia's qualifying campaign proved their ability to earn results against superior opponents, and a disciplined defensive performance could earn a valuable point against nervous hosts."
       }
     ]
   },
-
-  "closingLine": "The first-ever tournament meeting between the United States and Australia was supposed to be a home banker. But Popovic's tactical revolution, Irankunda's emergence, and a fully fit squad have rewritten the script. The hosts will still be favored. They should no longer be comfortable."
+  "closingLine": "Two nations chasing tournament respectability meet where dreams are made and broken — only one will emerge with their hopes intact."
 }

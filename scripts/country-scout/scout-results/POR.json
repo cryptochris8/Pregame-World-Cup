@@ -1,0 +1,115 @@
+{
+  "teamCode": "POR",
+  "teamName": "Portugal",
+  "scoutedAt": "2026-05-16T12:00:00Z",
+  "injuryUpdates": [
+    {
+      "playerName": "Ruben Dias",
+      "teamCode": "POR",
+      "country": "Portugal",
+      "club": "Manchester City",
+      "position": "Defender",
+      "injuryType": "Hamstring (then ankle) — returned to training",
+      "injuryDate": "2026-01-05",
+      "expectedReturn": "Returned to Manchester City training week of May 4-7; available for end-of-season fixtures, expected fully fit for tournament",
+      "availabilityStatus": "minor_concern",
+      "lastMatchPlayed": {
+        "date": "2026-01-05",
+        "opponent": "Chelsea (Premier League)",
+        "notes": "Suffered hamstring injury in second half; subsequent ankle issue extended absence beyond original 4-6 week timeline"
+      },
+      "source": "Sky Sports, ESPN, Sports Mole, Yahoo Sports - April/May 2026",
+      "notes": "Originally hamstring (Jan 5 vs Chelsea), compounded by ankle issue. Out roughly four months. Back in Man City training as of May 7 alongside Gvardiol. Likely fit for the tournament but match sharpness a concern. Bumped from prior 'fit' status as the older entry pre-dated the January setback being relevant to current state.",
+      "action": "update"
+    },
+    {
+      "playerName": "Vitinha",
+      "teamCode": "POR",
+      "country": "Portugal",
+      "club": "Paris Saint-Germain",
+      "position": "Midfielder",
+      "injuryType": "Right heel inflammation",
+      "injuryDate": "2026-04-18",
+      "expectedReturn": "Returned to PSG training late April ahead of Champions League semifinal vs Bayern Munich",
+      "availabilityStatus": "fit",
+      "lastMatchPlayed": {
+        "date": "2026-04-13",
+        "opponent": "Lyon (Ligue 1)",
+        "notes": "Picked up heel inflammation; missed PSG matches vs Nantes and Angers"
+      },
+      "source": "The Portugal Post, beIN Sports, Goal.com - April 21-27, 2026",
+      "notes": "Brief heel scare in mid-April caused him to miss two Ligue 1 games. Returned to full PSG training before the Champions League semifinal first leg vs Bayern. No expected impact on tournament availability — Vitinha is the engine of Portugal's midfield and the Ballon d'Or third-place finisher. Worth tracking given PSG's deep Champions League run loads minutes.",
+      "action": "add"
+    }
+  ],
+  "recentFormUpdates": [],
+  "tacticalUpdates": [],
+  "squadChanges": [
+    {
+      "playerName": "Paulinho",
+      "changeType": "new_call_up",
+      "details": "Toluca striker Paulinho was called up to the March camp as a replacement for the injured Rafael Leao and has stayed in the picture for the preliminary 35-55 player list submitted on May 11. Provides additional forward depth alongside Goncalo Ramos and Joao Felix.",
+      "source": "Plataforma Media, Sports Mole - April-May 2026",
+      "effectiveDate": "2026-03-26"
+    },
+    {
+      "playerName": "Ricardo Velho",
+      "changeType": "new_call_up",
+      "details": "Turkey-based goalkeeper Ricardo Velho (27) was added to the goalkeeper pool after Diogo Costa's adductor/back injury. Yet to earn his first senior cap. Likely competes with Rui Silva and Jose Sa for the backup spot behind Costa.",
+      "source": "The Portugal Post - March/April 2026",
+      "effectiveDate": "2026-03-24"
+    }
+  ],
+  "bettingOddsUpdate": {
+    "tournamentWinner": "+1100",
+    "groupStageExit": null,
+    "toQualifyFromGroup": null,
+    "source": "BetMGM / Squawka / Lineups.com / bet365 aggregate — May 2026",
+    "notes": "Portugal priced around +1100 (~8% implied) as the 6th favorite behind Spain, France, England, Brazil, Argentina. Drifted in from +1400 pre-Nations League final to +1200 after winning it, then to +1100 currently. BetMGM lists Portugal among its largest tournament liabilities (4th in bet count, 2nd in money wagered). Group-specific markets (advancing from Group K / group-stage exit) not surfaced in aggregator scan — Portugal expected to top Group K comfortably given opposition (COL, COD, UZB)."
+  },
+  "coachUpdate": {
+    "changed": false,
+    "currentCoach": "Roberto Martinez",
+    "newCoach": null,
+    "source": null,
+    "notes": null
+  },
+  "summary": "Portugal's biggest delta since April 16 is the Ruben Dias situation: the City centre-back, listed previously as fully fit, has in reality been out since January 5 with overlapping hamstring/ankle issues and only just returned to training in early May — likely available for the tournament but short on match sharpness. Vitinha had a brief heel scare in mid-April but is back training at PSG. Roberto Martinez's preliminary 35-55 player list went to the governing body on May 11, with the final 26 due to be announced May 19; Ricardo Velho and Paulinho remain in the picture as cover for the injured Diogo Costa and Rafael Leao respectively. No new international matches have been played in the window; the next test is Chile in Lisbon on June 6 followed by Nigeria in Leiria on June 10.",
+  "sourceUrls": [
+    "https://www.sportsmole.co.uk/football/portugal/world-cup/feature/portugal-world-cup-squad-full-list-predicted-lineup-depth-chart-latest-news_597366.html",
+    "https://www.fourfourtwo.com/team/portugal-world-cup-2026-squad",
+    "https://www.goal.com/en/lists/portugal-squad-world-cup-2026/bltdc09b12c47cb4518",
+    "https://www.skysports.com/football/news/11095/13543070/world-cup-2026-squad-lists-england-scotland-brazil-usa-spain-france-germany-netherlands-argentina-portugal-and-more",
+    "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+    "https://theportugalpost.com/posts/diogo-costa-injury-puts-portugals-world-cup-preparation-at-risk",
+    "https://theportugalpost.com/posts/portugals-goalkeeper-crisis-diogo-costa-sidelined-as-ricardo-velho-gets-world-cup-chance",
+    "https://www.plataformamedia.com/en/2026/03/24/diogo-costa-injury-portugal-squad-mexico-usa-friendly/",
+    "https://www.plataformamedia.com/en/2026/03/25/ronaldo-portugal-muscle-injury-world-cup-2026/",
+    "https://www.plataformamedia.com/en/2026/03/26/mexico-portugal-friendly-world-cup-2026/",
+    "https://www.plataformamedia.com/en/2026/04/02/portugal-vs-nigeria-friendly-2026-world-cup-preparation/",
+    "https://worldsoccertalk.com/news/cristiano-ronaldos-portugal-first-pre-2026-world-cup-friendly-officially-confirmed/",
+    "https://worldsoccertalk.com/news/cristiano-ronaldos-potential-return-date-emerges-as-injury-clouds-portugals-usmnt-and-mexico-clashes-in-2026-fifa-world-cup-build-up/",
+    "https://worldsoccertalk.com/amp/news/cristiano-ronaldo-calms-2026-world-cup-fears-with-positive-four-word-injury-update-as-return-date-approaches/",
+    "https://www.goal.com/en-us/lists/cristiano-ronaldo-danger-missing-portugal-final-camp-before-2026-world-cup-hamstring-injury/blt1004fb8180aec3c5",
+    "https://www.goal.com/en-us/lists/rafael-leao-suffers-injury-blow-roberto-martinez-dismisses-ac-milan-star-portugal-squad/bltbf17adff07644057",
+    "https://www.goal.com/en/lists/milan-leao-heads-to-portugal-for-treatment-on-his-adductor-injury-his-recovery-plan-and-the-latest-ahead-of-the-napoli-match/bltb000cd32ef5f7ac2",
+    "https://www.espn.com/soccer/story/_/id/47525777/ruben-dias-six-weeks-hamstring-injury-man-city",
+    "https://www.skysports.com/football/news/11095/13491143/ruben-dias-injury-pep-guardiola-confirms-man-city-defender-side-lined-for-up-to-six-weeks-and-transfer-business-could-follow",
+    "https://goonerdaily.com/2026/04/29/ruben-dias-targets-early-may-return-as-manchester-citys-title-push-enters-critical-phase/",
+    "https://ca.sports.yahoo.com/news/ruben-dias-josko-gvardiol-return-213000251.html",
+    "https://www.sportsmole.co.uk/football/man-city/injury-news/injuries-and-suspensions/dias-stones-gvardiol-latest-man-city-injury-list-for-chelsea-clash_595321.html",
+    "https://theportugalpost.com/posts/portuguese-star-vitinha-returns-to-psg-training-before-bayern-champions-league-clash",
+    "https://www.beinsports.com/en-us/soccer/uefa-champions-league/articles/will-vitinha-be-ready-for-the-clash-against-bayern-munich-in-the-champions-league-2026-04-21",
+    "https://www.beinsports.com/en-us/soccer/uefa-champions-league/articles/vitinha-and-hakimi-train-normally-with-psg-and-aim/2026-04-27",
+    "https://www.squawka.com/us/outright-markets/portugal-world-cup-2026-odds/",
+    "https://www.lineups.com/betting/portugal-2026-world-cup-team-preview-betting-odds-predictions-best-bets/",
+    "https://sports.betmgm.com/en/blog/world-cup/portugal-world-cup-odds-chances-to-win-world-cup-bm25/",
+    "https://news.bet365.com/en-us/article/fifa-world-cup-2026-picks-predictions-odds/2025122111451479006",
+    "https://ca.sports.yahoo.com/news/portugal-world-cup-roster-announcement-180001069.html",
+    "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/teams/portugal/team-news",
+    "https://en.wikipedia.org/wiki/Jo%C3%A3o_Cancelo",
+    "https://www.theportugalnews.com/news/2026-02-25/the-portuguese-national-team-has-world-cup-2026-preparation-games-scheduled/981778"
+  ],
+  "confidence": "medium",
+  "dataFreshness": "2026-05-11"
+}

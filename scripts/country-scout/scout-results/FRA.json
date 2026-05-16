@@ -1,0 +1,118 @@
+{
+  "teamCode": "FRA",
+  "teamName": "France",
+  "scoutedAt": "2026-05-16T00:00:00Z",
+  "injuryUpdates": [
+    {
+      "playerName": "Kylian Mbappe",
+      "teamCode": "FRA",
+      "country": "France",
+      "club": "Real Madrid",
+      "position": "Forward",
+      "injuryType": "Left semitendinosus (thigh/hamstring) muscle injury",
+      "injuryDate": "2026-04-25",
+      "expectedReturn": "Expected fit for tournament kickoff on June 11; Real Madrid shut him down for remainder of LaLiga season",
+      "availabilityStatus": "minor_concern",
+      "lastMatchPlayed": {
+        "date": "2026-04-25",
+        "opponent": "Real Betis (La Liga)",
+        "notes": "Picked up semitendinosus muscle injury during the match; Real Madrid opted to rest him for the rest of the LaLiga season"
+      },
+      "source": "Al Jazeera, France 24, Athlon Sports, FOX Sports - April-May 2026",
+      "notes": "New muscle injury (left semitendinosus) suffered April 25 vs Real Betis. Missed El Clasico May 10. Real Madrid prefer not to risk him further given little at stake domestically. Deschamps still named him captain in the 26-man squad on May 14; fitness manageable and expected to be in top form for tournament. Confirmed in squad as captain.",
+      "action": "update"
+    },
+    {
+      "playerName": "William Saliba",
+      "teamCode": "FRA",
+      "country": "France",
+      "club": "Arsenal",
+      "position": "Defender",
+      "injuryType": "Recovered from left ankle injury",
+      "injuryDate": null,
+      "expectedReturn": "Fully fit",
+      "availabilityStatus": "fit",
+      "lastMatchPlayed": {
+        "date": "2026-05-14",
+        "opponent": "Club football (recovered)",
+        "notes": "Named in France 26-man squad on May 14 with no fitness concerns flagged by Deschamps"
+      },
+      "source": "Yahoo Sports, Get French Football News - May 14, 2026",
+      "notes": "Selected in 26-man squad with no injury caveats; recovered from March Carabao Cup final ankle issue as expected.",
+      "action": "update"
+    }
+  ],
+  "recentFormUpdates": [],
+  "tacticalUpdates": [],
+  "squadChanges": [
+    {
+      "playerName": "Eduardo Camavinga",
+      "changeType": "dropped",
+      "details": "Omitted from the 26-man squad despite being a fixture of recent France camps. Deschamps cited his disrupted club season with limited playing time and injuries at Real Madrid, plus very strong competition in midfield. Deschamps publicly acknowledged Camavinga's right to be upset.",
+      "source": "ESPN, Yahoo Sports, beIN Sports - May 14, 2026",
+      "effectiveDate": "2026-05-14"
+    },
+    {
+      "playerName": "Randal Kolo Muani",
+      "changeType": "dropped",
+      "details": "Forward omitted from the 26-man squad; Jean-Philippe Mateta (Crystal Palace) preferred as the backup striker option behind Mbappe and Thuram.",
+      "source": "ESPN, Yahoo Sports - May 14, 2026",
+      "effectiveDate": "2026-05-14"
+    },
+    {
+      "playerName": "Lucas Chevalier",
+      "changeType": "dropped",
+      "details": "Goalkeeper omitted after losing his PSG starting spot to Matvei Safonov and not playing since January. Third-choice goalkeeper role went to surprise call-up Robin Risser (Lens).",
+      "source": "ESPN - May 14, 2026",
+      "effectiveDate": "2026-05-14"
+    },
+    {
+      "playerName": "Robin Risser",
+      "changeType": "new_call_up",
+      "details": "Surprise call-up as third-choice goalkeeper behind Maignan and Samba. The Lens keeper had a breakout Ligue 1 season and was named the league's best goalkeeper. First major tournament selection.",
+      "source": "ESPN, Sportbible, Yahoo Sports - May 14, 2026",
+      "effectiveDate": "2026-05-14"
+    },
+    {
+      "playerName": "N'Golo Kante",
+      "changeType": "new_call_up",
+      "details": "Veteran midfielder (Fenerbahce) earns selection for what will be his final major tournament, rewarding a strong campaign and return to international relevance.",
+      "source": "Yahoo Sports, Get French Football News - May 14, 2026",
+      "effectiveDate": "2026-05-14"
+    }
+  ],
+  "bettingOddsUpdate": {
+    "tournamentWinner": "+450",
+    "groupStageExit": null,
+    "toQualifyFromGroup": null,
+    "source": "BetMGM / FOX Sports aggregator, Polymarket - mid-May 2026",
+    "notes": "France co-favorite alongside Spain at +450 (implied ~17.4% on Polymarket prediction markets). Shortened from opening of +600 on heavy betting action. Group stage exit and to-qualify-from-group markets not available from the reviewed aggregators."
+  },
+  "coachUpdate": {
+    "changed": false,
+    "currentCoach": "Didier Deschamps",
+    "newCoach": null,
+    "source": "France 24, Open Magazine - May 14, 2026",
+    "notes": "Deschamps remains in charge; this is confirmed as his final tournament after 13 years before stepping down post-tournament. Zinedine Zidane still the widely reported intended successor."
+  },
+  "summary": "France's headline development since April 16 is Didier Deschamps' final 26-man squad announcement on May 14, with notable omissions of Eduardo Camavinga, Randal Kolo Muani, and Lucas Chevalier, and a surprise call-up for Lens goalkeeper Robin Risser. The other material item is a new left semitendinosus (thigh) muscle injury to captain Kylian Mbappe, suffered for Real Madrid on April 25, which has kept him out for the rest of the LaLiga season but is not expected to threaten his availability for kickoff on June 11. No internationals have been played in the window; tactics and coaching arrangements are unchanged.",
+  "sourceUrls": [
+    "https://www.espn.com/soccer/story/_/id/48771039/france-2026-world-cup-squad-mbappe-camavinga-kolo-muani-dembele",
+    "https://www.getfootballnewsfrance.com/2026/full-list-didier-deschamps-unveils-26-player-france-squad-for-2026-world-cup/",
+    "https://sports.yahoo.com/articles/full-list-didier-deschamps-unveils-183500704.html",
+    "https://www.beinsports.com/en-us/soccer/fifa-world-cup-2026/articles/didier-deschamps-announces-france-s-official-squad-for-the-2026-fifa-world-cup-2026-05-14",
+    "https://www.france24.com/en/sport/20260514-mbapp%C3%A9-heads-france-squad-in-deschamps-final-world-cup-bid",
+    "https://openthemagazine.com/sports/france-fifa-wc-2026-squad-deschamps-draws-his-final-line-camavinga-and-griezmann-pay-the-price",
+    "https://www.sportbible.com/football/football-news/france-squad-world-cup-519202-20260514",
+    "https://www.aljazeera.com/sports/2026/4/27/mbappe-could-miss-el-clasico-after-real-madrid-confirm-thigh-injury",
+    "https://www.france24.com/en/live-news/20260427-mbappe-doubt-for-clasico-after-real-madrid-confirm-thigh-injury",
+    "https://athlonsports.com/world-cup/france-kylian-mbappe-injury-scare-before-world-cup-2026",
+    "https://worldsoccertalk.com/news/real-madrid-suffer-a-huge-blow-as-kylian-mbappe-gets-a-muscle-injury-will-it-affect-his-2026-world-cup-participation/",
+    "https://www.foxsports.com/stories/soccer/world-cup-2026-champion-odds",
+    "https://www.foxsports.com/stories/soccer/2026-fifa-world-cup-odds-spain-france-pose-major-betting-liability",
+    "https://polymarket.com/event/2026-fifa-world-cup-winner-595",
+    "https://sports.yahoo.com/articles/official-france-schedule-two-friendly-184300056.html"
+  ],
+  "confidence": "high",
+  "dataFreshness": "2026-05-14"
+}

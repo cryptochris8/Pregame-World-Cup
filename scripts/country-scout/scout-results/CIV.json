@@ -1,0 +1,213 @@
+{
+  "teamCode": "CIV",
+  "teamName": "Cote d'Ivoire",
+  "scoutedAt": "2026-05-16T00:00:00Z",
+  "injuryUpdates": [
+    {
+      "playerName": "Sebastien Haller",
+      "teamCode": "CIV",
+      "country": "Ivory Coast",
+      "club": "FC Utrecht",
+      "position": "Forward",
+      "injuryType": "Omitted from 26-man squad (limited club minutes); named as reserve",
+      "injuryDate": null,
+      "expectedReturn": "Reserve only — would need an injury call-up to feature at the tournament",
+      "availabilityStatus": "retired_international",
+      "lastMatchPlayed": {
+        "date": "2026-03-15",
+        "opponent": "FC Utrecht (Eredivisie)",
+        "notes": "Limited playing time at club level all season; AFCON 2024 final hero left out of final 26"
+      },
+      "source": "ESPN, BeIN Sports, Africa Soccer - 15 May 2026",
+      "notes": "Although still an international, Haller was dropped from the main 26-man squad on 15 May 2026 and named only among the five reserves. Effectively unavailable for tournament selection barring a withdrawal. Use retired_international status as a 'not in squad' marker per scout convention.",
+      "action": "update"
+    },
+    {
+      "playerName": "Amad Diallo",
+      "teamCode": "CIV",
+      "country": "Ivory Coast",
+      "club": "Manchester United",
+      "position": "Forward",
+      "injuryType": "No current injury",
+      "injuryDate": null,
+      "expectedReturn": "N/A - currently fit",
+      "availabilityStatus": "fit",
+      "lastMatchPlayed": {
+        "date": "2026-04-06",
+        "opponent": "Manchester United (Premier League)",
+        "notes": "In main 26-man squad named 15 May 2026"
+      },
+      "source": "ESPN, BeIN Sports - 15 May 2026",
+      "notes": "Confirmed in 26-man squad. Singled out by coach and reporters as a standout attacking prospect for the tournament.",
+      "action": "no_change"
+    },
+    {
+      "playerName": "Franck Kessie",
+      "teamCode": "CIV",
+      "country": "Ivory Coast",
+      "club": "Al Ahli",
+      "position": "Midfielder",
+      "injuryType": "Recent muscle injury scare, recovered",
+      "injuryDate": "2026-04-26",
+      "expectedReturn": "Available — included in 26-man squad as captain",
+      "availabilityStatus": "minor_concern",
+      "lastMatchPlayed": {
+        "date": "2026-04-26",
+        "opponent": "Al-Fateh SC (Saudi Pro League)",
+        "notes": "Forced off in the 32nd minute with a muscle injury; later reported as less serious than feared"
+      },
+      "source": "AfricaSoccer, Foot Africa, GhanaSoccernet - late April 2026",
+      "notes": "Captain. Suffered a muscle injury against Al-Fateh that sparked concern in Abidjan. Reported as a minor muscular issue tied to fixture congestion. Selected in the 26-man squad on 15 May, remains the captain.",
+      "action": "update"
+    },
+    {
+      "playerName": "Evann Guessand",
+      "teamCode": "CIV",
+      "country": "Ivory Coast",
+      "club": "Crystal Palace",
+      "position": "Forward",
+      "injuryType": "Knee injury sustained vs Fiorentina (Conference League, early April)",
+      "injuryDate": "2026-04-09",
+      "expectedReturn": "Returned to Crystal Palace training in mid-May; selected in the 26-man squad",
+      "availabilityStatus": "minor_concern",
+      "lastMatchPlayed": {
+        "date": "2026-04-09",
+        "opponent": "Fiorentina (UEFA Conference League)",
+        "notes": "Withdrawn with knee injury; missed nine Crystal Palace games before returning to training in mid-May"
+      },
+      "source": "ESPN, Read Crystal Palace, RotoWire - 15 May 2026",
+      "notes": "Coach Emerse Fae selected Guessand despite no club appearances since 9 April. Crystal Palace boss Glasner publicly confirmed return to training in mid-May. Will need a productive France friendly on 4 June to prove match fitness.",
+      "action": "add"
+    },
+    {
+      "playerName": "Ange-Yoan Bonny",
+      "teamCode": "CIV",
+      "country": "Ivory Coast",
+      "club": "Inter Milan",
+      "position": "Forward",
+      "injuryType": "No current injury",
+      "injuryDate": null,
+      "expectedReturn": "N/A - fit and newly eligible",
+      "availabilityStatus": "fit",
+      "lastMatchPlayed": {
+        "date": "2026-05-10",
+        "opponent": "Inter Milan (Serie A)",
+        "notes": "Strong Serie A season — 7 goals and 8 assists in 41 appearances across competitions"
+      },
+      "source": "ESPN, BeIN Sports, World Soccer Talk - May 2026",
+      "notes": "France youth international who completed an eligibility switch to Ivory Coast (approved 8 May 2026). Selected in the senior 26-man squad on 15 May despite being uncapped. Adds an in-form Inter Milan striker to compensate for Haller's omission.",
+      "action": "add"
+    }
+  ],
+  "recentFormUpdates": [],
+  "tacticalUpdates": [
+    {
+      "field": "attackingApproach.primaryThreat",
+      "oldValue": "Haller's hold-up play creating space for runners, with Pépé cutting inside from the right",
+      "newValue": "Pace-driven attack led by Amad Diallo and Simon Adingra in wide areas, with a rotating central focal point between Bonny, Wahi, Guessand and Pepe rather than Haller's hold-up play",
+      "source": "ESPN, BeIN Sports squad coverage - 15 May 2026",
+      "confidence": "medium"
+    },
+    {
+      "field": "attackingApproach.strengths",
+      "oldValue": "Sébastien Haller's aerial presence and finishing; Nicolas Pépé's direct dribbling and goal threat; Kessié's box-to-box power and late runs; AFCON-winning confidence and momentum",
+      "newValue": "Amad Diallo's speed and creativity; Bonny's Serie A form and movement at Inter; Adingra's directness from the wing for Monaco; Pepe still a threat off the bench; Kessie's box-to-box power and late runs",
+      "source": "ESPN, BeIN Sports squad coverage - 15 May 2026",
+      "confidence": "medium"
+    },
+    {
+      "field": "keyTacticalFeatures",
+      "oldValue": "Haller as focal striker with Kessie arriving from deep",
+      "newValue": "Rotational front line without a fixed No.9 after Haller's omission; Bonny, Wahi and Guessand expected to compete for the central role with Diallo and Adingra providing wide pace",
+      "source": "ESPN squad announcement coverage - 15 May 2026",
+      "confidence": "medium"
+    }
+  ],
+  "squadChanges": [
+    {
+      "playerName": "Sebastien Haller",
+      "changeType": "dropped",
+      "details": "AFCON 2024 final scorer left out of the 26-man squad named on 15 May 2026 after a season of limited minutes at FC Utrecht. Named only on the five-man reserve list, so could still be recalled if a forward withdraws.",
+      "source": "ESPN, BeIN Sports - 15 May 2026",
+      "effectiveDate": "2026-05-15"
+    },
+    {
+      "playerName": "Ange-Yoan Bonny",
+      "changeType": "new_call_up",
+      "details": "Inter Milan forward, previously a France youth international, switched eligibility (approved 8 May 2026) and was named in the senior 26-man squad despite being uncapped. Direct beneficiary of Haller's omission.",
+      "source": "ESPN, BeIN Sports, World Soccer Talk - May 2026",
+      "effectiveDate": "2026-05-15"
+    },
+    {
+      "playerName": "Elye Wahi",
+      "changeType": "new_call_up",
+      "details": "OGC Nice forward initially considered unlikely; included in the 26-man squad after Fae reassessed his form following a March international debut.",
+      "source": "ESPN, AfricaSoccer - 15 May 2026",
+      "effectiveDate": "2026-05-15"
+    },
+    {
+      "playerName": "Wilfried Zaha",
+      "changeType": "dropped",
+      "details": "Veteran forward not included in the 26-man squad named on 15 May 2026.",
+      "source": "Yen.com.gh, ESPN squad coverage - 15 May 2026",
+      "effectiveDate": "2026-05-15"
+    },
+    {
+      "playerName": "Jeremie Boga",
+      "changeType": "dropped",
+      "details": "Nice winger omitted from the 26-man squad on 15 May 2026.",
+      "source": "ESPN squad coverage - 15 May 2026",
+      "effectiveDate": "2026-05-15"
+    },
+    {
+      "playerName": "Jean-Philippe Gbamin",
+      "changeType": "dropped",
+      "details": "Midfielder who had returned to the squad for qualifiers omitted from the final 26.",
+      "source": "ESPN squad coverage - 15 May 2026",
+      "effectiveDate": "2026-05-15"
+    },
+    {
+      "playerName": "Vakoun Bayo",
+      "changeType": "dropped",
+      "details": "Striker option left out of the final 26-man squad.",
+      "source": "ESPN squad coverage - 15 May 2026",
+      "effectiveDate": "2026-05-15"
+    }
+  ],
+  "bettingOddsUpdate": {
+    "tournamentWinner": "+30000",
+    "groupStageExit": null,
+    "toQualifyFromGroup": null,
+    "source": "Squawka outright markets aggregator (citing US sportsbooks including bet365), May 2026; group winner odds via FOX Sports / RotoWire",
+    "notes": "Outright winner around +30000 (roughly 0.33% implied). Group E winner odds around +800 (Germany favored at -300). Explicit 'to qualify from group' moneylines were not available in aggregator coverage at scout time; market consensus implies roughly a coin-flip for a top-two finish, with third place plus best-third progression a realistic backstop."
+  },
+  "coachUpdate": {
+    "changed": false,
+    "currentCoach": "Emerse Fae",
+    "newCoach": null,
+    "source": null,
+    "notes": "No change. Fae personally unveiled the 26-man squad at Stade Felix Houphouet-Boigny on 15 May 2026."
+  },
+  "summary": "Cote d'Ivoire's headline development is the 26-man squad announced by Emerse Fae on 15 May 2026: AFCON 2024 hero Sebastien Haller was dropped to the reserve list, while uncapped Inter Milan striker Ange-Yoan Bonny was added after a France-to-Ivory-Coast eligibility switch (approved 8 May). Captain Franck Kessie was included despite a late-April muscle scare at Al Ahli, and Crystal Palace forward Evann Guessand was selected despite not playing since 9 April with a knee injury. The only fixture announced for the new window is a marquee 4 June friendly against France in Nantes; no new internationals have been played since 16 April.",
+  "sourceUrls": [
+    "https://www.espn.com/soccer/story/_/id/48778996/ivory-coast-2026-world-cup-squad-sebastien-haller-ange-yoan-bonny",
+    "https://www.beinsports.com/en-us/soccer/fifa-world-cup-2026/articles/emerse-fa%C3%A9-s-official-squad-for-c%C3%B4te-d-ivoire-at-the-2026-fifa-world-cup-2026-05-15",
+    "https://foot-africa.com/en/news/world-cup-2026-the-absences-in-the-ivory-coast-squad-that-sparked-controversy-1206560/",
+    "https://en.africatopsports.com/world-cup-2026-ivory-coast-squad-officially-unveiled/",
+    "https://africasoccer.com/elye-wahi-holds-his-nerve-as-emerse-fae-prepares-to-name-ivory-coast-squad-for-2026-world-cup/",
+    "https://africasoccer.com/franck-kessie-suffers-injury-in-al-ahlis-win-over-al-fateh-sc/",
+    "https://foot-africa.com/en/news/ivory-coast-is-franck-kessies-injury-less-serious-than-feared-1199447/",
+    "https://ghanasoccernet.com/franck-kessie-injury-scare-for-ivory-coast-ahead-of-2026-world-cup",
+    "https://readcrystalpalace.com/2026/05/15/oliver-glasner-has-good-guessand-news-ahead-of-crystal-palace-trip-to-brentford-football-news/",
+    "https://www.rotowire.com/soccer/headlines/evann-guessand-injury-set-to-miss-three-to-four-weeks-510129",
+    "https://en.africatopsports.com/2026/04/16/crystal-palace-in-alert-mode-over-evann-guessand/",
+    "https://worldsoccertalk.com/world-cup/germany-on-alert-world-cup-rivals-ivory-coast-get-boost-as-inters-yoan-ange-bonny-passes-on-france/",
+    "https://yen.com.gh/sports/football/304677-2026-world-cup-zaha-dropped-ivory-coast-african-nation-26-man-squad/",
+    "https://www.squawka.com/us/outright-markets/ivory-coast-world-cup-2026-odds/",
+    "https://www.fff.fr/article/16401-france-cote-d-ivoire-le-4-juin-a-nantes.html",
+    "https://www.incotedivoire.net/sport/news/Football:%20C%C3%B4te%20d%E2%80%99Ivoire%E2%80%93France%20Friendly%20Match%20on%20June%204%20in%20Nantes",
+    "https://en.wikipedia.org/wiki/Ivory_Coast_national_football_team"
+  ],
+  "confidence": "high",
+  "dataFreshness": "2026-05-15"
+}

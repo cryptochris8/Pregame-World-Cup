@@ -4,70 +4,70 @@
   "team2Code": "KOR",
   "team1Name": "Japan",
   "team2Name": "South Korea",
-  "generatedAt": "2026-06-12T14:30:00Z",
+  "generatedAt": "2026-06-15T14:30:00Z",
   "dataVersion": 1,
-  "headline": "When East Meets East: Asia's Eternal Rivals Clash on Football's Grandest Stage",
-  "subheadline": "Japan and South Korea's bitter rivalry reaches the tournament for the very first time in their 85-match history",
-  "openingNarrative": "Seventy-two years. That's how long Japan and South Korea have been playing football against each other, their rivalry stretching back to a match in March 1954 that began one of the sport's most intense and enduring feuds. Through 85 meetings, two co-hosted tournaments, and countless moments of brilliance and heartbreak, these neighbors have never met on football's grandest stage—until now.\n\nThe wait ends in a clash that transcends sport. This isn't just about three points or progression; it's about decades of shared history, mutual respect, and fierce competition distilled into 90 minutes of pure intensity. Japan arrives as the Samurai Blue in ascendancy, riding the momentum of becoming the first nation to qualify for this tournament, their stunning 1-0 victory over England at Wembley in March serving as the perfect statement of intent. They are ranked 16th in the world with an ELO rating of 1695, their European-influenced tactical sophistication married to an infectious belief that this could be their tournament.\n\nSouth Korea, meanwhile, carries the weight of Son Heung-min's final tournament dance. At 33, their captain and talisman moved to MLS with LAFC last summer, a decision that spoke to legacy over ambition. The Taegeuk Warriors qualified unbeaten but unconvincingly, their recent form patchy, their tactical system still evolving under Hong Myung-bo. Yet in this fixture—in this rivalry—form books become irrelevant. Korea's 44 victories in this series dwarf Japan's 16, but tournament football writes its own rules, and both nations know that history starts from zero when the whistle blows.",
+  "headline": "Fire and Thunder: Asia's Greatest Rivalry Takes the World Stage",
+  "subheadline": "Japan and Korea meet for their first tournament encounter, carrying 70 years of fierce competition into football's grandest theater.",
+  "openingNarrative": "For seventy-two years, they have circled each other like prizefighters, throwing punches across the Sea of Japan with a ferocity that transcends sport. Japan and South Korea have faced each other 85 times since their first meeting in 1954, crafting a rivalry so intense that it makes El Clásico look like a friendly kickabout. Yet for all their battles—from the shared hosting of the 2002 tournament to that electric 2011 Asian Cup semi-final that Japan won on penalties in Doha—they have never met when it mattered most. Never on the tournament stage itself.\n\nThat changes now. In what feels like destiny finally catching up with drama, the Samurai Blue and the Taegeuk Warriors will write the next chapter of Asian football's greatest story under the unforgiving glare of tournament lights. Japan arrives as the continent's standard-bearers, their ELO rating of 1695 placing them 16th globally and eight places above their rivals. They were the first team to qualify for this tournament, steamrolling through qualification with a 27-goal differential that spoke to their evolution under Hajime Moriyasu. Korea, meanwhile, went unbeaten through their qualifying campaign, their 6-4-0 record built on the foundation of Son Heung-min's leadership and Kim Min-jae's defensive excellence.\n\nBut numbers tell only part of this story. Japan comes into this match carrying the scars of injury—Kaoru Mitoma's tournament-ending hamstring tear and Takumi Minamino's ACL rupture have robbed them of two of their most dangerous attacking weapons. Korea faces their own concerns, with Son Heung-min at 33 managing recurring fitness issues in MLS, while creative lynchpin Lee Kang-in battles an ankle sprain that threatens his sharpness. What emerges is not just a clash of tactical philosophies, but a test of depth, resilience, and which nation can best channel seven decades of competitive fire into ninety minutes of tournament football.",
   "tacticalBreakdown": {
     "title": "The Chess Match",
-    "narrative": "This is a meeting of tactical philosophies as much as nations. Hajime Moriyasu's Japan will deploy their adventurous 3-4-2-1, a formation designed to maximize their attacking talent while maintaining defensive structure. Kaoru Mitoma and Ritsu Doan as goal-scoring wing-backs will be the key, providing width while Takefusa Kubo—should he overcome his recent absence from international duty—and the midfield creators operate in the half-spaces. It's a system that has served them brilliantly, but one that leaves them vulnerable to quick transitions, exactly the kind Korea excel at.\n\nHong Myung-bo's tactical uncertainty becomes both weakness and strength. His preference for 4-3-3 suggests he'll look to press Japan's three-man defense early, using Son Heung-min's pace and Lee Kang-in's creativity to exploit the spaces left by Japan's attacking wing-backs. Kim Min-jae's ball-playing ability from defense will be crucial in bypassing Japan's high press, while the central midfield triangle must work overtime to support both defensive solidity and attacking transitions. The key battleground will be the flanks, where Japan's wing-backs meet Korea's wide forwards—whoever dominates these duels will likely control the match.",
+    "narrative": "Hajime Moriyasu's Japan will deploy their aggressive 3-4-2-1 formation, a system designed to pack as many attackers as possible while maintaining defensive structure. With Mitoma sidelined, the creative burden falls heavily on Takefusa Kubo and the overlapping runs of their wing-backs. Japan's tactical identity revolves around very high pressing intensity and quick ball circulation, using their technical superiority to create overloads in the final third. Their European-based core brings tactical intelligence honed in the world's best leagues, but their wing-back system can leave flanks exposed against quick transitions.\n\nHong Myung-bo's Korea presents a fascinating tactical puzzle, with the coach still experimenting between 4-3-3 and 3-4-3 formations heading into the tournament. Their approach centers on feeding Son Heung-min and Lee Kang-in through quick counter-attacks, using Kim Min-jae's ball-playing ability from deep to initiate transitions. Korea's medium-high pressing and compact defensive block will look to frustrate Japan's possession-heavy approach, then strike with pace through Son's runs from the left. The tactical battleground will be Japan's technical midfield triangle against Korea's athletic pressing—whoever controls the tempo in the middle third will likely dictate the outcome.",
     "team1Formation": "3-4-2-1",
     "team2Formation": "4-3-3",
-    "keyMatchup": "Mitoma's attacking runs vs Korea's right flank defensive structure"
+    "keyMatchup": "Takefusa Kubo's creativity in the half-spaces versus Korea's collective pressing organization"
   },
   "dataInsights": {
     "title": "By The Numbers",
-    "eloAnalysis": "Japan's ELO rating of 1695 places them 40 points and eight positions above Korea (1655, 24th), reflecting their superior recent form and tactical consistency under Moriyasu.",
-    "formAnalysis": "Japan's qualifying campaign was dominant (7W-2D-1L, +27 goal difference) compared to Korea's solid but unspectacular run (6W-4D-0L, +17), though recent friendlies show diverging trajectories—Japan beating Brazil and England, Korea losing to Ivory Coast and Austria.",
-    "squadValueComparison": "Japan's squad valuation of €431.9 million significantly outweighs Korea's €315 million, led by Takefusa Kubo's €62.5 million value, though Kim Min-jae remains the most expensive individual player at €87.5 million.",
-    "injuryImpact": "Japan face the devastating loss of Takumi Minamino to ACL injury and uncertainty over Kubo's availability, while Korea must manage Son Heung-min's workload at age 33 and Lee Kang-in's reduced playing time at PSG affecting match sharpness.",
-    "bettingPerspective": "Markets reflect the tactical uncertainty with a predicted 1-1 draw and just 48% confidence, suggesting even professionals see this as the ultimate coin flip.",
-    "historicalPattern": "Following the tournament tradition that only UEFA and CONMEBOL nations have ever won the tournament, both teams carry the weight of Asian football's hopes to break new ground on the global stage."
+    "eloAnalysis": "Japan's ELO rating of 1695 (16th globally) versus Korea's 1655 (24th) reflects the Samurai Blue's recent tactical evolution and dominant qualifying campaign.",
+    "formAnalysis": "Japan's qualifying dominance (7-2-1, +27 goal difference) contrasts with Korea's unbeaten but less emphatic campaign (6-4-0, +17), though recent friendlies show diverging trajectories with Japan's stunning wins over Brazil and England.",
+    "squadValueComparison": "Japan's squad value of €431.9 million compared to Korea's €315 million reflects their greater depth in European leagues, though Korea's €87.5 million Kim Min-jae leads all individual valuations.",
+    "injuryImpact": "Japan's loss of Mitoma and Minamino removes crucial attacking depth, while Korea's concerns over Son's fitness management and Lee Kang-in's ankle sprain cloud their creative output.",
+    "bettingPerspective": "The tight predicted scoreline reflects the historical volatility of this fixture, with both nations' tournament pedigree making this genuinely unpredictable.",
+    "historicalPattern": "As the only non-UEFA/CONMEBOL teams to reach a tournament semi-final since 1930, Korea's 2002 run reminds us that Asian football can still produce magic on the sport's biggest stage."
   },
   "playerSpotlights": [
     {
-      "name": "Kaoru Mitoma",
+      "name": "Takefusa Kubo",
       "teamCode": "JPN",
-      "narrative": "The Brighton wizard arrives in peak form, fresh from scoring the winner in Japan's historic first victory over England at Wembley. Operating as a goal-scoring wing-back in Moriyasu's system, Mitoma represents everything that makes this Japan team dangerous—technical brilliance, tactical intelligence, and the confidence that comes from proving himself in the Premier League. His dribbling in tight spaces and ability to create something from nothing could be the difference in a match where margins will be microscopic. Against Korea's organized defensive structure, Mitoma's individual brilliance might be Japan's skeleton key.",
-      "statline": "Scored the winner in Japan's historic 1-0 victory over England at Wembley"
+      "narrative": "With Mitoma sidelined, the Real Sociedad wizard becomes Japan's primary creative force, carrying the hopes of a nation on his technically gifted shoulders. Kubo's ability to drift between lines and create chances from nothing will be crucial against Korea's organized defensive block. His development from Real Madrid's youth prospect to La Liga star mirrors Japan's own evolution into a genuine tournament contender. In this rivalry's first tournament chapter, he gets to write the opening line.",
+      "statline": "Japan's most valuable player at €62.5 million"
     },
     {
       "name": "Son Heung-min",
       "teamCode": "KOR",
-      "narrative": "This is the final dance. At 33, having moved to MLS with LAFC, Son Heung-min enters what will almost certainly be his last tournament carrying the hopes of a nation. His 136 caps tell the story of a player who has been Korea's talisman for over a decade, and his 10 goals in qualifying proved he still possesses the magic to change games. But this isn't just about individual brilliance—it's about leadership, about willing a team through the moments when talent alone isn't enough. Against Japan, Son's positioning and movement will be crucial in exploiting the spaces left by their aggressive wing-backs.",
-      "statline": "136 caps and 10 qualifying goals as Korea's captain and all-time great"
+      "narrative": "At 33, the LAFC star captain enters what is almost certainly his final tournament carrying 136 caps of experience and the weight of Korean expectations. His record-breaking MLS transfer may have raised eyebrows, but his 10 goals in qualifying prove the hunger still burns bright. Managing recurring fitness issues while leading Korea's attack, Son embodies the veteran warrior mentality that has defined this rivalry. Against Japan, he seeks the tournament moment that has eluded him.",
+      "statline": "136 international caps and 10 goals in qualifying"
     },
     {
       "name": "Kim Min-jae",
       "teamCode": "KOR",
-      "narrative": "The Bayern Munich center-back is Korea's defensive colossus and perhaps their most complete player. In a team still searching for tactical identity under Hong Myung-bo, Kim Min-jae provides the one constant—world-class defending married to progressive ball-playing ability. Against Japan's fluid front line, his positioning and reading of the game will be essential, while his ability to launch attacks from deep could bypass Japan's high press entirely. At 27, he represents Korean football's present and future, a player comfortable on any stage and crucial to any hopes of an upset.",
-      "statline": "Valued at €87.5 million, the most expensive player in either squad"
+      "narrative": "The Bayern Munich center-back represents Korea's defensive evolution, combining world-class defending with the ball-playing ability to initiate counter-attacks. Despite a recent knee scare against Wolfsburg, he remains the cornerstone of Korea's tactical approach. His ability to step out of defense and find Son or Lee Kang-in with precise passing could be the key to unlocking Japan's high defensive line. At €87.5 million, he's the most valuable player on either side.",
+      "statline": "Most valuable player in the match at €87.5 million"
     },
     {
-      "name": "Takefusa Kubo",
-      "teamCode": "JPN",
-      "narrative": "The great unknown. Kubo's mysterious absence from Japan's March squad has cast doubt over his tournament availability, creating a selection headache that could define Japan's tournament. When fit and firing, the Real Sociedad creator is Japan's most technically gifted player, the one who makes their intricate passing combinations click. His creativity through the half-spaces perfectly complements Mitoma's wing-back runs, but his uncertain status adds an element of tactical roulette. If he starts, Japan's ceiling rises dramatically; if not, they'll need to reimagine their attacking approach entirely.",
-      "statline": "Valued at €62.5 million but absent from recent international squads"
+      "name": "Lee Kang-in",
+      "teamCode": "KOR",
+      "narrative": "The PSG playmaker's ankle sprain may affect his sharpness, but his creativity remains Korea's wildcard against Japan's aggressive pressing. His development in Ligue 1 has added a sophisticated passing dimension to Korea's traditionally direct approach. Working in tandem with Son, Lee represents the next generation of Korean attacking talent. Against Japan's technical midfield, his ability to find pockets of space and deliver killer passes could prove decisive in breaking the tactical stalemate.",
+      "statline": "Key creative midfielder developing at PSG in Ligue 1"
     }
   ],
   "theVerdict": {
     "title": "The Verdict",
     "prediction": "Japan 1-1 South Korea",
     "confidence": 48,
-    "narrative": "In a rivalry defined by unpredictability, the smart money lies on stalemate. Japan's superior form and tactical cohesion give them the edge on paper, but Korea's tournament pedigree and Son Heung-min's big-game experience level the playing field. Expect a cagey first half as both teams respect each other's capabilities, with the game opening up as the stakes become clear. Japan's wing-back system will create chances, but Kim Min-jae's defensive brilliance will keep Korea in the game.\n\nThe draw feels almost inevitable—not through lack of ambition, but because these teams know each other too well, respect each other too much, and understand that one mistake could end their tournament dreams. In 85 previous meetings, 25 have ended in draws, and the biggest stage of all seems destined to produce another. Both nations will live to fight another day, but neither will be entirely satisfied with a point that keeps their knockout stage dreams hanging in the balance.",
+    "narrative": "This match has all the ingredients for a tactical stalemate between two well-drilled, technically sound teams who know each other intimately. Japan's superior squad depth and recent form suggest they should edge this encounter, but Korea's tournament pedigree and Son's big-game experience level the playing field. With both teams likely to approach cautiously in their first tournament meeting, expect a cagey affair decided by individual moments of quality rather than tactical superiority.\n\nThe absence of Mitoma reduces Japan's attacking unpredictability, while Korea's fitness concerns around key players may force Hong Myung-bo into conservative selections. In a rivalry defined by drama and late goals, a draw feels almost anticlimactic—but sometimes the most intense battles end with both warriors standing. This tournament opener will be remembered more for finally bringing this rivalry to football's biggest stage than for its tactical artistry.",
     "alternativeScenarios": [
       {
         "scenario": "Japan 2-1 South Korea",
         "probability": 28,
-        "reasoning": "If Kubo is fit and Mitoma finds space early, Japan's technical superiority could prove decisive. Their recent momentum and tactical clarity give them the tools to edge a tight encounter."
+        "reasoning": "If Japan's technical superiority and European experience tells against Korea's aging core, Kubo and substitute attackers could exploit Korea's defensive transitions in the final quarter."
       },
       {
         "scenario": "Japan 0-1 South Korea",
         "probability": 24,
-        "reasoning": "Son Heung-min's final tournament could inspire one last moment of magic, while Korea's counter-attacking threat exploits Japan's aggressive wing-back system. Never underestimate a champion's farewell tour."
+        "reasoning": "Son Heung-min produces a moment of individual brilliance on the counter-attack, while Korea's disciplined defensive block frustrates Japan's possession-heavy approach throughout."
       }
     ]
   },
-  "closingLine": "When neighbors become opponents and history becomes destiny, only 90 minutes will determine which vision of Asian football's future will survive."
+  "closingLine": "After 72 years of battles, Japan and Korea finally meet where legends are born—and neither will yield an inch."
 }

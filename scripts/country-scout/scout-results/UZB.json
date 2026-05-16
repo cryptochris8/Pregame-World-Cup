@@ -1,0 +1,130 @@
+{
+  "teamCode": "UZB",
+  "teamName": "Uzbekistan",
+  "scoutedAt": "2026-05-16T00:00:00Z",
+  "injuryUpdates": [
+    {
+      "playerName": "Abdukodir Khusanov",
+      "teamCode": "UZB",
+      "country": "Uzbekistan",
+      "club": "Manchester City",
+      "position": "Defender",
+      "injuryType": "No current injury (recovered from early-May knock vs Everton)",
+      "injuryDate": null,
+      "expectedReturn": "N/A - currently fit",
+      "availabilityStatus": "fit",
+      "lastMatchPlayed": {
+        "date": "2026-05-13",
+        "opponent": "Crystal Palace (Premier League)",
+        "notes": "Started at centre-back in 3-0 win after missing one match (Brentford, May 9) with a knock to a 'painful area' suffered vs Everton; Sofascore 7.3."
+      },
+      "source": "Sports Mole, Read Man City, Tribuna - May 9-13 2026",
+      "notes": "Premier League centre-back and one of Uzbekistan's most important players. Picked up a minor knock vs Everton, missed Brentford, returned to start at Crystal Palace May 13. Fully fit ahead of the tournament. Adding entry because bundled tracker did not include him and he is a star defender.",
+      "action": "add"
+    },
+    {
+      "playerName": "Jaloliddin Masharipov",
+      "teamCode": "UZB",
+      "country": "Uzbekistan",
+      "club": "Pakhtakor",
+      "position": "Midfielder",
+      "injuryType": "Recovering from injury (unspecified)",
+      "injuryDate": "2026-03-01",
+      "expectedReturn": "Targeting full fitness during the May 6-26 Tashkent training camp",
+      "availabilityStatus": "doubt",
+      "lastMatchPlayed": {
+        "date": "2026-03-01",
+        "opponent": "Club match (Pakhtakor)",
+        "notes": "Missed the March FIFA Series camp through injury and was named in the May 40-man preliminary squad explicitly as a recovering player Cannavaro will monitor in camp."
+      },
+      "source": "khelnow.com, The Asian Game - May 5-6 2026",
+      "notes": "Star creative midfielder and set-piece taker named in the tactical profile. Coach Cannavaro explicitly flagged him alongside Khusain Norchaev as recovering players whose fitness will be assessed across the three-week Tashkent training camp ahead of final squad cut.",
+      "action": "add"
+    },
+    {
+      "playerName": "Khusain Norchaev",
+      "teamCode": "UZB",
+      "country": "Uzbekistan",
+      "club": "Pakhtakor",
+      "position": "Forward",
+      "injuryType": "Recovering from injury (unspecified)",
+      "injuryDate": "2026-03-01",
+      "expectedReturn": "Being assessed during the May 6-26 Tashkent training camp",
+      "availabilityStatus": "doubt",
+      "lastMatchPlayed": {
+        "date": "2026-03-01",
+        "opponent": "Club match (Pakhtakor)",
+        "notes": "Named in the 40-man preliminary squad as a player still working back from injury."
+      },
+      "source": "khelnow.com, The Asian Game - May 5-6 2026",
+      "notes": "Forward depth option flagged as recovering. Cannavaro will monitor him during the training camp before deciding on final squad inclusion.",
+      "action": "add"
+    }
+  ],
+  "recentFormUpdates": [],
+  "tacticalUpdates": [
+    {
+      "field": "preferredFormation",
+      "oldValue": "4-2-3-1",
+      "newValue": "3-4-3 / 5-3-2",
+      "source": "The Asian Game (Mar 31 2026), Unexpected Goals tournament preview (Apr 2026)",
+      "confidence": "medium"
+    },
+    {
+      "field": "playingStyle",
+      "oldValue": "Disciplined and structured with Italian tactical influence under Cannavaro; direct attacking play through Shomurodov",
+      "newValue": "Low-block, direct counterattacking from a 3-4-3 in possession that drops into a 5-3-2 out of possession; emphasis on winning duels and second balls, long balls to Shomurodov, and crosses into the box; heavy reliance on set pieces",
+      "source": "Unexpected Goals tournament preview, The Asian Game - Mar-Apr 2026",
+      "confidence": "medium"
+    }
+  ],
+  "squadChanges": [
+    {
+      "playerName": "40-man preliminary squad",
+      "changeType": "new_call_up",
+      "details": "Cannavaro named a provisional 40-man squad on May 5 for a closed Tashkent training camp running May 6-26, with squad to be trimmed to 23-26 for FIFA submission by June 1. Headlined by Shomurodov, Khusanov, Fayzullaev, Shukurov, Urunov. Includes 11 players based in Russian leagues. Confirmed goalkeepers: Vladimir Nazarov, Utkir Yusupov, Botirali Ergashev, Abduvohid Nematov. Notable omission flagged by local press: Erkinov; Khozhimirzaev was passed over for Azizbek Amonov.",
+      "source": "uzdaily.uz, kursiv.media, The Asian Game, khelnow.com - May 5-6 2026",
+      "effectiveDate": "2026-05-05"
+    }
+  ],
+  "bettingOddsUpdate": {
+    "tournamentWinner": "+20000",
+    "groupStageExit": null,
+    "toQualifyFromGroup": "+200",
+    "source": "Aggregated bookmaker lines reported by thelines.com, bookies.com, freebets.com, squawka - May 2026",
+    "notes": "Uzbekistan are firm Group K outsiders at roughly +2200 to +4000 to win the group behind Portugal (-180/-200 favourites), Colombia (+210/+275), and DR Congo (+1000/+1300). Implied probability to win the group is around 1%. The most popular Uzbekistan market is to advance from the group at around 2/1 (+200), reflecting the relatively short prices on any third-place team reaching the Round of 32 in the expanded 48-team format. Outright tournament-winner odds are not consistently published by major books for first-time entrants; +20000 is the rough indicative price."
+  },
+  "coachUpdate": {
+    "changed": false,
+    "currentCoach": "Fabio Cannavaro",
+    "newCoach": null,
+    "source": null,
+    "notes": null
+  },
+  "summary": "Uzbekistan is mid-way through a closed three-week Tashkent training camp (May 6-26) with a 40-man preliminary squad under Cannavaro, who must submit a final 23-26 by June 1 ahead of June 1 (Canada) and June 8 (Netherlands) send-off friendlies. The most important development is that star midfielder Jaloliddin Masharipov and forward Khusain Norchaev are both being monitored as recovering players in camp, while Manchester City defender Abdukodir Khusanov shook off a minor early-May knock and returned to start the May 13 win over Crystal Palace. No senior internationals have been played since the FIFA Series final (March 30); multiple post-March tactical writeups describe a 3-4-3 in possession that drops to a 5-3-2 low block, conflicting with the bundled 4-2-3-1 profile.",
+  "sourceUrls": [
+    "https://www.fourfourtwo.com/team/uzbekistan-world-cup-2026-squad",
+    "https://uz.kursiv.media/en/2026-05-06/fabio-cannavaro-names-preliminary-uzbekistan-squad-for-2026-world-cup/",
+    "https://khelnow.com/football/world-football-uzbekistan-preliminary-squad-fifa-world-cup-202605",
+    "https://www.theasiangame.net/cannavaro-names-extended-squad-as-uzbekistan-begin-world-cup-preparations/",
+    "https://www.theasiangame.net/uzbekistan-win-but-questions-remain-ahead-of-world-cup-debut/",
+    "https://www.besoccer.com/new/uzbekistan-calls-up-40-players-for-world-cup-preparations-1408062",
+    "https://www.uzdaily.uz/en/uzbekistan-coach-cannavaro-names-squad-for-training-cup/",
+    "https://zamin.uz/en/sport/199200-national-team-training-camp-in-tashkent-and-squad-under-cannavaro.html",
+    "https://www.sportsmole.co.uk/football/man-city/injury-news/injuries-and-suspensions/khusanov-rodri-gvardiol-latest-man-city-injury-list-for-crystal-palace-clash_597346.html",
+    "https://readmancity.com/2026/05/12/pep-guardiola-confirms-rodri-and-abdukodir-khusanov-are-better-in-man-city-injury-update/",
+    "https://readmancity.com/2026/05/09/pep-guardiola-describes-abdukodir-khusanovs-tough-knock-which-rules-him-out-of-brentford-match/",
+    "https://tribuna.com/en/news/2026-05-12-guardiola-provides-positive-updates-on-rodri-and-khusanov-ahead-of-crystal-palace-clash/",
+    "https://www.rotowire.com/soccer/headlines/abdukodir-khusanov-news-starts-against-palace-515794",
+    "https://www.rotowire.com/soccer/article/2026-world-cup-group-k-preview-portugal-dr-congo-uzbekistan-and-colombia-lineups-odds-predictions-and-tactics-113000",
+    "https://www.thelines.com/uk/odds/world-cup/group-k/",
+    "https://bookies.com/uk/news/group-k-world-cup-odds-2026",
+    "https://www.freebets.com/football/world-cup/odds/uzbekistan/",
+    "https://www.squawka.com/us/outright-markets/uzbekistan-world-cup-2026-odds/",
+    "https://unexpectedgoals.substack.com/p/world-cup-preview-42-uzbekistan",
+    "https://canadasoccer.com/news/canada-soccer-announces-canmnt-match-in-edmonton-ahead-of-fifa-world-cup-26/",
+    "https://www.espn.com/soccer/team/fixtures/_/id/2570/uzbekistan"
+  ],
+  "confidence": "medium",
+  "dataFreshness": "2026-05-13"
+}

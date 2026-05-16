@@ -1,0 +1,162 @@
+{
+  "teamCode": "JOR",
+  "teamName": "Jordan",
+  "scoutedAt": "2026-05-16T05:05:31Z",
+  "injuryUpdates": [
+    {
+      "playerName": "Yazan Al-Naimat",
+      "teamCode": "JOR",
+      "country": "Jordan",
+      "club": "Al-Arabi (Qatar)",
+      "position": "Forward",
+      "injuryType": "Anterior cruciate ligament (ACL) rupture, right knee",
+      "injuryDate": "2025-12-12",
+      "expectedReturn": "Ruled out of the 2026 tournament",
+      "availabilityStatus": "long_term_injured",
+      "lastMatchPlayed": {
+        "date": "2025-12-12",
+        "opponent": "Iraq (Arab Cup quarter-final)",
+        "notes": "Suffered the ACL injury during this match; underwent successful surgery in Doha"
+      },
+      "source": "Daily Beirut, Arab News, Jordan Times - May 7-15, 2026",
+      "notes": "MAJOR BLOW: Officially ruled out of the 2026 tournament by Prince Ali bin Al-Hussein. Scored 8 goals during qualifying and was Jordan's primary striker. Despite extensive rehab he could not recover in time. Club corrected from Young Boys to Al-Arabi Doha, where he has been since August 2024.",
+      "action": "update"
+    },
+    {
+      "playerName": "Adham Al-Quraishi",
+      "teamCode": "JOR",
+      "country": "Jordan",
+      "club": "Al-Faisaly",
+      "position": "Defender",
+      "injuryType": "Anterior cruciate ligament (ACL) tear",
+      "injuryDate": "2025-12-18",
+      "expectedReturn": "Ruled out of the 2026 tournament",
+      "availabilityStatus": "long_term_injured",
+      "lastMatchPlayed": {
+        "date": "2025-12-18",
+        "opponent": "Morocco (Arab Cup final)",
+        "notes": "Suffered ACL injury during the final"
+      },
+      "source": "Daily Beirut, Arab News - May 7-15, 2026",
+      "notes": "Starting right-back ruled out of the 2026 tournament. JFA confirmed via Prince Ali bin Al-Hussein that rehabilitation efforts were insufficient to restore him in time. Compounds existing right-back depth problem.",
+      "action": "add"
+    },
+    {
+      "playerName": "Issam Al-Sumeiri",
+      "teamCode": "JOR",
+      "country": "Jordan",
+      "club": "Al-Wehdat",
+      "position": "Defender",
+      "injuryType": "Achilles tendon rupture (left foot)",
+      "injuryDate": "2026-05-14",
+      "expectedReturn": "Ruled out of the 2026 tournament; long rehabilitation expected",
+      "availabilityStatus": "long_term_injured",
+      "lastMatchPlayed": {
+        "date": "2026-05-14",
+        "opponent": "Individual national-team training session",
+        "notes": "Ruptured Achilles during solo training; immediately ruled out of the tournament"
+      },
+      "source": "Arab News, YSscores, Devdiscourse, Geo Super - May 15, 2026",
+      "notes": "26-year-old right-back. Third Jordan defender/right-back ruled out (after Al-Naimat and Al-Quraishi). JFA announced he will require a long period of treatment and rehabilitation. Severe depth problem for Sellami at right-back specifically.",
+      "action": "add"
+    },
+    {
+      "playerName": "Mousa Al-Taamari",
+      "teamCode": "JOR",
+      "country": "Jordan",
+      "club": "Rennes",
+      "position": "Forward",
+      "injuryType": "No current injury",
+      "injuryDate": null,
+      "expectedReturn": "N/A - currently fit",
+      "availabilityStatus": "fit",
+      "lastMatchPlayed": {
+        "date": "2026-03-31",
+        "opponent": "Nigeria (international friendly)",
+        "notes": "Scored 10th-minute goal in 2-2 draw; completed full Ligue 1 season"
+      },
+      "source": "FotMob, Sofascore, ESPN - May 2026",
+      "notes": "Captain and primary creative outlet. Confirmed at Rennes (Ligue 1), not Montpellier as previously recorded - transferred Feb 2025. 6G/6A in 25/26 Ligue 1. Avg FotMob rating 7.06. No injury concerns.",
+      "action": "update"
+    }
+  ],
+  "recentFormUpdates": [],
+  "tacticalUpdates": [
+    {
+      "field": "attackingApproach.primaryThreat",
+      "oldValue": "Al-Tamari's creativity from the number 10 position combined with quick counter-attacks",
+      "newValue": "Al-Tamari's creativity from the number 10 position; counter-attacks now lack their primary finisher with Yazan Al-Naimat ruled out for the tournament",
+      "source": "Arab News, Daily Beirut - May 7-15, 2026",
+      "confidence": "high"
+    },
+    {
+      "field": "weaknessesOverall",
+      "oldValue": "Limited individual quality at the highest level; Very few players in top European leagues; First tournament appearance - no tournament experience; Can struggle to create against organized defenses",
+      "newValue": "Same baseline weaknesses, now compounded by losing first-choice striker Yazan Al-Naimat (ACL) and both right-backs Adham Al-Quraishi (ACL) and Issam Al-Sumeiri (Achilles) before the tournament",
+      "source": "Arab News, Daily Beirut - May 7-15, 2026",
+      "confidence": "high"
+    }
+  ],
+  "squadChanges": [
+    {
+      "playerName": "Yazan Al-Naimat",
+      "changeType": "dropped",
+      "details": "Officially withdrawn from the 2026 tournament delegation by the Jordan Football Association due to unresolved ACL injury sustained in December 2025 Arab Cup quarter-final.",
+      "source": "Daily Beirut, Jordan Times - May 7, 2026",
+      "effectiveDate": "2026-05-07"
+    },
+    {
+      "playerName": "Adham Al-Quraishi",
+      "changeType": "dropped",
+      "details": "Officially withdrawn from the 2026 tournament squad. ACL tear from Arab Cup final has not healed in time.",
+      "source": "Daily Beirut, Arab News - May 7, 2026",
+      "effectiveDate": "2026-05-07"
+    },
+    {
+      "playerName": "Issam Al-Sumeiri",
+      "changeType": "dropped",
+      "details": "Officially ruled out of the 2026 tournament after rupturing left Achilles tendon during individual national-team training. JFA announcement May 15.",
+      "source": "Arab News, YSscores - May 15, 2026",
+      "effectiveDate": "2026-05-15"
+    }
+  ],
+  "bettingOddsUpdate": {
+    "tournamentWinner": "+100000",
+    "groupStageExit": null,
+    "toQualifyFromGroup": "+5500",
+    "source": "Ladbrokes, FOX Sports market aggregation - May 2026",
+    "notes": "Tournament-winner price approx 1000/1 at Ladbrokes (+100000). Odds to win Group J quoted at +5500 (FOX Sports aggregation, May 2026) - heavy underdog behind Argentina (-250), Austria (+400) and Algeria (+700). Specific to-qualify-from-group price was not consistently available across major books."
+  },
+  "coachUpdate": {
+    "changed": false,
+    "currentCoach": "Jamal Sellami",
+    "newCoach": null,
+    "source": null,
+    "notes": null
+  },
+  "summary": "Jordan has been hit with a third major pre-tournament injury: right-back Issam Al-Sumeiri ruptured his Achilles in solo training on May 14 and was ruled out by the JFA on May 15. The Jordan Football Association also formally confirmed on May 7 that star striker Yazan Al-Naimat (ACL, sustained at the Arab Cup) and right-back Adham Al-Quraishi (ACL, sustained at the Arab Cup) will both miss the tournament after failing to recover. Coach Jamal Sellami remains in charge and the next outing is a May 31 friendly at Switzerland; no matches have been played since 2026-04-16.",
+  "sourceUrls": [
+    "https://dailybeirut.com/en/sports/key-jordanian-stars-ruled-out-of-world-cup-squad/",
+    "https://www.arabnews.com/node/2643703/sport",
+    "https://www.ysscores.com/en/news/13965737/a-new-harsh-blow-to-the-jordanian-national-team",
+    "https://www.devdiscourse.com/article/sports-games/3909567-jordan-defender-issam-smeeris-world-cup-dreams-dashed-by-injury",
+    "https://www.geosuper.tv/latest/56033-jordans-issam-smeeri-ruled-out-of-fifa-world-cup-debut",
+    "https://jordantimes.com/news/sports/jfa-confirms-acl-injury-to-naimat-as-jordanians-wish-him-speedy-recovery",
+    "https://en.royanews.tv/news/65826",
+    "https://en.wikipedia.org/wiki/Yazan_Al-Naimat",
+    "https://en.wikipedia.org/wiki/Musa_Al-Taamari",
+    "https://www.fotmob.com/players/813055/mousa-al-taamari",
+    "https://english.aawsat.com/sports/5108169-jordans-al-tamari-joins-rennes-montpellier",
+    "https://blog.eticketing.co/jordan-vs-algeria-tickets-nuaimat-absent-from-jordan-national-team-in-world-cup-due-to-injury/",
+    "https://www.foxsports.com/stories/soccer/2026-world-cup-group-stage-odds",
+    "https://www.rotowire.com/soccer/article/2026-world-cup-group-j-preview-argentina-algeria-austria-jordan-tactics-lineups-set-pieces-odds-109964",
+    "https://bookies.com/uk/news/group-j-world-cup-odds-2026",
+    "https://www.ladbrokes.com/en/news/2026-world-cup-group-j-preview-odds-predictions/",
+    "https://www.fourfourtwo.com/team/jordan-world-cup-2026-squad",
+    "https://www.espn.com/soccer/team/_/id/2917/jordan",
+    "https://www.sofascore.com/football/team/jordan/4771",
+    "https://en.roya.tv/articles/18282"
+  ],
+  "confidence": "high",
+  "dataFreshness": "2026-05-15"
+}

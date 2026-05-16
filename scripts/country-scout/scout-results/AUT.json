@@ -1,0 +1,86 @@
+{
+  "teamCode": "AUT",
+  "teamName": "Austria",
+  "scoutedAt": "2026-05-16T00:00:00Z",
+  "injuryUpdates": [
+    {
+      "playerName": "Patrick Wimmer",
+      "teamCode": "AUT",
+      "country": "Austria",
+      "club": "VfL Wolfsburg",
+      "position": "Forward",
+      "injuryType": "Thigh injury (muscle strain)",
+      "injuryDate": "2026-05-09",
+      "expectedReturn": "Doubtful for Wolfsburg season finale; in race for Austria pre-tournament camp",
+      "availabilityStatus": "doubt",
+      "lastMatchPlayed": {
+        "date": "2026-05-09",
+        "opponent": "Bayern Munich (Bundesliga)",
+        "notes": "Forced off in 67th minute with bandaged thigh; underwent MRI on May 11."
+      },
+      "source": "RotoWire (May 11, 2026), Bulinews (May 2026), Transfermarkt injury list (May 2026)",
+      "notes": "New thigh injury sustained in Wolfsburg's May 9 defeat to Bayern; MRI ordered. Recurrence of a thigh issue that bothered him earlier in the season. Wide attacker who has been a regular in Rangnick's squads; fitness for the pre-tournament camp is the immediate question.",
+      "action": "add"
+    },
+    {
+      "playerName": "David Alaba",
+      "teamCode": "AUT",
+      "country": "Austria",
+      "club": "Real Madrid",
+      "position": "Defender",
+      "injuryType": "ACL recovery (managed minutes)",
+      "injuryDate": "2024-12-17",
+      "expectedReturn": "Expected available for the 2026 tournament",
+      "availabilityStatus": "minor_concern",
+      "lastMatchPlayed": {
+        "date": "2026-03-31",
+        "opponent": "South Korea (International Friendly)",
+        "notes": "Played 29 minutes off the bench in March friendly; club minutes have continued at Real Madrid through the end of the LaLiga season."
+      },
+      "source": "Goal.com, FOX Sports, Football Espana - May 2026",
+      "notes": "Has logged ~15 club appearances and ~505 minutes across the 2025-26 Real Madrid season. Recovered from a short calf setback earlier in the spring. Captain remains on track for the tournament; status unchanged from prior tracker entry but freshly verified.",
+      "action": "no_change"
+    }
+  ],
+  "recentFormUpdates": [],
+  "tacticalUpdates": [],
+  "squadChanges": [],
+  "bettingOddsUpdate": {
+    "tournamentWinner": "+15000",
+    "groupStageExit": null,
+    "toQualifyFromGroup": "9/2 to win Group J (second favourite behind Argentina)",
+    "source": "Squawka / FOX Sports / The Lines aggregator - May 2026",
+    "notes": "Austria are roughly 150/1 outright at major US sportsbooks (~1% implied). Within Group J they are quoted around 9/2 to win the group, behind Argentina (~7/20) and ahead of Algeria (~13/2) and Jordan (~50/1). Most books price Austria as comfortable second favourites to advance from the group."
+  },
+  "coachUpdate": {
+    "changed": false,
+    "currentCoach": "Ralf Rangnick",
+    "newCoach": null,
+    "source": "Goal.com, Wikipedia - May 2026",
+    "notes": "Rangnick remains in post. Contract runs to July 31, 2026 with extension talks reported as positive but no announcement has been made. He continues to recover from the 2025 ankle surgery and infection but is actively coaching."
+  },
+  "summary": "Austria have not played a senior match since the late-March friendlies, so recent form is unchanged heading into the June 1 Tunisia warm-up. The only material new development since April 16 is winger Patrick Wimmer's thigh injury picked up for Wolfsburg on May 9 (MRI ordered May 11), which casts doubt over his availability for the pre-tournament camp. Rangnick is in place, captain Alaba is on track, and Austria are priced as clear second favourites in Group J behind Argentina; the final squad announcement is scheduled for May 18.",
+  "sourceUrls": [
+    "https://www.transfermarkt.us/austria/sperrenundverletzungen/verein/3383",
+    "https://www.rotowire.com/soccer/headlines/patrick-wimmer-injury-doubtful-for-season-finale-515590",
+    "https://bulinews.com/had-hoped-see-him-back-the-pitch-sooner-patrick-wimmer-injury-drags",
+    "https://bulinews.com/injury-rules-wimmer-out-austria-upcoming-games",
+    "https://www.fourfourtwo.com/team/austria-world-cup-2026-squad",
+    "https://www.goal.com/en/lists/austria-squad-world-cup-2026/blt9697a808b9602c2c",
+    "https://www.espn.com/soccer/team/fixtures/_/id/474/austria",
+    "https://en.wikipedia.org/wiki/Austria_national_football_team",
+    "https://www.sofascore.com/news/the-2026-world-cup-warm-up-austria",
+    "https://www.si.com/soccer/austria-2026-world-cup-preview",
+    "https://www.squawka.com/us/outright-markets/austria-world-cup-2026-odds/",
+    "https://www.foxsports.com/stories/soccer/2026-world-cup-odds-from-which-group-will-winner-emerge",
+    "https://www.thelines.com/uk/odds/world-cup/",
+    "https://www.goal.com/en/lists/leaving-austria-after-the-world-cup-ralf-rangnick-is-apparently-considering-a-spectacular-return/bltba0eda9dcc934d67",
+    "https://www.goal.com/en/lists/david-alaba-feels-himself-overcoming-injury-hell-no-longer-prepared-be-real-madrid-fifth-choice-centre-back/blt5adabe1bae3e085c",
+    "https://www.football-espana.net/tag/david-alaba",
+    "https://onefootball.com/en/news/max-wober-withdraws-from-austria-squad-as-ongoing-injury-delays-werder-bremen-return-42639412",
+    "https://www.rotowire.com/soccer/headlines/konrad-laimer-news-unused-sub-with-knee-discomfort-507950",
+    "https://en.wikipedia.org/wiki/Ralf_Rangnick"
+  ],
+  "confidence": "medium",
+  "dataFreshness": "2026-05-11"
+}

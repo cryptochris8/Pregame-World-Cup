@@ -4,77 +4,70 @@
   "team2Code": "EGY",
   "team1Name": "Belgium",
   "team2Name": "Egypt",
-  "generatedAt": "2026-04-16T00:00:00Z",
-  "dataVersion": 2,
-
-  "headline": "Premier League Royalty Collides: A Fit De Bruyne vs Salah in a tournament Blockbuster",
-  "subheadline": "Belgium's golden generation, recharged by De Bruyne's fitness and a 5-2 USA demolition, faces Egypt's Pharaohs in a clash of continental titans",
-
-  "openingNarrative": "There are tournament matches defined by tactical intrigue, and there are tournament matches defined by the sheer star power of the individuals on the pitch. Belgium versus Egypt is the latter. When Kevin De Bruyne and Mohamed Salah — two of the Premier League's most decorated and devastating players of the past decade — face each other on the tournament stage, the football world will stop to watch.\n\nBelgium arrive riding the wave of De Bruyne's fitness declaration — the news that transformed their tournament outlook from anxious uncertainty to genuine ambition. The 5-2 demolition of the United States in March was a performance that silenced the doubters: five goals, fluid movement, De Bruyne orchestrating everything with the precision of a man who knows this is his last dance. Youri Tielemans has assumed the captaincy with authority, and the system is clicking. The shadows of 2022 are receding.\n\nBut Belgium are not without concerns. Romelu Lukaku and Leandro Trossard are both doubtful with fitness issues, meaning Belgium may need to reconfigure their attacking options against one of the most defensively disciplined teams at the tournament.\n\nEgypt's qualifying campaign was a masterclass in efficiency: 8 wins, 2 draws, 0 losses, 20 goals scored with Salah contributing an extraordinary 9, and only 2 goals conceded. Those numbers are remarkable — an unbeaten qualifying campaign led by a player who scored nearly half the team's goals. The Pharaohs are seven-time African champions, the most decorated nation in African football history, and they arrive in 2026 determined to erase the 2018 group-stage humiliation.",
-
+  "generatedAt": "2026-06-15T12:00:00Z",
+  "dataVersion": 1,
+  "headline": "Golden Generation's Last Dance Against Pharaohs' Premier Test",
+  "subheadline": "Belgium's aging stars face Egypt's rising confidence in historic tournament opener.",
+  "openingNarrative": "In the amber light of a North American summer evening, two nations carrying the weight of unfulfilled dreams will collide for the first time on tournament football's grandest stage. Belgium arrives at the 2026 tournament as a team haunted by their own excellence—a golden generation that scaled every summit except the one that matters most. Kevin De Bruyne, nursing stitches from a training ground collision that split his cheekbone, embodies their fragile brilliance: world-class talent wrapped in uncertainty, racing against time both literally and metaphysically.\n\nAcross the tunnel, Egypt carries a different kind of pressure. The Pharaohs haven't reached a tournament knockout round since 1934, when the competition was barely recognizable. Yet something has shifted in their recent trajectory. Their 4-0 demolition of Saudi Arabia and goalless draw with Spain—both achieved without Mohamed Salah—revealed tactical maturity that transcends individual brilliance. Omar Marmoush's emergence as a Manchester City forward has given Egypt a second star, breaking their historic over-reliance on one man's genius.\n\nThe numbers tell a story of improbable recent history. In three previous meetings, all friendlies, Egypt holds a 2-1 advantage over Belgium's golden generation. Most memorably, Salah orchestrated a 2-0 victory in Brussels in 2018, just months before both teams would experience vastly different tournament fortunes. Belgium reached the semi-finals; Egypt crashed out in the group stage. Now, eight years later, the roles feel reversed—Belgium stumbling toward their final opportunity while Egypt builds toward something resembling destiny.",
   "tacticalBreakdown": {
     "title": "The Chess Match",
-    "narrative": "Belgium's system — energized by De Bruyne's fitness — is built to maximize his creativity. The 5-2 win over the USA showed Belgium at their most fluid: De Bruyne in the spaces between defense and midfield, finding pockets from which his passing range can dissect any defense. If Lukaku is unavailable, Belgium may deploy Openda's pace or a false nine system that is actually more dynamic against organized defenses.\n\nTielemans as captain provides the midfield base that allows De Bruyne to roam. The 1-1 draw against Mexico showed Belgium can be pragmatic; the USA result showed they can be devastating.\n\nEgypt's 4-2-3-1 is built entirely around getting Salah into dangerous positions. The Liverpool icon operates from the right wing, cutting inside onto his lethal left foot — a movement so well-known yet so difficult to stop. The double pivot provides defensive cover, and Egypt's defensive record — 2 goals conceded in 10 qualifying matches — is among the best at the tournament.\n\nThe key tactical battle is on Egypt's right flank. Salah cutting inside against Belgium's left-sided defender will produce one of the most anticipated individual duels of the group stage.",
+    "narrative": "Rudi Garcia's 4-2-3-1 will pit Belgium's transitional brilliance against Egypt's defensive compactness. Garcia inherits a system built around De Bruyne's pocket play, with the Manchester City maestro threading passes between Egypt's narrow defensive lines to find Romelu Lukaku—if the striker's fitness allows him to start. Belgium's approach relies on quick transitions and De Bruyne's vision, but their aging defensive line remains vulnerable to Egypt's high pressing intensity.\n\nHossam Hassan's tactical evolution has refined Egypt into a team that defends with numbers and strikes with precision. Their 4-2-3-1 mirrors Belgium's shape but operates with different intentions—narrowing spaces between lines and funneling play toward Salah's cutting edge. The key battle will unfold in the central corridors, where De Bruyne's creativity meets Egypt's pressing triggers. If Belgium can establish control through their double pivot, their superior individual quality should tell. But if Egypt can disrupt those passing lanes and force Belgium wide, their narrow defensive shape becomes a strength, pushing the game toward set pieces where both teams carry genuine threat.",
     "team1Formation": "4-2-3-1",
     "team2Formation": "4-2-3-1",
-    "keyMatchup": "Mohamed Salah vs Belgium's left-sided defense — the Premier League's most prolific forward cutting inside onto his deadly left foot"
+    "keyMatchup": "De Bruyne's pocket play versus Egypt's midfield pressing intensity"
   },
-
   "dataInsights": {
     "title": "By The Numbers",
-    "eloAnalysis": "Belgium (ELO: 1748, rank 8) vs Egypt (ELO: 1648, rank 25) — a 100-point gap that gives Belgium a statistical advantage, but Egypt's unbeaten qualifying campaign and Salah's form suggest the gap is narrower than the numbers indicate.",
-    "formAnalysis": "Belgium's March was emphatic: beat USA 5-2 with De Bruyne fit and firing, drew Mexico 1-1. Tielemans captaining. Qualified unbeaten: 5 wins, 3 draws, 29 goals, De Bruyne 6. Egypt were unbeaten in qualifying: 8 wins, 2 draws, 20 goals scored, only 2 conceded, Salah scored 9.",
-    "squadValueComparison": "Belgium ($771M) vs Egypt ($287M). De Bruyne ($93.8M) leads Belgium, while Salah ($125M) is actually the most valuable individual between both squads. The supporting casts differ dramatically in depth — though Belgium's Lukaku/Trossard doubts narrow the effective quality gap.",
-    "injuryImpact": "De Bruyne FIT is the headline — Belgium's tournament was in doubt without him. But Lukaku and Trossard both doubtful means Belgium's attacking configuration is uncertain. Egypt need Salah fit — without him, their attacking output drops precipitously. His 9 qualifying goals represented 45% of Egypt's total.",
-    "bettingPerspective": "Belgium's 5-2 USA win has boosted their profile, but the Lukaku/Trossard doubts introduce uncertainty. Egypt's unbeaten qualifying and Salah's form make them dangerous opponents. Closer than the uninitiated might expect.",
-    "historicalPattern": "Egypt lead the head-to-head 2-1 from three friendlies. Egypt won 2-0 in Brussels in 2018 and 2-1 in Kuwait City in 2022. Belgium have struggled against Egypt historically."
+    "eloAnalysis": "Belgium's ELO rating of 1748 (8th globally) reflects their consistent quality, while Egypt's 1648 (25th) understates their recent tactical growth under Hassan's guidance.",
+    "formAnalysis": "Belgium's qualifying campaign was flawless in goal difference (+22) but inconsistent in execution, while Egypt's perfect 8-2-0 record includes victories over traditional African powers.",
+    "squadValueComparison": "Belgium's €771.25 million squad valuation dwarfs Egypt's €286.63 million, yet Egypt's most valuable player—Salah at €125 million—is worth more than any single Belgian.",
+    "injuryImpact": "De Bruyne's facial injury creates minor concern, but Lukaku's chronic fitness issues could force Garcia into tactical adjustments, while Salah's hamstring recovery remains Egypt's primary variable.",
+    "bettingPerspective": "Markets have traditionally favored Belgium's individual quality, but Egypt's 2-1 head-to-head advantage in friendlies suggests potential value in the underdog narrative.",
+    "historicalPattern": "Only UEFA and CONMEBOL nations have won tournament titles, placing enormous pressure on Egypt to break continental barriers while Belgium seeks their first major trophy."
   },
-
   "playerSpotlights": [
     {
       "name": "Kevin De Bruyne",
       "teamCode": "BEL",
-      "narrative": "Declared fit after weeks of anxiety, De Bruyne rewarded Belgium's faith with a masterclass against the USA — 5 goals, complete creative control, the kind of performance that reminded the world why he is considered one of the greatest midfielders of his generation. Against Egypt's defense — which conceded only 2 goals in qualifying — De Bruyne faces his sternest test. But the 5-2 USA demolition proved his fitness is genuine, his motivation total, and his quality undimmed.",
-      "statline": "6 goals in qualifying, declared FIT, orchestrated a 5-2 demolition of the USA in March"
+      "narrative": "Four stitches hold together more than just a cheekbone—they bind Belgium's tournament hopes to their creative fulcrum's fitness. The Napoli playmaker's recent facial injury symbolizes this golden generation's fragility, but his qualifying campaign produced six goals and countless moments of brilliance. At 35, this represents his final opportunity to claim the major trophy that would complete a career of unprecedented individual success. His vision remains elite, his timing immaculate, his through-ball precision unmatched in world football.",
+      "statline": "Six goals in Belgium's flawless qualifying campaign"
     },
     {
       "name": "Mohamed Salah",
       "teamCode": "EGY",
-      "narrative": "The Egyptian King enters the tournament in devastating form. His 9 qualifying goals — nearly half of Egypt's total — established him as Africa's most dangerous striker and one of the tournament's most feared attackers. Salah's ability to cut inside from the right wing and unleash his lethal left foot has produced over 200 Premier League goals. This is the tournament performance his extraordinary career deserves.",
-      "statline": "9 goals in CAF qualifying (nearly half of Egypt's total), Africa's top scorer"
+      "narrative": "The Liverpool legend's hamstring tear against Crystal Palace in April created the tournament's most compelling fitness subplot. At 33, Salah carries Egypt's dreams on his left foot, but his absence from March friendlies revealed something profound—Egypt can compete at the highest level without him. His nine qualifying goals secured their passage, yet the emergence of Marmoush has finally given Egypt tactical flexibility. Whether fully fit or nursing his way through matches, Salah remains Africa's greatest tournament hope.",
+      "statline": "Nine goals in Egypt's perfect qualifying campaign"
     },
     {
-      "name": "Youri Tielemans",
+      "name": "Romelu Lukaku",
       "teamCode": "BEL",
-      "narrative": "Belgium's new captain has brought stability and authority to a squad that desperately needed both. Tielemans' deep-lying passing complements De Bruyne's advanced creativity, and his leadership during the USA and Mexico matches showed a player comfortable with the armband's weight. Against Egypt's midfield, his ability to screen the defense and launch attacks will be crucial.",
-      "statline": "Belgium's captain, providing midfield stability and composure under Tielemans' quiet authority"
+      "narrative": "Belgium's all-time leading scorer has managed just 69 competitive minutes in 2026, a fitness crisis that threatens to derail his nation's tournament ambitions. Hip, hamstring, and ankle complaints have reduced the Napoli striker to seven substitute appearances this year. Garcia openly acknowledges gambling on Lukaku's condition, but his hold-up play and link combinations remain crucial to Belgium's attacking patterns. At 33, this represents his final chance to deliver on the international stage.",
+      "statline": "Belgium's all-time leading scorer with just 69 minutes played in 2026"
     },
     {
       "name": "Omar Marmoush",
       "teamCode": "EGY",
-      "narrative": "The rising star who has emerged as Salah's most dangerous supporting act. Marmoush's pace, directness, and willingness to run at defenders give Egypt a second genuine attacking threat that prevents opponents from double-marking Salah. His European club form has been excellent, and his ability to play across the forward line provides tactical flexibility.",
-      "statline": "Egypt's rising attacking star; key contributor alongside Salah"
+      "narrative": "The Manchester City forward's emergence has transformed Egypt from a one-man team into a genuine tactical threat. Marmoush led the line brilliantly in both March friendlies without Salah, proving Egypt's evolution under Hassan extends beyond individual brilliance. His pace and movement create space for others while offering a direct goal threat that complements Salah's creativity. At 25, he represents Egypt's present and future, a player capable of announcing himself on tournament football's biggest stage.",
+      "statline": "Led Egypt's attack in impressive draws against Spain without Salah"
     }
   ],
-
   "theVerdict": {
     "title": "The Verdict",
     "prediction": "Belgium 2-1 Egypt",
-    "confidence": 55,
-    "narrative": "Belgium's overall squad quality, De Bruyne's fitness, and the momentum of the 5-2 USA win should prove the difference — but Egypt, led by Salah's devastating form, will make this deeply uncomfortable.\n\nExpect Salah to score. When a player nets 9 goals in 10 qualifying matches, stopping him is a matter of damage limitation rather than prevention. His cutting run from the right, that inevitable shift onto the left foot, and the shot that follows — Belgium's defense will see it coming and still struggle to stop it.\n\nBut Belgium with a fit De Bruyne create chances from multiple sources. His set-piece delivery, the wide players' ability to stretch Egypt's defense, and the tactical flexibility forced by Lukaku's doubt may produce a more dynamic attacking approach. A hard-fought 2-1 that leaves Belgium relieved and Egypt proud.\n\nThe Lukaku/Trossard doubts add genuine uncertainty — if both are unavailable, Belgium must reinvent their attack on the fly. But De Bruyne's genius is the constant that overrides every variable.",
+    "confidence": 65,
+    "narrative": "Belgium's individual quality should ultimately prevail, but this won't be the comfortable victory many expect. Egypt's tactical discipline and recent form without Salah suggests a team maturing at precisely the right moment, while Belgium's fitness concerns and defensive vulnerabilities create genuine uncertainty. De Bruyne's creativity will likely unlock Egypt's compact structure, and Jeremy Doku's pace offers width that stretches their narrow defensive shape.\n\nYet Egypt's 2-0 victory in Brussels four years ago proves they can hurt Belgium when the moment arrives. If Salah reaches 70-80% fitness and Marmoush continues his excellent form, this becomes genuinely unpredictable. Belgium will edge it through superior depth and tournament experience, but expect Egypt to announce themselves as legitimate contenders for a historic breakthrough. The golden generation gets their result, but not their confidence.",
     "alternativeScenarios": [
       {
         "scenario": "Egypt 1-0 Belgium",
-        "probability": 18,
-        "reasoning": "Salah produces a moment of individual genius and Egypt's defense — 2 goals conceded in qualifying — holds firm. A result that would shake the tournament and accelerate the golden generation's decline."
+        "probability": 25,
+        "reasoning": "If Salah reaches full fitness and Egypt's pressing disrupts Belgium's rhythm, their defensive discipline could secure a historic victory through a moment of individual brilliance."
       },
       {
-        "scenario": "Belgium 3-1 Egypt",
+        "scenario": "Belgium 3-0 Egypt",
         "probability": 15,
-        "reasoning": "De Bruyne is unplayable, Belgium's 5-2 USA form carries into the tournament, and the golden generation produces the performance it has always promised. Salah consoles himself with a consolation."
+        "reasoning": "Should Lukaku somehow start and Belgium's attacking quality click early, Egypt's narrow defensive shape could be overwhelmed by superior technical ability."
       }
     ]
   },
-
-  "closingLine": "De Bruyne versus Salah. Manchester City versus Liverpool, transposed onto the tournament stage. De Bruyne arrives fit and firing after demolishing the USA 5-2. Salah arrives with 9 qualifying goals and Africa's hopes on his shoulders. This is why we watch."
+  "closingLine": "Two dreams collide under North American floodlights—Belgium's fading golden sunset against Egypt's rising desert dawn."
 }

@@ -1,0 +1,87 @@
+{
+  "teamCode": "KSA",
+  "teamName": "Saudi Arabia",
+  "scoutedAt": "2026-05-16T00:00:00Z",
+  "injuryUpdates": [
+    {
+      "playerName": "Saud Abdulhamid",
+      "teamCode": "KSA",
+      "country": "Saudi Arabia",
+      "club": "Lens (on loan from Roma)",
+      "position": "Defender",
+      "injuryType": "No current injury",
+      "injuryDate": null,
+      "expectedReturn": "N/A - currently fit",
+      "availabilityStatus": "fit",
+      "lastMatchPlayed": {
+        "date": "2026-04-01",
+        "opponent": "Serbia (international friendly)",
+        "notes": "Featured for Saudi Arabia in 1-2 friendly defeat to Serbia"
+      },
+      "source": "Transfermarkt, RomaPress, Sofascore - May 2026",
+      "notes": "Club update: now at Lens on loan from Roma until summer 2026, not at Roma as previously recorded. Remains Saudi Arabia's only outfield player at a European top-five league club. No active injury.",
+      "action": "update"
+    }
+  ],
+  "recentFormUpdates": [],
+  "tacticalUpdates": [
+    {
+      "field": "coach",
+      "oldValue": "Herve Renard",
+      "newValue": "Georgios Donis",
+      "source": "Al Jazeera, Arab News, Inside World Football - April 17-24, 2026",
+      "confidence": "high"
+    },
+    {
+      "field": "playingStyle",
+      "oldValue": "Pragmatic and defensively organized system under Renard (reappointed after Mancini's departure in Oct 2024); emphasis on discipline, quick transitions, and maximizing collective effort over individual quality",
+      "newValue": "Under new coach Georgios Donis: heavy emphasis on defensive structure and being hard to break down, comfortable surrendering possession and hitting on the break. With limited time before the tournament, focus is on cohesion and personnel selection rather than a wholesale tactical reset.",
+      "source": "Arab News, SPL.com.sa, RotoWire Group H Preview - April-May 2026",
+      "confidence": "medium"
+    },
+    {
+      "field": "keyTacticalFeatures",
+      "oldValue": "Renard reappointed after Mancini's departure (Oct 2024) — the coach who masterminded the 2022 Argentina upset returns",
+      "newValue": "Georgios Donis appointed head coach on 24 April 2026 (59 days before tournament kickoff) after Renard was sacked on 17 April. Donis joins from Al-Khaleej, his fourth Saudi Pro League posting, and the federation cited his familiarity with the local playing pool as the key reason for the rushed hire.",
+      "source": "Al Jazeera, Arab News, Morocco World News - April 17-23, 2026",
+      "confidence": "high"
+    }
+  ],
+  "squadChanges": [],
+  "bettingOddsUpdate": {
+    "tournamentWinner": "+50000",
+    "groupStageExit": null,
+    "toQualifyFromGroup": null,
+    "source": "Various US books (lineups.com aggregation) and RotoWire Group H preview, May 6 2026; Group H winner priced at +1600 (Bet365, DraftKings) and +2200 (FanDuel)",
+    "notes": "Saudi Arabia priced as one of the longest shots in the field to win the tournament outright (+50000 range). Considered a clear outsider in Group H alongside Cape Verde, with Spain and Uruguay overwhelmingly favored to advance. Specific to-qualify and group-stage-exit prices were not published by reputable aggregators consulted."
+  },
+  "coachUpdate": {
+    "changed": true,
+    "currentCoach": "Georgios Donis",
+    "newCoach": "Georgios Donis",
+    "source": "Al Jazeera (17 April 2026), Arab News (24 April 2026), Inside World Football (27 April 2026)",
+    "notes": "Herve Renard sacked on 17 April 2026 after the disastrous 0-4 friendly defeat to Egypt in March and the 1-2 loss to Serbia on 1 April. Georgios Donis (56, former Greece international) officially appointed on 24 April, just 59 days before Saudi Arabia's opening match. Donis joins from Saudi Pro League side Al-Khaleej and has previously managed at three other SPL clubs, which the federation cited as the rationale for the rushed change."
+  },
+  "summary": "The dominant development is a head coaching change: Saudi Arabia sacked Herve Renard on 17 April 2026 and appointed Greek manager Georgios Donis on 24 April, just over seven weeks before kickoff, after a run including the 0-4 friendly loss to Egypt and the 1-2 defeat to Serbia. No additional international matches have been played since 16 April (next friendlies vs Ecuador on 30 May and Senegal on 9 June), and the star trio of Al-Dawsari, Al-Buraikan, and Abdulhamid all enter camp injury-free, with Abdulhamid's club status updated to Lens (on loan from Roma). Donis is expected to retain Renard's reactive, defend-and-counter blueprint but has no time for a tactical overhaul; the books treat the squad as a clear Group H outsider behind Spain and Uruguay.",
+  "sourceUrls": [
+    "https://www.aljazeera.com/sports/2026/4/17/saudi-arabia-sack-coach-herve-renard-ahead-of-fifa-world-cup-2026",
+    "https://www.arabnews.com/node/2641053/sport",
+    "https://www.arabnews.pk/node/2641225/sport",
+    "https://www.moroccoworldnews.com/2026/04/288476/saudi-arabia-appoint-georgios-donis-before-2026-world-cup/",
+    "https://www.insideworldfootball.com/2026/04/27/saudi-arabia-appoint-greek-georgios-donis-lead-nation-2026-finals/",
+    "https://english.alarabiya.net/sports/2026/04/28/who-is-new-saudi-arabia-coach-georgios-donis",
+    "https://www.spl.com.sa/en/news/1059532/from-greece-to-green-falcons-why-donis-is-right-man-for-saudi-arabia",
+    "https://www.rotowire.com/soccer/article/2026-world-cup-group-h-preview-spain-uruguay-saudi-arabia-cape-verde-tactics-lineups-set-pieces-odds-109699",
+    "https://www.lineups.com/betting/saudi-arabia-2026-world-cup-team-preview-betting-odds-predictions-best-bets/",
+    "https://www.fourfourtwo.com/team/saudi-arabia-world-cup-2026-squad",
+    "https://www.espn.com/soccer/team/fixtures/_/id/655/saudi-arabia",
+    "https://www.ksat.com/sports/2026/05/01/saudi-arabia-senegal-to-play-2026-fifa-world-cup-friendly-in-san-antonio/",
+    "https://romapress.net/saud-returns-to-rome-after-suffering-injury-with-national-team",
+    "https://www.transfermarkt.us/saudi-arabia/kader/verein/3807",
+    "https://www.sofascore.com/football/team/saudi-arabia/4834",
+    "https://saudigazette.com.sa/article/660626",
+    "https://gulfnews.com/sport/football/renard-sacked-as-saudi-arabia-coach-ahead-of-world-cup-2026-1.500510363"
+  ],
+  "confidence": "high",
+  "dataFreshness": "2026-05-06"
+}

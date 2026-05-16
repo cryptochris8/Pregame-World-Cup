@@ -1,0 +1,146 @@
+{
+  "teamCode": "CAN",
+  "teamName": "Canada",
+  "scoutedAt": "2026-05-16T00:00:00Z",
+  "injuryUpdates": [
+    {
+      "playerName": "Alphonso Davies",
+      "teamCode": "CAN",
+      "country": "Canada",
+      "club": "Bayern Munich",
+      "position": "Defender",
+      "injuryType": "Left hamstring tear (third hamstring issue since returning from ACL)",
+      "injuryDate": "2026-05-06",
+      "expectedReturn": "4-6 weeks; likely to miss the June 12 opener vs Bosnia and Herzegovina, targeting return for second or third group match",
+      "availabilityStatus": "major_doubt",
+      "lastMatchPlayed": {
+        "date": "2026-05-06",
+        "opponent": "Paris Saint-Germain (UEFA Champions League semi-final)",
+        "notes": "Suffered left hamstring tear during Bayern's CL semi-final second leg loss to PSG"
+      },
+      "source": "TSN, CBC Sports, Bavarian Football Works, Canadian Soccer Daily - May 2026",
+      "notes": "Captain and most important player. Bayern's medical staff want control of the rehab; sporting director Max Eberl publicly warned about rushing him back after Canada Soccer's prior ACL handling. Manager Vincent Kompany: 'physically I'm not worried about him... mentally it's extremely tough.' No longer locked in as a starter for the opener.",
+      "action": "update"
+    },
+    {
+      "playerName": "Stephen Eustaquio",
+      "teamCode": "CAN",
+      "country": "Canada",
+      "club": "LAFC",
+      "position": "Midfielder",
+      "injuryType": "Leg injury and blood clot (recovering)",
+      "injuryDate": "2026-03-07",
+      "expectedReturn": "Nearing LAFC return; expected fit for the tournament",
+      "availabilityStatus": "minor_concern",
+      "lastMatchPlayed": {
+        "date": "2026-03-07",
+        "opponent": "FC Dallas (MLS)",
+        "notes": "Collision with referee Drew Fischer led to leg knock; later developed blood clot during treatment"
+      },
+      "source": "TSN, Canadian Soccer Daily, Rotowire - April-May 2026",
+      "notes": "Vice-captain rehabbed in Portugal with FC Porto's medical staff and is closing in on his LAFC return. Trending toward availability for Canada's pre-tournament camp.",
+      "action": "update"
+    },
+    {
+      "playerName": "Derek Cornelius",
+      "teamCode": "CAN",
+      "country": "Canada",
+      "club": "Rangers",
+      "position": "Defender",
+      "injuryType": "Muscle injury (post-surgical recovery)",
+      "injuryDate": "2025-11-18",
+      "expectedReturn": "Leaving Rangers early to join Canada's Charlotte pre-tournament camp; targeted to start at the tournament if fully fit",
+      "availabilityStatus": "minor_concern",
+      "lastMatchPlayed": {
+        "date": "2026-03-31",
+        "opponent": "Tunisia (International Friendly)",
+        "notes": "Played only 32 minutes; one of just two cameos (15 min vs Iceland, 32 min vs Tunisia) since the November injury"
+      },
+      "source": "TSN, Canadian Soccer Daily, Rangers News - May 2026",
+      "notes": "First-choice CB alongside Bombito. Suffered a muscle injury on Canada duty vs Venezuela in November requiring surgery and was frozen out by Rangers' Danny Rohl. Rangers have allowed him to leave for Canada's pre-camp; fitness is the open question.",
+      "action": "add"
+    },
+    {
+      "playerName": "Promise David",
+      "teamCode": "CAN",
+      "country": "Canada",
+      "club": "Union Saint-Gilloise",
+      "position": "Forward",
+      "injuryType": "Ruptured hip tendon (post-surgical recovery)",
+      "injuryDate": "2026-02-01",
+      "expectedReturn": "Ahead of schedule; MRI late May 2026 will determine availability, currently trending toward squad inclusion",
+      "availabilityStatus": "doubt",
+      "lastMatchPlayed": {
+        "date": "2026-02-01",
+        "opponent": "Royal Antwerp (Belgian Pro League)",
+        "notes": "Collision with Antwerp player ruptured the tendon connecting his quad to his hip; stretchered off"
+      },
+      "source": "TSN, Yahoo Sports, Canadian Soccer Daily, Rotowire - April-May 2026",
+      "notes": "24-year-old striker had 9 goals in 17 USG appearances before injury. Three-to-five-month rehab originally projected him as a long shot, but recovery is ahead of schedule and non-contact training has begun. Late-May MRI is the gating event.",
+      "action": "add"
+    }
+  ],
+  "recentFormUpdates": [],
+  "tacticalUpdates": [
+    {
+      "field": "preferredFormation",
+      "oldValue": "4-3-3",
+      "newValue": "4-4-2",
+      "source": "Sports Illustrated, RotoWire 2026 Group B preview - May 2026",
+      "confidence": "high"
+    },
+    {
+      "field": "alternateFormations",
+      "oldValue": "3-4-3, 4-2-3-1",
+      "newValue": "4-2-3-1, 4-2-2-2",
+      "source": "RotoWire 2026 Group B preview - May 2026",
+      "confidence": "medium"
+    }
+  ],
+  "squadChanges": [
+    {
+      "playerName": "Junior Hoilett",
+      "changeType": "new_call_up",
+      "details": "Veteran winger Junior Hoilett (Swindon Town) returned to the player pool in the May tune-up window after being out of contention; he and Promise David replaced Daniel Jebbison and Jonathan Osorio in TSN's roster projection.",
+      "source": "TSN Race for the Roster - May 11, 2026",
+      "effectiveDate": "2026-05-11"
+    }
+  ],
+  "bettingOddsUpdate": {
+    "tournamentWinner": "+15000",
+    "groupStageExit": null,
+    "toQualifyFromGroup": "+260",
+    "source": "DraftKings / Covers aggregator - May 2026",
+    "notes": "Group B advance market: Switzerland -105 favorite, Canada and Bosnia and Herzegovina co-second at +260, Qatar +2800. Tournament-winner price softened from ~+12500 range earlier in the spring after the Davies hamstring tear."
+  },
+  "coachUpdate": {
+    "changed": false,
+    "currentCoach": "Jesse Marsch",
+    "newCoach": null,
+    "source": null,
+    "notes": "Marsch remains in charge; he is publicly seeking a contract extension before the tournament begins."
+  },
+  "summary": "The headline development is Alphonso Davies tearing his left hamstring in Bayern Munich's Champions League semi-final on May 6, the third hamstring problem since his ACL return; he is now a major doubt for the June 12 opener vs Bosnia and Herzegovina and Bayern's medical staff is publicly resisting a rushed rehab. Promise David's hip-tendon recovery is ahead of schedule and Stephen Eustaquio and Derek Cornelius are both trending toward fitness in time for the camp, while public tactical reporting now describes Marsch's setup as a 4-4-2 (sometimes 4-2-2-2) rather than the 4-3-3 currently on file. Canada has not played a senior international since the late-March/early-April friendlies, with the next matches being tune-ups vs Uzbekistan (June 1, Edmonton) and Ireland (June 5, Montreal).",
+  "sourceUrls": [
+    "https://www.tsn.ca/soccer/article/race-for-the-roster-canada-contends-with-another-davies-injury/",
+    "https://www.tsn.ca/soccer/fifa-world-cup/article/canada-juggling-multiple-injury-concerns-ahead-of-next-international-window/",
+    "https://www.si.com/soccer/marsch-canada-injuries-2026-world-cup",
+    "https://www.si.com/soccer/predicting-canada-2026-world-cup-roster-50-days-from-kickoff",
+    "https://www.cbc.ca/sports/soccer/canada-soccer-notebook-alphonso-davies-bayern-chris-jones-may-14-9.7199187",
+    "https://www.bavarianfootballworks.com/bayern-munich-injuries/199937/bayern-munich-star-alphonso-davies-hurt-again",
+    "https://www.bavarianfootballworks.com/bayern-munich-injuries/201582/bayern-munich-in-conundrum-over-world-cup-status-for-alphonso-davies",
+    "https://canadiansoccerdaily.com/2026/05/10/great-degree-of-concern-from-bayern-munich-over-repeated-alphonso-davies-injuries/",
+    "https://canadiansoccerdaily.com/2026/05/13/canadas-derek-cornelius-leaving-rangers-early-to-join-pre-world-cup-camp-wont-extend-scotland-stay/",
+    "https://canadiansoccerdaily.com/2026/04/18/injured-canada-vice-captain-lafc-midfielder-stephen-eustaquio-back-at-fc-porto-recovery/",
+    "https://canadiansoccerdaily.com/2026/05/11/canada-not-releasing-world-cup-preliminary-squad-who-might-be-in-the-mix",
+    "https://www.tsn.ca/soccer/article/eustaquio-closing-in-on-lafc-return/",
+    "https://www.tsn.ca/soccer/fifa-world-cup/article/canada-soccer-to-unveil-mens-national-team-roster-on-may-29-on-tsn/",
+    "https://canadiansoccerdaily.com/2026/03/20/promise-david-in-a-fight-against-time-to-make-canadas-world-cup-squad/",
+    "https://www.rotowire.com/soccer/article/2026-world-cup-group-b-preview-canada-bosnia-and-herzegovina-qatar-and-switzerland-lineups-odds-predictions-and-tactics-111899",
+    "https://www.covers.com/soccer/world-cup/canada-odds",
+    "https://www.thelines.com/uk/odds/world-cup/canada/",
+    "https://sportsbook.draftkings.com/leagues/soccer/world-cup-2026"
+  ],
+  "confidence": "high",
+  "dataFreshness": "2026-05-14"
+}

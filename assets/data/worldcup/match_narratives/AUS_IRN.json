@@ -4,77 +4,70 @@
   "team2Code": "IRN",
   "team1Name": "Australia",
   "team2Name": "Iran",
-  "generatedAt": "2026-04-16T00:00:00Z",
-  "dataVersion": 2,
-
-  "headline": "AFC Rivalry Renewed: Popovic's Transformed Socceroos Face Team Melli",
-  "subheadline": "Australia's tactical revolution under Popovic and a fully fit squad clash with Taremi's clinical finishing in Asia's heavyweight bout",
-
-  "openingNarrative": "Since Australia joined the Asian Football Confederation in 2006, their matches against Iran have carried the weight of a continental superpower rivalry. These are the AFC's heavyweight bouts — two proud footballing nations who have competed fiercely for Asian supremacy across tournament qualifying cycles, Asian Cup knockout rounds, and international windows that feel like anything but friendlies.\n\nAustralia arrive at this tournament as a team reborn. Tony Popovic's appointment has catalyzed a tactical revolution that has produced immediate results: a 1-0 win over Cameroon built on defensive discipline, followed by a breathtaking 5-1 demolition of Curacao that announced a new attacking identity. Popovic's 3-4-2-1 system is a departure from everything the Socceroos have been — more fluid, more creative, more dangerous. Every player in the squad is fully fit, and the emergence of Nestory Irankunda — a teenager whose pace terrifies defenders — has given Australia a weapon they have never possessed at this level.\n\nIran, under their coaching staff, represent Asia's most consistently competitive tournament participant. This is their sixth tournament appearance — a remarkable record for an Asian nation — and their qualifying campaign was dominant: 7 wins, 2 draws, 1 loss in AFC Third Round Group A, 23 points as group winners. Mehdi Taremi, the Inter Milan striker, was devastating with 10 qualifying goals, establishing himself as one of the tournament's most potent forwards.\n\nThe squad value gap ($82.3M for Iran vs $79.3M for Australia) is negligible — this is as close to an even matchup as the tournament produces. But Australia's tactical transformation under Popovic may have shifted the calculus in ways the raw numbers cannot capture.",
-
+  "generatedAt": "2026-06-15T10:00:00Z",
+  "dataVersion": 1,
+  "headline": "AFC Titans Collide: Socceroos Face Team Melli in Tournament Crucible",
+  "subheadline": "Two defensively astute sides meet in a tactical chess match that could define their tournament campaigns.",
+  "openingNarrative": "In the grand theater of international tournament football, few matchups carry the understated intensity of this AFC heavyweight clash. Australia and Iran, separated by just six ELO points and ranked 30th and 29th respectively, arrive at this encounter as mirror images of defensive pragmatism and tactical discipline. This is not a meeting of flair players or free-flowing football philosophy—it is a collision of two sides built on structure, sacrifice, and the unshakeable belief that tournaments are won by those who concede least, not necessarily those who score most.\n\nThe Socceroos enter on a wave of qualifying confidence under Tony Popovic, their defensive architect who has transformed a side that reached the Round of 16 in 2022 into an even more structured, attritional force. Iran, meanwhile, carries the weight of expectation as Team Melli—a nation that qualified with authority, accumulating 20 points from their AFC third-round campaign behind the prolific Mehdi Taremi. Yet beneath the tactical similarities lies a fascinating contrast: Australia's reactive philosophy meeting Iran's methodical counter-attacking approach, two sides perfectly designed to frustrate each other into a gripping stalemate.\n\nWhat makes this encounter particularly compelling is the absence of Sardar Azmoun from Iran's ranks—expelled from the national team for political reasons, robbing Amir Ghalenoei of his most potent attacking partnership. The void left by Iran's second-highest scorer shifts the entire dynamic, placing even greater responsibility on Taremi's shoulders while potentially opening tactical avenues for Popovic's defensively disciplined Socceroos to exploit.",
   "tacticalBreakdown": {
     "title": "The Chess Match",
-    "narrative": "The fascination of this match lies in Popovic's 3-4-2-1 against Iran's deep-lying defensive structure. Australia's new system creates overloads in wide areas through attacking wing-backs, while the two players behind the striker occupy the half-spaces that Iran's double pivot must protect. The 5-1 win over Curacao showed how fluid and dangerous this system can be when firing on all cylinders.\n\nIran's system revolves around getting the ball to Taremi in dangerous positions. The Inter Milan striker's movement, hold-up play, and finishing give Iran a genuine goal-scoring threat that few AFC opponents can match. Against Australia's three center-backs, Iran may find the extra defensive body makes it harder to isolate Taremi in the one-on-one situations he thrives in.\n\nThe key battle is Irankunda's emergence against Iran's defensive discipline. The teenager's directness adds a dimension Australia have never had — genuine pace and willingness to take on defenders in wide positions. But Iran are experienced enough to adapt, and their pragmatic tournament approach means they will not be drawn into an open game that suits Australia's new style.\n\nAustralia's full fitness is a significant advantage. Every player available, every tactical option open — Popovic can select his strongest XI and rotate without compromise.",
+    "narrative": "This is a fascinating study in defensive philosophies meeting head-on. Popovic's Australia will deploy their trusted 3-4-2-1 system, building around Harry Souttar's aerial dominance and the defensive security of three center-backs designed to frustrate technically superior opponents. Their approach is inherently reactive—inviting Iran to have the ball while looking to strike through transitions and set pieces, where their physical presence becomes decisive. Iran's 4-2-3-1 under Ghalenoei presents a more structured possession approach, but without Azmoun, the tactical balance shifts dramatically. Taremi must now operate as both hold-up player and primary goal threat, with Jahanbakhsh providing width from the right.\n\nThe key battleground will be in the middle third, where Iran's creative midfield deficit meets Australia's compact defensive block. Iran's inability to control games against quality opposition could prove decisive against a Popovic side that thrives when asked to defend deep and counter. The tactical adjustment both coaches make in the final third will be crucial—Australia must capitalize on their limited chances, while Iran needs to find ways to create quality opportunities for Taremi without their expelled strike partner's intelligent movement.",
     "team1Formation": "3-4-2-1",
     "team2Formation": "4-2-3-1",
-    "keyMatchup": "Harry Souttar vs Mehdi Taremi — Australia's towering center-back against Inter Milan's clinical striker, with Popovic's three-man defense providing extra cover"
+    "keyMatchup": "Taremi's isolated striking role against Australia's three-man defensive wall"
   },
-
   "dataInsights": {
     "title": "By The Numbers",
-    "eloAnalysis": "Australia (ELO: 1622, rank 30) vs Iran (ELO: 1628, rank 29) — virtually identical ELO ratings that confirm this as one of the most evenly matched fixtures at the tournament. Australia's March form may have shifted the true balance.",
-    "formAnalysis": "Australia are flying: beat Cameroon 1-0 and Curacao 5-1 in March under Popovic, all players fit. Qualified with 5 wins, 4 draws, 1 loss — 19 points, Yengi scored 6. Iran qualified dominantly: 7 wins, 2 draws, 1 loss — 23 points, Taremi scored 10. Iran's qualifying numbers are superior, but Australia's March transformation adds context.",
-    "squadValueComparison": "Iran ($82.3M) vs Australia ($79.3M) — almost identical squad values. Taremi ($10M) is Iran's most expensive player, while Souttar ($12.5M) leads Australia's valuations. This is a genuine battle of equals on paper, though Australia's tactical evolution may have created an edge that market valuations cannot measure.",
-    "injuryImpact": "Australia's clean bill of health is a major advantage — every player fully fit, giving Popovic maximum tactical flexibility. Iran's reliance on Taremi's fitness is their primary concern. Without his 10-goal qualifying form, their attacking threat diminishes significantly.",
-    "bettingPerspective": "Australia's March results under Popovic have shortened their odds, while the match remains close to a pick'em. The draw is a genuine possibility against two well-organized sides, but Australia's improved attacking output may make them marginal favorites.",
-    "historicalPattern": "AFC rivals since 2006. Both are experienced tournament participants. Australia's tactical transformation under Popovic and full fitness give them a confidence advantage heading into this fixture."
+    "eloAnalysis": "The ELO ratings tell the story—Iran at 1628 (29th) holds just a six-point advantage over Australia's 1622 (30th), suggesting this encounter is essentially a coin flip between perfectly matched AFC powers.",
+    "formAnalysis": "Australia's momentum is undeniable with crucial qualifying victories over Japan (1-0) and Saudi Arabia (2-1), while Iran's mixed late-year friendlies (including a 4-3 loss to Uzbekistan) suggest some vulnerability in their preparation.",
+    "squadValueComparison": "Iran's slightly higher squad valuation at €82.25M compared to Australia's €79.25M reflects the individual quality of players like Taremi (€10M), though Australia's Harry Souttar (€12.5M) remains their most valuable asset.",
+    "injuryImpact": "Australia faces midfield uncertainty with Aiden O'Neill a major doubt due to ankle issues, while Souttar's return from Achilles surgery adds defensive solidity but fitness questions remain.",
+    "bettingPerspective": "Without specific odds available, the even ELO ratings and defensive styles of both teams suggest markets would likely favor a low-scoring affair with minimal separation.",
+    "historicalPattern": "This echoes the tournament pattern where no team from outside UEFA or CONMEBOL has ever won—both sides fighting to prove AFC football can make deeper tournament runs."
   },
-
   "playerSpotlights": [
-    {
-      "name": "Mehdi Taremi",
-      "teamCode": "IRN",
-      "narrative": "Inter Milan's striker was the most prolific scorer in AFC qualifying with 10 goals in 10 matches — a record that demands attention and respect. Taremi's combination of aerial prowess, intelligent movement, and clinical finishing makes him one of the most dangerous strikers at the entire tournament. Against Australia's three center-backs in Popovic's system, he faces a different challenge than usual — the extra defender means fewer one-on-one opportunities, but Taremi's intelligence means he will find ways to create space.",
-      "statline": "10 goals in 10 AFC qualifying matches, Inter Milan's experienced striker"
-    },
-    {
-      "name": "Nestory Irankunda",
-      "teamCode": "AUS",
-      "narrative": "The teenager whose emergence has electrified Australian football. Irankunda's blistering pace and directness have given Popovic's 3-4-2-1 an attacking edge that Australia have never possessed. His performances in the March friendlies — fearless, dynamic, always looking to attack — suggest a player who is ready for the tournament stage despite his age. Against Iran's experienced but aging fullbacks, Irankunda's speed could be devastating.",
-      "statline": "Australia's emerging teenage sensation, explosive pace and directness"
-    },
     {
       "name": "Jackson Irvine",
       "teamCode": "AUS",
-      "narrative": "Australia's captain has adapted seamlessly to Popovic's new system, providing the midfield anchor that allows the attacking players to express themselves. Irvine's organizational skills, his ability to read the game, and his tireless running make him indispensable. In a match against Iran — an opponent he has faced multiple times in AFC competition — his experience and knowledge of the opposition's patterns will be crucial.",
-      "statline": "Australia's captain, Bundesliga experience, tactical leader in Popovic's new system"
+      "narrative": "The St. Pauli midfielder carries the captain's armband and the creative burden for Popovic's pragmatic system. In a side built on defensive discipline and limited attacking opportunities, Irvine's ability to find key passes and drive forward from midfield becomes crucial. His leadership will be tested against Iran's compact midfield, where his experience in the Bundesliga could prove decisive in those critical moments when Australia's reactive approach creates counter-attacking chances. Watch for his set-piece delivery and late runs into the box.",
+      "statline": "Captain leading Australia's qualifying campaign from midfield"
+    },
+    {
+      "name": "Mehdi Taremi",
+      "teamCode": "IRN",
+      "narrative": "Now at Olympiacos after his Inter Milan stint, Taremi shoulders an enormous burden as Iran's primary attacking threat without his expelled partner Azmoun. The striker who netted 10 goals in qualifying must now operate in isolation against Australia's three-man defensive wall, relying on his exceptional hold-up play and clinical finishing. His ability to create space for himself and bring others into play becomes even more critical in Ghalenoei's adjusted system. This tournament could define his international legacy as Iran's talisman.",
+      "statline": "10 goals in 15 AFC qualifying matches"
     },
     {
       "name": "Harry Souttar",
       "teamCode": "AUS",
-      "narrative": "The towering center-back is Australia's most valuable player and the man tasked with keeping Taremi quiet. In Popovic's three-man defense, Souttar has additional support, allowing him to be more aggressive in his duels with Taremi. His aerial dominance, his ability to defend crosses, and his composure on the ball make him well-suited to the assignment — but Taremi is no ordinary striker.",
-      "statline": "Australia's most valuable player ($12.5M), key to Popovic's three-man defense"
+      "narrative": "The Leicester City giant returns from a 483-day injury nightmare caused by a ruptured Achilles tendon, making his comeback just in time for tournament football. Standing as the most valuable player in Australia's squad at €12.5M, Souttar's aerial dominance and defensive leadership anchor Popovic's three-man backline. His first competitive appearance in over a year came with a goal and man-of-the-match performance, suggesting his timing couldn't be better. Against Iran's physical attacking approach, his presence could be the difference between progression and elimination.",
+      "statline": "Most valuable Australian player at €12.5M, returning from 483-day injury absence"
+    },
+    {
+      "name": "Alireza Beiranvand",
+      "teamCode": "IRN",
+      "narrative": "The goalkeeper whose rags-to-riches story captured hearts when he walked hundreds of kilometers to Tehran as a teenager now stands as Iran's defensive foundation. His heroics against Cristiano Ronaldo in the 2018 tournament—saving the Portuguese superstar's penalty—announced him to the world stage. Now, with Iran's attacking options diminished by Azmoun's absence, Beiranvand's ability to keep clean sheets becomes even more crucial. His distribution and command of the penalty area could be decisive in what promises to be a cagey encounter.",
+      "statline": "Saved Cristiano Ronaldo's penalty in the 2018 tournament"
     }
   ],
-
   "theVerdict": {
     "title": "The Verdict",
     "prediction": "Australia 1-1 Iran",
-    "confidence": 45,
-    "narrative": "Despite Australia's tactical transformation and full fitness, Iran's tournament experience and Taremi's world-class quality make this a match that resists confident prediction. The 3-4-2-1 system gives Australia new attacking options — Irankunda's pace, wing-back overloads, fluid positional play — but Iran are experienced enough to adapt and contain.\n\nExpect a cautious, tactical match where both teams prioritize defensive organization. Australia's new system will create chances — the 5-1 over Curacao proved its attacking potential — but Iran's pragmatic approach and Taremi's clinical finishing ensure they will punish any defensive lapses.\n\nThe draw feels like the most honest prediction. Taremi will test Souttar, Irankunda will test Iran's fullbacks, and the midfield battle between Irvine and Iran's engine room will determine who has more of the ball. When two AFC heavyweights collide, the margins remain razor-thin — even when one of them has undergone a tactical revolution.",
+    "confidence": 50,
+    "narrative": "This encounter has stalemate written all over it—two defensively disciplined sides built to frustrate rather than thrill, meeting at a moment when both desperately need points. Australia's reactive approach under Popovic should nullify Iran's methodical build-up play, while the absence of Azmoun forces Taremi into isolation against Souttar's returning defensive leadership. The tactical chess match will likely be decided by a set piece or individual moment of quality, with both goalkeepers earning their keep in a cagey affair.\n\nIran's slight ELO advantage and superior qualifying goal difference suggest they possess marginally more quality, but Australia's recent victories over Japan and Saudi Arabia demonstrate their ability to rise to the occasion against AFC opposition. In tournament football, momentum often trumps technical superiority, and Popovic's pragmatic approach has the tools to earn a valuable point. Expect a fascinating tactical battle that showcases the evolution of AFC football, even if it doesn't provide goal-fest entertainment.",
     "alternativeScenarios": [
       {
-        "scenario": "Australia 2-1 Iran",
-        "probability": 22,
-        "reasoning": "Popovic's system proves its superiority. Irankunda's pace creates a goal, Yengi adds a second, and Australia's three-man defense contains Taremi. The tactical transformation delivers its first tournament dividend."
+        "scenario": "Iran 1-0 Australia",
+        "probability": 30,
+        "reasoning": "Taremi's individual brilliance breaks the deadlock in a moment of quality, with Iran's superior technical players finding the breakthrough Australia's reactive approach couldn't prevent."
       },
       {
-        "scenario": "Iran 2-1 Australia",
-        "probability": 18,
-        "reasoning": "Taremi's world-class finishing proves the difference. Two goals from Iran's talisman expose the gaps that Australia's new system has not yet fully ironed out. Experience trumps evolution."
+        "scenario": "Australia 1-0 Iran",
+        "probability": 20,
+        "reasoning": "Souttar's aerial threat from a set piece or a perfectly executed counter-attack through Irvine's creativity gives Australia the result their defensive discipline deserves."
       }
     ]
   },
-
-  "closingLine": "When Asia's two strongest tournament performers meet, the continental rivalry takes on a global audience. But this time, Australia arrive transformed — Popovic's tactical revolution, full fitness, and Irankunda's emergence make this a different kind of Socceroo team. Iran will need all of Taremi's brilliance to match them."
+  "closingLine": "In tournament football, the team that makes the fewest mistakes often prevails over the team that plays the most beautiful football—and this AFC showdown will test that theory to its absolute limit."
 }

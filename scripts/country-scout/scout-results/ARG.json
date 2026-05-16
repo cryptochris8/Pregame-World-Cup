@@ -1,0 +1,127 @@
+{
+  "teamCode": "ARG",
+  "teamName": "Argentina",
+  "scoutedAt": "2026-05-16T00:00:00Z",
+  "injuryUpdates": [
+    {
+      "playerName": "Cristian Romero",
+      "teamCode": "ARG",
+      "country": "Argentina",
+      "club": "Tottenham",
+      "position": "Defender",
+      "injuryType": "High-grade partial tear of medial cruciate ligament (no surgery required)",
+      "injuryDate": "2026-04-12",
+      "expectedReturn": "Targeting June 6 friendly vs Honduras; on track for June 16 tournament opener",
+      "availabilityStatus": "doubt",
+      "lastMatchPlayed": {
+        "date": "2026-04-12",
+        "opponent": "Tottenham (Premier League)",
+        "notes": "Suffered MCL tear in collision with goalkeeper Antonin Kinsky vs Sunderland"
+      },
+      "source": "OneFootball, World Soccer Talk, Sports Mole - May 2026",
+      "notes": "Status upgraded from major_doubt to doubt: AFA sent a physiotherapist to London to monitor rehab, PRP treatment underway, no surgery needed. Romero included in 55-man preliminary squad and is targeting the June 6 (Honduras) and June 9 (Iceland) warm-ups. Tottenham season likely over, but tournament participation now considered likely.",
+      "action": "update"
+    },
+    {
+      "playerName": "Lautaro Martinez",
+      "teamCode": "ARG",
+      "country": "Argentina",
+      "club": "Inter Milan",
+      "position": "Forward",
+      "injuryType": "Recurring soleus muscle strain (left leg) — recovered",
+      "injuryDate": "2026-04-10",
+      "expectedReturn": "Returned for Inter Milan vs Lazio in early May 2026",
+      "availabilityStatus": "minor_concern",
+      "lastMatchPlayed": {
+        "date": "2026-05-02",
+        "opponent": "Lazio (Serie A)",
+        "notes": "Returned to starting lineup after second soleus injury, has been leading Serie A scoring charts with 16 goals"
+      },
+      "source": "Sempre Inter, ESPN, beIN Sports - April/May 2026",
+      "notes": "Aggravated soleus muscle vs Como on 2026-04-10 after returning from a 7-week absence. Returned in early May for Inter and named in 55-man preliminary squad. Recurring nature of muscle injuries makes him a minor concern heading into the tournament; failed to score in 2022 tournament run due to ankle issue.",
+      "action": "add"
+    }
+  ],
+  "recentFormUpdates": [],
+  "tacticalUpdates": [],
+  "squadChanges": [
+    {
+      "playerName": "Angel Di Maria",
+      "changeType": "retirement",
+      "details": "Confirmed firm in his retirement from the national team, ruling out a return for the tournament. Excluded from the 55-man preliminary squad announced May 12.",
+      "source": "World Soccer Talk, Goal.com - May 2026",
+      "effectiveDate": "2026-05-12"
+    },
+    {
+      "playerName": "Paulo Dybala",
+      "changeType": "dropped",
+      "details": "Shock exclusion from Scaloni's 55-man preliminary squad despite no announced international retirement. Part of Scaloni's generational transition.",
+      "source": "World Soccer Talk, FourFourTwo - May 2026",
+      "effectiveDate": "2026-05-12"
+    },
+    {
+      "playerName": "Angel Correa",
+      "changeType": "dropped",
+      "details": "Shock exclusion from Scaloni's 55-man preliminary squad. No retirement announcement; left out as part of the generational refresh.",
+      "source": "World Soccer Talk, FourFourTwo - May 2026",
+      "effectiveDate": "2026-05-12"
+    },
+    {
+      "playerName": "Franco Armani",
+      "changeType": "retirement",
+      "details": "Chose not to return to the national team; excluded from the 55-man preliminary squad.",
+      "source": "World Soccer Talk - May 2026",
+      "effectiveDate": "2026-05-12"
+    },
+    {
+      "playerName": "Nicolas Capaldo",
+      "changeType": "new_call_up",
+      "details": "Hamburger SV midfielder receives his first official Argentina call-up, included in the 55-man preliminary squad.",
+      "source": "beIN Sports - May 2026",
+      "effectiveDate": "2026-05-12"
+    },
+    {
+      "playerName": "Gianluca Prestianni",
+      "changeType": "suspension",
+      "details": "Included in the 55-man preliminary squad despite a six-match ban for homophobic insults against Vinicius Junior in the Champions League. The ban could sideline him for Argentina's first two group matches.",
+      "source": "Al Jazeera, beIN Sports - May 2026",
+      "effectiveDate": "2026-05-12"
+    }
+  ],
+  "bettingOddsUpdate": {
+    "tournamentWinner": "8/1",
+    "groupStageExit": null,
+    "toQualifyFromGroup": "1/100",
+    "source": "Ladbrokes - May 2026",
+    "notes": "Argentina are 1/3 to top Group J and 1/100 to qualify from the group, reflecting their runaway-favourites status in Group J vs Algeria, Austria, Jordan. Tournament-winner odds (8/1) place them behind the front-runners (Spain and France ~+450) but in the second tier of contenders."
+  },
+  "coachUpdate": {
+    "changed": false,
+    "currentCoach": "Lionel Scaloni",
+    "newCoach": null,
+    "source": null,
+    "notes": null
+  },
+  "summary": "Argentina played no international matches in the window, but the May 12 announcement of Scaloni's 55-man preliminary roster reshapes the picture: Angel Di Maria and Franco Armani confirmed out via retirement, while Paulo Dybala and Angel Correa were dropped as part of a generational refresh. The biggest fitness news is positive — Cristian Romero's MCL tear does not require surgery and he is now targeting the June 6 warm-up vs Honduras, upgrading his status from major doubt to doubt, while Lautaro Martinez returned for Inter Milan in early May after a soleus re-injury and remains a minor recurring-injury concern.",
+  "sourceUrls": [
+    "https://www.fourfourtwo.com/team/argentina-world-cup-2026-squad",
+    "https://www.beinsports.com/en-us/soccer/fifa-world-cup-2026/articles/lionel-scaloni-argentina-s-coach-announced-the-preliminary-list-of-55-players-called-up-to-compete-in-the-world-cup-2026-05-11",
+    "https://worldsoccertalk.com/world-cup/with-lionel-messi-and-without-angel-di-maria-argentina-reveal-preliminary-squad-for-the-2026-world-cup/",
+    "https://worldsoccertalk.com/news/cristian-romeros-world-cup-2026-prospects-brighten-after-injury-update-on-argentina-and-tottenham-star/",
+    "https://onefootball.com/en/news/cuti-romero-steps-up-recovery-argentina-hopeful-for-the-world-cup-42861228",
+    "https://www.sportsmole.co.uk/football/spurs/injury-news/news/romero-injury-update-spurs-career-may-be-over-but-world-cup-dream-is-still-alive_595771.html",
+    "https://www.yardbarker.com/soccer/articles/currently_injured50m_tottenham_star_makes_argentina_preliminary_squad_for_world_cup_2026/s1_17451_43834041",
+    "https://worldsoccertalk.com/news/argentina-on-alert-as-lautaro-martinez-suffers-second-straight-injury-two-months-before-2026-world-cup/",
+    "https://sempreinter.com/2026/04/23/when-inter-milan-star-lautaro-martinez-could-return-injury/",
+    "https://sempreinter.com/2026/04/10/como-inter-lautaro-martinez-injured-again/",
+    "https://www.espn.com/soccer/story/_/id/48451887/inter-milan-star-lautaro-martinez-sidelined-injury-relapse",
+    "https://www.aljazeera.com/sports/2026/5/12/will-messi-play-argentina-answer-fan-queries-in-55-man-world-cup-squad",
+    "https://www.espn.com/soccer/story/_/id/48748296/lionel-messi-included-argentina-55-player-provisional-world-cup-squad",
+    "https://www.ladbrokes.com/en/news/2026-world-cup-group-j-preview-odds-predictions/",
+    "https://www.goal.com/en/team/argentina/fixtures-results/ak48fkypnql8y4n69cvcq5ghc",
+    "https://www.batimes.com.ar/news/sports/argentina-to-play-honduras-and-iceland-in-pre-world-cup-friendlies.phtml",
+    "https://www.espn.com/soccer/story/_/id/48439987/auburn-texas-host-lionel-messi-argentina-world-cup-friendlies"
+  ],
+  "confidence": "high",
+  "dataFreshness": "2026-05-13"
+}

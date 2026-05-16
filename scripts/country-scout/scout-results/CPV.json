@@ -1,0 +1,82 @@
+{
+  "teamCode": "CPV",
+  "teamName": "Cabo Verde",
+  "scoutedAt": "2026-05-16T00:00:00Z",
+  "injuryUpdates": [
+    {
+      "playerName": "Logan Costa",
+      "teamCode": "CPV",
+      "country": "Cabo Verde",
+      "club": "Villarreal",
+      "position": "Defender",
+      "injuryType": "Anterior cruciate ligament (ACL) rupture - left knee (return phase)",
+      "injuryDate": "2025-07-19",
+      "expectedReturn": "Back in matchday squads; expected to be available for the tournament but limited recent match minutes",
+      "availabilityStatus": "doubt",
+      "lastMatchPlayed": {
+        "date": "2025-07-19",
+        "opponent": "Basel (pre-season friendly)",
+        "notes": "Suffered complete ACL tear in left knee in Villarreal pre-season fixture; long lay-off followed"
+      },
+      "source": "OneFootball (Feb 26 2026), RotoWire, Villarreal CF medical report, FotMob - through May 2026",
+      "notes": "Highly rated centre-back identified by previews as a likely starter for Cabo Verde at the tournament. Returned to partial training in late February, named on Villarreal's bench in April (unused in 2-1 win over Celta Vigo) but yet to log competitive minutes. Fitness for a starting role at the tournament is a live concern despite being on the comeback trail.",
+      "action": "add"
+    }
+  ],
+  "recentFormUpdates": [],
+  "tacticalUpdates": [
+    {
+      "field": "preferredFormation",
+      "oldValue": "4-4-2",
+      "newValue": "4-2-3-1",
+      "source": "Sports Illustrated tournament preview (May 14 2026); RotoWire Group H preview (May 6 2026)",
+      "confidence": "high"
+    },
+    {
+      "field": "playingStyle",
+      "oldValue": "Pragmatic and defensively disciplined island nation football; emphasis on collective organization, set pieces, and counter-attacking",
+      "newValue": "Compact 4-2-3-1 mid/low block out of possession; traps opponents in central areas, then attacks the flanks in direct transition with pace from Livramento, Ryan Mendes and Sidny Cabral",
+      "source": "Sports Illustrated tournament preview (May 14 2026); RotoWire Group H preview (May 6 2026)",
+      "confidence": "high"
+    }
+  ],
+  "squadChanges": [],
+  "bettingOddsUpdate": {
+    "tournamentWinner": "+40000",
+    "groupStageExit": null,
+    "toQualifyFromGroup": "+4000 to +7000 (to win Group H)",
+    "source": "DraftKings / Bet365 / FanDuel via RotoWire Group H preview - May 6 2026",
+    "notes": "Cabo Verde priced around 400/1 outright. To win Group H, lines range from +4000 (DraftKings) to +5000 (Bet365) and +7000 (FanDuel). Direct 'to advance from group' price not consistently published; markets treat them as clear outsiders alongside Saudi Arabia behind Spain (heavy favourite) and Uruguay."
+  },
+  "coachUpdate": {
+    "changed": false,
+    "currentCoach": "Bubista",
+    "newCoach": null,
+    "source": "FIFA / CNN / SI - May 2026",
+    "notes": "Pedro Leitao Brito (Bubista), 2025 CAF Coach of the Year, remains in charge with no replacement discussion. Manager visited CNN studios in Atlanta during the lead-up and has stated the staff is managing training load, hydration and nutrition for North American heat conditions."
+  },
+  "summary": "Quiet month for Cabo Verde: no internationals played since the March friendlies (Chile L 2-4, Finland 1-1), no coach change, and the Serbia warm-up isn't until May 31. The most material development is tactical clarity from May previews confirming Bubista has shifted from the on-file 4-4-2 to a compact 4-2-3-1 mid/low block built on direct transitions through Livramento, captain Ryan Mendes and Benfica wide man Sidny Cabral. Defender Logan Costa is back on the Villarreal bench after ACL surgery but has not logged competitive minutes, so his fitness for a starting role at the tournament is a real question; otherwise Garry Rodrigues, Ryan Mendes and Vozinha remain fit per club reports.",
+  "sourceUrls": [
+    "https://www.fourfourtwo.com/team/cape-verde-world-cup-2026-squad",
+    "https://www.si.com/soccer/cabo-verde-2026-world-cup-preview",
+    "https://www.rotowire.com/soccer/article/2026-world-cup-group-h-preview-spain-uruguay-saudi-arabia-cape-verde-tactics-lineups-set-pieces-odds-109699",
+    "https://www.cafonline.com/news/cape-verde-call-on-five-new-players-in-pre-fifa-world-cup-tune-up/",
+    "https://www.cnn.com/sport/cape-verde-world-cup-debutants-nothing-is-impossible-spc",
+    "https://www.npr.org/2026/05/10/nx-s1-5796264/cape-verde-tiny-nation-massive-world-cup-dream",
+    "https://en.wikipedia.org/wiki/Cape_Verde_national_football_team",
+    "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/cabo-verde-team-profile-history",
+    "https://www.sofascore.com/football/team/cape-verde/4753",
+    "https://www.espn.com/soccer/team/squad/_/id/2597/cape-verde",
+    "https://onefootball.com/en/news/logan-costa-returns-to-partial-villarreal-training-after-acl-lay-off-42472809",
+    "https://villarrealcf.es/en/medical-report-logan-costa/",
+    "https://sports.yahoo.com/article/injury-nightmare-villarreal-defender-set-214000198.html",
+    "https://www.thescore.com/news/3313738",
+    "https://www.fotmob.com/en-GB/players/922877/logan-costa",
+    "https://www.vavel.com/en-us/soccer/2026/03/27/1255335-chile-vs-cape-verde-live-score-fifa-series.html",
+    "https://africa.espn.com/football/match/_/gameId/401856602",
+    "https://www.besoccer.com/new/new-zealand-police-investigating-cape-verde-player-after-fifa-series-incident-1408682",
+    "https://www.foxsports.com/stories/soccer/cape-verde-world-cup-2026-schedule-locations-dates-times"
+  ],
+  "confidence": "medium",
+  "dataFreshness": "2026-05-14"
+}

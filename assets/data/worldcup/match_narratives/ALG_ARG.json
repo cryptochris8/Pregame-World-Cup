@@ -4,77 +4,70 @@
   "team2Code": "ARG",
   "team1Name": "Algeria",
   "team2Name": "Argentina",
-  "generatedAt": "2026-04-16T00:00:00Z",
-  "dataVersion": 2,
-
-  "headline": "The Desert Foxes Face the Defending Champions in Group J's Headliner",
-  "subheadline": "Algeria's proud tournament tradition meets Messi's Argentina in a group dripping with historical narrative — and fresh drama off the pitch",
-
-  "openingNarrative": "The 2026 tournament draw could not have scripted Group J more dramatically if it had tried. Algeria, Argentina, Austria — the three nations whose fates were entangled in the most infamous episode in tournament history, the 'Disgrace of Gijon' in 1982 — reunited on the same stage 44 years later. It is the kind of coincidence that makes you wonder whether football has a sense of poetic justice.\n\nIn 1982, Algeria stunned West Germany 2-1 in what remains one of the greatest tournament upsets ever. But that triumph was cruelly negated when West Germany and Austria played out a mutually beneficial 1-0 result that eliminated Algeria on goal difference. The scandal led directly to the rule that final group-stage matches must kick off simultaneously — a regulation that will govern this very group.\n\nNow Algeria face the defending world champions — but an Argentina side dealing with a seismic blow to their backline. Cristian Romero, the aggressive, front-foot center-back who set the defensive tone for Scaloni's side, suffered a devastating cruciate ligament tear on April 12 and is a major doubt for the entire tournament. The loss reshapes Argentina's defensive identity overnight. Lisandro Martinez will anchor the center-back pairing, but the insurance policy that Romero's ferocity provided is gone.\n\nMessi, at 38, is playing in what is almost certainly his final tournament. He is fully fit after recovering from a January hamstring strain, and his March form was emphatic — contributing a goal and an assist in a ruthless 5-0 demolition of Zambia, then featuring in a workmanlike 2-1 victory over Mauritania. Those results extended Argentina's extraordinary run to 10 wins in their last 11 matches, the only blemish a narrow 1-0 defeat away to Ecuador. The defending champions, priced at 8/1 to retain their crown, remain one of the most complete sides in world football — even with Romero's absence casting a shadow over their defensive plans.\n\nAlgeria's own qualifying campaign was impressive — 7 wins, 1 draw, 2 losses, topping CAF Group E with 22 points. Baghdad Bounedjah's 5 goals led the attack, while Ismael Bennacer's midfield mastery provided the platform. Under Vladimir Petkovic, they blend European structure with North African flair.",
-
+  "generatedAt": "2026-06-16T14:30:00Z",
+  "dataVersion": 1,
+  "headline": "Desert Dreams: Algeria's Date with Destiny Against Champions Argentina",
+  "subheadline": "Messi's farewell tournament begins against the nation that embodies football's beautiful unpredictability.",
+  "openingNarrative": "In the sweltering heat of a North American summer, football's most enduring narratives converge on a single pitch. Algeria and Argentina, two nations whose tournament histories have danced around each other for decades, finally meet when it matters most. For Les Fennecs, this represents more than just an opening match—it's a chance to author another chapter in their storied relationship with football's grandest upset tradition, one that began in 1982 when they stunned West Germany in what remains one of the tournament's most seismic shocks.\n\nAcross the pitch stands Argentina, draped in the comfortable weight of expectation that comes with being defending champions. At 38, Lionel Messi carries himself with the measured grace of a man who has already climbed football's highest peak, yet remains hungry for one final dance on the sport's biggest stage. His presence transforms this fixture into something approaching mythology—the greatest player of his generation, perhaps his last tournament bow, against a team that has made careers out of defying the odds.\n\nThe historical echoes are impossible to ignore. Algeria's qualifying campaign, securing passage with a 7-1-2 record and Baghdad Bounedjah's five crucial goals, demonstrated the same resilience that has defined their tournament appearances since that breakthrough summer in Spain. Argentina, meanwhile, navigated CONMEBOL's brutal qualifying gauntlet with typical South American grit, Messi contributing eight goals across an 18-match campaign that showcased both their championship pedigree and the depth that makes them genuine contenders to become the first back-to-back winners since Brazil's 1958-62 triumph.",
   "tacticalBreakdown": {
     "title": "The Chess Match",
-    "narrative": "Argentina's 4-3-3 under Scaloni has become one of the most sophisticated systems in world football. The build-up transitions to a 3-2-5 shape, with fullbacks pushing into the attacking line and the midfield trio of Enzo Fernandez, Mac Allister, and a holding midfielder controlling the tempo. Messi drifts into half-spaces, pulling defenders into impossible decisions, while Julian Alvarez's intelligent movement creates the space that Messi exploits.\n\nThe loss of Romero, however, changes the defensive calculus. His aggressive, front-foot defending — the willingness to step out and engage attackers thirty yards from goal — was a tactical weapon as much as a defensive one. Without him, Argentina's backline may sit slightly deeper, and the passing out from the back loses one of its most confident ball-carriers. Lisandro Martinez, fearless and technically capable with his left foot, will need to shoulder a greater burden.\n\nAlgeria will need to be pragmatic. A compact 4-4-2 or 5-4-1, sitting deep and denying the central spaces where Messi operates, is the most logical approach. Bennacer's ball-winning ability from his AC Milan education will be critical in the midfield contest. Algeria's threat will come from transitions — using the pace of their wide players to exploit the space behind Argentina's advanced fullbacks, a space that may be more vulnerable without Romero's recovery pace.\n\nThe key tactical question is whether Algeria can maintain their defensive shape for 90 minutes. Argentina's relentless probing, their ability to switch the point of attack, and the sheer quality of their final ball means that even one moment of disorganization can be punished. But if Algeria can target Argentina's reshuffled center-back pairing with direct balls and physical pressure, they may find opportunities that would not have existed with Romero marshaling the line.",
-    "team1Formation": "4-4-2",
+    "narrative": "Vladimir Petković's Algeria will deploy their characteristic 4-3-3 formation, designed to frustrate Argentina's possession-heavy approach through disciplined pressing and rapid transitions. The key battle lies in Algeria's ability to deny space to Argentina's creative triumvirate of Messi, Enzo Fernández, and Alexis Mac Allister, with Ismael Bennacer—if fit enough to start—tasked with screening the backline and breaking up Argentine passing rhythms. Riyad Mahrez's positioning will be crucial, drifting inward from the right to exploit the space behind Argentina's advancing fullbacks when Scaloni's side morphs from their 4-3-3 into their attacking 3-2-5 shape.\n\nArgentina's tactical maturity under Lionel Scaloni will be tested early, as they face the classic tournament conundrum of breaking down a well-organized defensive block. Their patient build-up play, orchestrated by Fernández from deep, will probe for weaknesses in Algeria's compact middle third, while the movement of Julián Álvarez and Messi's free-roaming role should create the kind of positional chaos that has undone many tournament debutants. The decisive area will be the half-spaces where Messi operates, and whether Algeria's midfield can maintain their disciplined shape for the full ninety minutes against Argentina's relentless probing.",
+    "team1Formation": "4-3-3",
     "team2Formation": "4-3-3",
-    "keyMatchup": "Ismael Bennacer vs Enzo Fernandez — AC Milan's playmaker against Chelsea's tournament winner in a battle for midfield supremacy"
+    "keyMatchup": "Bennacer's midfield screening vs Messi's half-space infiltration"
   },
-
   "dataInsights": {
     "title": "By The Numbers",
-    "eloAnalysis": "Argentina (ELO: 1873, rank 2) vs Algeria (ELO: 1580, rank 45) — a massive 293-point gap that translates to roughly a 70% win probability for Argentina. This is one of the largest ELO differentials in the group stage.",
-    "formAnalysis": "Argentina's recent form is devastating: 10 wins in their last 11 matches, including a 5-0 thrashing of Zambia and a 2-1 win over Mauritania in their March friendlies. Messi contributed a goal and an assist against Zambia, proving his sharpness at 38. Their CONMEBOL qualifying campaign was imperious: 12 wins, 2 draws, 4 losses, 38 points, +21 goal difference in 18 matches, with 10 clean sheets. Algeria topped CAF Group E with 22 points — 7 wins, 1 draw, 2 losses, 19 goals scored and 8 conceded. Bounedjah led with 5 goals.",
-    "squadValueComparison": "Argentina's squad ($951M) vs Algeria's ($150M) — a gap of $800M that reflects the concentration of Argentina's talent at Europe's elite clubs. Julian Alvarez alone ($113M) is nearly worth Algeria's entire squad.",
-    "injuryImpact": "Cristian Romero's cruciate ligament tear on April 12 is the most significant injury news in the entire tournament. Argentina's aggressive, front-foot defensive style was built around his physicality. Messi is fully fit after recovering from a January hamstring strain, confirmed by his sharp display in the 5-0 Zambia win. Algeria need Bennacer and Mahrez fit and firing.",
-    "bettingPerspective": "Argentina's outright tournament odds of 8/1 reflect their status as defending champions and genuine contenders — fifth in the market behind France, England, Spain, and Brazil. They are -340 favorites to win Group J. Algeria's qualification is admirable, but the betting markets give them little chance in this fixture.",
-    "historicalPattern": "Algeria have never beaten Argentina but have a proud tournament history of upsetting favorites — their 1982 victory over West Germany changed the rules of the tournament. The defending champion's curse (4 of the last 5 holders eliminated in the group stage) adds intrigue, and Romero's injury gives that curse a tangible mechanism."
+    "eloAnalysis": "The 293-point Elo gap between Argentina (1873, 2nd globally) and Algeria (1580, 45th) represents one of the tournament's starkest quality divides, underlining the scale of upset required for Desert Fox success.",
+    "formAnalysis": "Algeria arrive with impressive momentum, winning eight of their last twelve matches including a credible scoreless draw with Uruguay, while Argentina's recent 5-0 demolition of Zambia demonstrated their tournament-winning firepower remains intact.",
+    "squadValueComparison": "Argentina's $951 million squad valuation dwarfs Algeria's $150 million, yet tournament history suggests such disparities often fuel rather than prevent magical underdog stories.",
+    "injuryImpact": "Algeria face a defensive crisis with Ramy Bensebaini and Youcef Atal major doubts, while Argentina sweat over Cristian Romero's fitness following his knee ligament tear in April.",
+    "bettingPerspective": "Markets heavily favor the defending champions, making Algeria one of the tournament's most attractive underdog propositions for neutral observers.",
+    "historicalPattern": "The defending champions' curse looms large—four of the last five title holders crashed out in the group stage, with only Brazil in 2006 bucking this troubling trend."
   },
-
   "playerSpotlights": [
     {
       "name": "Lionel Messi",
       "teamCode": "ARG",
-      "narrative": "Every step at this tournament echoes with finality. At 38, turning 39 mid-tournament, Messi has made concessions to time — he covers less ground, presses less often — but his mind remains football's most dangerous weapon. The doubts about his fitness were silenced in March: a goal and an assist in the 5-0 annihilation of Zambia, followed by a composed showing in the 2-1 win over Mauritania, proved that the flame still burns. Against Algeria, in a group laden with historical narrative, Messi will want to stamp his authority early. This is his farewell tour, and he intends to make it unforgettable.",
-      "statline": "Fully fit. 1 goal, 1 assist in 5-0 Zambia friendly (March 31). 8 goals in CONMEBOL qualifying."
-    },
-    {
-      "name": "Ismael Bennacer",
-      "teamCode": "ALG",
-      "narrative": "AC Milan's midfield anchor is the player upon whom Algeria's tournament campaign rises or falls. Bennacer's ability to receive under pressure, dictate tempo, and break up play makes him the most important player on Algeria's roster. Against Argentina's midfield three, he will need to produce the performance of his life — covering every blade of grass, winning every second ball, and using his distribution to relieve pressure when Algeria win possession. With Romero absent from Argentina's backline, Bennacer's ability to spring quick transitions through the middle of the pitch becomes even more critical.",
-      "statline": "AC Milan's midfield lynchpin and Algeria's most valuable player"
-    },
-    {
-      "name": "Julian Alvarez",
-      "teamCode": "ARG",
-      "narrative": "The quiet assassin of Argentine football does the running so Messi does not have to. His three goals in the 2022 knockout rounds, including a brace against Croatia, established him as a big-game player of the highest order. Now at Atletico Madrid, Alvarez has added a physical edge to his game that makes him even more dangerous. Against Algeria's deep block, his movement will be critical in creating the space that Argentina need — and with Scaloni's side potentially missing Romero's drive from the back, the onus on Alvarez to generate offensive momentum increases.",
-      "statline": "5 tournament goals across 2022 and qualifying campaigns"
+      "narrative": "At 38, Messi approaches what may be his final tournament appearance with the serene confidence of a man who has already conquered his greatest demons. His rehabilitation from a January hamstring strain and seamless return to match sharpness speaks to an athlete who understands the weight of history resting on his shoulders. Against Algeria's compact defensive structure, his ability to find pockets of space and create something from nothing could be the difference between a routine victory and a frustrating stalemate. The eight-time Ballon d'Or winner has spent a career making the impossible look routine.",
+      "statline": "13 career tournament goals across five previous appearances"
     },
     {
       "name": "Riyad Mahrez",
       "teamCode": "ALG",
-      "narrative": "Algeria's most decorated player brings the kind of individual quality that can change matches in an instant. Mahrez's dribbling, his ability to beat defenders, and his eye for a pass make him Algeria's most dangerous creative outlet. If Algeria are to produce an upset, it will likely come through a moment of Mahrez brilliance — a dribble that unlocks the defense, a pass that finds Bounedjah in space. Against a reshuffled Argentine backline still adjusting to life without Romero, Mahrez's ability to isolate defenders one-on-one could be more effective than it would have been against a settled defense.",
-      "statline": "Algeria's most valuable player ($20M) and creative catalyst"
+      "narrative": "The 35-year-old winger carries Algeria's creative hopes on his shoulders, his Al-Ahli form suggesting that age has refined rather than diminished his ability to unlock the tightest defenses. Mahrez's tournament pedigree—honed through Premier League title triumphs with Leicester and Manchester City—gives him the composure to thrive under pressure that would overwhelm lesser talents. His duel with Argentina's defensive structure will likely determine whether Algeria can create the clear-cut chances necessary to spring another tournament upset. In moments like these, individual brilliance becomes collective destiny.",
+      "statline": "Algeria's most valuable player at $20 million"
+    },
+    {
+      "name": "Ismael Bennacer",
+      "teamCode": "ALG",
+      "narrative": "The AC Milan midfielder's recovery from a March thigh injury represents one of Algeria's most crucial fitness battles heading into the tournament. Bennacer's ability to dictate tempo from deep positions and break up opposition attacks makes him indispensable to Petković's tactical blueprint. His European pedigree and big-match experience provide the kind of midfield steel that tournament runs are built upon. If fully fit, he becomes Algeria's primary weapon in disrupting Argentina's possession-based rhythm and launching the quick transitions that could catch the champions off guard.",
+      "statline": "Key midfielder recovering from thigh injury, included in expanded squad"
+    },
+    {
+      "name": "Julián Álvarez",
+      "teamCode": "ARG",
+      "narrative": "The Atletico Madrid striker embodies Argentina's evolution beyond the Messi era, combining relentless pressing with clinical finishing in a way that perfectly complements his legendary teammate. At just 26, Álvarez already possesses tournament-winning experience and the kind of big-match temperament that defines champions. His movement in the final third and ability to create space for others makes him the perfect foil for Messi's creative genius. Against Algeria's disciplined defensive block, his work rate and positional intelligence could prove the key to unlocking stubborn resistance.",
+      "statline": "Argentina's most valuable player at $113 million"
     }
   ],
-
   "theVerdict": {
     "title": "The Verdict",
     "prediction": "Argentina 2-0 Algeria",
-    "confidence": 70,
-    "narrative": "Argentina's defending champions should have too much quality for Algeria, but this will not be the stroll that the ELO gap suggests. The loss of Romero introduces a genuine vulnerability that Algeria are well-equipped to target — direct balls into the channels, physical pressure on an unfamiliar center-back pairing, and transition attacks designed to test defenders who have not yet built the understanding that Romero and Martinez had forged over years.\n\nBut Argentina's March form — that brutal 5-0 dismantling of Zambia, the professional 2-1 over Mauritania — demonstrated a squad operating at peak efficiency with or without their first-choice backline. Messi's fitness and sharpness, Alvarez's relentless movement, and Fernandez's midfield control represent a level of quality that Algeria, for all their organization, cannot match across 90 minutes.\n\nExpect a cagey first half, with Algeria sitting deep and frustrating Argentina's build-up. But Argentina's patience and quality will eventually tell. The defending champions will open their campaign with a professional, if not spectacular, victory — though the spirit Algeria show here may yet prove decisive when the group reaches its climax.",
+    "confidence": 75,
+    "narrative": "Argentina's championship pedigree and tactical sophistication should ultimately prove decisive against Algeria's admirable organization. The defending champions possess too much individual quality and big-match experience to be derailed in their tournament opener, despite Algeria's proud tradition of causing upsets. Scaloni's side will likely need patience to break down Petković's defensive structure, but their depth of options and ability to create moments of magic through Messi and Álvarez should yield the crucial breakthrough.\n\nYet tournament football thrives on the unexpected, and Algeria's blend of European-hardened experience and desperate desire to create another memorable chapter makes them dangerous opponents. Their counter-attacking threat, spearheaded by Mahrez's creativity, could trouble Argentina's high defensive line. This feels like the kind of match that remains scoreless until a moment of individual brilliance—most likely from Messi—shifts the narrative irreversibly in Argentina's favor.",
     "alternativeScenarios": [
       {
-        "scenario": "Argentina 1-0 Algeria",
-        "probability": 25,
-        "reasoning": "Algeria's defensive discipline holds for most of the match, and Argentina need a late goal to break through. A Messi free-kick or an Alvarez header from a corner finally cracks the resistance."
+        "scenario": "Argentina 1-1 Algeria",
+        "probability": 20,
+        "reasoning": "Algeria's defensive discipline frustrates Argentina for long periods, with Mahrez scoring a brilliant equalizer after Argentina take an early lead through Messi."
       },
       {
-        "scenario": "Algeria 1-1 Argentina",
-        "probability": 14,
-        "reasoning": "Algeria channel the spirit of 1982. An early goal on the counter — Mahrez exploiting the space left by Romero's absence — sends shockwaves through the stadium. Argentina equalize but cannot find a winner against a team defending for its life. The defending champion's curse inches closer."
+        "scenario": "Argentina 3-1 Algeria",
+        "probability": 15,
+        "reasoning": "Argentina's quality eventually overwhelms Algeria in the final twenty minutes, with late goals padding the scoreline after a closely contested affair."
       }
     ]
   },
-
-  "closingLine": "Forty-four years after the Disgrace of Gijon, Algeria return to a tournament group that contains Austria — and this time, they face defending champions dealing with a devastating injury to their most important defender. History does not repeat itself, but at the tournament, it rhymes."
+  "closingLine": "In a tournament where dreams collide with destiny, Algeria's desert winds meet Argentina's championship thunder—and football, as always, will have the final word."
 }

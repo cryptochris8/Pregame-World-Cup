@@ -1,0 +1,107 @@
+{
+  "teamCode": "BIH",
+  "teamName": "Bosnia and Herzegovina",
+  "scoutedAt": "2026-05-16T00:00:00Z",
+  "injuryUpdates": [
+    {
+      "playerName": "Edin Dzeko",
+      "teamCode": "BIH",
+      "country": "Bosnia and Herzegovina",
+      "club": "Schalke 04",
+      "position": "Forward",
+      "injuryType": "Shoulder injury (sustained vs Italy playoff, March 31) - recovered, returned to play",
+      "injuryDate": "2026-03-31",
+      "expectedReturn": "Returned May 2, 2026",
+      "availabilityStatus": "fit",
+      "lastMatchPlayed": {
+        "date": "2026-05-02",
+        "opponent": "Fortuna Dusseldorf (2. Bundesliga)",
+        "notes": "Came on as 69th-minute substitute as Schalke clinched Bundesliga promotion with 1-0 win; shoulder heavily strapped"
+      },
+      "source": "Bundesliga.com, Footmundo, Yahoo Sports - May 2026",
+      "notes": "Returned just over four weeks after shoulder injury, avoiding surgery. Captain and all-time top scorer (73 goals) included in the 26-man squad announced May 11. Coach Muslic called him 'a warrior, a fighter.' Dzeko himself: 'if you have a little pain, it's not a problem for me at all.' Age 40, will turn 40 during the tournament. Selected and fit, though will need careful load management.",
+      "action": "update"
+    }
+  ],
+  "recentFormUpdates": [],
+  "tacticalUpdates": [],
+  "squadChanges": [
+    {
+      "playerName": "Said Hamulic",
+      "changeType": "dropped",
+      "details": "Wisla Plock forward with 6 caps since 2023 debut omitted from the 26-man squad announced May 11.",
+      "source": "Khel Now - May 2026",
+      "effectiveDate": "2026-05-11"
+    },
+    {
+      "playerName": "Haris Hajradinovic",
+      "changeType": "dropped",
+      "details": "Kasimpasa midfielder with 16 caps since 2019 debut left out of the final 26-man roster.",
+      "source": "Khel Now - May 2026",
+      "effectiveDate": "2026-05-11"
+    },
+    {
+      "playerName": "Jusuf Gazibegovic",
+      "changeType": "dropped",
+      "details": "Right-back (Sturm Graz, on loan from FC Koln) lost his spot for both club and nation following poor form after his move to Koln.",
+      "source": "Khel Now - May 2026",
+      "effectiveDate": "2026-05-11"
+    },
+    {
+      "playerName": "Emir Karic",
+      "changeType": "dropped",
+      "details": "Sturm Graz defender who switched from Austria's youth program to Bosnia not selected for the 26-man squad despite earning a senior debut.",
+      "source": "Khel Now - May 2026",
+      "effectiveDate": "2026-05-11"
+    },
+    {
+      "playerName": "Kerim Alajbegovic",
+      "changeType": "new_call_up",
+      "details": "18-year-old RB Salzburg attacker named in the 26-man squad as the youngest player selected.",
+      "source": "beIN Sports, FifaWorldCupNews - May 11, 2026",
+      "effectiveDate": "2026-05-11"
+    }
+  ],
+  "bettingOddsUpdate": {
+    "tournamentWinner": "+25000 to +30000",
+    "groupStageExit": null,
+    "toQualifyFromGroup": "+260 (to win Group B)",
+    "source": "BetMGM, Squawka, The Lines - May 2026",
+    "notes": "Tournament winner odds aggregated across leading US sportsbooks (~0.3% implied probability). Within Group B, Switzerland is favorite at -105, with Bosnia tied for second at +260 alongside Canada and Qatar a distant fourth at +2800. Direct group-exit / advance-from-group prices not consistently published; group-winner price used as proxy for advancement strength."
+  },
+  "coachUpdate": {
+    "changed": false,
+    "currentCoach": "Sergej Barbarez",
+    "newCoach": null,
+    "source": null,
+    "notes": "Barbarez named the official 26-man squad on May 11, 2026, making Bosnia the first qualified nation to publish a final roster for the tournament."
+  },
+  "summary": "Edin Dzeko has recovered from the shoulder injury sustained in the Italy playoff and returned to action as a substitute for Schalke on May 2, before being named in Bosnia's 26-man squad announced May 11 (the first nation to publish a final roster for the tournament). No new internationals have been played since April 16; warm-up friendlies vs North Macedonia (May 29) and Panama (June 6) are still ahead. Coach Barbarez balanced experience and youth, with four notable omissions (Hamulic, Hajradinovic, Gazibegovic, Karic) and the inclusion of 18-year-old Kerim Alajbegovic.",
+  "sourceUrls": [
+    "https://www.espn.com/soccer/team/squad/_/id/452/bosnia-and-herzegovina",
+    "https://en.wikipedia.org/wiki/Bosnia_and_Herzegovina_national_football_team",
+    "https://www.fourfourtwo.com/team/bosnia-world-cup-2026-squad",
+    "https://www.beinsports.com/en-us/soccer/fifa-world-cup-2026/articles/sergej-barbarez-s-official-bosnia-and-herzegovina-squad-for-the-2026-fifa-world-cup-2026-05-11",
+    "https://www.fifaworldcupnews.com/bosnia-herzegovina-squad-2026-fifa-wc/",
+    "https://worldcuppass.com/bosnia-and-herzegovina-world-cup-squad-2026/",
+    "https://sarajevotimes.com/announcement-date-set-for-sergej-barbarezs-squad-list-for-the-2026-world-cup-2/",
+    "https://www.outlookindia.com/sports/football/bosnia-and-herzegovina-fifa-world-cup-2026-edin-dzeko-importance-and-shoulder-injury-concern",
+    "https://www.bundesliga.com/en/2bundesliga/news/edin-dzeko-injury-bosnia-herzegovina-world-cup-schalke-36695",
+    "https://footmundo.co.uk/edin-dzeko-returns-schalke-promotion-bundesliga/",
+    "https://sports.yahoo.com/articles/d-eko-set-return-schalke-133825916.html",
+    "https://tribuna.com/en/news/2026-05-03-dont-want-to-stop-edin-dzeko-leaves-postworld-cup-future-open/",
+    "https://schalke04.de/en/2-bundesliga-en/dzeko-promotion-2526/",
+    "https://khelnow.com/football/world-football-players-missing-from-bosnia-and-herzegovinas-squad-fifa-world-cup-202605",
+    "https://www.kcur.org/sports/2026-05-05/bosnia-herzegovina-soccer-st-louis-world-cup",
+    "https://www.stlpr.org/news-briefs/2026-05-04/bosnia-soccer-match-in-st-louis",
+    "https://www.espn.com/soccer/match/_/gameId/401869326/north-macedonia-bosnia-and-herzegovina",
+    "https://www.footyheadlines.com/2026/04/bosnia-2026-kits.html",
+    "https://www.squawka.com/us/outright-markets/bosnia-herzegovina-world-cup-2026-odds/",
+    "https://sports.betmgm.com/en/blog/world-cup/bosnia-herzegovina-world-cup-odds-chances-to-win-world-cup-bm25/",
+    "https://www.thelines.com/odds/world-cup/group-b/",
+    "https://www.uefa.com/european-qualifiers/news/02a3-2047c06e29c6-0a8f1c84272a-1000--bosnia-and-herzegovina-1-1-italy-highlights-4-1-on-pens-host/",
+    "https://www.espn.com/soccer/story/_/id/48359181/italy-miss-3rd-straight-world-cup-loss-bosnia"
+  ],
+  "confidence": "high",
+  "dataFreshness": "2026-05-11"
+}
