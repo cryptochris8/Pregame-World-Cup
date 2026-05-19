@@ -113,7 +113,11 @@ export const claimVenue = functions.https.onCall(async (data: any, context: any)
 // =====================
 // sendVenueVerificationCode - Generate and send SMS code
 // =====================
-export const sendVenueVerificationCode = functions.https.onCall(async (data: any, context: any) => {
+export const sendVenueVerificationCode = functions.https.onCall(
+  {
+    secrets: ["TWILIO_ACCOUNT_SID", "TWILIO_AUTH_TOKEN", "TWILIO_PHONE_NUMBER"],
+  },
+  async (data: any, context: any) => {
   if (!context.auth) {
     throw new functions.https.HttpsError("unauthenticated", "Must be logged in.");
   }
@@ -212,7 +216,8 @@ export const sendVenueVerificationCode = functions.https.onCall(async (data: any
   }
 
   return { success: true, message: "Verification code sent." };
-});
+  }
+);
 
 // =====================
 // verifyVenueCode - Verify the SMS code
