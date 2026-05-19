@@ -30,12 +30,6 @@ const LoginScreen: React.FC = () => {
     }
   };
 
-  const handleDemoLogin = () => {
-    setEmail('demo@venue.com');
-    setPassword('demopassword');
-    // Auto-login for demo
-    setTimeout(() => navigate('/venue'), 500);
-  };
 
   return (
     <div className="min-h-screen flex" style={{ background: 'var(--pregame-dark-bg)' }}>
@@ -158,19 +152,6 @@ const LoginScreen: React.FC = () => {
                   ) : (
                     'Sign in to Portal'
                   )}
-                </button>
-                
-                <button
-                  type="button"
-                  onClick={handleDemoLogin}
-                  className="w-full py-3 px-4 text-lg font-semibold rounded-xl border-2 transition-all duration-200 hover:border-orange-500"
-                  style={{
-                    background: 'transparent',
-                    color: 'var(--pregame-text-light)',
-                    borderColor: 'rgba(255, 255, 255, 0.2)'
-                  }}
-                >
-                  Try Demo Account
                 </button>
               </div>
             </form>
