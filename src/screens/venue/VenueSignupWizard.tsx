@@ -4,12 +4,14 @@ import PregameLogo from '../../assets/pregame_logo.png';
 import AccountStep from '../../components/signup/AccountStep';
 import VenueDetailsStep from '../../components/signup/VenueDetailsStep';
 import HoursStep from '../../components/signup/HoursStep';
-import SubscriptionStep from '../../components/signup/SubscriptionStep';
+import VerificationStep from '../../components/signup/VerificationStep';
 import SuccessStep from '../../components/signup/SuccessStep';
 import { authService } from '../../services/authService';
-import { venueService, VenueProfile } from '../../services/venueService';
+import { VenueProfile } from '../../services/venueService';
+import { claimVenue } from '../../services/cloudFunctions';
+import { doc, collection } from 'firebase/firestore';
+import { db } from '../../firebase/firebaseConfig';
 
-// Weekly hours type
 export interface DayHours {
   open: string;
   close: string;
@@ -20,9 +22,7 @@ export interface WeeklyHours {
   [key: string]: DayHours;
 }
 
-// Wizard data interface
 export interface WizardData {
-  // Step 1: Account
   email: string;
   password: string;
   confirmPassword: string;
@@ -30,7 +30,6 @@ export interface WizardData {
   lastName: string;
   phone: string;
 
-  // Step 2: Venue
   venueName: string;
   venueType: VenueProfile['venueType'];
   description: string;
@@ -41,11 +40,7 @@ export interface WizardData {
   latitude: number;
   longitude: number;
 
-  // Step 3: Hours
   regularHours: WeeklyHours;
-
-  // Step 4: Subscription
-  selectedPlan: 'basic' | 'pro' | 'enterprise';
 }
 
 const defaultHours: WeeklyHours = {
@@ -75,15 +70,14 @@ const initialData: WizardData = {
   latitude: 0,
   longitude: 0,
   regularHours: defaultHours,
-  selectedPlan: 'basic',
 };
 
 const STEPS = [
   { id: 1, name: 'Account', description: 'Create your account' },
   { id: 2, name: 'Venue', description: 'Tell us about your venue' },
   { id: 3, name: 'Hours', description: 'Set your operating hours' },
-  { id: 4, name: 'Plan', description: 'Choose your subscription' },
-  { id: 5, name: 'Done', description: 'Welcome aboard!' },
+  { id: 4, name: 'Verify', description: 'Verify your phone' },
+  { id: 5, name: 'Done', description: 'Submit & set up billing' },
 ];
 
 const VenueSignupWizard: React.FC = () => {
@@ -92,23 +86,23 @@ const VenueSignupWizard: React.FC = () => {
   const [data, setData] = useState<WizardData>(initialData);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
-  const [createdVenueId, setCreatedVenueId] = useState<string | null>(null);
+  const [claimedVenueId, setClaimedVenueId] = useState<string | null>(null);
 
   const updateData = (updates: Partial<WizardData>) => {
-    setData(prev => ({ ...prev, ...updates }));
+    setData((prev) => ({ ...prev, ...updates }));
   };
 
   const handleNext = () => {
     setError(null);
     if (currentStep < STEPS.length) {
-      setCurrentStep(prev => prev + 1);
+      setCurrentStep((prev) => prev + 1);
     }
   };
 
   const handleBack = () => {
     setError(null);
     if (currentStep > 1) {
-      setCurrentStep(prev => prev - 1);
+      setCurrentStep((prev) => prev - 1);
     }
   };
 
@@ -116,16 +110,13 @@ const VenueSignupWizard: React.FC = () => {
     try {
       setLoading(true);
       setError(null);
-
-      // Create the user account
       await authService.signUp(
         data.email,
         data.password,
         data.firstName,
         data.lastName,
-        data.phone || undefined
+        data.phone,
       );
-
       return true;
     } catch (err: any) {
       setError(err.message || 'Failed to create account');
@@ -135,50 +126,34 @@ const VenueSignupWizard: React.FC = () => {
     }
   };
 
-  const handleCreateVenue = async (): Promise<boolean> => {
+  const handleSubmitClaim = async (): Promise<boolean> => {
     try {
       setLoading(true);
       setError(null);
 
       const user = authService.getCurrentUser();
       if (!user) {
-        setError('No authenticated user found');
+        setError('Your session expired. Please go back and re-create your account.');
         return false;
       }
 
-      // Create venue profile
-      const venueData: Omit<VenueProfile, 'id' | 'createdAt' | 'updatedAt'> = {
-        ownerId: user.uid,
-        name: data.venueName,
+      // Generate a venueId for the new claim. claimVenue handles both
+      // pre-existing and new venues atomically.
+      const venueId = doc(collection(db, 'venue_enhancements')).id;
+
+      await claimVenue({
+        venueId,
+        businessName: data.venueName,
+        contactEmail: data.email,
+        ownerRole: 'owner',
         venueType: data.venueType,
-        description: data.description,
-        address: `${data.address}, ${data.city}, ${data.state} ${data.zip}`,
-        phone: data.phone,
-        email: data.email,
-        capacity: 100, // Default, can be updated later
-        amenities: [],
-        regularHours: data.regularHours,
-        gameDayHours: data.regularHours, // Same as regular for now
-        socialMedia: {},
-        images: [],
-        rating: 0,
-        reviewCount: 0,
-        isVerified: false,
-        location: {
-          latitude: data.latitude,
-          longitude: data.longitude,
-        },
-      };
+        venuePhoneNumber: data.phone,
+      });
 
-      const venueId = await venueService.createVenueProfile(venueData);
-      setCreatedVenueId(venueId);
-
-      // Link venue to owner
-      await authService.linkVenueToOwner(user.uid, venueId);
-
+      setClaimedVenueId(venueId);
       return true;
     } catch (err: any) {
-      setError(err.message || 'Failed to create venue');
+      setError(err.message || 'Failed to submit venue claim');
       return false;
     } finally {
       setLoading(false);
@@ -189,9 +164,12 @@ const VenueSignupWizard: React.FC = () => {
     navigate('/venue');
   };
 
-  const handleGoToStripe = () => {
-    // Navigate to billing with selected plan
-    navigate(`/venue/billing?plan=${data.selectedPlan}`);
+  const handlePayNow = () => {
+    if (claimedVenueId) {
+      navigate(`/venue/billing?venueId=${claimedVenueId}`);
+    } else {
+      navigate('/venue/billing');
+    }
   };
 
   const renderStepContent = () => {
@@ -224,7 +202,7 @@ const VenueSignupWizard: React.FC = () => {
             data={data}
             updateData={updateData}
             onNext={async () => {
-              const success = await handleCreateVenue();
+              const success = await handleSubmitClaim();
               if (success) handleNext();
             }}
             onBack={handleBack}
@@ -234,10 +212,10 @@ const VenueSignupWizard: React.FC = () => {
         );
       case 4:
         return (
-          <SubscriptionStep
-            data={data}
-            updateData={updateData}
-            onNext={handleNext}
+          <VerificationStep
+            venueId={claimedVenueId}
+            phone={data.phone}
+            onVerified={handleNext}
             onBack={handleBack}
           />
         );
@@ -245,9 +223,8 @@ const VenueSignupWizard: React.FC = () => {
         return (
           <SuccessStep
             venueName={data.venueName}
-            selectedPlan={data.selectedPlan}
+            onPayNow={handlePayNow}
             onGoToDashboard={handleGoToDashboard}
-            onSetupBilling={handleGoToStripe}
           />
         );
       default:
@@ -257,7 +234,6 @@ const VenueSignupWizard: React.FC = () => {
 
   return (
     <div className="min-h-screen flex flex-col" style={{ background: 'var(--pregame-dark-bg)' }}>
-      {/* Header */}
       <div className="py-6 px-4">
         <div className="max-w-3xl mx-auto flex items-center justify-between">
           <div className="flex items-center gap-3">
@@ -276,7 +252,6 @@ const VenueSignupWizard: React.FC = () => {
         </div>
       </div>
 
-      {/* Progress Bar */}
       <div className="py-4 px-4">
         <div className="max-w-3xl mx-auto">
           <div className="flex items-center justify-between mb-2">
@@ -296,7 +271,12 @@ const VenueSignupWizard: React.FC = () => {
                   </div>
                   <span
                     className="text-xs mt-1 hidden sm:block"
-                    style={{ color: currentStep >= step.id ? 'var(--pregame-text-light)' : 'var(--pregame-text-muted)' }}
+                    style={{
+                      color:
+                        currentStep >= step.id
+                          ? 'var(--pregame-text-light)'
+                          : 'var(--pregame-text-muted)',
+                    }}
                   >
                     {step.name}
                   </span>
@@ -305,7 +285,8 @@ const VenueSignupWizard: React.FC = () => {
                   <div
                     className="flex-1 h-1 mx-2 rounded"
                     style={{
-                      background: currentStep > step.id ? '#22c55e' : 'rgba(255,255,255,0.1)',
+                      background:
+                        currentStep > step.id ? '#22c55e' : 'rgba(255,255,255,0.1)',
                     }}
                   />
                 )}
@@ -313,7 +294,10 @@ const VenueSignupWizard: React.FC = () => {
             ))}
           </div>
           <div className="text-center mt-4">
-            <p className="text-lg font-semibold" style={{ color: 'var(--pregame-text-light)' }}>
+            <p
+              className="text-lg font-semibold"
+              style={{ color: 'var(--pregame-text-light)' }}
+            >
               {STEPS[currentStep - 1].description}
             </p>
             <p className="text-sm" style={{ color: 'var(--pregame-text-muted)' }}>
@@ -323,11 +307,8 @@ const VenueSignupWizard: React.FC = () => {
         </div>
       </div>
 
-      {/* Step Content */}
       <div className="flex-1 flex items-start justify-center px-4 py-8">
-        <div className="w-full max-w-2xl">
-          {renderStepContent()}
-        </div>
+        <div className="w-full max-w-2xl">{renderStepContent()}</div>
       </div>
     </div>
   );

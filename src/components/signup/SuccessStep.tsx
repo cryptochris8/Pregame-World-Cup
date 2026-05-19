@@ -2,26 +2,17 @@ import React from 'react';
 
 interface SuccessStepProps {
   venueName: string;
-  selectedPlan: 'basic' | 'pro' | 'enterprise';
+  onPayNow: () => void;
   onGoToDashboard: () => void;
-  onSetupBilling: () => void;
 }
-
-const PLAN_NAMES = {
-  basic: 'Basic',
-  pro: 'Pro',
-  enterprise: 'Enterprise',
-};
 
 const SuccessStep: React.FC<SuccessStepProps> = ({
   venueName,
-  selectedPlan,
+  onPayNow,
   onGoToDashboard,
-  onSetupBilling,
 }) => {
   return (
     <div className="pregame-card text-center">
-      {/* Success Icon */}
       <div className="mb-6">
         <div className="w-20 h-20 mx-auto rounded-full bg-green-500/20 flex items-center justify-center">
           <svg
@@ -40,97 +31,55 @@ const SuccessStep: React.FC<SuccessStepProps> = ({
         </div>
       </div>
 
-      {/* Welcome Message */}
       <h2 className="text-3xl font-bold mb-2" style={{ color: 'var(--pregame-text-light)' }}>
-        Welcome to Pregame!
+        You're in!
       </h2>
       <p className="text-lg mb-6" style={{ color: 'var(--pregame-text-muted)' }}>
-        <strong style={{ color: 'var(--pregame-text-light)' }}>{venueName}</strong> has been created successfully
+        <strong style={{ color: 'var(--pregame-text-light)' }}>{venueName}</strong> is verified and
+        ready to go.
       </p>
 
-      {/* Plan Info */}
       <div
-        className="inline-block px-6 py-3 rounded-xl mb-8"
+        className="text-left mb-8 p-5 rounded-xl space-y-3"
         style={{ background: 'rgba(255, 255, 255, 0.05)' }}
       >
-        <p className="text-sm" style={{ color: 'var(--pregame-text-muted)' }}>
-          Your selected plan
-        </p>
-        <p className="text-xl font-bold" style={{ color: 'var(--pregame-orange)' }}>
-          {PLAN_NAMES[selectedPlan]} Plan
-        </p>
-        <p className="text-sm" style={{ color: 'var(--pregame-text-muted)' }}>
-          14-day free trial
-        </p>
-      </div>
-
-      {/* Next Steps */}
-      <div className="text-left mb-8 p-5 rounded-xl" style={{ background: 'rgba(255, 255, 255, 0.05)' }}>
-        <h3 className="font-bold mb-4" style={{ color: 'var(--pregame-text-light)' }}>
-          Next Steps:
+        <h3 className="font-bold" style={{ color: 'var(--pregame-text-light)' }}>
+          One more step to go live
         </h3>
-        <ul className="space-y-3">
-          <li className="flex items-start gap-3">
-            <span
-              className="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 text-sm font-bold"
-              style={{ background: 'var(--pregame-orange)', color: 'white' }}
-            >
-              1
-            </span>
-            <div>
-              <p className="font-medium" style={{ color: 'var(--pregame-text-light)' }}>
-                Complete your profile
-              </p>
-              <p className="text-sm" style={{ color: 'var(--pregame-text-muted)' }}>
-                Add photos, amenities, and more details to attract fans
-              </p>
-            </div>
-          </li>
-          <li className="flex items-start gap-3">
-            <span
-              className="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 text-sm font-bold"
-              style={{ background: 'var(--pregame-orange)', color: 'white' }}
-            >
-              2
-            </span>
-            <div>
-              <p className="font-medium" style={{ color: 'var(--pregame-text-light)' }}>
-                Create match day specials
-              </p>
-              <p className="text-sm" style={{ color: 'var(--pregame-text-muted)' }}>
-                Set up food & drink deals to bring in the crowds
-              </p>
-            </div>
-          </li>
-          <li className="flex items-start gap-3">
-            <span
-              className="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 text-sm font-bold"
-              style={{ background: 'var(--pregame-orange)', color: 'white' }}
-            >
-              3
-            </span>
-            <div>
-              <p className="font-medium" style={{ color: 'var(--pregame-text-light)' }}>
-                Get discovered by fans
-              </p>
-              <p className="text-sm" style={{ color: 'var(--pregame-text-muted)' }}>
-                Your venue will appear in search results for World Cup 2026
-              </p>
-            </div>
-          </li>
-        </ul>
+        <p className="text-sm" style={{ color: 'var(--pregame-text-muted)' }}>
+          Your venue account is created and verified. Grab the Tournament Pass below to start
+          appearing in fan searches, run game-day specials, and host watch parties — or jump into
+          the dashboard now to add photos and finish your profile first.
+        </p>
       </div>
 
-      {/* Action Buttons */}
+      <div
+        className="text-center mb-6 p-5 rounded-xl border-2"
+        style={{
+          background: 'rgba(234, 88, 12, 0.05)',
+          borderColor: 'rgba(234, 88, 12, 0.4)',
+        }}
+      >
+        <p className="text-sm uppercase tracking-wider font-bold mb-1" style={{ color: 'var(--pregame-orange)' }}>
+          Tournament Pass
+        </p>
+        <p className="text-4xl font-bold mb-1" style={{ color: 'var(--pregame-text-light)' }}>
+          $499
+        </p>
+        <p className="text-xs" style={{ color: 'var(--pregame-text-muted)' }}>
+          One-time · Covers all 104 matches · No monthly fees
+        </p>
+      </div>
+
       <div className="space-y-3">
         <button
-          onClick={onGoToDashboard}
+          onClick={onPayNow}
           className="w-full btn-pregame-primary py-3 px-4 text-lg font-semibold rounded-xl transition-all duration-200"
         >
-          Go to Dashboard
+          Buy Tournament Pass — $499
         </button>
         <button
-          onClick={onSetupBilling}
+          onClick={onGoToDashboard}
           className="w-full py-3 px-4 text-lg font-semibold rounded-xl border-2 transition-all duration-200 hover:border-orange-500"
           style={{
             background: 'transparent',
@@ -138,12 +87,13 @@ const SuccessStep: React.FC<SuccessStepProps> = ({
             borderColor: 'rgba(255, 255, 255, 0.2)',
           }}
         >
-          Set Up Billing Now
+          I'll Pay Later — Go to Dashboard
         </button>
       </div>
 
       <p className="text-xs mt-6" style={{ color: 'var(--pregame-text-muted)' }}>
-        Your free trial starts today. We'll remind you before it ends.
+        Secure payment via Stripe. Pass activates immediately and stays active through the
+        tournament final on July 19, 2026.
       </p>
     </div>
   );

@@ -271,18 +271,21 @@ export const verifyVenueCode = functions.https.onCall(async (data: any, context:
     );
   }
 
-  // Code is correct - update claim status to pending_review
+  // Code is correct - auto-approve since SMS ownership of the venue's
+  // phone number is treated as sufficient verification. Disputes can
+  // still revoke the claim afterward via submitVenueDispute.
   await db.collection("venue_enhancements").doc(venueId).update({
-    claimStatus: "pendingReview",
+    claimStatus: "approved",
+    isVerified: true,
     updatedAt: admin.firestore.FieldValue.serverTimestamp(),
   });
 
   // Delete verification code doc
   await codeRef.delete();
 
-  functions.logger.info(`Venue ${venueId} verified by user ${userId}, now pending review`);
+  functions.logger.info(`Venue ${venueId} verified and auto-approved for user ${userId}`);
 
-  return { success: true, message: "Phone verified. Your claim is now pending admin review." };
+  return { success: true, message: "Phone verified. Your venue is now approved." };
 });
 
 // =====================

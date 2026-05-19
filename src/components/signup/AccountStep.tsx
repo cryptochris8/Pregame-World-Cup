@@ -49,6 +49,12 @@ const AccountStep: React.FC<AccountStepProps> = ({
       errors.confirmPassword = 'Passwords do not match';
     }
 
+    if (!data.phone.trim()) {
+      errors.phone = 'Phone is required — we send a verification code by SMS';
+    } else if (data.phone.replace(/\D/g, '').length < 10) {
+      errors.phone = 'Enter a valid US phone number (at least 10 digits)';
+    }
+
     setLocalErrors(errors);
     return Object.keys(errors).length === 0;
   };
@@ -136,7 +142,7 @@ const AccountStep: React.FC<AccountStepProps> = ({
         {/* Phone */}
         <div>
           <label className="block text-sm font-medium mb-2" style={{ color: 'var(--pregame-text-light)' }}>
-            Phone Number
+            Phone Number *
           </label>
           <input
             type="tel"
@@ -146,6 +152,12 @@ const AccountStep: React.FC<AccountStepProps> = ({
             style={inputStyle}
             placeholder="(555) 123-4567"
           />
+          {localErrors.phone && (
+            <p className="text-red-400 text-xs mt-1">{localErrors.phone}</p>
+          )}
+          <p className="text-xs mt-1" style={{ color: 'var(--pregame-text-muted)' }}>
+            We'll text a 6-digit verification code to confirm ownership.
+          </p>
         </div>
 
         {/* Password */}

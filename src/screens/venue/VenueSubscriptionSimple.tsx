@@ -1,51 +1,47 @@
 import React, { useState } from 'react';
-import { loadStripe } from '@stripe/stripe-js';
+import { useSearchParams } from 'react-router-dom';
 import PregameLogo from '../../assets/pregame_logo.png';
-import { environment } from '../../config/environment';
-
-// Initialize Stripe with secure environment configuration
-const stripePromise = loadStripe(environment.stripePublishableKey);
-
-const PRICE_ID = 'price_1RYpTMQ811jRCI3C9vVGazTM'; // One-time $499 World Cup listing fee
+import { createVenuePremiumCheckout } from '../../services/cloudFunctions';
+import { authService } from '../../services/authService';
 
 const VenueSubscriptionSimple: React.FC = () => {
+  const [searchParams] = useSearchParams();
   const [loading, setLoading] = useState(false);
-  const [purchased, setPurchased] = useState(false);
+  const [purchased] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+
+  const venueId = searchParams.get('venueId');
 
   const handlePurchase = async () => {
+    setError(null);
+
+    if (!authService.isAuthenticated()) {
+      setError('Please sign in to your venue account before purchasing.');
+      return;
+    }
+
+    if (!venueId) {
+      setError(
+        'No venue selected. Open this page from your dashboard after claiming a venue.',
+      );
+      return;
+    }
+
+    setLoading(true);
     try {
-      setLoading(true);
-
-      const stripe = await stripePromise;
-      if (!stripe) {
-        throw new Error('Stripe failed to load');
-      }
-
-      const response = await fetch(`https://us-central1-pregame-6c1e9.cloudfunctions.net/createCheckoutSession`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          priceId: PRICE_ID,
-          venueId: `venue_${Date.now()}`,
-          successUrl: `${window.location.origin}/venue/dashboard?success=true`,
-          cancelUrl: window.location.href,
-        }),
+      const result = await createVenuePremiumCheckout({
+        venueId,
+        successUrl: `${window.location.origin}/venue/billing/success`,
+        cancelUrl: window.location.href,
       });
 
-      if (!response.ok) {
-        throw new Error('Failed to create checkout session');
+      const checkoutUrl = result.data.url;
+      if (!checkoutUrl) {
+        throw new Error('Stripe did not return a checkout URL');
       }
-
-      const { sessionId } = await response.json();
-      const result = await stripe.redirectToCheckout({ sessionId });
-
-      if (result.error) {
-        throw new Error(result.error.message);
-      }
-    } catch (error) {
-      console.error('Purchase error:', error);
-      alert('Payment failed. Please try again.');
-    } finally {
+      window.location.href = checkoutUrl;
+    } catch (err: any) {
+      setError(err.message || 'Payment failed. Please try again.');
       setLoading(false);
     }
   };
@@ -134,8 +130,14 @@ const VenueSubscriptionSimple: React.FC = () => {
             disabled={loading}
             className="w-full btn-pregame-primary py-5 text-xl font-bold rounded-xl disabled:opacity-50 disabled:cursor-not-allowed"
           >
-            {loading ? 'Processing...' : 'Get Listed for $499'}
+            {loading ? 'Redirecting to Stripe...' : 'Get Listed for $499'}
           </button>
+
+          {error && (
+            <div className="mt-4 p-3 rounded-lg bg-red-500/20 border border-red-500/50 text-left">
+              <p className="text-red-400 text-sm">{error}</p>
+            </div>
+          )}
 
           <p className="mt-4 text-sm" style={{ color: 'var(--pregame-text-muted)' }}>
             Secure payment via Stripe. No recurring charges.
