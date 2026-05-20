@@ -298,6 +298,11 @@ workflows:
 
       - name: Build APK with Flutter
         script: |
+          # FEATURE FLAGS — gambling-adjacent features compiled OUT, matching
+          # the iOS build. The Android app must ship the same stripped
+          # surface as the approved iOS app: no predictions, odds,
+          # leaderboard, AI probability, Fan Pass IAP, or venue upgrade.
+          # See lib/core/config/feature_flags.dart.
           flutter build apk --release \
             --build-name=1.0.$BUILD_NUMBER \
             --build-number=$BUILD_NUMBER \
@@ -309,10 +314,18 @@ workflows:
             --dart-define=STRIPE_PUBLISHABLE_KEY=$STRIPE_PUBLISHABLE_KEY \
             --dart-define=REVENUECAT_IOS_API_KEY=$REVENUECAT_IOS_API_KEY \
             --dart-define=REVENUECAT_ANDROID_API_KEY=$REVENUECAT_ANDROID_API_KEY \
-            --dart-define=FIREBASE_FUNCTIONS_URL=https://us-central1-pregame-b089e.cloudfunctions.net
+            --dart-define=FIREBASE_FUNCTIONS_URL=https://us-central1-pregame-b089e.cloudfunctions.net \
+            --dart-define=FEATURE_PREDICTIONS=false \
+            --dart-define=FEATURE_PREDICTION_LEADERBOARD=false \
+            --dart-define=FEATURE_BETTING_ODDS=false \
+            --dart-define=FEATURE_AI_PROBABILITY=false \
+            --dart-define=FEATURE_FAN_PASS=false \
+            --dart-define=FEATURE_VENUE_UPGRADE=false
 
       - name: Build App Bundle for Google Play
         script: |
+          # FEATURE FLAGS — same gambling-strip as the iOS build and the
+          # APK step above. See lib/core/config/feature_flags.dart.
           flutter build appbundle --release \
             --build-name=1.0.$BUILD_NUMBER \
             --build-number=$BUILD_NUMBER \
@@ -324,7 +337,13 @@ workflows:
             --dart-define=STRIPE_PUBLISHABLE_KEY=$STRIPE_PUBLISHABLE_KEY \
             --dart-define=REVENUECAT_IOS_API_KEY=$REVENUECAT_IOS_API_KEY \
             --dart-define=REVENUECAT_ANDROID_API_KEY=$REVENUECAT_ANDROID_API_KEY \
-            --dart-define=FIREBASE_FUNCTIONS_URL=https://us-central1-pregame-b089e.cloudfunctions.net
+            --dart-define=FIREBASE_FUNCTIONS_URL=https://us-central1-pregame-b089e.cloudfunctions.net \
+            --dart-define=FEATURE_PREDICTIONS=false \
+            --dart-define=FEATURE_PREDICTION_LEADERBOARD=false \
+            --dart-define=FEATURE_BETTING_ODDS=false \
+            --dart-define=FEATURE_AI_PROBABILITY=false \
+            --dart-define=FEATURE_FAN_PASS=false \
+            --dart-define=FEATURE_VENUE_UPGRADE=false
             
     artifacts:
       - build/app/outputs/**/*.apk
