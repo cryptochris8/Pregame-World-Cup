@@ -103,6 +103,67 @@ class AuthService {
   }
 
   /**
+   * Create a venue owner account, or sign in if the email already has one.
+   * Real venue owners often already have a fan account — without this they
+   * would be blocked by "email already in use" and unable to claim a venue.
+   */
+  async signUpOrSignIn(
+    email: string,
+    password: string,
+    firstName: string,
+    lastName: string,
+    phone: string
+  ): Promise<VenueOwner> {
+    let user: User;
+
+    try {
+      const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+      user = userCredential.user;
+      await updateProfile(user, { displayName: `${firstName} ${lastName}` });
+    } catch (error: any) {
+      if (error.code !== 'auth/email-already-in-use') {
+        throw new Error(this.getAuthErrorMessage(error.code));
+      }
+      // Email already registered — treat the entered password as a sign-in.
+      try {
+        const userCredential = await signInWithEmailAndPassword(auth, email, password);
+        user = userCredential.user;
+      } catch (signInError: any) {
+        if (
+          signInError.code === 'auth/wrong-password' ||
+          signInError.code === 'auth/invalid-credential'
+        ) {
+          throw new Error(
+            'This email already has a Pregame account. Enter your existing password to continue, or use a different email.'
+          );
+        }
+        throw new Error(this.getAuthErrorMessage(signInError.code));
+      }
+    }
+
+    // Ensure a venue owner profile exists for this user.
+    const existing = await this.getVenueOwnerProfile(user.uid);
+    if (existing) {
+      return existing;
+    }
+
+    const venueOwner: VenueOwner = {
+      uid: user.uid,
+      email: user.email!,
+      displayName: `${firstName} ${lastName}`,
+      firstName,
+      lastName,
+      phone,
+      isVerified: false,
+      role: 'venue_owner',
+      createdAt: Timestamp.now(),
+      lastLoginAt: Timestamp.now(),
+    };
+    await this.createVenueOwnerProfile(venueOwner);
+    return venueOwner;
+  }
+
+  /**
    * Sign out current user
    */
   async signOut(): Promise<void> {

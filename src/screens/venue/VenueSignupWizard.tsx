@@ -110,7 +110,7 @@ const VenueSignupWizard: React.FC = () => {
     try {
       setLoading(true);
       setError(null);
-      await authService.signUp(
+      await authService.signUpOrSignIn(
         data.email,
         data.password,
         data.firstName,
