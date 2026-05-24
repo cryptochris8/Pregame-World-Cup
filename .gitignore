@@ -42,3 +42,6 @@ firebase-service-account.json
 # Timestamped backups created by scout merge utilities
 *.backup-*.json
 *-service-account*.json
+
+# MCP config holds API keys — never commit
+.mcp.json
